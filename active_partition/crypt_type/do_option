@@ -1,0 +1,38 @@
+#!/bin/sh
+
+#TYPES="loop-AES dm-crypt dm-crypt-luks"
+TYPES="loop-AES"
+. /lib/partman/definitions.sh
+
+dev=$2
+id=$3
+part=$dev/$id
+
+select_crypt_type () {
+    choices=$(
+        for type in $TYPES; do
+            db_metaget partman-crypto/text/crypt_type/$type description
+            printf "%s\t%s\n" $type "$RET"
+        done
+    )
+
+    debconf_select critical partman-crypto/crypt_type "$choices"
+
+    if [ "$RET" = none ]; then
+        if [ -f $part/crypt_type ]; then
+            rm $part/crypt_type
+        fi
+        return
+    fi
+    
+    echo ${RET%% *} > $part/crypt_type
+}
+
+[ -f $part/method ] || exit 0
+
+method=$(cat $part/method)
+if [ "$method" = crypto ]; then
+    select_crypt_type
+fi
+
+# vim:set ts=4 sw=4 expandtab:

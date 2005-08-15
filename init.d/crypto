@@ -1,0 +1,262 @@
+#!/bin/sh
+
+# This script creates partman crypt disks. It does losetup or 
+# cryptsetup (TODO) and then creates a partman disk.
+
+. /lib/partman/definitions.sh
+
+exec 2>/tmp/init
+set -x
+
+partman_devdir () {
+    local d=$(echo $1 | tr / =)
+    echo /var/lib/partman/devices/$d
+}
+
+create_partman_disk () {
+    device=$1
+    model=$2
+    size=$3
+
+    devdir=$(partman_devdir $device)
+    mkdir $devdir || return 1
+    cd $devdir
+
+    echo $device > $devdir/device
+    echo $model > $devdir/model
+    echo $size > $devdir/size
+
+    open_dialog OPEN $device
+    read_line response
+    close_dialog
+    if [ "$response" = "failed" ]; then
+        rm -rf $devdir
+        return 1
+    fi
+
+    open_dialog NEW_LABEL loop
+    close_dialog
+    return 0
+}
+
+create_partman_partition () {
+    local id num size type fs path name free_space free_size filesystem
+    cd $(partman_devdir $1)
+
+    # find the free space
+    open_dialog PARTITIONS
+    free_space=''
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        if [ "$fs" = free ]; then
+            free_space=$id
+            free_size=$size
+	    # we can't break here
+        fi
+    done
+    close_dialog
+
+    # create partition in the free space
+    if [ "$free_space" ]; then
+        open_dialog NEW_PARTITION primary ext2 $free_space full $free_size
+        read_line num id size type fs path name
+        close_dialog
+        if [ "$id" ]; then
+            open_dialog GET_FILE_SYSTEM $id 
+            read_line filesystem
+            close_dialog
+            if [ "$filesystem" != none ]; then
+                open_dialog CHANGE_FILE_SYSTEM $id $filesystem
+                close_dialog
+            fi
+        fi
+    fi
+    open_dialog DISK_UNCHANGED
+    close_dialog
+    echo $id
+}
+
+find_free_loop () {
+    O=$IFS
+    IFS="
+"
+    for n in $(losetup-aes -a); do
+        n=${n%%:*}
+        n=${n#/dev/loop}
+        n=${n#/}
+	    eval loop$n=1
+    done
+    IFS=$O
+
+    for n in 0 1 2 3 4 5 6 7; do
+        if eval [ -z "\$loop$n" ]; then
+            echo $n
+            break
+	    fi
+    done
+}
+
+setup_loopaes () {
+    local loop device cipher keyfile opts pass
+    loop=$1
+    device=$2
+    cipher=$3
+    keyfile=$4
+
+    if [ ! -x /sbin/losetup-aes ]; then
+       return 1
+    fi
+
+    if [ $keyfile ]; then
+        opts="-K $keyfile"
+        pass="$keyfile.pass"
+    else
+        # random key
+        opts="-H random"
+        pass="/dev/null"
+    fi
+
+    /sbin/losetup-aes -e $cipher $opts -p0 $loop $device < $pass
+    if [ $? -ne 0 ] ; then
+        log "losetup failed"
+        return 2
+    fi
+
+    return 0
+}
+
+setup_dmcrypt () {
+    : XXX
+}
+
+setup_luks () {
+    : XXX
+}
+
+create_crypt_device () {
+    local type realdev cipher cryptdev
+    type=$1
+    realdev=$2
+    cipher=$3
+    keytype=$4
+
+    case $type in
+        dm-crypt)
+          # TODO: crypt_name ?
+          cryptdev=/dev/mapper/XXX
+          setup_dmcrypt $cryptdev $realdev $cipher || return
+          ;;
+
+        dm-crypt-luks)
+          # TODO: crypt_name ?
+          cryptdev=/dev/mapper/ZZZ
+          setup_luks $cryptdev $realdev $cipher || return
+          ;;
+      
+        loop-AES)
+          n=$(find_free_loop);
+          [ -z "$n" ] && return 1
+          cryptdev=/dev/loop/$n
+
+          case $keytype in
+            random)
+              keyfile=""
+              ;;
+            keyfile)
+              keyfile=$(cat $id/keyfile)
+              ;;
+          esac
+
+          setup_loopaes $cryptdev $realdev $cipher $keyfile || return
+          ;;
+
+    esac
+
+    echo $cryptdev
+}
+
+create_crypt_disk () {
+    local dev id num size cryptdev type cipher
+    dev=$1
+    id=$2
+    num=$3
+    size=$4
+    path=$5
+
+    type=$(cat $id/crypt_type)
+    cipher=$(cat $id/cipher)
+    keytype=$(cat $id/keytype)
+
+    templ="partman-crypto/text/cryptdev_description"
+    db_subst $templ CIPHER $cipher
+    db_subst $templ KEYTYPE $keytype
+    db_metaget $templ description || RET=''
+    model="$RET"
+    if [ -z $model ]; then
+       model="${cipher} ${keytype}"
+    fi
+
+    cryptdev=$(create_crypt_device $type $path $cipher $keytype)
+    if [ -z $cryptdev ]; then
+        return 1
+    fi
+
+    create_partman_disk $cryptdev "$model" $size
+    if [ $? -ne 0 ]; then
+        return 2
+    fi
+
+    cryptid=$(create_partman_partition $cryptdev)
+    if [ -z $cryptid ]; then
+        return 3
+    fi
+
+    # COMMIT here?
+
+    devdir=$(partman_devdir $cryptdev)
+    echo $cryptdev > $dev/$id/crypt_active
+    echo $path:$num:$dev/$id > $devdir/crypt_realdev
+    return 0
+}
+
+for dev in /var/lib/partman/devices/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        if [ "$fs" != free ]; then
+            partitions="$partitions $id:$num:$size:$path"
+        fi
+    done
+    close_dialog
+
+    for p in $partitions; do
+        set -- $(IFS=: && echo $p)
+        id=$1
+        num=$2
+        size=$3
+        path=$4
+
+        cd $dev
+
+        [ -f $id/method ] || continue
+        [ -f $id/cipher ] || continue
+        [ -f $id/crypt_type ] || continue
+
+        method=$(cat $id/method)
+        [ "$method" = crypto ] || continue
+        
+        if [ ! -f $id/crypt_active ]; then
+            log "creating crypt_disk for $path"
+        
+            if ! create_crypt_disk $dev $id $num $size $path; then
+                db_fset partman-crypto/init_failed seen false
+                db_input critical partman-crypto/init_failed
+                db_go || true
+                continue
+            fi
+        fi
+    done
+done
+
+# vim:set ts=4 sw=4 expandtab:

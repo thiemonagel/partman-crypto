@@ -1,0 +1,41 @@
+ 
+  o check if we could load and use hw_random
+  
+  o if "setup encrypted storage" (or LVM?) is called after an
+    encrypted partition has been setup, the partition disappears.
+    What's happening there? 
+  
+  o understand and add undo.d stuff
+  
+  o maybe we could reduce the number of steps requires by
+    assuming default cipher and keytype when the crypt_ype
+    is first chosen
+
+  o also, maybe we could set the default choice of "use as"
+    to swap for crypt disks with random keytype. Maybe even
+    create a swap partition in there by default?
+  
+  o allow use of existing keyfiles. How can we access removable
+    media while partman is running ? Interesting media would be
+    floppy, USB media, perhaps others.
+
+  o allow to create and store keyfiles on removable media. Same
+    questions as above. Using it should simply be a matter of 
+    writing the path into $id/keyfile and echoing the passphrase
+    into the pass fifo. (XX needs passphrase questions outside
+    of loop-aes-keygen)
+ 
+  o provide options "Erase partition", "Erase disk"
+  o erase crypt partitions by default?
+  o use aespipe-udeb or losetup/dd?
+
+  o upload loop-aes-modules-i386
+  o upload loop-aes-rootfs (netzwurm was interested?)
+
+  o partman-auto-crypto
+
+  o dm-crypt
+  o dm-crypt-luks
+  - those need seperate keysize, hashfunc questions?
+  - how are keys stored? are they stored?
+

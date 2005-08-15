@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This modprobe requires that # kernel loop.o has not already been loaded
+# as there no rmmod included in busybox-udeb. 
+modprobe loop-aes || true
+
+# TODO
+# add modules required for dm-crypt, and dm-crypt-luks
+

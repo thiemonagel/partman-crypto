@@ -1,0 +1,24 @@
+#!/bin/sh
+
+. /lib/partman/definitions.sh
+
+use_crypto=no
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        if [ -f $id/method ] && [ -f $id/crypt_type ]; then
+	    use_crypto=yes
+	fi
+    done
+    close_dialog
+done
+
+# always show this for now
+#if [ "$use_crypto" = yes ]; then
+    db_metaget partman-crypto/text/configure_crypto description
+    printf "crypto\t%s\n" "$RET"
+#fi
+

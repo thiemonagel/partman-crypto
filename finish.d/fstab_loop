@@ -1,0 +1,101 @@
+#!/bin/sh
+
+# This is a hack to change the devices of encrypted loop mounts in fstab
+# from /dev/loop/.. to their real devices.
+
+. /lib/partman/definitions.sh
+
+exec 2>/tmp/fstab_fixloop
+set -x
+
+mount_options () {
+    local cryptdev cryptid cipher crypt_type keyfile opts
+    cryptdev=$1
+    devdir=$2
+ 
+    crypt_type=$(cat $devdir/crypt_type)
+    cipher=$(cat $devdir/cipher)
+    keytype=$(cat $devdir/keytype)
+ 
+    opts=""
+ 
+    case $crypt_type in
+      dm-crypt)
+        ;;
+
+      dm-crypt-luks)
+        ;;
+
+      loop-AES)
+        opts="loop=${cryptdev},encryption=${cipher}"
+
+        if [ $keytype = keyfile ] && [ -f $devdir/keyfile ]; then
+            keyfile=$(basename $(cat $devdir/keyfile))
+            opts="${opts},gpgkey=/etc/loopkeys/$keyfile"
+        fi
+        ;;
+    esac
+
+    echo $opts
+}
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$path"
+    done
+    close_dialog
+    
+    # "is crypto?"
+    [ -f crypt_realdev ] || continue
+
+    for part in $partitions; do
+        id=${part%,*}
+        path=${part#*,}
+
+        r=$(cat crypt_realdev)
+        set -- $(IFS=: && echo $r)
+        realdev=$1
+        realdevnum=$2
+        realdevdir=$3
+
+        [ -f $realdevdir/crypt_type ] || continue
+        [ -f $realdevdir/cipher ] || continue
+        [ -f $realdevdir/keytype ] || continue
+        [ -f $id/method ] || continue
+
+        # is swap or to be mounted?
+        method=$(cat $id/method)
+        if [ "$method" != swap ] && [ ! -f $id/mountpoint ]; then
+            continue
+        fi
+
+        type=$(cat $realdevdir/crypt_type)
+        [ "$type" = loop-AES ] || continue
+
+        realdev=$(mapdevfs $realdev)
+        cryptdev=$(mapdevfs $path)
+        newopts=$(mount_options $cryptdev $realdevdir)
+        entry=$(grep ^$cryptdev /target/etc/fstab)
+
+        if [ "$entry" ]; then
+            # add options
+            opts=$(set -- $entry && echo $4)
+            
+            # XXX: what happens for
+            # /dev/foo /path auto noauto
+
+            sed -i "\#^$cryptdev# { s#\($opts\)\([[:blank:]]\)#\1,$newopts\2# }" /target/etc/fstab
+
+            # replace loop with realdev
+            sed -i "s#^$cryptdev#$realdev#" /target/etc/fstab
+        fi
+    done
+done
+
+# vim:set ts=4 sw=4 expandtab:
+

@@ -1,0 +1,76 @@
+#!/bin/sh
+
+# Installs userspace tools and helper packages for encryption. This 
+# is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
+# into the target system. Similarily for dm-crypt, it installs cryptsetup 
+# etc. (TODO). No idea yet about LUKS.
+
+. /lib/partman/definitions.sh
+
+loop_AES=no
+dm_crypt=no
+dm_crypt_luks=no
+
+install_loopkeys () {
+    dir=/target/etc/loopkeys
+    if [ ! -d $dir ]; then
+        mkdir -p $dir
+        chmod 0700 $dir
+    fi
+
+    for key in $*; do
+        if [ -f $dir/$key ]; then
+            : TODO show error
+        else 
+            mv $key $dir
+	    chmod 0600 $dir/$key
+        fi
+    done
+}
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        [ -f $id/method ] || continue
+	[ -f $id/crypt_type ] || continue
+
+        type=$(cat $id/crypt_type)
+        case $type in
+            loop-AES)
+                loop_AES=yes
+                ;;
+            dm-crypt)
+                dm_crypt=yes
+                ;;
+            dm-crypt-luks)
+                dm_crypt_luks=yes
+                ;;
+        esac
+
+	if [ "$type" = loop-AES ]; then
+	    install_loopkeys $id/*.gpg
+	fi
+
+    done
+    close_dialog
+done
+
+if [ $loop_AES = yes ]; then
+    # FIXME 
+    # loop-aes-rootfs
+    apt-install loop-aes-utils
+fi
+
+if [ $dm_crypt = yes ]; then
+    # FIXME
+    apt-install cryptsetup
+fi
+
+if [ $dm_crypt_luks = yes ]; then
+    # FIXME
+    : apt-install 
+fi
+

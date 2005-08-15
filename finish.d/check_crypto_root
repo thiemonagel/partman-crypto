@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# Show an error if the root filesystem is to be stored on an encrypted 
+# partition, which is still unimplemented.
+
+. /lib/partman/definitions.sh
+
+exec 2>/tmp/check_crypto_root
+set -x
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$path"
+    done
+    close_dialog
+    
+    # "is crypto?"
+    [ -f crypt_realdev ] || continue
+
+    for part in $partitions; do
+        id=${part%,*}
+        path=${part#*,}
+
+        [ -f $id/method ] || continue
+        [ -f $id/mountpoint ] || continue
+        method=$(cat $id/method)
+        mnt=$(cat $id/mountpoint)
+
+        if [ $method = crypto] && [ $mnt = / ]; then
+            templ="partman-crypto/crypto_root_unimplemented"
+            db_set $templ false
+            db_fset $templ seen false
+            db_input critical $templ
+            db_go || true
+            exit 1
+        fi
+    done
+done
+
+# vim:set ts=4 sw=4 expandtab:

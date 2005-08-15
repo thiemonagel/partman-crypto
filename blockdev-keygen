@@ -1,0 +1,196 @@
+#!/bin/sh
+#
+# This handles sensitive data that must not be swapped out
+# or written out to disk unencrypted.
+#
+# Important: before running this script the caller has
+# to check for unsafe swap partitions. This is done in 
+# choose_method/encrypt/do_options.
+# 
+# Assumption: This runs as part of d-i. Therefore, temp
+# files outside of /target reside in a ramdisk. Process
+# information (think [ "$pass" ]) is not exposed to anyone
+# but the installing user.
+#
+# Released under the GNU GPL.
+# Copyright 2005, Max Vozeler <xam@debian.org>
+#
+
+. /usr/share/debconf/confmodule
+
+exec 2>/tmp/keygen
+set -x
+
+minlen=8
+
+passphrase_is_weak () {
+    test $(echo -n "$1" | wc -c) -lt $minlen
+}
+
+get_passphrase () {
+    local pass_ok
+
+    pass_ok=0
+    while [ $pass_ok -eq 0 ]; do
+        templ="partman-crypto/passphrase"
+        db_set $templ ""
+        db_fset $templ seen false
+        db_subst $templ DEVICE "$device"
+        db_input critical $templ
+        db_go || return 1
+        db_get $templ || RET=''
+        pass=$RET
+        if [ -z "$pass" ]; then
+	    templ="partman-crypto/passphrase-empty"
+	    db_fset $templ seen false
+	    db_input critical $templ
+	    db_go || true
+    	    continue
+        fi
+    
+        templ="partman-crypto/passphrase-again"
+        db_set $templ ""
+        db_fset $templ seen false
+        db_input critical $templ
+        db_go || return 1
+        db_get $templ || RET=''
+        if [ "$pass" != "$RET" ]; then
+	    templ="partman-crypto/passphrase-mismatch"
+	    db_fset $templ seen false
+	    db_input critical $templ
+	    db_go || true
+    	    continue
+        fi
+
+        if passphrase_is_weak "$pass"; then
+            templ="partman-crypto/weak_passphrase"
+            db_set $templ false
+            db_fset $templ seen false
+            db_subst $templ MINIMUM $minlen
+            db_input critical $templ || true
+            db_go || true
+            db_get $templ || RET=''
+        
+            if [ "$RET" != true ]; then
+                # user doesn't want to force weak passphrase
+        	continue
+           fi
+        fi
+
+        pass_ok=1
+    done
+
+    db_set partman-crypto/passphrase ""
+    db_set partman-crypto/passphrase-again ""
+
+    if [ $pass_ok -eq 1 ]; then
+        echo "$pass"
+    fi
+}
+
+# loop-AES v3.x style multi-key
+
+encode_keydata () {
+    uuencode -m - | head -n 66 | tail -n 65
+}
+
+create_gnupg_keyfile () {
+    local file pass
+    file=$1
+    pass=$2
+
+    db_capb
+    set -- $RET 
+    for cap in $*; do
+        if [ "$cap" = plugin-entropy-text ]; then
+	    fifo=/var/run/random.fifo
+	    use_entropy_plugin=yes
+	fi
+    done
+
+    umask 077
+
+    passfifo=$file.pass
+    if [ ! -p $passfifo ]; then
+        mknod $passfifo p
+	chmod 0600 $passfifo
+    fi
+
+    # for gpg
+    echo -n "$pass" > $passfifo &
+
+    if [ $use_entropy_plugin ]; then
+        (while sleep 1; do
+	  if [ -p $fifo ]; then
+	    dd if=$fifo bs=1 count=2925 2>/dev/null | encode_keydata |
+	      gpg --batch --no-options --passphrase-fd 3 \
+	        --symmetric -a 3< $passfifo > $file 2> /dev/null
+	    break
+	  fi
+	done) &
+
+	pid=$!
+
+	db_set partman-crypto/keysize 2925
+	db_fset partman-crypto/entropy-text seen false
+	db_subst partman-crypto/entropy-text DEVICE "$device"
+	db_input critical partman-crypto/entropy-text
+	db_go || failed=1
+    else
+        (dd if=/dev/random bs=1 count=2925 2>/dev/null | encode_keydata | 
+	  gpg --batch --no-options --passphrase-fd 3 \
+	    --symmetric -a 3< $passfifo > $file 2> /dev/null
+	) &
+
+        pid=$!
+	
+	n=0
+        while kill -0 $pid 2>/dev/null; do
+            db_set partman-crypto/need_more_entropy ""
+            db_fset partman-crypto/need_more_entropy seen false
+            db_subst partman-crypto/need_more_entropy DEVICE "$device"
+            db_subst partman-crypto/need_more_entropy PROGRESS $n
+	    db_input critical partman-crypto/need_more_entropy
+	    db_go || failed=1
+	    n=$((n+1))
+        done
+    fi
+
+    if [ $failed ]; then
+        kill -9 $pid
+        rm $file
+        return 1
+    fi
+
+    # for use by init.d/crypto
+    echo -n "$pass" > $passfifo &
+    return 0
+}
+
+device=$1
+keyfile=$2
+
+if [ -z $device ]; then
+    echo "usage: $0 device [keyfile]"
+    exit 1
+fi
+
+pass=$(get_passphrase)
+if [ -z "$pass" ]; then
+    db_fset partman-crypto/keyfile-problem seen false
+    db_input critical partman-crypto/keyfile-problem
+    db_go || true
+    exit 1
+fi
+
+if [ -z $keyfile ]; then
+    echo -n "$pass"
+else
+    if ! create_gnupg_keyfile $keyfile "$pass"; then
+        db_fset partman-crypto/keyfile-problem seen false
+        db_input critical partman-crypto/keyfile-problem
+        db_go || true
+        exit 1
+    fi
+fi
+

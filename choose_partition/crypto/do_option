@@ -1,0 +1,324 @@
+#!/bin/sh
+
+# "Setup encrypted volumes" in the main menu. Checks for safe swap and 
+# valid cipher options, commits partman changes to disk, then creates 
+# keyfiles for partitions with crypt_type loop-AES and finally restarts
+# partman.
+
+. /lib/partman/definitions.sh
+
+# debug
+exec 2>/tmp/choose_partition
+set -x
+
+swap_is_safe () {
+    local swap ret
+    local IFS="
+"
+    ret=0
+    for swap in $(cat /proc/swaps); do
+       case $swap in
+         Filename*)
+           ;;
+         /dev/loop*)
+           ;;
+         /dev/mapper/*)
+           ;;  # XX could be LVM2 ?
+         *) 
+           ret=1
+           ;;
+       esac
+    done
+
+    return $ret
+}
+
+if ! swap_is_safe; then
+    db_fset partman-crypto/unsafe_swap seen false
+    db_input critical partman-crypto/unsafe_swap
+    db_go || true
+    exit 1
+fi
+
+# check required tools
+for tool in /usr/bin/gpg /usr/bin/uuencode; do
+    if [ ! -x $tool ]; then
+        db_fset partman-crypto/tools_missing seen false
+        db_input critical partman-crypto/tools_missing
+        db_go || true
+        exit 1
+    fi
+done
+
+options="crypt_type cipher keytype"
+
+crypt_options_complete () {
+    for opt in $options; do
+        [ -f $1/$opt ] || return 1
+    done
+    return 0
+}
+
+crypt_options_missing () {
+    list=""
+    for opt in $options; do
+        [ -f $1/$opt ] && continue
+        db_metaget partman-crypto/text/specify_$opt description || RET="$opt:"
+        desc=$RET
+        value="missing" # TODO: translate
+        if [ "$list" ]; then
+            list="$list
+$desc $value"
+        else
+            list="$desc $value"
+        fi
+    done
+    echo "$list"
+}
+
+# check crypto options
+crypt=
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$num,$path"
+    done
+    close_dialog
+    
+    for p in $partitions; do
+        set -- $(IFS=, && echo $p)
+        id=$1
+        num=$2
+        path=$3
+
+        [ -f $id/method ] || continue
+        method=$(cat $id/method)
+
+        [ $method = crypto ] || continue
+        crypt=yes
+        if ! crypt_options_complete $id; then
+            templ="partman-crypto/options_missing"
+            db_fset $templ seen false
+            db_subst $templ DEVICE "$(humandev $path)"
+            db_subst $templ ITEMS "$(crypt_options_missing $id)"
+            db_input critical $templ
+            db_go || true
+            exit 0
+        fi
+    done
+done
+
+if [ -z $crypt ]; then
+    db_fset partman-crypto/nothing_to_setup seen false
+    db_input critical partman-crypto/nothing_to_setup
+    db_go || true
+    exit 0
+fi
+
+# this comes from partman-lvm
+confirm_changes () {
+    local dev x part partitions num id size type fs path name filesystem partitems items
+    # Compute the changes we are going to do
+    partitems=''
+    items=''
+    for dev in $DEVICES/*; do
+	[ -d "$dev" ] || continue
+	cd $dev
+
+	open_dialog IS_CHANGED
+	read_line x
+	close_dialog
+	if [ "$x" = yes ]; then
+	    partitems="${partitems}   $(humandev $(cat device))
+"
+	fi
+
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+	    [ "$fs" != free ] || continue
+	    partitions="$partitions $id,$num"
+	done
+	close_dialog
+	
+	for part in $partitions; do
+	    id=${part%,*}
+	    num=${part#*,}
+            [ -f $id/method -a -f $id/format \
+                -a -f $id/visual_filesystem ] || continue
+            [ -f $id/filesystem -o ! -f $id/formatted \
+                -o $id/formatted -ot $id/method ] || continue
+            [ ! -f $id/filesystem -o ! -f $id/formatted \
+                -o $id/formatted -ot $id/method \
+                -o $id/formatted -ot $id/filesystem ] || continue
+	    filesystem=$(cat $id/visual_filesystem)
+	    db_subst partman/text/confirm_item TYPE "$filesystem"
+	    db_subst partman/text/confirm_item PARTITION "$num"
+	    db_subst partman/text/confirm_item DEVICE $(humandev $(cat device))
+	    db_metaget partman/text/confirm_item description
+	    
+	    items="${items}   ${RET}
+"
+	done
+    done
+
+    if [ "$items" ]; then
+	db_metaget partman/text/confirm_item_header description
+	items="$RET
+$items"
+    fi
+    
+    if [ "$partitems" ]; then
+	db_metaget partman/text/confirm_partitem_header description
+	partitems="$RET
+$partitems"
+    fi
+    
+    if [ "$partitems$items" ]; then
+	if [ -z "$items" ]; then
+	    x="$partitems"
+	elif [ -z "$partitems" ]; then
+	    x="$items"
+	else
+	    x="$partitems
+$items"
+	fi
+	db_subst partman-crypto/confirm ITEMS "$x"
+	db_input critical partman-crypto/confirm
+	db_go || true
+	db_get partman-crypto/confirm
+	if [ "$RET" = false ]; then
+	    db_reset partman-crypto/confirm
+	    return 1
+	else
+	    db_reset partman-crypto/confirm
+	    return 0
+	fi
+    else
+	db_input critical partman-crypto/confirm_nochanges
+	db_go || true
+	db_get partman-crypto/confirm_nochanges
+	if [ "$RET" = false ]; then
+	    db_reset partman-crypto/confirm_nochanges
+	    return 1
+	else
+	    db_reset partman-crypto/confirm_nochanges
+	    return 0
+	fi
+    fi
+}
+
+confirm_changes || exit 0
+
+# Commit the changes
+
+for s in /lib/partman/commit.d/*; do
+    if [ -x $s ]; then
+	$s || {
+	    db_input high partman-crypto/commit_failed || true
+	    db_go || true
+	    for s in /lib/partman/init.d/*; do
+		if [ -x $s ]; then
+		    $s || exit 255
+		fi
+	    done
+	    exit 0
+	}
+    fi
+done
+
+keyfile_name () {
+    local file
+    file=$(mapdevfs $1 | tr / _)
+    echo ${file#_}.gpg
+}
+
+create_keyfile () {
+    local dev file
+    dev=$1
+    file=$2
+
+    test -x /bin/blockdev-keygen || return 1
+    /bin/blockdev-keygen "$(humandev $dev)" "$file" || return 2
+    return 0
+}
+
+# Create keys
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$num,$path"
+    done
+    close_dialog
+    
+    for part in $partitions; do
+	set -- $(IFS=, && echo $part)
+	id=$1
+	num=$2
+	path=$3
+
+        [ -f $id/method ] || continue
+        [ -f $id/crypt_type ] || continue
+        [ -f $id/cipher ] || continue
+        [ -f $id/keytype ] || continue
+
+	keytype=$(cat $id/keytype)
+
+	if [ $keytype = keyfile ]; then
+            keyfile=$id/$(keyfile_name $path)
+
+            if [ ! -f $keyfile ]; then
+                create_keyfile $path $keyfile
+                if [ $? -ne 0 ]; then
+                    db_fset partman-crypto/commit_failed seen false
+                    db_input critical partman-crypto/commit_failed
+                    db_go || true
+		    failed=1
+		    break
+                fi
+            fi
+
+	    echo $keyfile > $id/keyfile
+        fi
+    done
+done
+
+if [ $failed ]; then
+    exit 1
+fi
+
+# Restart partman.
+
+open_infifo
+write_line "QUIT"
+close_infifo
+
+rm /var/run/parted_server.pid
+
+initcount=`ls /lib/partman/init.d/* | wc -l`
+db_progress START 0 $initcount partman/progress/init/title
+for s in /lib/partman/init.d/*; do
+    if [ -x $s ]; then
+	base=$(basename $s | sed 's/[0-9]*//')
+	if ! db_progress INFO partman/progress/init/$base; then
+	    db_progress INFO partman/progress/init/fallback
+	fi
+	if ! $s; then
+	    db_progress STOP
+	    exit 255
+	fi
+    fi
+    db_progress STEP 1
+done
+db_progress STOP

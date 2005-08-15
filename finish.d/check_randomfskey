@@ -1,0 +1,69 @@
+#!/bin/sh
+
+# Make sure the user knows about risk of using "random" keytype 
+# for non-swap and non-/tmp partitions.
+
+. /lib/partman/definitions.sh
+
+exec 2>/tmp/randomkey_nonswap
+set -x
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$path"
+    done
+    close_dialog
+    
+    # "is crypto?"
+    [ -f crypt_realdev ] || continue
+
+    for part in $partitions; do
+        id=${part%,*}
+        path=${part#*,}
+ 
+        [ -f $id/method ] || continue
+        method=$(cat $id/method)
+        [ $method = crypto ] || continue
+ 
+        r=$(cat crypt_realdev)
+        set -- $(IFS=: && echo $r)
+        realdev=$1
+        realdevnum=$2
+        realdevdir=$3
+
+        [ -f $realdevdir/crypt_type ] || continue
+        [ -f $realdevdir/keytype ] || continue
+
+        type=$(cat $realdevdir/crypt_type)
+        keytype=$(cat $realdevdir/keytype)
+
+        # only loop-AES supports random keys (check?!)
+        [ "$type" = loop-AES ] || continue
+
+        if [ "$keytype" = random ] && [ -f $id/mountpoint ]; then
+            templ="partman-crypto/use_random_for_nonswap"
+            db_set $templ false
+            db_fset $templ seen false
+            db_subst $templ DEVICE $(humandev $realdev)
+            db_input critical $templ
+            db_go || abort=1
+            db_get $templ || RET=''
+
+            if [ "$RET" != true ]; then
+                # user doesn't want to force random keytype
+                abort=1
+            fi
+        fi
+    done
+done
+
+if [ $abort ]; then
+    exit 1
+fi
+
+# vim:set ts=4 sw=4 expandtab:

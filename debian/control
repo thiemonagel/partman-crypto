@@ -1,0 +1,14 @@
+Source: partman-crypto
+Section: debian-installer
+Priority: extra
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Max Vozeler <xam@debian.org>
+Build-Depends: debhelper (>= 4.2.0), po-debconf (>= 0.5.0)
+Standards-Version: 3.6.2
+
+Package: partman-crypto
+XC-Package-Type: udeb
+Architecture: all
+Depends: partman-base | partman, mount-aes-udeb
+Description: Add to partman support for loopback and dm-crypt crypto
+

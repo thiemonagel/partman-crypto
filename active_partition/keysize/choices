@@ -1,0 +1,43 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+
+set -e
+
+dev=$1
+id=$2
+part=$dev/$id
+
+cd $dev
+
+choice_keysize () {
+    if [ -f $part/keysize ]; then
+        keysize=$(cat $part/keysize)
+    else
+        db_metaget partman-basicfilesystems/text/no_mountpoint description
+        keysize="$RET" # "none"
+    fi
+
+    db_metaget partman-crypto/text/specify_keysize description
+    RET=$(stralign -25 "$RET")
+    printf "keysize\t%s%s\n" "$RET" "$keysize"
+}
+
+[ -f $part/method ] || exit 0
+[ -f $part/crypt_type ] || exit 0
+[ -f $part/cipher ] || exit 0
+
+method=$(cat $part/method)
+
+if [ "$method" = crypto ]; then
+    crypt_type=$(cat $part/crypt_type)
+    cipher=$(cat $part/cipher)
+
+	if [ "$crypt_type" != loop-AES ]; then
+        if [ -f /lib/partman/ciphers/$crypt_type/$cipher/keysize ]; then
+            choice_keysize
+        fi
+	fi
+fi
+
+# vim:set ts=4 sw=4 expandtab:

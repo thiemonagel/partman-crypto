@@ -1,0 +1,41 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+
+set -e
+
+dev=$1
+id=$2
+part=$dev/$id
+
+cd $dev
+
+choice_keytype () {
+    if [ -f $part/keytype ]; then
+        type=$(cat $part/keytype)
+        db_metaget partman-crypto/text/keytype/$type description
+        keytype="$RET"
+    else
+        db_metaget partman-basicfilesystems/text/no_mountpoint description
+        keytype="$RET" # "none"
+    fi
+
+    db_metaget partman-crypto/text/specify_keytype description
+    RET=$(stralign -25 "$RET")
+    printf "keytype\t%s%s\n" "$RET" "$keytype"
+}
+
+[ -f $part/method ] || exit 0
+[ -f $part/crypt_type ] || exit 0
+[ -f $part/cipher ] || exit 0
+
+method=$(cat $part/method)
+
+if [ "$method" = crypto ]; then
+    crypt_type=$(cat $part/crypt_type)
+    cipher=$(cat $part/cipher)
+
+    choice_keytype $crypt_type $cipher
+fi
+
+# vim:set ts=4 sw=4 expandtab:

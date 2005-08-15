@@ -1,0 +1,49 @@
+#!/bin/sh
+
+. /lib/partman/definitions.sh
+
+dev=$2
+id=$3
+part=$dev/$id
+
+cd $dev
+
+select_cipher () {
+    crypt_type=$1
+
+    ciphers=""
+    for cipher_dir in /lib/partman/ciphers/$crypt_type/*; do
+        desc=$(cat $cipher_dir/desc)
+        cipher=${cipher_dir##*/}
+        if [ "$ciphers" ]; then
+           ciphers="$ciphers, $cipher - $desc"
+        else
+           ciphers="$cipher - $desc"
+        fi
+    done
+
+    template="partman-crypto/cipher"
+    db_subst $template choices $ciphers
+    db_input critical $template || true
+    db_go || return
+    db_get $template
+    
+    if [ "$RET" = none ]; then
+        if [ -f $part/cipher ]; then
+            rm $part/cipher
+        fi
+        return
+    fi
+    
+    echo ${RET%% *} > $part/cipher
+}
+
+[ -f $part/method ] || exit 0
+[ -f $part/crypt_type ] || exit 0
+
+method=$(cat $part/method)
+if [ "$method" = crypto ]; then
+    type=$(cat $part/crypt_type)
+    select_cipher $type
+fi
+

@@ -1,0 +1,17 @@
+partman-crypto (3) unstable; urgency=low
+
+  * UNRELEASED 
+
+ -- Max Vozeler <xam@debian.org>  Mon, 15 Aug 2005 14:22:59 +0200
+
+partman-crypto (2) unstable; urgency=low
+
+  * Move to d-i SVN repo
+
+ -- Max Vozeler <xam@debian.org>  Mon, 15 Aug 2005 14:22:33 +0200
+
+partman-crypto (1) unstable; urgency=low
+
+  * First version (crypto-installer-0.1)
+
+ -- Max Vozeler <xam@debian.org>  Tue, 12 Jul 2005 03:20:14 +0200

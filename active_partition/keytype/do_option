@@ -1,0 +1,59 @@
+#!/bin/sh
+
+# TODO:
+# is keytype per cipher, or per crypt_type?
+# should we use a static mapping?
+
+. /lib/partman/definitions.sh
+
+dev=$2
+id=$3
+part=$dev/$id
+
+valid_keytypes () {
+    case $1 in
+        loop-AES)
+            echo keyfile random;;
+        dm-crypt)
+            echo passphrase;; # ??
+        dm-crypt-luks)
+            echo passphrase;; # ???
+    esac
+}
+
+select_keytype () {
+    crypt_type=$1
+    cipher=$2
+
+    choices=$(
+        for type in $(valid_keytypes $crypt_type); do
+            db_metaget partman-crypto/text/keytype/$type description
+            printf "%s\t%s\n" $type "$RET"
+        done
+    )
+
+    debconf_select critical partman-crypto/keytype "$choices"
+
+    if [ "$RET" = none ]; then
+        if [ -f $part/keytype ]; then
+            rm $part/keytype
+        fi
+        return
+    fi
+    
+    echo $RET > $part/keytype
+}
+
+[ -f $part/method ] || exit 0
+[ -f $part/crypt_type ] || exit 0
+[ -f $part/cipher ] || exit 0
+
+method=$(cat $part/method)
+cipher=$(cat $part/cipher)
+crypt_type=$(cat $part/crypt_type)
+
+if [ "$method" = crypto ]; then
+    select_keytype $crypt_type $cipher
+fi
+
+# vim:set ts=4 sw=4 expandtab:

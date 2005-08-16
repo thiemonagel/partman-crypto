@@ -27,10 +27,10 @@ if [ "$method" = crypto ]; then
     if [ -f $id/crypt_active ]; then
         RET=$(humandev $(cat $id/crypt_active))
     else
-	RET="not active" # TODO: translate
+        db_metaget partman-crypto/text/not_active description || RET=''
     fi
 
-    echo $RET >$id/visual_mountpoint
+    echo ${RET:-not active} >$id/visual_mountpoint
 
     # open_dialog CHANGE_FILE_SYSTEM $id linux-swap
     # close_dialog

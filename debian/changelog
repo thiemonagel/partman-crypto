@@ -1,8 +1,9 @@
-partman-crypto (3) unstable; urgency=low
+partman-crypto (3) UNRELEASED; urgency=low
 
-  * UNRELEASED 
+  [ Christian Perrier ]
+  * Rewrite templates to better fit D-I writing style
 
- -- Max Vozeler <xam@debian.org>  Mon, 15 Aug 2005 14:22:59 +0200
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Aug 2005 22:17:54 +0200
 
 partman-crypto (2) unstable; urgency=low
 

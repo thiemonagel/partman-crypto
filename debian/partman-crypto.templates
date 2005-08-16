@@ -8,7 +8,7 @@ _Description: crypto
 
 Template: partman-crypto/text/cryptdev_description
 Type: text
-_Description: ${CIPHER} ${KEYTYPE}
+Description: ${CIPHER} ${KEYTYPE}
 
 Template: partman-crypto/text/not_active
 Type: text
@@ -60,8 +60,8 @@ _Description: Configure encrypted volumes
 
 Template: partman-crypto/nothing_to_setup
 Type: note
-_Description: Nothing to do.
- You have not selected any partitions for encryption.
+_Description: No partitions to encrypt
+ No partitions have been selected for encryption.
 
 Template: partman-crypto/tools_missing
 Type: note
@@ -72,7 +72,7 @@ _Description: Required programs missing
 Template: partman-crypto/options_missing
 Type: error
 _Description: Required encryption options missing
- The encryption options for ${DEVICE} are incomplete. Please return to 
+ The encryption options for ${DEVICE} are incomplete. Please return to
  the partition menu and select all required options.
  .
  ${ITEMS}
@@ -80,11 +80,11 @@ _Description: Required encryption options missing
 Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure
- The kernel module package ${PACKAGE} could not be found or an error 
+ The kernel module package ${PACKAGE} could not be found or an error
  occured during installation.
  .
- There will likely be problems during boot when the systems tries to 
- setup encrypted partitions. You can still correct them by installing the 
+ There will likely be problems during boot when the systems tries to
+ setup encrypted partitions. You can still correct them by installing the
  required package later on.
 
 Template: partman-crypto/confirm
@@ -92,10 +92,10 @@ Type: boolean
 Default: false
 _Description: Write the changes to disks and configure encrypted volumes?
  Before encrypted volumes can be configured, the current
- partitioning scheme has to be written to disk.  These changes 
- cannot be undone. 
+ partitioning scheme has to be written to disk.  These changes
+ cannot be undone.
  .
- After encrypted volumes have been configured, no additional 
+ After encrypted volumes have been configured, no additional
  changes to the partitions in the discs containing encrypted volumes
  are allowed. Please decide if you are satisfied with the current
  partitioning scheme in these disks before continuing.
@@ -149,15 +149,15 @@ _Description: Random key
 
 Template: partman-crypto/unsafe_swap
 Type: error
-_Description: Unsafe swap space detected!
- Unsafe swap space has been detected!
+_Description: Unsafe swap space detected
+ An unsafe swap space has been detected.
  .
- This is fatal since sensitive data could be written out to disk
- unencrypted. This would allow someone with access to the disk to
+ This is a fatal error since sensitive data could be written out to
+ disk unencrypted. This would allow someone with access to the disk to
  recover parts of the encryption key or passphrase.
  .
  Please disable the swap space (eg. by running swapoff) or configure
- encrypted swap space and then run setup of encrypted volumes again. 
+ an encrypted swap space and then run setup of encrypted volumes again.
  This program will now abort.
 
 Template: partman-crypto/passphrase
@@ -165,12 +165,12 @@ Type: password
 _Description: Encryption passphrase:
  You need to choose a passphrase to encrypt ${DEVICE}.
  .
- The overall strength of the encryption depends strongly on this 
+ The overall strength of the encryption depends strongly on this
  passphrase, so you should take care to choose a passphrase that is
- not easy to guess. It should not be a word or sentence found in 
+ not easy to guess. It should not be a word or sentence found in
  dictionaries, or a phrase that could be easily associated with you.
  .
- A good passphrase will contain a mixture of letters, numbers and 
+ A good passphrase will contain a mixture of letters, numbers and
  punctuation. Passphrases are recommended to have a length of 20 or
  more characters.
 
@@ -196,19 +196,18 @@ Type: boolean
 Default: false
 _Description: Use weak passphrase?
  You entered a passphrase that consists of less than ${MINIMUM} characters,
- which is considered too weak. It is strongly recommended that you decline
- this questions and choose a stronger passphrase.
+ which is considered too weak. You should choose a stronger passphrase.
 
 Template: partman-crypto/need_more_entropy
 Type: string
 _Description: Enter random characters to continue
  The encryption key for ${DEVICE} is now being created. (${PROGRESS})
  .
- This process requires the system to have large amounts of collected 
- randomness ("entropy"), of which there is likely too little at this 
- stage of the installation. 
+ This process requires the system to have large amounts of collected
+ randomness ("entropy"), of which there is likely too little at this
+ stage of the installation.
  .
- You can help speed up the process by entering random data on the 
+ You can help speed up the process by entering random data on the
  keyboard to fill the randomness pool and continuing once in a while.
  This dialog will recur until enough keydata has been collected.
 
@@ -218,38 +217,38 @@ Type: string
 Template: partman-crypto/entropy-text
 Type: entropy-text
 _Description: Enter random characters
- The encryption key for ${DEVICE} is now being created. 
+ The encryption key for ${DEVICE} is now being created.
  .
- This process requires the system to have large amounts of collected 
- randomness ("entropy"), of which there is likely too little at this 
+ This process requires the system to have large amounts of collected
+ randomness ("entropy"), of which there is likely too little at this
  stage of the installation.
  .
- You can help speed up the process by entering random characters on 
+ You can help speed up the process by entering random characters on
  the keyboard, or just wait until enough keydata has been collected.
- (NOTE: this can take a long time) 
+ (NOTE: this can take a long time)
 
 Template: partman-crypto/keyfile-problem
 Type: error
 _Description: Keyfile creation failure
- An error occurred while creating the keyfile. 
+ An error occurred while creating the keyfile.
 
 Template: partman-crypto/crypto_root_unimplemented
 Type: error
 _Description: Encryption configuration failure
  You have selected the root filesystem to be stored on an encrypted
- partition. This has not been implemented and continuing now would 
+ partition. This feature is not available and continuing now would
  result in an installation that cannot be used.
  .
- Please go back and choose a non-encrypted partition for the root 
- filesystem. 
+ Please go back and choose a non-encrypted partition for the root
+ filesystem.
 
 Template: partman-crypto/use_random_for_nonswap
 Type: boolean
 Default: false
 _Description: Are you sure you want to use a random key?
- Warning: You have chosen a random key type for ${DEVICE} but told the 
+ You have chosen a random key type for ${DEVICE} but requested the
  partitioner to create a filesystem on it.
  .
  Using a random key type means that the partition data is going to
- be destroyed upon each reboot. This is usually a bad idea for 
- non-swap partitions.
+ be destroyed upon each reboot. This should only be used for
+ swap partitions.

@@ -1,15 +1,16 @@
 This is a quick overview of the components of partman-crypto.
 
 ------------------------------------------------------------------------
-Requisites:
- specifically for loop-AES support:
+Required packages:
+ 
+  loop-AES support:
    - loop-aes-$KVERS-udeb during first stage 
    - loop-aes-$KVERS before booting into second stage
    (These are from loop-aes-modules-i386 (upload pending))
    - gnupg-udeb (#321948)
-   - busybox-udeb with CONFIG_UUENCODE=y
+   - busybox-udeb with CONFIG_UUENCODE=y (#323436)
 
- specifically for others:
+  others:
    - cryptsetup-udeb (?)
    - 
 

@@ -9,6 +9,6 @@ Standards-Version: 3.6.2
 Package: partman-crypto
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-base | partman, mount-aes-udeb
+Depends: partman-base, mount-aes-udeb
 Description: Add to partman support for loopback and dm-crypt crypto
 

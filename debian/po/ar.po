@@ -106,14 +106,16 @@ msgstr "تهيئة الشبكة"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "لم يعثر على أية أجزاء"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "لم تحدّد حزمة نواة للتّثبيت."
 
 #. Type: note
 #. Description

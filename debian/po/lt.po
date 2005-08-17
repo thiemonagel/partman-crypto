@@ -110,14 +110,16 @@ msgstr "Laiko zonos konfigūravimas"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Nerasta disko skirsnių"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Nepasirinktas branduolio paketas diegimui."
 
 #. Type: note
 #. Description

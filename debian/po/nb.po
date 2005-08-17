@@ -116,14 +116,16 @@ msgstr "Sett opp tidssone"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Fant ingen partisjoner"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Det ble ikke angitt hvilken kjerne som skal installeres."
 
 #. Type: note
 #. Description

@@ -111,14 +111,16 @@ msgstr "Set opp nettverket"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Fann inga partisjonar"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Inga kjernepakke er valt for installasjon."
 
 #. Type: note
 #. Description

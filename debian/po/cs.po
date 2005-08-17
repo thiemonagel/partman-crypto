@@ -107,14 +107,16 @@ msgstr "Nastavit časové pásmo"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Nebyly nalezeny žádné oblasti"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "K instalaci není vybrán žádný balík s jádrem."
 
 #. Type: note
 #. Description

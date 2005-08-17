@@ -107,14 +107,16 @@ msgstr "Cyflunio'r rhwydwaith"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Ni chanfodwyd rhaniadau"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Does dim pecyn cnewyllyn wedi ei ddewis i'w sefydlu."
 
 #. Type: note
 #. Description

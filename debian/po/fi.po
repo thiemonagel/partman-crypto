@@ -111,14 +111,16 @@ msgstr "Tee verkkoasetukset"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Osioita ei löytynyt"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Ydinpakettia ei valittuna asennettavaksi."
 
 #. Type: note
 #. Description

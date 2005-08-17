@@ -130,14 +130,16 @@ msgstr "Configurar fuso horário"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Não foi encontrada nenhuma partição"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Não foi seleccionado nenhum pacote de kernel para a instalação."
 
 #. Type: note
 #. Description

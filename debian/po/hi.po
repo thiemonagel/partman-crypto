@@ -114,8 +114,9 @@ msgstr "नेटवर्क कॉन्फ़िगर करें"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "कोई पार्टीशन नहीं मिला"
 
 #. Type: note
 #. Description

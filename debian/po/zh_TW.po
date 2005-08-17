@@ -108,14 +108,16 @@ msgstr "網路設定"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "找不到磁碟分割區"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "未指定所要安裝的 Kernel 套件。"
 
 #. Type: note
 #. Description

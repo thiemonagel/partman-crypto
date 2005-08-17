@@ -108,14 +108,16 @@ msgstr "Podesi mrežu"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Particije nisu pronađene"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Kernel programski paket nije odabran za instaliranje."
 
 #. Type: note
 #. Description

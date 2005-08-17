@@ -113,14 +113,16 @@ msgstr "Конфигурирај временска зона"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Нема партиции најдено"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Не е одбран кернел пакет за инсталација."
 
 #. Type: note
 #. Description

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-16 22:43+0200\n"
-"PO-Revision-Date: 2005-08-16 19:19+0200\n"
+"PO-Revision-Date: 2005-08-16 22:30+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,109 +27,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "volume physique pour LVM"
+msgstr "volume physique pour le chiffrement"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "inactive"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Type de chiffrement :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Point de montage pour cette partition :"
+msgstr "Type de chiffrement pour cette partition :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Chiffrement :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Point de montage pour cette partition :"
+msgstr "Chiffrement pour cette partition :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Taille de la clé"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Système de fichiers de cette partition :"
+msgstr "Taille de la clé pour cette partition :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Clé de chiffrement :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Système de fichiers de cette partition :"
+msgstr "Type de clé de chiffrement pour cette partition :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Configuration du tampon vidéo..."
+msgstr "Configuration du chiffrement..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Configurer le fuseau horaire"
+msgstr "Configurer le chiffrement"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Aucune partition trouvée"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Aucune partition n'a été choisie pour être chiffrée."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Programmes nécessaires manquants"
 
 #. Type: note
 #. Description
@@ -138,51 +134,62 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Cette version de l'installateur ne comporte pas certains des programmes "
+"indispensables pour que partman-crypt fonctionne correctement."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Options requises de chiffrement manquantes"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
+#, fuzzy
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Les options de chiffrement de ${DEVICE} ne sont pas complètes. Veuillez "
+"revenir au menu de partitionnement et choisir toutes les options requises."
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:82
+msgid "Encryption package installation failure"
+msgstr "L'installation du paquet de chiffrement a échoué"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:82
 #, fuzzy
-msgid "Encryption package installation failure"
-msgstr "L'installation d'elilo a échoué"
-
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:82
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occured "
 "during installation."
 msgstr ""
+"Le paquet de modules du noyau ${PACKAGE} n'a pas été trouvé ou une erreur "
+"s'est produite pendant son installation."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:82
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the systems tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Il est probable que des problèmes auront lieu au démarrage lorsque le "
+"système tentera d'utiliser les partitions chiffrées. Vous pourrez cependant "
+"les corriger plus tard en installation le paquet indispensable."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Écrire les modifications sur les disques et configurer LVM ?"
+msgstr ""
+"Écrire les modifications sur les disques et configurer les volumes chiffrés ?"
 
 #. Type: boolean
 #. Description
@@ -192,9 +199,9 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Avant que le gestionnaire de volumes logiques (LVM : « Logical Volume "
-"Manager ») puisse être configuré, le schéma actuel de partitionnement doit "
-"être appliqué aux disques. Ces changements seront irréversibles."
+"Avant que les volumes chiffrés puissent être configurés, le schéma actuel de "
+"partitionnement doit être appliqué aux disques. Ces changements seront "
+"irréversibles."
 
 #. Type: boolean
 #. Description
@@ -206,10 +213,10 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Une fois le gestionnaire de volumes logiques configuré, aucune modification "
-"ne peut être apportée aux tables de partitions des disques qui contiennent "
-"des volumes physiques. Avant de continuer, veuillez vous assurer que le "
-"schéma de partitionnement actuel de ces disques vous convient."
+"Une fois les volumes chiffrés configurés, aucune modification ne peut être "
+"apportée aux tables de partitions des disques qui les contiennent. Avant de "
+"continuer, veuillez vous assurer que le schéma de partitionnement actuel de "
+"ces disques vous convient."
 
 #. Type: boolean
 #. Description
@@ -220,112 +227,105 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:108
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Conserver cette organisation de partitions et configurer LVM ?"
+msgstr ""
+"Conserver cette organisation de partitions et configurer les volumes "
+"chiffrés ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:108
-#, fuzzy
 msgid ""
 "After the encrypted volumes after configured, no additional changes to the "
 "partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Une fois le gestionnaire de volumes logiques configuré, aucune modification "
-"ne peut être apportée aux tables de partitions des disques qui contiennent "
-"des volumes physiques. Avant de continuer, veuillez vous assurer que le "
-"schéma de partitionnement actuel de ces disques vous convient."
+"Une fois les volumes chiffrés configurés, aucune modification ne peut être "
+"apportée aux tables de partitions des disques qui les contiennent. Avant de "
+"continuer, veuillez vous assurer que le schéma de partitionnement actuel de "
+"ces disques vous convient."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Échec de la configuration de LVM"
+msgstr "Échec de la configuration des volumes chiffrés"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
 msgstr ""
-"Une erreur s'est produite lors de l'écriture des modifications sur les "
-"disques."
+"Une erreur s'est produite lors de la configuration des volumes chiffrés."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "La configuration des périphériques RAID a été interrompue."
+msgstr "La configuration a été interrompue."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "L'installation d'elilo a échoué"
+msgstr "L'initialisation du volume chiffré a échoué"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
-"Une erreur s'est produite lors de l'écriture des modifications sur les "
-"disques."
+msgstr "Une erreur s'est produite lors de la création des volumes chiffrés."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:128
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Bouclage (« loopback », loop%s)"
+msgstr "Bouclage (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:132
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:136
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:140
 msgid "Passphrase"
-msgstr ""
+msgstr "Phrase secrète"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:144
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Fichier de clé (GnuPG"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:148
 msgid "Random key"
-msgstr ""
+msgstr "Clé aléatoire"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
+#, fuzzy
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Espace d'échange non chiffré"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
+#, fuzzy
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Un espace d'échange non chiffré a été détecté."
 
 #. Type: error
 #. Description

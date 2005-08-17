@@ -110,14 +110,16 @@ msgstr "Indstil tidszone"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Fandt ingen partitioner"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Der er ikke valgt en kernepakke at installere."
 
 #. Type: note
 #. Description

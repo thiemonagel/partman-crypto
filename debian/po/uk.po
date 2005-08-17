@@ -112,14 +112,16 @@ msgstr "Налаштувати часовий пояс"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Розділи не знайдені"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Жоден пакунок з ядром не був вибраний для встановлення."
 
 #. Type: note
 #. Description

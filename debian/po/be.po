@@ -113,8 +113,9 @@ msgstr "Канфігураваць сетку"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Не"
 
 #. Type: note
 #. Description

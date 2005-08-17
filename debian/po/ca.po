@@ -109,14 +109,16 @@ msgstr "Configura la zona horària"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "No s'ha trobat cap partició"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "No hi ha cap paquet de nucli seleccionat per la seua instal·lació."
 
 #. Type: note
 #. Description

@@ -107,14 +107,16 @@ msgstr "Nastavenie siete"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Neboli nájdené žiadne oblasti"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Na inštaláciu nie je vybraný žiaden balík s jadrom."
 
 #. Type: note
 #. Description

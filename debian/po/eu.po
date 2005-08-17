@@ -113,14 +113,16 @@ msgstr "Konfiguratu ordu zonaldea"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Ez da partiziorik aurkitu"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Ez da nukleo-paketerik hautatu instalatzeko."
 
 #. Type: note
 #. Description

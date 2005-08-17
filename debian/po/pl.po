@@ -108,14 +108,16 @@ msgstr "Konfiguruj strefê czasow±"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Nie znaleziono partycji"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Nie wybrano ¿adnego pakietu j±dra do instalacji."
 
 #. Type: note
 #. Description

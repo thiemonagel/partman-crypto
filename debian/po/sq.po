@@ -112,14 +112,16 @@ msgstr "Konfiguro rrjetin"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Nuk u gjet asnjë ndarje"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Nuk është zgjedhur asnjë paket kerneli për instalimin."
 
 #. Type: note
 #. Description

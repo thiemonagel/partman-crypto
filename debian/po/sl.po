@@ -116,14 +116,16 @@ msgstr "Nastavi omrežje"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Nisem našel nobenih razdelkov"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Za namestitev niste izbrali nobenega paketa z jedrom."
 
 #. Type: note
 #. Description

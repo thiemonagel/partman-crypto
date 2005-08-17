@@ -109,14 +109,16 @@ msgstr "Konfigurēt tīklu"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Ext2 tipa partīcijas nav atrastas"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Neviena Linux kodola paka nav izvēlēta instalēšanai"
 
 #. Type: note
 #. Description

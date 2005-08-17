@@ -118,14 +118,16 @@ msgstr "Seadista võrk"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Ühtki partitsiooni ei leitud"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Paigaldamiseks pole valitud ühtki tuumapaketti"
 
 #. Type: note
 #. Description

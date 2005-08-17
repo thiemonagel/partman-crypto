@@ -109,14 +109,16 @@ msgstr "הגדרות רשת"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "לא נמצאו מחיצות"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "אף חבילת קרנל נבחרה להתקנה"
 
 #. Type: note
 #. Description

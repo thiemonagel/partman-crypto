@@ -107,14 +107,16 @@ msgstr "时区设置"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "没有找到分区"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "没有选择要安装的内核软件包。"
 
 #. Type: note
 #. Description

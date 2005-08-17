@@ -114,14 +114,16 @@ msgstr "Tefeo ny rezo"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Tsy nahita fizarana"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Tsy misy pakajy na kernel voafidy izay hapetraka."
 
 #. Type: note
 #. Description

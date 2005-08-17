@@ -107,14 +107,16 @@ msgstr "時間帯の設定"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "パーティションが見つかりません"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "インストール用のカーネルパッケージが選択されていません。"
 
 #. Type: note
 #. Description

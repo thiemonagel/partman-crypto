@@ -115,14 +115,16 @@ msgstr "Ağı yapılandır"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Herhangi bir bölüm bulunamadı"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Kurmak için herhangi bir çekirdek paketi seçilmedi."
 
 #. Type: note
 #. Description

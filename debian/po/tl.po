@@ -115,14 +115,16 @@ msgstr "Isaayos ang network"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Walang partisyon na nahanap."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Walang pakete ng kernel na napili para sa pagluklok."
 
 #. Type: note
 #. Description

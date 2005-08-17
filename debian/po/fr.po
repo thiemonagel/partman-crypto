@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-16 22:43+0200\n"
-"PO-Revision-Date: 2005-08-16 22:30+0200\n"
+"PO-Revision-Date: 2005-08-17 17:09+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "inactive"
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr "Type de chiffrement :"
+msgstr "Type de chiffrement :"
 
 #. Type: select
 #. Description
@@ -63,7 +63,7 @@ msgstr "Type de chiffrement pour cette partition :"
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr "Chiffrement :"
+msgstr "Chiffrement :"
 
 #. Type: select
 #. Description
@@ -87,7 +87,7 @@ msgstr "Taille de la clé pour cette partition :"
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr "Clé de chiffrement :"
+msgstr "Clé de chiffrement :"
 
 #. Type: select
 #. Description
@@ -110,14 +110,12 @@ msgstr "Configurer le chiffrement"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Aucune partition trouvée"
+msgstr "Aucune partition à chiffrer"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
 msgstr "Aucune partition n'a été choisie pour être chiffrée."
 
@@ -146,7 +144,6 @@ msgstr "Options requises de chiffrement manquantes"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
-#, fuzzy
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -163,7 +160,6 @@ msgstr "L'installation du paquet de chiffrement a échoué"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:82
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occured "
 "during installation."
@@ -174,7 +170,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:82
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the systems tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -194,7 +189,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -206,7 +200,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
@@ -316,14 +309,12 @@ msgstr "Clé aléatoire"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid "Unsafe swap space detected"
-msgstr "Espace d'échange non chiffré"
+msgstr "Espace d'échange non chiffré détecté"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid "An unsafe swap space has been detected."
 msgstr "Un espace d'échange non chiffré a été détecté."
 
@@ -335,6 +326,10 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Cette erreur est fatale car des données sensibles peuvent avoir été écrites "
+"en clair sur le disque. Cela pourrait permettre à une personne disposant de "
+"l'accès physique au disque de pouvoir récupérer tout ou partie de la clé de "
+"chiffrement ou de la phrase secrète."
 
 #. Type: error
 #. Description
@@ -344,35 +339,36 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Veuillez désactiver l'espace d'échange (p. ex. avec la commande « swapoff ») "
+"ou configurer un espace d'échange chiffré, puis recommencer la configuration "
+"des volumes chiffrés. Ce programme va maintenant être interrompu."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Phrase secrète de chiffrement :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr ""
+"Vous devez choisir une phrase secrète pour le chiffrement de ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Vous devez établir un mot de passe pour l'accès à distance au programme "
-"d'installation Debian. Un utilisateur malintentionné ou peu expérimenté qui "
-"aurait accès au programme d'installation peut provoquer des désastres. En "
-"conséquence, ce mot de passe ne doit pas être facile à deviner et ne devrait "
-"pas correspondre à un mot du dictionnaire, ou un mot pouvant vous être "
-"facilement associé (par exemple votre deuxième prénom). "
+"La robustesse du chiffrement dépend fortement de cette phrase secrète. Vous "
+"devez donc en choisir une qui ne doit pas être facile à deviner. Elle ne "
+"devrait pas correspondre à un mot ou une phrase provenant d'un dictionnaire, "
+"ou une phrase pouvant vous être facilement associée."
 
 #. Type: password
 #. Description
@@ -382,44 +378,44 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Une bonne phrase secrète doit être une combinaison de lettres, chiffres et "
+"signes de ponctuation. Elle devrait comporter au minimum 20 caractères."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:179
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Confirmation de la phrase secrète :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Veuillez entrer à nouveau le mot de passe d'installation, afin de vérifier "
-"que votre saisie est correcte."
+"Veuillez entrer à nouveau la phrase secrète, afin de vérifier que votre "
+"saisie est correcte."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Erreur de saisie de la phrase secrète"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Les deux mots de passe indiqués ne correspondent pas. Veuillez choisir à "
-"nouveau un mot de passe."
+"Les deux phrases indiquées ne correspondent pas. Veuillez choisir à nouveau "
+"une phrase secrète."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:190
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Phrase secrète vide"
 
 #. Type: note
 #. Description
@@ -428,12 +424,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Vous avez entré une phrase secrète vide, ce qui n'est pas autorisé. Veuillez "
+"choisir une phrase secrète qui ne soit pas vide."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Faut-il vraiment utiliser une phrase secrète peu robuste ?"
 
 #. Type: boolean
 #. Description
@@ -442,19 +440,22 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Vous avez entré une phrase secrète de moins de ${MINIMUM} caractères, ce qui "
+"n'est pas assez robuste. Vous devriez choisir une phrase secrète plus "
+"robuste."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Taper Entrée pour continuer]"
+msgstr "Tapez des caractères aléatoires pour continuer"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:203
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
 msgstr ""
+"La clé de chiffrement pour ${DEVICE} est en cours de création (${PROGRESS})."
 
 #. Type: string
 #. Description
@@ -464,18 +465,22 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Vous pouvez accélérer ce processus en saisissant des données aléatoires au "
+"clavier pour améliorer son caractère aléatoire et poursuivre ensuite. Cette "
+"boîte de dialogue restera ouverte tant que les données aléatoires seront en "
+"nombre insuffisant."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:219
 msgid "Enter random characters"
-msgstr ""
+msgstr "Tapez des caractères aléatoires"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:219
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "La clé de chiffrement pour ${DEVICE} est en cours de création."
 
 #. Type: entropy-text
 #. Description
@@ -485,6 +490,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Ce processus a besoin d'un grand nombre de données aléatoires (« entropie ») "
+"et n'en possède pas encore assez pour continuer."
 
 #. Type: entropy-text
 #. Description
@@ -494,29 +501,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Vous pouvez l'accélérer en tapant des caractères aléatoires au clavier ou "
+"simplement attendre que suffisamment de données aient été collectées (ce qui "
+"peut prendre un temps notable)."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Échec du redimensionnement"
+msgstr "Échec de la création du fichier de clé"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr ""
-"Une erreur s'est produite lors de l'écriture des modifications sur les "
-"disques."
+msgstr "Une erreur s'est produite lors de la création du fichier de clé."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:237
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Échec de la configuration de LVM"
+msgstr "Échec de la configuration du chiffrement"
 
 #. Type: error
 #. Description
@@ -526,6 +531,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Vous avez choisi de placer le système de fichiers racine sur une partition "
+"chiffrée. Cette fonctionnalité n'est pas disponible et conduirait à une "
+"installation inutilisable."
 
 #. Type: error
 #. Description
@@ -533,13 +541,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Veuillez revenir en arrière et choisir une partition non chiffrée pour le "
+"système de fichiers racine."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:248
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Voulez-vous vraiment quitter maintenant ?"
+msgstr "Voulez-vous vraiment utiliser une clé aléatoire ?"
 
 #. Type: boolean
 #. Description
@@ -548,6 +557,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Vous avez choisi d'utiliser une clé aléatoire pour ${DEVICE} mais vous avez "
+"demandé à l'outil de partitionnement d'y créer un système de fichiers."
 
 #. Type: boolean
 #. Description
@@ -556,3 +567,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"L'utilisation d'une clé de chiffrement aléatoire implique que les données de "
+"la partition sont détruites à chaque redémarrage. Cette fonctionnalité "
+"devrait être réservée aux espaces d'échange (« swap »)."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-16 22:43+0200\n"
-"PO-Revision-Date: 2005-08-01 20:01-0300\n"
+"PO-Revision-Date: 2005-08-18 19:43-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,107 +22,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "volume físico para LVM"
+msgstr "volume físico a ser encriptado"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "não ativo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Tipo de encriptação :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Ponto de montagem para esta partição :"
+msgstr "Tipo de encriptação para esta partição :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Encriptação :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Ponto de montagem para esta partição :"
+msgstr "Encriptação para esta partição :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Tamanho da chave :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Sistema de arquivos para esta partição :"
+msgstr "Tamanho da chave para esta partição :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Chave de encriptação :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Sistema de arquivos para esta partição :"
+msgstr "Tipo de chave de encriptação para esta partição :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Configurando frame buffer..."
+msgstr "Configurando encriptação ..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Configurar fuso horário"
+msgstr "Configurar volumes encriptados"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Nenhuma partição encontrada"
+msgstr "Nenhuma partição a ser encriptada"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Nenhum pacote de kernel foi selecionado para instalação."
+msgstr "Nenhuma partição foi selecionada para encriptação."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Programas necessários faltando"
 
 #. Type: note
 #. Description
@@ -131,12 +122,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Esta construção do debian-installer não inclui um ou mais programas "
+"necessários para que o partman-crypto funcione corretamente."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Opções de encriptação necessárias faltando"
 
 #. Type: error
 #. Description
@@ -145,13 +138,14 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"As opções de encriptação para ${DEVICE} estão incompletas. Por favor, "
+"retorne ao menu de particionamento e selecione todas as opções necessárias."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:82
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "A instalação do ELILO falhou"
+msgstr "Falha na instalação de pacote de encriptação"
 
 #. Type: error
 #. Description
@@ -160,6 +154,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occured "
 "during installation."
 msgstr ""
+"O pacote de módulo de kernel ${PACKAGE} não pôde ser encontrado ou um erro "
+"ocorreu durante a instalação."
 
 #. Type: error
 #. Description
@@ -169,40 +165,40 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Provavelmente ocorrerão problemas durante a inicialização quando o sistema "
+"tentar configurar partições encriptadas. Você ainda poderá corrigí-los "
+"instalando o pacote necessário posteriormente."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Gravar as mudanças nos discos e configurar LVM ?"
+msgstr "Gravar as mudanças nos discos e configurar volumes encriptados ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Antes que o Gerenciador de Volumes Lógicos possa ser configurado, o esquema "
-"de particionamento atual precisa ser gravado em disco. Essas mudanças não "
+"Antes que os volumes encriptados possam ser configurados, o esquema de "
+"particionamento atual precisa ser gravado em disco. Essas mudanças não "
 "poderão ser desfeitas."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Depois que o Gerenciador de Volumes Lógicos for configurado, nenhuma mudança "
-"adicional nos disco que contém os volumes físicos será permitida. Por favor, "
-"decida se você está satisfeito com o esquema de particionamento atual nesses "
-"discos antes de continuar."
+"Depois que os volumes encriptados forem configurado, nenhuma mudança "
+"adicional nos disco que contém os volumes encriptados será permitida. Por "
+"favor, decida se você está satisfeito com o esquema de particionamento atual "
+"nesses discos antes de continuar."
 
 #. Type: boolean
 #. Description
@@ -213,107 +209,103 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:108
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Manter o layout de particionamento atual e configurar LVM ?"
+msgstr ""
+"Manter o layout de particionamento atual e configurar volumes encriptados ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:108
-#, fuzzy
 msgid ""
 "After the encrypted volumes after configured, no additional changes to the "
 "partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Depois que o Gerenciador de Volumes Lógicos for configurado, nenhuma mudança "
-"adicional nos disco que contém os volumes físicos será permitida. Por favor, "
-"decida se você está satisfeito com o esquema de particionamento atual nesses "
-"discos antes de continuar."
+"Depois que os volumes encriptados forem configurados, nenhuma mudança "
+"adicional nos disco que contém os volumes encriptados será permitida. Por "
+"favor, decida se você está satisfeito com o esquema de particionamento atual "
+"nesses discos antes de continuar."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Configuração LVM falhou"
+msgstr "Falha na configuração de volumes encriptados"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Um erro ocorreu durante a gravação das mudanças nos discos."
+msgstr ""
+"Um erro ocorreu durante a gravação das mudanças nos volumes encriptados."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "A configuração RAID foi abortada."
+msgstr "A configuração foi abortada."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "A instalação do ELILO falhou"
+msgstr "A inicialização do volume encriptado falhou"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Um erro ocorreu durante a gravação das mudanças nos discos."
+msgstr ""
+"Um erro ocorreu durante a gravação das mudanças nos volumes encriptados."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:128
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:132
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:136
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:140
 msgid "Passphrase"
-msgstr ""
+msgstr "Passphrase"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:144
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Arquivo de chave (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:148
 msgid "Random key"
-msgstr ""
+msgstr "Chave aleatória"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Espaço de troca inseguro detectado"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:152
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Um espaço de troca inseguro foi detectado."
 
 #. Type: error
 #. Description
@@ -323,6 +315,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Esse é um erro fatal, uma vez que dados sensíveis podem ser gravados no "
+"disco não encriptados. Isso poderia permitir a alguém com acesso ao disco "
+"recuperar partes da chave de encriptação ou da passphrase."
 
 #. Type: error
 #. Description
@@ -332,35 +327,35 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Por favor, desabilite o espaço de troca (por exemplo, executando swapoff) ou "
+"configure um espaço de troca encriptado e então execute a configuração dos "
+"volumes encriptados novamente. Esse programa irá agora abortar."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Passphrase de encriptação :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Você precisa escolher uma passphrase para encriptar ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:165
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Você precisa definir uma senha para acesso remoto ao instalador Debian. Um "
-"usuário malicioso ou não qualificado com acesso ao instalador pode gerar "
-"resultados desastroso, portanto você deverá se certificar de escolher uma "
-"senha que não seja fácil de ser adivinhada. A senha não deverá ser uma "
-"palavra encontrada em dicionário ou uma palavra que possa ser facilmente "
-"associada a você, como o seu nome do meio, por exemplo."
+"A força geral da encriptação depende fortemente dessa passphrase, portanto "
+"você deve se certificar de escolher uma passphrase que não seja fácil de ser "
+"adivinhada. A mesma não deverá ser uma palavra ou uma sentença encontrada em "
+"dicionários ou mesmo uma frase que possa ser facilmente associada a você."
 
 #. Type: password
 #. Description
@@ -370,44 +365,45 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Uma boa passphrase contém uma mistura de letras, números e pontuação. É "
+"recomendado que passphrases tenham um tamanho igual ou superior a 20 "
+"caracteres."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:179
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Informa a passphrase novamente para verificação :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Por favor, informe a senha para instalação remota novamente para se "
-"certificar que você tenha digitado a mesma corretamente."
+"Por favor, informe a passphrase novamente para verificar se você a digitou "
+"corretamente."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Erro na informação da passphrase"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"As duas senhas que você informou não são iguais. Por favor, informe uma "
-"senha novamente."
+"As duas passphrases que você informou não são iguais. Por favor, tente "
+"novamente."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:190
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Passphrase vazia"
 
 #. Type: note
 #. Description
@@ -416,12 +412,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Você informou uma passphrase vazia, o que não é permitido. Por favor, "
+"escolha uma passphrase não vazia."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Utilizar passphrase fraca ?"
 
 #. Type: boolean
 #. Description
@@ -430,19 +428,22 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Você informou uma passphrase que consiste de menos do que ${MINIMUM} "
+"caracteres, o que é considerado muito fraco. Você deveria escolher uma "
+"passphrase mais forte."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Pressione enter para continuar]"
+msgstr "Informe caracteres aleatórios para continuar"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:203
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
 msgstr ""
+"A chave de encriptação para ${DEVICE} está agora sendo criada. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -452,18 +453,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Você pode ajudar a acelerar o processo digitando dados aleatórios no teclado "
+"para preencher o pool de aleatoriedade. Este diálogo irá retornar até que "
+"dados o bastante sejam coletados."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:219
 msgid "Enter random characters"
-msgstr ""
+msgstr "Informe caracteres aleatórios"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:219
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "A chave de encriptação para ${DEVICE} está agora sendo criada."
 
 #. Type: entropy-text
 #. Description
@@ -473,6 +477,9 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Este processo requer que o sistema possua grande quantidade de aleatoriedade "
+"coletada (\"entropia\"), dos quais existem poucos neste estágio da "
+"instalação."
 
 #. Type: entropy-text
 #. Description
@@ -482,27 +489,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Você pode ajudar a acelerar o processo digitando caracteres aleatórios no "
+"teclado ou simplesmente esperar até que dados o bastante sejam coletados. "
+"(NOTA : isto pode demorar)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Falha na operação de redimensionamento"
+msgstr "Falha na criação do arquivo de chave"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Um erro ocorreu durante a gravação das mudanças nos discos."
+msgstr "Um erro ocorreu durante a criação do arquivo de chave."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:237
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Configuração LVM falhou"
+msgstr "Falha na configuração da encriptação"
 
 #. Type: error
 #. Description
@@ -512,6 +519,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Você selecionou o sistema de arquivos raíz para ser armazenado em uma "
+"partição encriptada. Esse recurso não está disponível e continuar a "
+"instalação resultaria em uma instalação que não poderia ser utilizada."
 
 #. Type: error
 #. Description
@@ -519,13 +529,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Por favor, volte e escolha uma partição não encriptada para o sistema de "
+"arquivos raíz."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:248
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Você têm certeza que deseja sair agora ?"
+msgstr "Você têm certeza que deseja utilizar uma chave aleatória ?"
 
 #. Type: boolean
 #. Description
@@ -534,6 +545,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Você selecionou um tipo de chave aleatória para ${DEVICE} mas requisitou ao "
+"particionador criar um sistema de arquivos neste dispositivo."
 
 #. Type: boolean
 #. Description
@@ -542,3 +555,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Utilizar um tipo de chave aleatória significa que os dados da partição serão "
+"destruídos a cada reinicialização. Esse tipo de chave deveria ser utilizado "
+"para para partições de troca (swap)."

@@ -65,7 +65,8 @@ crypt_options_missing () {
         [ -f $1/$opt ] && continue
         db_metaget partman-crypto/text/specify_$opt description || RET="$opt:"
         desc=$RET
-        value="missing" # TODO: translate
+        db_metaget partman-crypto/text/missing description || RET="missing"
+        value=$RET
         if [ "$list" ]; then
             list="$list
 $desc $value"

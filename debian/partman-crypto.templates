@@ -77,6 +77,10 @@ _Description: Required encryption options missing
  .
  ${ITEMS}
 
+Template: partman-crypto/text/missing
+Type: text
+_Description: missing
+
 Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure

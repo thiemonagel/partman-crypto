@@ -3,11 +3,4 @@ partman-crypto (1) UNRELEASED; urgency=low
   [ Max Vozeler ]
   * First version
 
-  [ Christian Perrier ]
-  * Rewrite templates to better fit D-I writing style
-
-  [ Frans Pop ]
-  * Fix typo and error in templates
-  * Clean up changelog
-
  -- Frans Pop <fjp@debian.org>  Sun, 21 Aug 2005 19:41:40 +0200

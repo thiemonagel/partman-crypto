@@ -3,7 +3,10 @@ partman-crypto (3) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Rewrite templates to better fit D-I writing style
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 16 Aug 2005 22:17:54 +0200
+  [ Frans Pop ]
+  * Fix typo and error in templates
+
+ -- Frans Pop <fjp@debian.org>  Sun, 21 Aug 2005 19:20:35 +0200
 
 partman-crypto (2) unstable; urgency=low
 

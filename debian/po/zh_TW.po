@@ -10,7 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-08-19 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-21 19:17+0200\n"
 "PO-Revision-Date: 2005-04-19 07:06+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -164,7 +164,7 @@ msgstr "ELILO 的安裝作業失敗了"
 #. Description
 #: ../partman-crypto.templates:86
 msgid ""
-"The kernel module package ${PACKAGE} could not be found or an error occured "
+"The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
 
@@ -227,8 +227,8 @@ msgstr "是否保留目前的磁碟配置並設定 LVM？"
 #: ../partman-crypto.templates:112
 #, fuzzy
 msgid ""
-"After the encrypted volumes after configured, no additional changes to the "
-"partitions in the disks containing encrypted volumes are allowed. Please "
+"After the encrypted volumes have been configured, no additional changes to "
+"the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
@@ -540,3 +540,14 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "After the encrypted volumes after configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "一旦 Logical Volume Manager 設定完成，就不能再對磁碟中包含了 Physical "
+#~ "Volume 的分割區進行任何其它的變更了。因此，在繼續之前請確認您是否已滿意於"
+#~ "目前這些磁碟所採取的分割方式。"

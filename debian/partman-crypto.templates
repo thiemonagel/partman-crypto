@@ -85,7 +85,7 @@ Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure
  The kernel module package ${PACKAGE} could not be found or an error
- occured during installation.
+ occurred during installation.
  .
  There will likely be problems during boot when the systems tries to
  setup encrypted partitions. You can still correct them by installing the
@@ -110,7 +110,7 @@ Template: partman-crypto/confirm_nochanges
 Type: boolean
 Default: false
 _Description: Keep current partition layout and configure encrypted volumes?
- After the encrypted volumes after configured, no additional changes
+ After the encrypted volumes have been configured, no additional changes
  to the partitions in the disks containing encrypted volumes are
  allowed. Please decide if you are satisfied with the current
  partitioning scheme in these disks before continuing.

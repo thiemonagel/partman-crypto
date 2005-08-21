@@ -14,14 +14,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-08-19 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-21 19:17+0200\n"
 "PO-Revision-Date: 2005-04-06 17:27+0300\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -167,7 +167,7 @@ msgstr "ELILO:n asennus epäonnistui"
 #. Description
 #: ../partman-crypto.templates:86
 msgid ""
-"The kernel module package ${PACKAGE} could not be found or an error occured "
+"The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
 
@@ -230,8 +230,8 @@ msgstr "Säilytä nykyiset levyosiot ja tee LVM:n asetukset?"
 #: ../partman-crypto.templates:112
 #, fuzzy
 msgid ""
-"After the encrypted volumes after configured, no additional changes to the "
-"partitions in the disks containing encrypted volumes are allowed. Please "
+"After the encrypted volumes have been configured, no additional changes to "
+"the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
@@ -547,3 +547,15 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "After the encrypted volumes after configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Kun levyniteiden hallintaohjelman asetukset on tehty, ei ole enää "
+#~ "mahdollista tehdä lisämuutoksia niille levyille, joissa fyysiset "
+#~ "levyniteet sijaitsevat. Varmista, että nyt tehdyt levyosiot ovat "
+#~ "sellaiset kuin haluat."

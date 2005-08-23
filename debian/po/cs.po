@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-17 21:20+0200\n"
+"PO-Revision-Date: 2005-08-19 11:40+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -156,7 +156,6 @@ msgstr "Chyba při instalaci šifrovacího balíku"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -220,7 +219,6 @@ msgstr "Ponechat stávající rozložení oblastí a nastavit šifrované svazky
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -554,13 +552,3 @@ msgstr ""
 "Použití náhodného klíče znamená, že se data na dané oblasti při každém "
 "restartu zničí, a proto by se tato možnost měla používat pouze pro odkládací "
 "prostor."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Po nastavení šifrovaných svazků již nebudete moci zasahovat do oblastí "
-#~ "ležících na stejných discích, jako šifrované svazky. Ujistěte se, že jste "
-#~ "s nynějším rozdělením těchto disků spokojeni."

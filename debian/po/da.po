@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-18 12:41+0200\n"
+"PO-Revision-Date: 2005-08-20 20:30+0200\n"
 "Last-Translator: Claus Hindsgaul <claus_h@image.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -159,7 +159,6 @@ msgstr "Fejl under installation af krypteringspakke"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -223,7 +222,6 @@ msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -231,7 +229,7 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Når de krypterede bind er sat op, er det ikke tilladt at ændre partitionerne "
-"på de diske, der indeholder krypterede bind. Vær sikker på at du er tilfreds "
+"på de diske, der indeholde krypterede  bind. Vær sikker på at du er tilfreds "
 "med det aktuelle partitionslayout på disse diske, inden du fortsætter."
 
 #. Type: error
@@ -554,14 +552,3 @@ msgid ""
 msgstr ""
 "Hvis du benytter en en tilfældig-nøgletype, vil partitionens data blive "
 "ødelagt ved hver genstart. Den bør kun benyttes til swap-partitioner."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Når de krypterede bind er sat op, er det ikke tilladt at ændre "
-#~ "partitionerne på de diske, der indeholde krypterede  bind. Vær sikker på "
-#~ "at du er tilfreds med det aktuelle partitionslayout på disse diske, inden "
-#~ "du fortsætter."

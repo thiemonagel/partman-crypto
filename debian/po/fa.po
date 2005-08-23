@@ -536,13 +536,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "بعد از اینکه مدیر فضای منطقی پیکربندی شد، هیچ تغییری نمیتوان در جدول "
-#~ "پارتیشن داد. آیا از شرایط فعلی جدول پارتیشن رضایت دارید؟"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-18 19:43-0300\n"
+"PO-Revision-Date: 2005-08-20 15:20-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -156,7 +156,6 @@ msgstr "Falha na instalação de pacote de encriptação"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -223,14 +222,13 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Depois que os volumes encriptados forem configurado, nenhuma mudança "
+"Depois que os volumes encriptados forem configurados, nenhuma mudança "
 "adicional nos disco que contém os volumes encriptados será permitida. Por "
 "favor, decida se você está satisfeito com o esquema de particionamento atual "
 "nesses discos antes de continuar."
@@ -566,14 +564,3 @@ msgstr ""
 "Utilizar um tipo de chave aleatória significa que os dados da partição serão "
 "destruídos a cada reinicialização. Esse tipo de chave deveria ser utilizado "
 "para para partições de troca (swap)."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Depois que os volumes encriptados forem configurados, nenhuma mudança "
-#~ "adicional nos disco que contém os volumes encriptados será permitida. Por "
-#~ "favor, decida se você está satisfeito com o esquema de particionamento "
-#~ "atual nesses discos antes de continuar."

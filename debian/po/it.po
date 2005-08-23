@@ -170,7 +170,6 @@ msgstr "L'installazione del pacchetto per la cifratura è fallita"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -235,7 +234,6 @@ msgstr "Mantenere l'attuale partizionamento e configurare i volumi cifrati?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -244,7 +242,7 @@ msgid ""
 msgstr ""
 "Dopo la configurazione dei volumi cifrati non si possono più modificare le "
 "partizioni dei dischi che contengono volumi cifrati. Decidere se l'attuale "
-"schema di partizionamento soddisfa le proprie esigenze prima di proseguire."
+"partizionamento soddisfa le proprie esigenze prima di proseguire."
 
 #. Type: error
 #. Description
@@ -577,14 +575,3 @@ msgstr ""
 "Usare una chiave di tipo casuale significa che i dati della partizione "
 "saranno distrutti a ogni riavvio. Questo dovrebbe essere usato solo per "
 "partizioni di swap."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Dopo la configurazione dei volumi cifrati non si possono più modificare "
-#~ "le partizioni dei dischi che contengono volumi cifrati. Decidere se "
-#~ "l'attuale partizionamento soddisfa le proprie esigenze prima di "
-#~ "proseguire."

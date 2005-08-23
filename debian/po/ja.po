@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-18 08:49+0900\n"
+"PO-Revision-Date: 2005-08-21 10:54+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -156,7 +156,6 @@ msgstr "暗号化パッケージのインストールに失敗しました"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -221,7 +220,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -554,13 +552,3 @@ msgid ""
 msgstr ""
 "乱数鍵形式の利用は、パーティションのデータを再起動のたびに破壊するということ"
 "を意味します。これは、スワップパーティションでのみ使われるべきものです。"
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "暗号化ボリュームが設定されると、暗号化ボリュームを含むディスクのパーティ"
-#~ "ションへの追加の変更はできません。続ける前に、これらのディスクの現在のパー"
-#~ "ティショニング機構が満足のいくものかどうか確認してください。"

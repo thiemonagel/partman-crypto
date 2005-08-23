@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-18 07:55+0200\n"
+"PO-Revision-Date: 2005-08-23 10:48+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr "Clé de chiffrement :"
 #. Description
 #: ../partman-crypto.templates:51
 msgid "Type of encryption key for this partition:"
-msgstr "Type de clé de chiffrement pour cette partition :"
+msgstr "Type de la clé de chiffrement pour cette partition :"
 
 #. Type: text
 #. Description
@@ -105,7 +105,7 @@ msgstr "Configuration du chiffrement..."
 #. Description
 #: ../partman-crypto.templates:59
 msgid "Configure encrypted volumes"
-msgstr "Configurer le chiffrement"
+msgstr "Configurer les volumes chiffrés"
 
 #. Type: note
 #. Description
@@ -132,8 +132,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
-"Cette version de l'installateur ne comporte pas certains des programmes "
-"indispensables pour que partman-crypt fonctionne correctement."
+"Il manque à cette version de l'installateur certains programmes "
+"indispensables au bon fonctionnement de partman-crypt."
 
 #. Type: error
 #. Description
@@ -149,7 +149,8 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "Les options de chiffrement de ${DEVICE} ne sont pas complètes. Veuillez "
-"revenir au menu de partitionnement et choisir toutes les options requises."
+"revenir au menu de partitionnement et sélectionner toutes les options "
+"requises."
 
 #. Type: text
 #. Description
@@ -166,12 +167,11 @@ msgstr "L'installation du paquet de chiffrement a échoué"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
-"Le paquet de modules du noyau ${PACKAGE} n'a pas été trouvé ou une erreur "
+"Le paquet des modules du noyau ${PACKAGE} n'a pas été trouvé ou une erreur "
 "s'est produite pendant son installation."
 
 #. Type: error
@@ -229,13 +229,12 @@ msgstr "${ITEMS}"
 #: ../partman-crypto.templates:112
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Conserver cette organisation de partitions et configurer les volumes "
+"Conserver cette organisation des partitions et configurer les volumes "
 "chiffrés ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -387,7 +386,7 @@ msgid ""
 "characters."
 msgstr ""
 "Une bonne phrase secrète doit être une combinaison de lettres, chiffres et "
-"signes de ponctuation. Elle devrait comporter au minimum 20 caractères."
+"signes de ponctuation. Elle doit comporter au minimum 20 caractères."
 
 #. Type: password
 #. Description
@@ -439,7 +438,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:201
 msgid "Use weak passphrase?"
-msgstr "Faut-il vraiment utiliser une phrase secrète peu robuste ?"
+msgstr "Faut-il vraiment utiliser une phrase secrète si faible ?"
 
 #. Type: boolean
 #. Description
@@ -474,9 +473,8 @@ msgid ""
 "recur until enough keydata has been collected."
 msgstr ""
 "Vous pouvez accélérer ce processus en saisissant des données aléatoires au "
-"clavier pour améliorer son caractère aléatoire et poursuivre ensuite. Cette "
-"boîte de dialogue restera ouverte tant que les données aléatoires seront en "
-"nombre insuffisant."
+"clavier : cela collecte l'entropie nécessaire. Cette boîte de dialogue "
+"restera ouverte tant que les données aléatoires seront en nombre insuffisant."
 
 #. Type: entropy-text
 #. Description
@@ -511,7 +509,7 @@ msgid ""
 msgstr ""
 "Vous pouvez l'accélérer en tapant des caractères aléatoires au clavier ou "
 "simplement attendre que suffisamment de données aient été collectées (ce qui "
-"peut prendre un temps notable)."
+"peut prendre du temps)."
 
 #. Type: error
 #. Description
@@ -577,15 +575,4 @@ msgid ""
 msgstr ""
 "L'utilisation d'une clé de chiffrement aléatoire implique que les données de "
 "la partition seront détruites à chaque redémarrage. Cette fonctionnalité "
-"devrait être réservée aux espaces d'échange (« swap »)."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Une fois les volumes chiffrés configurés, aucune modification ne peut "
-#~ "être apportée aux tables de partitions des disques qui les contiennent. "
-#~ "Avant de continuer, veuillez vous assurer que le schéma de "
-#~ "partitionnement actuel de ces disques vous convient."
+"doit être réservée aux espaces d'échange (« swap »)."

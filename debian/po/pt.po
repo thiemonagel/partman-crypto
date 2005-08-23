@@ -180,7 +180,6 @@ msgstr "Falha da  instalação de pacote de encriptação"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -246,16 +245,15 @@ msgstr "Manter o esquema de partições actual e configurar volumes encriptados?
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:112
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Após os volumes encriptados terem sido configurados, não será permitida "
+"Após terem sido configurados os volumes encriptados, não será permitida "
 "nenhuma alteração adicional nas partições dos discos que contêm os volumes "
-"encriptados. Por favor decida se está satisfeito com o actual esquema de "
+"encriptados. Por favor decida se está satisfeito com o esquema actual de "
 "particionamento nesses discos antes de continuar."
 
 #. Type: error
@@ -585,14 +583,3 @@ msgid ""
 msgstr ""
 "Utilizar um tipo de chave aleatória significa que os dados da partição vão "
 "ser destruídos a cada reboot. Isto só deve ser utilizado para partições swap."
-
-#~ msgid ""
-#~ "After the encrypted volumes after configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Após terem sido configurados os volumes encriptados, não será permitida "
-#~ "nenhuma alteração adicional nas partições dos discos que contêm os "
-#~ "volumes encriptados. Por favor decida se está satisfeito com o esquema "
-#~ "actual de particionamento nesses discos antes de continuar."

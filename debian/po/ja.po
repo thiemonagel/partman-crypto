@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-21 10:54+0900\n"
+"PO-Revision-Date: 2005-08-23 22:32+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -145,7 +145,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:82
 msgid "missing"
-msgstr ""
+msgstr "見つかりません"
 
 #. Type: error
 #. Description

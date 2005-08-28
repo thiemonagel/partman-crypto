@@ -15,120 +15,110 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-09 20:49+0200\n"
-"Last-Translator: \n"
-"Language-Team:  <eu@li.org>\n"
+"PO-Revision-Date: 2005-08-28 00:24+0200\n"
+"Last-Translator:  Piarres Beobide <pi@beobide.net>\n"
+"Language-Team:  librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "LVMn bolumen fisikoa"
+msgstr "Enkriptatzeko bolumen fisikoa"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "kriptografia"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "ez gaiturik"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Enkriptazio mota:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Partizio honetarako muntatze-puntua:"
+msgstr "Partizio honetarako enkriptazio mota:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Enkriptazioa:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Partizio honetarako muntatze-puntua:"
+msgstr "Partizio honetarako enkripzio mota:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Gako tamaina:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Partizio honetarako fitxategi-sistema:"
+msgstr "Partizio honetarako gako tamaina:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Enkriptazio gakoa:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Partizio honetarako fitxategi-sistema:"
+msgstr "Partizio honetarako enkriptazio gako mota:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Marko-bufferra konfiguratzen..."
+msgstr "Enkriptazioa konfiguratzen..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Konfiguratu ordu zonaldea"
+msgstr "Enkriptaturiko bolumenak konfiguratu"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Ez da partiziorik aurkitu"
+msgstr "Ez da enkriptatzeko partiziorik aurkitu"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Ez da nukleo-paketerik hautatu instalatzeko."
+msgstr "Ez da partiziorik hautatu enkriptatzeko."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Beharrazko programak falta dira"
 
 #. Type: note
 #. Description
@@ -142,7 +132,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Beharrezji eknriptazio aukerak falta dira"
 
 #. Type: error
 #. Description
@@ -156,14 +146,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:82
 msgid "missing"
-msgstr ""
+msgstr "falta da"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:86
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Ezin izan da ELILO instalatu"
+msgstr "Ezin izan da enkriptazio paketea instalatu"
 
 #. Type: error
 #. Description
@@ -185,9 +174,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Aldaketak diskoan idaztea eta LVM konfiguratzea nahi duzu?"
+msgstr "Aldaketak diskan idatzi eta enkriptaturiko bolumenak konfiguratu?"
 
 #. Type: boolean
 #. Description
@@ -245,68 +233,62 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:120
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Ezin izan da LVM konfiguratu"
+msgstr "Ezin izan da enkriptaturiko bolumena konfiguratu"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:120
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Errorea gertatu da aldaketak diskoetan idaztean."
+msgstr "Errorea gertatu da enkriptaturiko bolumenak konfiguratzerakoan."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:120
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "RAIDen konfigurazioa abortatu egin da."
+msgstr "Konfigurazioa utzi egin da."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Ezin izan da ELILO instalatu"
+msgstr "Ezin izan da enkriptaturiko bolumena instalatu"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Errorea gertatu da aldaketak diskoetan idaztean."
+msgstr "Errorea gertatu da enkriptaturiko bolumenak ezartzerakoan."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:132
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop%s)"
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:136
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:140
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:144
 msgid "Passphrase"
-msgstr ""
+msgstr "P"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:148
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "GakoFitxategia (GnuPG)"
 
 #. Type: text
 #. Description
@@ -318,7 +300,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Seguratusn gabeko swap lekua aurkitu da"
 
 #. Type: error
 #. Description
@@ -348,7 +330,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Enkriptazio pasahitza:"
 
 #. Type: password
 #. Description
@@ -385,7 +367,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:183
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Berriz sartu pasahitza egiaztapenerako:"
 
 #. Type: password
 #. Description
@@ -402,7 +384,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:189
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Pasahitz errorea"
 
 #. Type: note
 #. Description
@@ -415,7 +397,7 @@ msgstr "Sartutako bi pasahitzak ez dira berdinak. Sartu pasahitza berriro."
 #. Description
 #: ../partman-crypto.templates:194
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Pasahitz zuria"
 
 #. Type: note
 #. Description
@@ -450,7 +432,7 @@ msgstr "(Jarraitzeko, sakatu Sartu)"
 #. Description
 #: ../partman-crypto.templates:207
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "${DEVICE} gailuaren enkriptazio gakoa orain sortuko da. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -471,7 +453,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:223
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "${DEVICE} gailuaren enkriptazio gakoa orain sortuko da."
 
 #. Type: entropy-text
 #. Description
@@ -494,16 +476,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:236
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Ezin izan da tamainaz aldatu"
+msgstr "Gako fitxategia sortzerakoan huts"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:236
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Errorea gertatu da aldaketak diskoetan idaztean."
+msgstr "Errore bat gertatu da gako fitxategi sortzerakoan.."
 
 #. Type: error
 #. Description
@@ -527,6 +507,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Mesedez atzera jo eta enkriptazio gabeko partizio bat aukeratu erro "
+"fitxategi sistemarentzat."
 
 #. Type: boolean
 #. Description

@@ -30,12 +30,13 @@
 # 30-07-2005 - Miguel Figueiredo <elmig@debianpt.org> - 6f18u
 # 14-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 7f14u
 # 18-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 35f42u
+# 31-08-2005 - Miguel Figueiredo <elmig@debianpt.org> - 8f3u
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-08-21 19:17+0200\n"
-"PO-Revision-Date: 2005-08-14 11:31+0000\n"
+"PO-Revision-Date: 2005-08-31 19:21+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -169,7 +170,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:82
 msgid "missing"
-msgstr ""
+msgstr "em falta"
 
 #. Type: error
 #. Description

@@ -198,6 +198,9 @@ _Description: Empty passphrase
 Template: partman-crypto/weak_passphrase
 Type: boolean
 Default: false
+# Translators: we unfortunately cannot use plural forms here
+# So, you are suggested to use the plural form adapted for
+# MINIMUM=8, which is the current hardcoded value
 _Description: Use weak passphrase?
  You entered a passphrase that consists of less than ${MINIMUM} characters,
  which is considered too weak. You should choose a stronger passphrase.

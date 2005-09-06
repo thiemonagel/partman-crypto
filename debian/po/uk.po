@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "POT-Creation-Date: 2005-09-03 18:35-0600\n"
-"PO-Revision-Date: 2005-08-22 13:14+0300\n"
+"PO-Revision-Date: 2005-09-05 20:21+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -268,19 +268,19 @@ msgstr "Виникла помилка під час активації заши�
 #. Description
 #: ../partman-crypto.templates:132
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:136
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:140
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
@@ -456,13 +456,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:226
 msgid "Enter random characters"
-msgstr ""
+msgstr "Введіть випадкові символи"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:226
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Зараз створюється ключ шифрування для ${DEVICE}"
 
 #. Type: entropy-text
 #. Description

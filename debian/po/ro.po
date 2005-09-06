@@ -454,9 +454,9 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Aţi introdus o parolă-frază care are mai puţin de ${MINIMUM} (de) caractere, "
-"de aceea este considerată prea slabă. Ar trebui să alegeţi o parolă-frază "
-"mai puternică."
+"Aţi introdus o parolă-frază care are mai puţin de ${MINIMUM} caractere, de "
+"aceea este considerată prea slabă. Ar trebui să alegeţi o parolă-frază mai "
+"puternică."
 
 #. Type: string
 #. Description

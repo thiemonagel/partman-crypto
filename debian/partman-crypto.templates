@@ -79,6 +79,9 @@ _Description: Required encryption options missing
 
 Template: partman-crypto/text/missing
 Type: text
+# Translators: this string is used to assemble a string of the format
+# "$specify_option: $missing". If this proves to be a problem in your 
+# language, please contact the maintainer and we can do it differently.
 _Description: missing
 
 Template: partman-crypto/module_package_missing

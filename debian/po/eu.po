@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-10 00:04+0200\n"
+"PO-Revision-Date: 2005-09-13 23:01+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -128,6 +128,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Debian instalatzailearen bertsio honek ez du partman-crypt behar bezala "
+"funtzionatzeko programa bat edo gehiago."
 
 #. Type: error
 #. Description
@@ -142,6 +144,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"${DEVICE}-ren enkriptazio aukerak ez daude osaturik. Mesedez itzuli partizio "
+"menura eta hautatu beharrezko aukera guztiak"
 
 #. Type: text
 #. Description
@@ -165,6 +169,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"${PACKAGE} nukleo modulo paketea ezin da aurkitu edo errore bat gertatu da "
+"instalatzerakoan."
 
 #. Type: error
 #. Description
@@ -318,6 +324,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"HAu errore konponezin bat da informazio pribatua enkriptaturiko diskatik "
+"kanpora idatzi daitezke eta. Honek diskara sarrera duen norbaiti enkriptazio "
+"pasahitza edo honen zati bat eskuratzeko aukeram emango dio."
 
 #. Type: error
 #. Description
@@ -327,6 +336,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Mesedez ezgaitu swap lekua (adibidez swapoff abiaraziaz) edo enkriptaturiko "
+"swap leku bat konfiguratu eta orduan berriz ezarri enkriptaturiko bolumenak "
+"berriz. Programa hau orain itxi egingo da."
 
 #. Type: password
 #. Description
@@ -507,6 +519,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea auekratu "
+"duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
+"instalazioa erabil ezin geratzea eragin lezake."
 
 #. Type: error
 #. Description
@@ -538,3 +553,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Ausazko gako bat erabiltzea partizio datuak berrabiarazte bakoitzean "
+"ezabatzea eragingo du. Hau swap partizioan bakarrik erabili beharko zen."

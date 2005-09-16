@@ -16,13 +16,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-07-14 13:43EEST\n"
+"PO-Revision-Date: 2005-09-15 21:29EEST\n"
 "Last-Translator: Greek Translation Team <debian-l10n-greek@lists.debian."
 "org>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"org>\n"
 "org>\n"
 "org>\n"
 "org>\n"
@@ -34,94 +35,86 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "φυσικός τόμος για το LVM"
+msgstr "φυσικός τόμος για κρυπτογράφηση"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "κρυπτογράφηση"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "μή ενεργή"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Είδος κρυπτογράφησης:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Σημείο προσάρτησης για αυτό το τμήμα:"
+msgstr "Είδος κρυπτογράφησης για αυτό το τμήμα:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Κρυπτογράφηση:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Σημείο προσάρτησης για αυτό το τμήμα:"
+msgstr "Κρυπτογράφηση για αυτό το τμήμα:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Μέγεθος κλειδιού:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Σύστημα αρχείων για αυτό το τμήμα:"
+msgstr "Μέγεθος κλειδιού για αυτό το τμήμα:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Κλειδί κρυπτογράφησης:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Σύστημα αρχείων για αυτό το τμήμα:"
+msgstr "Είδος κλειδιού κρυπτογράφησης για αυτό το τμήμα:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Ρύθμιση πλαισίου μνήμης (framebuffer)..."
+msgstr "Ρύθμιση κρυπτογράφησης..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Ρύθμιση των παραμέτρων του δικτύου"
+msgstr "Ρύθμιση κρυπτογραφημένων τόμων"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Δε βρέθηκαν τμήματα"
+msgstr "Δε θα γίνει κρυπτογραφηση τμημάτων"
 
 #. Type: note
 #. Description

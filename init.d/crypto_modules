@@ -1,9 +1,23 @@
-#!/bin/sh
+#!/bin/sh -e
 
-# This modprobe requires that # kernel loop.o has not already been loaded
-# as there no rmmod included in busybox-udeb. 
-modprobe loop-aes || true
+modules=/var/run/partman-crypto/modules
+test -d $modules || mkdir -p $modules
 
-# TODO
-# add modules required for dm-crypt, and dm-crypt-luks
+load_module () {
+    if modprobe -q $1; then
+        touch $modules/$1
+    else
+        rm -f $modules/$1
+    fi
+ }
+ 
+# loop-AES module (includes AES)
+load_module loop-aes
+
+# These are optional ciphers for loop-AES
+load_module loop_serpent
+load_module loop_twofish
+load_module loop_blowfish
+
+# TODO: add modules required for dm-crypt, and dm-crypt-luks
 

@@ -2,5 +2,6 @@ partman-crypto (1) UNRELEASED; urgency=low
 
   [ Max Vozeler ]
   * First version
+  * Only show ciphers for which modules are available 
 
- -- Frans Pop <fjp@debian.org>  Sun, 21 Aug 2005 19:41:40 +0200
+ -- Max Vozeler <xam@debian.org>  Fri, 16 Sep 2005 14:20:19 +0200

@@ -8,17 +8,28 @@ part=$dev/$id
 
 cd $dev
 
+module_available () {
+    test -f /var/run/partman-crypto/modules/$1
+}
+
 select_cipher () {
     crypt_type=$1
 
     ciphers=""
     for cipher_dir in /lib/partman/ciphers/$crypt_type/*; do
+        if [ -f $cipher_dir/module ]; then
+            module=$(cat $cipher_dir/module)
+            if ! module_available $module; then
+                continue
+            fi
+        fi
+
+        name=${cipher_dir##*/}
         desc=$(cat $cipher_dir/desc)
-        cipher=${cipher_dir##*/}
         if [ "$ciphers" ]; then
-           ciphers="$ciphers, $cipher - $desc"
+            ciphers="$ciphers, $name - $desc"
         else
-           ciphers="$cipher - $desc"
+            ciphers="$name - $desc"
         fi
     done
 

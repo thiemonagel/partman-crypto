@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-13 23:01+0200\n"
+"PO-Revision-Date: 2005-09-17 12:56+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -324,7 +324,7 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"HAu errore konponezin bat da informazio pribatua enkriptaturiko diskatik "
+"Hau errore konponezin bat da informazio pribatua enkriptaturiko diskatik "
 "kanpora idatzi daitezke eta. Honek diskara sarrera duen norbaiti enkriptazio "
 "pasahitza edo honen zati bat eskuratzeko aukeram emango dio."
 
@@ -355,18 +355,15 @@ msgstr "${DEVICE} enkriptatzeko pasahitz bat aukeratu behar duzu."
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Debian instalatzailea urrunetik atzitzeko pasahitza behar duzu. "
-"Instalatzailerako atzipena duen erabiltzaile maltzur edo baimenik gabeko "
-"batek kalte larriak eragin ditzake, eta horregatik asmatzen erraza ez den "
-"pasahitza aukeratzea komeni da. Ez du hiztegiko hitza izan behar, ezta "
-"zurekin erraz lot daitekeena ere, adibidez, bigarren deitura."
+"Enkriptazioaren indarra pasahitz honen araberakoa da, eta horregatik "
+"asmatzen erraza ez den pasahitza aukeratzea komeni da. Ez du hiztegiko hitza "
+"izan behar, ezta  zurekin erraz lot daitekeena ere."
 
 #. Type: password
 #. Description
@@ -462,6 +459,9 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Zuk prozesua bizkortzen lagun dezakezu, tekaltuaren bidez ausazko datuak "
+"sartuaz ausazko hilara beteaz. Elkarrizketa hau berriz agertuko da behar "
+"aina datu jaso artean."
 
 #. Type: entropy-text
 #. Description
@@ -492,6 +492,9 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Zuk prozesua bizkortzen lagun dezakezu, tekaltuaren bidez ausazko datuak "
+"sartuaz ausazko hilara beteaz. (ABISUA: prozesu honek denbora luzea artu "
+"lezake)"
 
 #. Type: error
 #. Description
@@ -545,6 +548,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Zuk  ${DEVICE}-rentzat auzazko gako bat erabiltzea aukeratu duzu, baina "
+"partiziogileari bertan fitxategi sistema bat sortzeko eskatu diozu."
 
 #. Type: boolean
 #. Description

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-07-27 16:39+0200\n"
+"PO-Revision-Date: 2005-09-20 09:32+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -23,107 +23,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fizyczny wolumin dla LVM"
+msgstr "fizyczny wolumin do zaszyfrowania"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "szyfrowanie"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "nieaktywne"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Rodzaj szyfrowania:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Punkt montowania dla tej partycji:"
+msgstr "Rodzaj szyfrowania dla tej partycji:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Szyfrowanie:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Punkt montowania dla tej partycji:"
+msgstr "Szyfrowanie dla tej partycji:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Rozmiar klucza:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "System plików dla tej partycji:"
+msgstr "Rozmiar klucza dla tej partycji:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Klucz szyfruj±cy:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "System plików dla tej partycji:"
+msgstr "Rodzaj szyfrowania dla tej partycji:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Ustawianie bufora ramki..."
+msgstr "Szyfrowanie..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Konfiguruj strefê czasow±"
+msgstr "Konfiguruj zaszyfrowane woluminy"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Nie znaleziono partycji"
+msgstr "Brak partycji do szyfrowania"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Nie wybrano ¿adnego pakietu j±dra do instalacji."
+msgstr "Nie wybrano ¿adnej partycji do szyfrowania."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Brak wymaganych programów"
 
 #. Type: note
 #. Description
@@ -137,7 +128,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Brak wymaganych opcji szyfrowania"
 
 #. Type: error
 #. Description
@@ -154,7 +145,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "brak"
 
 #. Type: error
 #. Description
@@ -183,9 +174,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Zapisaæ zmiany do dysków i skonfigurowaæ LVM?"
+msgstr "Zapisaæ zmiany do dysków i skonfigurowaæ zaszyfrowane woluminy?"
 
 #. Type: boolean
 #. Description

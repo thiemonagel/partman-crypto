@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-07-19 15:00+0200\n"
+"PO-Revision-Date: 2005-09-20 13:08+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -22,107 +22,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fyzický zväzok pre LVM"
+msgstr "fyzický zväzok pre šifrovanie"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "šifrovaný"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "neaktívny"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Typ šifrovania:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Prípojný bod pre túto oblasť:"
+msgstr "Typ šifrovania pre túto oblasť:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Šifrovanie:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Prípojný bod pre túto oblasť:"
+msgstr "Šifrovanie pre túto oblasť:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Veľkosť kľúča:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Súborový systém pre túto oblasť:"
+msgstr "Veľkosť kľúča pre túto oblasť:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Šifrovací kľúč:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Súborový systém pre túto oblasť:"
+msgstr "Typ šifrovacieho kľúča pre túto oblasť:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Nastavujem frame buffer..."
+msgstr "Nastavuje sa šifrovanie..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Nastavenie siete"
+msgstr "Nastavenie šifrovaných zväzkov"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Neboli nájdené žiadne oblasti"
+msgstr "Žiadne oblasti na šifrovanie"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Na inštaláciu nie je vybraný žiaden balík s jadrom."
+msgstr "Na šifrovanie neboli zvolené žiadne oblasti."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Požadované programy chýbajú"
 
 #. Type: note
 #. Description
@@ -131,12 +122,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Táto verzia inštalačného programu neobsahuje jeden alebo viac programov, "
+"ktoré sú potrebné pre správnu funkčnosť partman-crypt."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Požadované šifrovacie voľby chýbajú"
 
 #. Type: error
 #. Description
@@ -145,6 +138,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Šifrovacie voľby pre ${DEVICE} nie sú úplné. Vráťte sa, prosím, do menu "
+"rozdeľovania a nastavte všetky požadované voľby."
 
 #. Type: text
 #. Description
@@ -153,14 +148,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "nenastavené"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Inštalácia ELILO zlyhala"
+msgstr "Inštalácia šifrovacieho balíka zlyhala"
 
 #. Type: error
 #. Description
@@ -169,6 +163,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"Pri inštalácii nastala chyba alebo sa nedal nájsť balík modulu jadra "
+"${PACKAGE}."
 
 #. Type: error
 #. Description
@@ -178,39 +174,38 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Pri štartovaní môžu nastať chyby, pretože systémy sa snažia nastaviť "
+"šifrované oblasti. Tieto chyby môžete neskôr odstrániť nainštalovaním "
+"požadovaných balíkov."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Zapísať zmeny na disky a nastaviť LVM?"
+msgstr "Zapísať zmeny na disky a nastaviť šifrované zväzky?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Pred nastavením správcu logických zväzkov (LVM) sa musí na disk uložiť "
-"aktuálna schéma rozdelenia. Tieto zmeny sú nevratné."
+"Pred nastavením šifrovaných zväzkov sa musí na disk uložiť aktuálna schéma "
+"rozdelenia. Tieto zmeny sú nevratné."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Po nastavení správcu logických zväzkov (LVM) už nie sú povolené žiadne "
-"ďalšie zmeny na oblastiach diskov obsahujúcich fyzické zväzky. Prosím, pre "
-"pokračovaním sa uistite, že ste spokojní s aktuálnym rozložením oblastí na "
-"týchto diskoch."
+"Po nastavení šifrovaných zväzkov už nie sú povolené žiadne ďalšie zmeny na "
+"oblastiach diskov obsahujúcich šifrované zväzky. Prosím, pred pokračovaním "
+"sa uistite, že ste spokojní s aktuálnym rozložením oblastí na týchto diskoch."
 
 #. Type: boolean
 #. Description
@@ -221,107 +216,99 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Ponechať súčasné rozdelenie oblastí a nastaviť LVM?"
+msgstr "Ponechať súčasné rozdelenie oblastí a nastaviť šifrované zväzky?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Po nastavení správcu logických zväzkov (LVM) už nie sú povolené žiadne "
-"ďalšie zmeny na oblastiach diskov obsahujúcich fyzické zväzky. Prosím, pre "
-"pokračovaním sa uistite, že ste spokojní s aktuálnym rozložením oblastí na "
-"týchto diskoch."
+"Po nastavení šifrovaných zväzkov už nie sú povolené žiadne ďalšie zmeny na "
+"oblastiach diskov obsahujúcich šifrované zväzky. Prosím, pred pokračovaním "
+"sa uistite, že ste spokojní s aktuálnym rozložením oblastí na týchto diskoch."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Chyba pri nastavení LVM"
+msgstr "Chyba pri nastavení šifrovaných diskov"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Pri zapisovaní zmien na disky došlo k chybe."
+msgstr "Pri nastavení šifrovaných diskov došlo k chybe."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Nastavenie RAID-u je prerušené."
+msgstr "Nastavenie je prerušené."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Inštalácia ELILO zlyhala"
+msgstr "Inicializácia šifrovaného zväzku zlyhala"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Pri zapisovaní zmien na disky došlo k chybe."
+msgstr "Pri nastavovaní šifrovaných zväzkov došlo k chybe."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:135
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:139
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:143
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Passphrase"
-msgstr ""
+msgstr "Heslo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Kľúč (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "Náhodný kľúč"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Nájdený nespoľahlivý odkladací (swap) priestor"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Bol nájdený nespoľahlivý odkladací (swap) priestor."
 
 #. Type: error
 #. Description
@@ -331,6 +318,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Toto je závažná chyba, pretože citlivé údaje sa môžu zapísať na nešifrovaný "
+"disk. Takisto to umožní niekomu s prístupom k disku znovu získať časti "
+"šifrovacieho kľúča alebo hesla."
 
 #. Type: error
 #. Description
@@ -340,34 +330,34 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Prosím, zablokujte odkladací (swap) priestor (napr. spustením swapoff) alebo "
+"vytvorte šifrovaný odkladací (swap) priestor a potom znova spusťte "
+"nastavenie šifrovaných zväzkov. Tento program sa teraz ukončí."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Šifrovacie heslo:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Zvoľte heslo na zašifrovanie ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Na vzdialený prístup k inštalačnému programu Debianu potrebujete nastaviť "
-"heslo. Zlomyseľný alebo neznalý používateľ s prístupom k inštalačnému "
-"systému môže spôsobiť neuveriteľné škody, takže by ste mali zvoliť také "
-"heslo, ktoré sa nedá ľahko uhádnuť. To znamená, že by to nemalo byť slovo zo "
-"slovníka, ani údaj, ktorý sa s vami dá ľahko spojiť (napr. meno)."
+"Celková sila šifrovania silno závisí na tomto hesle, takže by ste mali "
+"zvoliť také heslo, ktoré sa nedá ľahko uhádnuť. To znamená, že by to nemalo "
+"byť slovo zo slovníka, ani údaj, ktorý sa s vami dá ľahko spojiť."
 
 #. Type: password
 #. Description
@@ -377,42 +367,42 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Dobré heslo obsahuje zmes písmen, číslic a interpunkčných znamienok. "
+"Odporúča sa dĺžka hesla najmenej 20 znakov."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Znovu zadajte heslo:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Zadajte znova heslo na vzdialený prístup, aby ste sa presvedčili, že ste ho "
-"zadali správne."
+"Zadajte znova to isté heslo, aby ste sa presvedčili, že ste ho zadali "
+"správne."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Chyba pri zadávaní hesla"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Zadané heslá nie sú rovnaké. Zadajte, prosím, heslo znova."
+msgstr "Zadané dve heslá nie sú rovnaké. Prosím, skúste to ešte raz."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Prázdne heslo"
 
 #. Type: note
 #. Description
@@ -421,6 +411,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Zadali ste prázdne heslo, čo nie je dovolené. Prosím, zadajte platné heslo."
 
 #. Type: boolean
 #. Description
@@ -429,7 +420,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:207
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Použiť slabé heslo?"
 
 #. Type: boolean
 #. Description
@@ -438,19 +429,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Zadali ste heslo, ktoré má menej ako ${MINIMUM} znakov, čo znamená, že heslo "
+"je slabé. Mali by ste zadať silnejšie heslo."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Pre pokračovanie stlačte enter]"
+msgstr "Zadajte náhodné znaky, aby ste mohli pokračovať"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "Vytvára sa šifrovací kľúč pre ${DEVICE}. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -460,18 +452,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Tento proces môžete urýchliť zadaním náhodných údajov na klávesnici, čím "
+"pomôžete docieliť stav náhodnosti. Táto výzva sa bude opakovať, až kým "
+"nebude zozbieraný dostatočný počet náhodných údajov."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Enter random characters"
-msgstr ""
+msgstr "Zadajte náhodné znaky"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:229
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Vytvára sa šifrovací kľúč pre ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
@@ -481,6 +476,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Tento proces vyžaduje veľké množstvo náhodných údajov (\"entrópiu\"), ale v "
+"tejto fáze inštalácie je ich zatiaľ veľmi málo."
 
 #. Type: entropy-text
 #. Description
@@ -490,27 +487,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Tento proces môžete urýchliť zadaním náhodných údajov na klávesnici, alebo "
+"môžete počkať, kým sa nazbiera dostatočný počet náhodných údajov. "
+"(UPOZORNENIE: môže to trvať veľmi dlho)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Operácia zmeny veľkosti zlyhala"
+msgstr "Vytvorenie kľúča zlyhalo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Pri zapisovaní zmien na disky došlo k chybe."
+msgstr "Pri vytáraní kľúča došlo k chybe."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Chyba pri nastavení LVM"
+msgstr "Chyba pri nastavení šifrovania"
 
 #. Type: error
 #. Description
@@ -520,6 +517,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Zvolili ste si uloženie koreňového súborového systému na šifrovanú oblasť. "
+"Táto vlastnosť zatiaľ nie je dostupná, takže pri pokračovaní môže dôjsť k "
+"nepoužiteľnej inštalácii."
 
 #. Type: error
 #. Description
@@ -527,13 +527,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Prosím, vráťte sa späť a pre koreňový súborový systém zvoľte nešifrovanú "
+"oblasť."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:258
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Ste si istí, že to chcete ukončiť?"
+msgstr "Ste si istí, že chcete použiť náhodný kľúč?"
 
 #. Type: boolean
 #. Description
@@ -550,3 +551,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Použitie náhodného kľúča znamená zničenie údajov v danej oblasti po každom "
+"reštarte. Používať by sa to malo len pre odkladacie (swap) oblasti."

@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of eu.po to librezale.org
+# translation of eu.po to 
 # translation of eu.po to Euskara
 # Basque messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
@@ -15,21 +15,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-17 12:56+0200\n"
-"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: librezale.org <librezale@librezale.org>\n"
+"PO-Revision-Date: 2005-06-20 16:14+0200\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net> \n"
+"Language-Team:  librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: KBabel 1.10.2\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
 msgid "physical volume for encryption"
-msgstr "Enkriptatzeko bolumen fisikoa"
+msgstr "enkirptazioaren bolumen fisikoa"
 
 #. Type: text
 #. Description
@@ -53,7 +53,7 @@ msgstr "Enkriptazio mota:"
 #. Description
 #: ../partman-crypto.templates:24
 msgid "Encryption type for this partition:"
-msgstr "Partizio honetarako enkriptazio mota:"
+msgstr "Partizio honen enkriptazio-mota:"
 
 #. Type: text
 #. Description
@@ -65,19 +65,19 @@ msgstr "Enkriptazioa:"
 #. Description
 #: ../partman-crypto.templates:33
 msgid "Encryption for this partition:"
-msgstr "Partizio honetarako enkripzio mota:"
+msgstr "Partizio honen enkriptazioa:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr "Gako tamaina:"
+msgstr "Gako-tamaina:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
 msgid "Key size for this partition:"
-msgstr "Partizio honetarako gako tamaina:"
+msgstr "Partizio honen gako-tamaina:"
 
 #. Type: text
 #. Description
@@ -89,7 +89,7 @@ msgstr "Enkriptazio gakoa:"
 #. Description
 #: ../partman-crypto.templates:51
 msgid "Type of encryption key for this partition:"
-msgstr "Partizio honetarako enkriptazio gako mota:"
+msgstr "Partizio honen enkriptazioaren gako-mota:"
 
 #. Type: text
 #. Description
@@ -101,13 +101,13 @@ msgstr "Enkriptazioa konfiguratzen..."
 #. Description
 #: ../partman-crypto.templates:59
 msgid "Configure encrypted volumes"
-msgstr "Enkriptaturiko bolumenak konfiguratu"
+msgstr "Konfiguratu bolumen-enkriptatuak"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
 msgid "No partitions to encrypt"
-msgstr "Ez da enkriptatzeko partiziorik aurkitu"
+msgstr "Ez dago partiziorik enkriptatzeko"
 
 #. Type: note
 #. Description
@@ -160,7 +160,7 @@ msgstr "falta da"
 #. Description
 #: ../partman-crypto.templates:89
 msgid "Encryption package installation failure"
-msgstr "Ezin izan da enkriptazio paketea instalatu"
+msgstr "Enkriptazio-paketearen instalazioak huts egin du"
 
 #. Type: error
 #. Description
@@ -180,12 +180,15 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Arazoak egon daitezke abiatzean, sistemak partizio-enkriptatuak "
+"konfiguratzen saiatzean. Zuzentzeko beharrezko paketea geroago instala "
+"dezakezu."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Aldaketak diskan idatzi eta enkriptaturiko bolumenak konfiguratu?"
+msgstr "Aldaketak diskoan idatzi eta bolumen-enkriptatuak konfiguratu?"
 
 #. Type: boolean
 #. Description
@@ -194,8 +197,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Bolumen enkriptatuak konfiguratu baino lehen, uneko partizio-eskema idatzi "
-"behar da diskoan. Aldaketa horiek ezin dira desegin."
+"Uneko partizio-eskema diskoan idatzi behar da bolumen-enkriptatuak "
+"konfiguratu aurretik. Aldaketa horiek ezin dira desegin."
 
 #. Type: boolean
 #. Description
@@ -206,8 +209,8 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Bolumen enkriptatuak konfiguratu eta gero, bolumen enkripatuak dituen "
-"diskoetako partizioetan beste aldaketarik ezin da egin. Jarraitu aurretik "
+"Bolumen-enkriptatuak konfiguratu ondoren ezin dira partizioetan aldaketa "
+"gehiagorik egin bolumen-enkriptatuak dituen diskoan. Jarraitu aurretik "
 "erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
 
 #. Type: boolean
@@ -220,9 +223,7 @@ msgstr "${ITEMS}"
 #. Description
 #: ../partman-crypto.templates:115
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
-"Uneko partizio-eskema bere horretan uztea eta enkriptaturiko bolumenak "
-"konfiguratzea nahi duzu?"
+msgstr "Uneko partizio-diseinua mantendu eta bolumen-enkriptatuak konfiguratu?"
 
 #. Type: boolean
 #. Description
@@ -233,40 +234,39 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Enkriptaturiko bolumenak konfiguratu eta gero, enkriptaturiko bolumenak "
-"dituzten diskoetako partizioetan beste aldaketarik ezin da egin. Mesedez j "
-"arraitu aurretik erabaki gustura zauden disko hauetako uneko partizio-"
-"eskemarekin."
+"Bolumen-enkriptatuak konfiguratu ondoren, ezin dira partizioetan aldaketa "
+"gehiagorik egin bolumen-enkriptatuak dituen diskoan. Jarraitu aurretik "
+"erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
 msgid "Encrypted volumes configuration failure"
-msgstr "Ezin izan da enkriptaturiko bolumena konfiguratu"
+msgstr "Bolumen-enkriptatuen konfigurazioak huts egin du"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Errorea gertatu da enkriptaturiko bolumenak konfiguratzerakoan."
+msgstr "Errorea gertatu da bolumen-enkriptatuak konfiguratzean."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
 msgid "The configuration is aborted."
-msgstr "Konfigurazioa utzi egin da."
+msgstr "Konfigurazioa abortatu egin da."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Encrypted volume initialisation failed"
-msgstr "Ezin izan da enkriptaturiko bolumena instalatu"
+msgstr "Huts egin du bolumen-enkriptatuak hasieratzean"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Errorea gertatu da enkriptaturiko bolumenak ezartzerakoan."
+msgstr "Errorea gertatu da bolumen-enkriptatuak konfiguratzean."
 
 #. Type: text
 #. Description
@@ -290,13 +290,13 @@ msgstr "Device-mapper (LUKS)"
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Passphrase"
-msgstr "P"
+msgstr "Pasaesaldia"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr "GakoFitxategia (GnuPG)"
+msgstr "Gako-fitxategia (GnuPG)"
 
 #. Type: text
 #. Description
@@ -324,9 +324,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Hau errore konponezin bat da informazio pribatua enkriptaturiko diskatik "
-"kanpora idatzi daitezke eta. Honek diskara sarrera duen norbaiti enkriptazio "
-"pasahitza edo honen zati bat eskuratzeko aukeram emango dio."
+"Errore larria da, informazio pribatua enkriptatu gabeko diskotik kanpora "
+"idatzi daitekeelako. Honek diskoan sarrera duen norbaiti enkriptazioko "
+"pasaesaldia edo gakoa eskuratzeko aukera emango dio."
 
 #. Type: error
 #. Description
@@ -344,13 +344,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:172
 msgid "Encryption passphrase:"
-msgstr "Enkriptazio pasahitza:"
+msgstr "Enkriptazio pasaesaldia:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "${DEVICE} enkriptatzeko pasahitz bat aukeratu behar duzu."
+msgstr "${DEVICE} enkriptatzeko pasaesaldia aukeratu behar duzu."
 
 #. Type: password
 #. Description
@@ -361,9 +361,11 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Enkriptazioaren indarra pasahitz honen araberakoa da, eta horregatik "
-"asmatzen erraza ez den pasahitza aukeratzea komeni da. Ez du hiztegiko hitza "
-"izan behar, ezta  zurekin erraz lot daitekeena ere."
+"Debian instalatzailea urrunetik atzitzeko pasaesaldia behar duzu. "
+"Instalatzailerako atzipena duen erabiltzaile maltzur edo baimenik gabeko "
+"batek kalte larriak eragin ditzake, eta horregatik asmatzen erraza ez den "
+"pasaesaldia aukeratzea komeni da. Ez du hiztegiko hitza izan behar, ezta "
+"zurekin zerikusia duena ere (adibidez, bigarren deitura)."
 
 #. Type: password
 #. Description
@@ -373,15 +375,15 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Pasahitz egoki batek letraz, zenbaki eta puzntuazio ikurren nahaspen bat "
-"eduki beharko luke. Gomenadatutako pasahitzek 20 edo karaktere gehiagoko "
-"luzapena izan beharko lukete."
+"Pasaesaldi egoki batek letraz, zenbaki eta puntuazio ikurren nahasketa bat "
+"eduki beharko luke. Pasaesaldien luzerak 20 karaktere edo gehiago izatea "
+"gomendatzen da."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
 msgid "Re-enter passphrase to verify:"
-msgstr "Berriz sartu pasahitza egiaztapenerako:"
+msgstr "Berriz sartu pasaesaldia egiaztapenerako:"
 
 #. Type: password
 #. Description
@@ -389,25 +391,25 @@ msgstr "Berriz sartu pasahitza egiaztapenerako:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "Sartu pasahitz berdina berriro, ondo idatzi duzula egiaztatzeko."
+msgstr "Sartu pasaesaldi berdina berriro, ondo idatzi duzula egiaztatzeko."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
 msgid "Passphrase input error"
-msgstr "Pasahitz errorea"
+msgstr "Pasaesaldi-sarreraren errorea"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Sartutako bi pasahitzak ez dira berdinak. Sartu pasahitza berriro."
+msgstr "Sartutako bi pasaesaldiak ez dira berdinak. Saiatu berriro."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Empty passphrase"
-msgstr "Pasahitz zuria"
+msgstr "Pasaesaldi hutsa"
 
 #. Type: note
 #. Description
@@ -416,8 +418,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Onartzen ez den pasahitz huts bat sartu duzu. Mesedez aukeratu hutsik ez "
-"dagoen pasahitz bat."
+"Onartzen ez den pasaesaldi hutsa sartu duzu. Aukeratu hutsa ez den "
+"pasaesaldia."
 
 #. Type: boolean
 #. Description
@@ -426,7 +428,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:207
 msgid "Use weak passphrase?"
-msgstr "Pasahitz ahul bat erabili?"
+msgstr "Pasaesaldi ahula erabili?"
 
 #. Type: boolean
 #. Description
@@ -435,15 +437,15 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Gomendaturiko gutxiengo ${MINIMUM} karaktereak baino gutxiago dituen "
-"pasahitz bat aukeratu duzu, Pasahitz luzeago bat erabiltzean pentsatu "
-"beharko zenuke."
+"Gomendatutako ${MINIMUM} karaktere baino gutxiago dituen pasaesaldia "
+"aukeratu duzu, eta ahulegitzat jotzen da. Pasaesaldi luzeagoa erabiltzea "
+"pentsatu beharko zenuke."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
 msgid "Enter random characters to continue"
-msgstr "Sar ausazko karaketeak jarraitzeko"
+msgstr "Sartu ausazko karaktereak jarraitzeko"
 
 #. Type: string
 #. Description
@@ -483,6 +485,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Prozesu honek sisteman ausazko balio-bilduma kopuru handia egotea eskatzen "
+"du (\"entropia\"). Baliteke instalazioko fase honetan gutxiegi egotea."
 
 #. Type: entropy-text
 #. Description
@@ -500,19 +504,19 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:242
 msgid "Keyfile creation failure"
-msgstr "Gako fitxategia sortzerakoan huts"
+msgstr "Huts egin du gako-fitxategia sortzean"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
 msgid "An error occurred while creating the keyfile."
-msgstr "Errore bat gertatu da gako fitxategi sortzerakoan.."
+msgstr "Errorea gertatu da gako-fitxategia sortzean."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
 msgid "Encryption configuration failure"
-msgstr "Hus enkriptazioa konfiguratzean"
+msgstr "Enkriptazio-konfigurazioak huts egin du"
 
 #. Type: error
 #. Description
@@ -539,7 +543,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Are you sure you want to use a random key?"
-msgstr "Ziur zaude ausazko gako bat erabili nahi duzula?"
+msgstr "Ziur zaude ausazko gakoa erabiltzea nahi duzula?"
 
 #. Type: boolean
 #. Description

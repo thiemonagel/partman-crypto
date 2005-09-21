@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-08-01 23:43+0300\n"
+"PO-Revision-Date: 2005-09-21 01:13+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -25,9 +25,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fizinis tomas skirtas LVM"
+msgstr "fizinis tomas skirtas šifravimui"
 
 #. Type: text
 #. Description
@@ -39,59 +38,55 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "ne aktyvus"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Šifravimo tipas:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Šio disko skirsnio prijungimo taškas:"
+msgstr "Šio disko skirsnio šifravimo tipas:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Šifravimas:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Šio disko skirsnio prijungimo taškas:"
+msgstr "Šio disko skirsnio šifravimas:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Rakto dydis:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Failų sistemą šiam disko skirsniui:"
+msgstr "Rakto dydis šiam disko skirsniui:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Šifravimo raktas:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Failų sistemą šiam disko skirsniui:"
+msgstr "Šifravimo rakto tipas šiam disko skirsniui:"
 
 #. Type: text
 #. Description
@@ -125,7 +120,7 @@ msgstr "Nepasirinktas branduolio paketas diegimui."
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Trūksta reikiamų programų"
 
 #. Type: note
 #. Description
@@ -134,12 +129,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Šiame įdiegiklio komplekte neįtraukta viena ar kelios programos, kurios "
+"reikalingos teisingam partman-crypt modulio veikimui."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Trūksta reikiamų šifravimo parametrų"
 
 #. Type: error
 #. Description
@@ -148,6 +145,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Įrenginiui ${DEVICE} nurodyti ne visi šifravimo parametrai. Grįžkite į "
+"skirsnio meniu ir pasirinkite visus reikiamus parametrus."
 
 #. Type: text
 #. Description
@@ -156,7 +155,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "trūksta"
 
 #. Type: error
 #. Description
@@ -260,9 +259,8 @@ msgstr "Klaida įvyko rašant pakeitimus į diskus."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "RAID konfigūracija atšaukta."
+msgstr "Konfigūravimas nutrauktas."
 
 #. Type: error
 #. Description
@@ -282,7 +280,7 @@ msgstr "Klaida įvyko rašant pakeitimus į diskus."
 #. Description
 #: ../partman-crypto.templates:135
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback įrenginys (loop-AES)"
 
 #. Type: text
 #. Description
@@ -306,13 +304,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Rakto failas·(GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "Atsitiktinis raktas"
 
 #. Type: error
 #. Description
@@ -497,23 +495,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Skirsnių dydžio keitimas nepavyko"
+msgstr "Nesėkmė kuriant rakto failą"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Klaida įvyko rašant pakeitimus į diskus."
+msgstr "Kuriant rakto failą įvyko klaida."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "LVM konfigūravimo nesėkmė"
+msgstr "Šifravimo konfigūravimo nesėkmė"
 
 #. Type: error
 #. Description
@@ -534,9 +529,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:258
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Ar Jūs įsitikinę, kad norite išeiti (nutraukti) dabar?"
+msgstr "Ar Jūs įsitikinę, kad norite naudoti atsitiktinį raktą?"
 
 #. Type: boolean
 #. Description

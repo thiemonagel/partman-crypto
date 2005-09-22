@@ -34,12 +34,13 @@
 # 2005-09-05 - Miguel Figueiredo <elmig@debianpt.org> - 7f2u
 # 2005-09-09 - Miguel Figueiredo <elmig@debianpt.org> - 6f
 # 2005-09-17 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-09-21 - Miguel Figueiredo <elmig@debianpt.org> - typo in varname fixed.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-08-31 19:21+0000\n"
+"PO-Revision-Date: 2005-09-17 21:59+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -465,7 +466,7 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Você introduziu uma frase chave que consiste em menos de ${MINIMUN} "
+"Você introduziu uma frase chave que consiste em menos de ${MINIMUM} "
 "caracteres, o que é considerado demasiado débil. Você deve escolher uma "
 "frase chave mais forte."
 

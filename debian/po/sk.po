@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-20 13:08+0200\n"
+"PO-Revision-Date: 2005-09-26 08:17+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -543,6 +543,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Pre ${DEVICE} ste zvolili náhodný kľúč, no zároveň ste na tejto oblasti "
+"požadovali vytvorenie súborového systému."
 
 #. Type: boolean
 #. Description

@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-29 22:04+0300\n"
+"PO-Revision-Date: 2005-10-04 22:44+0300\n"
 "Last-Translator: Eddy Petrisor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -141,8 +141,9 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
-"Această variantă de debian-installer nu include unul sau mai multe programe "
-"care sunt necesare lui partman-crypt pentru a funcţiona corect."
+"Această variantă de program de instalare Debian nu include unul sau mai "
+"multe  programe care sunt necesare lui partman-crypt pentru a funcţiona "
+"corect."
 
 #. Type: error
 #. Description
@@ -344,7 +345,7 @@ msgid ""
 msgstr ""
 "Aceasta este o eroare fatală deoarece date sensibile ar putea fi scrise pe "
 "disc necriptate. Aceasta ar permite cuiva cu acces la disc să recupereze "
-"părţi din chiea de criptare sau din parola tip frază."
+"părţi din cheia de criptare sau din parola tip frază."
 
 #. Type: error
 #. Description
@@ -368,7 +369,7 @@ msgstr "Parola-frază pentru criptare:"
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Trebuie să alegiti o parolă tip frază ca să criptaţi ${DEVICE}."
+msgstr "Trebuie să alegeţi o parolă tip frază ca să criptaţi ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -394,7 +395,7 @@ msgid ""
 msgstr ""
 "O bună parolă-frază va conţine un amestec de litere, numere şi semne de "
 "punctuaţie. Se recomandă ca parolele-frază să aibă 20 sau mai multe "
-"caracatere."
+"caractere."
 
 #. Type: password
 #. Description
@@ -484,7 +485,7 @@ msgid ""
 msgstr ""
 "Puteţi accelera procesul prin introducerea de date aleatoare la tastatură "
 "pentru a extinde domeniul de valori aleatoare şi să continuaţi mai repede. "
-"Acest dialog va reapărea până când vor fi strânse înde-ajuns de multe date."
+"Acest dialog va reapărea până când vor fi strânse îndeajuns de multe date."
 
 #. Type: entropy-text
 #. Description

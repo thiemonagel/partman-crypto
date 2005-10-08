@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-05-27 18:27+0300\n"
+"PO-Revision-Date: 2005-10-07 21:04+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,107 +30,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "LVM için fiziksel hacim"
+msgstr "şifreleme için fiziksel hacim"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "şifreli"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "etkin değil"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Şifreleme türü:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Bu bölüm için bağlama noktası:"
+msgstr "Bu bölüm için şifreleme türü:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Şifreleme:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Bu bölüm için bağlama noktası:"
+msgstr "Bu bölüm için şifreleme:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Anahtar uzunluğu:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Bu bölümün dosya sistemi:"
+msgstr "Bu bölüm için anahtar uzunluğu:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Şifreleme anahtarı:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Bu bölümün dosya sistemi:"
+msgstr "Bu bölüm için şifreleme anahtar türü:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Kare tamponu ayarlanıyor..."
+msgstr "Şifreleme ayarlanıyor..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Ağı yapılandır"
+msgstr "Şifrelenmiş cilt yapılandır"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
 msgstr "Herhangi bir bölüm bulunamadı"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Kurmak için herhangi bir çekirdek paketi seçilmedi."
+msgstr "Şifrelemek için bir bölüm seçilmedi."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Gerekli programlar eksik"
 
 #. Type: note
 #. Description
@@ -161,14 +152,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "eksik"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "ELILO kurulumu başarısız"
+msgstr "Şifreleme paketinin kurulumu başarısız"
 
 #. Type: error
 #. Description

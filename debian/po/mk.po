@@ -3,30 +3,31 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of mk.po to
 # translation of mk.po to Macedonian
 # Macedonian strings from the debian-installer.
 # Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005.
 # Georgi Stanojevski <gogo@stavre>, 2005.
+# Georgi Stanojevski <georgis@unet.com.mk>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-07-26 20:54+0200\n"
-"Last-Translator: Georgi Stanojevski <gogo@stavre>\n"
-"Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
+"PO-Revision-Date: 2005-10-08 18:16+0200\n"
+"Last-Translator: Georgi Stanojevski <georgis@unet.com.mk>\n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "физички простори за УЛП"
+msgstr "физички простор за енкрипција"
 
 #. Type: text
 #. Description
@@ -44,87 +45,79 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Тип на енкрипција:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Точка за монтирање за оваа партиција:"
+msgstr "Тип на енкрипција за оваа партиција:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Енкрипција:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Точка за монтирање за оваа партиција:"
+msgstr "Енкрипција за оваа партиција:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Големина на клуч:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Датотечен систем за оваа партиција:"
+msgstr "Големина на клуч за оваа партиција:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Клуч за енкрипција:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Датотечен систем за оваа партиција:"
+msgstr "Тип на енкрипција за оваа партиција:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Поставување на frame buffer..."
+msgstr "Поставување на енкрипција..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Конфигурирај временска зона"
+msgstr "Конфигурирај енкриптирани простори"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Нема партиции најдено"
+msgstr "Нема партиции за енкрипција"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Не е одбран кернел пакет за инсталација."
+msgstr "Не беа избрани партиции за енкрипција."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Недостасуваат потребни програми"
 
 #. Type: note
 #. Description
@@ -138,7 +131,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Недостасуваат потребните опции за енкрипција"
 
 #. Type: error
 #. Description
@@ -147,6 +140,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Опциите за енкрипција на ${DEVICE} се непотполни. Те молам врати се во "
+"менито за партиционирање и избери ги сите потребни опции."
 
 #. Type: text
 #. Description
@@ -155,14 +150,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "недосига"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Не успеа инсталацијата на ELILO"
+msgstr "Неуспех при инсталација на пакетот за енкрипција"
 
 #. Type: error
 #. Description
@@ -171,6 +165,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"Кернел модулот за пакетот ${PACKAGE} неможе да биде најде или се случи "
+"грешка при инсталација."
 
 #. Type: error
 #. Description
@@ -184,36 +180,33 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Запиши ги измените на диск и конфигурурај LVM?"
+msgstr "Да ги запишан измените на диск и конфигурурам енкриптираните простори?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Пред да може да се конфигурира Управувачот со логички простори, моменталната "
+"Пред да може да се конфигурираат енкриптираните простори, моменталната "
 "партициона шема мора да биде запишана на диск. Овие промени не може да се "
-"вратат назад."
+"отповикаат."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Откако ќе се конфигурира Управувачот со логички простори, не се дозволени "
-"дополнителни промени на партициите во дисковите. Те молам одлучи дали си "
-"задоволен со моменталната поставеност на партициите на овие дискови пред да "
-"продолжиш."
+"Откако ќе се конфигурират енкриптираните простори, не се дозволени "
+"дополнителни промени на партициите со енкриптирани простори во дисковите. Те "
+"молам одлучи дали си задоволен со моменталната поставеност на партициите на "
+"овие дискови пред да продолжиш."
 
 #. Type: boolean
 #. Description
@@ -224,60 +217,54 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Зачувај ја моменталната поставеност на партициите и конфигурирај го УЛП?"
+"Да ја зачувам моменталната поставеност на партициите и конфигурирам "
+"енриптирани простори?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Откако ќе се конфигурира Управувачот со логички простори, не се дозволени "
-"дополнителни промени на партициите во дисковите. Те молам одлучи дали си "
-"задоволен со моменталната поставеност на партициите на овие дискови пред да "
-"продолжиш."
+"Откако ќе се конфигурираа енкриптираните простори, не се дозволени "
+"дополнителни промени на партициите во дисковите со енкриптирани простори. Те "
+"молам одлучи дали си задоволен со моменталната поставеност на партициите на "
+"овие дискови пред да продолжиш."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Неуспех при конфигурацијата на LVM"
+msgstr "Неуспех при конфигурацијата на енкриптираните простори"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Се случи грешки при запишување на промените на диск."
+msgstr "Се случи грешки при конфигурација на енркиптираните простори."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Конфигурацијата на RAID е откажана."
+msgstr "Конфигурацијата е откажана."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Не успеа инсталацијата на ELILO"
+msgstr "Неуспе иницијализацијата на енкриптираните простори "
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Се случи грешки при запишување на промените на диск."
+msgstr "Се случи грешки при поставувањето на енкриптираните простори."
 
 #. Type: text
 #. Description
@@ -301,31 +288,31 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Passphrase"
-msgstr ""
+msgstr "Фраза-лозинка"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Датотека со клуч (GNUPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "Случаен клуч"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Детектиран несигурен swap простор"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Беше детектиран несигурен swap простор."
 
 #. Type: error
 #. Description
@@ -349,29 +336,27 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:172
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Фраза-лозинка за енкрипција:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Потребно е да одбереш фраза-лозинка за да го енкриптираш ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Потребно е да поставиш лозинка за да му пристапиш на Дебиан инсталерот. "
-"Злобен или некфалификуван корисник со пристап до инсталерот може да направи "
-"разурнивачки ефекти, па препорачливо е да избереш лозинка која не е лесно да "
-"се погоди. Не треба да биде збор од речник или збор кој може лесно да се "
-"поврзе со тебе, како твоето презиме."
+"Вкупната заштитеност на енркипцијата тесно зависи од оваа фраза-лозинка."
+"Препорачливо е да избереш лозинка која не е лесно да се погоди. Не треба да "
+"биде збор или реченица од речник или фраза кој може лесно да се поврзе со "
+"тебе, како твоето презиме."
 
 #. Type: password
 #. Description
@@ -381,43 +366,44 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Добра фраза-лозинка ќе содржи мешавина од букви, бројки и интрепукциски "
+"знаци. Препорачливо е фразите-лозинки  да имаат должина од 20 или повеќе "
+"знаци."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Повторно внеси ја фразата-лозинка за да потврдиш:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Те молам повторно внеси ја истата лозинка за оддалечена инсталација за да се "
-"потврди дека правилно си ја искуцал."
+"Те молам повторно внеси ја истата фраза-лозинка за да се потврди дека "
+"правилно си ја внел."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Грешка при внес на фразата-лозинка"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Двете лозинки што ги внесе не се исти. Те молам повторно внеси лозинка."
+"Двете фрази-лозинки што ги внесе не се исти. Те молам пробај повторно. "
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Празна фраза-лозинка"
 
 #. Type: note
 #. Description
@@ -426,6 +412,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Внесе празна фраза-лозинка, што не е дозволено. Те молам избери друга "
+"непразна фраза-лозинка."
 
 #. Type: boolean
 #. Description
@@ -434,7 +422,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:207
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Користи слаба лозинка?"
 
 #. Type: boolean
 #. Description
@@ -447,9 +435,8 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Притисни Enter за да продолжиш]"
+msgstr "Внеси случајни знаци за да продолжиш"
 
 #. Type: string
 #. Description
@@ -470,7 +457,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Enter random characters"
-msgstr ""
+msgstr "Внеси случајни знаци"
 
 #. Type: entropy-text
 #. Description
@@ -499,23 +486,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Неуспех на операцијата за промена на големината"
+msgstr "Неуспех при создавањето на датотека со клуч"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Се случи грешки при запишување на промените на диск."
+msgstr "Се случи грешка при создавање на датотеката со клучот."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Неуспех при конфигурацијата на LVM"
+msgstr "Неуспех при конфигурацијата на енкрипцијата"
 
 #. Type: error
 #. Description
@@ -536,9 +520,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:258
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Дали си сигурен дека сакаш да излезеш сега?"
+msgstr "Дали си сигурен дека сакаш да користиш случаен клуч?"
 
 #. Type: boolean
 #. Description

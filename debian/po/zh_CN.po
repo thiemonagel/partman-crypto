@@ -6,13 +6,14 @@
 # Simplified Chinese messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
+# Translated by Carlos Z.F. Liu and Ming Hua.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-16 00:15+1200\n"
-"Last-Translator:  Carlos Z.F. Liu <carlos_liu@yahoo.com>\n"
+"PO-Revision-Date: 2005-10-08 18:50-0500\n"
+"Last-Translator:  Ming Hua <minghua@rice.edu>\n"
 "Language-Team:  Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +30,7 @@ msgstr "加密物理卷"
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "加密"
 
 #. Type: text
 #. Description
@@ -58,56 +59,50 @@ msgstr "加密："
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "此分区的挂载点："
+msgstr "此分区的加密："
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "密钥长度："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "此分区的文件系统"
+msgstr "此分区的密钥长度："
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "加密密钥："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "此分区的文件系统"
+msgstr "此分区加密密钥的类型："
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "正在设置帧缓存(frame buffer)..."
+msgstr "正在设置加密..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "时区设置"
+msgstr "配置加密卷"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "没有找到分区"
+msgstr "没有找到要加密的分区"
 
 #. Type: note
 #. Description
@@ -128,6 +123,7 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"这个版本的 debian-installer 缺少一个或多个 partman-crypt 正常工作所需的程序。"
 
 #. Type: error
 #. Description
@@ -141,7 +137,7 @@ msgstr "缺少所需的加密选项"
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
-msgstr ""
+msgstr "${DEVICE} 的加密选项不完全。请回到磁盘分区菜单并选择全部必需的选项。"
 
 #. Type: text
 #. Description
@@ -164,7 +160,7 @@ msgstr "加密软件包安装失败"
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
-msgstr ""
+msgstr "无法找到内核模块软件包 ${PACKAGE}，或者安装过程中出现错误。"
 
 #. Type: error
 #. Description
@@ -174,38 +170,36 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"系统在启动过程中试图设置加密分区时，很可能会出现问题。你仍可以接下来安装所需"
+"的软件包来修正这些问题。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "将修改写入磁盘并配置 LVM 吗？"
+msgstr "将修改写入磁盘并配置加密卷吗？"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"必须先将当前的分区方案写入磁盘，然后才能开始对逻辑卷管理器进行配置。这些改动"
-"将不再可以撤消。"
+"必须先将当前的分区方案写入磁盘，然后才能开始对加密卷进行配置。这些改动将不再"
+"可以撤消。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"一旦逻辑卷管理器设置完成，就不允许再对包含逻辑卷的磁盘上的分区进行额外的改"
-"动。因此，在进行下一步操作之前，请您确认是否真的满意这些磁盘上当前的分区方"
-"案。"
+"一旦加密卷设置完成，就不允许再对包含加密卷的磁盘上的分区进行额外的改动。因"
+"此，在进行下一步操作之前，请您确认是否真的满意这些磁盘上当前的分区方案。"
 
 #. Type: boolean
 #. Description
@@ -216,9 +210,8 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "保留现有的分区设置并配置 LVM 吗？"
+msgstr "保留现有的分区设置并配置加密卷吗？"
 
 #. Type: boolean
 #. Description
@@ -230,44 +223,38 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"一旦逻辑卷管理器设置完成，就不允许再对包含逻辑卷的磁盘上的分区进行额外的改"
-"动。因此，在进行下一步操作之前，请您确认是否真的满意这些磁盘上当前的分区方"
-"案。"
+"一旦加密卷设置完成，就不允许再对包含加密卷的磁盘上的分区进行额外的改动。因"
+"此，在进行下一步操作之前，请您确认是否真的满意这些磁盘上当前的分区方案。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "LVM 设置失败"
+msgstr "加密卷设置失败"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "将修改内容写入磁盘时出现一个错误。"
+msgstr "在配置加密卷时出现一个错误。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "RAID 配置被中止。"
+msgstr "配置被中止。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "安装 ELILO 失败"
+msgstr "加密卷初始化失败"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "将修改内容写入磁盘时出现一个错误。"
+msgstr "在建立加密卷时出现一个错误。"
 
 #. Type: text
 #. Description
@@ -297,13 +284,13 @@ msgstr "口令句"
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "密钥文件(GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "随机密钥"
 
 #. Type: error
 #. Description
@@ -325,6 +312,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"这是一个致命错误，因为敏感数据可能会未经加密就被写到磁盘上。这样别人可以通过"
+"访问磁盘来恢复加密密钥或口令句的一部分。"
 
 #. Type: error
 #. Description
@@ -334,6 +323,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"请禁用交换空间(例如运行 swapoff)或配置一个加密的交换空间，然后再重新进行加密"
+"卷设置。本程序现在将中止。"
 
 #. Type: password
 #. Description
@@ -350,17 +341,15 @@ msgstr "您需要选择一个口令句来加密 ${DEVICE}。"
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"您需要设置一个密码以远程操纵 Debian 安装程序。任何恶意或无资格的用户拥有了使"
-"用安装程序的权限，都有可能会造成灾难性的后果。因此，您必须小心的选择一个不易"
-"猜出的密码。它不应该是一个能在字典中找得到的单词，或者与您有紧密联系的词语，"
-"比如您的姓名。"
+"加密的整体强度很大程度上依赖于这个口令句，因此您必须小心的选择一个不易猜出的"
+"口令句。它不应该是一个能在字典中找得到的单词或句子，或者与您有紧密联系的词"
+"语。"
 
 #. Type: password
 #. Description
@@ -370,21 +359,22 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"一个好的口令句应由字母、数字和标点符号混合组成。推荐使用 20 个字符以上的口令"
+"句。"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "重新输入口令句以确认："
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "请重新输入相同的远程安装密码以确保您的输入正确无误。"
+msgstr "请重新输入相同的口令句以确保您的输入正确无误。"
 
 #. Type: note
 #. Description
@@ -395,9 +385,8 @@ msgstr "口令句输入错误"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "您所输入的两个密码并不相同。请重新输入。"
+msgstr "您所输入的两个口令句并不相同。请重新输入。"
 
 #. Type: note
 #. Description
@@ -429,6 +418,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"您输入的口令句的字符数小于 ${MINIMUM}，这被认为太弱了。您应该选择一个更强的口"
+"令句。"
 
 #. Type: string
 #. Description
@@ -440,7 +431,7 @@ msgstr "请输入任意字符以继续"
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "现在正在创建 ${DEVICE} 的加密密钥。(${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -450,6 +441,8 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"要帮助加速这一过程，您可以从键盘任意输入数据以填满系统的随机池(randomness "
+"pool)，并隔一段时间输入一次。这个对话框将不断出现，直至采集到足够的键盘数据。"
 
 #. Type: entropy-text
 #. Description
@@ -461,7 +454,7 @@ msgstr "请输入任意字符"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "现在正在创建 ${DEVICE} 的加密密钥。"
 
 #. Type: entropy-text
 #. Description
@@ -471,6 +464,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"这一过程要求系统中有大量采集到的随机数据(“熵”)，而在现在这个安装阶段，很可能"
+"随机数据太少。"
 
 #. Type: entropy-text
 #. Description
@@ -480,27 +475,26 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"您可以从键盘随机输入任意字符以加速这一过程，也可以仅仅等待采集到足够的键盘数"
+"据。(注：这可能会需要很长时间)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "无法改变分区大小"
+msgstr "创建密钥文件失败"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "将修改内容写入磁盘时出现一个错误。"
+msgstr "将密钥文件写入磁盘时出现一个错误。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "LVM 设置失败"
+msgstr "加密设置失败"
 
 #. Type: error
 #. Description
@@ -510,20 +504,21 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"您选择了将根文件系统放在一个加密分区上。这一功能尚未实现，如果继续下去将会造"
+"成安装的系统无法使用。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "请返回并给根文件系统选择一个未加密的分区。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:258
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "您确定现在就要退出吗？"
+msgstr "您确定要使用一个随机密钥吗？"
 
 #. Type: boolean
 #. Description
@@ -532,6 +527,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"您为 ${DEVICE} 选择了一个随机的密钥类型，但是要求磁盘分区程序在上面建立一个文"
+"件系统。"
 
 #. Type: boolean
 #. Description
@@ -540,3 +537,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"使用一个随机密钥意味着分区上的数据在每次重新启动时都会被摧毁。这仅应该用于交"
+"换分区。"

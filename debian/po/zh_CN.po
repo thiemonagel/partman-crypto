@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-10-08 18:50-0500\n"
+"PO-Revision-Date: 2005-10-08 20:24-0500\n"
 "Last-Translator:  Ming Hua <minghua@rice.edu>\n"
 "Language-Team:  Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -216,7 +216,6 @@ msgstr "保留现有的分区设置并配置加密卷吗？"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "

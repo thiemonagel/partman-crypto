@@ -31,47 +31,44 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "volume fisik untuk LVM"
+msgstr "volume fisik untuk enkripsi"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "tak aktif"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Jenis enkripsi:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Titik kait untuk partisi ini:"
+msgstr "Jenis enkripsi untuk partisi ini:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Enkripsi:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Titik kait untuk partisi ini:"
+msgstr "Enkripsi untuk partisi ini:"
 
 #. Type: text
 #. Description
@@ -95,43 +92,38 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Sistem berkas untuk partisi ini:"
+msgstr "Jenis kunci enkripsi untuk partisi ini:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Sedang mengatur frame buffer..."
+msgstr "Sedang mengatur enkripsi..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Mengonfigurasi jaringan"
+msgstr "Mengonfigurasi volum enkripsi"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Partisi tidak ditemukan"
+msgstr "Tak ada partisi yang akan dienkripsi"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Paket kernel yang akan dipasang belum dipilih."
+msgstr "Tak ada partisi yang dipilih untuk dienkripsi."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "Program yang diperlukan tak ada"
 
 #. Type: note
 #. Description
@@ -145,7 +137,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Pilihan enkripsi yang diperlukan tak ada"
 
 #. Type: error
 #. Description
@@ -154,6 +146,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Pilihan enkripsi untuk ${DEVICE} tidak lengkap. Silakan kembali ke menu "
+"partisi dan pilih semua pilihan yang diperlukan."
 
 #. Type: text
 #. Description
@@ -162,14 +156,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "hilang"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Instalasi ELILO gagal"
+msgstr "Instalasi paket enkripsi gagal"
 
 #. Type: error
 #. Description
@@ -191,9 +184,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Tulis perubahan ke hard disk dan konfigurasikan LVM?"
+msgstr "Tulis perubahan ke hard disk dan konfigurasikan volum terenkripsi?"
 
 #. Type: boolean
 #. Description

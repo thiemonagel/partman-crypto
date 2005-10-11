@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-10-06 11:43+0200\n"
+"PO-Revision-Date: 2005-10-08 08:48+0200\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -453,7 +453,7 @@ msgstr "Ange slumpmässiga tecken för att fortsätta"
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr "Krypteringsnyckeln för ${DEVICE} skapas nu. ($PROGRESS})"
+msgstr "Krypteringsnyckeln för ${DEVICE} skapas nu. (${PROGRESS})"
 
 #. Type: string
 #. Description

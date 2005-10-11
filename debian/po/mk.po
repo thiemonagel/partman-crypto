@@ -451,7 +451,7 @@ msgstr "Внеси случајни знаци за да продолжиш"
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr "Сега се создава клучот за енкрипција за ${DEVICE}. ($PROGRESS})"
+msgstr "Сега се создава клучот за енкрипција за ${DEVICE}. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -475,7 +475,7 @@ msgstr "Внеси случајни знаци"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Се создава клучот за енкрипција за ${DEVICA}."
+msgstr "Се создава клучот за енкрипција за ${DEVICE}."
 
 #. Type: entropy-text
 #. Description

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-06-20 16:14+0200\n"
+"PO-Revision-Date: 2005-10-04 22:54+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +136,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr "Beharrezji eknriptazio aukerak falta dira"
+msgstr "Beharrezko enkriptazio aukerak falta dira"
 
 #. Type: error
 #. Description
@@ -527,7 +527,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea auekratu "
+"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
 "duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
 "instalazioa erabil ezin geratzea eragin lezake."
 

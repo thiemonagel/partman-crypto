@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-10-08 23:00+0200\n"
+"PO-Revision-Date: 2005-10-10 21:12+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -133,6 +133,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Diese Version des debian-installers enthält ein oder mehrere Programme "
+"nicht, die von partman-crypt benötigt werden, um korrekt zu funktionieren."
 
 #. Type: error
 #. Description
@@ -147,6 +149,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Die Verschlüsselungsoptionen für ${DEVICE} sind unvollständig. Bitte gehen "
+"Sie zum Partitionsmenü zurück und wählen Sie alle benötigten Optionen."
 
 #. Type: text
 #. Description
@@ -170,6 +174,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"Das Kernelmodulpaket ${PACKAGE} konnte nicht gefunden werden oder es trat "
+"während der Installation ein Fehler auf."
 
 #. Type: error
 #. Description

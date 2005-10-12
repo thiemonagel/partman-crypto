@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-09-20 09:32+0200\n"
+"PO-Revision-Date: 2005-10-11 10:48+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -180,28 +180,27 @@ msgstr "Zapisaæ zmiany do dysków i skonfigurowaæ zaszyfrowane woluminy?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Zanim logiczny mened¿er woluminów bêdzie móg³ zostaæ skonfigurowany, "
-"aktualny schemat partycjonowania musi zostaæ zapisany na dysku. Zmian tych "
-"nie mo¿na cofn±æ."
+"Zanim zaszyfrowany wolumin bêdzie móg³ zostaæ skonfigurowany, aktualny "
+"schemat partycjonowania musi zostaæ zapisany na dysku. Zmian tych nie mo¿na "
+"cofn±æ."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Kiedy LVM jest skonfigurowany, niedozwolone s± jakiekolwiek dodatkowe zmiany "
-"na dyskach zawieraj±cych fizyczne woluminy. Przed kontynuacj±, proszê siê "
-"upewniæ, ¿e aktualny schemat partycji jest odpowiedni na tych dyskach."
+"Kiedy zaszyfrowane woluminy s± skonfigurowane, niedozwolone s± jakiekolwiek "
+"dodatkowe zmiany na dyskach zawieraj±cych te woluminy. Przed kontynuacj±, "
+"proszê siê upewniæ, ¿e aktualny schemat partycji jest odpowiedni na tych  "
+"dyskach."
 
 #. Type: boolean
 #. Description
@@ -212,9 +211,9 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Zostawiæ aktualny uk³ad partycji i skonfigurowaæ LVM?"
+msgstr ""
+"Zostawiæ aktualny uk³ad partycji i skonfigurowaæ zaszyfrowane woluminy?"
 
 #. Type: boolean
 #. Description
@@ -233,30 +232,26 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Konfiguracja LVM nie powiod³a siê"
+msgstr "Konfiguracja zaszyfrowanych woluminów nie powiod³a siê"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Wyst±pi³ b³±d podczas zapisu zmian do dysków."
+msgstr "Wyst±pi³ b³±d podczas konfiguracji zaszyfrowanych woluminów."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Konfiguracja RAID zosta³a przerwana."
+msgstr "Konfiguracja zosta³a przerwana."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Instalacja ELILO nie powiod³a siê"
+msgstr "Inicjalizacja zaszyfrowanego woluminu nie powiod³a siê"
 
 #. Type: error
 #. Description
@@ -269,49 +264,49 @@ msgstr "Wyst±pi³ b³±d podczas zapisu zmian do dysków."
 #. Description
 #: ../partman-crypto.templates:135
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:139
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:143
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Passphrase"
-msgstr ""
+msgstr "Has³o"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Plik klucza (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "Losowy klucz"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Wykryto niezapezbieczon± przestrzeñ wymiany"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Niezabezpieczona przestrzeñ wymiany zosta³a wykryta."
 
 #. Type: error
 #. Description
@@ -335,13 +330,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:172
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Has³o szyfrowania:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Musisz wybraæ has³o do zaszyfrowania ${DEVICE}."
 
 #. Type: password
 #. Description

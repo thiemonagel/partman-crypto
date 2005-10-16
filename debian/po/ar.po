@@ -9,119 +9,110 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-07-07 15:29+0300\n"
+"PO-Revision-Date: 2005-10-13 16:59+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "الكتلة المادّيّة لـLVM"
+msgstr "الكتلة المادية للتشفير"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "غير نشط"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "نوع التشفير:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "تركيب التركيب لهذا الجزء:"
+msgstr "نوع التشفير لهذا الجزء:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "التشفير:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "تركيب التركيب لهذا الجزء:"
+msgstr "التشفير لهذا الجزء:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "حجم مفتاح الرموز:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "نظام الملفّات لهذا الجزء:"
+msgstr "حجم مفتاح الرموز لهذا الجزء:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "مفتاح رموز التشفير:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "نظام الملفّات لهذا الجزء:"
+msgstr "نوع مفتاح رموز التشفير لهذا الجزء:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "إعداد جعبة الأطر..."
+msgstr "إعداد التشفير..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:59
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "تهيئة الشبكة"
+msgstr "تهيئة الكتل المشفرة"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "لم يعثر على أية أجزاء"
+msgstr "لم يعثر على أجزاء لتشفيرها"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:63
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "لم تحدّد حزمة نواة للتّثبيت."
+msgstr "لم تحدّد أية أجزاء لتشفيرها."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Required programs missing"
-msgstr ""
+msgstr "البرامج المطلوبة مفقودة"
 
 #. Type: note
 #. Description
@@ -130,12 +121,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"هذه البنية من برنامج تثبيت ديبيان لا تحتوي واحداً أو أكثر من البرامج المطلوبة "
+"ليعمل partman-crypt بشكل صحيح."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:74
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "خيارات التشفير المطلوبة مفقودة"
 
 #. Type: error
 #. Description
@@ -152,14 +145,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:85
 msgid "missing"
-msgstr ""
+msgstr "مفقود"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "فشل تثبيت ELILO"
+msgstr "فشل في تثبيت حزمة التشفير"
 
 #. Type: error
 #. Description
@@ -167,7 +159,7 @@ msgstr "فشل تثبيت ELILO"
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
-msgstr ""
+msgstr "تعذر العثور على حزمة وحدة النواة ${PACKAGE} أو حدث خطأ أثناء التثبيت."
 
 #. Type: error
 #. Description
@@ -181,34 +173,28 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "كتابة التغييرات إلى الأقراص و تهيئة LVM؟"
+msgstr "كتابة التغييرات إلى الأقراص و تهيئة الكتل المشفرة؟"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"قبل أن يكون تهيئة مدير الكتل المنطقيّة ممكناً يجب كتابة خطّة التجزئة الحاليّة "
-"للقرص. هذه التّغييرات لا يمكن التّراجع عنها."
+"قبل أن يمكن تهيئة الكتل المشفرة، يجب كتابة مخطط التجزئة الحالي إلى القرص. لا "
+"يمكن التراجع عن هذه التغييرات."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:100
-#, fuzzy
 msgid ""
 "After encrypted volumes have been configured, no additional changes to the "
 "partitions in the discs containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"بعد تهيئة مدير الكتل المنطقيّة لن يسمح بالمزيد من التّغييرات في الجزئات في "
-"الأقراص المحتوية على كتلٍ مادّيّة. رجاءً قرّر ما إذا كنت راضياً بخطّة التجزئة في "
-"هذه الأقراص قبل المتابعة."
 
 #. Type: boolean
 #. Description
@@ -219,106 +205,96 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "هل تريد إبقاء تخطيط التّجزئات و تهيئة LVM؟"
+msgstr "إبقاء مخطط التجزئة الحالي وتهيئة الكتل المشفرة؟"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"بعد تهيئة مدير الكتل المنطقيّة لن يسمح بالمزيد من التّغييرات في الجزئات في "
-"الأقراص المحتوية على كتلٍ مادّيّة. رجاءً قرّر ما إذا كنت راضياً بخطّة التجزئة في "
-"هذه الأقراص قبل المتابعة."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "فشلت تهيئة LVM"
+msgstr "فشل في تهيئة الكتل المشفرة"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "حدث خطأٌ أثناء كتابة التّغييرات للأقراص."
+msgstr "حدث خطأ أثناء تهيئة الكتل المشفرة."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "أجهضت تهيئة RAID."
+msgstr "تم إيقاف التهيئة."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "فشل تثبيت ELILO"
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "حدث خطأٌ أثناء كتابة التّغييرات للأقراص."
+msgstr "حدث خطأ أثناء إعداد الكتل المشفرة."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:135
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:139
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:143
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Passphrase"
-msgstr ""
+msgstr "عبارةالمرور"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Keyfile (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:155
 msgid "Random key"
-msgstr ""
+msgstr "مفتاح رموز عشوائي"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "عُثر على مساحة إبدال غير آمنة"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "عُثر على مساحة إبدال غير آمنة"
 
 #. Type: error
 #. Description
@@ -342,28 +318,23 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:172
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "كلمة مرور التشفير:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "يجب أن تختار كلمة مرور لتشفير الجهاز ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:172
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"عليك أن تعيّن كلمة السّر للوصول البعيد إلى برنامج تثبيت ديبيان. حصول مستخدمٍ "
-"خبيث أو غير مؤهّل وصولٍ للمثبّت قد يكون له عواقب وخيمة لذا حاول جهدك أن تختار "
-"كلمة سرٍّ يصعب تخمينها. لا ينبغي أن تكون كلمةً موجودةً في القاموس أو كلمةً يسهل "
-"ربطها بك، كاسمك الأوسط."
 
 #. Type: password
 #. Description
@@ -373,41 +344,40 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"كلمة المرور الجيدة تحتوي خليطاً من الأحرف، والأرقام وعلامات التنقيط. يستحسن "
+"أن تكون كلمات المرور بطول 20 حرفاً أو أكثر."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "إعادة إدخال كلمة المرور للتحقق:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
-"الرجاء إدخال كلمة سر التثبيت البعيد ذاتها مجدّداً للتّأكيد أنّك كتبتها بشكلٍ صحيح."
+msgstr "الرجاء إدخال نفس كلمة المرور مرة أخرى للتحقق من أنك كتبتها بشكل صحيح."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
 msgid "Passphrase input error"
-msgstr ""
+msgstr "خطأ في إدخال كلمة المرور"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:192
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "كلمتا السّر اللتان أدخلتهما ليستا متطابقتين. الرجاء إدخال كلمة سرٍّ مجدّداً"
+msgstr "كلمتا المرور اللتان أدخلتهما غير متطابقتين. الرجاء المحاولة مجدداً."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:197
 msgid "Empty passphrase"
-msgstr ""
+msgstr "كلمة المرور فارغة"
 
 #. Type: note
 #. Description
@@ -416,6 +386,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"لقد أدخلت كلمة مرور فارغة، والذي هو غير مسموح. الرجاء اختيار كلمة مرور غير "
+"فارغة."
 
 #. Type: boolean
 #. Description
@@ -424,7 +396,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:207
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "استخدام جملة مرور ضعيفة؟"
 
 #. Type: boolean
 #. Description
@@ -433,19 +405,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"لقد أدخلت كلمة مرور تتألف من أقل من ${MINIMUM} أحرف، والتي تعتبر ضعيفة جداً. "
+"يجب أن تختار كلمة مرور أقوى."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[اضغط زر الإدخال للاستمرار]"
+msgstr "إدخال أحرف عشوائية للاستمرار"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "مفتاح رموز التشفير للجهاز ${DEVICE} يتم إنشاءه الآن. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -455,18 +428,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"يمكنك المساعدة في تعجيل العملية بإدخال بيانات عشوائية بواسطة لوحة المفاتيح "
+"لملء مجمع العشوائية والاستمرار كل فترة. مربع الحوار هذا سيتكرر حتى يتم جمع "
+"بيانات كافية لمفتاح الرموز."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Enter random characters"
-msgstr ""
+msgstr "إدخال حروف عشوائية"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:229
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "مفتاح رموز التشفير للجهاز ${DEVICE} يتم إنشاءه الآن."
 
 #. Type: entropy-text
 #. Description
@@ -476,6 +452,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"تتطلب هذه العملية من النظام وجود كميات كبيرة من البيانات العشوائية المجموعة "
+"(\"entropy\")، والتي قد لا يوجد الكثير منها في هذه المرحلة من التثبيت."
 
 #. Type: entropy-text
 #. Description
@@ -485,27 +463,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"يمكنك المساعدة في تعجيل العملية بإدخال أحرف عشوائية بواسطة لوحة المفاتيح، أو "
+"فقط الانتظار حتى يتم جمع بيانات مفاتيح رموز كافية. (ملاحظة: ق يستغرق هذا "
+"وقتاً طويلاً)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "فشل في عمليّة تغيير الحجم"
+msgstr "فشل في إنشاء ملف مفاتيح الرموز"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:242
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "حدث خطأٌ أثناء كتابة التّغييرات للأقراص."
+msgstr "حدث خطأ أثناء إنشاء ملف مفاتيح الرموز."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "فشلت تهيئة LVM"
+msgstr "فشل في تهيئة التشفير"
 
 #. Type: error
 #. Description
@@ -515,20 +493,21 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"لقد اخترت تخزين نظام الملفات الجذر على جزء مشفّر. هذه الميزة غير متوفرة "
+"والاستمرار الآن قد ينتج عنه تثبيت لا يمكن استخدامه."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:247
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "الرجاء العودة واختيار جزء غير مشفر لنظام الملفات الجذر."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:258
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "هل أنت متأكّد أنّك تريد الخروج الآن؟"
+msgstr "متأكد أنك تريد استخدام مفتاح رموز عشوائي؟"
 
 #. Type: boolean
 #. Description
@@ -537,6 +516,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"لقد اخترت نوع مفتاح رموز عشوائي للجهاز ${DEVICE} إلا أنك طلبت من برنامج "
+"التجزئة إنشاء نظام ملفات عليه."
 
 #. Type: boolean
 #. Description
@@ -545,3 +526,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"استخدام نوع مفتاح رموز عشوائي يعني أن بيانات الجزء سيتم تدميرها عند كل إعادة "
+"تشغيل. يجب استخدام هذا الخيار فقط لأجزاء الإبدال."

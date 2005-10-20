@@ -40,9 +40,7 @@ select_cipher () {
     db_get $template
     
     if [ "$RET" = none ]; then
-        if [ -f $part/cipher ]; then
-            rm $part/cipher
-        fi
+        rm -f $part/cipher
         return
     fi
     

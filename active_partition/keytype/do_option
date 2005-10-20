@@ -35,9 +35,7 @@ select_keytype () {
     debconf_select critical partman-crypto/keytype "$choices"
 
     if [ "$RET" = none ]; then
-        if [ -f $part/keytype ]; then
-            rm $part/keytype
-        fi
+        rm -f $part/keytype
         return
     fi
     

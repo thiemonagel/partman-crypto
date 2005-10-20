@@ -31,9 +31,7 @@ select_keysize () {
     db_get $template
     
     if [ "$RET" = none ]; then
-        if [ -f $part/keysize ]; then
-            rm $part/keysize
-        fi
+        rm -f $part/keysize
         return
     fi
     

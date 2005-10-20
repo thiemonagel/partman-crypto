@@ -4,4 +4,7 @@ partman-crypto (1) UNRELEASED; urgency=low
   * First version
   * Only show ciphers for which modules are available 
 
+  [ Colin Watson ]
+  * Use 'rm -f' rather than more awkward test-then-remove constructions.
+
  -- Max Vozeler <xam@debian.org>  Fri, 16 Sep 2005 14:20:19 +0200

@@ -19,9 +19,7 @@ select_crypt_type () {
     debconf_select critical partman-crypto/crypt_type "$choices"
 
     if [ "$RET" = none ]; then
-        if [ -f $part/crypt_type ]; then
-            rm $part/crypt_type
-        fi
+        rm -f $part/crypt_type
         return
     fi
     

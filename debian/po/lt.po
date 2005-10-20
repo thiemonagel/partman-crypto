@@ -12,9 +12,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lt\n"
+"Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-10-08 01:53+0300\n"
+"PO-Revision-Date: 2005-10-19 23:50+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -321,6 +321,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Tai lemtinga klaida, nes svarbūs duomenys gali būti įrašyti į diską "
+"neužšifruoti. Tai leis bet kam, turinčiam priėjimą prie disko, atkurti "
+"šifravimo rakto ar slaptos frazės dalis."
 
 #. Type: error
 #. Description
@@ -330,6 +333,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Išjunkite mainų vietos (swap) naudojimą (pvz. įvykdžius swapoff) arba "
+"sukonfigūruokite šifruotos mainų vietos naudojimą, o tuomet vėl atlikite "
+"šifruotų tomų konfigūravimą. Dabar ši programa nutraukia darbą."
 
 #. Type: password
 #. Description

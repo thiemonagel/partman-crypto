@@ -29,8 +29,10 @@
   o erase crypt partitions by default?
   o use aespipe-udeb or losetup/dd?
 
-  o upload loop-aes-modules-i386
-  o upload loop-aes-rootfs (netzwurm was interested?)
+  o upload loop-aes-modules (in NEW)
+  o upload loop-aes-rootfs (for mkinitrd)
+    - what about initramfs-tools?
+    - what about yaird?
 
   o partman-auto-crypto
 

@@ -3,6 +3,7 @@ partman-crypto (1) UNRELEASED; urgency=low
   [ Max Vozeler ]
   * First version
   * Only show ciphers for which modules are available 
+  * Tell partman about existing crypt_disks (init.d/crypto)
 
   [ Colin Watson ]
   * Use 'rm -f' rather than more awkward test-then-remove constructions.

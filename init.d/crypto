@@ -31,8 +31,6 @@ create_partman_disk () {
         return 1
     fi
 
-    open_dialog NEW_LABEL loop
-    close_dialog
     return 0
 }
 
@@ -40,6 +38,8 @@ create_partman_partition () {
     local id num size type fs path name free_space free_size filesystem
     cd $(partman_devdir $1)
 
+    open_dialog NEW_LABEL loop
+    close_dialog
     # find the free space
     open_dialog PARTITIONS
     free_space=''
@@ -172,12 +172,13 @@ create_crypt_device () {
 }
 
 create_crypt_disk () {
-    local dev id num size cryptdev type cipher
+    local dev id num size path cryptdev type cipher
     dev=$1
     id=$2
     num=$3
     size=$4
     path=$5
+    cryptdev=$6
 
     type=$(cat $id/crypt_type)
     cipher=$(cat $id/cipher)
@@ -188,18 +189,23 @@ create_crypt_disk () {
     db_subst $templ KEYTYPE $keytype
     db_metaget $templ description || RET=''
     model="$RET"
-    if [ -z $model ]; then
+    if [ -z "$model" ]; then
        model="${cipher} ${keytype}"
     fi
 
-    cryptdev=$(create_crypt_device $type $path $cipher $keytype)
     if [ -z $cryptdev ]; then
-        return 1
+        cryptdev=$(create_crypt_device $type $path $cipher $keytype)
+        if [ -z $cryptdev ]; then
+            return 1
+        fi
     fi
 
-    create_partman_disk $cryptdev "$model" $size
-    if [ $? -ne 0 ]; then
-        return 2
+    cryptdir=$(partman_devdir $cryptdev)
+    if [ ! -d $cryptdir ]; then
+        create_partman_disk $cryptdev "$model" $size
+        if [ $? -ne 0 ]; then
+            return 2
+        fi
     fi
 
     cryptid=$(create_partman_partition $cryptdev)
@@ -207,11 +213,8 @@ create_crypt_disk () {
         return 3
     fi
 
-    # COMMIT here?
-
-    devdir=$(partman_devdir $cryptdev)
+    echo $path:$num:$dev/$id > $cryptdir/crypt_realdev
     echo $cryptdev > $dev/$id/crypt_active
-    echo $path:$num:$dev/$id > $devdir/crypt_realdev
     return 0
 }
 
@@ -243,15 +246,19 @@ for dev in /var/lib/partman/devices/*; do
         method=$(cat $id/method)
         [ "$method" = crypto ] || continue
         
-        if [ ! -f $id/crypt_active ]; then
+        if [ -f $id/crypt_active ]; then
+            log "re-adding crypt_disk for $path"
+            cryptdev=$(cat $id/crypt_active)
+        else
             log "creating crypt_disk for $path"
-        
-            if ! create_crypt_disk $dev $id $num $size $path; then
-                db_fset partman-crypto/init_failed seen false
-                db_input critical partman-crypto/init_failed
-                db_go || true
-                continue
-            fi
+            cryptdev=
+        fi
+
+        if ! create_crypt_disk $dev $id $num $size $path $cryptdev; then
+            db_fset partman-crypto/init_failed seen false
+            db_input critical partman-crypto/init_failed
+            db_go || true
+            continue
         fi
     done
 done

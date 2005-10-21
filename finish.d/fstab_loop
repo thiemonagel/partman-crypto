@@ -5,9 +5,6 @@
 
 . /lib/partman/definitions.sh
 
-exec 2>/tmp/fstab_fixloop
-set -x
-
 mount_options () {
     local cryptdev cryptid cipher crypt_type keyfile opts
     cryptdev=$1

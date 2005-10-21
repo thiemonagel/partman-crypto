@@ -5,9 +5,6 @@
 
 . /lib/partman/definitions.sh
 
-exec 2>/tmp/check_crypto_root
-set -x
-
 for dev in $DEVICES/*; do
     [ -d "$dev" ] || continue
     cd $dev

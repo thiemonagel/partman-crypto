@@ -18,9 +18,6 @@
 
 . /usr/share/debconf/confmodule
 
-exec 2>/tmp/keygen
-set -x
-
 minlen=8
 
 passphrase_is_weak () {

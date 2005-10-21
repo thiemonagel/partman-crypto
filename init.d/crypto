@@ -5,9 +5,6 @@
 
 . /lib/partman/definitions.sh
 
-exec 2>/tmp/init
-set -x
-
 partman_devdir () {
     local d=$(echo $1 | tr / =)
     echo /var/lib/partman/devices/$d
@@ -75,7 +72,7 @@ create_partman_partition () {
     echo $id
 }
 
-find_free_loop () {
+get_free_loop () {
     O=$IFS
     IFS="
 "
@@ -153,9 +150,9 @@ create_crypt_device () {
           ;;
       
         loop-AES)
-          n=$(find_free_loop);
-          [ -z "$n" ] && return 1
-          cryptdev=/dev/loop/$n
+          loop=$(get_free_loop);
+          [ -z "$loop" ] && return 1
+          cryptdev=/dev/loop/$loop
 
           case $keytype in
             random)

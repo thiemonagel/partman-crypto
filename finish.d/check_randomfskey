@@ -5,9 +5,6 @@
 
 . /lib/partman/definitions.sh
 
-exec 2>/tmp/randomkey_nonswap
-set -x
-
 for dev in $DEVICES/*; do
     [ -d "$dev" ] || continue
     cd $dev

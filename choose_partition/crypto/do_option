@@ -295,27 +295,6 @@ if [ $failed ]; then
     exit 1
 fi
 
-# Restart partman.
+stop_parted_server
 
-open_infifo
-write_line "QUIT"
-close_infifo
-
-rm /var/run/parted_server.pid
-
-initcount=`ls /lib/partman/init.d/* | wc -l`
-db_progress START 0 $initcount partman/progress/init/title
-for s in /lib/partman/init.d/*; do
-    if [ -x $s ]; then
-	base=$(basename $s | sed 's/[0-9]*//')
-	if ! db_progress INFO partman/progress/init/$base; then
-	    db_progress INFO partman/progress/init/fallback
-	fi
-	if ! $s; then
-	    db_progress STOP
-	    exit 255
-	fi
-    fi
-    db_progress STEP 1
-done
-db_progress STOP
+restart_partman

@@ -7,10 +7,6 @@
 
 . /lib/partman/definitions.sh
 
-# debug
-exec 2>/tmp/choose_partition
-set -x
-
 swap_is_safe () {
     local swap ret
     local IFS="

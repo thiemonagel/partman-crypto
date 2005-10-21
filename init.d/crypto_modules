@@ -1,7 +1,11 @@
 #!/bin/sh -e
 
 modules=/var/run/partman-crypto/modules
-test -d $modules || mkdir -p $modules
+if [ -d $modules ]; then
+    exit 0
+fi
+
+mkdir -p $modules
 
 load_module () {
     if modprobe -q $1; then

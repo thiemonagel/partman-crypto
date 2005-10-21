@@ -112,7 +112,7 @@ setup_loopaes () {
         pass="/dev/null"
     fi
 
-    /sbin/losetup-aes -e $cipher $opts -p0 $loop $device < $pass
+    /sbin/losetup-aes -e $cipher $opts -p0 $loop $device -G / < $pass
     if [ $? -ne 0 ] ; then
         log "losetup failed"
         return 2

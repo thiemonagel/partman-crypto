@@ -10,7 +10,7 @@ partman_devdir () {
     echo /var/lib/partman/devices/$d
 }
 
-create_partman_disk () {
+partman_create_disk () {
     device=$1
     model=$2
     size=$3
@@ -34,12 +34,13 @@ create_partman_disk () {
     return 0
 }
 
-create_partman_partition () {
+partman_create_partition () {
     local id num size type fs path name free_space free_size filesystem
     cd $(partman_devdir $1)
 
     open_dialog NEW_LABEL loop
     close_dialog
+
     # find the free space
     open_dialog PARTITIONS
     free_space=''
@@ -99,9 +100,7 @@ setup_loopaes () {
     cipher=$3
     keyfile=$4
 
-    if [ ! -x /sbin/losetup-aes ]; then
-       return 1
-    fi
+    [ -x /sbin/losetup-aes ] || return 1
 
     if [ $keyfile ]; then
         opts="-K $keyfile"
@@ -112,7 +111,7 @@ setup_loopaes () {
         pass="/dev/null"
     fi
 
-    /sbin/losetup-aes -e $cipher $opts -p0 $loop $device -G / < $pass
+    log-output -t partman-crypto /sbin/losetup-aes -e $cipher $opts -p0 $loop $device -G / < $pass
     if [ $? -ne 0 ] ; then
         log "losetup failed"
         return 2
@@ -122,14 +121,14 @@ setup_loopaes () {
 }
 
 setup_dmcrypt () {
-    : XXX
+    : TODO
 }
 
 setup_luks () {
-    : XXX
+    : TODO
 }
 
-create_crypt_device () {
+setup_crypt_device () {
     local type realdev cipher cryptdev
     type=$1
     realdev=$2
@@ -194,7 +193,7 @@ create_crypt_disk () {
     fi
 
     if [ -z $cryptdev ]; then
-        cryptdev=$(create_crypt_device $type $path $cipher $keytype)
+        cryptdev=$(setup_crypt_device $type $path $cipher $keytype)
         if [ -z $cryptdev ]; then
             return 1
         fi
@@ -202,13 +201,13 @@ create_crypt_disk () {
 
     cryptdir=$(partman_devdir $cryptdev)
     if [ ! -d $cryptdir ]; then
-        create_partman_disk $cryptdev "$model" $size
+        partman_create_disk $cryptdev "$model" $size
         if [ $? -ne 0 ]; then
             return 2
         fi
     fi
 
-    cryptid=$(create_partman_partition $cryptdev)
+    cryptid=$(partman_create_partition $cryptdev)
     if [ -z $cryptid ]; then
         return 3
     fi

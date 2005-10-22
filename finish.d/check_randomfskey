@@ -45,6 +45,11 @@ for dev in $DEVICES/*; do
         [ "$type" = loop-AES ] || continue
 
         if [ "$keytype" = random ] && [ -f $id/mountpoint ]; then
+            mnt=$(cat $id/mountpoint)
+            if [ $mnt = /tmp ]; then 
+                continue
+            fi
+        
             templ="partman-crypto/use_random_for_nonswap"
             db_set $templ false
             db_fset $templ seen false

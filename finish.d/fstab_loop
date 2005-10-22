@@ -8,30 +8,30 @@
 mount_options () {
     local cryptdev cryptid cipher crypt_type keyfile opts
     cryptdev=$1
-    devdir=$2
+    cryptdevdir=$2
+    devdir=$3
  
     crypt_type=$(cat $devdir/crypt_type)
     cipher=$(cat $devdir/cipher)
     keytype=$(cat $devdir/keytype)
  
-    opts=""
- 
-    case $crypt_type in
-      dm-crypt)
-        ;;
+    opts="loop=${cryptdev},encryption=${cipher}"
 
-      dm-crypt-luks)
-        ;;
+    # add gpgkey= option if applicable
+    if [ $keytype = keyfile ] && [ -f $devdir/keyfile ]; then
+        keyfile=$(basename $(cat $devdir/keyfile))
+        opts="${opts},gpgkey=/etc/loopkeys/$keyfile"
+    fi
 
-      loop-AES)
-        opts="loop=${cryptdev},encryption=${cipher}"
-
-        if [ $keytype = keyfile ] && [ -f $devdir/keyfile ]; then
-            keyfile=$(basename $(cat $devdir/keyfile))
-            opts="${opts},gpgkey=/etc/loopkeys/$keyfile"
+    # handle non-swap partitions with random key
+    if [ $keytype = random ] && [ -f $cryptdevdir/mountpoint ]; then
+        mnt=$(cat $cryptdevdir/mountpoint)
+        if [ $mnt = /tmp ]; then
+            opts="${opts},phash=random/1777"
+        else 
+            opts="${opts},phash=random"
         fi
-        ;;
-    esac
+    fi
 
     echo $opts
 }
@@ -65,7 +65,7 @@ for dev in $DEVICES/*; do
         [ -f $realdevdir/keytype ] || continue
         [ -f $id/method ] || continue
 
-        # is swap or to be mounted?
+        # skip unless swap or to be mounted
         method=$(cat $id/method)
         if [ "$method" != swap ] && [ ! -f $id/mountpoint ]; then
             continue
@@ -76,16 +76,15 @@ for dev in $DEVICES/*; do
 
         realdev=$(mapdevfs $realdev)
         cryptdev=$(mapdevfs $path)
-        newopts=$(mount_options $cryptdev $realdevdir)
         entry=$(grep ^$cryptdev /target/etc/fstab)
 
         if [ "$entry" ]; then
             # add options
             opts=$(set -- $entry && echo $4)
+            newopts=$(mount_options $cryptdev $dev/$id $realdevdir)
             
             # XXX: what happens for
             # /dev/foo /path auto noauto
-
             sed -i "\#^$cryptdev# { s#\($opts\)\([[:blank:]]\)#\1,$newopts\2# }" /target/etc/fstab
 
             # replace loop with realdev

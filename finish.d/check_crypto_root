@@ -25,10 +25,18 @@ for dev in $DEVICES/*; do
 
         [ -f $id/method ] || continue
         [ -f $id/mountpoint ] || continue
-        method=$(cat $id/method)
         mnt=$(cat $id/mountpoint)
 
-        if [ $method = crypto] && [ $mnt = / ]; then
+        r=$(cat crypt_realdev)
+        set -- $(IFS=: && echo $r)
+        realdev=$1
+        realdevnum=$2
+        realdevdir=$3
+
+        [ -f $realdevdir/method ] || continue
+        method=$(cat $realdevdir/method)
+
+        if [ $method = crypto ] && [ $mnt = / ]; then
             templ="partman-crypto/crypto_root_unimplemented"
             db_set $templ false
             db_fset $templ seen false

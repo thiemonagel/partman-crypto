@@ -7,35 +7,6 @@
 
 . /lib/partman/definitions.sh
 
-swap_is_safe () {
-    local swap ret
-    local IFS="
-"
-    ret=0
-    for swap in $(cat /proc/swaps); do
-       case $swap in
-         Filename*)
-           ;;
-         /dev/loop*)
-           ;;
-         /dev/mapper/*)
-           ;;  # XX could be LVM2 ?
-         *) 
-           ret=1
-           ;;
-       esac
-    done
-
-    return $ret
-}
-
-if ! swap_is_safe; then
-    db_fset partman-crypto/unsafe_swap seen false
-    db_input critical partman-crypto/unsafe_swap
-    db_go || true
-    exit 1
-fi
-
 # check required tools
 for tool in /usr/bin/gpg /usr/bin/uuencode; do
     if [ ! -x $tool ]; then
@@ -228,6 +199,35 @@ for s in /lib/partman/commit.d/*; do
 	}
     fi
 done
+
+swap_is_safe () {
+    local swap ret
+    local IFS="
+"
+    ret=0
+    for swap in $(cat /proc/swaps); do
+       case $swap in
+         Filename*)
+           ;;
+         /dev/loop*)
+           ;;
+         /dev/mapper/*)
+           ;;  # XX could be LVM2 ?
+         *) 
+           ret=1
+           ;;
+       esac
+    done
+
+    return $ret
+}
+
+if ! swap_is_safe; then
+    db_fset partman-crypto/unsafe_swap seen false
+    db_input critical partman-crypto/unsafe_swap
+    db_go || true
+    exit 1
+fi
 
 keyfile_name () {
     local file

@@ -24,8 +24,6 @@ for dev in $DEVICES/*; do
         path=${part#*,}
  
         [ -f $id/method ] || continue
-        method=$(cat $id/method)
-        [ $method = crypto ] || continue
  
         r=$(cat crypt_realdev)
         set -- $(IFS=: && echo $r)
@@ -33,11 +31,15 @@ for dev in $DEVICES/*; do
         realdevnum=$2
         realdevdir=$3
 
+        [ -f $realdevdir/method ] || continue
         [ -f $realdevdir/crypt_type ] || continue
         [ -f $realdevdir/keytype ] || continue
 
         type=$(cat $realdevdir/crypt_type)
+        method=$(cat $realdevdir/method)
         keytype=$(cat $realdevdir/keytype)
+
+        [ $method = crypto ] || continue
 
         # only loop-AES supports random keys (check?!)
         [ "$type" = loop-AES ] || continue

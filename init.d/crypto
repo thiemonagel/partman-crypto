@@ -73,103 +73,6 @@ partman_create_partition () {
     echo $id
 }
 
-get_free_loop () {
-    O=$IFS
-    IFS="
-"
-    for n in $(losetup-aes -a); do
-        n=${n%%:*}
-        n=${n#/dev/loop}
-        n=${n#/}
-	    eval loop$n=1
-    done
-    IFS=$O
-
-    for n in 0 1 2 3 4 5 6 7; do
-        if eval [ -z "\$loop$n" ]; then
-            echo $n
-            break
-	    fi
-    done
-}
-
-setup_loopaes () {
-    local loop device cipher keyfile opts pass
-    loop=$1
-    device=$2
-    cipher=$3
-    keyfile=$4
-
-    [ -x /sbin/losetup-aes ] || return 1
-
-    if [ $keyfile ]; then
-        opts="-K $keyfile"
-        pass="$keyfile.pass"
-    else
-        # random key
-        opts="-H random"
-        pass="/dev/null"
-    fi
-
-    log-output -t partman-crypto /sbin/losetup-aes -e $cipher $opts -p0 $loop $device -G / < $pass
-    if [ $? -ne 0 ] ; then
-        log "losetup failed"
-        return 2
-    fi
-
-    return 0
-}
-
-setup_dmcrypt () {
-    : TODO
-}
-
-setup_luks () {
-    : TODO
-}
-
-setup_crypt_device () {
-    local type realdev cipher cryptdev
-    type=$1
-    realdev=$2
-    cipher=$3
-    keytype=$4
-
-    case $type in
-        dm-crypt)
-          # TODO: crypt_name ?
-          cryptdev=/dev/mapper/XXX
-          setup_dmcrypt $cryptdev $realdev $cipher || return
-          ;;
-
-        dm-crypt-luks)
-          # TODO: crypt_name ?
-          cryptdev=/dev/mapper/ZZZ
-          setup_luks $cryptdev $realdev $cipher || return
-          ;;
-      
-        loop-AES)
-          loop=$(get_free_loop);
-          [ -z "$loop" ] && return 1
-          cryptdev=/dev/loop/$loop
-
-          case $keytype in
-            random)
-              keyfile=""
-              ;;
-            keyfile)
-              keyfile=$(cat $id/keyfile)
-              ;;
-          esac
-
-          setup_loopaes $cryptdev $realdev $cipher $keyfile || return
-          ;;
-
-    esac
-
-    echo $cryptdev
-}
-
 create_crypt_disk () {
     local dev id num size path cryptdev type cipher
     dev=$1
@@ -177,11 +80,11 @@ create_crypt_disk () {
     num=$3
     size=$4
     path=$5
-    cryptdev=$6
 
     type=$(cat $id/crypt_type)
     cipher=$(cat $id/cipher)
     keytype=$(cat $id/keytype)
+    cryptdev=$(cat $id/crypt_active)
 
     templ="partman-crypto/text/cryptdev_description"
     db_subst $templ CIPHER $cipher
@@ -190,13 +93,6 @@ create_crypt_disk () {
     model="$RET"
     if [ -z "$model" ]; then
        model="${cipher} ${keytype}"
-    fi
-
-    if [ -z $cryptdev ]; then
-        cryptdev=$(setup_crypt_device $type $path $cipher $keytype)
-        if [ -z $cryptdev ]; then
-            return 1
-        fi
     fi
 
     cryptdir=$(partman_devdir $cryptdev)
@@ -213,7 +109,6 @@ create_crypt_disk () {
     fi
 
     echo $path:$num:$dev/$id > $cryptdir/crypt_realdev
-    echo $cryptdev > $dev/$id/crypt_active
     return 0
 }
 
@@ -241,19 +136,12 @@ for dev in /var/lib/partman/devices/*; do
         [ -f $id/method ] || continue
         [ -f $id/cipher ] || continue
         [ -f $id/crypt_type ] || continue
+        [ -f $id/crypt_active ] || continue
 
         method=$(cat $id/method)
         [ "$method" = crypto ] || continue
         
-        if [ -f $id/crypt_active ]; then
-            log "re-adding crypt_disk for $path"
-            cryptdev=$(cat $id/crypt_active)
-        else
-            log "creating crypt_disk for $path"
-            cryptdev=
-        fi
-
-        if ! create_crypt_disk $dev $id $num $size $path $cryptdev; then
+        if ! create_crypt_disk $dev $id $num $size $path; then
             db_fset partman-crypto/init_failed seen false
             db_input critical partman-crypto/init_failed
             db_go || true

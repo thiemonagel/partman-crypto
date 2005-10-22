@@ -1,5 +1,9 @@
  
-  o check if we could load and use hw_random, sound, 
+  o do the tests in choose_partition/crypto/do_option cover all
+    cases where unencrypted swap may be setup?
+  
+  o need better sources of entropy. check if we could load and use
+    hw_random, sound, .. ?
   
   o understand and add undo.d stuff
   

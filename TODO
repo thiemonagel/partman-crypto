@@ -1,9 +1,5 @@
  
-  o check if we could load and use hw_random
-  
-  o if "setup encrypted storage" (or LVM?) is called after an
-    encrypted partition has been setup, the partition disappears.
-    What's happening there? 
+  o check if we could load and use hw_random, sound, 
   
   o understand and add undo.d stuff
   
@@ -27,9 +23,7 @@
  
   o provide options "Erase partition", "Erase disk"
   o erase crypt partitions by default?
-  o use aespipe-udeb or losetup/dd?
 
-  o upload loop-aes-modules (in NEW)
   o upload loop-aes-rootfs (for mkinitrd)
     - what about initramfs-tools?
     - what about yaird?

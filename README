@@ -1,12 +1,17 @@
-This is a quick overview of the components of partman-crypto.
+
+ IMPORTANT:
+   This code is still pre-beta and has not been audited for flaws that
+   could introduce weaknesses in the encryption. Please don't use it for
+   any confidential data before the beta release.
 
 ------------------------------------------------------------------------
-Required packages:
+STATUS:
  
   loop-AES support:
-   - loop-aes-$KVERS-udeb during first stage 
+   - loop-aes-$KVERS-di during first stage 
    - loop-aes-$KVERS before booting into second stage
    (These are from loop-aes-modules (in NEW))
+
    - gnupg-udeb (#321948)
    - busybox-udeb with CONFIG_UUENCODE=y (#323436)
 

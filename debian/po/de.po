@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-09-12 18:34-0600\n"
-"PO-Revision-Date: 2005-10-22 22:54+0200\n"
+"PO-Revision-Date: 2005-10-23 16:46+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -564,6 +564,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Bitte gehen Sie zurück und wählen Sie eine nicht verschlüsselte Partition "
+"für das root-Dateisystem."
 
 #. Type: boolean
 #. Description
@@ -579,6 +581,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Sie wählten einen zufälligen Schlüsseltyp für ${DEVICE} aber wiesen den "
+"Partitionierer an, ein Dateisystem darauf zu erzeugen."
 
 #. Type: boolean
 #. Description
@@ -587,3 +591,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Die Verwendung eines zufälligen Schlüsseltyps bedeutet, dass die "
+"Partitionsdaten bei jedem Neustart zerstört werden. Dies sollte nur für Swap-"
+"Partitionen verwendet werden."

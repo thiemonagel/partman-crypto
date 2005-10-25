@@ -116,3 +116,81 @@ setup_crypt_device () {
     return 0
 }
 
+blocksize=$((8192*1024))
+
+dd_show_progress () {
+    local n in out
+    in=$1
+    out=$2
+    n=0
+    
+    while dd if=$in bs=$blocksize count=1 2>/dev/null; do
+      n=$((n+1))
+      echo $n >&2
+    done |
+      log-output -t partman-crypto dd of=$out bs=4096 conv=notrunc
+
+    return $?
+}
+
+dd_show_progressbar () {
+    local template in out size x
+    template=$1
+    in=$2
+    out=$3
+    size=$((size/blocksize))
+
+    fifo=/tmp/erase_progress
+    mknod $fifo p
+    
+    db_progress START 0 $size $template
+    dd_show_progress $in $out > $fifo 2>&1 &
+    ddpid=$!
+
+    while read x < $fifo; do
+        db_progress STEP 1
+    done
+
+    rm $fifo
+    db_progress STOP
+    wait $ddpid
+    return $?
+}
+
+erase () {
+    local device size loop
+    device=$1
+    size=$2
+    loop=$(get_free_loop)
+    ret=1
+
+    template="partman-crypto/warn_erase"
+    db_subst $template DEVICE $(humandev $path)
+    db_input critical $template || true
+    db_go || return
+    db_get $template
+        
+    if [ "$RET" != true ]; then
+        return 0
+    fi
+
+    if setup_loopaes $loop $device AES128 ""; then
+        templ="partman-crypto/progress/erase"
+        db_subst $template DEVICE $(humandev $path)
+        if dd_show_progressbar $templ /dev/zero $loop $size; then
+            ret=0
+	fi
+    fi
+    
+    if [ $ret -ne 0 ]; then
+        template="partman-crypto/erase_failed"
+        db_subst $template DEVICE $(humandev $path)
+        db_input critical $template || true
+        db_go
+    fi
+
+    log-output -t partman-crypto /sbin/losetup-aes -d $loop
+
+    return $ret
+}
+

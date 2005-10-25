@@ -50,6 +50,32 @@ Type: select
 Choices: ${CHOICES}
 _Description: Type of encryption key for this partition:
 
+Template: partman-crypto/text/erase_data
+Type: text
+Description: Erase data:
+
+Template: partman-crypto/text/erase_data_partition
+Type: text
+Description: Erase data on this partition
+
+Template: partman-crypto/warn_erase
+Type: boolean
+Default: false
+Description: Are you sure you want to erase the data on ${DEVICE}?
+ The data on ${DEVICE} will be overwritten with random data. It can no
+ longer be recovered after this step has completed. This is the last 
+ opportunity to abort the erase.
+
+Template: partman-crypto/progress/erase
+Type: text
+Description: Erasing data on ${DEVICE}
+
+Template: partman-crypto/erase_failed
+Type: error
+Description: Erasing data on ${DEVICE} failed
+ An error occured trying to erase the data on ${DEVICE}. The data has
+ not been erased.
+
 Template: partman/progress/init/crypto
 Type: text
 _Description: Setting up encryption...

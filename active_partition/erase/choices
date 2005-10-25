@@ -1,0 +1,34 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+
+set -e
+
+dev=$1
+id=$2
+part=$dev/$id
+
+cd $dev
+
+choice_erase () {
+    if [ -f $part/skip_erase ]; then
+        #db_metaget partman-crypto/text/erase_data description
+        erase="no"
+    else
+        #db_metaget partman-crypto/text/dont_erase_data description
+        erase="yes"
+    fi
+
+    db_metaget partman-crypto/text/erase_data description
+    RET=$(stralign -25 "$RET")
+    printf "erase\t%s%s\n" "$RET" $erase
+}
+
+[ -f $part/method ] || exit 0
+method=$(cat $part/method)
+
+if [ "$method" = crypto ]; then
+    choice_erase
+fi
+
+# vim:set ts=4 sw=4 expandtab:

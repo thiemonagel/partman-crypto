@@ -25,8 +25,6 @@
     into the pass fifo. (XX needs passphrase questions outside
     of loop-aes-keygen)
  
-  o provide options "Erase partition", "Erase disk"
-  o erase crypt partitions by default?
 
   o upload loop-aes-rootfs (for mkinitrd)
     - what about initramfs-tools?

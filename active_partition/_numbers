@@ -2,3 +2,5 @@
 45 cipher
 46 keysize
 47 keytype
+48 erase
+85 erasepart

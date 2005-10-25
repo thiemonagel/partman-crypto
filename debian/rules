@@ -26,6 +26,7 @@ install: build
 	debian/install-rc active_partition
 	debian/install-rc update.d
 	debian/install-rc finish.d
+	dh_install crypto_tools.sh lib/partman
 	dh_install ciphers lib/partman
 	dh_install blockdev-keygen bin/
 	dh_install crypto_modules usr/lib/post-base-installer.d

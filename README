@@ -10,7 +10,7 @@ STATUS:
   loop-AES support:
    - loop-aes-$KVERS-di during first stage 
    - loop-aes-$KVERS before booting into second stage
-   (These are from loop-aes-modules (in NEW))
+   (These packages are built from loop-aes-modules in experimental)
 
    - gnupg-udeb (#321948)
    - busybox-udeb with CONFIG_UUENCODE=y (#323436)
@@ -30,8 +30,6 @@ The scripts do stuff more or less in the following order:
  6. blockdev-keygen
  7. update.d/crypto_visuals
  8. finish.d/check_randomfskey, aptinstall_crypto, fstab_loop
-
-------------------------------------------------------------------------
 
 init.d/
   crypto_modules

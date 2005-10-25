@@ -7,6 +7,10 @@
   
   o understand and add undo.d stuff
   
+  o set fs_passno for loop entries in fstab to 0; currently fsck
+    spews ugly warnings because it tries to fsck the unencrypted
+    backing device. who will do the fsck then?
+
   o maybe we could reduce the number of steps requires by
     assuming default cipher and keytype when the crypt_ype
     is first chosen
@@ -25,7 +29,6 @@
     into the pass fifo. (XX needs passphrase questions outside
     of loop-aes-keygen)
  
-
   o upload loop-aes-rootfs (for mkinitrd)
     - what about initramfs-tools?
     - what about yaird?

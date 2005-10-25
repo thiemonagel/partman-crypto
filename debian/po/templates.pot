@@ -1,12 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +169,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -176,16 +186,6 @@ msgstr ""
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
-msgstr ""
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
 msgstr ""
 
 #. Type: boolean
@@ -301,7 +301,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""

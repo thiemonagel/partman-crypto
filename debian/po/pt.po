@@ -44,14 +44,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-09-17 21:59+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -204,7 +204,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -228,20 +228,6 @@ msgstr ""
 "Antes dos volumes encriptados poderem ser configurados, o actual esquema de "
 "particionamento tem de ser escrito para o disco. Essas alterações não podem "
 "ser desfeitas."
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"Após os volumes encriptados terem sido configurados, não será permitida "
-"nenhuma alteração adicional nas partições dos discos que contêm os volumes "
-"encriptados. Por favor decida se está satisfeito com o actual esquema de "
-"particionamento nesses discos antes de continuar."
 
 #. Type: boolean
 #. Description
@@ -363,7 +349,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -599,3 +585,14 @@ msgid ""
 msgstr ""
 "Utilizar um tipo de chave aleatória significa que os dados da partição vão "
 "ser destruídos a cada reboot. Isto só deve ser utilizado para partições swap."
+
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Após os volumes encriptados terem sido configurados, não será permitida "
+#~ "nenhuma alteração adicional nas partições dos discos que contêm os "
+#~ "volumes encriptados. Por favor decida se está satisfeito com o actual "
+#~ "esquema de particionamento nesses discos antes de continuar."

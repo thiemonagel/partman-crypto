@@ -2,7 +2,7 @@ partman-crypto (1) UNRELEASED; urgency=low
 
   [ Max Vozeler ]
   * First version
-  * Only show ciphers for which modules are available 
+  * Only show ciphers for which modules are available
   * Tell partman about existing crypt_disks (init.d/crypto)
 
   [ Colin Watson ]
@@ -10,4 +10,10 @@ partman-crypto (1) UNRELEASED; urgency=low
   * Use stop_parted_server and restart_partman functions from partman-base
     73 instead of duplicating the code.
 
- -- Max Vozeler <xam@debian.org>  Fri, 16 Sep 2005 14:20:19 +0200
+  [ Christian Perrier ]
+  * Correct a typo in templates (s/systems tries/system tries)
+  * Correct wording of "e.g."
+  * Correct one templates paragraph so that it's identical to another
+    one. Thanks to Jens Seidel for noticing all these
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 25 Oct 2005 07:43:21 +0200

@@ -10,14 +10,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-10-09 15:30+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10.2\n"
 
 #. Type: text
@@ -171,7 +171,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -195,20 +195,6 @@ msgstr ""
 "Пред да може да се конфигурираат енкриптираните простори, моменталната "
 "партициона шема мора да биде запишана на диск. Овие промени не може да се "
 "отповикаат."
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"Откако ќе се конфигурират енкриптираните простори, не се дозволени "
-"дополнителни промени на партициите со енкриптирани простори во дисковите. Те "
-"молам одлучи дали си задоволен со моменталната поставеност на партициите на "
-"овие дискови пред да продолжиш."
 
 #. Type: boolean
 #. Description
@@ -332,7 +318,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -566,3 +552,14 @@ msgstr ""
 "Користејќи на случаен тип за клучот значи дека сите податоци на партицијата "
 "ќе бидат уништувани при секое ресетирање. Ова би требало да се користи за "
 "swap партиции."
+
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Откако ќе се конфигурират енкриптираните простори, не се дозволени "
+#~ "дополнителни промени на партициите со енкриптирани простори во дисковите. "
+#~ "Те молам одлучи дали си задоволен со моменталната поставеност на "
+#~ "партициите на овие дискови пред да продолжиш."

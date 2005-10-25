@@ -12,14 +12,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-10-22 14:11+0200\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 
 #. Type: text
@@ -174,7 +174,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -200,20 +200,6 @@ msgstr ""
 "Voordat de versleutelde volumes ingesteld kunnen worden dient het huidige "
 "schijfindelingsschema naar de schijf weggeschreven te worden. Deze "
 "aanpassingen kunnen niet meer ongedaan gemaakt worden."
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"Verder veranderingen aan de partities van schijven met versleutelde volumes "
-"zijn niet meer toegelaten eens de versleutelde volumes ingesteld zijn. U "
-"kunt alvorens verder te gaan best controleren of het huidige "
-"schijfindelingsschema is wat u wilt."
 
 #. Type: boolean
 #. Description
@@ -337,7 +323,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -574,3 +560,14 @@ msgstr ""
 "Gebruik van een random sleutel heeft als gevolg dat alle data op de partitie "
 "vernietigd wordt met elke herstart. Dit wordt normaal enkel gebruikt voor "
 "wisselgeheugenpartities."
+
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Verder veranderingen aan de partities van schijven met versleutelde "
+#~ "volumes zijn niet meer toegelaten eens de versleutelde volumes ingesteld "
+#~ "zijn. U kunt alvorens verder te gaan best controleren of het huidige "
+#~ "schijfindelingsschema is wat u wilt."

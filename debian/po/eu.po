@@ -15,14 +15,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-10-04 22:54+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale.org <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
@@ -177,7 +177,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -200,19 +200,6 @@ msgid ""
 msgstr ""
 "Uneko partizio-eskema diskoan idatzi behar da bolumen-enkriptatuak "
 "konfiguratu aurretik. Aldaketa horiek ezin dira desegin."
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"Bolumen-enkriptatuak konfiguratu ondoren ezin dira partizioetan aldaketa "
-"gehiagorik egin bolumen-enkriptatuak dituen diskoan. Jarraitu aurretik "
-"erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
 
 #. Type: boolean
 #. Description
@@ -333,7 +320,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -565,3 +552,13 @@ msgid ""
 msgstr ""
 "Ausazko gako bat erabiltzea partizio datuak berrabiarazte bakoitzean "
 "ezabatzea eragingo du. Hau swap partizioan bakarrik erabili beharko zen."
+
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Bolumen-enkriptatuak konfiguratu ondoren ezin dira partizioetan aldaketa "
+#~ "gehiagorik egin bolumen-enkriptatuak dituen diskoan. Jarraitu aurretik "
+#~ "erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."

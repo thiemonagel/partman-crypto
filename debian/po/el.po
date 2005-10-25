@@ -15,7 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-09-15 21:29EEST\n"
 "Last-Translator: Greek Translation Team <debian-l10n-greek@lists.debian."
 "org>\n"
@@ -28,7 +29,6 @@ msgstr ""
 "org>\n"
 "org>\n"
 "org>\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -179,7 +179,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -202,21 +202,6 @@ msgstr ""
 "Προτού γίνει η ρύθμιση του Διαχειριστή Λογικών Τόμων (Logical Volume "
 "Manager), θα πρέπει πρώτα να αποθηκευτεί το τρέχον σχήμα κατάτμησης στους "
 "δίσκους.  Αυτές οι αλλαγές δε μπορούν να ακυρωθούν."
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-#, fuzzy
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"Μετά τη ρύθμιση του Διαχειριστή Λογικών Τόμων δεν επιτρέπονται αλλαγές στα "
-"τμήματα των δίσκων που περιέχουν φυσικούς τόμους.  Πριν συνεχίσετε, "
-"βεβαιωθείτε ότι το τρέχον σχήμα κατάτμησης αυτών των δίσκων είναι "
-"ικανοποιητικό."
 
 #. Type: boolean
 #. Description
@@ -344,7 +329,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -562,3 +547,15 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "Μετά τη ρύθμιση του Διαχειριστή Λογικών Τόμων δεν επιτρέπονται αλλαγές "
+#~ "στα τμήματα των δίσκων που περιέχουν φυσικούς τόμους.  Πριν συνεχίσετε, "
+#~ "βεβαιωθείτε ότι το τρέχον σχήμα κατάτμησης αυτών των δίσκων είναι "
+#~ "ικανοποιητικό."

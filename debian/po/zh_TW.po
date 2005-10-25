@@ -10,7 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"POT-Creation-Date: 2005-09-12 18:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-04-19 07:06+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -18,7 +19,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -175,7 +175,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:89
 msgid ""
-"There will likely be problems during boot when the systems tries to setup "
+"There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
@@ -197,20 +197,6 @@ msgid ""
 msgstr ""
 "必須先將目前的磁碟分割結果寫入磁碟中，然後才能對 Logical Volume Manager 進行"
 "設定。這些變更將無法還原。"
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:100
-#, fuzzy
-msgid ""
-"After encrypted volumes have been configured, no additional changes to the "
-"partitions in the discs containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
-"disks before continuing."
-msgstr ""
-"一旦 Logical Volume Manager 設定完成，就不能再對磁碟中包含了 Physical Volume "
-"的分割區進行任何其它的變更了。因此，在繼續之前請確認您是否已滿意於目前這些磁"
-"碟所採取的分割方式。"
 
 #. Type: boolean
 #. Description
@@ -335,7 +321,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid ""
-"Please disable the swap space (eg. by running swapoff) or configure an "
+"Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
@@ -546,3 +532,14 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "After encrypted volumes have been configured, no additional changes to "
+#~ "the partitions in the disks containing encrypted volumes are allowed. "
+#~ "Please decide if you are satisfied with the current partitioning scheme "
+#~ "in these disks before continuing."
+#~ msgstr ""
+#~ "一旦 Logical Volume Manager 設定完成，就不能再對磁碟中包含了 Physical "
+#~ "Volume 的分割區進行任何其它的變更了。因此，在繼續之前請確認您是否已滿意於"
+#~ "目前這些磁碟所採取的分割方式。"

@@ -172,6 +172,9 @@ if [ -z $device ]; then
     exit 1
 fi
 
+# Log available entropy
+logger -t partman-crypto available kernel entropy: $(cat /proc/sys/kernel/random/entropy_avail) bits
+
 pass=$(get_passphrase)
 if [ -z "$pass" ]; then
     db_fset partman-crypto/keyfile-problem seen false

@@ -18,14 +18,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wo\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
-"PO-Revision-Date: 2005-09-23 22:40+0000\n"
+"PO-Revision-Date: 2005-10-08 21:27+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 
 #. Type: text
@@ -178,6 +178,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -321,6 +322,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -550,13 +552,3 @@ msgid ""
 msgstr ""
 "Jëfandikoo ab caabi jabbute mooy ne done yi ci partisoŋ bi deesna ko far saa "
 "yuñu demaaree. Loolu nak partisoŋ u swap rekk lañu ko wara def."
-
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Ginnaaw bu ñu komfiguree wolim yiñu kiripte, partisoŋ yi ne ci disk bi am "
-#~ "wolim yuñu kiripte deesuca man a soppiwaat dara. Seetal bubaax baxam "
-#~ "palaŋ (eskeem) u partisoŋ bii ne ci disk yi neexna la bala ngay kontine."

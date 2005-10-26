@@ -12,7 +12,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer 1.0\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-09-24 18:38+0300\n"
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
@@ -20,6 +19,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -176,7 +176,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Voleu escriure els canvis als disks i configurar els volums xifrats?"
+msgstr "Voleu escriure els canvis als discs i configurar els volums xifrats?"
 
 #. Type: boolean
 #. Description
@@ -214,9 +214,9 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Quan el gestor de volums lògics estiga configurat, no es permetran canvis "
-"addicionals a les particions dels disks que continguen volums físics. "
+"addicionals a les particions dels discs que continguen volums físics. "
 "Assegureu-vos que esteu satisfets amb l'esquema de particions actual en "
-"aquests disks abans de continuar."
+"aquests discs abans de continuar."
 
 #. Type: error
 #. Description
@@ -229,7 +229,7 @@ msgstr "Error en la configuració dels volums xifrats"
 #: ../partman-crypto.templates:123
 #, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "S'ha produït un error quan s'escrivien els canvis als disks."
+msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
 
 #. Type: error
 #. Description
@@ -249,7 +249,7 @@ msgstr "Ha fallat la instal·lació d'ELILO"
 #: ../partman-crypto.templates:130
 #, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "S'ha produït un error quan s'escrivien els canvis als disks."
+msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
 
 #. Type: text
 #. Description
@@ -481,7 +481,7 @@ msgstr "Ha fallat l'operació de redimensionat"
 #: ../partman-crypto.templates:242
 #, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "S'ha produït un error quan s'escrivien els canvis als disks."
+msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
 
 #. Type: error
 #. Description
@@ -526,15 +526,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Quan el gestor de volums lògics estiga configurat, no es permetran canvis "
-#~ "addicionals a les particions dels disks que continguen volums físics. "
-#~ "Assegureu-vos que esteu satisfets amb l'esquema de particions actual en "
-#~ "aquests disks abans de continuar."

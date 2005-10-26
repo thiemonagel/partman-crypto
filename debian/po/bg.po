@@ -12,7 +12,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-07-11 08:31+0300\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
@@ -20,6 +19,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -540,15 +540,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "След като Logical Volume Manager е вече настроен, не са позволени "
-#~ "допълнителни промени на дяловете в дисковете, съдържащи физически томове. "
-#~ "Моля, решете дали текущата схема на разделянето е задоволителна преди да "
-#~ "продължите."

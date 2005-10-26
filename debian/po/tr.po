@@ -16,14 +16,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
-"PO-Revision-Date: 2005-10-10 22:54+0300\n"
+"PO-Revision-Date: 2005-10-22 23:26+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 "Plural-Forms:  nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.9.1\n"
 
@@ -177,6 +177,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -324,6 +325,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -558,14 +560,3 @@ msgstr ""
 "Rastgele bir anahtar tipi kullanmak, bölüm bilgisinin her açılışta yok "
 "edilmesi anlamına gelmektedir.  Bu sadece takas bölümleri için "
 "kullanılmalıdır."
-
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Şifrelenmiş ciltler yapılandırıldıktan sonra, şifrelenmiş cilt içeren "
-#~ "disklerdeki bölümler üzerinde ek bir değişikliğe izin verilmez.  Lütfen "
-#~ "bu disklerdeki mevcut bölümlemenin isteğinize uygun şekilde olduğundan "
-#~ "emin olun."

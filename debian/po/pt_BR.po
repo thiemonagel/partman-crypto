@@ -10,14 +10,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
-"PO-Revision-Date: 2005-09-08 09:49-0300\n"
+"PO-Revision-Date: 2005-10-09 28:38-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -169,6 +169,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -317,6 +318,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -556,14 +558,3 @@ msgstr ""
 "Utilizar um tipo de chave aleatória significa que os dados da partição serão "
 "destruídos a cada reinicialização. Esse tipo de chave deveria ser utilizado "
 "para para partições de troca (swap)."
-
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Depois que os volumes encriptados forem configurado, nenhuma mudança "
-#~ "adicional nos disco que contém os volumes encriptados será permitida. Por "
-#~ "favor, decida se você está satisfeito com o esquema de particionamento "
-#~ "atual nesses discos antes de continuar."

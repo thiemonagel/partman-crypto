@@ -18,14 +18,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
-"PO-Revision-Date: 2005-10-05 16:36+0800\n"
+"PO-Revision-Date: 2005-10-24 03:49+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -177,6 +177,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -324,6 +325,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -562,14 +564,3 @@ msgid ""
 msgstr ""
 "Ibig sabihin ng random key type ay ang nilalaman ng partisyon ay buburahin "
 "sa bawat pag-boot. Dapat gamitin lamang ito sa mga partisyong pang-swap."
-
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Matapos maisaayos ang encrypted na volume, walang karagdagang pagbabago "
-#~ "sa mga partisyon sa mga disk na naglalaman ng mga pisikal na volume ay "
-#~ "pahihintulutan. Magpasiya kayo kung kuntento na kayo sa kasalukuyang "
-#~ "nakatakdang pag-partisyon sa mga disk na ito bago kayo magpatuloy."

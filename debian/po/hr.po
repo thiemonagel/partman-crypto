@@ -11,7 +11,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
 "PO-Revision-Date: 2005-03-05 21:51+0100\n"
 "Last-Translator: Krunoslav Gernhard <kruno@linux.hr>\n"
@@ -19,6 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -535,15 +535,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "Nakon ¹to podesite Upravljaè logièkim prostorom, vi¹e neæe biti moguæe "
-#~ "dodatne promjene particija na diskovima koji sadr¾e fizièke prostore. "
-#~ "Molim odluèite jeste li zadovoljni trenutnom shemom particioniranja na "
-#~ "tim diskovima prije negoli nastavite."

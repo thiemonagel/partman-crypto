@@ -10,14 +10,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 07:48+0200\n"
-"PO-Revision-Date: 2005-08-23 22:32+0900\n"
+"PO-Revision-Date: 2005-10-22 11:13+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
 
 #. Type: text
 #. Description
@@ -169,6 +169,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:89
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -313,6 +314,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -545,13 +547,3 @@ msgid ""
 msgstr ""
 "乱数鍵形式の利用は、パーティションのデータを再起動のたびに破壊するということ"
 "を意味します。これは、スワップパーティションでのみ使われるべきものです。"
-
-#~ msgid ""
-#~ "After encrypted volumes have been configured, no additional changes to "
-#~ "the partitions in the disks containing encrypted volumes are allowed. "
-#~ "Please decide if you are satisfied with the current partitioning scheme "
-#~ "in these disks before continuing."
-#~ msgstr ""
-#~ "暗号化ボリュームが設定されると、暗号化ボリュームを含むディスクのパーティ"
-#~ "ションへの追加の変更はできません。続ける前に、これらのディスクの現在のパー"
-#~ "ティショニング機構が満足のいくものかどうか確認してください。"

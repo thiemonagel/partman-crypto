@@ -6,17 +6,17 @@
 # Debian Installer master translation file template
 #
 # Anubadok, the en2bn auto-translator by Golam Mortuza Hossain <golam@imsc.res.in>, 2005.
+# Baishampayan Ghose <b.ghose@gnu.org.in>, 2005.
 # Jamil Ahmed <jamil@bengalinux.org>, 2005.
 # Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2005.
-# Quazi Ashfaq-ur Rahman <quazi.ashfaq@gmail.com>, 2005.
 # Progga <progga@BengaLinux.Org>, 2005.
-# Baishampayan Ghose <b.ghose@gnu.org.in>, 2005.
+# Quazi Ashfaq-ur Rahman <quazi.ashfaq@gmail.com>, 2005.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-18 03:16+0530\n"
+"PO-Revision-Date: 2005-10-28 13:29+0530\n"
 "Last-Translator: Baishampayan Ghose <b.ghose@gnu.org.in>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
 "MIME-Version: 1.0\n"
@@ -295,13 +295,13 @@ msgstr "এলোমেলো কী (key)"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "অনিরাপদন সোয়াপ স্থান সনাক্ত করা গিয়েছে"
+msgstr "অনিরাপদন সোয়্যাপ স্থান সনাক্ত করা গিয়েছে"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr "একটি অনিরাপদ সোয়াপ স্থান সনাক্ত করা হয়েছে।"
+msgstr "একটি অনিরাপদ সোয়্যাপ স্থান সনাক্ত করা হয়েছে।"
 
 #. Type: error
 #. Description
@@ -324,8 +324,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"অনুগ্রহপূর্বক সোয়াপ নিষ্ক্রিয় করুন (যেমন swapoff চালিয়ে) বা প্রথমে একটি এনক্রিপ্টেড "
-"সোয়াপ কনফিগার করে তারপর এনক্রিপ্টেড ভলিউম কনফিগারকারী প্রোগ্রাম চালান।  এই "
+"অনুগ্রহপূর্বক সোয়্যাপ নিষ্ক্রিয় করুন (যেমন swapoff চালিয়ে) বা প্রথমে একটি এনক্রিপ্টেড "
+"সোয়্যাপ কনফিগার করে তারপর এনক্রিপ্টেড ভলিউম কনফিগারকারী প্রোগ্রাম চালান।  এই "
 "প্রোগ্রামটি এখন প্রস্থান করবে।"
 
 #. Type: password
@@ -547,5 +547,5 @@ msgid ""
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "এলোমেলো ধরনের কী (key) বেছে নেওয়ার অর্থ হল যে সংশ্লিষ্ট পার্টিশনে সংরক্ষিত তথ্য "
-"প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে।  এটি শুধুমাত্র সোয়াপ পার্টিশনের "
+"প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে।  এটি শুধুমাত্র সোয়্যাপ পার্টিশনের "
 "ক্ষেত্রেই ব্যবহার করা উচিত্‍।"

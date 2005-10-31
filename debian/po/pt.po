@@ -40,12 +40,13 @@
 # 2005-10-01 - Miguel Figueiredo <elmig@debianpt.org> - 3f
 # 2005-10-07 - Miguel Figueiredo <elmig@debianpt.org> - 3f2u
 # 2005-10-19 - Miguel Figueiredo <elmig@debianpt.org> - 1f
+# 2005-10-26 - Miguel Figueiredo <elmig@debianpt.org> - 4f1u
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-19 20:27+0000\n"
+"PO-Revision-Date: 2005-10-26 21:44+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -203,15 +204,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
 "Provavelmente irão existir problemas durante o arranque quando o sistema "
-"tentar configurar as partições encriptadas. Você pode mesmo assim corrigi-"
-"los instalando depois o pacote necessário."
+"tentar configurar as partições encriptadas. Você pode mesmo assim corrigi--"
+"las instalando depois o pacote necessário."
 
 #. Type: boolean
 #. Description
@@ -349,13 +349,12 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Por favor desabilite o espaço swap (p.e. executar swapoff) ou configure um "
+"Por favor desabilite o espaço swap (e.g. executar swapoff) ou configure um "
 "espaço swap encriptado e depois corra novamente a configuração de volumes "
 "encriptados. Este programa irá agora abortar."
 

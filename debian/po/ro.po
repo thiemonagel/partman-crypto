@@ -190,7 +190,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -337,7 +336,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "

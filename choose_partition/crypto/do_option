@@ -208,6 +208,41 @@ if ! swap_is_safe; then
     exit 1
 fi
 
+# Erase crypto-backing partitions
+
+for dev in $DEVICES/*; do
+    [ -d "$dev" ] || continue
+    cd $dev
+
+    partitions=
+    open_dialog PARTITIONS
+    while { read_line num id size type fs path name; [ "$id" ]; }; do
+        [ "$fs" != free ] || continue
+        partitions="$partitions $id,$size,$path"
+    done
+    close_dialog
+    
+    for part in $partitions; do
+        set -- $(IFS=, && echo $part)
+        id=$1
+        size=$2
+        path=$3
+
+        [ -f $id/method ] || continue
+        method=$(cat $id/method)
+        if [ $method != crypto ]; then
+            continue
+        fi
+
+        if [ -f $id/skip_erase ]; then
+            continue
+        fi
+
+        # XXX error checking?
+        erase $path $size
+    done
+done
+
 keyfile_name () {
     local file
     file=$(mapdevfs $1 | tr / _)
@@ -249,6 +284,11 @@ for dev in $DEVICES/*; do
         [ -f $id/cipher ] || continue
         [ -f $id/keytype ] || continue
 
+        method=$(cat $id/method)
+        if [ $method != crypto ]; then
+            continue
+        fi
+
         type=$(cat $id/crypt_type)
         keytype=$(cat $id/keytype)
         cipher=$(cat $id/cipher)
@@ -271,7 +311,7 @@ for dev in $DEVICES/*; do
         fi
 
         if [ ! -f $id/crypt_active ]; then
-            log "creating crypt_disk for $path"
+            log "setting up crypt_disk for $path"
 
             if ! setup_crypt_device $type $path $cipher $keytype; then
                 db_fset partman-crypto/commit_failed seen false

@@ -165,7 +165,7 @@ erase () {
     ret=1
 
     template="partman-crypto/warn_erase"
-    db_subst $template DEVICE $(humandev $path)
+    db_subst $template DEVICE $(humandev $device)
     db_input critical $template || true
     db_go || return
     db_get $template
@@ -176,7 +176,7 @@ erase () {
 
     if setup_loopaes $loop $device AES128 ""; then
         templ="partman-crypto/progress/erase"
-        db_subst $template DEVICE $(humandev $path)
+        db_subst $template DEVICE $(humandev $device)
         if dd_show_progressbar $templ /dev/zero $loop $size; then
             ret=0
 	fi
@@ -184,7 +184,7 @@ erase () {
     
     if [ $ret -ne 0 ]; then
         template="partman-crypto/erase_failed"
-        db_subst $template DEVICE $(humandev $path)
+        db_subst $template DEVICE $(humandev $device)
         db_input critical $template || true
         db_go
     fi

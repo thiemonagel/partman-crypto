@@ -12,7 +12,7 @@
     backing device. who will do the fsck then?
 
   o maybe we could reduce the number of steps requires by
-    assuming default cipher and keytype when the crypt_ype
+    assuming default cipher and keytype when the crypt_type
     is first chosen
 
   o also, maybe we could set the default choice of "use as"
@@ -26,8 +26,7 @@
   o allow to create and store keyfiles on removable media. Same
     questions as above. Using it should simply be a matter of 
     writing the path into $id/keyfile and echoing the passphrase
-    into the pass fifo. (XX needs passphrase questions outside
-    of loop-aes-keygen)
+    into the pass fifo.
  
   o upload loop-aes-rootfs (for mkinitrd)
     - what about initramfs-tools?

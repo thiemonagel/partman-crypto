@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-24 21:14+0200\n"
+"PO-Revision-Date: 2005-11-03 15:46+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -173,7 +173,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -181,7 +180,7 @@ msgid ""
 msgstr ""
 "Er zullen waarschijnlijk problemen optreden tijdens het opstarten wanneer "
 "het systeem probeert om versleutelde partities in te stellen. U kunt deze "
-"corrigeren door het vereiste pakket later te installeren."
+"later corrigeren door het vereiste pakket te installeren."
 
 #. Type: boolean
 #. Description
@@ -323,7 +322,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "

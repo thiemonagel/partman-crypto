@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-22 23:26+0300\n"
+"PO-Revision-Date: 2005-11-08 08:26+0200\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -177,15 +177,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
-"Açılış sırasında sistem şifrelenmiş bölümleri ayarlamaya çalışırken büyük "
+"Açılış sırasında sistem, şifrelenmiş bölümleri ayarlamaya çalışırken büyük "
 "bir olasılıkla hatalar oluşacaktır.  Gerekli paketleri daha sonra kurarak bu "
-"hataları düzeltme imkanına sahipsiniz."
+"hataları düzeltebilirsiniz."
 
 #. Type: boolean
 #. Description
@@ -325,7 +324,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "

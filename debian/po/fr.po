@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of fr-new.po to French
 # translation of d-i.po to French
 # translation of fr.po to French
 # French messages for debian-installer.
@@ -18,10 +17,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fr\n"
+"Project-Id-Version: d-i\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-28 22:40+0200\n"
+"PO-Revision-Date: 2005-10-05 07:27+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -181,6 +180,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
+#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -331,6 +331,7 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
+#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "

@@ -137,6 +137,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"خيارات التشفير للجهاز ${DEVICE} غير كاملة. الرجاء العودة إلى قائمة التجزئة "
+"واختيار جميع الخيارات المطلوبة."
 
 #. Type: text
 #. Description
@@ -169,6 +171,8 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"على الأغلب، قد تكون هناك مشاكل أثناء الإقلاع عندما يحاول النظام إعداد "
+"الأجزاء المشفّرة. لا زال بإمكانك تصحيحها بتثبيت الحزمة المطلوبة لاحقاً."
 
 #. Type: boolean
 #. Description
@@ -207,6 +211,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
+"بعد الانتهاء من تهيئة الكتل المشفّرة، لا يسمح بالقيام بأي تغييرات إضافية على "
+"الأقراص المحتوية للكتل المشفّرة. الرجاء اتخاذ القرار فيما إذا كنت راضياً عند "
+"مخطّط التجزئة الحالي في هذه الأقراص قبل الاستمرار."
 
 #. Type: error
 #. Description
@@ -230,7 +237,7 @@ msgstr "تم إيقاف التهيئة."
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
-msgstr ""
+msgstr "فشل تمهيد الكتلة المشفّرة"
 
 #. Type: error
 #. Description
@@ -294,6 +301,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"هذا خطأ حرج حيث يمكن كتابة بيانات حسّاسة إلى القرص دون تشفير. قد يسمح هذا لأي "
+"كان الوصول إلى القرص لاسترجاع أجزاء من مفتاح التشفير أو كلمة المرور."
 
 #. Type: error
 #. Description
@@ -303,6 +312,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"الرجاء تعطيل مساحة الإبدال (مثلاً بتنفيذ الأمر swapoff) أو تهيئة مساحة إبدال "
+"مشفّرة ثم تشغيل إعداد الكتل المشفرة من جديد. سوف يتوقف هذا البرنامج عن العمل "
+"الآن."
 
 #. Type: password
 #. Description
@@ -325,6 +337,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"فاعلية التشفير بشكل عامل تعتمد على فاعلية كلمة المرور هذه، لذا عليك الانتباه "
+"لاختيار كلمة مرور غير سهلة التخمين. يجب أن لا تكون الكلمة أو الجملة موجودة "
+"في القواميس، أو جملة يمكن ربطها بك بسهولة."
 
 #. Type: password
 #. Description

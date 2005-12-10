@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# This script creates partman crypt disks. It does losetup or 
-# cryptsetup (TODO) and then creates a partman disk.
+# This script creates partman cryptdisks for the encrypted devices
+# setup in choose_partition/crypto/do_option.
 
 . /lib/partman/definitions.sh
 
@@ -73,7 +73,7 @@ partman_create_partition () {
     echo $id
 }
 
-create_crypt_disk () {
+partman_create_cryptdisk () {
     local dev id num size path cryptdev type cipher
     dev=$1
     id=$2
@@ -141,7 +141,7 @@ for dev in /var/lib/partman/devices/*; do
         method=$(cat $id/method)
         [ "$method" = crypto ] || continue
         
-        if ! create_crypt_disk $dev $id $num $size $path; then
+        if ! partman_create_cryptdisk $dev $id $num $size $path; then
             db_fset partman-crypto/init_failed seen false
             db_input critical partman-crypto/init_failed
             db_go || true

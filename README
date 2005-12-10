@@ -5,20 +5,9 @@
    any confidential data before the beta release.
 
 ------------------------------------------------------------------------
-STATUS:
+ STATUS:
+  See http://wiki.debian.org/DebianInstallerCrypto
  
-  loop-AES support:
-   - loop-aes-$KVERS-di during first stage 
-   - loop-aes-$KVERS before booting into second stage
-   (These packages are built from loop-aes-modules in experimental)
-
-   - gnupg-udeb (#321948)
-   - busybox-udeb with CONFIG_UUENCODE=y (#323436)
-
-  others:
-   - cryptsetup-udeb (?)
-   - 
-
 ------------------------------------------------------------------------
 The scripts do stuff more or less in the following order:
 
@@ -35,8 +24,7 @@ init.d/
   crypto_modules
 
     Loads kernel modules required for loop-AES ("loop-aes.ko") and
-    required for dm-crypt (TODO). Should check which modules are 
-    available and disable those that are not (TODO).
+    required for dm-crypt (TODO).
   
 choose_method/
   crypto
@@ -55,15 +43,13 @@ choose_partition/
   crypto
 
     "Setup encrypted volumes" in the main menu. Checks for valid cipher
-    options (TODO) and safe swap. Creates keyfiles for partitions with
-    crypt_type loop-AES.
+    options and safe swap. Creates keyfiles, erases to-be-encrypted
+    parititons and finally does losetup/dmsetup.
 
 init.d/
   crypto
 
-    Creates the crypt disk after choose_partition/crypto/do_options has
-    been selected and prepared things. Does losetup or cryptsetup (TODO),
-    sets options for the crypt disk.
+    Creates the partman cryptdisks once for each crypto partition.
   
 update.d/
   crypto_visuals
@@ -97,7 +83,7 @@ finish.d/
     Installs userspace tools and helper packages for encryption. This 
     is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
     into the target system. Similarily for dm-crypt, installs cryptsetup 
-    etc. (TODO). No idea about LUKS.
+    etc. (TODO). LUKS packages (cryptsetup-luks) are not yet in Debian.
 
 blockdev-keygen
    
@@ -110,7 +96,6 @@ blockdev-keygen
     /dev/urandom, so we need plenty of entropy. This script uses the 
     cdebconf plugin "entropy" if available. See notes at the beginning
     of the script for important steps for the caller.
-
 
 crypto_modules
 

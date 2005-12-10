@@ -74,7 +74,7 @@ setup_luks () {
     : TODO
 }
 
-setup_crypt_device () {
+setup_cryptdev () {
     local type realdev cipher keytype cryptdev
     type=$1
     realdev=$2
@@ -118,7 +118,7 @@ setup_crypt_device () {
 
 blocksize=$((8192*1024))
 
-dd_show_progress () {
+dd_progresspipe () {
     local n in out
     in=$1
     out=$2
@@ -144,7 +144,7 @@ dd_show_progressbar () {
     mknod $fifo p
     
     db_progress START 0 $size $template
-    dd_show_progress $in $out > $fifo 2>&1 &
+    dd_progresspipe $in $out > $fifo 2>&1 &
     ddpid=$!
 
     while read x < $fifo; do
@@ -157,7 +157,7 @@ dd_show_progressbar () {
     return $?
 }
 
-erase () {
+dev_erase () {
     local device size loop
     device=$1
     size=$2

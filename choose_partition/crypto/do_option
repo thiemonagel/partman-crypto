@@ -1,9 +1,14 @@
 #!/bin/sh
 
-# "Setup encrypted volumes" in the main menu. Checks for safe swap and 
-# valid cipher options, commits partman changes to disk, then creates 
-# keyfiles for partitions with crypt_type loop-AES and finally restarts
-# partman.
+# "Setup encrypted volumes" in the main menu.
+#  1. Checks required tools
+#  2. Checks for valid cipher options
+#  3. Commits partman changes
+#  4. Checks for safe swap 
+#  5. Creates keyfiles
+#  6. Erases to-be-encrypted partitions
+#  7. Does losetup/dmsetup
+#  8. Restarts partman
 
 . /lib/partman/definitions.sh
 . /lib/partman/crypto_tools.sh
@@ -27,7 +32,7 @@ crypt_options_complete () {
     return 0
 }
 
-crypt_options_missing () {
+missing_crypt_options () {
     list=""
     for opt in $options; do
         [ -f $1/$opt ] && continue
@@ -74,7 +79,7 @@ for dev in $DEVICES/*; do
             templ="partman-crypto/options_missing"
             db_fset $templ seen false
             db_subst $templ DEVICE "$(humandev $path)"
-            db_subst $templ ITEMS "$(crypt_options_missing $id)"
+            db_subst $templ ITEMS "$(missing_crypt_options $id)"
             db_input critical $templ
             db_go || true
             exit 0
@@ -239,7 +244,7 @@ for dev in $DEVICES/*; do
         fi
 
         # XXX error checking?
-        erase $path $size
+        dev_erase $path $size
     done
 done
 
@@ -311,9 +316,9 @@ for dev in $DEVICES/*; do
         fi
 
         if [ ! -f $id/crypt_active ]; then
-            log "setting up crypt_disk for $path"
+            log "setting up encrypted device for $path"
 
-            if ! setup_crypt_device $type $path $cipher $keytype; then
+            if ! setup_cryptdev $type $path $cipher $keytype; then
                 db_fset partman-crypto/commit_failed seen false
                 db_input critical partman-crypto/commit_failed
                 db_go || true

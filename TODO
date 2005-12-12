@@ -12,6 +12,10 @@ IMPORTANT (must be solved before beta)
     spews ugly warnings because it tries to fsck the unencrypted
     backing device. Who will do the fsck then?
 
+  o Erase currently fails with an error for "No space left on
+    device" that is indistinguishable from other errors with only
+    the exit status. Should we pass exact size to dd?
+
 GENERAL
 -------
   

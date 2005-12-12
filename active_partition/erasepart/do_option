@@ -17,5 +17,5 @@ open_dialog PARTITION_INFO $id
 read_line num id size type fs path name
 close_dialog
 
-erase $path $size || true
+dev_erase $path $size || true
 

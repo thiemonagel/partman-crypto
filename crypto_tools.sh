@@ -175,9 +175,9 @@ dev_erase () {
     fi
 
     if setup_loopaes $loop $device AES128 ""; then
-        templ="partman-crypto/progress/erase"
+        template="partman-crypto/progress/erase"
         db_subst $template DEVICE $(humandev $device)
-        if dd_show_progressbar $templ /dev/zero $loop $size; then
+        if dd_show_progressbar $template /dev/zero $loop $size; then
             ret=0
 	fi
     fi

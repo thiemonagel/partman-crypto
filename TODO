@@ -1,41 +1,58 @@
+
+IMPORTANT (must be solved before beta)
+--------------------------------------
  
-  o do the tests in choose_partition/crypto/do_option cover all
-    cases where unencrypted swap may be setup?
+  o Check that the tests in choose_partition/crypto/do_option cover 
+    all cases in which unencrypted swap may be setup.
   
-  o need better sources of entropy. check if we could load and use
+  o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
-  o understand and add undo.d stuff
-  
-  o set fs_passno for loop entries in fstab to 0; currently fsck
+  o Set fs_passno for loop entries in fstab to 0; Currently fsck
     spews ugly warnings because it tries to fsck the unencrypted
-    backing device. who will do the fsck then?
+    backing device. Who will do the fsck then?
 
-  o maybe we could reduce the number of steps requires by
+GENERAL
+-------
+  
+  o Understand and add undo.d scripts if required
+  
+USABILITY
+---------
+  
+  o Perhaps we could reduce the number of steps requires by
     assuming default cipher and keytype when the crypt_type
     is first chosen
 
-  o also, maybe we could set the default choice of "use as"
-    to swap for crypt disks with random keytype. Maybe even
+  o Perhaps we could set the default choice of "use as" to 
+    swap for crypt disks with random keytype. Maybe even
     create a swap partition in there by default?
   
-  o allow use of existing keyfiles. How can we access removable
+FEATURES
+--------
+
+  o Allow use of existing keyfiles. How can we access removable
     media while partman is running ? Interesting media would be
     floppy, USB media, perhaps others.
 
-  o allow to create and store keyfiles on removable media. Same
+  o Allow to create and store keyfiles on removable media. Same
     questions as above. Using it should simply be a matter of 
     writing the path into $id/keyfile and echoing the passphrase
     into the pass fifo.
  
-  o upload loop-aes-rootfs (for mkinitrd)
-    - what about initramfs-tools?
-    - what about yaird?
+  o Support for encrypted root partitions. There is a package 
+    loop-aes-rootfs for (obsolete) mkinitrd-tools.
+    - TODO: initramfs-tools
+    - TODO: yaird
 
   o partman-auto-crypto
 
-  o dm-crypt
-  o dm-crypt-luks
-  - those need seperate keysize, hashfunc questions?
-  - how are keys stored? are they stored?
+  o Support for dm-crypt
+    - Needs seperate keysize, hashfunc questions?
+    - Which type of keys should we use for dm-crypt? Wesley said 
+      that hashed passphrases are not very good. Can we use some
+      kind of keyfiles instead?
+
+  o Support for LUKS
+    - Required packages not yet in Debian (cryptsetup-luks)
 

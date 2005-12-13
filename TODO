@@ -16,6 +16,11 @@ IMPORTANT (must be solved before beta)
     device" that is indistinguishable from other errors with only
     the exit status. Should we pass exact size to dd?
 
+    (This is in fact harder than it seems at first: busybox dd 
+    does not support values for skip/seek larger than ULONG_MAX,
+    although it stores them in off_t's)
+    
+
 GENERAL
 -------
   

@@ -12,15 +12,6 @@ IMPORTANT (must be solved before beta)
     spews ugly warnings because it tries to fsck the unencrypted
     backing device. Who will do the fsck then?
 
-  o Erase currently fails with an error for "No space left on
-    device" that is indistinguishable from other errors with only
-    the exit status. Should we pass exact size to dd?
-
-    (This is in fact harder than it seems at first: busybox dd 
-    does not support values for skip/seek larger than ULONG_MAX,
-    although it stores them in off_t's)
-    
-
 GENERAL
 -------
   

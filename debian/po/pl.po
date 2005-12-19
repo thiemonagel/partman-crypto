@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-11-12 18:59+0100\n"
+"PO-Revision-Date: 2005-12-18 15:43+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -203,16 +203,15 @@ msgstr "Zostawić aktualny układ partycji i skonfigurować szyfrowane woluminy?
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Kiedy LVM jest skonfigurowany, niedozwolone są jakiekolwiek dodatkowe zmiany "
-"na dyskach zawierających fizyczne woluminy. Przed kontynuacją, proszę się "
-"upewnić, że aktualny schemat partycji jest odpowiedni na tych dyskach."
+"Kiedy szyfrowane woluminy są skonfigurowane, niedozwolone są jakiekolwiek "
+"dodatkowe zmiany na dyskach zawierających te woluminy. Przed kontynuacją, "
+"upewnij się, że aktualny schemat partycji jest odpowiedni na tych dyskach."
 
 #. Type: error
 #. Description
@@ -325,18 +324,16 @@ msgstr "Musisz wybrać hasło do szyfrowania ${DEVICE}."
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Musisz ustawić hasło zdalnego dostępu do instalatora Debiana. Złośliwy lub "
-"nieupoważniony użytkownik z dostępem do instalatora może poczynić wiele "
-"szkód, więc postaraj się wybrać hasło niezbyt łatwe do odgadnięcia. Nie "
+"Ogólne bezpieczeństwo szyfrowania zależy w głównej mierze od tego hasła, "
+"więc postaraj się wymyśleć hasło, które nie będzie łatwe do odgadnięcia. Nie "
 "powinien być to wyraz ze słownika lub taki, który może być łatwo z Tobą "
-"skojarzony (np. drugie imię)."
+"skojarzony."
 
 #. Type: password
 #. Description

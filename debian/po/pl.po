@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-12-18 15:43+0100\n"
+"PO-Revision-Date: 2005-12-19 21:13+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -123,6 +123,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Ta wersja instalatora nie zawiera jednego lub więcej programów wymaganych do "
+"prawidłowego działania partman-crypt."
 
 #. Type: error
 #. Description
@@ -137,6 +139,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Opcje szyfrowania dla ${DEVICE} są niepełne. Wróć do menu partycjonowania i "
+"wybierz wszystkie wymagane opcje."
 
 #. Type: text
 #. Description

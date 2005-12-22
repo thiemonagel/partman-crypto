@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-07-08 00:05+0700\n"
-"Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
+"PO-Revision-Date: 2005-12-21 17:15+0700\n"
+"Last-Translator: Parlin Imanuel Toh <pt@samip-online.com>\n"
 "Language-Team: Debian Indonesia Team <debian-l10n-id@gurame.fisika.ui.ac."
 "id>\n"
 "MIME-Version: 1.0\n"
@@ -74,20 +74,19 @@ msgstr "Enkripsi untuk partisi ini:"
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Ukuran kunci:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Sistem berkas untuk partisi ini:"
+msgstr "Ukuran kunci untuk partisi ini:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Kunci enkripsi:"
 
 #. Type: select
 #. Description
@@ -132,6 +131,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Versi debian-installer ini tidak berisi program yang dibutukan agar partman-"
+"crypt dapat berjalan dengan benar."
 
 #. Type: error
 #. Description
@@ -171,6 +172,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"Paket modul kernel ${PACKAGE} tak dapat ditemukan atau ada kesalahan saat "
+"instalasi."
 
 #. Type: error
 #. Description
@@ -180,6 +183,9 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Ada kemungkinan masalah saat booting waktu sistem mencoba menata partisi "
+"yang terenkripsi. Anda dapat tetap memperbaikinya dengan memasang paket yang "
+"dibutuhkan nanti."
 
 #. Type: boolean
 #. Description
@@ -190,13 +196,12 @@ msgstr "Tulis perubahan ke hard disk dan konfigurasikan volum terenkripsi?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Sebelum Logical Volume Manager dapat dikonfigurasikan, pola partisi saat ini "
-"harus dituliskan ke hard disk. Perubahan ini tidak dapat dikembalikan."
+"Sebelum volum terenkripsi dapat dikonfigurasi, pola partisi saat ini harus "
+"dituliskan ke hard disk. Perubahan ini tidak dapat dikembalikan."
 
 #. Type: boolean
 #. Description
@@ -207,107 +212,100 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Jaga layout partisi yang ada dan konfigurasikan LVM?"
+msgstr "Jaga pola partisi yang ada dan konfigurasikan volum terenkripsi?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Setelah Logical Volume Manager dikonfigurasi, tidak diperbolehkan adanya "
-"perubahan tambahan pada partisi yang berisikan volume fisik. Sebelum "
+"Setelah volum terenkripsi dikonfigurasi, tidak diperbolehkan adanya "
+"perubahan tambahan pada partisi yang berisikan volume terenkripsi. Sebelum "
 "melanjutkan ke langkah berikutnya, harap putuskan jika Anda puas dengan pola "
 "partisi di hard disk saat ini."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Pengonfigurasian LVM gagal"
+msgstr "Konfigurasi volum terenkripsi gagal"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Terjadi kesalahan saat menuliskan perubahan ke hard disk."
+msgstr "Terjadi kesalahan saat mengonfigurasi volum terenkripsi."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Pengonfigurasian RAID dibatalkan."
+msgstr "Konfigurasi dibatalkan."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Instalasi ELILO gagal"
+msgstr "Inisialisasi volum terenkripsi gagal"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Terjadi kesalahan saat menuliskan perubahan ke hard disk."
+msgstr "Terjadi kesalahan saat menata volum terenkripsi."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:161
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Pemeta-piranti (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Pemeta-piranti (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Frase-masuk"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Berkas kunci (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "Kunci random"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Ruang swap tak aman terdeteksi"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Sebuah ruang swap tak aman telah terdeteksi."
 
 #. Type: error
 #. Description
@@ -317,6 +315,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Ini merupakan kesalahan fatal karena data sensitif dapat ditulis ke disk "
+"tanpa enkripsi. Ini akan membolehkan seseorang dengan akses ke disk untuk "
+"mengambil bagian dari kunci enkripsi atau frase-masuk"
 
 #. Type: error
 #. Description
@@ -326,35 +327,35 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Silakan matikan ruang swap (e.g. menjalankan swapoff) atau konfigurasikan "
+"sebuah ruang swap terenkripsi dan jalankan penataan volum terenkripsi lagi. "
+"Program ini akan berhenti sekarang."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Frase-masuk enkripsi:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Anda perlu memilih frase-masuk untuk mengenkripsi ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Anda perlu menentukan password untuk akses jarak jauh ke Penginstal Debian. "
-"Pengguna yang tak bertanggung jawab atau yang tidak berkualifikasi dengan "
-"akses ke penginstal dapat merusak sistem, jadi Anda perlu memilih kata sandi "
-"yang tidak mudah ditebak. Kata sandi sebaiknya bukan kata yang dapat "
-"ditemukan dalam kamus, kata yang mudah diasosiasikan dengan Anda, misalnya "
-"nama Anda."
+"Kekuatan enkripsi secara keseluruhan bergantung pada kekuatan frase-masuk "
+"ini, jadi anda perlu memilih frase-masuk yang tak mudah ditebak. Ia tidak "
+"boleh merupakan kata-kata yang ditemukan pada kamus, atau frase yang mudah "
+"diasosiasikan dengan anda."
 
 #. Type: password
 #. Description
@@ -364,44 +365,42 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Frase-masuk yang baik berisi campuran huruf, angka dan tanda baca. "
+"Disarankan membuat frase-masuk sepanjang 20 karakter atau lebih."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Masukkan lagi frase-masuk untuk verifikasi:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Silakan masukkan password instalasi jarak jauh yang sama sekali lagi untuk "
-"memastikan Anda mengetikkannya dengan benar."
+"Silakan masukkan frase-masuk yang sama sekali lagi untuk memastikan Anda "
+"mengetikkannya dengan benar."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Kesalahan masukan frase-masuk"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
-"Kedua kata sandi yang Anda masukkan tidak sama. Silakan masukkan sebuah kata "
-"sandi lagi."
+msgstr "Kedua frase-masuk yang Anda masukkan tidak sama. Silakan coba lagi."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Frase-masuk kosong"
 
 #. Type: note
 #. Description
@@ -410,6 +409,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Anda tidak diperbolehkan menggunakan frase-masuk kosong. Silakan pilih frase-"
+"masuk yang tidak kosong."
 
 #. Type: boolean
 #. Description
@@ -418,7 +419,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Gunakan frase-masuk yang lemah?"
 
 #. Type: boolean
 #. Description
@@ -427,19 +428,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Anda memberikan frase-masuk yang jumlah karakternya kurang dari ${MINIMUM}, "
+"yang dianggap terlalu lemah. Anda mesti memilih frase-masuk yang lebih kuat."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Tekan ENTER untuk meneruskan]"
+msgstr "Masukkan karakter-karakter random untuk melanjutkan"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "Kunci enkripsi untuk ${DEVICE} sedang dibuat (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -449,18 +451,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Anda dapat membantu mempercepat proses dengan memasukkan data random pada "
+"papan ketik untuk mengisi pool random dan melanjutkan sesekali. Dialog ini "
+"akan muncul terus menerus sampai terdapat cukup data."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "Enter random characters"
-msgstr ""
+msgstr "Masukkan karakter-karakter random"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Kunci enkripsi untuk ${DEVICE} sedang dibuat sekarang."
 
 #. Type: entropy-text
 #. Description
@@ -483,23 +488,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Operasi pengubahan ulang ukuran gagal."
+msgstr "Pembuatan berkas-kunci gagal."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Terjadi kesalahan saat menuliskan perubahan ke hard disk."
+msgstr "Terjadi kesalahan saat membuat berkas-kunci."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Pengonfigurasian LVM gagal"
+msgstr "Konfigurasi enkripsi gagal"
 
 #. Type: error
 #. Description
@@ -516,13 +518,13 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Silakan kembali dan pilih partisi tak terenkripsi untuk sistem berkas root."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Anda yakin ingin keluar sekarang?"
+msgstr "Anda yakin ingin menggunakan kunci random?"
 
 #. Type: boolean
 #. Description

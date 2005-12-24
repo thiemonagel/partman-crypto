@@ -28,103 +28,97 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:3
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "Datumportilaĵo por ĉifrado"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "ĉifro"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "malaktiva"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Ĉifrada tipo :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Surmetingo por ĉi tiu diskpartigo :"
+msgstr "Ĉifrada tipo por ĉi tiu diskpartigo :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Ĉifrado :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Surmetingo por ĉi tiu diskpartigo :"
+msgstr "Ĉifrado por ĉi tiu diskpartigo :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Ŝlosila amplekso :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Surmetingo por ĉi tiu diskpartigo :"
+msgstr "Ŝlosila amplekso por ĉi tiu diskpartigo :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Ĉifrada ŝlosilo :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Surmetingo por ĉi tiu diskpartigo :"
+msgstr "Ĉifra ŝlosila tipo por ĉi tiu diskpartigo :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Ŝaltado de la diskpartigilo"
+msgstr "Akomodu ĉifradon ..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Akomodu la reto"
+msgstr "Akomodi ĉifrajn datumportilojn"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Neniu ĉifrota diskpartigo"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Neniu diskpartigo estas elektita por ĉifrado."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "Necesaj programoj mankas"
 
 #. Type: note
 #. Description

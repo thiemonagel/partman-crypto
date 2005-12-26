@@ -8,13 +8,13 @@
 # This file is distributed under the same license as debian-installer.
 # Jordi Mallach <jordi@debian.org>, 2002, 2003, 2004.
 # Guillem Jover <guillem@debian.org>, 2005.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-09-24 18:38+0300\n"
+"PO-Revision-Date: 2005-12-26 03:07+0200\n"
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -273,7 +273,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Frase de pas"
 
 #. Type: text
 #. Description

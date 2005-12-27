@@ -11,15 +11,15 @@
 # Emmanuel Galatoulas <galas@tee.gr>, 2004.
 # Konstantinos Margaritis <markos@debian.org>, 2004.
 # Greek Translation Team <debian-l10n-greek@lists.debian.org>, 2004, 2005.
+# quad-nrg.net <galaxico@quad-nrg.net>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-09-15 21:29EEST\n"
-"Last-Translator: Greek Translation Team <debian-l10n-greek@lists.debian."
-"org>\n"
+"PO-Revision-Date: 2005-12-27 03:08+0200\n"
+"Last-Translator: quad-nrg.net <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,8 +29,8 @@ msgstr ""
 "org>\n"
 "org>\n"
 "org>\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -60,7 +60,7 @@ msgstr "Είδος κρυπτογράφησης:"
 #. Description
 #: ../partman-crypto.templates:24
 msgid "Encryption type for this partition:"
-msgstr "Είδος κρυπτογράφησης για αυτό το τμήμα:"
+msgstr "Είδος κρυπτογράφησης για αυτό το κατάτμηση:"
 
 #. Type: text
 #. Description
@@ -72,7 +72,7 @@ msgstr "Κρυπτογράφηση:"
 #. Description
 #: ../partman-crypto.templates:33
 msgid "Encryption for this partition:"
-msgstr "Κρυπτογράφηση για αυτό το τμήμα:"
+msgstr "Κρυπτογράφηση για αυτό το κατάτμηση:"
 
 #. Type: text
 #. Description
@@ -84,7 +84,7 @@ msgstr "Μέγεθος κλειδιού:"
 #. Description
 #: ../partman-crypto.templates:42
 msgid "Key size for this partition:"
-msgstr "Μέγεθος κλειδιού για αυτό το τμήμα:"
+msgstr "Μέγεθος κλειδιού για αυτό το κατάτμηση:"
 
 #. Type: text
 #. Description
@@ -96,7 +96,7 @@ msgstr "Κλειδί κρυπτογράφησης:"
 #. Description
 #: ../partman-crypto.templates:51
 msgid "Type of encryption key for this partition:"
-msgstr "Είδος κλειδιού κρυπτογράφησης για αυτό το τμήμα:"
+msgstr "Είδος κλειδιού κρυπτογράφησης για αυτό το κατάτμηση:"
 
 #. Type: text
 #. Description
@@ -227,7 +227,7 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Μετά τη ρύθμιση του Διαχειριστή Λογικών Τόμων δεν επιτρέπονται αλλαγές στα "
-"τμήματα των δίσκων που περιέχουν φυσικούς τόμους.  Πριν συνεχίσετε, "
+"κατάτμησητα των δίσκων που περιέχουν φυσικούς τόμους.  Πριν συνεχίσετε, "
 "βεβαιωθείτε ότι το τρέχον σχήμα κατάτμησης αυτών των δίσκων είναι "
 "ικανοποιητικό."
 

@@ -127,12 +127,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Tiu 'Debian'-instalilo ne enhavas unu aŭ pluraj necesegajn programojn por ke "
+"'partman-crypt'-o korekte funkcias."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Necesaj ĉifraj elektoj mankas"
 
 #. Type: error
 #. Description
@@ -141,6 +143,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"La ĉifraj elektoj por '${DEVICE}'-o estas malkampletaj. Bonvolu reigi "
+"diskpartigadan menuon kaj elekti ĉiujn necesajn elektojn."
 
 #. Type: text
 #. Description
@@ -149,13 +153,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "manka"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "Ĉifra enpaka instalado malsukcesis"
 
 #. Type: error
 #. Description
@@ -164,6 +168,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"La kerna modula '${PACKAGE}'-enpako neeblas trovita aŭ eraro okazas dum "
+"instalado."
 
 #. Type: error
 #. Description
@@ -173,13 +179,15 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Eble, problemoj okazos dum praĝargo kiam la sistemo provos akomodi ĉifrajn "
+"diskpartigojn. Tamen, vi povos poste korekti ilin per instalu la necesan "
+"pakon."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Ĉu skribu ŝanĝojn en diskoj ?"
+msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifrajn datumpartilajn ?"
 
 #. Type: boolean
 #. Description
@@ -188,6 +196,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"Antaŭ ol akomodi la ĉifran datumportilon, nuntempa diskaranĝo endas skribota "
+"sur disko. Tiuj ŝanĝoj estas definitivaj."
 
 #. Type: boolean
 #. Description
@@ -200,6 +210,7 @@ msgstr "${ITEMS}"
 #: ../partman-crypto.templates:141
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
+"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉifrajn datumportilojn ?"
 
 #. Type: boolean
 #. Description
@@ -210,87 +221,87 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
+"Post akomodado de la ĉifra datumportilo, neniu plua ŝanĝo en diskpartigo "
+"estas permesa sur diskoj kiuj enhavas ĉifrajn datumpartilojn. Antaŭ ol "
+"daŭri, bonvolu kontroli la taŭgontan nuntempan diskaranĝon."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "La reta automatakomodado malsukcesis"
+msgstr "Ĉifraj datumportilaj akomodadoj malsukcesis"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "Eraro okazis dum la akomodado de ĉifraj datumportiloj."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "La DHCP akomodado estos abortita."
+msgstr "La akomodado fiaskis."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
-msgstr ""
+msgstr "Ĉifra datumportila akomodado malsukcesis"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "Eraro okazis dum la agordado de ĉifraj datumportiloj."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:161
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Bukliru (loop%s)"
+msgstr "Bukliru ('loop-AES')"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "'dm-crypt'-adaptilo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "'LUKS'-adaptilo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Pasfrazo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "'GnuPG'-ŝlosildosiero"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "Aleatora ŝlosilo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Detektita malĉifra interŝanĝa spaco"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Malĉifra interŝanĝa spaco estis detektita."
 
 #. Type: error
 #. Description
@@ -300,6 +311,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Tio estas fatala eraro ĉar iom da esencaj datumoj eblas malĉifre skribitaj "
+"sur disko. Tio lasas iun kun diska uzorajto de akiri parte aŭ tute la "
+"ĉifroŝlosilon aŭ pasofrazon."
 
 #. Type: error
 #. Description
@@ -309,18 +323,21 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Bonvolu malaktivi la interŝanĝan spacon (ekzemple per la 'swapoff'-ordono) "
+"aŭ akomodi ĉifran interŝanĝan spacon. Poste, reprovu akomodadon de la ĉifraj "
+"datumportiloj. Nun tio programo ĉesos."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Ĉifra pasofrazo :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Vi bezonas elekti pasofrazon por ĉifri '${DEVICE}'-on."
 
 #. Type: password
 #. Description

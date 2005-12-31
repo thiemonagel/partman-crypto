@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-04-06 17:27+0300\n"
+"PO-Revision-Date: 2005-12-30 21:51+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,9 +26,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fyysinen levynide LVM:lle"
+msgstr "fyysinen levynide salaukselle"
 
 #. Type: text
 #. Description
@@ -51,9 +50,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Tämän osion liitoskohta:"
+msgstr "Tämän osion salauksen tyyppi:"
 
 #. Type: text
 #. Description
@@ -64,9 +62,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Tämän osion liitoskohta:"
+msgstr "Tämän osion salaus:"
 
 #. Type: text
 #. Description
@@ -77,9 +74,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Tämän osion tiedostojärjestelmä:"
+msgstr "Tämän osion avaimen koko:"
 
 #. Type: text
 #. Description
@@ -90,37 +86,32 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Tämän osion tiedostojärjestelmä:"
+msgstr "Tämän osion salausavaimen tyyppi:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Tehdään kuvapuskurin asetukset..."
+msgstr "Tehdään salauksen asetukset asetukset..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Tee verkkoasetukset"
+msgstr "Tehdään salattujen levyniteiden asetukset"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Osioita ei löytynyt"
+msgstr "Ei salattavia osioita"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Ydinpakettia ei valittuna asennettavaksi."
+msgstr "Yhtään osiota ei ole valittu salattavaksi."
 
 #. Type: note
 #. Description
@@ -162,9 +153,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "ELILO:n asennus epäonnistui"
+msgstr "Salauspaketin asennus epäonnistui"
 
 #. Type: error
 #. Description
@@ -186,20 +176,18 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Tallenna muutokset levyille ja tee LVM:n asetukset?"
+msgstr "Tallenna muutokset levyille ja tee salattujen niteiden asetukset?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Ennen kuin levyniteiden hallintaohjelman asetukset voidaan tehdä, on "
-"muutokset tallennettava levyille. Näitä muutoksia ei voi perua."
+"Ennen kuin salattujen levyniteiden asetukset voidaan tehdä, on nykyiset "
+"levyosiot tallennettava levyille. Näitä muutoksia ei voi perua."
 
 #. Type: boolean
 #. Description
@@ -210,58 +198,52 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Säilytä nykyiset levyosiot ja tee LVM:n asetukset?"
+msgstr "Säilytä nykyiset levyosiot ja tee salattujen levyniteiden asetukset?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Kun levyniteiden hallintaohjelman asetukset on tehty, ei ole enää "
-"mahdollista tehdä lisämuutoksia niille levyille, joissa fyysiset levyniteet "
-"sijaitsevat. Varmista, että nyt tehdyt levyosiot ovat sellaiset kuin haluat."
+"Kun salattujen levyniteiden asetukset on tehty, ei ole enää mahdollista "
+"tehdä lisämuutoksia niille osioille, jotka ovat salattuja levyniteitä "
+"sisältävillä levyillä. Varmista, että nyt tehdyt levyosiot näillä levyllä "
+"ovat sellaiset kuin haluat ennen jatkamista."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Levyniteiden hallintaohjelman asetuksissa on virhe"
+msgstr "Salattujen levyniteiden asetuksissa on virhe"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Tallennettaessa muutoksia levyille tapahtui virhe."
+msgstr "Tapahtui virhe tehtäessä salattujen levyniteiden asetuksia."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "RAID:n asetusten teko on keskeytetty."
+msgstr "Asetusten teko on keskeytetty."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "ELILO:n asennus epäonnistui"
+msgstr "Salatun levyniteen alustus epäonnistui"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Tallennettaessa muutoksia levyille tapahtui virhe."
+msgstr "Tapahtui virhe tehtäessä salattuja levyniteitä."
 
 #. Type: text
 #. Description
@@ -344,18 +326,16 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Debianin asentimen etäkäyttöön on asetettava salasana. Pahantahtoinen tai "
-"osaamaton käyttäjä voi tehdä suurta vahinkoa päästessään käyttämään "
-"asenninta. Valitse siis salasana, joka ei ole helposti arvattavissa. Se ei "
-"saisi olla sanakirjasta löytyvä sana tai sinuun helposti yhdistettävissä "
-"oleva sana, kuten keskimmäinen nimesi."
+"Tämä salasana vaikuttaa oleellisesti salauksen vahvuuteen. Salasanaolisi "
+"valittava huolellisesti siten ettei sitä ole helppo arvata. Se ei saisi olla "
+"sanakirjasta löytyvä sana tai lause tai sinuun helposti yhdistettävissä "
+"oleva lause."
 
 #. Type: password
 #. Description
@@ -375,12 +355,11 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Kirjoita sama etäasennussalasana uudestaan jotta varmistutaan sen "
+"Kirjoita sama salauslause uudestaan jotta varmistutaan sen "
 "oikeinkirjoituksesta."
 
 #. Type: note
@@ -392,10 +371,9 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Kirjoittamasi kaksi salasanaa eivät ole samat. Kirjoita salasana uudelleen."
+"Kirjoittamasi kaksi salasanaa eivät ole samat. Kirjoita salasanat uudelleen."
 
 #. Type: note
 #. Description
@@ -431,9 +409,8 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Paina Enter jatkaaksesi]"
+msgstr "Kirjoita satunnaisia merkkejä jatkaaksesi"
 
 #. Type: string
 #. Description
@@ -483,23 +460,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Koon muuttaminen ei onnistunut"
+msgstr "Avaintiedoston luonti epäonnistui"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Tallennettaessa muutoksia levyille tapahtui virhe."
+msgstr "Tapahtui virhe luotaessa avaintiedostoa."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Levyniteiden hallintaohjelman asetuksissa on virhe"
+msgstr "Salauksen asetuksissa on virhe"
 
 #. Type: error
 #. Description
@@ -520,9 +494,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Haluatko varmasti lopettaa nyt?"
+msgstr "Haluatko varmasti käyttää satunnaista avainta?"
 
 #. Type: boolean
 #. Description

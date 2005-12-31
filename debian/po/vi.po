@@ -10,19 +10,20 @@
 # Vũ Quang Trung <vu.quang.trung@auf.org>
 # Trịnh Minh Thành <tmthanh@yahoo.com>
 # Clytie Siddall <clytie@riverland.net.au>, 2005.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-08-21 14:21+0930\n"
+"PO-Revision-Date: 2005-12-30 22:22+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
-"Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: LocFactoryEditor 1.5.1b\n"
 
 # Type: text
 # Description
@@ -48,7 +49,7 @@ msgstr "không hoạt động"
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr "Kiểu mật mã"
+msgstr "Kiểu mật mã:"
 
 # Type: string
 # Description
@@ -84,7 +85,7 @@ msgstr "Cỡ khóa:"
 #. Description
 #: ../partman-crypto.templates:42
 msgid "Key size for this partition:"
-msgstr "Kích thước khóa cho phân vùng này:"
+msgstr "Kích cõ khóa cho phân vùng này:"
 
 #. Type: text
 #. Description
@@ -142,8 +143,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
-"Bản xây dụng debian-installer (trình cài đặt Debian) không gồm một hay nhiều "
-"chương trình cần thiết để trình partman-crypt hoạt động cho đúng."
+"Bản xây dụng debian-installer (trình cài đặt Debian) này không gồm một hay "
+"nhiều chương trình cần thiết để chạy trình partman-crypt cho đúng."
 
 #. Type: error
 #. Description
@@ -158,8 +159,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Những tùy chọn mật mã cho thiết bị ${DEVICE} không hoàn thành. Xin hãy trở "
-"về trình đơn Phân vùng rồi chọn các tùy chọn cần thiết."
+"Những tùy chọn mật mã cho thiết bị ${DEVICE} không hoàn thành. Hãy trở về "
+"trình đơn Phân vùng rồi chọn các tùy chọn cần thiết."
 
 #. Type: text
 #. Description
@@ -168,7 +169,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "còn_thiếu"
 
 # Type: boolean
 # Description
@@ -176,7 +177,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:115
 msgid "Encryption package installation failure"
-msgstr "Cài đặt gói mật mã không được."
+msgstr "Lỗi cài đặt gói mật mã"
 
 #. Type: error
 #. Description
@@ -191,7 +192,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -199,13 +199,13 @@ msgid ""
 msgstr ""
 "Rất có thể sẽ gặp lỗi trong khi khởi động khi hệ thống cố thiết lập phân "
 "vùng đã mật mã. Bạn vẫn còn có thể sửa các lỗi này bằng cách cài đặt gói cần "
-"thiết sau này."
+"thiết lần sau."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Ghi các thay đổi vào đĩa và cấu hình khối tin đã mật mã không?"
+msgstr "Ghi các thay đổi vào đĩa và cấu hình các khối tin đã mật mã không?"
 
 #. Type: boolean
 #. Description
@@ -230,7 +230,8 @@ msgstr "${ITEMS}"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Giữ bố trí phân vùng hiện thời và cấu hình khối tin đã mật mã không?"
+msgstr ""
+"Giữ bố trí phân vùng hiện thời và cấu hình các khối tin đã mật mã không?"
 
 #. Type: boolean
 #. Description
@@ -241,9 +242,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Sau khi cấu hình những khối tin đã mật mã thì không cho phép thay đổi nào "
-"trong phân vùng đĩa chứa khối tin đã mật mã lần nữa. Hãy quyết định nếu lược "
-"đồ phân vùng hiện thời trong những đĩa này là đúng trước khi tiếp tục."
+"Sau khi cấu hình những khối tin đã mật mã thì không cho phép thay đổi thêm "
+"nào trong phân vùng đĩa chứa khối tin đã mật mã. Hãy chắc là lược đồ phân "
+"vùng hiện thời trong những đĩa này là ổn dáng trước khi tiếp tục."
 
 # Type: error
 # Description
@@ -251,7 +252,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:149
 msgid "Encrypted volumes configuration failure"
-msgstr "Lỗi cấu hình khối tin đã mật mã."
+msgstr "Lỗi cấu hình khối tin đã mật mã"
 
 # Type: error
 # Description
@@ -275,7 +276,7 @@ msgstr "Việc cấu hình bị hủy bỏ."
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
-msgstr "Sơ khởi khối tin đã mật mã thất bại."
+msgstr "Việc sơ khởi khối tin đã mật mã bị lỗi"
 
 # Type: error
 # Description
@@ -325,7 +326,7 @@ msgstr "Khóa ngẫu nhiên"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "Phát hiện vùng trao đổi bất an"
+msgstr "Phát hiện chỗ trao đổi bất an"
 
 #. Type: error
 #. Description
@@ -348,21 +349,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Bạn hãy vô hiệu hóa vùng trao đổi này (v.d. bằng cách chạy « swapoff » [tắt "
-"trao đổi]), hoặc cấu hình một vùng trao đổi đã mật mã rồi chạy lại việc "
-"thiết bị các khối tin đã mật mã. Chương trình này sẽ hủy bỏ lúc bây giờ."
+"Bạn hãy vô hiệu hóa vùng trao đổi (v.d. bằng cách chạy « swapoff » [tắt trao "
+"đổi]), hoặc cấu hình một vùng trao đổi đã mật mã rồi chạy lại việc thiết bị "
+"các khối tin đã mật mã. Chương trình này sẽ hủy bỏ lúc ngay bây giờ."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr "Cụm từ mật khẩu:"
+msgstr "Cụm từ mật khẩu :"
 
 #. Type: password
 #. Description
@@ -382,11 +382,11 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Sức mạnh toàn bộ của việc mật mã phụ thuộc nhiều vào cụm từ mật khẩu này, "
-"thì bạn nên cẩn thận và chọn mật khẩu không dễ đoán. Không nên là một từ hay "
-"câu trong từ điển, hoặc một từ hay cụm từ dễ thích hợp với bạn. Chương trình "
-"ngắt mật khẩu có thể chạy qua toàn từ điển hay thông tin cá nhân bạn trong "
-"vòng vài giây."
+"Sức mạnh toàn bộ của việc mật mã phụ thuộc chặt chẽ vào cụm từ mật khẩu này, "
+"thì bạn nên chọn cẩn thận một cụm từ mật khẩu không dễ đoán. Không nên là từ "
+"nào hay câu nào trong từ điển, hoặc từ nào hay cụm từ nào dễ liên quan đến "
+"bạn. Chương trình ngắt mật khẩu có thể chạy qua toàn từ điển hay thông tin "
+"cá nhân bạn trong vòng vài giây."
 
 #. Type: password
 #. Description
@@ -396,15 +396,15 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Một cụm từ tốt có chứa chữ, số và chấm câu đã trộn với nhau. Đệ nghị cụm từ "
-"mật khẩu có độ dài ít nhất 20 ký tự. (Hãy đảm bảo đã viết cụm từ mật khẩu "
-"này trong một nơi an toàn.)"
+"Một cụm từ mật khẩu tốt có chứa chữ, số và chấm câu đã trộn với nhau. Đệ "
+"nghị cụm từ mật khẩu có độ dài ít nhất 20 ký tự. (Hãy chắc đã viết cụm từ "
+"mật khẩu này và giữ nó trong một nơi an toàn.)"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr "Hãy nhập lại cụm từ mật khẩu, để kiểm tra:"
+msgstr "Hãy gõ lại cụm từ mật khẩu, để xác minh:"
 
 #. Type: password
 #. Description
@@ -426,13 +426,13 @@ msgstr "Lỗi gõ cụm từ mật khẩu"
 #. Description
 #: ../partman-crypto.templates:218
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Hai cụm từ mật khẩu bạn nhập vào không giống nhau. Hãy thử lại."
+msgstr "Bạn đã gõ hai cụm từ mật khẩu không trùng. Hãy thử lại."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr "Cụm từ mật khẩu rống"
+msgstr "Cụm từ mật khẩu rỗng"
 
 #. Type: note
 #. Description
@@ -441,7 +441,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Bạn đã nhập một cụm từ mật khẩu rống mà không cho phép. Bạn hãy chọn một cụm "
+"Bạn đã gõ một cụm từ mật khẩu rỗng mà không cho phép. Bạn hãy chọn một cụm "
 "từ mật khẩu không rỗng."
 
 #. Type: boolean
@@ -451,7 +451,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr "Dùng cụm từ mật khẩu yếu không?"
+msgstr "Dùng cụm từ mật khẩu yếu sao?"
 
 #. Type: boolean
 #. Description
@@ -460,14 +460,14 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Bạn đã nhập một cụm từ mật khẩu chứa nhỏ hơn ${MINIMUM} ký tự, mà quá yếu. "
-"Bạn nên chọn một cụm từ mật khẩu mạnh hơn."
+"Bạn đã gõ một cụm từ mật khẩu chứa ít hơn ${MINIMUM} ký tự, mà quá yếu. Bạn "
+"nên chọn một cụm từ mật khẩu mạnh hơn."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
 msgid "Enter random characters to continue"
-msgstr "Hãy nhập một số ký tự ngẫu nhiên để tiếp tục."
+msgstr "Hãy gõ một số ký tự ngẫu nhiên để tiếp tục"
 
 #. Type: string
 #. Description
@@ -483,7 +483,7 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
-"Bạn có thể tăng tốc độ tiến hành lên bằng cách gõ dữ liệu ngẫu nhiên dùng "
+"Bạn có thể tăng tốc độ tiến hành lên bằng cách gõ dữ liệu ngẫu nhiên bằng "
 "bàn phím, để điền vào gộp dữ liệu ngẫu nhiên cần thiết, và tiếp tục định kỳ. "
 "Hộp thoại này sẽ xuất hiện lại đến khi đã tập hợp đủ dữ liệu."
 
@@ -491,7 +491,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:255
 msgid "Enter random characters"
-msgstr "Hãy gõ ký tự ngẫu nhiên."
+msgstr "Hãy gõ nhiều ký tự ngẫu nhiên"
 
 #. Type: entropy-text
 #. Description
@@ -518,9 +518,9 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Bạn có thể tăng tốc độ tiến hành lên bằng cách gõ dữ liệu ngẫu nhiên dùng "
-"bàn phím, hoặc đơn giản đợi đến khi hệ thống đã tập hợp đủ dữ liệu cho khóa. "
-"(GHI CHÚ: có thể mất thời gian nhiều.)"
+"Bạn có thể tăng tốc độ tiến hành lên bằng cách gõ dữ liệu ngẫu nhiên bằng "
+"bàn phím, hoặc đơn giản hãy đợi đến khi hệ thống đã tập hợp đủ dữ liệu cho "
+"khóa. (GHI CHÚ: có thể mất nhiều thời gian.)"
 
 # Type: error
 # Description
@@ -530,7 +530,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:268
 msgid "Keyfile creation failure"
-msgstr "Lỗi tạo tập tin khóa."
+msgstr "Lỗi tạo tập tin khóa"
 
 # Type: error
 # Description
@@ -546,7 +546,7 @@ msgstr "Gặp lỗi khi tạo tập tin khóa."
 #. Description
 #: ../partman-crypto.templates:273
 msgid "Encryption configuration failure"
-msgstr "Lỗi cấu hình mật mã."
+msgstr "Lỗi cấu hình mật mã"
 
 #. Type: error
 #. Description
@@ -556,9 +556,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Bạn đã chọn hệ thống tập tin gốc để được cất giữ trên một phân vùng đã mật "
-"mã. Chưa có tính năng này thì tiếp tục lúc bây giờ sẽ tạo bản cài đặt kết "
-"quả vô ích."
+"Bạn đã chọn hệ thống tập tin gốc cần cất giữ trên phân vùng đã mật mã. Chưa "
+"có tính năng này thì tiếp tục lúc bây giờ sẽ tạo bản cài đặt kết quả vô ích."
 
 #. Type: error
 #. Description
@@ -566,7 +565,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
-"Xin hãy trở về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
+"Hãy trở về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
 
 # Type: boolean
 # Description
@@ -574,7 +573,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:284
 msgid "Are you sure you want to use a random key?"
-msgstr "Bạn có chắc là muốn sử dụng một khóa ngẫu nhiên không?"
+msgstr "Bạn có chắc muốn sử dụng khóa ngẫu nhiên không?"
 
 #. Type: boolean
 #. Description
@@ -583,7 +582,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
-"Bạn đã chọn một kiểu khóa ngẫu nhiên cho thiết bị ${DEVICE}, mà yêu cầu bộ "
+"Bạn đã chọn một kiểu khóa ngẫu nhiên cho thiết bị ${DEVICE}, còn yêu cầu bộ "
 "phân vùng tạo một hệ thống tập tin trên nó."
 
 #. Type: boolean

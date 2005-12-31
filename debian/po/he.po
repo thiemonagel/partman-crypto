@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-07-12 19:37+0300\n"
+"PO-Revision-Date: 2005-12-31 11:13+0200\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: Debian l10n Hebrew <webmaster@guides.co.il>\n"
 "MIME-Version: 1.0\n"
@@ -38,13 +38,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "לא פעיל"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "סוג הצפנה:"
 
 #. Type: select
 #. Description
@@ -70,7 +70,7 @@ msgstr "נקודת עגינה למחיצה זאת:"
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "גודל מפתח:"
 
 #. Type: select
 #. Description
@@ -83,7 +83,7 @@ msgstr "מערכת קבצים למחיצה:"
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "מפתח הצפנה:"
 
 #. Type: select
 #. Description
@@ -155,7 +155,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "חסר"
 
 #. Type: error
 #. Description
@@ -294,7 +294,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "מפתח אקראי"
 
 #. Type: error
 #. Description

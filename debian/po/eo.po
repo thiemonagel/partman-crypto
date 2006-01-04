@@ -411,7 +411,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr "Ĉu vi vere uzi tian malfortan pasfrazon ?"
+msgstr "Ĉu vi vere uzus tian malfortan pasfrazon ?"
 
 #. Type: boolean
 #. Description
@@ -478,25 +478,26 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Vi povas hastigi la procezon per klavi hazardaj datumoj aŭ simple atendi ĝis "
+"sufiĉe datumoj estos kolektitaj (Notu: tio longtempe daŭrus). "
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
 msgid "Keyfile creation failure"
-msgstr ""
+msgstr "Ŝlosildosiera kreado malsukcesis"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "Eraro okazis dum la kreado de ŝlosildosiero."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "La reta automatakomodado malsukcesis"
+msgstr "Ĉifra akomodado malsukcesis"
 
 #. Type: error
 #. Description
@@ -506,6 +507,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Vi elektis lokotan radikan dosiersistemon en ĉifra diskpartigo. Tiu "
+"funkciado estas maldisponebla kaj daŭrigi malsukcesos la instalon."
 
 #. Type: error
 #. Description
@@ -513,12 +516,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Bonvole retroiru kaj elekti malĉifran diskpartigon por la radika "
+"dosiersistemo."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "Ĉu vi vere uzus hazardan ŝlosilon ?"
 
 #. Type: boolean
 #. Description
@@ -527,6 +532,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Vi elektis hazardan ŝlosiltipo por '${DEVICE}'-o sed vi petis diskpartigilon "
+"por krei dosiersistemon sur ĝin."
 
 #. Type: boolean
 #. Description
@@ -535,3 +542,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"La uzado de hazarda ŝlosilo implicas la forviŝotan de diskpartigaj datumoj "
+"en ĉiu praŝargado. Tiu funkciado endas uzita nur per la interŝanĝaj spacoj "
+"('swap'-diskpartigoj)."

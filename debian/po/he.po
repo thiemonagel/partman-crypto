@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-12-31 11:13+0200\n"
+"PO-Revision-Date: 2006-01-06 14:50+0200\n"
 "Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
 "Language-Team: Debian l10n Hebrew <webmaster@guides.co.il>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "כרך פיזי ל-LVM"
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "מוצפן"
 
 #. Type: text
 #. Description
@@ -57,7 +57,7 @@ msgstr "נקודת עגינה למחיצה זאת:"
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "הצפנה:"
 
 #. Type: select
 #. Description
@@ -95,9 +95,8 @@ msgstr "מערכת קבצים למחיצה:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "מפעיל חוצץ מסגרת..."
+msgstr "מגדיר הצפנה..."
 
 #. Type: text
 #. Description
@@ -124,7 +123,7 @@ msgstr "אף חבילת קרנל נבחרה להתקנה"
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "תוכנה נדרשת חסרה"
 
 #. Type: note
 #. Description
@@ -133,12 +132,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"הבניה הנוכחית של התקנת דביאן לא כוללת אחת או יותר תוכניות אשר דרושות בשביל "
+"partman-crypt כדי לתפקד באופן תקין."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "חסרות אפשרות הצפנה נדרשות"
 
 #. Type: error
 #. Description
@@ -276,19 +277,19 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "ממפה רכיבים (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "משפט סיסמה"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "קובץ מפתח (GnuPG)"
 
 #. Type: text
 #. Description
@@ -300,13 +301,13 @@ msgstr "מפתח אקראי"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "זוהה שטח דפדוף לא בטוח"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "זוהה שטח דפדוף לא מאובטח."
 
 #. Type: error
 #. Description
@@ -330,7 +331,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "משפט סיסמה של הצפנה:"
 
 #. Type: password
 #. Description
@@ -366,7 +367,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "הכנס משפט סיסמה לווידוא:"
 
 #. Type: password
 #. Description
@@ -381,7 +382,7 @@ msgstr "הכנס בבקשה שוב את סיסמת ההתקנה מרחוק כד�
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "שגיאת קלט במשפט סיסמה"
 
 #. Type: note
 #. Description
@@ -394,7 +395,7 @@ msgstr "שתי הסיסמאות שהכנסת אינן זהות, הכנס בבק�
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr ""
+msgstr "משפט סיסמה ריק"
 
 #. Type: note
 #. Description
@@ -402,7 +403,7 @@ msgstr ""
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
+msgstr "הכנסת משפט סיסמה ריק, דבר שאין מותר, בחר בבקשה משפט סימה שאינו ריק."
 
 #. Type: boolean
 #. Description
@@ -411,7 +412,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "השתמש במשפט סיסמה חלש?"
 
 #. Type: boolean
 #. Description
@@ -432,7 +433,7 @@ msgstr "[יש ללחוץ enter להמשך]"
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "מפתח הצפנה עבור ${DEVICE} נמצא כעת ביצירה (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -447,7 +448,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:255
 msgid "Enter random characters"
-msgstr ""
+msgstr "הכנס תווים אקראיים"
 
 #. Type: entropy-text
 #. Description
@@ -508,7 +509,7 @@ msgstr ""
 #: ../partman-crypto.templates:273
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "חזור בבקשה, בוחר מחיצה לא מוצפנת עבור שורש מערכת הקבצים."
 
 #. Type: boolean
 #. Description

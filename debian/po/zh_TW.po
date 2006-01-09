@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-04-19 07:06+0800\n"
+"PO-Revision-Date: 2006-01-08 22:51+0800\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
@@ -337,7 +337,7 @@ msgid ""
 "could be easily associated with you."
 msgstr ""
 "這個密語攸關整體加密的強度，因此您應該小心地選擇一個不容易被猜到的密語。它不"
-"應該是個能在字典中找到的單字或是個容易和您聯想在一起的字詞，例如您的名字。"
+"應該是個能在字典中找到的單字或片語，或是個容易和您聯想在一起的字詞"
 
 #. Type: password
 #. Description
@@ -347,8 +347,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"必須混合了字母、數字及標點符號才能算是合格的密語。建議使用 20 個字以上的字元"
-"的密語。"
+"一個恰當的密語應當由字母、數字和標點符號混雜而成，長度則建議在 20 個字元以"
+"上。"
 
 #. Type: password
 #. Description
@@ -388,7 +388,7 @@ msgstr "空的密語"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "您輸入了一個空的密語，而這是不允許的。請選擇一個不是空的密語。"
+msgstr "您所輸入的是空的密語，而這是不允許的。請選擇一個不是空的密語。"
 
 #. Type: boolean
 #. Description

@@ -6,7 +6,7 @@
 # Bulgarian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005.
+# Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
 # Nikola Antonov <nikola@linux-bg.org>, 2004.
 #
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-07-11 08:31+0300\n"
+"PO-Revision-Date: 2006-01-09 23:06+0200\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,107 +24,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "физически том на LVM"
+msgstr "физически том за шифриране"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "неактивен"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Вид шифриране:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Точка на монтиране на този дял:"
+msgstr "Вид на шифриране за този дял:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Шифриране:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Точка на монтиране на този дял:"
+msgstr "Шифриране за този дял:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Големина на ключ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Файлова система за този дял:"
+msgstr "Големина на ключ за този дял:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Ключ за шифриране:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Файлова система за този дял:"
+msgstr "Вид на шифриращия ключ за този дял:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Настройване на frame buffer..."
+msgstr "Настройване на шифриране..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Настройване на мрежата"
+msgstr "Настройване на шифрирани томове"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Не бяха намерени дялове"
+msgstr "Няма дялове за шифриране"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Не е избран за инсталиране пакет с ядро."
+msgstr "Не са избрани дялове за шифриране."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "Липсват изисквани програми"
 
 #. Type: note
 #. Description
@@ -133,12 +124,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Това издание на debian-installer не включва една или повече програми, които "
+"са необходими на partman-crypt за правилно функциониране."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Липсват изисквани опции за шифриране"
 
 #. Type: error
 #. Description
@@ -147,6 +140,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Опциите за шифриране на ${DEVICE} са непълни. Моля, върнете се към менюто за "
+"манипулиране на дялове и изберете всички необходими опции."
 
 #. Type: text
 #. Description
@@ -155,14 +150,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "липсва"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Грешка при инсталирането на ELILO"
+msgstr "Грешка при инсталирането на пакет за шифриране"
 
 #. Type: error
 #. Description
@@ -171,6 +165,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"Пакетът с модул(и) на ядро ${PACKAGE} не може да бъде намерен или се е "
+"получила грешка по време на инсталацията."
 
 #. Type: error
 #. Description
@@ -180,23 +176,24 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"Вероятно ще има проблеми по време на начално зареждане, когато системата се "
+"опита да настрои шифрирани дялове. Все още можете да ги поправите чрез "
+"инсталиране на необходимите пакети по-късно."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Записване на промените на диска и настройване на LVM?"
+msgstr "Записване на промените на диска и настройване на шифрирани томове?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Преди Logical Volume Manager да може да бъде настроен, текущата схема на "
+"Преди шифрираните томове да може да бъдат настроени, текущата схема на "
 "разделянето трябва да бъде записана на диска. Тези промени не могат да бъдат "
 "отменени по-късно."
 
@@ -209,107 +206,100 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Записване на текущото разположение на дяловете и настройване на LVM?"
+msgstr ""
+"Записване на разположението на дяловете и настройване на шифрирани томове?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"След като Logical Volume Manager е вече настроен, не са позволени "
-"допълнителни промени на дяловете в дисковете, съдържащи физически томове. "
-"Моля, решете дали текущата схема на разделянето е задоволителна преди да "
-"продължите."
+"След като шифрираните томове са вече настроени, не са позволени допълнителни "
+"промени на дяловете в дисковете, съдържащи шифрирани томове. Моля, решете "
+"дали текущата схема на разделянето е задоволителна преди да продължите."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Грешка при настройване на LVM"
+msgstr "Грешка при настройване на шифрирани томове"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Грешка при запазването на промените върху дисковете."
+msgstr "Грешка при настройване на шифрирани томове."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Настройването на RAID е прекъснато."
+msgstr "Настройката е прекъсната."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Грешка при инсталирането на ELILO"
+msgstr "Грешка при инициализацията на шифриран том"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Грешка при запазването на промените върху дисковете."
+msgstr "Получена е грешка по време на настройване на шифрирани томове."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:161
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Парола"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Файл с ключ (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "Случаен ключ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Открито е незащитено място за виртуална памет"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Открито е незащитено място за виртуална памет"
 
 #. Type: error
 #. Description
@@ -319,6 +309,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Това е фатална грешка, тъй като позволява на диска да бъдат записвани "
+"нешифрирани чувствителни данни"
 
 #. Type: error
 #. Description
@@ -328,34 +320,35 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Моля, деактивирайте мястото за виртуална памет (например чрез swapoff) или "
+"настройте шифрирано място за виртуална памет и тогава пуснете отново "
+"настройване на шифрирани дялове. Тази програма сега ще прекъсне."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Парола за шифриране:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Нуждаете се от парола за шифриране на ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Трябва да зададете парола за отдалечен достъп до инсталатора. Злонамерен или "
-"неоторизиран потребител с достъп до инсталатора може да причини пагубни "
-"резултати, така че се погрижете да изберете парола, която не се отгатва "
-"лесно. Не трябва да бъде дума от речник или дума, която може да бъде "
-"свързана с вас."
+"Общата устойчивост на шифрирането зависи силно от тази парола, така че "
+"трябва да внимавате да изберете парола, която не е лесно да се отгатне. Не "
+"трябва да е дума или изречение, което може да се открие в речници, или "
+"фраза, която лесно може да бъде асоциирана с Вас."
 
 #. Type: password
 #. Description
@@ -365,44 +358,43 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Добрата парола съдържа смесица от букви, цифри и пунктуация. Паролите за "
+"ключове е препоръчително да имат дължина 20 или повече знака."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Въведете наново паролата за проверка:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Моля, въведете отново същата парола за отдалечено инсталиране, за да бъде "
-"проверено дали е написана правилно."
+"Моля, въведете отново същата парола, за да бъде проверено дали е написана "
+"правилно."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Грешка при въвеждане на парола"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Двете пароли, които въведохте, не са едни и същи. Моля, въведете отново "
-"парола."
+"Двете пароли, които въведохте, не са едни и същи. Моля, опитайте отново."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Празна парола"
 
 #. Type: note
 #. Description
@@ -411,6 +403,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Въведохте празна парола, което не е позволено. Моля, изберете непразна "
+"парола."
 
 #. Type: boolean
 #. Description
@@ -419,7 +413,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Използване на празна парола?"
 
 #. Type: boolean
 #. Description
@@ -428,19 +422,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Въведохте парола, която се състои от по-малко от ${MINIMUM} знака, което се "
+"счита за твърде слаба парола. Трябва да изберете по-силна парола."
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Натиснете Enter, за да продължите]"
+msgstr "Въведете случайни знаци, за да продължите"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "Ключът за шифриране на ${DEVICE} сега се създава. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -450,18 +445,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Можете да ускорите процеса чрез въвеждане на случайни данни с клавиатурата, "
+"за да пълните генератора на случайни числа, и да го правите от време на "
+"време. Този диалог ще стои, докато не бъдат събрани достатъчно данни."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "Enter random characters"
-msgstr ""
+msgstr "Въвеждайте случайни знаци"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Ключът за шифриране на ${DEVICE} сега е създаден."
 
 #. Type: entropy-text
 #. Description
@@ -471,6 +469,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Този процес изисква системата да има голям обем събрана случайност "
+"(\"ентропия\"), от която в настоящия момент на инсталация има твърде малко."
 
 #. Type: entropy-text
 #. Description
@@ -480,27 +480,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Може да ускорите процеса чрез въвеждане на случайни знаци по клавиатурата "
+"или просто изчаквайки, докато не бъдат събрани достатъчно данни. (Заб.: това "
+"може да отнеме много време)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Грешка при промяна на големината"
+msgstr "Грешка при създаване на файл за ключ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Грешка при запазването на промените върху дисковете."
+msgstr "Получена е грешка при създаване на файла за ключ."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Грешка при настройване на LVM"
+msgstr "Грешка при настройване на шифриране"
 
 #. Type: error
 #. Description
@@ -510,6 +510,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Избрахте кореновата файлова система да бъде върху шифриран дял. Тази "
+"възможност не е достъпна и продължаването сега ще доведе до неизползваема "
+"инсталация."
 
 #. Type: error
 #. Description
@@ -517,13 +520,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Моля, върнете се обратно и изберете нешифриран дял за коренова файлова "
+"система."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Сигурен ли сте, че искате да излезете веднага?"
+msgstr "Сигурен(-на) ли сте, че искате да използвате случаен ключ?"
 
 #. Type: boolean
 #. Description
@@ -532,6 +536,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Избрахте използване на случаен ключ за ${DEVICE}, но поискахте "
+"манипулирането на дялове да създаде файлова система там."
 
 #. Type: boolean
 #. Description
@@ -540,3 +546,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Използването на случаен ключ означава, че данните в дяла ще бъдат "
+"унищожавани при всяко рестартиране. Тази възможност трябва да се използва "
+"само за места за виртуална памет."

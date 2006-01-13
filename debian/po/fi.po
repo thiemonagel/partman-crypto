@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-09 21:28+0200\n"
+"PO-Revision-Date: 2006-01-12 11:15+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,6 @@ msgstr "fyysinen levynide salaukselle"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
-#, fuzzy
 msgid "crypto"
 msgstr "crypto"
 
@@ -264,14 +263,12 @@ msgstr "Takaisinkytkentä (loop-AES)"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
-#, fuzzy
 msgid "Device-mapper (dm-crypt)"
 msgstr "Laiteyhdistäjä (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
-#, fuzzy
 msgid "Device-mapper (LUKS)"
 msgstr "Laiteyhdistäjä (LUKS)"
 
@@ -296,14 +293,12 @@ msgstr "Satunnainen avain"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid "Unsafe swap space detected"
 msgstr "Havaittiin suojaamaton näennäismuistialue"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
-#, fuzzy
 msgid "An unsafe swap space has been detected."
 msgstr "Havaittiin suojaamaton näennäismuistialue."
 

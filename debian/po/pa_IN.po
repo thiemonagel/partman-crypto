@@ -3,6 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of pa_IN.po to Punjabi
 # translation of template.po to Punjabi
 #
 # Debian Installer master translation file template
@@ -10,14 +11,15 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 # Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
-# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005.
+# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005, 2006.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pa_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-03-15 12:29+0530\n"
+"PO-Revision-Date: 2006-01-14 14:06+0530\n"
 "Last-Translator: Amanpreet Singh Alam <amanpreetalam@yahoo.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -29,107 +31,98 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "LVM ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "ਸਰਗਰਮ ਨਹੀਂ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਮਾਊਂਟ ਪੁਆਂਇਟ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਮਾਊਂਟ ਪੁਆਂਇਟ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "ਕੁੰਜੀ ਅਕਾਰ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਸਿਸਟਮ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਕੁੰਜੀ ਅਕਾਰ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਸਿਸਟਮ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮਮ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "ਫਰੇਮ ਰਾਖਵਾਂ ਨਿਰਧਾਰਨ ਕਰ ਰਿਹਾ ਹੈ..."
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨਖਵਾਂ ਨਿਤਧਾਰਨ ਕਰ ਰਿਹਾ ਹੈ..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "ਨੈੱਟਵਰਕ ਸੰਰਚਨਾ ਕਰੋ"
+msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਕ ਸੰਰਚਨਾ ਕਰੋ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "ਕੋਈ ਭਾਗ ਨਹੀਂ ਲੱਭਿਆ ਹੈ"
+msgstr "ਇੰਨਕ੍ਰਿਪਟ ਕਰਨ ਲਈ ਕੋਈ ਭਾਗ ਨਹੀਂ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਕੋਈ ਕਰਨਲ ਪੈਕੇਜ ਨਹੀਂ ਚੁਣਿਆ।"
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨੇਸ਼ਨ ਲਈ ਕਭਾਗਪੈਕੇਜ ਨਹੀਂ ਚੁਣਿਆ।"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "ਲੋੜੀਂਦਾ ਪਰੋਗਰਾਮ ਗੁੰਮ ਹੈ"
 
 #. Type: note
 #. Description
@@ -138,12 +131,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"ਡੇਬੀਅਨ-ਇੰਸਟਾਲਰ ਦੇ ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਇੱਕ ਦਾਂ ਜਿਆਦਾ ਪਰੋਗਰਾਮ ਸ਼ਾਮਲ ਹਨ ਜੋ partman-crypt ਦੇ ਠੀਕ "
+"ਤਰਾਂ ਕੰਮ ਕਰਨ ਲਈ ਲੋੜੀਂਦੇ ਹਨ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "ਲੋੜੀਂਦੀ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਗੁੰਮ ਹੈ"
 
 #. Type: error
 #. Description
@@ -152,6 +147,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"${DEVICE} ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਅਧੂਰੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਵਿਭਾਗ ਮੇਨੂ ਵਿੱਚ ਜਾਓ ਅਤੇ ਸਭ ਲੋੜੀਂਦੀਆਂ ਚੋਣਾਂ "
+"ਚੁਣੋ।"
 
 #. Type: text
 #. Description
@@ -160,14 +157,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "ਗੁੰਮ ਹੈ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "ELILO ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਈ"
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਪੈਕੇਜ ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
@@ -175,7 +171,7 @@ msgstr "ELILO ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਈ"
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
-msgstr ""
+msgstr "ਕਰਨਲ ਮੈਡਿਊਲ ਪੈਕੇਜ ${PACKAGE} ਨਹੀਂ ਲੱਭਿਆ ਜਾਂ ਇੰਸਟਾਲੇਸ਼ਨ ਦੌਰਾਨ ਗਲਤੀ ਵਾਪਰੀ ਹੈ।"
 
 #. Type: error
 #. Description
@@ -185,23 +181,23 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"ਉੱਥੇ ਬੂਟ ਦੌਰਾਨ ਸਮੱਸਿਆ ਹੋਵੇਗੀ ਜਦੋਂ ਸਿਸਟਮ ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗਾਂ ਨੂੰ ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ। ਤੁਸੀਂ "
+"ਇਸ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਲੋੜੀਂਦੇ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਕੇ ਠੀਕ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖੋ ਅਤੇ LVM ਸੰਰਚਿਤ ਕਰੋ?"
+msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖੋ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"ਲਾਜ਼ੀਕਲ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਡਿਸਕ ਤੇ ਲਿਖੀ ਹੋਵੇ। ਇਹ "
+"ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਡਿਸਕ ਤੇ ਲਿਖੀ ਹੋਵੇ। ਇਹ "
 "ਤਬਦੀਲੀਆਂ ਰੱਦ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕਦੀਆਂ।"
 
 #. Type: boolean
@@ -213,106 +209,99 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "ਮੌਜੂਦਾ ਭਾਗ ਖਾਕਾ ਰੱਖੋ ਅਤੇ LVM ਸੰਰਚਿਤ ਕਰੋ?"
+msgstr "ਮੌਜੂਦਾ ਭਾਗ ਖਾਕਾ ਰੱਖੋ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"ਲਾਜ਼ੀਕਲ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਭੌਤਿਕ ਵਾਲੀਅਮ ਵਾਲੀ ਡਿਸਕ ਤੇ ਭਾਗਾਂ ਵਿੱਚ ਕੋਈ "
-"ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਕਿਰਪਾ ਕਰਕੇ ਫੈਸਲਾ ਕਰੋ ਕਿ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਇਹਨਾਂ "
-"ਡਿਸਕਾਂ ਤੇ ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
+"ਇੰਨਕ੍ਰਿਪਟਡਕਲ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦਇੰਨਕ੍ਰਿਪਟਡਿਕ ਵਾਲੀਅਮ ਵਾਲੀ ਡਿਸਕ ਤੇ ਭਾਗਾਂ "
+"ਵਿੱਚ ਕੋ ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਕਿਰਪਾ ਕਰਕੇ ਫੈਸਲਾ ਕਰੋ ਕਿ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ "
+"ਇਹਨਾ ਡਿਸਕਾਂ ਤੇ ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "LVM ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
+msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
+msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "RAID ਦੀ ਸੰਰਚਨਾ ਅਧੂਰੀ ਖਤਮ ਕੀਤੀ ਗਈ।"
+msgstr " ਸੰਰਚਨਾ ਅਧੂਰੀ ਖਤਮ ਕੀਤੀ ਗਈ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "ELILO ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਈ"
+msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਈ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
+msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਨਿਰਧਾਰਨ  ਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:161
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "ਲੂਪਬੈਕ (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "ਸ਼ਬਦ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "ਕੁੰਜੀ-ਫਾਇਲ (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "ਲਗਾਤਾਰ ਕੁੰਜੀ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "ਨਾ-ਸੁਰੱਖਿਅਤ ਸਵੈਪ ਸਪੇਸ ਲੱਭੀ ਹੈ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "ਇੱਕ ਨਾ-ਸੁਰੱਖਿਅਤ ਸਪੇਸ ਲੱਭੀ ਹੈ।"
 
 #. Type: error
 #. Description
@@ -322,6 +311,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"ਇਹ ਘਾਤਕ ਗਲਤੀ ਹੈ ਕਿਉਂਕਿ ਜਰੂਰੀ ਡਾਟਾ ਨਾ-ਇੰਨਕ੍ਰਿਪਟਡ ਡਿਸਕ ਤੇ ਲਿਖਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਇਸ ਨਾਲ "
+"ਕਿਸੇ ਨੂੰ ਵੀ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਜਾਂ ਸ਼ਬਦ ਦਾ ਹਿੱਸਾ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਡਿਸਕ ਤੱਕ ਪਹੁੰਚ ਮਿਲ ਸਕਦੀ ਹੈ।"
 
 #. Type: error
 #. Description
@@ -331,33 +322,33 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"ਕਿਰਪਾ ਕਰਕੇ ਸਵੈਪ ਸਪੇਸ ਨੂੰ ਅਯੋਗ ਕਰੋ (ਉਦਾਪਰਨ ਲਈ swapoff ਚਲਾ ਕੇ) ਜਾਂ ਇੱਕ ਇੰਕ੍ਰਿਪਟਡ ਸਵੈਪ ਸਪੇਸ "
+"ਸੰਰਚਿਤ ਕਰੋ ਅਤੇ ਫਿਰ ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਨਿਰਧਾਰਨ ਚਲਾਓ। ਇਹ ਪਰੋਗਰਾਮ ਹੁਣ ਅਧੂਰਾ ਖਤਮ ਹੋਵੇਗਾ।"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਸ਼ਬਦ:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "ਤੁਹਾਨੂੰ ਇੰਨਕ੍ਰਿਪਟ ${DEVICE} ਲਈ ਸ਼ਬਦ ਚੁਣਨ ਦੀ ਲੋੜ ਹੈ।"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"ਡੇਬੀਅਨ ਇੰਸਟਾਲਰ ਦੀ ਰਿਮੋਟ ਪਹੁੰਚ ਲਈ ਤੁਹਾਨੂੰ ਗੁਪਤ-ਕੋਡ ਨਿਰਧਾਰਿਤ ਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਇੱਕ ਗਲਤ ਅਤੇ ਅਨਪੜ "
-"ਉਪਭੋਗੀ ਇੰਸਟਾਲਰ ਨੂੰ ਪਹੁੰਚ ਸਮੇਤ ਖਤਰਨਾਕ ਨਤੀਜਾ ਕੱਢੇਗਾ, ਇਸ ਲਈ ਤੁਹਾਨੂੰ ਗੁਪਣ-ਕੋਡ ਚੁਣਨ ਸਮੇਂ ਧਿਆਨ ਦੇਣਾ "
-"ਚਾਹੀਦਾ ਹੈ ਜੋ ਕਿ ਪਤਾ ਲਗਾਉਣਾ ਅਸਾਨ ਨਾ ਹੋਵੇ। ਇਹ ਸ਼ਬਦਕੋਸ਼ ਵਿੱਚੋਂ ਕੋਈ ਸ਼ਬਦ ਨਾ ਹੋਵੇ, ਜਾਂ ਸ਼ਬਦ ਜੋ "
-"ਤੁਹਾਡੇ ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ ਜਿਵੇਂ ਤੁਹਾਡਾ ਮੋਬਾਈਲ ਨੰਬਰ ਨਾ ਹੋਵੇ।"
+"ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਦੀ ਪੂਰੀ ਘਣਤਾ ਇਸ ਪਹਿਰੇ ਤੇ ਪੂਰੀ ਤਰਾਂ ਨਿਰਭਰ ਕਰਦੀ ਹੈ, ਇਸ ਕਰਕੇ ਤੁਹਾਨੂੰ ਅਜਿਹਾ ਪਹਿਰਾ "
+"ਚੁਣਨਾ ਚਾਹੀਦਾ ਹੈ ਜਿਸ ਦਾ ਅੰਦਾਜਾ ਅਸਾਨੀ ਨਾਲ ਨਾ ਲੱਗੇ। ਇਹ ਸ਼ਬਦਕੋਸ਼ ਵਿੱਚੋਂ ਕੋਈ ਸ਼ਬਦ ਜਾਂ ਵਾਕ, ਜਾਂ "
+"ਸ਼ਬਦ ਜੋ ਤੁਹਾਡੇ ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ ਨਾ ਹੋਵੇਨੰਬਰ ਨਾ ਹੋਵੇ।"
 
 #. Type: password
 #. Description
@@ -367,41 +358,40 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"ਇੱਕ ਵਧੀਆ ਸ਼ਬਦ ਵਿੱਚ ਅੱਖਰਾਂ, ਅੰਕਾਂ ਅਤੇ ਵਿਸ਼ਰਾਮਾਂ ਦਾ ਮਿਸ਼ਰਣ ਹੋਵੇਗਾ। ਸ਼ਬਦ ਦੀ ਲੰਬਾਈ 20 ਜਾਂ ਜਿਆਦਾ "
+"ਅੱਖਰ ਹੋਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤਾ ਜਾਂਦੀ ਹੈ।"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "ਜਾਂਚ ਲਈ ਸ਼ਬਦ ਮੁੜ ਭਰੋ:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
-"ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਰਿਮੋਟ ਇੰਸਟਾਲੇਸ਼ਨ ਗੁਪਤ-ਕੋਡ ਭਰੋ।"
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਪਹਿਰਾੁਪਤ-ਕੋਡ ਭਰੋ।"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "ਸ਼ਬਦ ਇੰਪੁੱਟ ਗਲਤੀ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "ਭਰੇ ਹੋਏ ਦੋਨੋ ਗੁਪਤ-ਕੋਡ ਇੱਕੋ ਜਿਹੇ ਨਹੀਂ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਗੁਪਤ-ਕੋਡ ਭਰੋ।"
+msgstr "ਭਰੇ ਹੋਏ ਦੋਨੋ ਪਹਿਰੇ ਇੱਕੋ ਜਿਹੇ ਨਹੀਂ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਭਰੋ।"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr ""
+msgstr "ਖਾਲੀ ਸ਼ਬਦ"
 
 #. Type: note
 #. Description
@@ -409,7 +399,7 @@ msgstr ""
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
+msgstr "ਤੁਸੀਂ ਖਾਲੀ ਸ਼ਬਦ ਭਰਿਆ ਹੈ, ਜਿਸ ਦੀ ਮਨਜੂਰੀ ਨਹੀਂ ਹੈ।ਕਿਰਪਾ ਕਰਕੇ ਨਾ-ਖਾਲੀ ਸ਼ਬਦ ਚੁਣੋ।"
 
 #. Type: boolean
 #. Description
@@ -418,7 +408,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "ਕਮਜੋਰ ਸ਼ਬਦ ਵਰਤੋ?"
 
 #. Type: boolean
 #. Description
@@ -427,19 +417,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"ਤੁਸੀਂ ਸ਼ਬਦ ਭਰਿਆ ਹੈ ਜਿਸ ਵਿੱਚ ${MINIMUM} ਅੱਖਰਾਂ ਤੋਂ ਘੱਟ ਹਨ, ਜੋ ਕਮਜੋਰ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਸਖਤ "
+"ਸ਼ਬਦ ਚੁਣਨਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[ਜਾਰੀ ਰੱਖਣ ਲਈ enter ਦਬਾਓ]"
+msgstr "ਜਾਰੀ ਰੱਖਣ ਲਈ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰੋ"
 
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "${DEVICE} ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਹੁਣ ਬਣ ਗਈ ਹੈ। (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -449,18 +440,20 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"ਤੁਸੀਂ ਕਾਰਜ ਦੀ ਗਤਾ ਵਧਾਉਣ ਵਿੱਚ ਲਗਾਤਾਰਤਾ ਪੂਲ ਭਰਨ ਲਈ ਅਤੇ ਜਾਰੀ ਰਹਿਣ ਲਈ ਕੀਬੋਰਡ ਤੇ ਲਗਾਤਾਰ "
+"ਡਾਟਾ ਭਰ ਕੇ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ। ਇਹ ਵਾਰਤਾਲਾਪ ਜਾਰੀ ਰਹੇਗੀ ਜਦੋਂ ਤੱਕ ਲੋੜੀਂਦਾ ਡਾਟਾ ਇਕੱਠਾ ਨਹੀਂ ਹੁੰਦਾ।"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "Enter random characters"
-msgstr ""
+msgstr "ਲਗਾਤਾਰ ਅੱਖਰ ਭਰੋ"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:255
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "${DEVICE} ਲਈ ਹੁਣ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਬਣ ਗਈ ਹੈ।"
 
 #. Type: entropy-text
 #. Description
@@ -470,6 +463,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"ਇਸ ਕਾਰਜ ਲਈ ਸਿਸਟਮ ਕੋਲ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਇਕੱਠੀ ਕੀਤੀ ਲਗਾਤਾਰਤਾ (\"entropy\") ਦੀ ਲੋੜ ਹੈ, "
+"ਜਿਸ ਵਿੱਚੋਂ ਕੁਝ ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਜਰੂਰੀ ਹੈ।"
 
 #. Type: entropy-text
 #. Description
@@ -479,27 +474,26 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"ਤੁਸੀਂ ਕਾਰਜ ਦੀ ਗਤਾ ਵਧਾਉਣ ਵਿੱਚ ਕੀਬੋਰਡ ਤੇ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰ ਕੇ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਕੁੰਜੀ-ਡਾਟਾ "
+"ਇਕੱਠਾ ਕਰਨ ਦੀ ਉਡੀਕ ਵਿੱਚ। (ਸੂਚਨਾ: ਇਹ ਕਾਫੀ ਸਮਾਂ ਲੈ ਸਕਦਾ ਹੈ)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "ਮੁੜ-ਅਕਾਰ ਕਾਰਜ ਅਸਫਲ ਰਿਹਾ"
+msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲਤਾ ਰਿਹਾ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
+msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਸਮੇਂ ਗਲਤੀ ਵਾਪਰੀ ਹੈ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "LVM ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
+msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
@@ -509,20 +503,21 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"ਤੁਸੀਂ ਰੂਟ ਫਾਇਸ ਸਿਸਟਮ ਨੂੰ ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਸਹੂਲਤ ਉਪਲੱਬਧ ਨਹੀਂ ਅਤੇ "
+"ਹੁਣ ਜਾਰੀ ਹੋ ਰਹੀ ਹੈ ਇਸ ਦਾ ਨਤੀਜਾ ਇੰਸਟਾਲੇਸ਼ਨ ਹੈ ਜੋ ਵਰਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਚੁਣੋ।"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "ਕੀ ਤੁਸੀਂ ਹੁਣ ਬੰਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨਣਲਗਾਤਾਰ ਕੁੰਜੀ ਵਰਤਣਾ ਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #. Type: boolean
 #. Description
@@ -531,6 +526,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"ਤੁਸੀਂ ${DEVICE} ਲਈ ਲਗਾਤਾਰ ਕੁੰਜੀ ਚੁਣੀ ਹੈ ਪਰ ਇਸ ਉੱਪਰ ਫਾਇਲ ਸਿਸਟਮ ਬਣਾਉਣ ਲਈ ਵਿਭਾਗੀਕਰਨ "
+"ਕਰਤਾ ਨੂੰ ਬੇਨਤੀ ਕੀਤੀ ਹੈ।"
 
 #. Type: boolean
 #. Description
@@ -539,3 +536,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"ਲਗਾਤਾਰ ਕੁੰਜੀ ਕਿਸਮ ਵਰਤਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਭਾਗ ਡਾਟਾ ਹਰ ਵਾਰ ਮੁੜ ਚੱਲਣ ਤੇ ਨਸ਼ਟ ਹੋ ਜਾਵੇਗਾ। ਇਸ "
+"ਸਿਰਫ ਸਵੈਪ ਭਾਗਾਂ ਲਈ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।"

@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-12 11:15+0200\n"
+"PO-Revision-Date: 2006-01-17 17:29+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "fyysinen levynide salaukselle"
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr "crypto"
+msgstr "salaus"
 
 #. Type: text
 #. Description

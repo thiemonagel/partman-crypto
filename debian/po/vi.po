@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-12-30 22:22+1030\n"
+"PO-Revision-Date: 2006-01-18 22:53+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -143,8 +143,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
-"Bản xây dụng debian-installer (trình cài đặt Debian) này không gồm một hay "
-"nhiều chương trình cần thiết để chạy trình partman-crypt cho đúng."
+"Bản xây dụng debian-installer (bộ cài đặt Debian) này không gồm một hay "
+"nhiều chương trình cần thiết để chạy đúng trình partman-crypt."
 
 #. Type: error
 #. Description
@@ -159,8 +159,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Những tùy chọn mật mã cho thiết bị ${DEVICE} không hoàn thành. Hãy trở về "
-"trình đơn Phân vùng rồi chọn các tùy chọn cần thiết."
+"Những tùy chọn mật mã cho thiết bị ${DEVICE} chưa hoàn tất. Hãy trở về trình "
+"đơn Phân vùng rồi chọn các tùy chọn cần thiết."
 
 #. Type: text
 #. Description
@@ -197,15 +197,15 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
-"Rất có thể sẽ gặp lỗi trong khi khởi động khi hệ thống cố thiết lập phân "
-"vùng đã mật mã. Bạn vẫn còn có thể sửa các lỗi này bằng cách cài đặt gói cần "
-"thiết lần sau."
+"Rất có thể sẽ gặp lỗi trong khi khởi động, khi hệ thống cố thiết lập phân "
+"vùng đã mật mã. Bạn vẫn còn có thể sửa lỗi này bằng cách cài đặt gói cần "
+"thiết về sau."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Ghi các thay đổi vào đĩa và cấu hình các khối tin đã mật mã không?"
+msgstr "Ghi các thay đổi vào đĩa và cấu hình khối tin đã mật mã không?"
 
 #. Type: boolean
 #. Description
@@ -214,8 +214,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Trước khi có thể cấu hình khối tin đã mật mã thì phải ghi lược đồ phân vùng "
-"hiện thời vào đĩa. Không thể hoàn tác các thay đổi này."
+"Trước khi có thể cấu hình khối tin đã mật mã, phải ghi bố trí phân vùng hiện "
+"thời vào đĩa. Không thể hoàn tác các thay đổi này."
 
 # Type: boolean
 # Description
@@ -230,8 +230,7 @@ msgstr "${ITEMS}"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
-"Giữ bố trí phân vùng hiện thời và cấu hình các khối tin đã mật mã không?"
+msgstr "Giữ bố trí phân vùng hiện thời và cấu hình khối tin đã mật mã không?"
 
 #. Type: boolean
 #. Description
@@ -242,9 +241,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Sau khi cấu hình những khối tin đã mật mã thì không cho phép thay đổi thêm "
-"nào trong phân vùng đĩa chứa khối tin đã mật mã. Hãy chắc là lược đồ phân "
-"vùng hiện thời trong những đĩa này là ổn dáng trước khi tiếp tục."
+"Sau khi cấu hình những khối tin đã mật mã, không cho phép thay đổi thêm nào "
+"trong phân vùng đĩa chứa khối tin đã mật mã. Hãy chắc là bố trí phân vùng "
+"hiện thời trong những đĩa này là ổn dáng trước khi tiếp tục."
 
 # Type: error
 # Description
@@ -326,7 +325,7 @@ msgstr "Khóa ngẫu nhiên"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "Phát hiện chỗ trao đổi bất an"
+msgstr "Mới phát hiện chỗ trao đổi bất an"
 
 #. Type: error
 #. Description
@@ -354,9 +353,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Bạn hãy vô hiệu hóa vùng trao đổi (v.d. bằng cách chạy « swapoff » [tắt trao "
-"đổi]), hoặc cấu hình một vùng trao đổi đã mật mã rồi chạy lại việc thiết bị "
-"các khối tin đã mật mã. Chương trình này sẽ hủy bỏ lúc ngay bây giờ."
+"Bạn hãy tắt vùng trao đổi (v.d. bằng cách chạy « swapoff » [tắt trao đổi]), "
+"hoặc cấu hình một vùng trao đổi đã mật mã rồi chạy lại việc thiết lập các "
+"khối tin đã mật mã. Chương trình này sẽ hủy bỏ lúc ngay bây giờ."
 
 #. Type: password
 #. Description
@@ -383,10 +382,10 @@ msgid ""
 "could be easily associated with you."
 msgstr ""
 "Sức mạnh toàn bộ của việc mật mã phụ thuộc chặt chẽ vào cụm từ mật khẩu này, "
-"thì bạn nên chọn cẩn thận một cụm từ mật khẩu không dễ đoán. Không nên là từ "
-"nào hay câu nào trong từ điển, hoặc từ nào hay cụm từ nào dễ liên quan đến "
-"bạn. Chương trình ngắt mật khẩu có thể chạy qua toàn từ điển hay thông tin "
-"cá nhân bạn trong vòng vài giây."
+"thì bạn nên chọn cẩn thận một cụm từ mật khẩu không dễ đoán. Nó không nên là "
+"từ hay câu trong từ điển nào, hoặc từ hay cụm từ dễ liên quan đến bạn. "
+"Chương trình ngắt mật khẩu có thể chạy qua toàn bộ từ điển hay thông tin cá "
+"nhân bạn trong vòng vài giây."
 
 #. Type: password
 #. Description
@@ -396,9 +395,9 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Một cụm từ mật khẩu tốt có chứa chữ, số và chấm câu đã trộn với nhau. Đệ "
-"nghị cụm từ mật khẩu có độ dài ít nhất 20 ký tự. (Hãy chắc đã viết cụm từ "
-"mật khẩu này và giữ nó trong một nơi an toàn.)"
+"Một cụm từ mật khẩu tốt có chứa chữ, con số và chấm câu đã trộn với nhau. Đệ "
+"nghị cụm từ mật khẩu có độ dài ít nhất 20 ký tự. (Hãy chắc đã viết cẩn thận "
+"cụm từ mật khẩu này và giữ nó trong một nơi an toàn.)"
 
 #. Type: password
 #. Description
@@ -441,7 +440,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Bạn đã gõ một cụm từ mật khẩu rỗng mà không cho phép. Bạn hãy chọn một cụm "
+"Bạn đã gõ một cụm từ mật khẩu rỗng mà không được phép. Bạn hãy chọn một cụm "
 "từ mật khẩu không rỗng."
 
 #. Type: boolean
@@ -461,7 +460,7 @@ msgid ""
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
 "Bạn đã gõ một cụm từ mật khẩu chứa ít hơn ${MINIMUM} ký tự, mà quá yếu. Bạn "
-"nên chọn một cụm từ mật khẩu mạnh hơn."
+"nên chọn một cụm từ mật khẩu mạnh hơn (dài hơn)."
 
 #. Type: string
 #. Description
@@ -520,7 +519,7 @@ msgid ""
 msgstr ""
 "Bạn có thể tăng tốc độ tiến hành lên bằng cách gõ dữ liệu ngẫu nhiên bằng "
 "bàn phím, hoặc đơn giản hãy đợi đến khi hệ thống đã tập hợp đủ dữ liệu cho "
-"khóa. (GHI CHÚ: có thể mất nhiều thời gian.)"
+"khóa. (GHI CHÚ : có thể mất nhiều thời gian.)"
 
 # Type: error
 # Description
@@ -557,7 +556,8 @@ msgid ""
 "an installation that cannot be used."
 msgstr ""
 "Bạn đã chọn hệ thống tập tin gốc cần cất giữ trên phân vùng đã mật mã. Chưa "
-"có tính năng này thì tiếp tục lúc bây giờ sẽ tạo bản cài đặt kết quả vô ích."
+"hỗ trợ tính năng này thì tiếp tục lúc bây giờ sẽ tạo bản cài đặt kết quả vô "
+"ích."
 
 #. Type: error
 #. Description

@@ -411,7 +411,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr "Ĉu vi vere uzus tian malfortan pasfrazon ?"
+msgstr "Ĉu vi vere uzu tian malfortan pasfrazon ?"
 
 #. Type: boolean
 #. Description
@@ -523,7 +523,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:284
 msgid "Are you sure you want to use a random key?"
-msgstr "Ĉu vi vere uzus hazardan ŝlosilon ?"
+msgstr "Ĉu vi vere uzu hazardan ŝlosilon ?"
 
 #. Type: boolean
 #. Description

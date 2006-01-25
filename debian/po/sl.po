@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-23 23:41+0100\n"
+"PO-Revision-Date: 2006-01-25 14:19+0100\n"
 "Last-Translator: Jure Cuhalev <gandalf@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
@@ -44,19 +44,19 @@ msgstr "fizična enota za LVM"
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "kripto"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:15
 msgid "not active"
-msgstr ""
+msgstr "ni aktivno"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Tip kodiranja:"
 
 #. Type: select
 #. Description
@@ -69,74 +69,68 @@ msgstr "Priklopna točka za ta razdelek:"
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Kodiranje:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Priklopna točka za ta razdelek:"
+msgstr "Kodiranje za ta razdelek:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Velikost ključa:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Priklopna točka za ta razdelek:"
+msgstr "Velikost ključa za ta razdelek:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Kodirni ključ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Priklopna točka za ta razdelek:"
+msgstr "Tip kodirnega ključa za ta razdelek:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Pripravljam ..."
+msgstr "Pripravljam kodiranje..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
 #, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Nastavi omrežje"
+msgstr "Nastavit kodirane volume"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Nova velikost razdelka:"
+msgstr "Ni razdelkov za kriptiranje"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Za namestitev niste izbrali nobenega paketa z jedrom."
+msgstr "Za kodiranje ni bil izbran noben razdelek."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "Ni potrebnih programov"
 
 #. Type: note
 #. Description
@@ -145,6 +139,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Ta različica debian namestitve ne vsebuje enega ali več programov, ki jih "
+"partman-crypt potrebuje za pravilno delovanje."
 
 #. Type: error
 #. Description
@@ -167,7 +163,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "manjkajoče"
 
 #. Type: error
 #. Description
@@ -285,43 +281,43 @@ msgstr "Loopback (loop%s)"
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Geslo"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Datoteka s ključem (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "Naključni ključ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Nevarni izmenjevalni prostor zaznan"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Zaznan je nevarni izmenjevalni prostor."
 
 #. Type: error
 #. Description
@@ -345,13 +341,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Kodirno geslo:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Izbrati morate geslo za kodiranje ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -381,7 +377,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Ponovno vnesite geslo za preveritev:"
 
 #. Type: password
 #. Description
@@ -398,7 +394,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Napaka pri vnosu gesla"
 
 #. Type: note
 #. Description
@@ -411,7 +407,7 @@ msgstr "Gesli, ki ste ju vnesli, se ne ujemata. Ponovno vnesite geslo."
 #. Description
 #: ../partman-crypto.templates:223
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Prazno geslo"
 
 #. Type: note
 #. Description
@@ -419,7 +415,7 @@ msgstr ""
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
+msgstr "Vnesli ste prazno geslo, kar ni dovoljeno. Izberite ne-prazno geslo."
 
 #. Type: boolean
 #. Description
@@ -428,7 +424,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Uporabim šibko geslo?"
 
 #. Type: boolean
 #. Description
@@ -441,9 +437,8 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:239
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Pritisnite enter za nadaljevanje]"
+msgstr "Vnesite naključne znake za nadaljevanje"
 
 #. Type: string
 #. Description

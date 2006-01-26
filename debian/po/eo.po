@@ -46,55 +46,55 @@ msgstr "malaktiva"
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr "Ĉifrada tipo :"
+msgstr "Ĉifrada tipo:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
 msgid "Encryption type for this partition:"
-msgstr "Ĉifrada tipo por ĉi tiu diskpartigo :"
+msgstr "Ĉifrada tipo por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr "Ĉifrado :"
+msgstr "Ĉifrado:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
 msgid "Encryption for this partition:"
-msgstr "Ĉifrado por ĉi tiu diskpartigo :"
+msgstr "Ĉifrado por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr "Ŝlosila amplekso :"
+msgstr "Ŝlosila amplekso:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
 msgid "Key size for this partition:"
-msgstr "Ŝlosila amplekso por ĉi tiu diskpartigo :"
+msgstr "Ŝlosila amplekso por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr "Ĉifrada ŝlosilo :"
+msgstr "Ĉifrada ŝlosilo:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
 msgid "Type of encryption key for this partition:"
-msgstr "Ĉifra ŝlosila tipo por ĉi tiu diskpartigo :"
+msgstr "Ĉifra ŝlosila tipo por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
 msgid "Setting up encryption..."
-msgstr "Akomodu ĉifradon ..."
+msgstr "Akomodu ĉifradon..."
 
 #. Type: text
 #. Description
@@ -331,7 +331,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr "Ĉifra pasfrazo :"
+msgstr "Ĉifra pasfrazo:"
 
 #. Type: password
 #. Description
@@ -367,7 +367,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr "Retajpu pasfrazon por kontroli :"
+msgstr "Retajpu pasfrazon por kontroli:"
 
 #. Type: password
 #. Description

@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-26 00:03+0100\n"
+"PO-Revision-Date: 2006-01-26 12:07+0100\n"
 "Last-Translator: Jure Cuhalev <gandalf@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
@@ -196,13 +196,12 @@ msgstr "Zapišem spremembe na disk in nastavim kodirane nosilce?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Preden nastavite Upravljalca logičnih enot, morate trenutno shemo razdelkov "
-"zapisati na trdi disk.  Teh sprememb se ne da razveljaviti."
+"Preden nastavite kodirane nosilce, morate trenutno shemo razdelkov zapisati "
+"na trdi disk.  Teh sprememb se ne da razveljaviti."
 
 #. Type: boolean
 #. Description
@@ -219,17 +218,15 @@ msgstr "Obdržim trenuten razpored razdelkov in nastavim kodirane nosilce?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Potem ko nastavite Upravitelja logičnih naprav, niso dovoljene nobene "
-"spremembe razdelkov trdih diskov, ki vsebujejo fizične enote. Pred "
-"nadaljevanjem se prepričajte, da ste zadovoljni s trenutno shemo razdelkov "
-"na diskih."
+"Potem ko nastavite kodirane nosilce, niso dovoljene nobene spremembe "
+"razdelkov trdih diskov, ki vsebujejo kodirane nosilce. Pred nadaljevanjem se "
+"prepričajte, da ste zadovoljni s trenutno shemo razdelkov na diskih."
 
 #. Type: error
 #. Description
@@ -342,17 +339,16 @@ msgstr "Izbrati morate geslo za kodiranje ${DEVICE}."
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Za oddaljen dostop do namestitve Debiana morate nastaviti geslo. Zlonameren "
-"ali neizkušen uporabnik z dostopom do namestitve lahko pusti katastrofalne "
-"posledice, zato ne izberite preveč samoumevnega gesla. Naj ne bo katera "
-"izmed besed v slovarju ali beseda, povezana z vami, na primer vaše ime."
+"Skupna moč kodiranja je močno odvisna od tega gesla, zato se še posebej "
+"posvetite njegovi izbiri tako, da ni lahko uganljiv.Naj ne bo katera izmed "
+"besed ali stavkov, ki jih lahko najdemo v slovarju ali fraza, ki jo lahko "
+"povežejo z vami."
 
 #. Type: password
 #. Description
@@ -362,6 +358,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Dobro geslo bo vsebovalo mešanico črk, številk in ločil. Priporočena dolžina "
+"gesla je nad 20 znakov."
 
 #. Type: password
 #. Description
@@ -419,6 +417,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Vnesli ste geslo, ki vsebuje manj kot ${MINIMUM} znakov, kar se smatra za "
+"prešibko. Poskusite izbrati težje geslo."
 
 #. Type: string
 #. Description
@@ -430,7 +430,7 @@ msgstr "Vnesite naključne znake za nadaljevanje"
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "Kodirni ključ za napravo ${DEVICE} se sedaj ustvarja. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -440,6 +440,9 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Postopek lahko pohitrite tako, da vnašate naključne podatke preko "
+"tipkovnice, da napolnite naključnostno polje. Ta dialog se bo ponavljal "
+"toliko časa dokler ne bo zbranih dovolj podatkov."
 
 #. Type: entropy-text
 #. Description
@@ -461,6 +464,8 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Ta proces zahteva od sistema, da ima veliko količino zbrane naključnosti "
+"(\"entropije\"), katere je najverjetneje premalo na tej stopnji namestitve."
 
 #. Type: entropy-text
 #. Description
@@ -470,27 +475,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Temu procesu lahko pomagate tako, da vnašate naključne znake preko "
+"tipkovnice, ali pa samo počakate dokler ni zbranih dovolj podatkov. (OPOMBA: "
+"to lahko traja dolgo časa)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Napaka pri spreminjanju velikosti"
+msgstr "Napaka pri ustvarjanju ključa"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Prišlo je do napake pri pisanju sprememb na pomnilniške naprave."
+msgstr "Prišlo je do napake med ustvarjanjem ključa."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Samodejna nastavitev mreže ni uspela"
+msgstr "Napaka pri nastavljanju kodiranja"
 
 #. Type: error
 #. Description
@@ -500,6 +505,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Izbrali ste korenski datotečni sistem za namestitev na kodirani razdelek. Ta "
+"možnost ni na voljo in nadaljevanje bi imelo za posledico namestitev, ki ne "
+"bi bila uporabna."
 
 #. Type: error
 #. Description
@@ -507,13 +515,14 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Vrnite se nazaj in izberite ne-kodirani razdelek za korenski datotečni "
+"sistem."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Ali ste prepričani, da želite končati zdaj?"
+msgstr "Ali ste prepričani, da želite uporabi naključni ključ?"
 
 #. Type: boolean
 #. Description
@@ -522,6 +531,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Izbrali ste naključni ključ za napravo ${DEVICE}vendar ste zahtevali od "
+"orodja za razdeljevanje naj ustvari datotečni sistem na njem."
 
 #. Type: boolean
 #. Description
@@ -530,3 +541,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Uporaba naključnega ključa pomeni, da bodo podatki na razdelku uničeni ob "
+"vsakem zagonu. Ta način naj bo uporabljen samo za izmenjevalne razdelke."

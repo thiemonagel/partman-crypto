@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-24 22:27+0200\n"
+"PO-Revision-Date: 2006-01-27 12:08+0100\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -410,7 +410,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr "Error en la entrada de la frase de contraseña"
+msgstr "Se ha producido un error en la entrada de la frase de contraseña"
 
 #. Type: note
 #. Description

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-23 13:10+0200\n"
+"PO-Revision-Date: 2006-01-28 12:35+0100\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:3
 msgid "physical volume for encryption"
-msgstr "fyzický zväzok pre šifrovanie"
+msgstr "fyzický zväzok na šifrovanie"
 
 #. Type: text
 #. Description
@@ -295,7 +295,7 @@ msgstr "Nájdený nespoľahlivý odkladací (swap) priestor"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr "Bol nájdený nespoľahlivý odkladací (swap) priestor."
+msgstr "Našiel sa nespoľahlivý odkladací (swap) priestor."
 
 #. Type: error
 #. Description
@@ -369,9 +369,7 @@ msgstr "Znovu zadajte heslo:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
-"Zadajte znova to isté heslo, aby ste sa presvedčili, že ste ho zadali "
-"správne."
+msgstr "Zadajte znova to isté heslo, aby ste sa presvedčili o jeho správnosti."
 
 #. Type: note
 #. Description

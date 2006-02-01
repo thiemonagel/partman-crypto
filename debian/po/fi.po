@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-17 17:29+0200\n"
+"PO-Revision-Date: 2006-01-31 14:39+0200\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr "Tämän osion salausavaimen tyyppi:"
 #. Description
 #: ../partman-crypto.templates:81
 msgid "Setting up encryption..."
-msgstr "Tehdään salauksen asetukset asetukset..."
+msgstr "Tehdään salauksen asetukset..."
 
 #. Type: text
 #. Description

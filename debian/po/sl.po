@@ -16,28 +16,29 @@
 # This file is distributed under the same license as debian-installer.
 # Jure Čuhalev <gandalf@owca.info>, 2005.
 # Jure Cuhalev <gandalf@owca.info>, 2006.
+# Matej Kovačič <matej.kovacic@owca.info>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-27 12:17+0100\n"
-"Last-Translator: Jure Cuhalev <gandalf@owca.info>\n"
+"PO-Revision-Date: 2006-02-01 14:08+0100\n"
+"Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
 "X-Poedit-Bookmarks: -1,-1,-1,0,-1,-1,-1,-1,-1,-1\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
 msgid "physical volume for encryption"
-msgstr "fizični nosilci za kodiranje"
+msgstr "fizični nosilci za šifiranje"
 
 #. Type: text
 #. Description
@@ -55,25 +56,25 @@ msgstr "ni aktivno"
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr "Tip kodiranja:"
+msgstr "Tip šifriranja:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
 msgid "Encryption type for this partition:"
-msgstr "Tip kodiranja za ta razdelek:"
+msgstr "Tip šifriranja za ta razdelek:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr "Kodiranje:"
+msgstr "Šifriranje:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
 msgid "Encryption for this partition:"
-msgstr "Kodiranje za ta razdelek:"
+msgstr "Šifriranje za ta razdelek:"
 
 #. Type: text
 #. Description
@@ -91,25 +92,25 @@ msgstr "Velikost ključa za ta razdelek:"
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr "Kodirni ključ:"
+msgstr "Šifrirni ključ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
 msgid "Type of encryption key for this partition:"
-msgstr "Tip kodirnega ključa za ta razdelek:"
+msgstr "Tip šifrirnega ključa za ta razdelek:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
 msgid "Setting up encryption..."
-msgstr "Pripravljam kodiranje..."
+msgstr "Pripravljam šifriranje..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
 msgid "Configure encrypted volumes"
-msgstr "Nastavi kodirane nosilce"
+msgstr "Nastavi šifrirane nosilce"
 
 #. Type: note
 #. Description
@@ -121,7 +122,7 @@ msgstr "Ni razdelkov za kriptiranje"
 #. Description
 #: ../partman-crypto.templates:89
 msgid "No partitions have been selected for encryption."
-msgstr "Za kodiranje ni bil izbran noben razdelek."
+msgstr "Za šifriranje ni bil izbran noben razdelek."
 
 #. Type: note
 #. Description
@@ -143,7 +144,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr "Ni zahtevanih možnosti kodiranja"
+msgstr "Ni zahtevanih možnosti šifriranja"
 
 #. Type: error
 #. Description
@@ -152,7 +153,7 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Možnosti kodiranja za napravo ${DEVICE} so nepopolne. Vrnite se na "
+"Možnosti šifriranja za napravo ${DEVICE} so nepopolne. Vrnite se na "
 "razdeljevalni meni in izberite vse zahtevane možnosti."
 
 #. Type: text
@@ -168,7 +169,7 @@ msgstr "manjkajoče"
 #. Description
 #: ../partman-crypto.templates:115
 msgid "Encryption package installation failure"
-msgstr "Napaka pri namestitvi kodirnega paketa"
+msgstr "Napaka pri namestitvi šifrirnega paketa"
 
 #. Type: error
 #. Description
@@ -189,14 +190,14 @@ msgid ""
 "package later on."
 msgstr ""
 "Najverjetneje bo prišlo do težav pri zagonu, ko bo sistem postavljal "
-"kodirane razdelke. Še zmeraj jih lahko popravite tako, da kasneje naložite "
+"šifrirane razdelke. Še zmeraj jih lahko popravite tako, da kasneje naložite "
 "potrebne pakete."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Zapišem spremembe na disk in nastavim kodirane nosilce?"
+msgstr "Zapišem spremembe na disk in nastavim šifrirane nosilce?"
 
 #. Type: boolean
 #. Description
@@ -205,7 +206,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Preden nastavite kodirane nosilce, morate trenutno shemo razdelkov zapisati "
+"Preden nastavite šifrirane nosilce, morate trenutno shemo razdelkov zapisati "
 "na trdi disk.  Teh sprememb se ne da razveljaviti."
 
 #. Type: boolean
@@ -218,7 +219,7 @@ msgstr "${ITEMS}"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Obdržim trenuten razpored razdelkov in nastavim kodirane nosilce?"
+msgstr "Obdržim trenuten razpored razdelkov in nastavim šifrirane nosilce?"
 
 #. Type: boolean
 #. Description
@@ -229,21 +230,21 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Potem ko nastavite kodirane nosilce, niso dovoljene nobene spremembe "
-"razdelkov trdih diskov, ki vsebujejo kodirane nosilce. Pred nadaljevanjem se "
-"prepričajte, da ste zadovoljni s trenutno shemo razdelkov na diskih."
+"Potem ko nastavite šifrirane nosilce, niso dovoljene nobene spremembe "
+"razdelkov trdih diskov, ki vsebujejo šifrirane nosilce. Pred nadaljevanjem "
+"se prepričajte, da ste zadovoljni s trenutno shemo razdelkov na diskih."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "Encrypted volumes configuration failure"
-msgstr "Napaka pri nastavitvi kodiranih nosilcev"
+msgstr "Napaka pri nastavitvi šifriranih nosilcev"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Prišlo je do napake pri nastavljanju kodiranih nosilcev."
+msgstr "Prišlo je do napake pri nastavljanju šifriranih nosilcev."
 
 #. Type: error
 #. Description
@@ -255,13 +256,13 @@ msgstr "Nastavljanje je prekinjeno."
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
-msgstr "Inicializacija kodiranih nosilcev ni uspela"
+msgstr "Inicializacija šifriranih nosilcev ni uspela"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Prišlo je do napake pri pripravljanju kodiranih nosilcev."
+msgstr "Prišlo je do napake pri pripravljanju šifriranih nosilcev."
 
 #. Type: text
 #. Description
@@ -319,8 +320,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"To je kritična napaka saj bi se lahko podatki napisali na disk v nekodirani "
-"obliki. To bi omogočilo osebi z dostopom na disk, da povrne del kodirnega "
+"To je kritična napaka saj bi se lahko podatki zapisali na disk v nešifrirani "
+"obliki. To bi omogočilo osebi z dostopom do diska, da obnovi del šifrirnega "
 "ključa ali gesla."
 
 #. Type: error
@@ -332,20 +333,20 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Onemogočite izmenjevalni prostor (npr. z ukazom swapoff) ali nastavitve "
-"kodirani izmenjevalni prostor in potem ponovno poženite nastavitev kodiranih "
-"nosilcev. Ta program bo sedaj prekinjen."
+"šifrirani izmenjevalni prostor in potem ponovno poženite nastavitev "
+"šifriranih nosilcev. Ta program bo sedaj prekinjen."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr "Kodirno geslo:"
+msgstr "Šifrirno geslo:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Izbrati morate geslo za kodiranje ${DEVICE}."
+msgstr "Izbrati morate geslo za šifriranje ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -356,10 +357,10 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Skupna moč kodiranja je močno odvisna od tega gesla, zato se še posebej "
-"posvetite njegovi izbiri tako, da ni lahko uganljiv.Naj ne bo katera izmed "
-"besed ali stavkov, ki jih lahko najdemo v slovarju ali fraza, ki jo lahko "
-"povežejo z vami."
+"Skupna moč šifriranja je močno odvisna od tega gesla, zato se še posebej "
+"posvetite njegovi izbiri tako, da ni lahko uganljivo. Naj ne bo katera izmed "
+"besed ali stavkov, ki jih lahko najdemo v slovarju ali fraza, ki jo je "
+"mogoče povezati z vami."
 
 #. Type: password
 #. Description
@@ -441,7 +442,7 @@ msgstr "Vnesite naključne znake za nadaljevanje"
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr "Kodirni ključ za napravo ${DEVICE} se sedaj ustvarja. (${PROGRESS})"
+msgstr "Šifrirni ključ za napravo ${DEVICE} se sedaj ustvarja. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -465,7 +466,7 @@ msgstr "Vnesite naključne znake"
 #. Description
 #: ../partman-crypto.templates:255
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Kodirni ključ za napravo ${DEVICE} se sedaj ustvarja."
+msgstr "Šifrirni ključ za napravo ${DEVICE} se sedaj ustvarja."
 
 #. Type: entropy-text
 #. Description
@@ -506,7 +507,7 @@ msgstr "Prišlo je do napake med ustvarjanjem ključa."
 #. Description
 #: ../partman-crypto.templates:273
 msgid "Encryption configuration failure"
-msgstr "Napaka pri nastavljanju kodiranja"
+msgstr "Napaka pri nastavljanju šifriranja"
 
 #. Type: error
 #. Description
@@ -516,9 +517,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Izbrali ste korenski datotečni sistem za namestitev na kodirani razdelek. Ta "
-"možnost ni na voljo in nadaljevanje bi imelo za posledico namestitev, ki ne "
-"bi bila uporabna."
+"Izbrali ste, da naj bo korenski datotečni sistem nameščen na šifrirani "
+"razdelek. Ta možnost ni na voljo in nadaljevanje bi imelo za posledico "
+"namestitev, ki ne bi bila uporabna."
 
 #. Type: error
 #. Description
@@ -526,7 +527,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
-"Vrnite se nazaj in izberite ne-kodirani razdelek za korenski datotečni "
+"Vrnite se nazaj in izberite ne-šifrirani razdelek za korenski datotečni "
 "sistem."
 
 #. Type: boolean

@@ -6,14 +6,14 @@
 # Polish messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Copyright (C) 2004-2005 Bartosz Feński <fenio@debian.org>
+# Copyright (C) 2004-2006 Bartosz Feński <fenio@debian.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-01-04 20:52+0100\n"
+"PO-Revision-Date: 2006-02-03 13:33+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -290,7 +290,7 @@ msgstr "Losowy klucz"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "Wykryto niezapezbieczoną przestrzeń wymiany"
+msgstr "Wykryto niezabezpieczoną przestrzeń wymiany"
 
 #. Type: error
 #. Description
@@ -531,7 +531,7 @@ msgid ""
 "partitioner to create a filesystem on it."
 msgstr ""
 "Wybrano losowy typ klucza dla ${DEVICE}, ale jednocześnie by program "
-"partycjonujący stworzył na nim system plików."
+"partycjonujący utworzył na nim system plików."
 
 #. Type: boolean
 #. Description

@@ -11,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer 1.0\n"
+"Project-Id-Version: debian-installer 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-12-26 03:07+0200\n"
+"PO-Revision-Date: 2006-02-05 23:02+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -108,15 +108,14 @@ msgstr "No s'ha trobat cap partició per a xifrar"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "No hi ha cap paquet de nucli seleccionat per la seua instal·lació."
+msgstr "No s'ha seleccionat cap partició per a xifrar."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "Manquen programes requerits"
 
 #. Type: note
 #. Description
@@ -125,12 +124,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
 msgstr ""
+"Aquesta construcció del debian-installer no inclou un o més programes que "
+"són necessaris per a que partman-crypt funcione correctament."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:100
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Manquen opcions de xifratge requerides"
 
 #. Type: error
 #. Description
@@ -139,6 +140,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Les opcions de xifratge per a ${DEVICE} són incompletes. Torneu al menú de "
+"particionat i seleccioneu totes les opcions requerides."
 
 #. Type: text
 #. Description
@@ -147,7 +150,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "manca"
 
 #. Type: error
 #. Description
@@ -162,6 +165,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"No s'ha trobat el paquet de mòdul del núcli ${PACKAGE}, o s'ha produït un "
+"error durant la instal·lació."
 
 #. Type: error
 #. Description
@@ -181,13 +186,12 @@ msgstr "Voleu escriure els canvis als discs i configurar els volums xifrats?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:126
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Abans de poder configurar el gestor de volums lògics, s'ha d'escriure "
-"l'esquema de particionat actual al disc. Aquests canvis no es poden desfer."
+"Abans de poder configurar volums xifrats, s'ha d'escriure l'esquema de "
+"particionat actual al disc. Aquests canvis no es poden desfer."
 
 #. Type: boolean
 #. Description
@@ -206,15 +210,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Quan el gestor de volums lògics estiga configurat, no es permetran canvis "
-"addicionals a les particions dels discs que continguen volums físics. "
+"Quan els volums xifrats estiguen configurats, no es permetran canvis "
+"addicionals a les particions dels discs que continguen volums xifrats. "
 "Assegureu-vos que esteu satisfets amb l'esquema de particions actual en "
 "aquests discs abans de continuar."
 
@@ -227,9 +230,8 @@ msgstr "Error en la configuració dels volums xifrats"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
+msgstr "S'ha produït un error quan es configuraven els volums xifrats."
 
 #. Type: error
 #. Description
@@ -240,22 +242,20 @@ msgstr "S'ha avortat la configuració."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Ha fallat la instal·lació d'ELILO"
+msgstr "Ha fallat la inicialització del volum xifrat"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
+msgstr "S'ha produït un error quan es configuraven els volums xifrats."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:161
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -279,7 +279,7 @@ msgstr "Frase de pas"
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Fitxer de clau (GnuPG)"
 
 #. Type: text
 #. Description
@@ -332,19 +332,16 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Heu d'instal·lar una contrasenya per a accés remot a l'instal·lador de "
-"Debian. Un usuari maliciós o no qualificat amb accés a l'instal·lador pot "
-"tenir resultats desastrosos, així que hauríeu de seleccionar una contrasenya "
-"que no siga fàcil d'endevinar. No hauria de ser una paraula que es trobe al "
-"diccionari, o una paraula que es puga associar amb vosaltres, com el vostre "
-"cognom."
+"La protecció del xifratge depén molt d'aquesta frase de pas,, així que "
+"hauríeu de seleccionar una frase de pas que no siga fàcil d'endevinar. No "
+"hauria de ser una paraula o frase que es trobe al diccionari, o una frase "
+"que es puga associar amb vosaltres."
 
 #. Type: password
 #. Description
@@ -354,23 +351,25 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Una bona frase de pas contindrà una mescla de lletres, números i puntuació. "
+"Es recomana que les frases de pas tinguen una llargària de 20 o més "
+"caràcters."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Torneu a introduir la mateixa frase de pas per a verificar-la:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Introduïu la mateixa contrasenya d'instal·lació remota de nou per a "
-"verificar que l'heu teclejat correctament."
+"Introduïu la mateixa frase de pas una altra vegada per a verificar que l'heu "
+"teclejada correctament."
 
 #. Type: note
 #. Description
@@ -381,11 +380,10 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Les dos contrasenyes que heu introduït no són la mateixa. Si us plau, "
-"introduïu una contrasenya de nou."
+"Les dos frases de pas que heu introduït no són la mateixa. Si us plau, "
+"proveu-ho de nou."
 
 #. Type: note
 #. Description
@@ -472,16 +470,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Ha fallat l'operació de redimensionat"
+msgstr "Ha fallat la creació del fitxer de clau"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "S'ha produït un error quan s'escrivien els canvis als discs."
+msgstr "S'ha produït un error quan es creava el fitxer de clau."
 
 #. Type: error
 #. Description
@@ -497,6 +493,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Heu seleccionat emmagatzemar el sistema de fitxers arrel en una partició "
+"xifrada. Aquesta funcionalitat no és disponible i continuar resultarà en una "
+"instal·lació que no es podrà utilitzar."
 
 #. Type: error
 #. Description
@@ -504,6 +503,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
+"Aneu enrere i seleccioneu una partició no xifrada per al sistema de fitxers "
+"arrel."
 
 #. Type: boolean
 #. Description
@@ -518,6 +519,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"Heu seleccionat un tipus de clau aleatori per a ${DEVICE} però heu demanat "
+"al particionador que cree un sistema de fitxers en ell."
 
 #. Type: boolean
 #. Description
@@ -526,3 +529,6 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Utilitzar una clau aleatòria vol dir que les dades de la partició es perdran "
+"després de cada arrencada. Això només s'hauria d'utilitzar amb particions "
+"d'intercanvi."

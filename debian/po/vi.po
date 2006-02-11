@@ -23,10 +23,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: LocFactoryEditor 1.6b31\n"
+"X-Generator: LocFactoryEditor 1.6b36\n"
 
-# Type: text
-# Description
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
@@ -51,8 +49,6 @@ msgstr "không hoạt động"
 msgid "Encryption type:"
 msgstr "Kiểu mật mã:"
 
-# Type: string
-# Description
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
@@ -65,8 +61,6 @@ msgstr "Kiểu mật mã cho phân vùng này:"
 msgid "Encryption:"
 msgstr "Mật mã:"
 
-# Type: string
-# Description
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
@@ -79,8 +73,6 @@ msgstr "Mật mã cho phân vùng này:"
 msgid "Key size:"
 msgstr "Cỡ khóa:"
 
-# Type: select
-# Description
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
@@ -93,8 +85,6 @@ msgstr "Kích cõ khóa cho phân vùng này:"
 msgid "Encryption key:"
 msgstr "Khóa mật mã:"
 
-# Type: select
-# Description
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
@@ -107,17 +97,12 @@ msgstr "Kiểu khóa mật mã cho phân vùng này:"
 msgid "Setting up encryption..."
 msgstr "Đang thiết lập mật mã..."
 
-# Type: text
-# Description
-# Item in the main menu to select this package
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
 msgid "Configure encrypted volumes"
 msgstr "Cấu hình khối tin đã mật mã"
 
-# Type: error
-# Description
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
@@ -171,8 +156,6 @@ msgstr ""
 msgid "missing"
 msgstr "còn_thiếu"
 
-# Type: boolean
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:115
@@ -217,8 +200,6 @@ msgstr ""
 "Trước khi có thể cấu hình khối tin đã mật mã, phải ghi bố trí phân vùng hiện "
 "thời vào đĩa. Không thể hoàn tác các thay đổi này."
 
-# Type: boolean
-# Description
 # Variable: do not translate/ biến: đừng dịch
 #. Type: boolean
 #. Description
@@ -245,40 +226,30 @@ msgstr ""
 "trong phân vùng đĩa chứa khối tin đã mật mã. Hãy chắc là bố trí phân vùng "
 "hiện thời trong những đĩa này là ổn dáng trước khi tiếp tục."
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "Encrypted volumes configuration failure"
 msgstr "Lỗi cấu hình khối tin đã mật mã"
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Gặp lỗi khi cấu hình khối tin đã mật mã."
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:149
 msgid "The configuration is aborted."
 msgstr "Việc cấu hình bị hủy bỏ."
 
-# Type: boolean
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
 msgstr "Việc sơ khởi khối tin đã mật mã bị lỗi"
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:156
@@ -370,8 +341,6 @@ msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr ""
 "Bạn cần phải chọn một cụm từ mật khẩu để mật mã hóa thiết bị ${DEVICE}."
 
-# Type: password
-# Description
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
@@ -419,8 +388,6 @@ msgstr "Hãy gõ lại cùng cụm từ mật khẩu để xác nhận đã gõ 
 msgid "Passphrase input error"
 msgstr "Lỗi gõ cụm từ mật khẩu"
 
-# Type: note
-# Description
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:218
@@ -521,26 +488,18 @@ msgstr ""
 "bàn phím, hoặc đơn giản hãy đợi đến khi hệ thống đã tập hợp đủ dữ liệu cho "
 "khóa. (GHI CHÚ : có thể mất nhiều thời gian.)"
 
-# Type: error
-# Description
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
 msgid "Keyfile creation failure"
 msgstr "Lỗi tạo tập tin khóa"
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:268
 msgid "An error occurred while creating the keyfile."
 msgstr "Gặp lỗi khi tạo tập tin khóa."
 
-# Type: error
-# Description
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:273
@@ -567,8 +526,6 @@ msgid ""
 msgstr ""
 "Hãy trở về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
 
-# Type: boolean
-# Description
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:284

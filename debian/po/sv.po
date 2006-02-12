@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-02-10 23:07+0100\n"
+"PO-Revision-Date: 2006-02-11 12:16+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -271,13 +271,13 @@ msgstr "Loopback (loop-AES)"
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr "Enhets-mappare (dm-crypt)"
+msgstr "Enhetsmappare (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr "Enhets-mappare (LUKS)"
+msgstr "Enhetsmappare (LUKS)"
 
 #. Type: text
 #. Description

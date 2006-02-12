@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-10-23 16:46+0200\n"
+"PO-Revision-Date: 2006-02-11 12:36+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,12 +29,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: vim\n"
 
-# FIXME: Physical Volume anpassen? Gibt es noch Bezug zu LVM?
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
 msgid "physical volume for encryption"
-msgstr "Physical Volume für Verschlüsselung"
+msgstr "Physisches Volume für Verschlüsselung"
 
 #. Type: text
 #. Description

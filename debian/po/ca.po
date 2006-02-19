@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-02-05 23:02+0100\n"
+"PO-Revision-Date: 2006-02-19 01:20+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -141,7 +141,7 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "Les opcions de xifratge per a ${DEVICE} són incompletes. Torneu al menú de "
-"particionat i seleccioneu totes les opcions requerides."
+"particions i seleccioneu totes les opcions requerides."
 
 #. Type: text
 #. Description
@@ -176,6 +176,9 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"És probable que es troben problemes durant l'arrencada quan el sistema "
+"intente configurar les particions xifrades. Encara podeu corregir-los "
+"instal·lant el paquet requerit més endavant."
 
 #. Type: boolean
 #. Description
@@ -191,7 +194,7 @@ msgid ""
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
 "Abans de poder configurar volums xifrats, s'ha d'escriure l'esquema de "
-"particionat actual al disc. Aquests canvis no es poden desfer."
+"particions actual al disc. Aquests canvis no es poden desfer."
 
 #. Type: boolean
 #. Description
@@ -204,7 +207,7 @@ msgstr "${ITEMS}"
 #: ../partman-crypto.templates:141
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Voleu mantenir la disposició actual de particions i configurar els volums "
+"Voleu mantenir la disposició de particions actual i configurar els volums "
 "xifrats?"
 
 #. Type: boolean
@@ -261,13 +264,13 @@ msgstr "Loopback (loop-AES)"
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Mapejador de dispositius (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Mapejador de dispositius (LUKS)"
 
 #. Type: text
 #. Description
@@ -307,6 +310,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Aquest és un error fatal ja que dades sensibles es poden escriure al disc "
+"sense xifrar. Això també permetria a algú amb accés al disc recuperar parts "
+"de la clau de xifratge o frase de pas."
 
 #. Type: error
 #. Description
@@ -316,6 +322,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Inhabiliteu l'espai d'intercanvi (p. ex. executant swapoff) o configureu un "
+"espai d'intercanvi xifrat i després configureu els volums xifrats de nou. "
+"Aquest programa s'avortarà ara."
 
 #. Type: password
 #. Description
@@ -327,7 +336,7 @@ msgstr "Frase de pas de xifrat:"
 #. Description
 #: ../partman-crypto.templates:198
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Heu de seleccionar una frase de pas per a xifrar ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -375,7 +384,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:218
 msgid "Passphrase input error"
-msgstr ""
+msgstr "S'ha produït un error d'introducció de la frase de pas"
 
 #. Type: note
 #. Description
@@ -398,6 +407,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Heu introduït una frase de pas buida, i això no és permés. Seleccioneu una "
+"frase de pas que no estiga buida."
 
 #. Type: boolean
 #. Description
@@ -406,7 +417,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:233
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Voleu utilitzar una frase de pas febla?"
 
 #. Type: boolean
 #. Description
@@ -415,6 +426,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Heu introduït un a frase de pas que té menys de ${MINIMUM} caràcters, i es "
+"considera massa febla. Hauríeu de seleccionar una frase de pas més potent."
 
 #. Type: string
 #. Description
@@ -426,7 +439,7 @@ msgstr "Introduïu caràcters aleatoris per continuar"
 #. Description
 #: ../partman-crypto.templates:239
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
+msgstr "S'està creant la clau de xifratge per a ${DEVICE}. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -436,6 +449,9 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Podeu accelerar el procés introduint dades aleatòries amb el teclat per a "
+"emplenar el dipòsit d'entropia i continuant de tant en tant. Aquest diàleg "
+"apareixerà fins que s'haja aconseguit suficients dades de teclejat."
 
 #. Type: entropy-text
 #. Description
@@ -447,7 +463,7 @@ msgstr "Introduïu caràcters aleatoris"
 #. Description
 #: ../partman-crypto.templates:255
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "S'està creant la clau de xifratge per a ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
@@ -457,6 +473,9 @@ msgid ""
 "randomness (\"entropy\"), of which there is likely too little at this stage "
 "of the installation."
 msgstr ""
+"Aquest procés requereix que el sistema tinga grans quantitats de "
+"aleatorietat emmagatzemada («entropia»), de la qual és probable que hi haja "
+"massa poca en aquest punt de la instal·lació."
 
 #. Type: entropy-text
 #. Description
@@ -466,6 +485,9 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Podeu accelerar el procés introduint dades aleatòries amb el teclat, o "
+"simplement espereu a que s'hagen emmagatzemat suficients dades de teclejat. "
+"(NOTA: això pot trigar molta estona)"
 
 #. Type: error
 #. Description
@@ -520,7 +542,7 @@ msgid ""
 "partitioner to create a filesystem on it."
 msgstr ""
 "Heu seleccionat un tipus de clau aleatori per a ${DEVICE} però heu demanat "
-"al particionador que cree un sistema de fitxers en ell."
+"al partidor que cree un sistema de fitxers en ell."
 
 #. Type: boolean
 #. Description

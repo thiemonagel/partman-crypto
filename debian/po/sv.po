@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-02-11 12:16+0100\n"
+"PO-Revision-Date: 2006-02-21 16:13+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "Kryptering för denna partition:"
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr "Nyckel-längd:"
+msgstr "Nyckellängd:"
 
 #. Type: select
 #. Description
@@ -148,7 +148,7 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "Krypteringsinställningen för ${DEVICE} är inte komplett. Vänligen gå "
-"tillbaka till partitionsmenyn och korrigera alla nödvändliga inställningar."
+"tillbaka till partitionsmenyn och korrigera alla nödvändiga inställningar."
 
 #. Type: text
 #. Description
@@ -201,7 +201,8 @@ msgid ""
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
 "Innan den krypterade volymen kan konfigureras måste den nuvarande "
-"partitioneringsplanen skrivas till disk. Dessa ändringar kan inte ångras."
+"partitioneringsplanen skrivas till disk. De här ändringarna kan man inte "
+"ångra."
 
 #. Type: boolean
 #. Description
@@ -301,13 +302,13 @@ msgstr "Slumpnyckel"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "Osäkert swaputrymme hittades"
+msgstr "Osäkert växlingsutrymme hittades"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:185
 msgid "An unsafe swap space has been detected."
-msgstr "Ett osäkert swaputrymme har hittats."
+msgstr "Ett osäkert växlingsutrymme har hittats."
 
 #. Type: error
 #. Description
@@ -317,7 +318,7 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Detta är ett stort fel eftersom sensitiv data kan skrivas okrypterad på "
+"Detta är ett stort fel eftersom känslig data kan skrivas okrypterad på "
 "disken. Detta kan ge någon med fysisk tillgång till disken möjligheten att "
 "återskapa delar av krypteringsnyckeln eller lösenfrasen."
 
@@ -329,15 +330,15 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Vänligen avaktivera swaputrymmet (kör exempelvis swapoff) eller konfigurera "
-"ett krypterat swaputrymme och kör konfigurationen för krypterade volymer "
-"igen. Detta program kommer nu att avslutas."
+"Var vänlig att inaktivera växlingsutrymmet (kör exempelvis swapoff) eller "
+"konfigurera ett krypterat växlingsutrymme och kör konfigurationen för "
+"krypterade volymer igen. Detta program kommer nu att avslutas."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr "Krypteringslösenfras:"
+msgstr "Lösenfras för kryptering:"
 
 #. Type: password
 #. Description
@@ -454,7 +455,7 @@ msgid ""
 "recur until enough keydata has been collected."
 msgstr ""
 "Du kan öka farten på denna process genom att mata in slumpmässigt data på "
-"tangentbordet för att fylla upp slump-poolen och fortsätta med detta ett tag "
+"tangentbordet för att fylla upp slumplagret och fortsätta med detta ett tag "
 "framåt. Denna dialogruta kommer fram igen när tillräckligt mycket data har "
 "samlats in."
 
@@ -556,5 +557,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Användning av en slumpnyckel betyder att partitionsdatat förstörs vid varje "
-"uppstart. Detta kan endast användas för swap-partitioner."
+"Användning av en slumpnyckel betyder att partitionsdata förstörs vid varje "
+"uppstart. Detta kan endast användas för växlingspartitioner."

@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-02-25 00:50+0100\n"
+"PO-Revision-Date: 2006-02-28 16:03+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -229,8 +229,8 @@ msgid ""
 msgstr ""
 "När de krypterade volymerna har konfigurerats tillåts inga ytterligare "
 "ändringar på partitionerna på de diskar som innehåller krypterade volymer. "
-"Avgör om du är nöjd med den nuvarande partitioneringsplanen på dessa "
-"hårddiskar innan du fortsätter."
+"Avgör om du är nöjd med den nuvarande partitioneringsplanen på de här "
+"hårddiskarna innan du fortsätter."
 
 #. Type: error
 #. Description
@@ -480,7 +480,7 @@ msgid ""
 msgstr ""
 "Den här processen kräver att systemet har en stor mängd av samlat slumpdata "
 "(\"entropy\") som det för närvarande i installationsprocessen inte finns "
-"tillräckligt mycket av."
+"tillräcklig mängd av."
 
 #. Type: entropy-text
 #. Description

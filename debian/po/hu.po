@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2006-02-05 20:14+0100\n"
+"PO-Revision-Date: 2006-02-28 12:26+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,7 @@ msgstr "Titkosítás e partícióhoz:"
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr "Kulcs méret:"
+msgstr "Kulcsméret:"
 
 #. Type: select
 #. Description
@@ -245,7 +245,7 @@ msgstr "A beállítás törölve"
 #. Description
 #: ../partman-crypto.templates:156
 msgid "Encrypted volume initialisation failed"
-msgstr "A titkosított kötet inicializálása nem sikerült"
+msgstr "A titkosított kötet inicializálása meghiúsult"
 
 #. Type: error
 #. Description
@@ -281,7 +281,7 @@ msgstr "Jelszó"
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr "Kulcsfájl"
+msgstr "Kulcsfájl (GnuPG)"
 
 #. Type: text
 #. Description
@@ -293,7 +293,7 @@ msgstr "Véletlen kulcs"
 #. Description
 #: ../partman-crypto.templates:185
 msgid "Unsafe swap space detected"
-msgstr "Nem-biztonságos cserehelyt érzékeltem"
+msgstr "Nem-biztonságos cserehely"
 
 #. Type: error
 #. Description
@@ -426,7 +426,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:239
 msgid "Enter random characters to continue"
-msgstr "Véletlen karakterek megadása a folytatáshoz"
+msgstr "Véletlen karakterek leütése a folytatáshoz"
 
 #. Type: string
 #. Description

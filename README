@@ -93,7 +93,7 @@ blockdev-keygen
     with loop-AES, otherwise it just echoes the pass to stdout. 
     
     The actual encryption keys for loop-AES keyfiles are generated from
-    /dev/urandom, so we need plenty of entropy. This script uses the 
+    /dev/random, so we need plenty of entropy. This script uses the 
     cdebconf plugin "entropy" if available. See notes at the beginning
     of the script for important steps for the caller.
 

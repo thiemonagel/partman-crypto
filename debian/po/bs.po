@@ -3,35 +3,36 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of bs.po to Bosnian
 # Bosnian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
+# Safir Secerovic <sapphire@linux.org.ba>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer\n"
+"Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-10-25 22:44-0600\n"
-"PO-Revision-Date: 2005-03-28 21:47CET\n"
-"Last-Translator: Safir Šećerović <sapphire@linux.org.ba>\n"
+"PO-Revision-Date: 2006-02-28 01:56+0100\n"
+"Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:3
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fizička particija za LVM"
+msgstr "fizička particija za enkriptovanje"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:7
 msgid "crypto"
-msgstr ""
+msgstr "kriptografija"
 
 #. Type: text
 #. Description
@@ -43,74 +44,67 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:19
 msgid "Encryption type:"
-msgstr ""
+msgstr "Tip enkripcije:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:24
-#, fuzzy
 msgid "Encryption type for this partition:"
-msgstr "Tačka montiranja za ovu particiju:"
+msgstr "Tip enkripcije za ovu particiju:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:28
 msgid "Encryption:"
-msgstr ""
+msgstr "Enkripcija:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:33
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Tačka montiranja za ovu particiju:"
+msgstr "Enkripcija za ovu particiju:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:37
 msgid "Key size:"
-msgstr ""
+msgstr "Veličina ključa:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:42
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Datotečni sistem za ovu particiju:"
+msgstr "Veličina ključa za ovu particiju:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:46
 msgid "Encryption key:"
-msgstr ""
+msgstr "Enkripcijski ključ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:51
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Datotečni sistem za ovu particiju:"
+msgstr "Tip enkripcijskog ključa za ovu particiju:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:81
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Podešavam frame buffer..."
+msgstr "Postavljam enkripciju..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:85
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Podesi mrežu"
+msgstr "Podesi enkriptovane particije"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:89
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Particije nisu pronađene"
+msgstr "Nema particija za enkriptovanje"
 
 #. Type: note
 #. Description
@@ -123,7 +117,7 @@ msgstr "Kernel programski paket nije odabran za instaliranje."
 #. Description
 #: ../partman-crypto.templates:94
 msgid "Required programs missing"
-msgstr ""
+msgstr "Nedostaju zahtijevani programi"
 
 #. Type: note
 #. Description
@@ -154,7 +148,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:111
 msgid "missing"
-msgstr ""
+msgstr "nedostaje"
 
 #. Type: error
 #. Description
@@ -265,37 +259,37 @@ msgstr "Došlo je do greške prilikom zapisivanja izmjena na diskove."
 #. Description
 #: ../partman-crypto.templates:161
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:165
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:169
 msgid "Device-mapper (LUKS)"
-msgstr ""
+msgstr "Device-mapper (LUKS)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:173
 msgid "Passphrase"
-msgstr ""
+msgstr "Šifra"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:177
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Keyfile (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:181
 msgid "Random key"
-msgstr ""
+msgstr "Slučajni ključ"
 
 #. Type: error
 #. Description
@@ -331,7 +325,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Enkripcijska šifra:"
 
 #. Type: password
 #. Description
@@ -342,18 +336,15 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:198
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Trebate postaviti šifru za daljinski pristup Debian installeru. Zlonamjerni "
-"ili nestručni korisnik sa pristupom installeru može prouzrokovati veliku "
-"štetu, tako da trebate izabrati šifru koju nije lahko pogoditi. To ne bi "
-"trebala biti riječ iz rječnika ili riječ koja bi se mogla lahko dovesti u "
-"vezu sa vama, poput vašeg nadimka."
+"Ukupna jačina enkripcije jako zavisi o ovoj šifri, tako da trebate povesti "
+"računa da odaberete šifru koja nije lahka za pogoditi. To ne bi trebala biti "
+"riječ iz rječnika ili riječ koja bi se mogla lahko dovesti u vezu s vama."
 
 #. Type: password
 #. Description

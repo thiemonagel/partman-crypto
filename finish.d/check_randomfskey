@@ -32,14 +32,13 @@ for dev in $DEVICES/*; do
         realdevdir=$3
 
         [ -f $realdevdir/method ] || continue
-        [ -f $realdevdir/crypt_type ] || continue
         [ -f $realdevdir/keytype ] || continue
 
-        type=$(cat $realdevdir/crypt_type)
         method=$(cat $realdevdir/method)
+        type=${method#*/}
         keytype=$(cat $realdevdir/keytype)
 
-        [ $method = crypto ] || continue
+        [ "${method%/*}" = crypto ] || continue
 
         # only loop-AES supports random keys (check?!)
         [ "$type" = loop-AES ] || continue

@@ -1,10 +1,22 @@
 #!/bin/sh
 
+type=$1
 dev=$2
 id=$3
+part=$dev/$id
 
 [ -d $dev/$id ] || mkdir $dev/$id
 
-echo crypto >$dev/$id/method
+echo crypto/$type >$dev/$id/method
 rm -f $dev/$id/use_filesystem
 rm -f $dev/$id/format
+
+# Choose sensible defaults for crypt_type
+case $type in
+    loop-AES)
+        # cipher AES128 / keyfile
+        [ -f $part/cipher ] || echo AES128 > $part/cipher
+        [ -f $part/keytype ] || echo keyfile > $part/keytype
+        ;;
+esac
+

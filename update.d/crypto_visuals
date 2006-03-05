@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Shows "crypt" in the method column for partitions with method "crypto" and
+# Shows "crypto" in the method column for partitions with method "crypto" and
 # the humandev name of the crypt disk as mountpoint, so the user can see which
 # loop/dm device is which after they've been setup.
 
@@ -20,8 +20,8 @@ cd $dev
 [ -f $id/method ] || exit 0
 method=$(cat $id/method)
 
-if [ "$method" = crypto ]; then
-    db_metaget partman/method_short/crypto description || RET=''
+if [ "${method%/*}" = crypto ]; then
+    db_metaget partman/method_short/$method description || RET=''
     echo ${RET:-crypto} >$id/visual_filesystem
 
     if [ -f $id/crypt_active ]; then

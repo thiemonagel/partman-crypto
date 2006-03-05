@@ -2,6 +2,9 @@
 
 . /usr/share/debconf/confmodule
 
+#CRYPT_TYPES="loop-AES dm-crypt dm-crypt-luks"
+CRYPT_TYPES="loop-AES"
+
 swap_is_safe () {
     local swap ret
     local IFS="

@@ -24,17 +24,16 @@ choice_keysize () {
 }
 
 [ -f $part/method ] || exit 0
-[ -f $part/crypt_type ] || exit 0
 [ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
 
-if [ "$method" = crypto ]; then
-    crypt_type=$(cat $part/crypt_type)
+if [ "${method%/*}" = crypto ]; then
+    type=${method#*/}
     cipher=$(cat $part/cipher)
 
-	if [ "$crypt_type" != loop-AES ]; then
-        if [ -f /lib/partman/ciphers/$crypt_type/$cipher/keysize ]; then
+	if [ "$type" != loop-AES ]; then
+        if [ -f /lib/partman/ciphers/$type/$cipher/keysize ]; then
             choice_keysize
         fi
 	fi

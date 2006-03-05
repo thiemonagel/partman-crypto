@@ -74,14 +74,13 @@ partman_create_partition () {
 }
 
 partman_create_cryptdisk () {
-    local dev id num size path cryptdev type cipher
+    local dev id num size path cryptdev cipher
     dev=$1
     id=$2
     num=$3
     size=$4
     path=$5
 
-    type=$(cat $id/crypt_type)
     cipher=$(cat $id/cipher)
     keytype=$(cat $id/keytype)
     cryptdev=$(cat $id/crypt_active)
@@ -135,11 +134,10 @@ for dev in /var/lib/partman/devices/*; do
 
         [ -f $id/method ] || continue
         [ -f $id/cipher ] || continue
-        [ -f $id/crypt_type ] || continue
         [ -f $id/crypt_active ] || continue
 
         method=$(cat $id/method)
-        [ "$method" = crypto ] || continue
+        [ "${method%/*}" = crypto ] || continue
         
         if ! partman_create_cryptdisk $dev $id $num $size $path; then
             db_fset partman-crypto/init_failed seen false

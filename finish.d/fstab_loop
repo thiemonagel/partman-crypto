@@ -6,12 +6,11 @@
 . /lib/partman/definitions.sh
 
 mount_options () {
-    local cryptdev cryptid cipher crypt_type keyfile opts
+    local cryptdev cryptid cipher keyfile opts
     cryptdev=$1
     cryptdevdir=$2
     devdir=$3
  
-    crypt_type=$(cat $devdir/crypt_type)
     cipher=$(cat $devdir/cipher)
     keytype=$(cat $devdir/keytype)
  
@@ -60,7 +59,6 @@ for dev in $DEVICES/*; do
         realdevnum=$2
         realdevdir=$3
 
-        [ -f $realdevdir/crypt_type ] || continue
         [ -f $realdevdir/cipher ] || continue
         [ -f $realdevdir/keytype ] || continue
         [ -f $id/method ] || continue
@@ -71,8 +69,11 @@ for dev in $DEVICES/*; do
             continue
         fi
 
-        type=$(cat $realdevdir/crypt_type)
-        [ "$type" = loop-AES ] || continue
+        m=$(cat $realdevdir/method)
+        type=${m#*/}
+        if [ "$type" != loop-AES ]; then
+            continue
+        fi
 
         realdev=$(mapdevfs $realdev)
         cryptdev=$(mapdevfs $path)

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 . /lib/partman/definitions.sh
+. /lib/partman/crypto_tools.sh
 
 dev=$1
 id=$2
@@ -12,7 +13,8 @@ if [ -f crypt_realdev ]; then
     exit 0
 fi
 
-db_metaget partman/method_long/crypto description
-
-printf "crypto\t${RET}\n"
+for type in $CRYPT_TYPES; do
+    db_metaget partman/method_long/crypto/$type description
+    printf "%s\t%s\n" $type "$RET"
+done
 

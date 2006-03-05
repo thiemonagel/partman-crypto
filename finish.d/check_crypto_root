@@ -36,7 +36,7 @@ for dev in $DEVICES/*; do
         [ -f $realdevdir/method ] || continue
         method=$(cat $realdevdir/method)
 
-        if [ $method = crypto ] && [ $mnt = / ]; then
+        if [ "${method%/*}" = crypto ] && [ $mnt = / ]; then
             templ="partman-crypto/crypto_root_unimplemented"
             db_set $templ false
             db_fset $templ seen false

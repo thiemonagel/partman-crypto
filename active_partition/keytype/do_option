@@ -43,14 +43,13 @@ select_keytype () {
 }
 
 [ -f $part/method ] || exit 0
-[ -f $part/crypt_type ] || exit 0
 [ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
 cipher=$(cat $part/cipher)
-crypt_type=$(cat $part/crypt_type)
 
-if [ "$method" = crypto ]; then
+if [ "${method%/*}" = crypto ]; then
+    crypt_type=${method#*/}
     select_keytype $crypt_type $cipher
 fi
 

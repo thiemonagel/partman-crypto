@@ -23,7 +23,7 @@ for tool in /usr/bin/gpg /usr/bin/uuencode; do
     fi
 done
 
-options="crypt_type cipher keytype"
+options="cipher keytype"
 
 crypt_options_complete () {
     for opt in $options; do
@@ -72,8 +72,10 @@ for dev in $DEVICES/*; do
 
         [ -f $id/method ] || continue
         method=$(cat $id/method)
+        if [ ${method%/*} != crypto ]; then
+            continue
+        fi
 
-        [ $method = crypto ] || continue
         crypt=yes
         if ! crypt_options_complete $id; then
             templ="partman-crypto/options_missing"
@@ -235,7 +237,7 @@ for dev in $DEVICES/*; do
 
         [ -f $id/method ] || continue
         method=$(cat $id/method)
-        if [ $method != crypto ]; then
+        if [ ${method%/*} != crypto ]; then
             continue
         fi
 
@@ -283,22 +285,21 @@ for dev in $DEVICES/*; do
     close_dialog
     
     for part in $partitions; do
-	set -- $(IFS=, && echo $part)
-	id=$1
-	num=$2
-	path=$3
+        set -- $(IFS=, && echo $part)
+        id=$1
+        num=$2
+        path=$3
 
         [ -f $id/method ] || continue
-        [ -f $id/crypt_type ] || continue
         [ -f $id/cipher ] || continue
         [ -f $id/keytype ] || continue
 
         method=$(cat $id/method)
-        if [ $method != crypto ]; then
+        if [ "${method%/*}" != crypto ]; then
             continue
         fi
 
-        type=$(cat $id/crypt_type)
+        type=${method#*/}
         keytype=$(cat $id/keytype)
         cipher=$(cat $id/cipher)
 

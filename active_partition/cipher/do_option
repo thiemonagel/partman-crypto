@@ -13,10 +13,9 @@ module_available () {
 }
 
 select_cipher () {
-    crypt_type=$1
-
+    type=$1
     ciphers=""
-    for cipher_dir in /lib/partman/ciphers/$crypt_type/*; do
+    for cipher_dir in /lib/partman/ciphers/$type/*; do
         if [ -f $cipher_dir/module ]; then
             module=$(cat $cipher_dir/module)
             if ! module_available $module; then
@@ -48,11 +47,10 @@ select_cipher () {
 }
 
 [ -f $part/method ] || exit 0
-[ -f $part/crypt_type ] || exit 0
-
 method=$(cat $part/method)
-if [ "$method" = crypto ]; then
-    type=$(cat $part/crypt_type)
+
+if [ "${method%/*}" = crypto ]; then
+    type=${method#*/}
     select_cipher $type
 fi
 

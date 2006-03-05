@@ -12,11 +12,11 @@ part=$dev/$id
 cd $dev
 
 select_keysize () {
-    crypt_type=$1
+    type=$1
     cipher=$2
 
     keysizes=""
-    for keysize in $(cat /lib/partman/ciphers/$crypt_type/$cipher/keysize) do
+    for keysize in $(cat /lib/partman/ciphers/$type/$cipher/keysize) do
         if [ "$keysizes" ]; then
            keysizes="$keysizes, $keysize"
         else
@@ -39,14 +39,13 @@ select_keysize () {
 }
 
 [ -f $part/method ] || exit 0
-[ -f $part/crypt_type ] || exit 0
 [ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
 cipher=$(cat $part/cipher)
-crypt_type=$(cat $part/crypt_type)
 
-if [ "$method" = crypto ]; then
-    select_keysize $crypt_type $cipher
+if [ "${method%/*}" = crypto ]; then
+    type=${method#*/}
+    select_keysize $type $cipher
 fi
 

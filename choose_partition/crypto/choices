@@ -9,9 +9,12 @@ for dev in $DEVICES/*; do
     cd $dev
     open_dialog PARTITIONS
     while { read_line num id size type fs path name; [ "$id" ]; }; do
-        if [ -f $id/method ] && [ -f $id/crypt_type ]; then
-	    use_crypto=yes
-	fi
+        if [ -f $id/method ]; then
+            method=$(cat $id/method)
+            if [ "${method%/*}" = "crypto" ]; then
+                use_crypto=yes
+            fi
+        fi
     done
     close_dialog
 done

@@ -1,10 +1,26 @@
-Template: partman/method_long/crypto
+Template: partman/method_long/crypto/loop-AES
 Type: text
-_Description: physical volume for encryption
+Description: Loopback encryption (loop-AES)
 
-Template: partman/method_short/crypto
+Template: partman/method_long/crypto/dm-crypt
 Type: text
-_Description: crypto
+Description: Device-mapper encryption (dm-crypt)
+
+Template: partman/method_long/crypto/dm-crypt-luks
+Type: text
+Description: Device-mapper encryption (LUKS)
+
+Template: partman/method_short/crypto/loop-AES
+Type: text
+Description: crypto
+
+Template: partman/method_short/crypto/dm-crypt
+Type: text
+Description: crypto
+
+Template: partman/method_short/crypto/dm-crypt-luks
+Type: text
+Description: crypto
 
 Template: partman-crypto/text/cryptdev_description
 Type: text
@@ -13,15 +29,6 @@ Description: ${CIPHER} ${KEYTYPE}
 Template: partman-crypto/text/not_active
 Type: text
 _Description: not active
-
-Template: partman-crypto/text/specify_crypt_type
-Type: text
-_Description: Encryption type:
-
-Template: partman-crypto/crypt_type
-Type: select
-Choices: ${CHOICES}
-_Description: Encryption type for this partition:
 
 Template: partman-crypto/text/specify_cipher
 Type: text
@@ -155,18 +162,6 @@ Template: partman-crypto/init_failed
 Type: error
 _Description: Encrypted volume initialisation failed
  An error occurred while setting up encrypted volumes.
-
-Template: partman-crypto/text/crypt_type/loop-AES
-Type: text
-_Description: Loopback (loop-AES)
-
-Template: partman-crypto/text/crypt_type/dm-crypt
-Type: text
-_Description: Device-mapper (dm-crypt)
-
-Template: partman-crypto/text/crypt_type/dm-crypt-luks
-Type: text
-_Description: Device-mapper (LUKS)
 
 Template: partman-crypto/text/keytype/passphrase
 Type: text

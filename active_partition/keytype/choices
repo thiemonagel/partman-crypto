@@ -26,16 +26,11 @@ choice_keytype () {
 }
 
 [ -f $part/method ] || exit 0
-[ -f $part/crypt_type ] || exit 0
 [ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
-
-if [ "$method" = crypto ]; then
-    crypt_type=$(cat $part/crypt_type)
-    cipher=$(cat $part/cipher)
-
-    choice_keytype $crypt_type $cipher
+if [ "${method%/*}" = crypto ]; then
+    choice_keytype
 fi
 
 # vim:set ts=4 sw=4 expandtab:

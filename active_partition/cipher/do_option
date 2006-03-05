@@ -27,9 +27,9 @@ select_cipher () {
         name=${cipher_dir##*/}
         desc=$(cat $cipher_dir/desc)
         if [ "$ciphers" ]; then
-            ciphers="$ciphers, $name - $desc"
+            ciphers="$ciphers, $name"
         else
-            ciphers="$name - $desc"
+            ciphers="$name"
         fi
     done
 

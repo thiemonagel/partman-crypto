@@ -241,7 +241,7 @@ for dev in $DEVICES/*; do
             continue
         fi
 
-        if [ -f $id/skip_erase ]; then
+        if [ -f $id/crypt_active ] || [ -f $id/skip_erase ]; then
             continue
         fi
 

@@ -191,6 +191,7 @@ dev_erase_data () {
     ret=1
 
     template="partman-crypto/warn_erase"
+    db_set $template false
     db_subst $template DEVICE $(humandev $device)
     db_input critical $template || true
     db_go || return

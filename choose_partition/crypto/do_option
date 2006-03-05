@@ -243,8 +243,12 @@ for dev in $DEVICES/*; do
             continue
         fi
 
-        # XXX error checking?
-        dev_erase $path $size
+        if ! dev_erase_data $path $size; then
+            db_fset partman-crypto/commit_failed seen false
+            db_input critical partman-crypto/commit_failed
+            db_go || true
+            exit 1
+        fi
     done
 done
 

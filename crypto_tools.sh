@@ -180,7 +180,7 @@ dd_show_progressbar () {
     return $?
 }
 
-dev_erase () {
+dev_erase_data () {
     local device size loop
     device=$1
     size=$2

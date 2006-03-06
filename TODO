@@ -17,13 +17,6 @@ GENERAL
   
   o Understand and add undo.d scripts if required
   
-USABILITY
----------
-  
-  o Perhaps we could set the default choice of "use as" to 
-    swap for crypt disks with random keytype. Maybe even
-    create a swap partition in there by default?
-  
 FEATURES
 --------
 

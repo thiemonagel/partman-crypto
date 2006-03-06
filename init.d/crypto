@@ -36,6 +36,8 @@ partman_create_disk () {
 
 partman_create_partition () {
     local id num size type fs path name free_space free_size filesystem
+    filesystem=$2
+
     cd $(partman_devdir $1)
 
     open_dialog NEW_LABEL loop
@@ -55,21 +57,18 @@ partman_create_partition () {
 
     # create partition in the free space
     if [ "$free_space" ]; then
-        open_dialog NEW_PARTITION primary ext2 $free_space full $free_size
+        open_dialog NEW_PARTITION primary $filesystem $free_space full $free_size
         read_line num id size type fs path name
         close_dialog
-        if [ "$id" ]; then
-            open_dialog GET_FILE_SYSTEM $id 
-            read_line filesystem
-            close_dialog
-            if [ "$filesystem" != none ]; then
-                open_dialog CHANGE_FILE_SYSTEM $id $filesystem
-                close_dialog
-            fi
+        if [ -z "$id" ]; then
+            log "error: NEW_PARTITION returned no id"
+            return
         fi
     fi
     open_dialog DISK_UNCHANGED
     close_dialog
+    
+    [ -d $id ] || mkdir $id
     echo $id
 }
 
@@ -83,7 +82,6 @@ partman_create_cryptdisk () {
 
     cipher=$(cat $id/cipher)
     keytype=$(cat $id/keytype)
-    cryptdev=$(cat $id/crypt_active)
 
     templ="partman-crypto/text/cryptdev_description"
     db_subst $templ CIPHER $cipher
@@ -94,6 +92,8 @@ partman_create_cryptdisk () {
        model="${cipher} ${keytype}"
     fi
 
+    # Tell partman about the crypt disk
+    cryptdev=$(cat $id/crypt_active)
     cryptdir=$(partman_devdir $cryptdev)
     if [ ! -d $cryptdir ]; then
         partman_create_disk $cryptdev "$model" $size
@@ -102,10 +102,38 @@ partman_create_cryptdisk () {
         fi
     fi
 
-    cryptid=$(partman_create_partition $cryptdev)
+    case $keytype in
+        random) 
+            filesystem=linux-swap
+            ;;
+        keyfile|*)
+            filesystem=ext2
+            ;;
+    esac
+    
+    # Create a new partition in there
+    cryptid=$(partman_create_partition $cryptdev $filesystem)
     if [ -z $cryptid ]; then
         return 3
     fi
+    cryptpart=$cryptdir/$cryptid
+
+    # Select defaults
+    case $filesystem in
+        linux-swap)
+            echo swap > $cryptpart/method
+            >$cryptpart/format
+            ;;
+
+        ext2)
+            echo format > $cryptpart/method
+            >$cryptpart/format
+            >$cryptpart/use_filesystem
+            echo $filesystem > $cryptpart/filesystem
+            ;;
+    esac
+
+    update_partition $cryptdir $cryptid
 
     echo $path:$num:$dev/$id > $cryptdir/crypt_realdev
     return 0

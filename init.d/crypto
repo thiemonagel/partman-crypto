@@ -6,8 +6,7 @@
 . /lib/partman/definitions.sh
 
 partman_devdir () {
-    local d=$(echo $1 | tr / =)
-    echo /var/lib/partman/devices/$d
+    echo $DEVICES/$(echo $1 | tr / =)
 }
 
 partman_create_disk () {
@@ -50,7 +49,7 @@ partman_create_partition () {
         if [ "$fs" = free ]; then
             free_space=$id
             free_size=$size
-	    # we can't break here
+            # we can't break here
         fi
     done
     close_dialog
@@ -176,4 +175,4 @@ for dev in /var/lib/partman/devices/*; do
     done
 done
 
-# vim:set ts=4 sw=4 expandtab:
+# vim:ts=4 sw=4 expandtab:

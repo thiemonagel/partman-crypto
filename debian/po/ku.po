@@ -476,24 +476,3 @@ msgid ""
 msgstr ""
 "Bikaranîna mifteyeke tesadufî tê wateyê agahiyên dabeşê di her bootkirinê de "
 "bên tunekirin. Ev bi tenê ji bo dabeşên swap bê bi kar anîn."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volume ya fîzîkî ji bo şîfrekirinê"
-
-#~ msgid "crypto"
-#~ msgstr "şifre"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Cureyê şîfrekirinê:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Cureyê şîfrekirinê ji bo vê dabeşê:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

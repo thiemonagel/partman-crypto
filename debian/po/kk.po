@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Debian Installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2004-08-08 10:00+0100\n"
+"PO-Revision-Date: 2005-12-20 10:00+0100\n"
 "Last-Translator: Talgat Daniyarov <tdaniyar@hotmail.com>\n"
 "Language-Team: Kazakh\n"
 "MIME-Version: 1.0\n"
@@ -491,12 +491,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid "physical volume for encryption"
-#~ msgstr "LVM үшін физикалық том."
-
-# ../partman-basicfile systems.templates:71 ../partman-ext2r0.templates:36
-#, fuzzy
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Бұл бөлімнің жөндеу нүктесі:"

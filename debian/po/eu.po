@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: di\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-25 17:44+0200\n"
+"PO-Revision-Date: 2006-02-11 22:35+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Librezale <Librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -507,24 +507,3 @@ msgid ""
 msgstr ""
 "Ausazko gako bat erabiltzea partizio datuak berrabiarazte bakoitzean "
 "ezabatzea eragingo du. Hau swap partizioan bakarrik erabili beharko zen."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "enkirptazioaren bolumen fisikoa"
-
-#~ msgid "crypto"
-#~ msgstr "kriptografia"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Enkriptazio mota:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Partizio honen enkriptazio-mota:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

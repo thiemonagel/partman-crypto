@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: wo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-12 16:50+0000\n"
+"PO-Revision-Date: 2006-01-25 15:44+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof\n"
 "MIME-Version: 1.0\n"
@@ -501,24 +501,3 @@ msgid ""
 msgstr ""
 "Jëfandikoo ab caabi jabbute mooy ne done yi ci partisoŋ bi deesna ko far saa "
 "yuñu demaaree. Loolu nak partisoŋ u swap rekk lañu ko wara def."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "wolim u fisik ngir kiripte"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Fasoŋ u kiripte bi:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Fasoŋ u kiripte bu bu bii partisoŋ:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

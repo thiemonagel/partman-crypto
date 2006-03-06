@@ -510,24 +510,3 @@ msgstr ""
 "Satunnaisen avaimen käyttäminen tarkoittaa osion tiedon tuhoamista "
 "jokaisella käynnistyskerralla. Tätä on tarkoitus käyttää vain "
 "sivutusosioille."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fyysinen levynide salaukselle"
-
-#~ msgid "crypto"
-#~ msgstr "salaus"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Salauksen tyyppi:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tämän osion salauksen tyyppi:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Takaisinkytkentä (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Laiteyhdistäjä (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Laiteyhdistäjä (LUKS)"

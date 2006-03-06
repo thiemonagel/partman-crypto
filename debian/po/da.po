@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-23 11:55+0200\n"
+"PO-Revision-Date: 2006-02-11 12:16+0100\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
@@ -504,24 +504,3 @@ msgid ""
 msgstr ""
 "Hvis du benytter en en tilfældig-nøgletype, vil partitionens data blive "
 "ødelagt ved hver genstart. Den bør kun benyttes til swap-partitioner."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fysisk bind til kryptering"
-
-#~ msgid "crypto"
-#~ msgstr "kryptering"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Krypteringstype:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Denne partitions krypteringstype:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Enhedsoverføring (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Enhedsoverføring (LUKS)"

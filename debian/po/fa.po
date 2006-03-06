@@ -484,11 +484,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid "physical volume for encryption"
-#~ msgstr "فضای فیزیکی برای LVM"
-
-#, fuzzy
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "نقطه‌ی بارگذاری این پارتیشن:"

@@ -505,26 +505,3 @@ msgid ""
 msgstr ""
 "שימוש במחיצה מסוג מפתח אקראי, משמעותו כי המידע על המחיצה יהרס בכל אתחול של "
 "המערכת. שימוש זה צריך להיות מוגבל למחיצות דפדוף בלבד."
-
-#, fuzzy
-#~ msgid "physical volume for encryption"
-#~ msgstr "כרך פיזי ל-LVM"
-
-#~ msgid "crypto"
-#~ msgstr "מוצפן"
-
-#~ msgid "Encryption type:"
-#~ msgstr "סוג הצפנה:"
-
-#, fuzzy
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "נקודת עגינה למחיצה זאת:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "לולאה פנימית (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "ממפה התקנים (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "ממפה רכיבים (LUKS)"

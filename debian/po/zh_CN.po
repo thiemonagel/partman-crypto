@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-24 04:40-0500\n"
+"PO-Revision-Date: 2006-02-11 16:50+1300\n"
 "Last-Translator: Carlos Z.F. Liu <carlosliu@users.sourceforge.net>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -486,24 +486,3 @@ msgid ""
 msgstr ""
 "使用一个随机密钥意味着分区上的数据在每次重新启动时都会被摧毁。这仅应该用于交"
 "换分区。"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "加密物理卷"
-
-#~ msgid "crypto"
-#~ msgstr "加密"
-
-#~ msgid "Encryption type:"
-#~ msgstr "加密类型："
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "此分区的加密类型："
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "回环 (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

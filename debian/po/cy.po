@@ -491,11 +491,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid "physical volume for encryption"
-#~ msgstr "cyfrol corfforol ar gyfer LVM"
-
-#, fuzzy
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Pwynt clymu ar gyfer y rhaniad hwn:"

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-08 22:51+0800\n"
+"PO-Revision-Date: 2006-01-23 17:48-0600\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
@@ -485,24 +485,3 @@ msgid ""
 msgstr ""
 "類型為使用隨意產生的金鑰表示這個分割區裡的資料會在每次開機時被清除掉。這應該"
 "是用於 Swap 分割區。"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "要進行加密的 Physical Volume"
-
-#~ msgid "crypto"
-#~ msgstr "加密"
-
-#~ msgid "Encryption type:"
-#~ msgstr "加密方式："
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "這個分割區的加密方式："
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "磁碟對應 (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "磁碟對應 (LUKS)"

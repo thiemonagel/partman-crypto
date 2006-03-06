@@ -513,24 +513,3 @@ msgid ""
 msgstr ""
 "Uporaba naključnega ključa pomeni, da bodo podatki na razdelku uničeni ob "
 "vsakem zagonu. Ta način naj bo uporabljen samo za izmenjevalne razdelke."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fizični nosilci za šifiranje"
-
-#~ msgid "crypto"
-#~ msgstr "kripto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tip šifriranja:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tip šifriranja za ta razdelek:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

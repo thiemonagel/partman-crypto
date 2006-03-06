@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-29 14:45+0900\n"
+"PO-Revision-Date: 2006-02-14 17:06+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -503,24 +503,3 @@ msgid ""
 msgstr ""
 "乱数鍵形式の利用は、パーティションのデータを再起動のたびに破壊するということ"
 "を意味します。これは、スワップパーティションでのみ使われるべきものです。"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "暗号化の物理ボリューム"
-
-#~ msgid "crypto"
-#~ msgstr "暗号化"
-
-#~ msgid "Encryption type:"
-#~ msgstr "暗号化形式:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "このパーティションの暗号化形式:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "ループバック (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "デバイスマッパー (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "デバイスマッパー (LUKS)"

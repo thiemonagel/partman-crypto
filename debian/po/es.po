@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-27 12:08+0100\n"
+"PO-Revision-Date: 2006-02-13 00:06+0100\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -537,24 +537,3 @@ msgstr ""
 "La utilización de una clave aleatoria significa que los datos de la "
 "partición se borrarán tras cada rearranque. Esto debería utilizarse sólo "
 "para particiones de swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volumen físico para cifrado"
-
-#~ msgid "crypto"
-#~ msgstr "cifrado"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tipo de cifrado:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tipo de cifrado para esta partición:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

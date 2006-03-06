@@ -485,24 +485,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fizička particija za enkriptovanje"
-
-#~ msgid "crypto"
-#~ msgstr "kriptografija"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tip enkripcije:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tip enkripcije za ovu particiju:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

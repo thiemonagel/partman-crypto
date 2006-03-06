@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-12-21 17:15+0700\n"
+"PO-Revision-Date: 2006-01-09 17:15+0700\n"
 "Last-Translator: Parlin Imanuel Toh <pt@samip-online.com>\n"
 "Language-Team: Debian Indonesia Team <debian-l10n-id@gurame.fisika.ui.ac."
 "id>\n"
@@ -512,24 +512,3 @@ msgid ""
 msgstr ""
 "Menggunakan jenis kunci random berarti bahwa data partisi akan dihancurkan "
 "tiap reboot. Ini hanya dapat dilakukan untuk partisi swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volume fisik untuk enkripsi"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Jenis enkripsi:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Jenis enkripsi untuk partisi ini:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Pemeta-piranti (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Pemeta-piranti (LUKS)"

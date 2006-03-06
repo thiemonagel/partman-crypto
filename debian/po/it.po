@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-25 17:29+0200\n"
+"PO-Revision-Date: 2006-02-11 12:49+0100\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -526,24 +526,3 @@ msgstr ""
 "Usare una chiave di tipo casuale significa che i dati della partizione "
 "saranno distrutti a ogni riavvio. Questo dovrebbe essere usato solo per "
 "partizioni di swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volume fisico per la cifratura"
-
-#~ msgid "crypto"
-#~ msgstr "cifratura"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tipo di cifratura:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tipo di cifratura per questa partizione:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop%s)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

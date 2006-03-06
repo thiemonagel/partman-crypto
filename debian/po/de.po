@@ -536,24 +536,3 @@ msgstr ""
 "Die Verwendung eines zufälligen Schlüsseltyps bedeutet, dass die "
 "Partitionsdaten bei jedem Neustart zerstört werden. Dies sollte nur für Swap-"
 "Partitionen verwendet werden."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "Physisches Volume für Verschlüsselung"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Verschlüsselungstyp:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Verschlüsselungstyp für diese Partition:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

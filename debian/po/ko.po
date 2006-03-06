@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-26 00:57+0900\n"
+"PO-Revision-Date: 2006-02-12 16:05+0900\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -494,24 +494,3 @@ msgid ""
 msgstr ""
 "랜덤을 선택할 경우 시스템이 재부팅될 때마다 파티션의 내용이 지워지게 됩니다. "
 "스왑 파티션에만 사용하기 바랍니다."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "암호화할 물리 볼륨"
-
-#~ msgid "crypto"
-#~ msgstr "암호화"
-
-#~ msgid "Encryption type:"
-#~ msgstr "암호화 방식"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "이 파티션에 적용할 암호화 방식"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "루프백 (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "디바이스 매퍼 (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "디바이스 매퍼 (LUKS)"

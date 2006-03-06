@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-11-20 18:34+0200\n"
+"PO-Revision-Date: 2006-01-22 09:59+0200\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -528,24 +528,3 @@ msgstr ""
 "Folosirea unui tip aleator de cheie înseamnă că partiţia va fi distrusă la "
 "fiecare repornire. Acest tip ar trebui să fie folosit doar pentru partiţii "
 "swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volumul fizic pentru criptare"
-
-#~ msgid "crypto"
-#~ msgstr "cripto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tip de criptare:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tipul de criptare pentru acestă partiţie:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Dispozitiv buclă (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

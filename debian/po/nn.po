@@ -513,24 +513,3 @@ msgid ""
 msgstr ""
 "Å bruke ein tilfeldig nøkkeltype betyr at data på partisjonen blir øydelagt "
 "ved kvar oppstart. Dette bør berre brukast på partisjonar for vekselminne."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fysisk dataområde for kryptering"
-
-#~ msgid "crypto"
-#~ msgstr "krypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Krypteringstype:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Krypteringstype for denne partisjonen:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Sløyfekopling (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Einingskartleggar (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Einingskartleggar (LUKS)"

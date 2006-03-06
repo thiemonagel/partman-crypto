@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-09 23:06+0200\n"
+"PO-Revision-Date: 2006-02-13 20:13+0200\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -507,24 +507,3 @@ msgstr ""
 "Използването на случаен ключ означава, че данните в дяла ще бъдат "
 "унищожавани при всяко рестартиране. Тази възможност трябва да се използва "
 "само за места за виртуална памет."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "физически том за шифриране"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Вид шифриране:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Вид на шифриране за този дял:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

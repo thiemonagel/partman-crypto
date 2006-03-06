@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-11-27 08:30+0300\n"
+"PO-Revision-Date: 2006-02-11 09:44+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -512,24 +512,3 @@ msgstr ""
 "Использование произвольного ключа означает, что данные на разделе будут "
 "уничтожаться при каждой перезагрузке. Данный тип должен использоваться "
 "только для разделов подкачки."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "физический том для шифрования"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Тип шифрования:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Тип шифрования для этого раздела:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Файловое loopback устройство (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

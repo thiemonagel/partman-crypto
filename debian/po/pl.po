@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-02-03 13:33+0100\n"
+"PO-Revision-Date: 2006-02-18 09:21+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -501,24 +501,3 @@ msgstr ""
 "Użycie losowego typu klucza oznacza, że dane na partycji będą niszczone przy "
 "każdym uruchomieniu systemu. Taka opcja powinna być używana tylko dla "
 "partycji wymiany."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fizyczny wolumin do szyfrowania"
-
-#~ msgid "crypto"
-#~ msgstr "szyfrowanie"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Rodzaj szyfrowania:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Rodzaj szyfrowania dla tej partycji:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

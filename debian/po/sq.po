@@ -505,24 +505,3 @@ msgstr ""
 "Të përdorësh një çelës të rastësishëm nënkupton që të dhënat e ndarjes do të "
 "shkatërrohen në çdo rinisje të sistemit. Kjo duhet përdorur vetëm për "
 "ndarjet swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volumi fizik për kriptimin"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Lloji i kriptimit:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Lloji i kriptimit për këtë ndarje:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (cikël AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Rilevues i dispozitivit (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Rilevues i dispozitivit (LUKS)"

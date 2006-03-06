@@ -512,24 +512,3 @@ msgstr ""
 "Utilitzar una clau aleatòria vol dir que les dades de la partició es perdran "
 "després de cada arrencada. Això només s'hauria d'utilitzar amb particions "
 "d'intercanvi."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "volum físic per a xifrat"
-
-#~ msgid "crypto"
-#~ msgstr "xifrat"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Tipus de xifrat:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Tipus de xifrat per a aquesta partició:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Mapejador de dispositius (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Mapejador de dispositius (LUKS)"

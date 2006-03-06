@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pa_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-14 14:06+0530\n"
+"PO-Revision-Date: 2006-01-27 16:29+0530\n"
 "Last-Translator: Amanpreet Singh Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -496,24 +496,3 @@ msgid ""
 msgstr ""
 "ਲਗਾਤਾਰ ਕੁੰਜੀ ਕਿਸਮ ਵਰਤਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਭਾਗ ਡਾਟਾ ਹਰ ਵਾਰ ਮੁੜ ਚੱਲਣ ਤੇ ਨਸ਼ਟ ਹੋ ਜਾਵੇਗਾ। ਇਸ "
 "ਸਿਰਫ ਸਵੈਪ ਭਾਗਾਂ ਲਈ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "ਲੂਪਬੈਕ (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (LUKS)"

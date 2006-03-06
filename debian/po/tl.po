@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-24 03:49+0800\n"
+"PO-Revision-Date: 2006-02-11 23:13+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -520,24 +520,3 @@ msgid ""
 msgstr ""
 "Ibig sabihin ng random key type ay ang nilalaman ng partisyon ay buburahin "
 "sa bawat pag-boot. Dapat gamitin lamang ito sa mga partisyong pang-swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "pisikal na volume para sa encryption"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Uri ng encryption:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Uri ng encryption para sa partisyon na ito:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

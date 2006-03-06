@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-02-28 16:03+0100\n"
+"PO-Revision-Date: 2006-03-04 21:57+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -514,24 +514,3 @@ msgid ""
 msgstr ""
 "Användning av en slumpnyckel betyder att partitionsdata förstörs vid varje "
 "uppstart. Det här kan endast användas för växlingspartitioner."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fysisk volym för kryptering"
-
-#~ msgid "crypto"
-#~ msgstr "kryptering"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Krypteringstyp:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Krypteringstyp för den här partitionen:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Enhetsmappare (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Enhetsmappare (LUKS)"

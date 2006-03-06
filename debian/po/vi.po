@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2006-01-18 22:53+1030\n"
+"PO-Revision-Date: 2006-02-11 14:01+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -509,24 +509,3 @@ msgid ""
 msgstr ""
 "Dùng một kiểu khóa ngẫu nhiên có nghĩa là các dữ liệu phân vùng sẽ bị xóa bỏ "
 "mỗi lần khởi động lại. Nên dùng vùng kiểu này chỉ cho phân vùng trao đổi."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "khối tin vật lý cần mật mã hóa"
-
-#~ msgid "crypto"
-#~ msgstr "mật mã"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Kiểu mật mã:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Kiểu mật mã cho phân vùng này:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Vòng lặp (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Bộ ánh xạ thiết bị (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Bộ ánh xạ thiết bị (LUKS)"

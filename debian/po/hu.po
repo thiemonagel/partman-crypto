@@ -500,15 +500,3 @@ msgid ""
 msgstr ""
 "Véletlen kulcs típus használata azt jelenti, hogy a partíció adatai "
 "törlődnek minden újraindításnál. Ez csak a cserepartícióknál használatos"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "fizikai kötet titkosításhoz"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Titkosítás típus:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Titkosítás típusa e partícióhoz:"

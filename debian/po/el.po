@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-12-29 02:40+0200\n"
+"PO-Revision-Date: 2006-02-14 13:32+0200\n"
 "Last-Translator: quad-nrg.net <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -537,24 +537,3 @@ msgstr ""
 "Η χρήση ενός τύπου τυχαίου κλειδιού σημαίνει ότι τα δεδομένα της κατάτμησης "
 "θα καταστρέφονται σε κάθε επανεκκίνηση. Αυτό θα πρέπει να χρησιμοποιηθεί "
 "μόνο για κατατμήσεις swap."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "φυσικός τόμος για κρυπτογράφηση"
-
-#~ msgid "crypto"
-#~ msgstr "κρυπτογράφηση"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Είδος κρυπτογράφησης:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Είδος κρυπτογράφησης γι' αυτή την κατάτμηση:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

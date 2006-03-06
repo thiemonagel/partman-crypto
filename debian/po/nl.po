@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-11-03 15:46+0100\n"
+"PO-Revision-Date: 2006-02-11 02:58+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -518,24 +518,3 @@ msgstr ""
 "Gebruik van een random sleutel heeft als gevolg dat alle data op de partitie "
 "vernietigd wordt met elke herstart. Dit wordt normaal enkel gebruikt voor "
 "wisselgeheugenpartities."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "Fysiek volume voor encryptie"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Encryptietype:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Encryptietype voor deze partitie:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Lus-apparaat (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

@@ -503,24 +503,3 @@ msgstr ""
 "La uzado de hazarda ŝlosilo implicas la forviŝotan de diskpartigaj datumoj "
 "en ĉiu praŝargado. Tiu funkciado endas uzita nur per la interŝanĝaj spacoj "
 "('swap'-diskpartigoj)."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "Datumportilaĵo por ĉifrado"
-
-#~ msgid "crypto"
-#~ msgstr "ĉifro"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Ĉifrada tipo:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Ĉifrada tipo por ĉi tiu diskpartigo:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Bukliru ('loop-AES')"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "'dm-crypt'-adaptilo"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "'LUKS'-adaptilo"

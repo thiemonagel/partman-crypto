@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-11-24 22:28+0100\n"
+"PO-Revision-Date: 2006-01-20 10:37+0100\n"
 "Last-Translator: Jaonary Rabarisoa <jaonary@free.fr>\n"
 "Language-Team: Malagasy <jaonary@free.fr>\n"
 "MIME-Version: 1.0\n"
@@ -490,23 +490,3 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-
-#, fuzzy
-#~ msgid "physical volume for encryption"
-#~ msgstr "Vôloma fisika ho an'ny RAID"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#, fuzzy
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Toerana ampakarana ny fizarana:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Device-mapper (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Device-mapper (LUKS)"

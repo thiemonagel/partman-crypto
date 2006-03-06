@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-10-28 13:29+0530\n"
+"PO-Revision-Date: 2006-02-26 04:29+0530\n"
 "Last-Translator: Baishampayan Ghose <b.ghose@gnu.org.in>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
 "MIME-Version: 1.0\n"
@@ -507,24 +507,3 @@ msgstr ""
 "এলোমেলো ধরনের কী (key) বেছে নেওয়ার অর্থ হল যে সংশ্লিষ্ট পার্টিশনে সংরক্ষিত তথ্য "
 "প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে।  এটি শুধুমাত্র সোয়্যাপ পার্টিশনের "
 "ক্ষেত্রেই ব্যবহার করা উচিত্‍।"
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "এনক্রিপশনের জন্য প্রকৃত ভলিউম"
-
-#~ msgid "crypto"
-#~ msgstr "গুপ্ত"
-
-#~ msgid "Encryption type:"
-#~ msgstr "এনক্রিপশনের ধরন:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "এই পার্টিশনের জন্য এনক্রিপশনের ধরন:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "লুপব্যাক (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "ডিভাইস-ম্যাপার (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "ডিভাইস-ম্যাপার (LUKS)"

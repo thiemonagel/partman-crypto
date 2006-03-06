@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-12-18 13:41+0100\n"
+"PO-Revision-Date: 2006-02-11 12:36+0100\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
@@ -512,24 +512,3 @@ msgstr ""
 "Користејќи на случаен тип за клучот значи дека сите податоци на партицијата "
 "ќе бидат уништувани при секое ресетирање. Ова би требало да се користи за "
 "swap партиции."
-
-#~ msgid "physical volume for encryption"
-#~ msgstr "физички простор за енкрипција"
-
-#~ msgid "crypto"
-#~ msgstr "crypto"
-
-#~ msgid "Encryption type:"
-#~ msgstr "Тип на енкрипција:"
-
-#~ msgid "Encryption type for this partition:"
-#~ msgstr "Тип на енкрипција за оваа партиција:"
-
-#~ msgid "Loopback (loop-AES)"
-#~ msgstr "Loopback (loop-AES)"
-
-#~ msgid "Device-mapper (dm-crypt)"
-#~ msgstr "Мапирач на уреди (dm-crypt)"
-
-#~ msgid "Device-mapper (LUKS)"
-#~ msgstr "Мапирач на уреди (LUKS)"

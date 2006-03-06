@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-25 22:44-0600\n"
+"POT-Creation-Date: 2006-03-05 19:07-0700\n"
 "PO-Revision-Date: 2006-01-14 14:06+0530\n"
 "Last-Translator: Amanpreet Singh Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -30,103 +30,79 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:3
-msgid "physical volume for encryption"
-msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:7
-msgid "crypto"
-msgstr "crypto"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:15
+#: ../partman-crypto.templates:31
 msgid "not active"
 msgstr "ਸਰਗਰਮ ਨਹੀਂ"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:19
-msgid "Encryption type:"
-msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
-
-#. Type: select
-#. Description
-#: ../partman-crypto.templates:24
-msgid "Encryption type for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:28
+#: ../partman-crypto.templates:35
 msgid "Encryption:"
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:33
+#: ../partman-crypto.templates:40
 msgid "Encryption for this partition:"
 msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:37
+#: ../partman-crypto.templates:44
 msgid "Key size:"
 msgstr "ਕੁੰਜੀ ਅਕਾਰ:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:42
+#: ../partman-crypto.templates:49
 msgid "Key size for this partition:"
 msgstr "ਇਸ ਭਾਗ ਲਈ ਕੁੰਜੀ ਅਕਾਰ:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:46
+#: ../partman-crypto.templates:53
 msgid "Encryption key:"
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:51
+#: ../partman-crypto.templates:58
 msgid "Type of encryption key for this partition:"
 msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮਮ:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:81
+#: ../partman-crypto.templates:88
 msgid "Setting up encryption..."
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨਖਵਾਂ ਨਿਤਧਾਰਨ ਕਰ ਰਿਹਾ ਹੈ..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:85
+#: ../partman-crypto.templates:92
 msgid "Configure encrypted volumes"
 msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਕ ਸੰਰਚਨਾ ਕਰੋ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:89
+#: ../partman-crypto.templates:96
 msgid "No partitions to encrypt"
 msgstr "ਇੰਨਕ੍ਰਿਪਟ ਕਰਨ ਲਈ ਕੋਈ ਭਾਗ ਨਹੀਂ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:89
+#: ../partman-crypto.templates:96
 msgid "No partitions have been selected for encryption."
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨੇਸ਼ਨ ਲਈ ਕਭਾਗਪੈਕੇਜ ਨਹੀਂ ਚੁਣਿਆ।"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:94
+#: ../partman-crypto.templates:101
 msgid "Required programs missing"
 msgstr "ਲੋੜੀਂਦਾ ਪਰੋਗਰਾਮ ਗੁੰਮ ਹੈ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:94
+#: ../partman-crypto.templates:101
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
@@ -136,13 +112,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:100
+#: ../partman-crypto.templates:107
 msgid "Required encryption options missing"
 msgstr "ਲੋੜੀਂਦੀ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਗੁੰਮ ਹੈ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:100
+#: ../partman-crypto.templates:107
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -155,19 +131,19 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:111
+#: ../partman-crypto.templates:118
 msgid "missing"
 msgstr "ਗੁੰਮ ਹੈ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid "Encryption package installation failure"
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਪੈਕੇਜ ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -175,7 +151,7 @@ msgstr "ਕਰਨਲ ਮੈਡਿਊਲ ਪੈਕੇਜ ${PACKAGE} ਨਹੀਂ 
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -186,13 +162,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid "Write the changes to disks and configure encrypted volumes?"
 msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖੋ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -202,19 +178,19 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid "${ITEMS}"
 msgstr "${ITEMS}"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:148
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "ਮੌਜੂਦਾ ਭਾਗ ਖਾਕਾ ਰੱਖੋ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:148
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -227,85 +203,67 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "Encrypted volumes configuration failure"
 msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "The configuration is aborted."
 msgstr " ਸੰਰਚਨਾ ਅਧੂਰੀ ਖਤਮ ਕੀਤੀ ਗਈ।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:163
 msgid "Encrypted volume initialisation failed"
 msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਇੰਸਟਾਲੇਸ਼ਨ ਅਸਫਲ ਹੋਈ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:163
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਨਿਰਧਾਰਨ  ਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:161
-msgid "Loopback (loop-AES)"
-msgstr "ਲੂਪਬੈਕ (loop-AES)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:165
-msgid "Device-mapper (dm-crypt)"
-msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (dm-crypt)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:169
-msgid "Device-mapper (LUKS)"
-msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (LUKS)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:173
+#: ../partman-crypto.templates:168
 msgid "Passphrase"
 msgstr "ਸ਼ਬਦ"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:177
+#: ../partman-crypto.templates:172
 msgid "Keyfile (GnuPG)"
 msgstr "ਕੁੰਜੀ-ਫਾਇਲ (GnuPG)"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:181
+#: ../partman-crypto.templates:176
 msgid "Random key"
 msgstr "ਲਗਾਤਾਰ ਕੁੰਜੀ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid "Unsafe swap space detected"
 msgstr "ਨਾ-ਸੁਰੱਖਿਅਤ ਸਵੈਪ ਸਪੇਸ ਲੱਭੀ ਹੈ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid "An unsafe swap space has been detected."
 msgstr "ਇੱਕ ਨਾ-ਸੁਰੱਖਿਅਤ ਸਪੇਸ ਲੱਭੀ ਹੈ।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -316,7 +274,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -327,19 +285,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid "Encryption passphrase:"
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਸ਼ਬਦ:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "ਤੁਹਾਨੂੰ ਇੰਨਕ੍ਰਿਪਟ ${DEVICE} ਲਈ ਸ਼ਬਦ ਚੁਣਨ ਦੀ ਲੋੜ ਹੈ।"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -352,7 +310,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -363,13 +321,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:207
 msgid "Re-enter passphrase to verify:"
 msgstr "ਜਾਂਚ ਲਈ ਸ਼ਬਦ ਮੁੜ ਭਰੋ:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:207
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -377,25 +335,25 @@ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁ
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:213
 msgid "Passphrase input error"
 msgstr "ਸ਼ਬਦ ਇੰਪੁੱਟ ਗਲਤੀ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:213
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "ਭਰੇ ਹੋਏ ਦੋਨੋ ਪਹਿਰੇ ਇੱਕੋ ਜਿਹੇ ਨਹੀਂ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਭਰੋ।"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:223
+#: ../partman-crypto.templates:218
 msgid "Empty passphrase"
 msgstr "ਖਾਲੀ ਸ਼ਬਦ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:223
+#: ../partman-crypto.templates:218
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -406,13 +364,13 @@ msgstr "ਤੁਸੀਂ ਖਾਲੀ ਸ਼ਬਦ ਭਰਿਆ ਹੈ, ਜਿਸ �
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:228
 msgid "Use weak passphrase?"
 msgstr "ਕਮਜੋਰ ਸ਼ਬਦ ਵਰਤੋ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:228
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -422,19 +380,19 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid "Enter random characters to continue"
 msgstr "ਜਾਰੀ ਰੱਖਣ ਲਈ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰੋ"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
 msgstr "${DEVICE} ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਹੁਣ ਬਣ ਗਈ ਹੈ। (${PROGRESS})"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid ""
 "You can help speed up the process by entering random data on the keyboard to "
 "fill the randomness pool and continuing once in a while. This dialog will "
@@ -445,19 +403,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid "Enter random characters"
 msgstr "ਲਗਾਤਾਰ ਅੱਖਰ ਭਰੋ"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "${DEVICE} ਲਈ ਹੁਣ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਬਣ ਗਈ ਹੈ।"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid ""
 "This process requires the system to have large amounts of collected "
 "randomness (\"entropy\"), of which there is likely too little at this stage "
@@ -468,7 +426,7 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -479,25 +437,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:263
 msgid "Keyfile creation failure"
 msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲਤਾ ਰਿਹਾ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:263
 msgid "An error occurred while creating the keyfile."
 msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਸਮੇਂ ਗਲਤੀ ਵਾਪਰੀ ਹੈ।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid "Encryption configuration failure"
 msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -508,20 +466,20 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਚੁਣੋ।"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid "Are you sure you want to use a random key?"
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨਣਲਗਾਤਾਰ ਕੁੰਜੀ ਵਰਤਣਾ ਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -531,10 +489,31 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "ਲਗਾਤਾਰ ਕੁੰਜੀ ਕਿਸਮ ਵਰਤਣ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਭਾਗ ਡਾਟਾ ਹਰ ਵਾਰ ਮੁੜ ਚੱਲਣ ਤੇ ਨਸ਼ਟ ਹੋ ਜਾਵੇਗਾ। ਇਸ "
 "ਸਿਰਫ ਸਵੈਪ ਭਾਗਾਂ ਲਈ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।"
+
+#~ msgid "physical volume for encryption"
+#~ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
+
+#~ msgid "crypto"
+#~ msgstr "crypto"
+
+#~ msgid "Encryption type:"
+#~ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
+
+#~ msgid "Encryption type for this partition:"
+#~ msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮ:"
+
+#~ msgid "Loopback (loop-AES)"
+#~ msgstr "ਲੂਪਬੈਕ (loop-AES)"
+
+#~ msgid "Device-mapper (dm-crypt)"
+#~ msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (dm-crypt)"
+
+#~ msgid "Device-mapper (LUKS)"
+#~ msgstr "ਜੰਤਰ-ਮਿਲਾਣਕਾਰ (LUKS)"

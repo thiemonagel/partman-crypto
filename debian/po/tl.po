@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-25 22:44-0600\n"
+"POT-Creation-Date: 2006-03-05 19:07-0700\n"
 "PO-Revision-Date: 2005-10-24 03:49+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
@@ -29,103 +29,79 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:3
-msgid "physical volume for encryption"
-msgstr "pisikal na volume para sa encryption"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:7
-msgid "crypto"
-msgstr "crypto"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:15
+#: ../partman-crypto.templates:31
 msgid "not active"
 msgstr "hindi aktibo"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:19
-msgid "Encryption type:"
-msgstr "Uri ng encryption:"
-
-#. Type: select
-#. Description
-#: ../partman-crypto.templates:24
-msgid "Encryption type for this partition:"
-msgstr "Uri ng encryption para sa partisyon na ito:"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:28
+#: ../partman-crypto.templates:35
 msgid "Encryption:"
 msgstr "Encryption:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:33
+#: ../partman-crypto.templates:40
 msgid "Encryption for this partition:"
 msgstr "Encryption para sa partisyon na ito:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:37
+#: ../partman-crypto.templates:44
 msgid "Key size:"
 msgstr "Laki ng susi:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:42
+#: ../partman-crypto.templates:49
 msgid "Key size for this partition:"
 msgstr "Laki ng susi para sa partisyon na ito:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:46
+#: ../partman-crypto.templates:53
 msgid "Encryption key:"
 msgstr "Susi ng encryption:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:51
+#: ../partman-crypto.templates:58
 msgid "Type of encryption key for this partition:"
 msgstr "Uri ng encryption key para sa partisyong ito:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:81
+#: ../partman-crypto.templates:88
 msgid "Setting up encryption..."
 msgstr "Hinahanda ang encryption..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:85
+#: ../partman-crypto.templates:92
 msgid "Configure encrypted volumes"
 msgstr "Isaayos ang mga volume na encrypted"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:89
+#: ../partman-crypto.templates:96
 msgid "No partitions to encrypt"
 msgstr "Walang partisyon na i-eencrypt"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:89
+#: ../partman-crypto.templates:96
 msgid "No partitions have been selected for encryption."
 msgstr "Walang partisyon na pinili para sa encryption."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:94
+#: ../partman-crypto.templates:101
 msgid "Required programs missing"
 msgstr "Wala ng mga programang kinakailangan"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:94
+#: ../partman-crypto.templates:101
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
@@ -135,13 +111,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:100
+#: ../partman-crypto.templates:107
 msgid "Required encryption options missing"
 msgstr "Mga kinakailangang opsyon ng encryption ay wala"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:100
+#: ../partman-crypto.templates:107
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -154,19 +130,19 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:111
+#: ../partman-crypto.templates:118
 msgid "missing"
 msgstr "kulang"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid "Encryption package installation failure"
 msgstr "Bigo ang pagluklok ng paketeng encryption"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -176,7 +152,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:122
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -188,13 +164,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid "Write the changes to disks and configure encrypted volumes?"
 msgstr "Isulat ang mga pagbabago sa mga disk at magsaayos encrypted na volume?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -205,13 +181,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:133
 msgid "${ITEMS}"
 msgstr "${ITEMS}"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:148
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
 "Ipanatili ang kasalukuyang layout ng partisyon at magsaayos ng encrypted na "
@@ -219,7 +195,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:148
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -233,85 +209,67 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "Encrypted volumes configuration failure"
 msgstr "Bigo ang pagsasaayos ng encrypted na volume"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "May naganap na error habang nagsasaayos ng encrypted na volume."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:149
+#: ../partman-crypto.templates:156
 msgid "The configuration is aborted."
 msgstr "Hininto ang pagsasaayos."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:163
 msgid "Encrypted volume initialisation failed"
 msgstr "Bigo ang paghanda ng encrypted na volume"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:163
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "May naganap na error habang isinasaayos ang encrypted na volume."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:161
-msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop-AES)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:165
-msgid "Device-mapper (dm-crypt)"
-msgstr "Device-mapper (dm-crypt)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:169
-msgid "Device-mapper (LUKS)"
-msgstr "Device-mapper (LUKS)"
-
-#. Type: text
-#. Description
-#: ../partman-crypto.templates:173
+#: ../partman-crypto.templates:168
 msgid "Passphrase"
 msgstr "Passphrase"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:177
+#: ../partman-crypto.templates:172
 msgid "Keyfile (GnuPG)"
 msgstr "Keyfile (GnuPG)"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:181
+#: ../partman-crypto.templates:176
 msgid "Random key"
 msgstr "Random key"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid "Unsafe swap space detected"
 msgstr "Di ligtas na swap space ang nakita"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid "An unsafe swap space has been detected."
 msgstr "Hindi ligtas ang swap space na nakita."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -323,7 +281,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:185
+#: ../partman-crypto.templates:180
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -335,19 +293,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid "Encryption passphrase:"
 msgstr "Passphrase para sa encryption:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Kailangan niyong pumili ng passphrase upang ma-encrypt ang ${DEVICE}."
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -362,7 +320,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:193
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -374,13 +332,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:207
 msgid "Re-enter passphrase to verify:"
 msgstr "Paki-ulit ang passphrase upang makasiguro na tama ang pagkapasok:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:207
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -390,13 +348,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:213
 msgid "Passphrase input error"
 msgstr "Error sa pagpasok ng passphrase"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:213
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
 "Hindi magkapareho ang dalawng password na ibinigay niyo. Pakiulit ang "
@@ -404,13 +362,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:223
+#: ../partman-crypto.templates:218
 msgid "Empty passphrase"
 msgstr "Walang laman ang passphrase"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:223
+#: ../partman-crypto.templates:218
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -423,13 +381,13 @@ msgstr ""
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:228
 msgid "Use weak passphrase?"
 msgstr "Gumamit ng mahinang passphrase?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:228
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -440,19 +398,19 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid "Enter random characters to continue"
 msgstr "Magpindot ng kahit anong mga karakter upang magpatuloy"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
 msgstr "Ang encryption key para sa ${DEVICE} ay nililikha. (${PROGRESS})"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:234
 msgid ""
 "You can help speed up the process by entering random data on the keyboard to "
 "fill the randomness pool and continuing once in a while. This dialog will "
@@ -465,19 +423,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid "Enter random characters"
 msgstr "Magbigay ng random na mga karakter"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Ang encryption key para sa ${DEVICE} ay nililikha."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid ""
 "This process requires the system to have large amounts of collected "
 "randomness (\"entropy\"), of which there is likely too little at this stage "
@@ -489,7 +447,7 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:250
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -501,25 +459,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:263
 msgid "Keyfile creation failure"
 msgstr "Bigo ang paglikha ng keyfile"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:263
 msgid "An error occurred while creating the keyfile."
 msgstr "May naganap na error habang nililikha ang keyfile."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid "Encryption configuration failure"
 msgstr "Bigo ang pagsasaayos ng encryption"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -531,7 +489,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:273
+#: ../partman-crypto.templates:268
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -539,13 +497,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid "Are you sure you want to use a random key?"
 msgstr "Sigurado ba kayong gagamit kayo ng random key?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -555,10 +513,31 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:279
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "Ibig sabihin ng random key type ay ang nilalaman ng partisyon ay buburahin "
 "sa bawat pag-boot. Dapat gamitin lamang ito sa mga partisyong pang-swap."
+
+#~ msgid "physical volume for encryption"
+#~ msgstr "pisikal na volume para sa encryption"
+
+#~ msgid "crypto"
+#~ msgstr "crypto"
+
+#~ msgid "Encryption type:"
+#~ msgstr "Uri ng encryption:"
+
+#~ msgid "Encryption type for this partition:"
+#~ msgstr "Uri ng encryption para sa partisyon na ito:"
+
+#~ msgid "Loopback (loop-AES)"
+#~ msgstr "Loopback (loop-AES)"
+
+#~ msgid "Device-mapper (dm-crypt)"
+#~ msgstr "Device-mapper (dm-crypt)"
+
+#~ msgid "Device-mapper (LUKS)"
+#~ msgstr "Device-mapper (LUKS)"

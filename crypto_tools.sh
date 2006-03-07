@@ -60,7 +60,8 @@ setup_loopaes () {
         pass="/dev/null"
     fi
 
-    log-output -t partman-crypto /sbin/losetup-aes -e $cipher $opts -p0 $loop $device -G / < $pass
+    log-output -t partman-crypto \
+    /sbin/losetup-aes -e $cipher $opts -p0 -G / $loop $device < $pass
     if [ $? -ne 0 ] ; then
         log "losetup failed"
         return 2
@@ -99,7 +100,9 @@ setup_cryptdev () {
       
         loop-AES)
           cryptdev=$(get_free_loop);
-          [ -z "$cryptdev" ] && return 1
+          if [ -z "$cryptdev" ]; then
+              return 1
+          fi
 
           case $keytype in
             random)

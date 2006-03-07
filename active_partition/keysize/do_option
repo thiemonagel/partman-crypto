@@ -11,11 +11,13 @@ part=$dev/$id
 
 cd $dev
 
+[ -f $part/method ] || exit 0
+[ -f $part/cipher ] || exit 0
+
 select_keysize () {
     type=$1
     cipher=$2
-
-    keysizes=""
+    keysizes=
     for keysize in $(cat /lib/partman/ciphers/$type/$cipher/keysize) do
         if [ "$keysizes" ]; then
            keysizes="$keysizes, $keysize"
@@ -29,7 +31,6 @@ select_keysize () {
     db_input critical $template || true
     db_go || return
     db_get $template
-    
     if [ "$RET" = none ]; then
         rm -f $part/keysize
         return
@@ -37,9 +38,6 @@ select_keysize () {
     
     echo $RET > $part/keysize
 }
-
-[ -f $part/method ] || exit 0
-[ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
 cipher=$(cat $part/cipher)

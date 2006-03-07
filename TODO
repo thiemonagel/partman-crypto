@@ -8,9 +8,21 @@ IMPORTANT (must be solved before beta)
   o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
-  o Set fs_passno for loop entries in fstab to 0; Currently fsck
-    spews ugly warnings because it tries to fsck the unencrypted
-    backing device. Who will do the fsck then?
+  o Arrange fsck for loop-AES encrypted partitions. The normal 
+    mechanism doesn't work since it tries to fsck the encrypted
+    backing device. Two options:
+
+    1 Set fs_passno to 0 to prevent automatic fsck. After loops
+      have been mounted, remount read-only, fsck, remount r/w in
+      an init script. Downsides: May mount unchecked filesystems.
+      Upsides: Matches upstream setup instructions.
+
+    2 Install an init script to losetup and fsck loops before 
+      S35mountall.sh; List loop devices as devices in /etc/fstab
+      rather than as loop= option. Downsides: Needs extra looptab
+      or something, diverges from upstream. Upsides: fsck before
+      mount, no fstab hacking required in finish.d/fstab_loop.
+      Could cryptsetup be used?
 
 GENERAL
 -------
@@ -36,12 +48,9 @@ FEATURES
 
   o partman-auto-crypto
 
-  o Support for dm-crypt
+  o Support for plain dm-crypt and LUKS
     - Needs seperate keysize, hashfunc questions?
     - Which type of keys should we use for dm-crypt? Wesley said 
       that hashed passphrases are not very good. Can we use some
       kind of keyfiles instead?
-
-  o Support for LUKS
-    - Required packages not yet in Debian (cryptsetup-luks)
 

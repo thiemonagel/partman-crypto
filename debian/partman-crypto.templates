@@ -6,7 +6,7 @@ Template: partman/method_long/crypto/dm-crypt
 Type: text
 Description: Device-mapper encryption (dm-crypt)
 
-Template: partman/method_long/crypto/dm-crypt-luks
+Template: partman/method_long/crypto/luks
 Type: text
 Description: Device-mapper encryption (LUKS)
 
@@ -18,7 +18,7 @@ Template: partman/method_short/crypto/dm-crypt
 Type: text
 Description: crypto
 
-Template: partman/method_short/crypto/dm-crypt-luks
+Template: partman/method_short/crypto/luks
 Type: text
 Description: crypto
 

@@ -10,13 +10,16 @@ dev=$2
 id=$3
 part=$dev/$id
 
+[ -f $part/method ] || exit 0
+[ -f $part/cipher ] || exit 0
+
 valid_keytypes () {
     case $1 in
         loop-AES)
             echo keyfile random;;
         dm-crypt)
             echo passphrase;; # ??
-        dm-crypt-luks)
+        luks)
             echo passphrase;; # ???
     esac
 }
@@ -41,9 +44,6 @@ select_keytype () {
     
     echo $RET > $part/keytype
 }
-
-[ -f $part/method ] || exit 0
-[ -f $part/cipher ] || exit 0
 
 method=$(cat $part/method)
 cipher=$(cat $part/cipher)

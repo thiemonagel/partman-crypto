@@ -23,5 +23,5 @@ load_module loop_serpent
 load_module loop_twofish
 load_module loop_blowfish
 
-# TODO: add modules required for dm-crypt, and dm-crypt-luks
+# TODO: add modules required for dm-crypt, and luks
 

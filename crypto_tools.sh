@@ -2,7 +2,7 @@
 
 . /usr/share/debconf/confmodule
 
-#CRYPT_TYPES="loop-AES dm-crypt dm-crypt-luks"
+#CRYPT_TYPES="loop-AES dm-crypt luks"
 CRYPT_TYPES="loop-AES"
 
 swap_is_safe () {
@@ -92,7 +92,7 @@ setup_cryptdev () {
           setup_dmcrypt $cryptdev $realdev $cipher || return 1
           ;;
 
-        dm-crypt-luks)
+        luks)
           # TODO: crypt_name ?
           cryptdev=/dev/mapper/ZZZ
           setup_luks $cryptdev $realdev $cipher || return 1

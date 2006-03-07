@@ -3,13 +3,13 @@
 # Installs userspace tools and helper packages for encryption. This 
 # is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
 # into the target system. Similarily for dm-crypt, it installs cryptsetup 
-# etc. (TODO). No idea yet about LUKS.
+# etc. (TODO).
 
 . /lib/partman/definitions.sh
 
 loop_AES=no
 dm_crypt=no
-dm_crypt_luks=no
+luks=no
 
 install_loopkeys () {
     dir=/target/etc/loopkeys
@@ -45,8 +45,8 @@ for dev in $DEVICES/*; do
             dm-crypt)
                 dm_crypt=yes
                 ;;
-            dm-crypt-luks)
-                dm_crypt_luks=yes
+            luks)
+                luks=yes
                 ;;
         esac
 
@@ -59,18 +59,11 @@ for dev in $DEVICES/*; do
 done
 
 if [ $loop_AES = yes ]; then
-    # FIXME 
-    # loop-aes-rootfs
+    # TODO loop-aes-rootfs
     apt-install loop-aes-utils
 fi
 
-if [ $dm_crypt = yes ]; then
-    # FIXME
+if [ $dm_crypt = yes ] || [ $luks = yes ]; then
     apt-install cryptsetup
-fi
-
-if [ $dm_crypt_luks = yes ]; then
-    # FIXME
-    : apt-install 
 fi
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# This script is run by base-installer after the kernel was chosen. 
+# This script is run by prebaseconfig after the kernel was chosen. 
 # It installs a corresponding loop-aes-$KVERS module if any loop-AES
 # encrypted partitions have been configured.
 #
@@ -25,9 +25,9 @@ for dev in /var/lib/partman/devices/*; do
 done
 
 if [ $loop_AES = yes ]; then
-    db_get base-installer/kernel/which-kernel
+    db_get base-installer/kernel/image
     KVERS=${RET#*-image-}
-    chroot /target apt-get install loop-aes-$KVERS
+    apt-install loop-aes-$KVERS
     if [ $? -ne 0 ]; then
         templ="partman-crypto/module_package_missing"
         db_fset $templ seen false
@@ -36,5 +36,6 @@ if [ $loop_AES = yes ]; then
         db_go
         exit 1
     fi
+    echo loop >> /target/etc/modules
 fi
 

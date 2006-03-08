@@ -14,7 +14,7 @@
 . /lib/partman/crypto_tools.sh
 
 # check required tools
-for tool in /usr/bin/gpg /usr/bin/uuencode; do
+for tool in /usr/bin/gpg; do
     if [ ! -x $tool ]; then
         db_fset partman-crypto/tools_missing seen false
         db_input critical partman-crypto/tools_missing

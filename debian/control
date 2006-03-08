@@ -8,7 +8,7 @@ Standards-Version: 3.6.2
 
 Package: partman-crypto
 XC-Package-Type: udeb
-Architecture: all
-Depends: partman-base (>= 73), mount-aes-udeb
+Architecture: any
+Depends: partman-base (>= 73), mount-aes-udeb, ${shlibs:Depends}
 Description: Add to partman support for loopback and dm-crypt crypto
 

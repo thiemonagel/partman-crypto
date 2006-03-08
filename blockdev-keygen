@@ -87,9 +87,9 @@ get_passphrase () {
 
 keysize=2925
 
-# loop-AES v3.x style multi-key
+# loop-AES 
 encode_keydata () {
-    uuencode -m - | head -n 66 | tail -n 65
+    base64
 }
 
 create_gnupg_keyfile () {

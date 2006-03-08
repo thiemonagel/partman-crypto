@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-05 19:07-0700\n"
-"PO-Revision-Date: 2005-07-18 21:00+0200\n"
+"PO-Revision-Date: 2006-03-07 18:03+0100\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr "Akomodu ĉifradon..."
 #. Description
 #: ../partman-crypto.templates:92
 msgid "Configure encrypted volumes"
-msgstr "Akomodi ĉifrajn datumportilojn"
+msgstr "Akomodu ĉifrajn datumportilojn"
 
 #. Type: note
 #. Description

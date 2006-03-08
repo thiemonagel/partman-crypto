@@ -85,8 +85,9 @@ get_passphrase () {
     fi
 }
 
-# loop-AES v3.x style multi-key
+keysize=2925
 
+# loop-AES v3.x style multi-key
 encode_keydata () {
     uuencode -m - | head -n 66 | tail -n 65
 }
@@ -119,7 +120,7 @@ create_gnupg_keyfile () {
     if [ $use_entropy_plugin ]; then
         (while sleep 1; do
 	  if [ -p $fifo ]; then
-	    dd if=$fifo bs=1 count=2925 2>/dev/null | encode_keydata |
+	    dd if=$fifo bs=1 count=$keysize 2>/dev/null | encode_keydata |
 	      gpg --batch --no-options --passphrase-fd 3 \
 	        --symmetric -a 3< $passfifo > $file 2> /dev/null
 	    break
@@ -128,13 +129,13 @@ create_gnupg_keyfile () {
 
 	pid=$!
 
-	db_set partman-crypto/keysize 2925
+	db_set partman-crypto/keysize $keysize
 	db_fset partman-crypto/entropy-text seen false
 	db_subst partman-crypto/entropy-text DEVICE "$device"
 	db_input critical partman-crypto/entropy-text
 	db_go || failed=1
     else
-        (dd if=/dev/random bs=1 count=2925 2>/dev/null | encode_keydata | 
+        (dd if=/dev/random bs=1 count=$keysize 2>/dev/null | encode_keydata | 
 	  gpg --batch --no-options --passphrase-fd 3 \
 	    --symmetric -a 3< $passfifo > $file 2> /dev/null
 	) &

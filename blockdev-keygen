@@ -153,6 +153,10 @@ create_gnupg_keyfile () {
         done
     fi
 
+    if ! wait $pid; then
+        failed=1
+    fi
+
     if [ $failed ]; then
         kill -9 $pid
         rm $file

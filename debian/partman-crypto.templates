@@ -209,7 +209,7 @@ _Description: Re-enter passphrase to verify:
  correctly.
 
 Template: partman-crypto/passphrase-mismatch
-Type: note
+Type: error
 _Description: Passphrase input error
  The two passphrases you entered were not the same. Please try again.
 
@@ -234,10 +234,6 @@ Type: string
 _Description: Enter random characters to continue
  The encryption key for ${DEVICE} is now being created. (${PROGRESS})
  .
- This process requires the system to have large amounts of collected
- randomness ("entropy"), of which there is likely too little at this
- stage of the installation.
- .
  You can help speed up the process by entering random data on the
  keyboard to fill the randomness pool and continuing once in a while.
  This dialog will recur until enough keydata has been collected.
@@ -249,10 +245,6 @@ Template: partman-crypto/entropy-text
 Type: entropy-text
 _Description: Enter random characters
  The encryption key for ${DEVICE} is now being created.
- .
- This process requires the system to have large amounts of collected
- randomness ("entropy"), of which there is likely too little at this
- stage of the installation.
  .
  You can help speed up the process by entering random characters on
  the keyboard, or just wait until enough keydata has been collected.

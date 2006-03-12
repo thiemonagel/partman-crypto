@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-05 19:07-0700\n"
+"POT-Creation-Date: 2006-03-11 19:02-0700\n"
 "PO-Revision-Date: 2006-02-11 16:50+1300\n"
 "Last-Translator: Carlos Z.F. Liu <carlosliu@users.sourceforge.net>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
@@ -323,13 +323,13 @@ msgid ""
 "correctly."
 msgstr "请重新输入相同的口令句以确保您的输入正确无误。"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:213
 msgid "Passphrase input error"
 msgstr "口令句输入错误"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The two passphrases you entered were not the same. Please try again."
@@ -393,30 +393,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid "Enter random characters"
 msgstr "请输入任意字符"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "现在正在创建 ${DEVICE} 的加密密钥。"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
-msgid ""
-"This process requires the system to have large amounts of collected "
-"randomness (\"entropy\"), of which there is likely too little at this stage "
-"of the installation."
-msgstr ""
-"这一过程要求系统中有大量采集到的随机数据(“熵”)，而在现在这个安装阶段，很可能"
-"随机数据太少。"
-
-#. Type: entropy-text
-#. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -427,25 +416,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:263
+#: ../partman-crypto.templates:255
 msgid "Keyfile creation failure"
 msgstr "创建密钥文件失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:263
+#: ../partman-crypto.templates:255
 msgid "An error occurred while creating the keyfile."
 msgstr "将密钥文件写入磁盘时出现一个错误。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid "Encryption configuration failure"
 msgstr "加密设置失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -456,20 +445,20 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr "请返回并给根文件系统选择一个未加密的分区。"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid "Are you sure you want to use a random key?"
 msgstr "您确定要使用一个随机密钥吗？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -479,10 +468,18 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "使用一个随机密钥意味着分区上的数据在每次重新启动时都会被摧毁。这仅应该用于交"
 "换分区。"
+
+#~ msgid ""
+#~ "This process requires the system to have large amounts of collected "
+#~ "randomness (\"entropy\"), of which there is likely too little at this "
+#~ "stage of the installation."
+#~ msgstr ""
+#~ "这一过程要求系统中有大量采集到的随机数据(“熵”)，而在现在这个安装阶段，很可"
+#~ "能随机数据太少。"

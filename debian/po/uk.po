@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-05 19:07-0700\n"
+"POT-Creation-Date: 2006-03-11 19:02-0700\n"
 "PO-Revision-Date: 2006-02-22 15:54+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -336,13 +336,13 @@ msgstr ""
 "Введіть, будь ласка, той самий пароль знову, щоб перевірити, чи введений він "
 "вірно."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:213
 msgid "Passphrase input error"
 msgstr "Помилка при введенні пароля"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:213
 msgid "The two passphrases you entered were not the same. Please try again."
@@ -409,30 +409,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid "Enter random characters"
 msgstr "Введіть випадкові символи"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Зараз створюється ключ шифрування для ${DEVICE}"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:250
-msgid ""
-"This process requires the system to have large amounts of collected "
-"randomness (\"entropy\"), of which there is likely too little at this stage "
-"of the installation."
-msgstr ""
-"Для цього процесу потрібна велика кількість накопичених системою випадкових "
-"даних („ентропії“); цих даних, мабуть, мало на цьому етапі встановлення."
-
-#. Type: entropy-text
-#. Description
-#: ../partman-crypto.templates:250
+#: ../partman-crypto.templates:246
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -444,25 +433,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:263
+#: ../partman-crypto.templates:255
 msgid "Keyfile creation failure"
 msgstr "Не вдалося створити файл ключа"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:263
+#: ../partman-crypto.templates:255
 msgid "An error occurred while creating the keyfile."
 msgstr "Виникла помилка під час створення файла ключа."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid "Encryption configuration failure"
 msgstr "Не вдалося налаштувати шифрування"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -474,7 +463,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:268
+#: ../partman-crypto.templates:260
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -483,13 +472,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid "Are you sure you want to use a random key?"
 msgstr "Ви впевнені, що хочете використовувати випадковий ключ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -499,7 +488,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:279
+#: ../partman-crypto.templates:271
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -507,3 +496,12 @@ msgstr ""
 "Використання випадкового ключа означає що розділ буде знищуватися при "
 "кожному перезавантаженні. Це повинно використовуватись лише для розділів "
 "підкачки."
+
+#~ msgid ""
+#~ "This process requires the system to have large amounts of collected "
+#~ "randomness (\"entropy\"), of which there is likely too little at this "
+#~ "stage of the installation."
+#~ msgstr ""
+#~ "Для цього процесу потрібна велика кількість накопичених системою "
+#~ "випадкових даних („ентропії“); цих даних, мабуть, мало на цьому етапі "
+#~ "встановлення."

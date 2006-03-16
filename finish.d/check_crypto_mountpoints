@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Show an error if the root filesystem is to be stored on an encrypted 
-# partition, which is still unimplemented.
+# Show an error if the root or /boot filesystems are to be stored on an 
+# encrypted partition. / on crypto is still unimplemented.
 
 . /lib/partman/definitions.sh
 

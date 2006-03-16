@@ -1,0 +1,14 @@
+
+ o Mountpoints and fs options for encrypted partitions are not remembered
+   when partman restarts.
+
+ o Options like mountpoint are not removed when method changes to swap.
+   This makes it impossible for the user to correct /-on-crypto or /boot-
+   on-crypto errors.
+
+ o dd_progress_pipe eats too much memory. This actually seems to be a
+   kernel problem with loop-AES. Just dd if=/dev/zero of=/dev/loop0 bs=4k
+   on ncrypted loop can cause OOM. There is a huge increase of bio and 
+   biovec-1 in slabinfo, maybe related to x86_64 bio OOM problems some 
+   people reported on lkml (fixed after 2.6.15)?
+ 

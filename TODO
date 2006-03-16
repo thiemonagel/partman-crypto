@@ -26,9 +26,16 @@ IMPORTANT (must be solved before beta)
 
 GENERAL
 -------
-  
+ 
+  o Make it possible to de-allocate (losetup -d, cryptsetup ..)
+    encrypted partitions.
+ 
+  o Should it be possible to put partman disks or partitions into
+    a "locked" state when they are used for encryption/LVM/MD ?
+    partman currently warns but does not prevent changes.
+ 
   o Understand and add undo.d scripts if required
-  
+ 
 FEATURES
 --------
 
@@ -49,8 +56,6 @@ FEATURES
   o partman-auto-crypto
 
   o Support for plain dm-crypt and LUKS
-    - Needs seperate keysize, hashfunc questions?
-    - Which type of keys should we use for dm-crypt? Wesley said 
-      that hashed passphrases are not very good. Can we use some
-      kind of keyfiles instead?
+    - Needs separate keysize, hashfunc questions
+    - http://lists.debian.org/debian-boot/2006/03/msg00235.html ff.
 

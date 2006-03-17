@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-11 19:02-0700\n"
+"POT-Creation-Date: 2006-03-16 18:39-0700\n"
 "PO-Revision-Date: 2006-02-11 12:36+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -499,14 +499,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:271
+#: ../partman-crypto.templates:282
 msgid "Are you sure you want to use a random key?"
 msgstr ""
 "Sind Sie sicher, dass Sie einen zufälligen Schlüssel verwenden möchten?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:271
+#: ../partman-crypto.templates:282
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -516,7 +516,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:271
+#: ../partman-crypto.templates:282
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."

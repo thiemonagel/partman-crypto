@@ -6,9 +6,21 @@
    This makes it impossible for the user to correct /-on-crypto or /boot-
    on-crypto errors.
 
- o dd_progress_pipe eats too much memory. This actually seems to be a
-   kernel problem with loop-AES. Just dd if=/dev/zero of=/dev/loop0 bs=4k
-   on ncrypted loop can cause OOM. There is a huge increase of bio and 
-   biovec-1 in slabinfo, maybe related to x86_64 bio OOM problems some 
-   people reported on lkml (fixed after 2.6.15)?
- 
+ o Partition erase eats too much memory and causes OOM. Might be a kernel
+   problem with loop-AES. Just dd if=/dev/zero of=/dev/loop0 bs=4k on 
+   encrypted loop reproducible triggers it (64mb system). There is a big 
+   increase of bio and biovec-1 in slabinfo just before OOM. Maybe related
+   to bio OOM problems some people reported on lkml (fixed after 2.6.15)?
+
+   Perhaps it's not caused by loop-AES: dd to /dev/hda1 in low memory
+   conditions can sometimes also trigger OOM. Can't be scsi_cmd leak as
+   the problem also shows with IDE. skbuff_head_cache looks normal. 
+   Debug dumps: http://nusquama.org/~max/d-i/oom-debug
+
+   Andrew Morton Re: 2.6.15.2:
+   (http://groups.google.de/group/linux.kernel/msg/444d1c086feab026)
+     There remain some box-killing bugs:
+     - The scsi_cmd leak
+     - The BIO-uses-ZONE_DMA-hence-oom-killing bug
+     - A skbuff_head_cache leak causes oom-killings. 
+

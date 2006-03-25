@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-16 18:39-0700\n"
-"PO-Revision-Date: 2006-02-11 12:36+0100\n"
+"PO-Revision-Date: 2006-03-24 21:29+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,13 +63,13 @@ msgstr "Schlüsselgröße für diese Partition:"
 #. Description
 #: ../partman-crypto.templates:53
 msgid "Encryption key:"
-msgstr "Verschlüsselungsschlüssel:"
+msgstr "Schlüssel:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:58
 msgid "Type of encryption key for this partition:"
-msgstr "Typ des Verschlüsselungsschlüssels für diese Partition:"
+msgstr "Typ des Schlüssels für diese Partition:"
 
 #. Type: text
 #. Description
@@ -286,9 +286,8 @@ msgid ""
 "parts of the encryption key or passphrase."
 msgstr ""
 "Dies ist ein schwerwiegender Fehler, da sensible Daten unverschlüsselt auf "
-"die Platte geschrieben werden könnten. Das würde es jemanden mit Zugriff auf "
-"die Platte erlauben, Teile des Verschlüsselungsschlüssels oder der "
-"Passphrase auszulesen."
+"die Platte geschrieben werden könnten. Das würde es jemandem mit Zugriff auf "
+"die Platte erlauben, Teile des Schlüssels oder der Passphrase auszulesen."
 
 #. Type: error
 #. Description
@@ -345,7 +344,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:207
 msgid "Re-enter passphrase to verify:"
-msgstr "Neueingabe der Passphrase zur Überprüfung:"
+msgstr "Erneute Eingabe der Passphrase zur Überprüfung:"
 
 #. Type: password
 #. Description
@@ -361,7 +360,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:213
 msgid "Passphrase input error"
-msgstr "Passphrase-Eingabefehler"
+msgstr "Passphrasen-Eingabefehler"
 
 #. Type: error
 #. Description
@@ -385,7 +384,7 @@ msgid ""
 "empty passphrase."
 msgstr ""
 "Sie haben eine leere Passphrase eingegeben. Dies ist nicht erlaubt. Bitte "
-"wählen Sie eine nichtleere Passphrase."
+"wählen Sie eine nicht-leere Passphrase."
 
 #. Type: boolean
 #. Description
@@ -417,8 +416,7 @@ msgstr "Geben Sie zufällige Zeichen ein um fortzufahren"
 #. Description
 #: ../partman-crypto.templates:234
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr ""
-"Der Verschlüsselungsschlüssel für ${DEVICE} wird jetzt erzeugt. (${PROGRESS})"
+msgstr "Der Schlüssel für ${DEVICE} wird jetzt erzeugt. (${PROGRESS})"
 
 #. Type: string
 #. Description
@@ -443,7 +441,7 @@ msgstr "Geben Sie zufällige Zeichen ein"
 #. Description
 #: ../partman-crypto.templates:246
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Der Verschlüsselungsschlüssel für ${DEVICE} wird jetzt erzeugt."
+msgstr "Der Schlüssel für ${DEVICE} wird jetzt erzeugt."
 
 # FIXME: ähnlich zu obigem Text.
 #. Type: entropy-text

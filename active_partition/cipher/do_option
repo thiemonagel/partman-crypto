@@ -8,8 +8,25 @@ part=$dev/$id
 
 cd $dev
 
-module_available () {
-    test -f /var/run/partman-crypto/modules/$1
+modules=/var/run/partman-crypto/modules
+
+module_is_loaded () {
+    test -f $modules/$1
+}
+
+load_modules () {
+    cipher_dir=$1
+    for module in $(cat $cipher_dir/module); do
+        if ! module_is_loaded $module; then
+            if modprobe -q $module; then
+                touch $modules/$module
+            else
+                rm -f $modules/$module
+                return 1
+            fi
+        fi
+    done
+    return 0
 }
 
 select_cipher () {
@@ -17,12 +34,10 @@ select_cipher () {
     ciphers=""
     for cipher_dir in /lib/partman/ciphers/$type/*; do
         if [ -f $cipher_dir/module ]; then
-            module=$(cat $cipher_dir/module)
-            if ! module_available $module; then
+            if ! load_modules $cipher_dir; then
                 continue
             fi
         fi
-
         name=${cipher_dir##*/}
         desc=$(cat $cipher_dir/desc)
         if [ "$ciphers" ]; then

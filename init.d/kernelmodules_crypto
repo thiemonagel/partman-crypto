@@ -1,4 +1,7 @@
 #!/bin/sh -e
+# This scripts loads the modules required for the default setups
+# of loop-AES, dm-crypt and LUKS. Other optional modules will be
+# loaded later in active_partition/cipher/do_option.
 
 modules=/var/run/partman-crypto/modules
 if [ -d $modules ]; then
@@ -17,11 +20,6 @@ load_module () {
  
 # loop-AES module (includes AES)
 load_module loop-aes
-
-# These are optional ciphers for loop-AES
-load_module loop_serpent
-load_module loop_twofish
-load_module loop_blowfish
 
 # TODO: add modules required for dm-crypt, and luks
 

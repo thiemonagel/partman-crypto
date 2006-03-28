@@ -1,1 +1,1 @@
-loop_twofish
+loop-aes loop_twofish

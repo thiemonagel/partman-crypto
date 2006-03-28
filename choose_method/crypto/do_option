@@ -18,5 +18,19 @@ case $type in
         [ -f $part/cipher ] || echo AES128 > $part/cipher
         [ -f $part/keytype ] || echo keyfile > $part/keytype
         ;;
+    dm-crypt)
+	[ -f $part/cipher ] || echo aes > $part/cipher
+	[ -f $part/keysize ] || echo 256 > $part/keysize
+	[ -f $part/ivalgorithm ] || echo cbc-essiv:sha256 > $part/ivalgorithm
+	[ -f $part/keytype ] || echo passphrase > $part/keytype
+	[ -f $part/keyhash ] || echo sha256 > $part/keyhash
+	;;
+    luks)
+	[ -f $part/cipher ] || echo aes > $part/cipher
+	[ -f $part/keysize ] || echo 256 > $part/keysize
+	[ -f $part/ivalgorithm ] || echo cbc-essiv:sha256 > $part/ivalgorithm
+	[ -f $part/keytype ] || echo passphrase > $part/keytype
+	[ -f $part/keyhash ] || echo sha256 > $part/keyhash
+	;;
 esac
 

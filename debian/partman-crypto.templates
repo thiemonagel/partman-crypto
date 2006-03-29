@@ -48,14 +48,32 @@ Type: select
 Choices: ${choices}
 _Description: Key size for this partition:
 
+Template: partman-crypto/text/specify_ivalgorithm
+Type: text
+Description: IV algorithm:
+
+Template: partman-crypto/ivalgorithm
+Type: select
+Choices: ${choices}
+Description: IV generation algorithm for this partition:
+
 Template: partman-crypto/text/specify_keytype
 Type: text
 _Description: Encryption key:
 
 Template: partman-crypto/keytype
 Type: select
-Choices: ${CHOICES}
+Choices: ${choices}
 _Description: Type of encryption key for this partition:
+
+Template: partman-crypto/text/specify_keyhash
+Type: text
+Description: Encryption key hash:
+
+Template: partman-crypto/keyhash
+Type: select
+Choices: ${choices}
+Description: Type of encryption key hash for this partition:
 
 Template: partman-crypto/text/erase_data
 Type: text
@@ -237,9 +255,6 @@ _Description: Enter random characters to continue
  You can help speed up the process by entering random data on the
  keyboard to fill the randomness pool and continuing once in a while.
  This dialog will recur until enough keydata has been collected.
-
-Template: partman-crypto/keysize
-Type: string
 
 Template: partman-crypto/entropy-text
 Type: entropy-text

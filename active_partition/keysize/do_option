@@ -3,47 +3,19 @@
 # This script handles selecting the keysize for crypt_types that use
 # variable keysize ciphers (ie. not loop-AES)
 
-. /lib/partman/definitions.sh
+. /lib/partman/crypto_tools.sh
 
 dev=$2
 id=$3
 part=$dev/$id
 
-cd $dev
-
 [ -f $part/method ] || exit 0
 [ -f $part/cipher ] || exit 0
-
-select_keysize () {
-    type=$1
-    cipher=$2
-    keysizes=
-    for keysize in $(cat /lib/partman/ciphers/$type/$cipher/keysize) do
-        if [ "$keysizes" ]; then
-           keysizes="$keysizes, $keysize"
-        else
-           keysizes="$keysize"
-        fi
-    done
-
-    template="partman-crypto/keysize"
-    db_subst $template choices $keysizes
-    db_input critical $template || true
-    db_go || return
-    db_get $template
-    if [ "$RET" = none ]; then
-        rm -f $part/keysize
-        return
-    fi
-    
-    echo $RET > $part/keysize
-}
-
 method=$(cat $part/method)
 cipher=$(cat $part/cipher)
 
 if [ "${method%/*}" = crypto ]; then
     type=${method#*/}
-    select_keysize $type $cipher
+    crypto_dooption $part $type $cipher "keysize"
 fi
 

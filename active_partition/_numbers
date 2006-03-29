@@ -1,5 +1,7 @@
 45 cipher
 46 keysize
-47 keytype
-48 erase
+47 ivalgorithm
+48 keytype
+49 keyhash
+50 erase
 85 erasepart

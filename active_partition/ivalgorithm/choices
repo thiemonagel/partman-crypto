@@ -2,8 +2,8 @@
 
 . /lib/partman/crypto_tools.sh
 
-dev=$2
-id=$3
+dev=$1
+id=$2
 part=$dev/$id
 
 [ -f $part/method ] || exit 0
@@ -13,5 +13,5 @@ cipher=$(cat $part/cipher)
 
 if [ "${method%/*}" = crypto ]; then
     type=${method#*/}
-    crypto_dooption $part $type $cipher "keytype"
+    crypto_dochoice $part $type $cipher "ivalgorithm"
 fi

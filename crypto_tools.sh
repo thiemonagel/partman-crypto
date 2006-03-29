@@ -316,3 +316,64 @@ dev_erase_data () {
     return $ret
 }
 
+crypto_dochoice () {
+    local part type cipher option value
+
+    part=$1
+    type=$2
+    cipher=$3
+    option=$4
+
+    if [ ! -f /lib/partman/ciphers/$type/$cipher/$option ] && \
+       [ ! -f /lib/partman/ciphers/$type/$option ]; then
+        exit 0
+    fi
+
+    if [ -f $part/$option ]; then
+        value=$(cat $part/$option)
+    else
+        db_metaget partman-basicfilesystems/text/no_mountpoint description
+        value="$RET" # "none"
+    fi
+
+    db_metaget partman-crypto/text/specify_$option description
+    RET=$(stralign -25 "$RET")
+    printf "$option\t%s%s\n" "$RET" "$value"
+}
+
+crypto_dooption () {
+    local part type cipher option altfile alternatives template
+
+    part=$1
+    type=$2
+    cipher=$3
+    option=$4
+
+    if [ -f /lib/partman/ciphers/$type/$cipher/$option ]; then
+        altfile="/lib/partman/ciphers/$type/$cipher/$option"
+    else
+        altfile="/lib/partman/ciphers/$type/$option"
+    fi
+
+    alternatives=""
+    for i in $(cat $altfile); do
+        if [ "$alternatives" ]; then
+            alternatives="$alternatives, $i"
+        else
+            alternatives="$i"
+        fi
+    done
+
+    template="partman-crypto/$option"
+    db_subst $template choices $alternatives
+    db_input critical $template || true
+    db_go || exit 0
+    db_get $template
+
+    if [ "$RET" = none ]; then
+        rm -f $part/$option
+        return
+    fi
+
+    echo $RET > $part/$option
+}

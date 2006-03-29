@@ -33,6 +33,9 @@ select_cipher () {
     type=$1
     ciphers=""
     for cipher_dir in /lib/partman/ciphers/$type/*; do
+        if [ ! -d $cipher_dir ]; then
+            continue
+        fi
         if [ -f $cipher_dir/module ]; then
             if ! load_modules $cipher_dir; then
                 continue

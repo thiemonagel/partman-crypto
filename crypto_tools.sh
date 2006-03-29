@@ -2,21 +2,53 @@
 
 . /usr/share/debconf/confmodule
 
-#CRYPT_TYPES="loop-AES dm-crypt luks"
-CRYPT_TYPES="loop-AES"
+CRYPT_TYPES="loop-AES dm-crypt luks"
+
+dm_is_safe() {
+    # Might be non-encrypted, e.g. LVM2
+    local type
+
+    if [ -x /sbin/dmsetup ]; then
+        type=$(/sbin/dmsetup table $swap | head -1 | cut -d " " -f3)
+        if [ $type = crypt ]; then
+            return 0
+        fi
+    fi
+    return 1
+}
+
+loop_is_safe() {
+    # TODO
+    return 0
+}
 
 swap_is_safe () {
-    local swap ret
+    local swap
+    local ret=0
     local IFS="
 "
-    ret=0
+
     for swap in $(cat /proc/swaps); do
-       case $swap in
-         Filename*) ;;      # header
-         /dev/loop*) ;;     # OK
-         /dev/mapper/*) ;;  # XX could be LVM2 ?
-         *) ret=1 ;;	    # probably not OK
-       esac
+        case $swap in
+            Filename*)
+              # Header
+              continue
+              ;;
+            /dev/loop*)
+              if ! loop_is_safe $swap; then
+                  ret=1
+              fi
+              ;;
+            /dev/mapper/*)
+              if ! dm_is_safe $swap; then
+                  ret=1
+              fi
+              ;;
+            *)
+              # Presumably not OK
+              ret=1
+              ;;
+        esac
     done
 
     return $ret
@@ -37,6 +69,15 @@ get_free_loop () {
     for n in 0 1 2 3 4 5 6 7; do
         if eval [ -z "\$loop$n" ]; then
             echo /dev/loop/$n
+            break
+        fi
+    done
+}
+
+get_free_mapping() {
+    for n in 0 1 2 3 4 5 6 7; do
+        if [ ! -b "/dev/mapper/crypt$n" ]; then
+            echo "crypt$n"
             break
         fi
     done
@@ -71,11 +112,53 @@ setup_loopaes () {
 }
 
 setup_dmcrypt () {
-    : TODO
+    local mapping device cipher iv hash size pass
+    mapping=$1
+    device=$2
+    cipher=$3
+    iv=$4
+    hash=$5
+    size=$6
+    pass=$7
+
+    [ -x /sbin/cryptsetup ] || return 1
+
+    log-output -t partman-crypto \
+    /sbin/cryptsetup -c $cipher-$iv -h $hash -s $size create $mapping $device < $pass
+    if [ $? -ne 0 ] ; then
+        log "cryptsetup failed"
+        return 2
+    fi
+
+    return 0
 }
 
 setup_luks () {
-    : TODO
+    local mapping device cipher iv size pass
+    mapping=$1
+    device=$2
+    cipher=$3
+    iv=$4
+    size=$5
+    pass=$6
+
+    [ -x /sbin/cryptsetup ] || return 1
+
+    log-output -t partman-crypto \
+    /sbin/cryptsetup -c $cipher-$iv -s $size luksFormat $device $pass
+    if [ $? -ne 0 ] ; then
+        log "luksFormat failed"
+        return 2
+    fi
+
+    log-output -t partman-crypto \
+    /sbin/cryptsetup -d $pass luksOpen $device $mapping
+    if [ $? -ne 0 ] ; then
+        log "luksOpen failed"
+        return 2
+    fi
+
+    return 0
 }
 
 setup_cryptdev () {
@@ -85,17 +168,33 @@ setup_cryptdev () {
     cipher=$3
     keytype=$4
 
+    for opt in "keyfile ivalgorithm keyhash keysize"; do
+        eval local $opt
+        
+        if [ -r "$id/$opt" ]; then
+            eval $opt=$(cat $id/$opt)
+        else
+            eval $opt=""
+        fi
+    done
+
     case $type in
         dm-crypt)
-          # TODO: crypt_name ?
-          cryptdev=/dev/mapper/XXX
-          setup_dmcrypt $cryptdev $realdev $cipher || return 1
+          cryptdev=$(get_free_mapping)
+          if [ -z "$cryptdev" ]; then
+              return 1
+          fi
+          setup_dmcrypt $cryptdev $realdev $cipher $iv $hash $size $pass || return 1
+          cryptdev="/dev/mapper/$cryptdev"
           ;;
 
         luks)
-          # TODO: crypt_name ?
-          cryptdev=/dev/mapper/ZZZ
-          setup_luks $cryptdev $realdev $cipher || return 1
+          cryptdev=$(get_free_mapping)
+          if [ -z "$cryptdev" ]; then
+              return 1
+          fi
+          setup_luks $cryptdev $realdev $cipher $iv $size $pass || return 1
+          cryptdev="/dev/mapper/$cryptdev"
           ;;
       
         loop-AES)
@@ -103,16 +202,9 @@ setup_cryptdev () {
           if [ -z "$cryptdev" ]; then
               return 1
           fi
-
-          case $keytype in
-            random)
+          if [ $keytype = random ]; then
               keyfile=""
-              ;;
-            keyfile)
-              keyfile=$(cat $id/keyfile)
-              ;;
-          esac
-
+          fi
           setup_loopaes $cryptdev $realdev $cipher $keyfile || return 1
           ;;
 

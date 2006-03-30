@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-16 18:39-0700\n"
+"POT-Creation-Date: 2006-03-29 18:35-0700\n"
 "PO-Revision-Date: 2006-02-22 15:54+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -56,49 +56,49 @@ msgstr "Розмір ключа для цього розділу:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:53
+#: ../partman-crypto.templates:62
 msgid "Encryption key:"
 msgstr "Ключ шифрування:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:58
+#: ../partman-crypto.templates:67
 msgid "Type of encryption key for this partition:"
 msgstr "Тип ключа шифрування для цього розділу:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:88
+#: ../partman-crypto.templates:106
 msgid "Setting up encryption..."
 msgstr "Налаштування шифрування..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:92
+#: ../partman-crypto.templates:110
 msgid "Configure encrypted volumes"
 msgstr "Налаштувати зашифровані томи"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:96
+#: ../partman-crypto.templates:114
 msgid "No partitions to encrypt"
 msgstr "Нема розділів для шифрування"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:96
+#: ../partman-crypto.templates:114
 msgid "No partitions have been selected for encryption."
 msgstr "Жоден розділ не вибраний для шифруванняю"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:101
+#: ../partman-crypto.templates:119
 msgid "Required programs missing"
 msgstr "Відсутня необхідна програма"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:101
+#: ../partman-crypto.templates:119
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypt to function correctly."
@@ -108,13 +108,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:107
+#: ../partman-crypto.templates:125
 msgid "Required encryption options missing"
 msgstr "Відсутня необхідна опція шифрування"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:107
+#: ../partman-crypto.templates:125
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -127,19 +127,19 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:118
+#: ../partman-crypto.templates:136
 msgid "missing"
 msgstr "відсутня"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:122
+#: ../partman-crypto.templates:140
 msgid "Encryption package installation failure"
 msgstr "Не вдалося встановити пакунок шифрування"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:122
+#: ../partman-crypto.templates:140
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -149,7 +149,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:122
+#: ../partman-crypto.templates:140
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -161,13 +161,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:133
+#: ../partman-crypto.templates:151
 msgid "Write the changes to disks and configure encrypted volumes?"
 msgstr "Записати зміни на диски та налаштувати зашифровані томи?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:133
+#: ../partman-crypto.templates:151
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -177,19 +177,19 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:133
+#: ../partman-crypto.templates:151
 msgid "${ITEMS}"
 msgstr "${ITEMS}"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:148
+#: ../partman-crypto.templates:166
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "Залишити поточні таблиці розділів та налаштувати зашифровані томи?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:148
+#: ../partman-crypto.templates:166
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -202,67 +202,67 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:174
 msgid "Encrypted volumes configuration failure"
 msgstr "Не вдалося налаштувати зашифровані томи"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:174
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Виникла помилка під час налаштування зашифрованих томів."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:156
+#: ../partman-crypto.templates:174
 msgid "The configuration is aborted."
 msgstr "Налагодження перервано."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:163
+#: ../partman-crypto.templates:181
 msgid "Encrypted volume initialisation failed"
 msgstr "Не вдалося ініціалізувати зашифровані томи"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:163
+#: ../partman-crypto.templates:181
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Виникла помилка під час активації зашифрованих томів."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:168
+#: ../partman-crypto.templates:186
 msgid "Passphrase"
 msgstr "Пароль"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:172
+#: ../partman-crypto.templates:190
 msgid "Keyfile (GnuPG)"
 msgstr "Файл ключа (GnuPG)"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:176
+#: ../partman-crypto.templates:194
 msgid "Random key"
 msgstr "Випадковий ключ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:198
 msgid "Unsafe swap space detected"
 msgstr "Знайдено небезпечний розділ підкачки"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:198
 msgid "An unsafe swap space has been detected."
 msgstr "Було знайдено небезпечний розділ підкачки."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:198
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -274,7 +274,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:198
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -286,19 +286,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:193
+#: ../partman-crypto.templates:211
 msgid "Encryption passphrase:"
 msgstr "Пароль шифрування:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:193
+#: ../partman-crypto.templates:211
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Ви повинні вибрати пароль для шифрування ${DEVICE}."
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:193
+#: ../partman-crypto.templates:211
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -311,7 +311,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:193
+#: ../partman-crypto.templates:211
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -322,13 +322,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:207
+#: ../partman-crypto.templates:225
 msgid "Re-enter passphrase to verify:"
 msgstr "Введіть пароль повторно для перевірки:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:207
+#: ../partman-crypto.templates:225
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -338,25 +338,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:213
+#: ../partman-crypto.templates:231
 msgid "Passphrase input error"
 msgstr "Помилка при введенні пароля"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:213
+#: ../partman-crypto.templates:231
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Два пароля, що ви їх ввели, не співпадають. Спробуйте знову."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:236
 msgid "Empty passphrase"
 msgstr "Пустий пароль"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:218
+#: ../partman-crypto.templates:236
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -369,13 +369,13 @@ msgstr ""
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:228
+#: ../partman-crypto.templates:246
 msgid "Use weak passphrase?"
 msgstr "Використовувати слабкий пароль?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:228
+#: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -385,19 +385,19 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:234
+#: ../partman-crypto.templates:252
 msgid "Enter random characters to continue"
 msgstr "Ведіть випадкові символи для продовження"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:234
+#: ../partman-crypto.templates:252
 msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
 msgstr "Зараз створюється ключ шифрування для ${DEVICE}. (${PROGRESS})"
 
 #. Type: string
 #. Description
-#: ../partman-crypto.templates:234
+#: ../partman-crypto.templates:252
 msgid ""
 "You can help speed up the process by entering random data on the keyboard to "
 "fill the randomness pool and continuing once in a while. This dialog will "
@@ -409,19 +409,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:261
 msgid "Enter random characters"
 msgstr "Введіть випадкові символи"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:261
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Зараз створюється ключ шифрування для ${DEVICE}"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:261
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -433,25 +433,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:270
 msgid "Keyfile creation failure"
 msgstr "Не вдалося створити файл ключа"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:255
+#: ../partman-crypto.templates:270
 msgid "An error occurred while creating the keyfile."
 msgstr "Виникла помилка під час створення файла ключа."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:260
+#: ../partman-crypto.templates:275
 msgid "Encryption configuration failure"
 msgstr "Не вдалося налаштувати шифрування"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:260
+#: ../partman-crypto.templates:275
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -463,7 +463,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:260
+#: ../partman-crypto.templates:275
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -472,13 +472,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:282
+#: ../partman-crypto.templates:297
 msgid "Are you sure you want to use a random key?"
 msgstr "Ви впевнені, що хочете використовувати випадковий ключ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:282
+#: ../partman-crypto.templates:297
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -488,7 +488,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:282
+#: ../partman-crypto.templates:297
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."

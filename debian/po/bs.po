@@ -14,19 +14,23 @@ msgstr ""
 "Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-03-29 18:35-0700\n"
-"PO-Revision-Date: 2006-02-28 01:56+0100\n"
+"PO-Revision-Date: 2006-04-02 23:47+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: 3\n"
+"X-Poedit-Language: Bosnian\n"
+"X-Poedit-Country: BOSNIA AND HERZEGOVINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:31
 msgid "not active"
-msgstr ""
+msgstr "nije aktivna"
 
 #. Type: text
 #. Description
@@ -85,9 +89,8 @@ msgstr "Nema particija za enkriptovanje"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:114
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Kernel programski paket nije odabran za instaliranje."
+msgstr "Particije nisu odabrane za enkripciju."
 
 #. Type: note
 #. Description
@@ -107,7 +110,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Nedostaju zahtjevane ekripcijske opcije"
 
 #. Type: error
 #. Description
@@ -129,9 +132,8 @@ msgstr "nedostaje"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:140
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "ELILO instalacija nije uspjela"
+msgstr "Neuspjela instalacija enkripcijskog paketa"
 
 #. Type: error
 #. Description
@@ -153,9 +155,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:151
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Zapisati izmjene na diskove i podesiti LVM?"
+msgstr "Zapisati izmjene na diskove i podesiti enkriptovane particije?"
 
 #. Type: boolean
 #. Description
@@ -199,37 +200,32 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Greška pri podešavanju LVM-a"
+msgstr "Greška pri podešavanju enkriptovanih particija"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Došlo je do greške prilikom zapisivanja izmjena na diskove."
+msgstr "Došlo je do greške prilikom podešavanja enkriptovanih particija."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Podešavanje RAIDA je obustavljeno."
+msgstr "Konfigurisanje je obustavljeno."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:181
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "ELILO instalacija nije uspjela"
+msgstr "Inicijalizacija enkriptovane particije nije uspjela"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:181
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Došlo je do greške prilikom zapisivanja izmjena na diskove."
+msgstr "Došlo je do greške prilikom postavljanja enkriptovanih particija."
 
 #. Type: text
 #. Description
@@ -253,13 +249,13 @@ msgstr "Slučajni ključ"
 #. Description
 #: ../partman-crypto.templates:198
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Pronađena nesigurna swap particija"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:198
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Pronađena je nesigurna swap particija."
 
 #. Type: error
 #. Description
@@ -269,6 +265,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Ovo je fatalna greška pošto osjetljivi podaci mogu biti zapisani na disk "
+"neenkriptovani. Ovo bi omogućilo nekome sa pristupom disku da povrati "
+"dijelove enkripcijskog ključa ili šifre."
 
 #. Type: error
 #. Description
@@ -278,6 +277,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Molim isključite swap particiju (npr. pokrećući swapoff) ili podesite "
+"enkriptovanu swap particiju i nakon toga ponovo pokrenite podešavanje "
+"enkriptovanih particija. Ovaj program će sada prekinuti."
 
 #. Type: password
 #. Description
@@ -312,12 +314,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Dobra šifra se sastoji od kombinacije slova, broje i znakova interpunkcije. "
+"Preporučuje se da šifre budu 20 ili više znakova duge."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:225
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Ponovo unesite šifru radi provjere:"
 
 #. Type: password
 #. Description
@@ -334,7 +338,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:231
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Greška pri unosu šifre"
 
 #. Type: error
 #. Description
@@ -347,7 +351,7 @@ msgstr "Šifre koje ste unijeli nisu iste. Molim ponovo unesite šifru."
 #. Description
 #: ../partman-crypto.templates:236
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Prazna šifra"
 
 #. Type: note
 #. Description
@@ -356,6 +360,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Unijeli ste praznu šifru, što nije dopušteno. Molim odaberite šifru koje "
+"nije prazna."
 
 #. Type: boolean
 #. Description
@@ -364,7 +370,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Koristiti slabu šifru?"
 
 #. Type: boolean
 #. Description
@@ -377,9 +383,8 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../partman-crypto.templates:252
-#, fuzzy
 msgid "Enter random characters to continue"
-msgstr "[Pritisnite enter za nastavak]"
+msgstr "Unesite nasumične znakove za nastavak"
 
 #. Type: string
 #. Description
@@ -395,18 +400,21 @@ msgid ""
 "fill the randomness pool and continuing once in a while. This dialog will "
 "recur until enough keydata has been collected."
 msgstr ""
+"Možete pomoći ubrzavanje procesa povremeno unoseći nasumične podatke preko "
+"tastature s ciljem povećanja potencijala nasumičnosti. Ovaj dijalog će se "
+"ponovo pojavljivati dok se ne skupi dovoljno podataka za ključ."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:261
 msgid "Enter random characters"
-msgstr ""
+msgstr "Unesite nasumične znakove"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:261
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Enkripcijski ključ za ${DEVICE} se sada kreira."
 
 #. Type: entropy-text
 #. Description
@@ -416,6 +424,9 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Možete pomoći ubrzavanje procesa unoseći nasumične podatke preko tastature "
+"ili samo čekajući dok se ne skupi dovoljno podataka za ključ. (NAPOMENA: ovo "
+"može dugo potrajati)"
 
 #. Type: error
 #. Description
@@ -434,9 +445,8 @@ msgstr "Došlo je do greške prilikom zapisivanja izmjena na diskove."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:275
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Greška pri podešavanju LVM-a"
+msgstr "Greška pri podešavanju enkripcije"
 
 #. Type: error
 #. Description
@@ -457,9 +467,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:297
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Da li sigurno želite sada izaći?"
+msgstr "Da li ste sigurni da želite koristiti nasumični ključ?"
 
 #. Type: boolean
 #. Description

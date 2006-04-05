@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Show an error if the root or /boot filesystems are to be stored on an 
-# encrypted partition. / on crypto is still unimplemented.
+# encrypted partition. encrypted / is unimplemented for loop-AES. /boot
+# can't be encrypted with either solution.
 
 . /lib/partman/definitions.sh
 
@@ -36,7 +37,7 @@ for dev in $DEVICES/*; do
         [ -f $realdevdir/method ] || continue
         method=$(cat $realdevdir/method)
 
-        if [ "${method%/*}" = crypto ] && [ $mnt = / ]; then
+        if [ "$method" = crypto/loop-AES ] && [ $mnt = / ]; then
             templ="partman-crypto/crypto_root_unimplemented"
             db_set $templ false
             db_fset $templ seen false

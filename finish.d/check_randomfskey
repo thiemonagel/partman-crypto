@@ -40,9 +40,6 @@ for dev in $DEVICES/*; do
 
         [ "${method%/*}" = crypto ] || continue
 
-        # only loop-AES supports random keys (check?!)
-        [ "$type" = loop-AES ] || continue
-
         if [ "$keytype" = random ] && [ -f $id/mountpoint ]; then
             mnt=$(cat $id/mountpoint)
             if [ $mnt = /tmp ]; then 

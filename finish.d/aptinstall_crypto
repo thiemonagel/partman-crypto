@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# Installs userspace tools and helper packages for encryption. This 
+# Installs userspace tools and helper packages in the target system. This 
 # is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
-# into the target system. Similarily for dm-crypt, it installs cryptsetup 
-# etc. (TODO).
+# for loop-AES and cryptsetup for dm-crypt/luks.
 
 . /lib/partman/definitions.sh
 
@@ -41,6 +40,7 @@ for dev in $DEVICES/*; do
         case $type in
             loop-AES)
                 loop_AES=yes
+                install_loopkeys $id/*.gpg
                 ;;
             dm-crypt)
                 dm_crypt=yes
@@ -49,11 +49,6 @@ for dev in $DEVICES/*; do
                 luks=yes
                 ;;
         esac
-
-	if [ "$type" = loop-AES ]; then
-	    install_loopkeys $id/*.gpg
-	fi
-
     done
     close_dialog
 done

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 . /lib/partman/definitions.sh
+. /lib/partman/crypto_tools.sh
 
 dev=$2
 id=$3
@@ -8,40 +9,18 @@ part=$dev/$id
 
 cd $dev
 
-modules=/var/run/partman-crypto/modules
-
-module_is_loaded () {
-    test -f $modules/$1
-}
-
-load_modules () {
-    cipher_dir=$1
-    for module in $(cat $cipher_dir/module); do
-        if ! module_is_loaded $module; then
-            if modprobe -q $module; then
-                touch $modules/$module
-            else
-                rm -f $modules/$module
-                return 1
-            fi
-        fi
-    done
-    return 0
-}
-
 select_cipher () {
     type=$1
     ciphers=""
     for cipher_dir in /lib/partman/ciphers/$type/*; do
+        name=${cipher_dir##*/}
         if [ ! -d $cipher_dir ]; then
             continue
         fi
-        if [ -f $cipher_dir/module ]; then
-            if ! load_modules $cipher_dir; then
-                continue
-            fi
+        # Load required kernel modules
+        if ! crypto_load_modules "$type" "$name"; then
+            continue
         fi
-        name=${cipher_dir##*/}
         desc=$(cat $cipher_dir/desc)
         if [ "$ciphers" ]; then
             ciphers="$ciphers, $name"

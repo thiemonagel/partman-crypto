@@ -377,3 +377,36 @@ crypto_dooption () {
 
     echo $RET > $part/$option
 }
+
+# Loads all modules for a given crypto type and cipher
+crypto_load_modules() {
+    local type cipher moduledir modulefile module
+    type=$1
+    cipher=$2
+    moduledir=/var/run/partman-crypto/modules
+
+    if [ ! -d $moduledir ]; then
+        mkdir -p $moduledir
+    fi
+
+    for modulefile in \
+      /lib/partman/ciphers/$type/module \
+      /lib/partman/ciphers/$type/$cipher/module; do 
+        [ -f $modulefile ] || continue
+        for module in $(cat $modulefile); do
+            if [ -f $moduledir/$module ]; then
+                # Already loaded
+                continue;
+            fi
+    
+            if modprobe -q $module; then
+                touch $moduledir/$module
+            else
+                rm -f $moduledir/$module
+                return 1
+            fi
+        done
+    done
+
+    return 0
+}

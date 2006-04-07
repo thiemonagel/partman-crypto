@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. /lib/partman/crypto_tools.sh
+
 type=$1
 dev=$2
 id=$3
@@ -34,3 +36,5 @@ case $type in
 	;;
 esac
 
+# Load the modules needed for the chosen crypt_type
+crypto_load_modules $type "$(cat $part/cipher)"

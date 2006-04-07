@@ -25,7 +25,7 @@ check_required_tools() {
             tools="/sbin/dmsetup /sbin/cryptsetup"
             ;;
         loop-AES)
-            tools="/usr/bin/gpg"
+            tools="/usr/bin/gpg /bin/base64"
             ;;
     esac
 

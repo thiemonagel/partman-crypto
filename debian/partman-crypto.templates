@@ -118,7 +118,7 @@ Template: partman-crypto/tools_missing
 Type: note
 _Description: Required programs missing
  This build of debian-installer does not include one or more programs
- that are required for partman-crypt to function correctly.
+ that are required for partman-crypto to function correctly.
 
 Template: partman-crypto/options_missing
 Type: error

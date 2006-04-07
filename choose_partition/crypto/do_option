@@ -39,19 +39,27 @@ check_required_tools() {
     done
 }
 
-options="cipher keytype"
+check_required_options() {
+    local id type list options
+    id=$1
+    type=$2
 
-crypt_options_complete () {
-    for opt in $options; do
-        [ -f $1/$opt ] || return 1
-    done
-    return 0
-}
+    options=""
+    case $type in
+        dm-crypt)
+            options="cipher keytype keyhash ivalgorithm keysize"
+            ;;
+        luks)
+            options="cipher keytype keyhash ivalgorithm keysize"
+            ;;
+        loop-AES)
+            options="cipher keytype"
+            ;;
+    esac
 
-missing_crypt_options () {
     list=""
     for opt in $options; do
-        [ -f $1/$opt ] && continue
+        [ -f $id/$opt ] && continue
         db_metaget partman-crypto/text/specify_$opt description || RET="$opt:"
         desc=$RET
         db_metaget partman-crypto/text/missing description || RET="missing"
@@ -63,7 +71,17 @@ $desc $value"
             list="$desc $value"
         fi
     done
-    echo "$list"
+
+    # If list is non-empty, at least one option is missing
+    if [ ! -z "$list" ]; then
+        templ="partman-crypto/options_missing"
+        db_fset $templ seen false
+        db_subst $templ DEVICE "$(humandev $path)"
+        db_subst $templ ITEMS "$list"
+        db_input critical $templ
+        db_go || true
+        exit 1
+    fi
 }
 
 # check crypto options
@@ -92,18 +110,10 @@ for dev in $DEVICES/*; do
             continue
         fi
         type=${method#*/}
-        check_required_tools $type
-
         crypt=yes
-        if ! crypt_options_complete $id; then
-            templ="partman-crypto/options_missing"
-            db_fset $templ seen false
-            db_subst $templ DEVICE "$(humandev $path)"
-            db_subst $templ ITEMS "$(missing_crypt_options $id)"
-            db_input critical $templ
-            db_go || true
-            exit 0
-        fi
+
+        check_required_tools $type
+        check_required_options $id $type
     done
 done
 
@@ -272,19 +282,15 @@ for dev in $DEVICES/*; do
     done
 done
 
-keyfile_name () {
-    local file
-    file=$(mapdevfs $1 | tr / _)
-    echo ${file#_}.gpg
-}
-
 create_keyfile () {
-    local dev file
+    local dev keytype keyfile keysize
     dev=$1
-    file=$2
-
+    keytype=$2
+    keyfile=$3
+    keysize=$4
+  
     test -x /bin/blockdev-keygen || return 1
-    /bin/blockdev-keygen "$(humandev $dev)" keyfile "$file" || return 2
+    /bin/blockdev-keygen "$(humandev $dev)" $keytype "$keyfile" $keysize || return 2
     return 0
 }
 
@@ -321,11 +327,18 @@ for dev in $DEVICES/*; do
         keytype=$(cat $id/keytype)
         cipher=$(cat $id/cipher)
 
-        if [ $keytype = keyfile ]; then
-            keyfile=$id/$(keyfile_name $path)
-
+        # Cryptsetup uses create_keyfile for all keytypes
+        if [ $keytype = keyfile ] || [ $type != loop-AES ]; then
+            keyfile=$(mapdevfs $path | tr / _)
+            if [ $type = loop-AES ]; then
+                keyfile="${keyfile#_}.gpg"
+            fi
             if [ ! -f $keyfile ]; then
-                create_keyfile $path $keyfile
+                if [ $type != loop-AES ]; then
+                    create_keyfile $path $keytype $keyfile $keysize
+                else
+                    create_keyfile $path $keytype $keyfile
+                fi
                 if [ $? -ne 0 ]; then
                     db_fset partman-crypto/commit_failed seen false
                     db_input critical partman-crypto/commit_failed
@@ -341,7 +354,7 @@ for dev in $DEVICES/*; do
         if [ ! -f $id/crypt_active ]; then
             log "setting up encrypted device for $path"
 
-            if ! setup_cryptdev $type $path $cipher $keytype; then
+            if ! setup_cryptdev $type $id $path; then
                 db_fset partman-crypto/commit_failed seen false
                 db_input critical partman-crypto/commit_failed
                 db_go || true

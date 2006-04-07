@@ -162,13 +162,12 @@ setup_luks () {
 }
 
 setup_cryptdev () {
-    local type realdev cipher keytype cryptdev
+    local type id realdev cryptdev
     type=$1
-    realdev=$2
-    cipher=$3
-    keytype=$4
+    id=$2
+    realdev=$3
 
-    for opt in "keyfile ivalgorithm keyhash keysize"; do
+    for opt in keytype cipher keyfile ivalgorithm keyhash keysize; do
         eval local $opt
         
         if [ -r "$id/$opt" ]; then
@@ -184,7 +183,7 @@ setup_cryptdev () {
           if [ -z "$cryptdev" ]; then
               return 1
           fi
-          setup_dmcrypt $cryptdev $realdev $cipher $iv $hash $size $pass || return 1
+          setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
           cryptdev="/dev/mapper/$cryptdev"
           ;;
 
@@ -193,7 +192,7 @@ setup_cryptdev () {
           if [ -z "$cryptdev" ]; then
               return 1
           fi
-          setup_luks $cryptdev $realdev $cipher $iv $size $pass || return 1
+          setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
           cryptdev="/dev/mapper/$cryptdev"
           ;;
       
@@ -210,7 +209,7 @@ setup_cryptdev () {
 
     esac
 
-    echo $cryptdev > $dev/$id/crypt_active
+    echo $cryptdev > $id/crypt_active
     return 0
 }
 

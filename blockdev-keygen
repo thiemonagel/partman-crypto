@@ -18,6 +18,7 @@
 
 . /usr/share/debconf/confmodule
 
+umask 077
 minlen=8
 
 passphrase_is_weak () {
@@ -32,17 +33,17 @@ get_passphrase () {
         templ="partman-crypto/passphrase"
         db_set $templ ""
         db_fset $templ seen false
-        db_subst $templ DEVICE "$device"
+        db_subst $templ DEVICE "$description"
         db_input critical $templ
         db_go || return 1
         db_get $templ || RET=''
         pass=$RET
         if [ -z "$pass" ]; then
-	    templ="partman-crypto/passphrase-empty"
-	    db_fset $templ seen false
-	    db_input critical $templ
-	    db_go || true
-    	    continue
+            templ="partman-crypto/passphrase-empty"
+            db_fset $templ seen false
+            db_input critical $templ
+            db_go || true
+            continue
         fi
     
         templ="partman-crypto/passphrase-again"
@@ -52,11 +53,11 @@ get_passphrase () {
         db_go || return 1
         db_get $templ || RET=''
         if [ "$pass" != "$RET" ]; then
-	    templ="partman-crypto/passphrase-mismatch"
-	    db_fset $templ seen false
-	    db_input critical $templ
-	    db_go || true
-    	    continue
+            templ="partman-crypto/passphrase-mismatch"
+            db_fset $templ seen false
+            db_input critical $templ
+            db_go || true
+            continue
         fi
 
         if passphrase_is_weak "$pass"; then
@@ -70,7 +71,7 @@ get_passphrase () {
         
             if [ "$RET" != true ]; then
                 # user doesn't want to force weak passphrase
-        	continue
+                continue
            fi
         fi
 
@@ -85,81 +86,71 @@ get_passphrase () {
     fi
 }
 
-keysize=2925
-
-# loop-AES 
-encode_keydata () {
-    base64
-}
-
-create_gnupg_keyfile () {
-    local file pass
-    file=$1
-    pass=$2
+read_random () {
+    local keybytes
+    keybytes=$1
 
     db_capb
     set -- $RET 
     for cap in $*; do
         if [ "$cap" = plugin-entropy-text ]; then
-	    fifo=/var/run/random.fifo
-	    use_entropy_plugin=yes
-	fi
+            use_entropy_plugin=yes
+        fi
     done
 
-    umask 077
+    if [ -z "$use_entropy_plugin" ]; then
+        db_fset partman-crypto/tools_missing seen false
+        db_input critical partman-crypto/tools_missing
+        db_go || true
+        return 1
+    fi
+
+    db_set partman-crypto/keysize $keysize
+    db_fset partman-crypto/entropy-text seen false
+    db_subst partman-crypto/entropy-text DEVICE "$description"
+    db_input critical partman-crypto/entropy-text
+    db_go || return 1
+
+    return 0
+}
+
+# Fifo provided by cdebconf-entropy plugins
+randfifo=/var/run/random.fifo
+
+gnupg_encrypt () {
+    local keyfile passfifo gpgopts
+    keyfile=$1
+    passfifo=$2
+    gpgopts="--batch --no-options --no-random-seed-file --no-default-keyring --keyring /dev/null --passphrase-fd 3 --symmetric -a"
+
+    while [ ! -p $randfifo ]; do 
+        sleep 1
+    done
+
+    base64 < $randfifo | gpg $gpgopts 3< $passfifo > $keyfile
+}
+
+# Creates a GnuPG keyfile for use by loop-AES.
+# (v3 key format: 2925 bytes in base64)
+create_gnupg_keyfile () {
+    local file pass passfifo pid
+    file=$1
+    pass=$2
 
     passfifo=$file.pass
     if [ ! -p $passfifo ]; then
         mknod $passfifo p
-	chmod 0600 $passfifo
+        chmod 0600 $passfifo
     fi
 
-    # for gpg
+    # Fork off gnupg encrypting pipe
     echo -n "$pass" > $passfifo &
+    gnupg_encrypt $file $passfifo &
+    pid=$!
 
-    if [ $use_entropy_plugin ]; then
-        (while sleep 1; do
-	  if [ -p $fifo ]; then
-	    dd if=$fifo bs=1 count=$keysize 2>/dev/null | encode_keydata |
-	      gpg --batch --no-options --passphrase-fd 3 \
-	        --symmetric -a 3< $passfifo > $file 2> /dev/null
-	    break
-	  fi
-	done) &
-
-	pid=$!
-
-	db_set partman-crypto/keysize $keysize
-	db_fset partman-crypto/entropy-text seen false
-	db_subst partman-crypto/entropy-text DEVICE "$device"
-	db_input critical partman-crypto/entropy-text
-	db_go || failed=1
-    else
-        (dd if=/dev/random bs=1 count=$keysize 2>/dev/null | encode_keydata | 
-	  gpg --batch --no-options --passphrase-fd 3 \
-	    --symmetric -a 3< $passfifo > $file 2> /dev/null
-	) &
-
-        pid=$!
-	
-	n=0
-        while kill -0 $pid 2>/dev/null; do
-            db_set partman-crypto/need_more_entropy ""
-            db_fset partman-crypto/need_more_entropy seen false
-            db_subst partman-crypto/need_more_entropy DEVICE "$device"
-            db_subst partman-crypto/need_more_entropy PROGRESS $n
-	    db_input critical partman-crypto/need_more_entropy
-	    db_go || failed=1
-	    n=$((n+1))
-        done
-    fi
-
-    if ! wait $pid; then
-        failed=1
-    fi
-
-    if [ $failed ]; then
-        kill -9 $pid
+    # Call plugin to feed randfifo
+    read_random 2925
+    if [ $? -ne 0 ] || !wait $pid; then
         rm $file
         return 1
     fi
@@ -169,11 +160,11 @@ create_gnupg_keyfile () {
     return 0
 }
 
-device=$1
+description=$1
 keyfile=$2
 
-if [ -z $device ]; then
-    echo "usage: $0 device [keyfile]"
+if [ -z "$description" ]; then
+    echo "usage: $0 description [keyfile]"
     exit 1
 fi
 

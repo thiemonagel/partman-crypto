@@ -1,5 +1,7 @@
 #!/bin/sh
 #
+# usage: $0 description keytype keyfile [keysize]
+#
 # This handles sensitive data that must not be swapped out
 # or written out to disk unencrypted.
 #
@@ -130,14 +132,14 @@ gnupg_encrypt () {
     base64 < $randfifo | gpg $gpgopts 3< $passfifo > $keyfile
 }
 
-# Creates a GnuPG keyfile for use by loop-AES.
+# Create a GnuPG keyfile for use by loop-AES.
 # (v3 key format: 2925 bytes in base64)
 create_gnupg_keyfile () {
-    local file pass passfifo pid
-    file=$1
+    local keyfile pass passfifo pid
+    keyfile=$1
     pass=$2
 
-    passfifo=$file.pass
+    passfifo=$keyfile.pass
     if [ ! -p $passfifo ]; then
         mknod $passfifo p
         chmod 0600 $passfifo
@@ -145,13 +147,13 @@ create_gnupg_keyfile () {
 
     # Fork off gnupg encrypting pipe
     echo -n "$pass" > $passfifo &
-    gnupg_encrypt $file $passfifo &
+    gnupg_encrypt $keyfile $passfifo &
     pid=$!
 
     # Call plugin to feed randfifo
     read_random 2925
     if [ $? -ne 0 ] || !wait $pid; then
-        rm $file
+        rm $keyfile
         return 1
     fi
 
@@ -160,33 +162,88 @@ create_gnupg_keyfile () {
     return 0
 }
 
-description=$1
-keyfile=$2
+# Create a one-time random keyfile for use during install
+create_random_keyfile() {
+    local keyfile keysize
+    keyfile=$1
+    keybytes=$2
 
-if [ -z "$description" ]; then
-    echo "usage: $0 description [keyfile]"
+    # Fork off file writer
+    (cat $randfifo > $keyfile) &
+    pid=$!
+
+    # Call plugin to feed randfifo
+    read_random $keybytes
+    if [ $? -ne 0 ] || !wait $pid; then
+        rm $keyfile
+        return 1
+    fi
+
+    return 0
+}
+
+problem_dialog () {
+    db_fset partman-crypto/keyfile-problem seen false
+    db_input critical partman-crypto/keyfile-problem
+    db_go || true
+}
+
+description=$1
+keytype=$2
+keyfile=$3
+keysize=$4
+
+if ! ([ "$description" ] && [ "$keytype" ] && [ "$keyfile" ]); then
+    # bad options
+    problem_dialog
     exit 1
 fi
 
 # Log available entropy
-logger -t partman-crypto available kernel entropy: $(cat /proc/sys/kernel/random/entropy_avail) bits
+logger -t partman-crypto "kernel entropy_avail: $(cat /proc/sys/kernel/random/entropy_avail) bits"
 
-pass=$(get_passphrase)
-if [ -z "$pass" ]; then
-    db_fset partman-crypto/keyfile-problem seen false
-    db_input critical partman-crypto/keyfile-problem
-    db_go || true
-    exit 1
-fi
+case $keytype in
+    keyfile)
+        pass=$(get_passphrase)
+        if [ -z "$pass" ]; then
+            problem_dialog
+            exit 1
+        fi
+        if ! create_gnupg_keyfile $keyfile "$pass"; then
+            problem_dialog
+            exit 1
+        fi
+        ;;
 
-if [ -z $keyfile ]; then
-    echo -n "$pass"
-else
-    if ! create_gnupg_keyfile $keyfile "$pass"; then
-        db_fset partman-crypto/keyfile-problem seen false
-        db_input critical partman-crypto/keyfile-problem
-        db_go || true
+    passphrase)
+        pass=$(get_passphrase)
+        if [ -z "$pass" ]; then
+            problem_dialog
+            exit 1
+        fi
+        echo -n "$pass" > $keyfile
+        ;;
+
+    random)
+        if [ -z "$keysize" ]; then
+            problem_dialog
+            exit 1
+        fi
+        # Round keysize up to closest byte
+        keysize=$(( (keysize + 7)/8 ))
+        if [ $keysize -lt 1 ]; then
+            # keysize invalid
+            problem_dialog
+            exit 1
+        fi
+        if ! create_random_keyfile $keyfile $keysize; then
+            problem_dialog
+            exit 1
+        fi
+        ;;
+
+    *)
+        problem_dialog
         exit 1
-    fi
-fi
-
+        ;;
+esac

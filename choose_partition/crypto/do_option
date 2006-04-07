@@ -284,7 +284,7 @@ create_keyfile () {
     file=$2
 
     test -x /bin/blockdev-keygen || return 1
-    /bin/blockdev-keygen "$(humandev $dev)" "$file" || return 2
+    /bin/blockdev-keygen "$(humandev $dev)" keyfile "$file" || return 2
     return 0
 }
 

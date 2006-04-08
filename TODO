@@ -24,6 +24,13 @@ IMPORTANT (must be solved before beta)
       mount, no fstab hacking required in finish.d/fstab_loop.
       Could cryptsetup be used?
 
+    3 Allow mount to re-use existing loop devices. This would
+      make it possible to losetup -F and fsck the loop devices
+      in an init script without further changes to the setup.
+      See discussion starting in
+      http://thread.gmane.org/gmane.linux.cryptography/1833/focus=1833
+
+
 GENERAL
 -------
  

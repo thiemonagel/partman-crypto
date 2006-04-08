@@ -169,7 +169,11 @@ create_random_keyfile() {
     keybytes=$2
 
     # Fork off file writer
-    (cat $randfifo > $keyfile) &
+    (while [ ! -p $randfifo ]; do 
+         sleep 1
+     done
+     cat $randfifo > $keyfile
+    ) &
     pid=$!
 
     # Call plugin to feed randfifo

@@ -1,43 +1,123 @@
 #!/bin/sh
 
-# This is a hack to change the devices of encrypted loop mounts in fstab
-# from /dev/loop/.. to their real devices.
+# This script does the following:
+# loop-AES:  changes the devices of encrypted loop mounts in fstab
+#            from /dev/loop/.. to their real devices and adjusts options.
+# dm-crypt:  creates /etc/crypttab entries
+# luks:      creates /etc/crypttab entries
 
 . /lib/partman/definitions.sh
 
-mount_options () {
-    local cryptdev cryptid cipher keyfile opts
-    cryptdev=$1
-    cryptdevdir=$2
-    devdir=$3
- 
-    cipher=$(cat $devdir/cipher)
-    keytype=$(cat $devdir/keytype)
- 
-    opts="loop=${cryptdev},encryption=${cipher}"
+loopaes_fix_fstab () {
+    local realdev realdevdir cryptdev cryptdevdir entry opts cipher keytype newopts keyfile mnt
+    realdev=$1
+    realdevdir=$2
+    cryptdev=$3
+    cryptdevdir=$4
+
+    entry=$(grep ^$cryptdev /target/etc/fstab)
+    if [ -z "$entry" ]; then
+        return 1
+    fi
+
+    cipher=$(cat $realdevdir/cipher)
+    keytype=$(cat $realdevdir/keytype)
+    
+    # add options
+    opts=$(set -- $entry && echo $4)
+    newopts="loop=${cryptdev},encryption=${cipher}"
 
     # add gpgkey= option if applicable
-    if [ $keytype = keyfile ] && [ -f $devdir/keyfile ]; then
-        keyfile=$(basename $(cat $devdir/keyfile))
-        opts="${opts},gpgkey=/etc/loopkeys/$keyfile"
+    if [ $keytype = keyfile ] && [ -f $realdevdir/keyfile ]; then
+        keyfile=$(basename $(cat $realdevdir/keyfile))
+        newopts="${newopts},gpgkey=/etc/loopkeys/$keyfile"
     fi
 
     # handle non-swap partitions with random key
     if [ $keytype = random ] && [ -f $cryptdevdir/mountpoint ]; then
         mnt=$(cat $cryptdevdir/mountpoint)
         if [ $mnt = /tmp ]; then
-            opts="${opts},phash=random/1777"
+            newopts="${newopts},phash=random/1777"
         else 
-            opts="${opts},phash=random"
+            newopts="${newopts},phash=random"
         fi
     fi
 
-    echo $opts
+    # insert the new options into fstab
+    # XXX: what happens for
+    # /dev/foo /path auto noauto
+    sed -i "\#^$cryptdev# { s#\($opts\)\([[:blank:]]\)#\1,$newopts\2# }" /target/etc/fstab
+
+    # replace loop with realdev
+    sed -i "s#^$cryptdev#$realdev#" /target/etc/fstab
+
+    return 0
+}
+
+add_crypttab_entry () {
+    local realdev realdevdir cryptdev cryptdevdir dmtype opts keyfile method mnt target source
+    realdev=$1
+    realdevdir=$2
+    cryptdev=$3
+    cryptdevdir=$4
+    dmtype=$5
+
+    # Set basic options
+    if [ $dmtype = luks ]; then
+        opts="luks"
+    elif [ $dmtype = dm-crypt ]; then
+        for opt in cipher keytype ivalgorithm keyhash keysize; do
+            eval local $opt
+            if [ -r "$realdevdir/$opt" ]; then
+                eval $opt=$(cat $realdevdir/$opt)
+            else
+                return 1
+            fi
+        done
+        opts="cipher=$cipher-$ivalgorithm,size=$keysize,hash=$keyhash"
+    else
+        return 1
+    fi
+
+    # Set key source
+    if [ $keytype = random ]; then
+        keyfile="/dev/random"
+    elif [ $keytype = passphrase ]; then
+        keyfile="none"
+    elif [ -f $realdevdir/keyfile ]; then
+        keyfile=$(cat $realdevdir/keyfile)
+    else
+        return 1
+    fi
+
+    # Check for special mounts
+    method=$(cat $cryptdevdir/method)
+    mnt=""
+    if [ -f $cryptdevdir/mountpoint ]; then
+        mnt=$(cat $cryptdevdir/mountpoint)
+    fi
+    if [ $method = swap ]; then
+        $opts="$opts,swap"
+    elif [ $mnt = /tmp ]; then
+        $opts="$opts,tmp"
+    fi
+
+    # Check mapping name
+    target=$(basename $cryptdev)
+
+    # Check source device
+    source=$realdev
+
+    # Add entry to crypttab
+    echo "$target $source $keyfile $opts" >> /target/etc/crypttab
 }
 
 for dev in $DEVICES/*; do
     [ -d "$dev" ] || continue
     cd $dev
+    # skip unless encrypted
+    [ -f crypt_realdev ] || continue
+
     partitions=
     open_dialog PARTITIONS
     while { read_line num id size type fs path name; [ "$id" ]; }; do
@@ -45,9 +125,6 @@ for dev in $DEVICES/*; do
         partitions="$partitions $id,$path"
     done
     close_dialog
-    
-    # "is crypto?"
-    [ -f crypt_realdev ] || continue
 
     for part in $partitions; do
         id=${part%,*}
@@ -58,6 +135,7 @@ for dev in $DEVICES/*; do
         realdev=$1
         realdevnum=$2
         realdevdir=$3
+        cryptdevdir=$dev/$id
 
         [ -f $realdevdir/cipher ] || continue
         [ -f $realdevdir/keytype ] || continue
@@ -71,28 +149,16 @@ for dev in $DEVICES/*; do
 
         m=$(cat $realdevdir/method)
         type=${m#*/}
-        if [ "$type" != loop-AES ]; then
-            continue
-        fi
-
         realdev=$(mapdevfs $realdev)
         cryptdev=$(mapdevfs $path)
-        entry=$(grep ^$cryptdev /target/etc/fstab)
 
-        if [ "$entry" ]; then
-            # add options
-            opts=$(set -- $entry && echo $4)
-            newopts=$(mount_options $cryptdev $dev/$id $realdevdir)
-            
-            # XXX: what happens for
-            # /dev/foo /path auto noauto
-            sed -i "\#^$cryptdev# { s#\($opts\)\([[:blank:]]\)#\1,$newopts\2# }" /target/etc/fstab
-
-            # replace loop with realdev
-            sed -i "s#^$cryptdev#$realdev#" /target/etc/fstab
-        fi
+        case $type in
+            loop-AES)
+                loopaes_fix_fstab $realdev $realdevdir $cryptdev $cryptdevdir
+                ;;
+            dm-crypt|luks)
+                add_crypttab_entry $realdev $realdevdir $cryptdev $cryptdevdir $type
+                ;;
+        esac
     done
 done
-
-# vim:set ts=4 sw=4 expandtab:
-

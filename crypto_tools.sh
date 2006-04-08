@@ -9,7 +9,7 @@ dm_is_safe() {
     local type
 
     if [ -x /sbin/dmsetup ]; then
-        type=$(/sbin/dmsetup table $swap | head -1 | cut -d " " -f3)
+        type=$(/sbin/dmsetup table $1 | head -1 | cut -d " " -f3)
         if [ $type = crypt ]; then
             return 0
         fi
@@ -18,8 +18,17 @@ dm_is_safe() {
 }
 
 loop_is_safe() {
-    # TODO
-    return 0
+    local opts
+
+    if [ -x /sbin/losetup-aes ]; then
+        opts=$(/sbin/losetup-aes $1 2>&1)
+        if [ $? -eq 0 ] && echo "$opts" | grep -q encryption=; then
+            # loop entry has an encryption= option, assume it's safe
+            return 0
+        fi
+    fi
+
+    return 1
 }
 
 swap_is_safe () {

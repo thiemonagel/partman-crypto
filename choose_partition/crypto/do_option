@@ -329,7 +329,7 @@ for dev in $DEVICES/*; do
 
         # Cryptsetup uses create_keyfile for all keytypes
         if [ $keytype = keyfile ] || [ $type != loop-AES ]; then
-            keyfile=$(mapdevfs $path | tr / _)
+            keyfile=$dev/$id/$(mapdevfs $path | tr / _)
             if [ $type = loop-AES ]; then
                 keyfile="${keyfile#_}.gpg"
             fi

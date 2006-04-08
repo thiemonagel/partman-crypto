@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-29 18:35-0700\n"
-"PO-Revision-Date: 2006-02-11 11:34+0100\n"
+"POT-Creation-Date: 2006-04-07 23:43-0600\n"
+"PO-Revision-Date: 2006-04-03 21:47+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -96,10 +96,10 @@ msgstr "Vyžadované programy chybí"
 #: ../partman-crypto.templates:119
 msgid ""
 "This build of debian-installer does not include one or more programs that "
-"are required for partman-crypt to function correctly."
+"are required for partman-crypto to function correctly."
 msgstr ""
 "Tato verze debian-installeru neobsahuje jeden nebo více programů nutných pro "
-"správnou funkci partma-crypt."
+"správnou funkci partman-crypto."
 
 #. Type: error
 #. Description
@@ -379,45 +379,21 @@ msgstr ""
 "Zadali jste přístupovou frázi, která obsahuje méně než ${MINIMUM} znaků, což "
 "se považuje za slabé. Měli byste si zvolit silnější frázi."
 
-#. Type: string
-#. Description
-#: ../partman-crypto.templates:252
-msgid "Enter random characters to continue"
-msgstr "Pro pokračování zadejte náhodné znaky"
-
-#. Type: string
-#. Description
-#: ../partman-crypto.templates:252
-msgid "The encryption key for ${DEVICE} is now being created. (${PROGRESS})"
-msgstr "Nyní se vytváří šifrovací klíč pro ${DEVICE}. (${PROGRESS})"
-
-#. Type: string
-#. Description
-#: ../partman-crypto.templates:252
-msgid ""
-"You can help speed up the process by entering random data on the keyboard to "
-"fill the randomness pool and continuing once in a while. This dialog will "
-"recur until enough keydata has been collected."
-msgstr ""
-"Vytváření klíče můžete urychlit zadáním náhodných znaků na klávesnici, což "
-"pomůže naplnit zdroj entropie. Poté můžete pokračovat. Tento dialog se bude "
-"objevovat do té doby, než se sesbírá dostatek náhodných dat."
-
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:261
+#: ../partman-crypto.templates:252
 msgid "Enter random characters"
 msgstr "Zadejte náhodné znaky"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:261
+#: ../partman-crypto.templates:252
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Nyní se vytváří šifrovací klíč pro ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:261
+#: ../partman-crypto.templates:252
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -429,25 +405,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:270
+#: ../partman-crypto.templates:261
 msgid "Keyfile creation failure"
 msgstr "Chyba při vytváření souboru s klíčem"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:270
+#: ../partman-crypto.templates:261
 msgid "An error occurred while creating the keyfile."
 msgstr "Během vytváření souboru s klíčem nastala chyba."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:275
+#: ../partman-crypto.templates:266
 msgid "Encryption configuration failure"
 msgstr "Chyba nastavení šifrování"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:275
+#: ../partman-crypto.templates:266
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -459,7 +435,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:275
+#: ../partman-crypto.templates:266
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -468,13 +444,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:297
+#: ../partman-crypto.templates:288
 msgid "Are you sure you want to use a random key?"
 msgstr "Jste si jisti, že chcete použít náhodný klíč?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:297
+#: ../partman-crypto.templates:288
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -484,7 +460,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:297
+#: ../partman-crypto.templates:288
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."

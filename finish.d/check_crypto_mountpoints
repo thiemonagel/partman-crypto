@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # Show an error if the root or /boot filesystems are to be stored on an 
 # encrypted partition. encrypted / is unimplemented for loop-AES. /boot
 # can't be encrypted with either solution.
@@ -25,8 +24,11 @@ for dev in $DEVICES/*; do
         path=${part#*,}
 
         [ -f $id/method ] || continue
-        [ -f $id/mountpoint ] || continue
-        mnt=$(cat $id/mountpoint)
+        # mountpoint could be none i.e. swap
+        mnt=
+        if [ -f $id/mountpoint ]; then
+            mnt=$(cat $id/mountpoint)
+        fi
 
         r=$(cat crypt_realdev)
         set -- $(IFS=: && echo $r)
@@ -36,8 +38,12 @@ for dev in $DEVICES/*; do
 
         [ -f $realdevdir/method ] || continue
         method=$(cat $realdevdir/method)
+        type=${method#*/}
+        method=${method%/*}
+        [ $method = crypto ] || continue
 
-        if [ "$method" = crypto/loop-AES ] && [ $mnt = / ]; then
+        # Check 1 - Is cryptoroot possible?
+        if [ $type = loop-AES ] && [ $mnt = / ]; then
             templ="partman-crypto/crypto_root_unimplemented"
             db_set $templ false
             db_fset $templ seen false
@@ -46,7 +52,8 @@ for dev in $DEVICES/*; do
             exit 1
         fi
 
-        if [ "${method%/*}" = crypto ] && [ $mnt = /boot ]; then
+        # Check 2 - Is /boot encrypted?
+        if [ $method = crypto ] && [ $mnt = /boot ]; then
             templ="partman-crypto/crypto_boot_not_possible"
             db_set $templ false
             db_fset $templ seen false
@@ -54,7 +61,34 @@ for dev in $DEVICES/*; do
             db_go || true
             exit 1
         fi
+
+        # Check 3 - Has the partition been encrypted with a random key?
+        [ -f $realdevdir/keytype ] || continue
+        keytype=$(cat $realdevdir/keytype)
+        [ $keytype = random ] || continue
+
+        # Check 4 - If so, does a random key make sense?
+        if [ -z $mnt ]; then
+            # Presumably swap, which is ok
+            continue
+        elif [ $mnt = /tmp ]; then
+            # Random /tmp is also ok
+            continue
+        else
+            # Neither swap, nor tmp, which is a problem
+            # But if the user insists...
+            templ="partman-crypto/use_random_for_nonswap"
+            db_set $templ false
+            db_fset $templ seen false
+            db_subst $templ DEVICE $(humandev $realdev)
+            db_input critical $templ
+            db_go || abort=1
+            db_get $templ || RET=''
+
+            if [ "$RET" != true ]; then
+                # User doesn't want to force random keytype
+                exit 1
+            fi
+        fi
     done
 done
-
-# vim:set ts=4 sw=4 expandtab:

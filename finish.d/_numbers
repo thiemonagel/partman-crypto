@@ -1,4 +1,3 @@
-07 check_randomfskey
 07 check_crypto_mountpoints
 55 fstab_loop
 70 aptinstall_crypto

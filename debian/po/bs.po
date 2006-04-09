@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-07 23:43-0600\n"
-"PO-Revision-Date: 2006-04-02 23:47+0100\n"
+"PO-Revision-Date: 2006-04-08 23:29+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "MIME-Version: 1.0\n"
@@ -343,9 +343,8 @@ msgstr "Greška pri unosu šifre"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:231
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Šifre koje ste unijeli nisu iste. Molim ponovo unesite šifru."
+msgstr "Šifre koje ste unijeli nisu iste. Molim pokušajte ponovo."
 
 #. Type: note
 #. Description

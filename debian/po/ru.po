@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-07 23:43-0600\n"
-"PO-Revision-Date: 2006-03-30 20:05+0300\n"
+"PO-Revision-Date: 2006-04-08 13:35+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -102,13 +102,12 @@ msgstr "Отсутствуют необходимые программы"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "В данной сборке debian-installer не содержится одной или нескольких "
-"программ, которые необходимы для правильной работы partman-crypt."
+"программ, которые необходимы для правильной работы partman-crypto."
 
 #. Type: error
 #. Description

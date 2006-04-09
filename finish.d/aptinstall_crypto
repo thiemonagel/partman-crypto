@@ -55,10 +55,10 @@ done
 
 if [ $loop_AES = yes ]; then
     # TODO loop-aes-rootfs
-    apt-install loop-aes-utils
+    apt-install loop-aes-utils || true
 fi
 
 if [ $dm_crypt = yes ] || [ $luks = yes ]; then
-    apt-install cryptsetup
+    apt-install cryptsetup || true
 fi
 

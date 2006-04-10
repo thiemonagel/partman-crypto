@@ -8,8 +8,8 @@
 
 . /lib/partman/definitions.sh
 
-loopaes_fix_fstab () {
-    local realdev realdevdir cryptdev cryptdevdir entry opts cipher keytype newopts keyfile mnt
+fstab_replace_entry () {
+    local realdev realdevdir cryptdev cryptdevdir entry new_entry opts cipher keytype keyfile dev mnt fstype opts freq passno
     realdev=$1
     realdevdir=$2
     cryptdev=$3
@@ -20,41 +20,50 @@ loopaes_fix_fstab () {
         return 1
     fi
 
+    set -- $entry
+    dev=$1
+    mnt=$2
+    fstype=$3
+    opts=$4
+    freq=$5
+    passno=$6
+
+    # Basic loop-AES options
     cipher=$(cat $realdevdir/cipher)
     keytype=$(cat $realdevdir/keytype)
-    
-    # add options
-    opts=$(set -- $entry && echo $4)
-    newopts="loop=${cryptdev},encryption=${cipher}"
+    opts="${opts},loop=${cryptdev},encryption=${cipher}"
 
-    # add gpgkey= option if applicable
+    # Add gpgkey= option if applicable
     if [ $keytype = keyfile ] && [ -f $realdevdir/keyfile ]; then
         keyfile=$(basename $(cat $realdevdir/keyfile))
-        newopts="${newopts},gpgkey=/etc/loopkeys/$keyfile"
+        opts="${opts},gpgkey=/etc/loopkeys/$keyfile"
     fi
 
-    # handle non-swap partitions with random key
+    # Handle non-swap partitions with random key
     if [ $keytype = random ] && [ -f $cryptdevdir/mountpoint ]; then
-        mnt=$(cat $cryptdevdir/mountpoint)
-        if [ $mnt = /tmp ]; then
-            newopts="${newopts},phash=random/1777"
+        mountpoint=$(cat $cryptdevdir/mountpoint)
+        if [ "$mountpoint" = /tmp ]; then
+            opts="${opts},phash=random/1777"
         else 
-            newopts="${newopts},phash=random"
+            opts="${opts},phash=random"
         fi
     fi
 
-    # insert the new options into fstab
-    # XXX: what happens for
-    # /dev/foo /path auto noauto
-    sed -i "\#^$cryptdev# { s#\($opts\)\([[:blank:]]\)#\1,$newopts\2# }" /target/etc/fstab
+    # Build the new entry; Replace $cryptdev with $realdev, include the 
+    # crypto-specific options and set fs_passno to 0 because checkfs.sh
+    # can't handle encrypted devices. 
+    new_entry=$(
+        printf "%-15s %-15s %-7s %-15s %-7s %s" \
+	        $realdev $mnt $fstype $opts $freq 0
+    )
 
-    # replace loop with realdev
-    sed -i "s#^$cryptdev#$realdev#" /target/etc/fstab
+    # Replace fstab entry
+    sed -i "s|$entry|$new_entry|" /target/etc/fstab
 
     return 0
 }
 
-add_crypttab_entry () {
+crypttab_add_entry () {
     local realdev realdevdir cryptdev cryptdevdir dmtype opts keyfile method mnt target source
     realdev=$1
     realdevdir=$2
@@ -154,10 +163,10 @@ for dev in $DEVICES/*; do
 
         case $type in
             loop-AES)
-                loopaes_fix_fstab $realdev $realdevdir $cryptdev $cryptdevdir
+                fstab_replace_entry $realdev $realdevdir $cryptdev $cryptdevdir
                 ;;
             dm-crypt|luks)
-                add_crypttab_entry $realdev $realdevdir $cryptdev $cryptdevdir $type
+                crypttab_add_entry $realdev $realdevdir $cryptdev $cryptdevdir $type
                 ;;
         esac
     done

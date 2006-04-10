@@ -8,29 +8,6 @@ IMPORTANT (must be solved before beta)
   o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
-  o Arrange fsck for loop-AES encrypted partitions. The normal 
-    mechanism doesn't work since it tries to fsck the encrypted
-    backing device. Two options:
-
-    1 Set fs_passno to 0 to prevent automatic fsck. After loops
-      have been mounted, remount read-only, fsck, remount r/w in
-      an init script. Downsides: May mount unchecked filesystems.
-      Upsides: Matches upstream setup instructions.
-
-    2 Install an init script to losetup and fsck loops before 
-      S35mountall.sh; List loop devices as devices in /etc/fstab
-      rather than as loop= option. Downsides: Needs extra looptab
-      or something, diverges from upstream. Upsides: fsck before
-      mount, no fstab hacking required in finish.d/fstab_loop.
-      Could cryptsetup be used?
-
-    3 Allow mount to re-use existing loop devices. This would
-      make it possible to losetup -F and fsck the loop devices
-      in an init script without further changes to the setup.
-      See discussion starting in
-      http://thread.gmane.org/gmane.linux.cryptography/1833/focus=1833
-
-
 GENERAL
 -------
  

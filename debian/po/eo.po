@@ -99,13 +99,12 @@ msgstr "Necesaj programoj mankas"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Tiu 'Debian'-instalilo ne enhavas unu aŭ pluraj necesegajn programojn por ke "
-"'partman-crypt'-o korekte funkcias."
+"Ĉi tiu eldono de 'Debian'-instalilo ne enhavas unu aŭ pluraj necesegajn "
+"programojn por ke 'partman-crypt'-programo korekte funkciu."
 
 #. Type: error
 #. Description
@@ -164,7 +163,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifrajn datumpartilajn ?"
+msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifrajn datumpartilajn?"
 
 #. Type: boolean
 #. Description
@@ -187,7 +186,7 @@ msgstr "${ITEMS}"
 #: ../partman-crypto.templates:166
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉifrajn datumportilojn ?"
+"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉifrajn datumportilojn?"
 
 #. Type: boolean
 #. Description
@@ -370,7 +369,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid "Use weak passphrase?"
-msgstr "Ĉu vi vere uzu tian malfortan pasfrazon ?"
+msgstr "Ĉu vi vere uzu tian malfortan pasfrazon?"
 
 #. Type: boolean
 #. Description
@@ -447,7 +446,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:288
 msgid "Are you sure you want to use a random key?"
-msgstr "Ĉu vi vere uzu hazardan ŝlosilon ?"
+msgstr "Ĉu vi vere uzu hazardan ŝlosilon?"
 
 #. Type: boolean
 #. Description

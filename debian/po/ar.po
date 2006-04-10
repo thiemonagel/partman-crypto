@@ -94,13 +94,12 @@ msgstr "البرامج المطلوبة مفقودة"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "هذه البنية من برنامج تثبيت ديبيان لا تحتوي واحداً أو أكثر من البرامج المطلوبة "
-"ليعمل partman-crypt بشكل صحيح."
+"ليعمل partman-crypto بشكل صحيح."
 
 #. Type: error
 #. Description

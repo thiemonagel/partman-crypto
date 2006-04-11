@@ -95,7 +95,6 @@ msgstr "필요한 프로그램을 찾을 수 없습니다."
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."

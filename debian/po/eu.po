@@ -99,13 +99,12 @@ msgstr "Beharrazko programak falta dira"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Debian instalatzailearen bertsio honek ez du partman-crypt behar bezala "
-"funtzionatzeko programa bat edo gehiago."
+"funtzionatzeko beharrezko den programa bat edo gehiago."
 
 #. Type: error
 #. Description

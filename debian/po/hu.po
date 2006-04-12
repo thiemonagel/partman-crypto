@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-07 23:43-0600\n"
-"PO-Revision-Date: 2006-03-12 08:08+0100\n"
+"PO-Revision-Date: 2006-04-12 00:29+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -97,13 +97,12 @@ msgstr "A kért program nem található"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "A Debian Telepítő e változatában nincs benne 1-2 program, mely a partman-"
-"crypt teljes működéséhez kell."
+"crypto teljes működéséhez kell."
 
 #. Type: error
 #. Description
@@ -183,9 +182,8 @@ msgstr "${ITEMS}"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:166
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Megtartja a jelenlegi partícionálást és konfigurálja az LVM-et?"
+msgstr "Megtartod e partícionálást és konfigurálod a titkosított köteteket?"
 
 #. Type: boolean
 #. Description
@@ -344,7 +342,7 @@ msgstr "Jelszó beviteli hiba"
 #. Description
 #: ../partman-crypto.templates:231
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "A két megadott jelszó nem egyezik. Ismét meg kell adni."
+msgstr "A két megadott jelszó nem egyezik. Add meg ismét!"
 
 #. Type: note
 #. Description
@@ -359,8 +357,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Üres jelszó-kifejezés lett megadva, mely tilos. Nem-üres jelszó-kifejezést "
-"kell választani."
+"Üres jelszó-kifejezés adtál meg, mely tilos. Válassz nem-üres jelszó-"
+"kifejezést!"
 
 #. Type: boolean
 #. Description
@@ -369,7 +367,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Gyenge jelszó-kifejezést használsz?"
 
 #. Type: boolean
 #. Description
@@ -378,8 +376,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"${MINIMUM} karakternél rövidebb jelszó-kifejezés lett megadva, ez e jelszó "
-"gyenge. Érdemes erősebbet választani."
+"${MINIMUM} karakternél rövidebb jelszó-kifejezést adtál meg, ez e jelszó "
+"gyenge. Válassz erősebbet!"
 
 #. Type: entropy-text
 #. Description
@@ -445,9 +443,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:288
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Biztosan kilép?"
+msgstr "Biztosan véletlen kulcsot akarsz használni?"
 
 #. Type: boolean
 #. Description
@@ -456,8 +453,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
-"A ${DEVICE} eszközhöz véletlen kulcs lett kiválasztva, de a partícionálóban "
-"fájlrendszer létrehozás."
+"A ${DEVICE} eszközhöz véletlen kulcsot választottál, de a partícionálóban "
+"fájlrendszer létrehozást."
 
 #. Type: boolean
 #. Description

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-07 23:43-0600\n"
-"PO-Revision-Date: 2006-04-04 12:47+0200\n"
+"PO-Revision-Date: 2006-04-11 12:27+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -95,13 +95,12 @@ msgstr "Brak wymaganych programów"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Ta wersja instalatora nie zawiera jednego lub więcej programów wymaganych do "
-"prawidłowego działania partman-crypt."
+"prawidłowego działania partman-crypto."
 
 #. Type: error
 #. Description
@@ -153,7 +152,7 @@ msgid ""
 "package later on."
 msgstr ""
 "Prawdopodobnie wystąpią problemy podczas uruchamiania systemy i próbie "
-"ustawienia zaszyfrowanych partycji. Można ich będzie uniknąć instalując "
+"ustawienia szyfrowanych partycji. Można ich będzie uniknąć instalując "
 "wymagany pakiet później."
 
 #. Type: boolean
@@ -265,9 +264,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"To poważny błąd ponieważ poufne dane mogą zostać zapisane na "
-"niezaszyfrowanej części dysku. Ktoś z dostępem do tego dysku będzie mógł "
-"odzyskać części zaszyfrowanego klucza lub hasło."
+"To poważny błąd ponieważ poufne dane mogą zostać zapisane na nieszyfrowanej "
+"części dysku. Ktoś z dostępem do tego dysku będzie mógł odzyskać części "
+"szyfrowanego klucza lub hasło."
 
 #. Type: error
 #. Description
@@ -278,7 +277,7 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Proszę wyłączyć przestrzeń wymiany (np. uruchamiając swapoff) lub "
-"skonfigurować zaszyfrowaną przestrzeń i uruchomić konfigurację szyfrowanych "
+"skonfigurować szyfrowaną przestrzeń i uruchomić konfigurację szyfrowanych "
 "woluminów jeszcze raz. Program zostanie teraz przerwany."
 
 #. Type: password
@@ -429,7 +428,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Wybrano by główny system plików był przechowywany na zaszyfrowanej partycji. "
+"Wybrano by główny system plików był przechowywany na szyfrowanej partycji. "
 "Taka możliwość nie istnieje i kontynuowanie może doprowadzić do sytuacji, że "
 "system będzie bezużyteczny."
 

@@ -273,7 +273,7 @@ for dev in $DEVICES/*; do
             continue
         fi
 
-        if ! dev_erase_data $path $size; then
+        if ! dev_wipe $path $size; then
             db_fset partman-crypto/commit_failed seen false
             db_input critical partman-crypto/commit_failed
             db_go || true

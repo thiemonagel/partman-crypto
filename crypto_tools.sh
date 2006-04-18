@@ -222,71 +222,28 @@ setup_cryptdev () {
     return 0
 }
 
-blocksize=$((8192*1024))
-
-# NOTE: The copy can leave up to 4095 bytes at the end of the 
-# partition not copied/overwritten. This is bad, but seems 
-# tolerable because the steps shown in loop-AES documentation 
-# for erasing data have the same problem.
-    
-dd_progresspipe () {
-    local n in out
-    in=$1
-    out=$2
-    size=$3
-    blocks4k=$(($size/4096))
-    n=0
-    
-    while dd if=$in bs=$blocksize count=1 2>/dev/null; do
-      n=$((n+1))
-      echo $n >&2
-    done |
-      log-output -t partman-crypto dd of=$out bs=4096 count=$blocks4k conv=notrunc
-
-    # The below is an attempt to work around the problem by writing 
-    # the remainder with bs=1. Unfortunately that doesn't work for 
-    # partitions > 4GB because busybox dd skip=/seek= option values
-    # are limited to ULONG_MAX.
-    #
-    #ret=$?
-    #if [ $ret -eq 0 ]; then
-    #    remaining=$(($size % 4096))
-    #    if [ $remaining -gt 0 ]; then
-    #        log-output -t partman-crypto dd if=$in of=$out skip=$written seek=$written bs=1 count=$remaining conv=notrunc
-    #        ret=$?
-    #    fi
-    #fi
-    # return $ret
-
-    return $?
-}
-
-dd_show_progressbar () {
-    local template in out size x
+wipe () {
+    local template dev fifo pid x
     template=$1
-    in=$2
-    out=$3
-    size=$4
-    blocks=$(($size/$blocksize))
+    dev=$2
+    fifo=/var/run/wipe_progress
 
-    fifo=/tmp/erase_progress
     mknod $fifo p
-    
-    db_progress START 0 $blocks $template
-    dd_progresspipe $in $out $size > $fifo 2>&1 &
-    ddpid=$!
+    /bin/blockdev-wipe $dev > $fifo &
+    pid=$!
 
-    while read x < $fifo; do
+    db_progress START 0 100 $template
+    while read x <&9; do
         db_progress STEP 1
-    done
+    done 9< $fifo
+    db_progress STOP
 
     rm $fifo
-    db_progress STOP
-    wait $ddpid
+    wait $pid
     return $?
 }
 
-dev_erase_data () {
+dev_wipe () {
     local device size loop
     device=$1
     size=$2
@@ -307,9 +264,9 @@ dev_erase_data () {
     if setup_loopaes $loop $device AES128 ""; then
         template="partman-crypto/progress/erase"
         db_subst $template DEVICE $(humandev $device)
-        if dd_show_progressbar $template /dev/zero $loop $size; then
+        if wipe $template $loop; then
             ret=0
-	fi
+        fi
     fi
     
     if [ $ret -ne 0 ]; then

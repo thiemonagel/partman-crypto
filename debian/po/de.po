@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-04-07 23:43-0600\n"
-"PO-Revision-Date: 2006-03-24 21:29+0100\n"
+"PO-Revision-Date: 2006-04-18 23:25+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -104,13 +104,12 @@ msgstr "Benötigte Programme fehlen"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:119
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Diese Version des debian-installers enthält ein oder mehrere Programme "
-"nicht, die von partman-crypt benötigt werden, um korrekt zu funktionieren."
+"nicht, die von partman-crypto benötigt werden, um korrekt zu funktionieren."
 
 #. Type: error
 #. Description

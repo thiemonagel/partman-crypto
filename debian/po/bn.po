@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-07 23:43-0600\n"
+"POT-Creation-Date: 2006-04-21 23:28-0600\n"
 "PO-Revision-Date: 2006-02-26 04:29+0530\n"
 "Last-Translator: Baishampayan Ghose <b.ghose@gnu.org.in>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -378,6 +378,9 @@ msgstr "দূর্বল passphrase ব্যবহার করবো কি?
 
 #. Type: boolean
 #. Description
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "

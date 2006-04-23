@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-21 23:28-0600\n"
+"POT-Creation-Date: 2006-04-22 18:38-0600\n"
 "PO-Revision-Date: 2006-04-18 15:52+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -379,9 +379,6 @@ msgstr "Dùng cụm từ mật khẩu yếu sao?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "

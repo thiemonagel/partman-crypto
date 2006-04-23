@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-21 23:28-0600\n"
+"POT-Creation-Date: 2006-04-22 18:38-0600\n"
 "PO-Revision-Date: 2006-04-08 10:56-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -379,9 +379,6 @@ msgstr "Utilizar passphrase fraca ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "

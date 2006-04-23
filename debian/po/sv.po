@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-21 23:28-0600\n"
+"POT-Creation-Date: 2006-04-22 18:38-0600\n"
 "PO-Revision-Date: 2006-04-08 11:53+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -383,9 +383,6 @@ msgstr "Använda svag lösenfras?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "

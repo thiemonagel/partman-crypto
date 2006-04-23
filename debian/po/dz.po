@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-21 23:28-0600\n"
+"POT-Creation-Date: 2006-04-22 18:38-0600\n"
 "PO-Revision-Date: 2006-04-19 19:18+0530\n"
 "Last-Translator: \n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -345,9 +345,6 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:246
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "

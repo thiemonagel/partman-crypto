@@ -84,6 +84,16 @@ $desc $value"
     fi
 }
 
+# Show warning before anything else
+# (should be removed once the code has been audited)
+templ="partman-crypto/warning_experimental_nonaudit"
+db_input critical $templ
+db_go || true
+db_get $templ || RET=''
+if [ "$RET" != true ]; then
+    exit 0
+fi
+
 # check crypto options
 crypt=
 for dev in $DEVICES/*; do

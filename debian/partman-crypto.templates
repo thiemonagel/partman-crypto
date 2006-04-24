@@ -292,3 +292,16 @@ _Description: Are you sure you want to use a random key?
  Using a random key type means that the partition data is going to
  be destroyed upon each reboot. This should only be used for
  swap partitions.
+
+Template: partman-crypto/warning_experimental_nonaudit
+Type: boolean
+Default: false
+Description: Are you sure you want to continue?
+ Important warning:
+ .
+ The support for block device encryption is still experimental and not
+ considered ready for production. In particular it may result in setups
+ that are easy to break and so give a false sense of security. There are
+ no known encryption flaws, however, until we have completed a thorough 
+ audit of the implementation, please do NOT USE this feature for production
+ setups unless you know what you are doing.

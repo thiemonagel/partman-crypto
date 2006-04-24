@@ -93,22 +93,24 @@ get_free_mapping() {
 }
 
 setup_loopaes () {
-    local loop device cipher keyfile opts pass
+    local loop device cipher keytype keyfile opts pass
     loop=$1
     device=$2
     cipher=$3
-    keyfile=$4
+    keytype=$4
+    keyfile=$5
 
     [ -x /sbin/losetup-aes ] || return 1
 
-    if [ $keyfile ]; then
+    case $keytype in
+    keyfile)
         opts="-K $keyfile"
         pass="$keyfile.pass"
-    else
-        # random key
+        ;;
+    random)
         opts="-H random"
         pass="/dev/null"
-    fi
+    esac
 
     log-output -t partman-crypto \
     /sbin/losetup-aes -e $cipher $opts -p0 -G / $loop $device < $pass
@@ -210,10 +212,7 @@ setup_cryptdev () {
           if [ -z "$cryptdev" ]; then
               return 1
           fi
-          if [ $keytype = random ]; then
-              keyfile=""
-          fi
-          setup_loopaes $cryptdev $realdev $cipher $keyfile || return 1
+          setup_loopaes $cryptdev $realdev $cipher $keytype $keyfile || return 1
           ;;
 
     esac

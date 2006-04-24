@@ -382,6 +382,9 @@ crypto_set_defaults () {
         loop-AES)
             echo AES256 > $part/cipher
             echo keyfile > $part/keytype
+            rm -f $part/keysize
+            rm -f $part/ivalgorithm
+            rm -f $part/keyhash
             ;;
         dm-crypt)
             echo aes > $part/cipher

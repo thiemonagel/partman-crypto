@@ -260,7 +260,7 @@ dev_wipe () {
         return 0
     fi
 
-    if setup_loopaes $loop $device AES128 ""; then
+    if setup_loopaes $loop $device AES128 random; then
         template="partman-crypto/progress/erase"
         db_subst $template DEVICE $(humandev $device)
         if wipe $template $loop; then

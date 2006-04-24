@@ -192,16 +192,11 @@ setup_cryptdev () {
           if [ -z "$cryptdev" ]; then
               return 1
           fi
-          setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
-          cryptdev="/dev/mapper/$cryptdev"
-          ;;
-
-        luks)
-          cryptdev=$(get_free_mapping)
-          if [ -z "$cryptdev" ]; then
-              return 1
+          if [ $keytype = passphrase ]; then
+              setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
+          else
+              setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
           fi
-          setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
           cryptdev="/dev/mapper/$cryptdev"
           ;;
       
@@ -389,13 +384,6 @@ crypto_set_defaults () {
             echo keyfile > $part/keytype
             ;;
         dm-crypt)
-            echo aes > $part/cipher
-            echo 256 > $part/keysize
-            echo cbc-essiv:sha256 > $part/ivalgorithm
-            echo passphrase > $part/keytype
-            echo sha256 > $part/keyhash
-            ;;
-        luks)
             echo aes > $part/cipher
             echo 256 > $part/keysize
             echo cbc-essiv:sha256 > $part/ivalgorithm

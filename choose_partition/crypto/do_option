@@ -21,9 +21,6 @@ check_required_tools() {
         dm-crypt)
             tools="/sbin/dmsetup /sbin/cryptsetup"
             ;;
-        luks)
-            tools="/sbin/dmsetup /sbin/cryptsetup"
-            ;;
         loop-AES)
             tools="/usr/bin/gpg /bin/base64"
             ;;
@@ -47,9 +44,6 @@ check_required_options() {
     options=""
     case $type in
         dm-crypt)
-            options="cipher keytype keyhash ivalgorithm keysize"
-            ;;
-        luks)
             options="cipher keytype keyhash ivalgorithm keysize"
             ;;
         loop-AES)

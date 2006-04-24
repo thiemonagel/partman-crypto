@@ -64,18 +64,18 @@ fstab_replace_entry () {
 }
 
 crypttab_add_entry () {
-    local realdev realdevdir cryptdev cryptdevdir dmtype opts keyfile method mnt target source
+    local realdev realdevdir cryptdev cryptdevdir keytype opts keyfile method mnt target source
     realdev=$1
     realdevdir=$2
     cryptdev=$3
     cryptdevdir=$4
-    dmtype=$5
+    keytype=$(cat $realdevdir/keytype)
 
     # Set basic options
-    if [ $dmtype = luks ]; then
+    if [ $keytype = passphrase ]; then
         opts="luks"
-    elif [ $dmtype = dm-crypt ]; then
-        for opt in cipher keytype ivalgorithm keyhash keysize; do
+    else
+        for opt in cipher ivalgorithm keyhash keysize; do
             eval local $opt
             if [ -r "$realdevdir/$opt" ]; then
                 eval $opt=$(cat $realdevdir/$opt)
@@ -84,8 +84,6 @@ crypttab_add_entry () {
             fi
         done
         opts="cipher=$cipher-$ivalgorithm,size=$keysize,hash=$keyhash"
-    else
-        return 1
     fi
 
     # Set key source
@@ -165,8 +163,8 @@ for dev in $DEVICES/*; do
             loop-AES)
                 fstab_replace_entry $realdev $realdevdir $cryptdev $cryptdevdir
                 ;;
-            dm-crypt|luks)
-                crypttab_add_entry $realdev $realdevdir $cryptdev $cryptdevdir $type
+            dm-crypt)
+                crypttab_add_entry $realdev $realdevdir $cryptdev $cryptdevdir
                 ;;
         esac
     done

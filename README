@@ -30,7 +30,7 @@ choose_method/
   crypto
 
     Entry in the "Use as:" menu. All encryption types (loop-AES,
-    dm-crypt, LUKS) are merged into one choice. Writes "crypto"
+    dm-crypt) are merged into one choice. Writes "crypto"
     into $dev/$id/method and activates the below crypto options.
 
 active_partition/*
@@ -83,7 +83,7 @@ finish.d/
     Installs userspace tools and helper packages for encryption. This 
     is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
     into the target system. Similarily for dm-crypt, installs cryptsetup 
-    etc. (TODO). LUKS packages (cryptsetup-luks) are not yet in Debian.
+    etc.
 
 blockdev-keygen
    

@@ -42,12 +42,12 @@ swap_is_safe () {
               continue
               ;;
             /dev/loop*)
-              if ! loop_is_safe $swap; then
+              if ! loop_is_safe ${swap%% *}; then
                   ret=1
               fi
               ;;
             /dev/mapper/*)
-              if ! dm_is_safe $swap; then
+              if ! dm_is_safe ${swap%% *}; then
                   ret=1
               fi
               ;;

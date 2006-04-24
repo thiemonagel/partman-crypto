@@ -14,10 +14,6 @@ Template: partman-crypto/crypto_type/dm-crypt
 Type: text
 Description: Device-mapper (dm-crypt)
 
-Template: partman-crypto/crypto_type/luks
-Type: text
-Description: Device-mapper (LUKS)
-
 Template: partman-crypto/text/cryptdev_description
 Type: text
 Description: ${CIPHER} ${KEYTYPE}

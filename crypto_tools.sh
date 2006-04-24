@@ -380,7 +380,7 @@ crypto_set_defaults () {
 
     case $type in
         loop-AES)
-            echo AES128 > $part/cipher
+            echo AES256 > $part/cipher
             echo keyfile > $part/keytype
             ;;
         dm-crypt)

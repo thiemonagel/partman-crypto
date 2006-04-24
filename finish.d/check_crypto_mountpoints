@@ -38,8 +38,7 @@ for dev in $DEVICES/*; do
 
         [ -f $realdevdir/method ] || continue
         method=$(cat $realdevdir/method)
-        type=${method#*/}
-        method=${method%/*}
+        type=$(cat $realdevdir/crypto_type)
         [ $method = crypto ] || continue
 
         # Check 1 - Is cryptoroot possible?

@@ -20,7 +20,7 @@ cd $dev
 [ -f $id/method ] || exit 0
 method=$(cat $id/method)
 
-if [ "${method%/*}" = crypto ]; then
+if [ $method = crypto ]; then
     db_metaget partman/method_short/$method description || RET=''
     echo ${RET:-crypto} >$id/visual_filesystem
 

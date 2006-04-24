@@ -2,8 +2,6 @@
 
 . /usr/share/debconf/confmodule
 
-CRYPT_TYPES="loop-AES dm-crypt luks"
-
 dm_is_safe() {
     # Might be non-encrypted, e.g. LVM2
     local type
@@ -373,4 +371,39 @@ crypto_load_modules() {
     done
 
     return 0
+}
+
+# Does initial setup for a crypto method:
+#  1) sets default values
+#  2) loads default modules
+crypto_set_defaults () {
+    local part type
+    part=$1
+    type=$2
+
+    [ -d $part ] || return 1
+
+    case $type in
+        loop-AES)
+            echo AES128 > $part/cipher
+            echo keyfile > $part/keytype
+            ;;
+        dm-crypt)
+            echo aes > $part/cipher
+            echo 256 > $part/keysize
+            echo cbc-essiv:sha256 > $part/ivalgorithm
+            echo passphrase > $part/keytype
+            echo sha256 > $part/keyhash
+            ;;
+        luks)
+            echo aes > $part/cipher
+            echo 256 > $part/keysize
+            echo cbc-essiv:sha256 > $part/ivalgorithm
+            echo passphrase > $part/keytype
+            echo sha256 > $part/keyhash
+            ;;
+    esac
+
+    # Also load the modules needed for the chosen type/cipher
+    crypto_load_modules $type "$(cat $part/cipher)"
 }

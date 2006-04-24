@@ -13,8 +13,6 @@ if [ -f crypt_realdev ]; then
     exit 0
 fi
 
-for type in $CRYPT_TYPES; do
-    db_metaget partman/method_long/crypto/$type description
-    printf "%s\t%s\n" $type "$RET"
-done
+db_metaget partman/method_long/crypto description
+printf "%s\t%s\n" crypto "$RET"
 

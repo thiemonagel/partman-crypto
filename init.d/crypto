@@ -160,11 +160,12 @@ for dev in /var/lib/partman/devices/*; do
         cd $dev
 
         [ -f $id/method ] || continue
+        [ -f $id/crypto_type ] || continue
         [ -f $id/cipher ] || continue
         [ -f $id/crypt_active ] || continue
 
         method=$(cat $id/method)
-        [ "${method%/*}" = crypto ] || continue
+        [ $method = crypto ] || continue
         
         if ! partman_create_cryptdisk $dev $id $num $size $path; then
             db_fset partman-crypto/init_failed seen false

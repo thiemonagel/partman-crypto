@@ -13,12 +13,11 @@ for dev in /var/lib/partman/devices/*; do
     [ -d "$dev" ] || continue
     cd $dev
     for id in *; do
-        [ -f $id/method ] || continue
+        [ -f $id/crypto_type ] || continue
         [ -f $id/crypt_active ] || continue
 
-        method=$(cat $id/method)
-        
-        if [ "$method" = "crypto/loop-AES" ]; then
+        type=$(cat $id/crypto_type)        
+        if [ "$type" = "loop-AES" ]; then
             loop_AES=yes
         fi
     done

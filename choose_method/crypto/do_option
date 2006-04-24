@@ -7,34 +7,11 @@ dev=$2
 id=$3
 part=$dev/$id
 
-[ -d $dev/$id ] || mkdir $dev/$id
+[ -d $part ] || mkdir $part
+rm -f $part/use_filesystem
+rm -f $part/format
 
-echo crypto/$type >$dev/$id/method
-rm -f $dev/$id/use_filesystem
-rm -f $dev/$id/format
+echo crypto > $part/method
+echo loop-AES > $part/crypto_type
 
-# Choose sensible defaults for crypt_type
-case $type in
-    loop-AES)
-        # cipher AES128 / keyfile
-        [ -f $part/cipher ] || echo AES128 > $part/cipher
-        [ -f $part/keytype ] || echo keyfile > $part/keytype
-        ;;
-    dm-crypt)
-	[ -f $part/cipher ] || echo aes > $part/cipher
-	[ -f $part/keysize ] || echo 256 > $part/keysize
-	[ -f $part/ivalgorithm ] || echo cbc-essiv:sha256 > $part/ivalgorithm
-	[ -f $part/keytype ] || echo passphrase > $part/keytype
-	[ -f $part/keyhash ] || echo sha256 > $part/keyhash
-	;;
-    luks)
-	[ -f $part/cipher ] || echo aes > $part/cipher
-	[ -f $part/keysize ] || echo 256 > $part/keysize
-	[ -f $part/ivalgorithm ] || echo cbc-essiv:sha256 > $part/ivalgorithm
-	[ -f $part/keytype ] || echo passphrase > $part/keytype
-	[ -f $part/keyhash ] || echo sha256 > $part/keyhash
-	;;
-esac
-
-# Load the modules needed for the chosen crypt_type
-crypto_load_modules $type "$(cat $part/cipher)"
+crypto_set_defaults $part loop-AES

@@ -13,7 +13,7 @@ The scripts do stuff more or less in the following order:
 
  1. init.d/crypto_modules
  2. choose_method/crypto
- 3. active_partition/cipher, keysize, keytype
+ 3. active_partition/*
  4. choose_partition/crypto
  5. init.d/crypto
  6. blockdev-keygen
@@ -29,12 +29,11 @@ init.d/
 choose_method/
   crypto
 
-    Entry in the "Use as:" menu. Each encryption type (loop-AES,
-    dm-crypt, LUKS) is shown as separate choice. Writes "crypto/$type" 
+    Entry in the "Use as:" menu. All encryption types (loop-AES,
+    dm-crypt, LUKS) are merged into one choice. Writes "crypto"
     into $dev/$id/method and activates the below crypto options.
 
-active_partition/
-  cipher, keysize, keytype
+active_partition/*
 
     Entries in the partition menu. Which are shown depends on crypt_type
     and cipher. loop-AES shows no keysize option because it's ciphers have

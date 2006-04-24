@@ -27,7 +27,7 @@ choice_erase () {
 [ -f $part/method ] || exit 0
 method=$(cat $part/method)
 
-if [ "${method%/*}" = crypto ]; then
+if [ $method = crypto ]; then
     choice_erase
 fi
 

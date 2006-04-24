@@ -44,10 +44,12 @@ select_cipher () {
 }
 
 [ -f $part/method ] || exit 0
-method=$(cat $part/method)
+[ -f $part/crypto_type ] || exit 0
 
-if [ "${method%/*}" = crypto ]; then
-    type=${method#*/}
+method=$(cat $part/method)
+type=$(cat $part/crypto_type)
+
+if [ $method = crypto ]; then
     select_cipher $type
 fi
 

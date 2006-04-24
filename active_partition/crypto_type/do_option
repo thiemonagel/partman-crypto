@@ -1,0 +1,43 @@
+#!/bin/sh
+
+. /lib/partman/definitions.sh
+. /lib/partman/crypto_tools.sh
+
+dev=$2
+id=$3
+part=$dev/$id
+
+cd $dev
+
+select_crypto_type () {
+    choices=$(
+        for dir in /lib/partman/ciphers/*; do
+            [ -d $dir ] || continue
+            type=${dir##*/}
+
+            db_metaget partman-crypto/crypto_type/$type description
+            if [ -z "$RET" ]; then
+                desc=$type
+            else
+                desc="$RET"
+            fi
+            printf "%s\t%s\n" $type "$desc"
+        done
+    )
+
+    template="partman-crypto/crypto_type"
+    if ! debconf_select critical $template "$choices" ""; then
+        return
+    fi
+    type=$RET
+    echo $type > $part/crypto_type
+    crypto_set_defaults $part $type
+}
+
+[ -f $part/method ] || exit 0
+method=$(cat $part/method)
+
+if [ $method = crypto ]; then
+    select_crypto_type
+fi
+

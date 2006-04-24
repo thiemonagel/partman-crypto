@@ -147,6 +147,7 @@ for dev in $DEVICES/*; do
         cryptdevdir=$dev/$id
 
         [ -f $realdevdir/cipher ] || continue
+        [ -f $realdevdir/crypto_type ] || continue
         [ -f $realdevdir/keytype ] || continue
         [ -f $id/method ] || continue
 
@@ -156,8 +157,7 @@ for dev in $DEVICES/*; do
             continue
         fi
 
-        m=$(cat $realdevdir/method)
-        type=${m#*/}
+        type=$(cat $realdevdir/crypto_type)
         realdev=$(mapdevfs $realdev)
         cryptdev=$(mapdevfs $path)
 

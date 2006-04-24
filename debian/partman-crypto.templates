@@ -1,26 +1,22 @@
-Template: partman/method_long/crypto/loop-AES
+Template: partman/method_long/crypto
 Type: text
-Description: Loopback encryption (loop-AES)
+Description: physical volume for encryption
 
-Template: partman/method_long/crypto/dm-crypt
-Type: text
-Description: Device-mapper encryption (dm-crypt)
-
-Template: partman/method_long/crypto/luks
-Type: text
-Description: Device-mapper encryption (LUKS)
-
-Template: partman/method_short/crypto/loop-AES
+Template: partman/method_short/crypto
 Type: text
 Description: crypto
 
-Template: partman/method_short/crypto/dm-crypt
+Template: partman-crypto/crypto_type/loop-AES
 Type: text
-Description: crypto
+Description: Loopback (loop-AES)
 
-Template: partman/method_short/crypto/luks
+Template: partman-crypto/crypto_type/dm-crypt
 Type: text
-Description: crypto
+Description: Device-mapper (dm-crypt)
+
+Template: partman-crypto/crypto_type/luks
+Type: text
+Description: Device-mapper (LUKS)
 
 Template: partman-crypto/text/cryptdev_description
 Type: text
@@ -29,6 +25,15 @@ Description: ${CIPHER} ${KEYTYPE}
 Template: partman-crypto/text/not_active
 Type: text
 _Description: not active
+
+Template: partman-crypto/text/specify_crypto_type
+Type: text
+_Description: Encryption method:
+
+Template: partman-crypto/crypto_type
+Type: select
+Choices: ${CHOICES}
+_Description: Encryption method for this partition:
 
 Template: partman-crypto/text/specify_cipher
 Type: text

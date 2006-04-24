@@ -34,9 +34,12 @@ for dev in $DEVICES/*; do
     while { read_line num id size type fs path name; [ "$id" ]; }; do
         [ "$fs" != free ] || continue
         [ -f $id/method ] || continue
+        [ -f $id/crypto_type ] || continue
 
         method=$(cat $id/method)
-        type=${method#*/}
+        [ $method = crypto ] || continue
+
+        type=$(cat $id/crypto_type)
         case $type in
             loop-AES)
                 loop_AES=yes

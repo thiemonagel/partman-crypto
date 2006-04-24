@@ -115,11 +115,13 @@ for dev in $DEVICES/*; do
         path=$3
 
         [ -f $id/method ] || continue
+        [ -f $id/crypto_type ] || continue
+
         method=$(cat $id/method)
-        if [ ${method%/*} != crypto ]; then
+        if [ $method != crypto ]; then
             continue
         fi
-        type=${method#*/}
+        type=$(cat $id/crypto_type)
         crypt=yes
 
         check_required_tools $type
@@ -275,7 +277,7 @@ for dev in $DEVICES/*; do
 
         [ -f $id/method ] || continue
         method=$(cat $id/method)
-        if [ ${method%/*} != crypto ]; then
+        if [ $method != crypto ]; then
             continue
         fi
 
@@ -325,15 +327,16 @@ for dev in $DEVICES/*; do
         path=$3
 
         [ -f $id/method ] || continue
+        [ -f $id/crypto_type ] || continue
         [ -f $id/cipher ] || continue
         [ -f $id/keytype ] || continue
 
         method=$(cat $id/method)
-        if [ "${method%/*}" != crypto ]; then
+        if [ $method != crypto ]; then
             continue
         fi
 
-        type=${method#*/}
+        type=$(cat $id/crypto_type)
         keytype=$(cat $id/keytype)
         cipher=$(cat $id/cipher)
 

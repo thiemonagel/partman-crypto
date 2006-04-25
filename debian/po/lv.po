@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-04-22 23:52-0600\n"
+"POT-Creation-Date: 2006-04-24 18:29-0600\n"
 "PO-Revision-Date: 2006-02-11 15:42+0200\n"
 "Last-Translator: Aigars Mahinovs <aigarius@laka.lv>\n"
 "Language-Team: locale@laka.lv <locale@laka.lv>\n"
@@ -21,79 +21,93 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:31
+#: ../partman-crypto.templates:23
 msgid "not active"
 msgstr "nav aktīvs"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:35
+#: ../partman-crypto.templates:27
+#, fuzzy
+msgid "Encryption method:"
+msgstr "Šifrēšanas atslēga:"
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:32
+#, fuzzy
+msgid "Encryption method for this partition:"
+msgstr "Šīs partīcijas šifrēšanas metode:"
+
+#. Type: text
+#. Description
+#: ../partman-crypto.templates:36
 msgid "Encryption:"
 msgstr "Šifrēšana:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:40
+#: ../partman-crypto.templates:41
 msgid "Encryption for this partition:"
 msgstr "Šīs partīcijas šifrēšanas metode:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:44
+#: ../partman-crypto.templates:45
 msgid "Key size:"
 msgstr "Atslēgas izmērs:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:49
+#: ../partman-crypto.templates:50
 msgid "Key size for this partition:"
 msgstr "Šīs partīcijas šifrēšanas atslēgas izmērs:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:62
+#: ../partman-crypto.templates:63
 msgid "Encryption key:"
 msgstr "Šifrēšanas atslēga:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:67
+#: ../partman-crypto.templates:68
 msgid "Type of encryption key for this partition:"
 msgstr "Šīs partīcijas šifrēšanas atslēga:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:106
+#: ../partman-crypto.templates:107
 msgid "Setting up encryption..."
 msgstr "Uzstrādu šifrēšanu..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:110
+#: ../partman-crypto.templates:111
 msgid "Configure encrypted volumes"
 msgstr "Konfigurēt šifrētos sējumus"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:114
+#: ../partman-crypto.templates:115
 msgid "No partitions to encrypt"
 msgstr "Nav norādīta šifrējamā partīcija"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:114
+#: ../partman-crypto.templates:115
 msgid "No partitions have been selected for encryption."
 msgstr "Nav izvēlēta šifrējamā partīcija."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:119
+#: ../partman-crypto.templates:120
 msgid "Required programs missing"
 msgstr "Trūkst nepieciešamās programmas"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:119
+#: ../partman-crypto.templates:120
 #, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
@@ -104,13 +118,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:125
+#: ../partman-crypto.templates:126
 msgid "Required encryption options missing"
 msgstr "Nav norādītas nepieciešamās šifrēšanas opcijas"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:125
+#: ../partman-crypto.templates:126
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -123,19 +137,19 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:136
+#: ../partman-crypto.templates:137
 msgid "missing"
 msgstr "trūkst"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:140
+#: ../partman-crypto.templates:141
 msgid "Encryption package installation failure"
 msgstr "Kļūda instalējot šifrēšanas paku"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:140
+#: ../partman-crypto.templates:141
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
@@ -145,7 +159,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:140
+#: ../partman-crypto.templates:141
 msgid ""
 "There will likely be problems during boot when the system tries to setup "
 "encrypted partitions. You can still correct them by installing the required "
@@ -157,13 +171,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:151
+#: ../partman-crypto.templates:152
 msgid "Write the changes to disks and configure encrypted volumes?"
 msgstr "Saglabāt izmaiņas diskā un konfigurēt šifrētos sējumus?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:151
+#: ../partman-crypto.templates:152
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -173,19 +187,19 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:151
+#: ../partman-crypto.templates:152
 msgid "${ITEMS}"
 msgstr "${ITEMS}"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:166
+#: ../partman-crypto.templates:167
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "Saglabāt esošo partīciju izkārtojumu un konfigurēt šifrētos sējumus?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:166
+#: ../partman-crypto.templates:167
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
@@ -198,67 +212,67 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:175
 msgid "Encrypted volumes configuration failure"
 msgstr "Kļūda konfigurējot šifrētos sējumus"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:175
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Konfigurējot šifrētos sējumus radusies kļūda."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:175
 msgid "The configuration is aborted."
 msgstr "Konfigurācija pārtraukta."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:181
+#: ../partman-crypto.templates:182
 msgid "Encrypted volume initialisation failed"
 msgstr "Šifrēto sējumu instalācija nav veiksmīga"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:181
+#: ../partman-crypto.templates:182
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Uzstādot šifrētos sējumus radusies kļūda."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:186
+#: ../partman-crypto.templates:187
 msgid "Passphrase"
 msgstr "Parole"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:190
+#: ../partman-crypto.templates:191
 msgid "Keyfile (GnuPG)"
 msgstr "Atslēgas fails (GnuPG)"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:194
+#: ../partman-crypto.templates:195
 msgid "Random key"
 msgstr "Nejauša atslēga"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:199
 msgid "Unsafe swap space detected"
 msgstr "Atrasta nedroša maiņas telpa (swap)"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:199
 msgid "An unsafe swap space has been detected."
 msgstr "Jūsu sistēmā ir atrasta nedroša maiņas telpa."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:199
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -270,7 +284,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:198
+#: ../partman-crypto.templates:199
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -282,19 +296,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:211
+#: ../partman-crypto.templates:212
 msgid "Encryption passphrase:"
 msgstr "Šifrēsanas parole:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:211
+#: ../partman-crypto.templates:212
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Jums jāizvēlas ${DEVICE} šifrēšanas parole."
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:211
+#: ../partman-crypto.templates:212
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -308,7 +322,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:211
+#: ../partman-crypto.templates:212
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -319,13 +333,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:225
+#: ../partman-crypto.templates:226
 msgid "Re-enter passphrase to verify:"
 msgstr "Ievadiet paroli vēlreiz:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:225
+#: ../partman-crypto.templates:226
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -335,25 +349,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:231
+#: ../partman-crypto.templates:232
 msgid "Passphrase input error"
 msgstr "Paroles ievada kļūda"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:231
+#: ../partman-crypto.templates:232
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Jūsu ievadītās paroles atšķirās, lūdzu mēģiniet vēlreiz."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:236
+#: ../partman-crypto.templates:237
 msgid "Empty passphrase"
 msgstr "Tukša parole"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:236
+#: ../partman-crypto.templates:237
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -364,7 +378,7 @@ msgstr "Jūs neievadījāt paroli. Lūdzu ievadiet paroli."
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:247
 msgid "Use weak passphrase?"
 msgstr "Izmantot nedrošu paroli?"
 
@@ -373,7 +387,7 @@ msgstr "Izmantot nedrošu paroli?"
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:247
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -384,19 +398,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:253
 msgid "Enter random characters"
 msgstr "Ievadiet patvaļīgu simbolu"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:253
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Tiek veidota ${DEVICE} šifrēšanas atslēga."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:253
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -408,25 +422,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:261
+#: ../partman-crypto.templates:262
 msgid "Keyfile creation failure"
 msgstr "Atslēgas faila izveide nav izdevusies"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:261
+#: ../partman-crypto.templates:262
 msgid "An error occurred while creating the keyfile."
 msgstr "Veidojot atslēgas failu radusies kļūda"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:266
+#: ../partman-crypto.templates:267
 msgid "Encryption configuration failure"
 msgstr "Šifrēšanas konfigurācija nav izveidota"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:266
+#: ../partman-crypto.templates:267
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -438,7 +452,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:266
+#: ../partman-crypto.templates:267
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -446,13 +460,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:288
+#: ../partman-crypto.templates:289
 msgid "Are you sure you want to use a random key?"
 msgstr "Vai tiešam vēlaties izmantot patvaļīgu atslēgu?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:288
+#: ../partman-crypto.templates:289
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -462,7 +476,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:288
+#: ../partman-crypto.templates:289
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."

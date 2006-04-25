@@ -34,8 +34,9 @@ msgstr "Eochair chriptiúcháin:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "Suíomh na deighilte nuaí:"
 
 #. Type: text
 #. Description

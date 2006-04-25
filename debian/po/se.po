@@ -40,8 +40,9 @@ msgstr "Krypterenčoavdda:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "Dán partišuvnna čatnanbáikki:"
 
 #. Type: text
 #. Description

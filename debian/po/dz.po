@@ -32,14 +32,16 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
+#, fuzzy
 msgid "Encryption method:"
-msgstr ""
+msgstr "བར་བཅད་འབད་ནིའི་ཐབས་ལམ།"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "བར་བཅད་འདི་གྱི་དོན་ལུ་སྦྱར་བརྩེགས་ས་ཚིགས།"
 
 #. Type: text
 #. Description

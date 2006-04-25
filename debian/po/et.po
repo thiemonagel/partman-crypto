@@ -41,7 +41,7 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Selle partitsiooni haakepunkt:"
+msgstr "Partitsioneerimise meetod:"
 
 #. Type: select
 #. Description

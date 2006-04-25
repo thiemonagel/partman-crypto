@@ -41,7 +41,7 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "इस पार्टीशन हेतु माउन्ट प्वाइंटः"
+msgstr "पार्टीशन करने की विधिः"
 
 #. Type: select
 #. Description

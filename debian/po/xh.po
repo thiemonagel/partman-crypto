@@ -30,7 +30,7 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Indawo yokwahlulwa okutsha:"
+msgstr "Igama lesahlukaniso:"
 
 #. Type: select
 #. Description

@@ -28,13 +28,12 @@ msgstr ""
 msgid "not active"
 msgstr "Антарктида"
 
-# ../partman-basicfile systems.templates:71 ../partman-ext2r0.templates:36
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Бұл бөлімнің жөндеу нүктесі:"
+msgstr "Бөлшектеу принципі:"
 
 # ../partman-basicfile systems.templates:71 ../partman-ext2r0.templates:36
 #. Type: select

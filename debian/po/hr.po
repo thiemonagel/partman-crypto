@@ -31,7 +31,7 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Toèka montiranja za ovu particiju:"
+msgstr "Naèin particioniranja:"
 
 #. Type: select
 #. Description

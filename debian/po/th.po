@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-17 17:19+0700\n"
+"PO-Revision-Date: 2006-04-24 20:02+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,14 +28,16 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
+#, fuzzy
 msgid "Encryption method:"
-msgstr ""
+msgstr "วิธีแบ่งพาร์ทิชัน:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "จุดเมานท์สำหรับพาร์ทิชันนี้:"
 
 #. Type: text
 #. Description

@@ -38,7 +38,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-22 03:13+0200\n"
+"PO-Revision-Date: 2006-04-24 08:48+0200\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -170,7 +170,7 @@ msgstr "no disponible"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Encryption package installation failure"
-msgstr "La instalación del paquete de cifrado ha falado."
+msgstr "La instalación del paquete de cifrado ha fallado."
 
 #. Type: error
 #. Description
@@ -199,7 +199,7 @@ msgstr ""
 #: ../partman-crypto.templates:152
 msgid "Write the changes to disks and configure encrypted volumes?"
 msgstr ""
-"¿Desea guardar los cambios a los discos y configurar los vólumenes cifrados?"
+"¿Desea guardar los cambios a los discos y configurar los volúmenes cifrados?"
 
 #. Type: boolean
 #. Description
@@ -267,7 +267,7 @@ msgstr "Ha fallado la inicialización del volúmen cifrado"
 #. Description
 #: ../partman-crypto.templates:182
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Se produjo un error mientras se definínan los volúmenes cifrados."
+msgstr "Se produjo un error mientras se definan los volúmenes cifrados."
 
 #. Type: text
 #. Description
@@ -345,7 +345,7 @@ msgid ""
 "could be easily associated with you."
 msgstr ""
 "La robustez del cifrado depende en gran medida de esta frase de contraseña "
-"así que debería asegurarse de que escoje una que no se pueda adivinar "
+"así que debería asegurarse de que escoge una que no se pueda adivinar "
 "fácilmente. No debería ser una palabra o una frase que se puede encontrar en "
 "un diccionario o una frase que se puede asociar fácilmente con usted."
 

@@ -30,7 +30,7 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Pwynt clymu ar gyfer y rhaniad hwn:"
+msgstr "Dull rhaniadu:"
 
 #. Type: select
 #. Description

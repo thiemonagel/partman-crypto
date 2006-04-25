@@ -33,14 +33,16 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
+#, fuzzy
 msgid "Encryption method:"
-msgstr ""
+msgstr "பிரிவினை செய்யும் முறை:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "பகிர்வுக்கான கோப்பு அமைப்பு:"
 
 #. Type: text
 #. Description

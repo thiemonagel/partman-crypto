@@ -29,8 +29,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
+#, fuzzy
 msgid "Encryption method:"
-msgstr ""
+msgstr "Disksneiðingar aðferð:"
 
 #. Type: select
 #. Description

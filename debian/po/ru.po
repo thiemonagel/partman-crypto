@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-08 13:35+0300\n"
+"PO-Revision-Date: 2006-04-25 21:17+0300\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,16 +36,14 @@ msgstr "не активен"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Ключ шифрования:"
+msgstr "Алгоритм шифрования:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Шифрование для этого раздела:"
+msgstr "Алгоритм шифрования для этого раздела:"
 
 #. Type: text
 #. Description

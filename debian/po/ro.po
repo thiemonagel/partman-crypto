@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of ro.po to Romanian
 # Romanian translation
 #
 #    Translators, if you are not familiar with the PO format, gettext
@@ -19,12 +18,13 @@
 #    Developers do not need to manually edit POT or PO files.
 #
 # Eddy Petrişor <eddy.petrisor@gmail.com>, 2004, 2005, 2006.
+# Eddy Petrisor <eddy_petrisor@yahoo.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-08 12:29+0300\n"
+"PO-Revision-Date: 2006-04-25 22:07+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -43,16 +43,14 @@ msgstr "inactiv"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Cheia de criptare:"
+msgstr "Metoda de criptare:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Criptarea pentru acestă partiţie:"
+msgstr "Metoda de criptare pentru acestă partiţie:"
 
 #. Type: text
 #. Description

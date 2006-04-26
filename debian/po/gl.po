@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-11 12:56+0200\n"
+"PO-Revision-Date: 2006-04-25 20:33+0200\n"
 "Last-Translator: Jacobo Tarrio <jtarrio@debian.org>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
@@ -28,16 +28,14 @@ msgstr "inactivo"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Clave de cifrado:"
+msgstr "Método de cifrado:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Cifrado para esta partición:"
+msgstr "Método de cifrado para esta partición:"
 
 #. Type: text
 #. Description

@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-08 12:05+0200\n"
+"PO-Revision-Date: 2006-04-25 08:43+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,16 +37,14 @@ msgstr "inactive"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Clé de chiffrement :"
+msgstr "Méthode de chiffrement :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Chiffrement pour cette partition :"
+msgstr "Méthode de chiffrement pour cette partition :"
 
 #. Type: text
 #. Description

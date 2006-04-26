@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-03-31 11:32+0100\n"
+"PO-Revision-Date: 2006-04-25 12:29+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,16 +31,14 @@ msgstr "niet actief"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Encryptiesleutel:"
+msgstr "Encryptiemethode:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Encryptie voor deze partitie:"
+msgstr "Encryptiemethode voor deze partitie:"
 
 #. Type: text
 #. Description

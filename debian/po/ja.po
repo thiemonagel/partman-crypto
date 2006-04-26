@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-13 00:01+0900\n"
+"PO-Revision-Date: 2006-04-25 20:52+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,16 +28,14 @@ msgstr "非活性"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "暗号化鍵:"
+msgstr "暗号化の方法:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "このパーティションの暗号化:"
+msgstr "このパーティションの暗号化の方法:"
 
 #. Type: text
 #. Description

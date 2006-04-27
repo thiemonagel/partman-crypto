@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of template.po to Khmer
+# translation of km.po to Khmer
 #
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files#
@@ -11,13 +11,14 @@
 # in doc/i18n/i18n.txt#
 #
 # Leang Chumsoben <soben@khmeros.info>, 2006.
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: template\n"
+"Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-11 09:22+0700\n"
-"Last-Translator: Leang Chumsoben <soben@khmeros.info>\n"
+"PO-Revision-Date: 2006-04-26 14:35+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,16 +34,14 @@ msgstr "មិន​សកម្ម"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "កូនសោ​អ៊ិនគ្រីប ៖"
+msgstr "វិធីសាស្ត្រ​​អ៊ិនគ្រីប ៖"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "ការ​អ៊ិនគ្រីប​សម្រាប់​ភាគថាស​នេះ ៖"
+msgstr "វិធីសាស្ត្រ​​អ៊ិនគ្រីប​​សម្រាប់​ភាគ​ថាស​នេះ ៖"
 
 #. Type: text
 #. Description

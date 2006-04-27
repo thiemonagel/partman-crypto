@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-03-20 13:14+0100\n"
+"PO-Revision-Date: 2006-04-18 14:46+0200\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,16 +33,14 @@ msgstr "malaktiva"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Ĉifrada ŝlosilo:"
+msgstr "Ĉifrada metodo:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Ĉifrado por ĉi tiu diskpartigo:"
+msgstr "Ĉifrada metodo por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description

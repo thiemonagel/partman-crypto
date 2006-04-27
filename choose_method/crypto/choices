@@ -10,7 +10,7 @@ cd $dev
 
 # don't show crypto for already encrypted partitions
 if [ -f crypt_realdev ]; then
-    exit 0
+	exit 0
 fi
 
 db_metaget partman/method_long/crypto description

@@ -6,174 +6,173 @@
 . /lib/partman/definitions.sh
 
 partman_devdir () {
-    echo $DEVICES/$(echo $1 | tr / =)
+	echo $DEVICES/$(echo $1 | tr / =)
 }
 
 partman_create_disk () {
-    device=$1
-    model=$2
-    size=$3
+	device=$1
+	model=$2
+	size=$3
 
-    devdir=$(partman_devdir $device)
-    mkdir $devdir || return 1
-    cd $devdir
+	devdir=$(partman_devdir $device)
+	mkdir $devdir || return 1
+	cd $devdir
 
-    echo $device > $devdir/device
-    echo $model > $devdir/model
-    echo $size > $devdir/size
+	echo $device > $devdir/device
+	echo $model > $devdir/model
+	echo $size > $devdir/size
 
-    open_dialog OPEN $device
-    read_line response
-    close_dialog
-    if [ "$response" = "failed" ]; then
-        rm -rf $devdir
-        return 1
-    fi
+	open_dialog OPEN $device
+	read_line response
+	close_dialog
+	if [ "$response" = "failed" ]; then
+		rm -rf $devdir
+		return 1
+	fi
 
-    return 0
+	return 0
 }
 
 partman_create_partition () {
-    local id num size type fs path name free_space free_size filesystem
-    filesystem=$2
+	local id num size type fs path name free_space free_size filesystem
+	filesystem=$2
 
-    cd $(partman_devdir $1)
+	cd $(partman_devdir $1)
 
-    open_dialog NEW_LABEL loop
-    close_dialog
+	open_dialog NEW_LABEL loop
+	close_dialog
 
-    # find the free space
-    open_dialog PARTITIONS
-    free_space=''
-    while { read_line num id size type fs path name; [ "$id" ]; }; do
-        if [ "$fs" = free ]; then
-            free_space=$id
-            free_size=$size
-            # we can't break here
-        fi
-    done
-    close_dialog
+	# find the free space
+	open_dialog PARTITIONS
+	free_space=''
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		if [ "$fs" = free ]; then
+			free_space=$id
+			free_size=$size
+			# we can't break here
+		fi
+	done
+	close_dialog
 
-    # create partition in the free space
-    if [ "$free_space" ]; then
-        open_dialog NEW_PARTITION primary $filesystem $free_space full $free_size
-        read_line num id size type fs path name
-        close_dialog
-        if [ -z "$id" ]; then
-            log "error: NEW_PARTITION returned no id"
-            return
-        fi
-    fi
-    open_dialog DISK_UNCHANGED
-    close_dialog
-    
-    [ -d $id ] || mkdir $id
-    echo $id
+	# create partition in the free space
+	if [ "$free_space" ]; then
+		open_dialog NEW_PARTITION primary $filesystem $free_space full $free_size
+		read_line num id size type fs path name
+		close_dialog
+		if [ -z "$id" ]; then
+			log "error: NEW_PARTITION returned no id"
+			return
+		fi
+	fi
+	open_dialog DISK_UNCHANGED
+	close_dialog
+	
+	[ -d $id ] || mkdir $id
+	echo $id
 }
 
 partman_create_cryptdisk () {
-    local dev id num size path cryptdev cipher
-    dev=$1
-    id=$2
-    num=$3
-    size=$4
-    path=$5
+	local dev id num size path cryptdev cipher
+	dev=$1
+	id=$2
+	num=$3
+	size=$4
+	path=$5
 
-    cipher=$(cat $id/cipher)
-    keytype=$(cat $id/keytype)
+	cipher=$(cat $id/cipher)
+	keytype=$(cat $id/keytype)
 
-    templ="partman-crypto/text/cryptdev_description"
-    db_subst $templ CIPHER $cipher
-    db_subst $templ KEYTYPE $keytype
-    db_metaget $templ description || RET=''
-    model="$RET"
-    if [ -z "$model" ]; then
-       model="${cipher} ${keytype}"
-    fi
+	templ="partman-crypto/text/cryptdev_description"
+	db_subst $templ CIPHER $cipher
+	db_subst $templ KEYTYPE $keytype
+	db_metaget $templ description || RET=''
+	model="$RET"
+	if [ -z "$model" ]; then
+		model="${cipher} ${keytype}"
+	fi
 
-    # Tell partman about the crypt disk
-    cryptdev=$(cat $id/crypt_active)
-    cryptdir=$(partman_devdir $cryptdev)
-    if [ ! -d $cryptdir ]; then
-        partman_create_disk $cryptdev "$model" $size
-        if [ $? -ne 0 ]; then
-            return 2
-        fi
-    fi
+	# Tell partman about the crypt disk
+	cryptdev=$(cat $id/crypt_active)
+	cryptdir=$(partman_devdir $cryptdev)
+	if [ ! -d $cryptdir ]; then
+		partman_create_disk $cryptdev "$model" $size
+		if [ $? -ne 0 ]; then
+			return 2
+		fi
+	fi
 
-    case $keytype in
-        random) 
-            filesystem=linux-swap
-            ;;
-        keyfile|*)
-            filesystem=ext2
-            ;;
-    esac
-    
-    # Create a new partition in there
-    cryptid=$(partman_create_partition $cryptdev $filesystem)
-    if [ -z $cryptid ]; then
-        return 3
-    fi
-    cryptpart=$cryptdir/$cryptid
+	case $keytype in
+		random) 
+			filesystem=linux-swap
+			;;
+		keyfile|*)
+			filesystem=ext2
+			;;
+	esac
+	
+	# Create a new partition in there
+	cryptid=$(partman_create_partition $cryptdev $filesystem)
+	if [ -z $cryptid ]; then
+		return 3
+	fi
+	cryptpart=$cryptdir/$cryptid
 
-    # Select defaults
-    case $filesystem in
-        linux-swap)
-            echo swap > $cryptpart/method
-            >$cryptpart/format
-            ;;
+	# Select defaults
+	case $filesystem in
+		linux-swap)
+			echo swap > $cryptpart/method
+			>$cryptpart/format
+			;;
 
-        ext2)
-            echo format > $cryptpart/method
-            >$cryptpart/format
-            >$cryptpart/use_filesystem
-            echo $filesystem > $cryptpart/filesystem
-            ;;
-    esac
+		ext2)
+			echo format > $cryptpart/method
+			>$cryptpart/format
+			>$cryptpart/use_filesystem
+			echo $filesystem > $cryptpart/filesystem
+			;;
+	esac
 
-    update_partition $cryptdir $cryptid
+	update_partition $cryptdir $cryptid
 
-    echo $path:$num:$dev/$id > $cryptdir/crypt_realdev
-    return 0
+	echo $path:$num:$dev/$id > $cryptdir/crypt_realdev
+	return 0
 }
 
 for dev in /var/lib/partman/devices/*; do
-    [ -d "$dev" ] || continue
-    cd $dev
-    partitions=
-    open_dialog PARTITIONS
-    while { read_line num id size type fs path name; [ "$id" ]; }; do
-        if [ "$fs" != free ]; then
-            partitions="$partitions $id:$num:$size:$path"
-        fi
-    done
-    close_dialog
+	[ -d "$dev" ] || continue
+	cd $dev
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		if [ "$fs" != free ]; then
+			partitions="$partitions $id:$num:$size:$path"
+		fi
+	done
+	close_dialog
 
-    for p in $partitions; do
-        set -- $(IFS=: && echo $p)
-        id=$1
-        num=$2
-        size=$3
-        path=$4
+	for p in $partitions; do
+		set -- $(IFS=: && echo $p)
+		id=$1
+		num=$2
+		size=$3
+		path=$4
 
-        cd $dev
+		cd $dev
 
-        [ -f $id/method ] || continue
-        [ -f $id/crypto_type ] || continue
-        [ -f $id/cipher ] || continue
-        [ -f $id/crypt_active ] || continue
+		[ -f $id/method ] || continue
+		[ -f $id/crypto_type ] || continue
+		[ -f $id/cipher ] || continue
+		[ -f $id/crypt_active ] || continue
 
-        method=$(cat $id/method)
-        [ $method = crypto ] || continue
-        
-        if ! partman_create_cryptdisk $dev $id $num $size $path; then
-            db_fset partman-crypto/init_failed seen false
-            db_input critical partman-crypto/init_failed
-            db_go || true
-            continue
-        fi
-    done
+		method=$(cat $id/method)
+		[ $method = crypto ] || continue
+		
+		if ! partman_create_cryptdisk $dev $id $num $size $path; then
+			db_fset partman-crypto/init_failed seen false
+			db_input critical partman-crypto/init_failed
+			db_go || true
+			continue
+		fi
+	done
 done
 
-# vim:ts=4 sw=4 expandtab:

@@ -10,54 +10,54 @@ loop_AES=no
 dm_crypt=no
 
 install_loopkeys () {
-    dir=/target/etc/loopkeys
-    if [ ! -d $dir ]; then
-        mkdir -p $dir
-        chmod 0700 $dir
-    fi
+	dir=/target/etc/loopkeys
+	if [ ! -d $dir ]; then
+		mkdir -p $dir
+		chmod 0700 $dir
+	fi
 
-    for key in $*; do
-        if [ -f $dir/$key ]; then
-            : TODO show error
-        else 
-            mv $key $dir
-	    chmod 0600 $dir/$key
-        fi
-    done
+	for key in $*; do
+		if [ -f $dir/$key ]; then
+			: TODO show error
+		else 
+			mv $key $dir
+			chmod 0600 $dir/$key
+		fi
+	done
 }
 
 for dev in $DEVICES/*; do
-    [ -d "$dev" ] || continue
-    cd $dev
-    open_dialog PARTITIONS
-    while { read_line num id size type fs path name; [ "$id" ]; }; do
-        [ "$fs" != free ] || continue
-        [ -f $id/method ] || continue
-        [ -f $id/crypto_type ] || continue
+	[ -d "$dev" ] || continue
+	cd $dev
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		[ "$fs" != free ] || continue
+		[ -f $id/method ] || continue
+		[ -f $id/crypto_type ] || continue
 
-        method=$(cat $id/method)
-        [ $method = crypto ] || continue
+		method=$(cat $id/method)
+		[ $method = crypto ] || continue
 
-        type=$(cat $id/crypto_type)
-        case $type in
-            loop-AES)
-                loop_AES=yes
-                install_loopkeys $id/*.gpg
-                ;;
-            dm-crypt)
-                dm_crypt=yes
-                ;;
-        esac
-    done
-    close_dialog
+		type=$(cat $id/crypto_type)
+		case $type in
+			loop-AES)
+				loop_AES=yes
+				install_loopkeys $id/*.gpg
+				;;
+			dm-crypt)
+				dm_crypt=yes
+				;;
+		esac
+	done
+	close_dialog
 done
 
 if [ $loop_AES = yes ]; then
-    # TODO loop-aes-rootfs
-    apt-install loop-aes-utils || true
+	# TODO loop-aes-rootfs
+	apt-install loop-aes-utils || true
 fi
 
 if [ $dm_crypt = yes ]; then
-    apt-install cryptsetup || true
+	apt-install cryptsetup || true
 fi
 

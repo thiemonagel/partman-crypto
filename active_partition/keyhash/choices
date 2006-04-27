@@ -17,8 +17,8 @@ cipher=$(cat $part/cipher)
 keytype=$(cat $part/keytype)
 
 if [ $method = crypto ]; then
-    # Hashing only makes sense for passphrases
-    if [ "$keytype" = passphrase ]; then
-        crypto_dochoice $part $type $cipher "keyhash"
-    fi
+	# Hashing only makes sense for passphrases
+	if [ "$keytype" = passphrase ]; then
+		crypto_dochoice $part $type $cipher "keyhash"
+	fi
 fi

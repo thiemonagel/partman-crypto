@@ -10,7 +10,7 @@ part=$dev/$id
 cd $dev
 
 if [ -f $part/skip_erase ]; then
-    exit 0
+	exit 0
 fi
 
 open_dialog PARTITION_INFO $id

@@ -9,8 +9,8 @@ part=$dev/$id
 cd $part
 
 if [ ! -f skip_erase ]; then
-    touch skip_erase
+	touch skip_erase
 else
-    rm -f skip_erase
+	rm -f skip_erase
 fi
 

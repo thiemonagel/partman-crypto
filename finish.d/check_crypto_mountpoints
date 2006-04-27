@@ -6,88 +6,88 @@
 . /lib/partman/definitions.sh
 
 for dev in $DEVICES/*; do
-    [ -d "$dev" ] || continue
-    cd $dev
-    partitions=
-    open_dialog PARTITIONS
-    while { read_line num id size type fs path name; [ "$id" ]; }; do
-        [ "$fs" != free ] || continue
-        partitions="$partitions $id,$path"
-    done
-    close_dialog
-    
-    # "is crypto?"
-    [ -f crypt_realdev ] || continue
+	[ -d "$dev" ] || continue
+	cd $dev
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		[ "$fs" != free ] || continue
+		partitions="$partitions $id,$path"
+	done
+	close_dialog
+	
+	# "is crypto?"
+	[ -f crypt_realdev ] || continue
 
-    for part in $partitions; do
-        id=${part%,*}
-        path=${part#*,}
+	for part in $partitions; do
+		id=${part%,*}
+		path=${part#*,}
 
-        [ -f $id/method ] || continue
-        # mountpoint could be none i.e. swap
-        mnt=
-        if [ -f $id/mountpoint ]; then
-            mnt=$(cat $id/mountpoint)
-        fi
+		[ -f $id/method ] || continue
+		# mountpoint could be none i.e. swap
+		mnt=
+		if [ -f $id/mountpoint ]; then
+			mnt=$(cat $id/mountpoint)
+		fi
 
-        r=$(cat crypt_realdev)
-        set -- $(IFS=: && echo $r)
-        realdev=$1
-        realdevnum=$2
-        realdevdir=$3
+		r=$(cat crypt_realdev)
+		set -- $(IFS=: && echo $r)
+		realdev=$1
+		realdevnum=$2
+		realdevdir=$3
 
-        [ -f $realdevdir/method ] || continue
-        method=$(cat $realdevdir/method)
-        type=$(cat $realdevdir/crypto_type)
-        [ $method = crypto ] || continue
+		[ -f $realdevdir/method ] || continue
+		method=$(cat $realdevdir/method)
+		type=$(cat $realdevdir/crypto_type)
+		[ $method = crypto ] || continue
 
-        # Check 1 - Is cryptoroot possible?
-        if [ $type = loop-AES ] && [ $mnt = / ]; then
-            templ="partman-crypto/crypto_root_unimplemented"
-            db_set $templ false
-            db_fset $templ seen false
-            db_input critical $templ
-            db_go || true
-            exit 1
-        fi
+		# Check 1 - Is cryptoroot possible?
+		if [ $type = loop-AES ] && [ $mnt = / ]; then
+			templ="partman-crypto/crypto_root_unimplemented"
+			db_set $templ false
+			db_fset $templ seen false
+			db_input critical $templ
+			db_go || true
+			exit 1
+		fi
 
-        # Check 2 - Is /boot encrypted?
-        if [ $method = crypto ] && [ $mnt = /boot ]; then
-            templ="partman-crypto/crypto_boot_not_possible"
-            db_set $templ false
-            db_fset $templ seen false
-            db_input critical $templ
-            db_go || true
-            exit 1
-        fi
+		# Check 2 - Is /boot encrypted?
+		if [ $method = crypto ] && [ $mnt = /boot ]; then
+			templ="partman-crypto/crypto_boot_not_possible"
+			db_set $templ false
+			db_fset $templ seen false
+			db_input critical $templ
+			db_go || true
+			exit 1
+		fi
 
-        # Check 3 - Has the partition been encrypted with a random key?
-        [ -f $realdevdir/keytype ] || continue
-        keytype=$(cat $realdevdir/keytype)
-        [ $keytype = random ] || continue
+		# Check 3 - Has the partition been encrypted with a random key?
+		[ -f $realdevdir/keytype ] || continue
+		keytype=$(cat $realdevdir/keytype)
+		[ $keytype = random ] || continue
 
-        # Check 4 - If so, does a random key make sense?
-        if [ -z $mnt ]; then
-            # Presumably swap, which is ok
-            continue
-        elif [ $mnt = /tmp ]; then
-            # Random /tmp is also ok
-            continue
-        else
-            # Neither swap, nor tmp, which is a problem
-            # But if the user insists...
-            templ="partman-crypto/use_random_for_nonswap"
-            db_set $templ false
-            db_fset $templ seen false
-            db_subst $templ DEVICE $(humandev $realdev)
-            db_input critical $templ
-            db_go || abort=1
-            db_get $templ || RET=''
+		# Check 4 - If so, does a random key make sense?
+		if [ -z $mnt ]; then
+			# Presumably swap, which is ok
+			continue
+		elif [ $mnt = /tmp ]; then
+			# Random /tmp is also ok
+			continue
+		else
+			# Neither swap, nor tmp, which is a problem
+			# But if the user insists...
+			templ="partman-crypto/use_random_for_nonswap"
+			db_set $templ false
+			db_fset $templ seen false
+			db_subst $templ DEVICE $(humandev $realdev)
+			db_input critical $templ
+			db_go || abort=1
+			db_get $templ || RET=''
 
-            if [ "$RET" != true ]; then
-                # User doesn't want to force random keytype
-                exit 1
-            fi
-        fi
-    done
+			if [ "$RET" != true ]; then
+				# User doesn't want to force random keytype
+				exit 1
+			fi
+		fi
+	done
 done

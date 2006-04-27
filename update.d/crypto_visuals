@@ -21,18 +21,18 @@ cd $dev
 method=$(cat $id/method)
 
 if [ $method = crypto ]; then
-    db_metaget partman/method_short/$method description || RET=''
-    echo ${RET:-crypto} >$id/visual_filesystem
+	db_metaget partman/method_short/$method description || RET=''
+	echo ${RET:-crypto} >$id/visual_filesystem
 
-    if [ -f $id/crypt_active ]; then
-        RET=$(humandev $(cat $id/crypt_active))
-    else
-        db_metaget partman-crypto/text/not_active description || RET=''
-    fi
+	if [ -f $id/crypt_active ]; then
+		RET=$(humandev $(cat $id/crypt_active))
+	else
+		db_metaget partman-crypto/text/not_active description || RET=''
+	fi
 
-    echo ${RET:-not active} >$id/visual_mountpoint
+	echo ${RET:-not active} >$id/visual_mountpoint
 
-    # open_dialog CHANGE_FILE_SYSTEM $id linux-swap
-    # close_dialog
+	# open_dialog CHANGE_FILE_SYSTEM $id linux-swap
+	# close_dialog
 fi
 

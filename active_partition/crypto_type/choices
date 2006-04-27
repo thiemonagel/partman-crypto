@@ -11,22 +11,22 @@ part=$dev/$id
 cd $dev
 
 choice_crypto_type () {
-    desc="none"
-    if [ -f $part/crypto_type ]; then
-        type=$(cat $part/crypto_type)
-        db_metaget partman-crypto/crypto_type/$type description || RET=$type
+	desc="none"
+	if [ -f $part/crypto_type ]; then
+		type=$(cat $part/crypto_type)
+		db_metaget partman-crypto/crypto_type/$type description || RET=$type
 	desc="$RET"
-    fi
+	fi
 
-    db_metaget partman-crypto/text/specify_crypto_type description
-    label=$(stralign -25 "$RET")
-    printf "crypto_type\t%s%s\n" "$label" "$desc"
+	db_metaget partman-crypto/text/specify_crypto_type description
+	label=$(stralign -25 "$RET")
+	printf "crypto_type\t%s%s\n" "$label" "$desc"
 }
 
 [ -f $part/method ] || exit 0
 
 method=$(cat $part/method)
 if [ $method = crypto ]; then
-    choice_crypto_type
+	choice_crypto_type
 fi
 

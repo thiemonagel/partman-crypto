@@ -1,17 +1,7 @@
-partman-crypto (1) UNRELEASED; urgency=low
+partman-crypto (1) unstable; urgency=low
 
-  [ Max Vozeler ]
-  * First version
-
-  [ Colin Watson ]
-  * Use 'rm -f' rather than more awkward test-then-remove constructions.
-  * Use stop_parted_server and restart_partman functions from partman-base
-    73 instead of duplicating the code.
-
-  [ Christian Perrier ]
-  * Correct a typo in templates (s/systems tries/system tries)
-  * Correct wording of "e.g."
-  * Correct one templates paragraph so that it's identical to another
-    one. Thanks to Jens Seidel for noticing all these
+  * First release from SVN. Thanks (in no particular order) to 
+    David Härdeman, Jens Seidel, Colin Watson, Christian Perrier
+    and all translators for contributing to partman-crypto.
 
  -- Max Vozeler <xam@debian.org>  Tue,  7 Mar 2006 02:45:36 +0100

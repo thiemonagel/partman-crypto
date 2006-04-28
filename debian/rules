@@ -7,15 +7,19 @@
 
 PACKAGE = partman-crypto
 
-build:
+build: build-stamp
+build-stamp:
+	dh_testdir
 	$(MAKE) -C base64
 	$(MAKE) -C blockdev-wipe
+	touch $@
 
 clean:
 	dh_testdir
 	dh_testroot
 	$(MAKE) -C base64 clean
 	$(MAKE) -C blockdev-wipe clean
+	rm -f build-stamp
 	rm -f `find . -name '*~'`
 	dh_clean
 
@@ -36,7 +40,6 @@ install: build
 	dh_install blockdev-wipe/blockdev-wipe bin/
 	mkdir -p debian/$(PACKAGE)/usr/lib/prebaseconfig.d
 	install -m0755 crypto_modules debian/$(PACKAGE)/usr/lib/prebaseconfig.d/05crypto_modules
-	rm -rf `find debian/$(PACKAGE) -name CVS`
 	rm -rf `find debian/$(PACKAGE) -name .svn`
 
 binary-indep: install

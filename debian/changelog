@@ -1,7 +1,7 @@
 partman-crypto (1) unstable; urgency=low
 
-  * First release from SVN. Thanks (in no particular order) to 
+  * First release from SVN. Thanks (in no particular order) to
     David Härdeman, Jens Seidel, Colin Watson, Christian Perrier
     and all translators for contributing to partman-crypto.
 
- -- Max Vozeler <xam@debian.org>  Tue,  7 Mar 2006 02:45:36 +0100
+ -- Max Vozeler <xam@debian.org>  Fri, 28 Apr 2006 14:47:28 +0200

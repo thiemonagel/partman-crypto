@@ -1,8 +1,10 @@
 partman-crypto (2) UNRELEASED; urgency=low
 
   * Add Depends on loop-aes-modules (provided by loop-aes-$KVERS-di)
+  * Add check for separate /boot partition if the root partition 
+    should be encrypted. Thanks to Riku Voipio.
 
- -- Max Vozeler <xam@debian.org>  Sat, 29 Apr 2006 19:23:28 +0200
+ -- Max Vozeler <xam@debian.org>  Sat, 29 Apr 2006 21:05:20 +0200
 
 partman-crypto (1) unstable; urgency=low
 

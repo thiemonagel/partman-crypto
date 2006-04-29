@@ -14,100 +14,100 @@ msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-19 19:18+0530\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2006-04-26 10:08+0600\n"
+"Last-Translator: Sonam Rinchen <somchen@druknet.bt>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:23
 msgid "not active"
-msgstr ""
+msgstr "ཤུགས་ལྡན་མིན་འདུག།"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "བར་བཅད་འབད་ནིའི་ཐབས་ལམ།"
+msgstr "གསང་བཟོ་ལྡེ་མིག་བུ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
 #, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "བར་བཅད་འདི་གྱི་དོན་ལུ་སྦྱར་བརྩེགས་ས་ཚིགས།"
+msgstr "བར་བཅད་འདི་གི་དོན་ལུ་གསང་བཟོ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:36
 msgid "Encryption:"
-msgstr ""
+msgstr "གསང་བཟོ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:41
 msgid "Encryption for this partition:"
-msgstr ""
+msgstr "བར་བཅད་འདི་གི་དོན་ལུ་གསང་བཟོ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Key size:"
-msgstr ""
+msgstr "ལྡེ་མིག་བུ་གི་ཚད:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:50
 msgid "Key size for this partition:"
-msgstr ""
+msgstr "བར་བཅད་འདི་གི་དོན་ལུ་ལྡེ་མིག་བུ་གི་ཚད:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:63
 msgid "Encryption key:"
-msgstr ""
+msgstr "གསང་བཟོ་ལྡེ་མིག་བུ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:68
 msgid "Type of encryption key for this partition:"
-msgstr ""
+msgstr "བར་བཅད་འདི་གི་དོན་ལུ་གསང་བཟོ་ལྡེ་མིག་བུ་གི་དབྱེ་བ:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:107
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "གསང་བཟོ་གཞི་སྒྲིག་འབད་དོ་..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
 msgid "Configure encrypted volumes"
-msgstr ""
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབད།"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:115
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "གསང་བ་བཟོ་ནི་ལུ་བར་བཅད་ཚུ་མིན་འདུག།"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:115
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "གསང་བཟོ་གི་དོན་ལུ་བར་བཅད་ཚུ་སེལ་འཐུ་མ་འབད་བས།"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:120
 msgid "Required programs missing"
-msgstr ""
+msgstr "དགོས་མཁོ་ཅན་གྱི་ལས་རིམ་ཚུ་བརླག་སྟོར་ཞུགས་པ།"
 
 #. Type: note
 #. Description
@@ -116,12 +116,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"partman-crypto འདི་ངེས་བདེན་སྦེ་ལས་འགན་གྲུབ་ནི་གི་དོན་ལུ་དགོས་མཁོ་ཡོད་མི་དེ་ཚུ་ཌི་བི་ཡཱན་-གཞི་"
+"བཙུགས་པའི་བཟོ་བཙིགས་འདི་ལུ་གཅིག་ ཡང་ན་ ལས་རིམ་ཚུ་ལྷག་སྟེ་གྲངས་སུ་མི་བཙུགས།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:126
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "དགོས་མཁོ་ཅན་གྱི་གསང་བཟོ་གདམ་ཁ་ཚུ་བརླག་སྟོར་ཞུགས་པ།"
 
 #. Type: error
 #. Description
@@ -130,6 +132,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"${DEVICE}གི་དོན་ལས་གསང་བཟོ་གདམ་ཁ་ཚུ་ཆ་མ་ཚངས་པས། དགོས་མཁོ་ཅན་གྱི་གདམ་ཁ་ཚུ་ཆ་མཉམ་སེལ་འཐུ་"
+"འབད་ནི་དང་བར་བཅད་དཀར་ཆག་འདི་ལུ་སླར་ལོག་འབད།"
 
 #. Type: text
 #. Description
@@ -138,13 +142,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:137
 msgid "missing"
-msgstr ""
+msgstr "བརླག་སྟོར་ཞུགས་པ།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "གསང་བཟོ་ཐུམ་སྒྲིལ་གཞི་བཙུགས་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
 #. Type: error
 #. Description
@@ -153,6 +157,7 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during installation."
 msgstr ""
+"ཀར་ནེལ་ཚད་གཞི་ཐུམ་སྒྲིལ་${PACKAGE}འདི་འཚོལ་མ་ཐོབ་ ཡང་ན་ གཞི་བཙུགས་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
 
 #. Type: error
 #. Description
@@ -162,12 +167,15 @@ msgid ""
 "encrypted partitions. You can still correct them by installing the required "
 "package later on."
 msgstr ""
+"རིམ་ལུགས་འདི་གིས་གསང་བཟོས་བར་བཅད་ཚུ་གཞི་སྒྲིག་འབད་ནི་ལུ་འབད་རྩོལ་བསྐྱེདཔ་ད་ བུཊི་འབདཝ་ད་དཀའ་ངལ་"
+"ཚུ་འབྱུང་ནི་བཟུམ་འདུག། ཤུལ་ལས་དགོས་མཁོ་ཅན་གྱི་ཐུམ་སྒྲིལ་ཚུ་གཞི་བཙུགས་འབད་བའི་ཐོག་ལས་ཁྱོད་ཀྱིས་དེ་ཚུ་ད་"
+"ལྟོ་ཡང་ངེས་བདེན་འབད་ཚུགས།"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr ""
+msgstr "ཌིཀསི་ཚུ་ལུ་བསྒྱུར་བཅོས་ཚུ་བྲིས་ནི་དང་གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབད?"
 
 #. Type: boolean
 #. Description
@@ -176,6 +184,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་མ་འབད་བའི་ཧེ་མ་ད་ལྟོའི་བར་བཅད་འཆར་ལས་འདི་ཌིཀསི་ལུ་བྲིས་དགོ། བསྒྱུར་"
+"བཅོས་འདི་ཚུ་འབད་ཚར་མི་ཚུགས།"
 
 #. Type: boolean
 #. Description
@@ -187,7 +197,7 @@ msgstr "${ITEMS}"
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
+msgstr "ད་ལྟོའི་བར་བཅད་སྒྲིག་བཀོད་འབད་བཞག་ནི་དང་གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབད?"
 
 #. Type: boolean
 #. Description
@@ -198,66 +208,69 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
+"གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབད་ཚར་བའི་ཤུལ་ལས་གསང་བཟོས་སྐད་ཤུགས་ཚུ་ཡོད་པའི་ཌིཀསི་འདི་ནང་གི་བར་"
+"བཅད་ཚུ་གི་ཁ་སྐོང་བསྒྱུར་བཅོས་ཚུ་འབད་མི་ཆོག། འཕྲོ་མཐུད་མ་འབད་བའི་ཧེ་མ་ཌིཀསི་འདི་ནང་གི་ད་ལྟོའི་བར་བཅད་"
+"འཆར་ལས་དང་མཉམ་ཁྱོད་ངལ་རང་ཡི་ག་གྲོས་ཐག་བཅད་གནང་།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
 msgid "Encrypted volumes configuration failure"
-msgstr ""
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
 msgid "The configuration is aborted."
-msgstr ""
+msgstr "རིམ་སྒྲིག་འདི་བར་བཤོལ་འབད་ཡོདཔ།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:182
 msgid "Encrypted volume initialisation failed"
-msgstr ""
+msgstr "གསང་བཟོས་སྐད་ཤུགས་འགོ་བྱེད་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:182
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་གཞི་སྒྲིག་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Passphrase"
-msgstr ""
+msgstr "ཆོག་ཚིག།"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:191
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "ཡིག་སྣོད་གཙོ་བོ (GnuPG)"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:195
 msgid "Random key"
-msgstr ""
+msgstr "གང་འབྱུང་གི་ལྡེ་མིག་བུ།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "ཉེན་ཅན་བརྗེ་སོར་བར་སྟོང་སྐྱོན་འཛིན་བྱུང་ཡོད།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:199
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "ཉེན་ཅན་བརྗེ་སོར་བར་སྟོང་འདི་སྐྱོན་འཛིན་བྱུང་ནུག།།"
 
 #. Type: error
 #. Description
@@ -267,6 +280,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"ཌིཀསི་གསང་བཟོས་མ་འབད་བ་ཚོར་ཅན་གནད་སྡུད་མ་འབྲི་བ་ལས་ཚུར་འ་ནི་འདི་འཚུབ་ཆེན་འཛོལ་བ་ཨིན། འ་ནི་འདི་"
+"གིས་གང་རུང་མཉམ་འཛུལ་སྤྱོད་འབད་མི་འདི་གིས་ཌིཀསི་གིས་གསང་བཟོ་ལྡེ་མིག་བུ་གི་ཡན་ལག་ཚུ་སླར་གསོ་འབད་ནི་"
+"དང་ ཡང་ན་ ཆོག་ཚིག་འབད་བཅུག་འོང་།"
 
 #. Type: error
 #. Description
@@ -276,18 +292,21 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"བརྗེ་སོར་བར་སྟོང་འདི་ལྕོགས་མིན་བཟོ་གནང་(e.g. by running swapoff) ཡང་ན་ གསང་བཟོས་བརྗེ་སོར་"
+"བར་སྟོང་རིམ་སྒྲིག་འབད་ནི་དང་དེ་ལས་གཞི་སྒྲིག་འབད་ཡོད་པའི་གསང་བཟོས་སྐད་ཤུགས་ཚུ་ལོག་གཡོག་བཀོལ། ལས་རིམ་"
+"འདི་གིས་ད་བར་བཤོལ་འབད་འོང་།"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "གསང་བཟོ་ཆོག་ཚིག:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:212
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "${DEVICE}གསང་བ་བཟོ་ནི་ལུ་ཁྱོད་ཀྱིས་ཆོག་ཚིག་གདམ་ཁ་རྐྱབས་དགོ།"
 
 #. Type: password
 #. Description
@@ -298,6 +317,10 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"གསང་བཟོ་འདི་གི་སྤྱིར་བཏང་ནུས་ཤུགས་འདི་འ་ནི་ཆོག་ཚིག་འདི་ལུ་སྒྲིང་སྒྲིང་སྦེ་བརྟེནམ་ཨིན་ དེ་འབདཝ་ལས་ཁྱོད་ཀྱིས་"
+"ཆོག་ཚིག་འདི་ཕོག་ཚད་དཔག་ནི་ལུ་འཇམ་ཏོང་ཏོ་མེད་མི་གདམ་ཁ་རྐྱབཧ་ནི་ལུ་དྲན་པ་བརྟེན་དགོ། དེ་མིང་ཚིག་མེན་མི་"
+"ཅིག་དང་ ཡང་ན་ ཚིག་མཛོད་ནང་ལས་འཚོལ་མ་ཐོབ་མི་ཚིག་བརྗོད་ ཡང་ན་ ཁྱོད་དང་འཇམ་ཏོང་ཏོ་སྦེ་འབྲེལ་བ་"
+"འཐབ་ཚུགས་པའི་ཚིག་ཚན་དགོ།"
 
 #. Type: password
 #. Description
@@ -307,12 +330,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"ཆོག་ཚིག་ལེགས་ཤོམ་འདི་ལུ་ཡིག་རྟགས་དང་ཨང་ཚུ་དེ་ལས་ཡི་གུ་ཚུ་གི་བསྲེ་སྦྱོར་ནང་ན་གནས་འདི་འོང་། ཆོག་ཚིག་"
+"འདི་ལུ་རིང་ཚད་འདི་༢༠་དང་ཡང་ན་དེ་ལས་ལྷག་སྟེ་དགོ་པའི་འོས་སྦྱོར་འབད་ཡོད།"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:226
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "བདེན་སྦྱོར་འབད་ནི་ལུ་ཆོག་ཚིག་ལོག་བཙུགས:"
 
 #. Type: password
 #. Description
@@ -321,24 +346,25 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
+"ཁྱོད་ཀྱིས་ངེས་བདེན་སྦེ་ཡིག་དཔར་རྐྱབས་ནུག་ག་བདེན་སྦྱོར་འབད་ནི་ལུ་ཆོག་ཚིག་གཅིག་པ་འདི་ལོག་བཙུགས་གནང་།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
 msgid "Passphrase input error"
-msgstr ""
+msgstr "ཆོག་ཚིག་ཨིན་པུཊི་འཛོལ་བ།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:232
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་བཙུགས་ཡོད་པའི་ཆོག་ཚིག་གཉིས་གཅིག་པ་མིན་འདུག། ལོག་འབད་རྩོལ་བསྐྱེད་གནང་།"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:237
 msgid "Empty passphrase"
-msgstr ""
+msgstr "ཆོག་ཚིག་སྟོངམ།"
 
 #. Type: note
 #. Description
@@ -346,7 +372,7 @@ msgstr ""
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་མ་ཆོག་མི་ ཆོག་ཚིག་སྟོངམ་བཙུགས་ནུག། ཆོག་ཚིག་སྟོངམ་མེན་མི་གདམ་ཁ་རྐྱབས་གནང་།"
 
 #. Type: boolean
 #. Description
@@ -355,7 +381,7 @@ msgstr ""
 #. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:247
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "ནུས་མེད་ཆོག་ཚིག་ལག་ལེན་འཐབ?"
 
 #. Type: boolean
 #. Description
@@ -367,18 +393,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"ན་མེད་ས་མེད་ནུས་མེད་སྦེ་ཆ་འཇོག་འབད་ཡོད་མི་${MINIMUM}ཡིག་འབྲུ་ཚུ་ལས་ཉུང་ཤོས་ཡོད་མི་གི་ཆོག་ཚིག་འདི་"
+"ཁྱོད་ཀྱིས་བཙུགས་ནུག། ཁྱོད་ཀྱིས་ཆོག་ཚིག་སྒྲིང་སྒྲིག་ཡོད་མི་གདམ་ཁ་རྐྱབ་དགོ།ཀྱིས་"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:253
 msgid "Enter random characters"
-msgstr ""
+msgstr "གང་བྱུང་ཡིག་འབྲུ་ཚུ་བཙུགས།"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:253
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "${DEVICE}དོན་ལུ་གསང་བཟོ་ལྡེ་མིག་བུ་འདི་ད་གསར་བསྐྲུན་འབད་ཡི།"
 
 #. Type: entropy-text
 #. Description
@@ -388,24 +416,27 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"ལྡེ་སྒྲོམ་འདི་ལུ་གང་བྱུང་ཡིག་འབྲུ་ཚུ་ཐོ་བཀོད་འབད་བའི་ཐོག་ལས་ཁྱོད་ཀྱིས་ལས་སྦྱོར་འདི་གི་ཤུགས་ཚད་འདི་གྲོགས་རམ་"
+"འབད་ཚུགས་ ཡང་ན་ ལྡེ་མིག་བུ་གི་གནད་སྡུད་ལངམ་སྦེ་བསྡུ་ལེན་འབད་མ་ཚརཝ་ཚུན་འགུག། (འ་ནི་འདི་གིས་དུས་"
+"ཡུན་འགོར་འོང་ དྲན་འཛིན་འབད་)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:262
 msgid "Keyfile creation failure"
-msgstr ""
+msgstr "ཡིག་སྣོད་གཙོ་བོ་གསར་བསྐྲུན་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:262
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "ཡིག་སྣོད་གཙོ་བོ་འདི་གསར་བསྐྲུན་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:267
 msgid "Encryption configuration failure"
-msgstr ""
+msgstr "གསང་བཟོ་རིམ་སྒྲིག་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
 #. Type: error
 #. Description
@@ -415,19 +446,22 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"ཁྱོད་ཀྱིས་གསང་བཟོས་བར་བཅད་འདི་ལུ་བསག་མཛོད་འབད་ནི་ལུ་རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་འདི་སེལ་འཐུ་འབད་ནུག། "
+"འ་ནི་ཁྱད་རྣམ་འདི་ཐོབ་ཚུགས་མེདཔ་དང་ ད་ལྟོ་འཕྲོ་མཐུད་འབད་མི་འདི་གིས་གཞི་བཙུགས་འདི་ལག་ལེན་འཐབ་མ་"
+"བཏུབ་པའི་གྲུབ་འབྲས་འབྱུང་འོང་།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:267
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་ཀྱི་དོན་ལུ་ལོག་འགྱོ་འདི་གསང་བཟོས་མེན་མི་བར་བཅད་གདམ་ཁ་རྐྱབས་གནང་།"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:289
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "ཁྱོད་གང་བྱུང་ལྡེ་མིག་བུ་ལག་ལེན་འཐབ་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #. Type: boolean
 #. Description
@@ -436,6 +470,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
 msgstr ""
+"ཁྱོད་ཀྱིས་${DEVICE}གི་དོན་ལུ་ཡིག་དཔར་གང་བྱུང་ལྡེ་མིག་བུ་འདི་གདམ་ཁ་རྐྱབས་ནུག་དེ་འབདཝ་ད་དེ་ཁར་ལུ་བར་"
+"བཅད་འབད་མི་འདི་གིས་ཡིག་སྣོད་རིམ་ལུགས་གསར་བསྐྲུན་འབད་ནི་ལུ་ཞུ་བ་འབད་ཡོད།"
 
 #. Type: boolean
 #. Description
@@ -444,3 +480,5 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"གང་བྱུང་ལྡེ་མིག་བུ་གི་དབྱེ་བ་ལག་ལེན་འཐབ་ནི་ཟེར་མི་དེ་བར་བཅད་གནད་སྡུད་འདི་ལོག་བུཊི་རེ་རེ་ལུ་རྩ་མེད་བཏང་"
+"ནི་ཨིན། འ་ནི་འདི་བརྗེ་སོར་བར་བཅད་ཚུ་གི་དོན་ལུ་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ་དགོ།"

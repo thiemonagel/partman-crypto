@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-24 18:29-0600\n"
-"PO-Revision-Date: 2006-04-18 15:52+0930\n"
+"PO-Revision-Date: 2006-04-27 21:06+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -34,16 +34,14 @@ msgstr "không hoạt động"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Khóa mật mã:"
+msgstr "Phương pháp mật mã:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Mật mã cho phân vùng này:"
+msgstr "Phương pháp mật mã cho phân vùng này:"
 
 #. Type: text
 #. Description

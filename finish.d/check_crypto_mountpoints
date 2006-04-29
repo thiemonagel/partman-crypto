@@ -1,9 +1,10 @@
 #!/bin/sh
-# Show an error if the root or /boot filesystems are to be stored on an 
-# encrypted partition. encrypted / is unimplemented for loop-AES. /boot
-# can't be encrypted with either solution.
+# Check that the crypto setup is sensible
 
 . /lib/partman/definitions.sh
+
+have_boot=no
+crypto_root=no
 
 for dev in $DEVICES/*; do
 	[ -d "$dev" ] || continue
@@ -16,9 +17,6 @@ for dev in $DEVICES/*; do
 	done
 	close_dialog
 	
-	# "is crypto?"
-	[ -f crypt_realdev ] || continue
-
 	for part in $partitions; do
 		id=${part%,*}
 		path=${part#*,}
@@ -28,7 +26,13 @@ for dev in $DEVICES/*; do
 		mnt=
 		if [ -f $id/mountpoint ]; then
 			mnt=$(cat $id/mountpoint)
+			if [ "$mnt" = /boot ]; then
+				have_boot=yes
+			fi
 		fi
+
+		# "is crypto?"
+		[ -f crypt_realdev ] || continue
 
 		r=$(cat crypt_realdev)
 		set -- $(IFS=: && echo $r)
@@ -42,17 +46,20 @@ for dev in $DEVICES/*; do
 		[ $method = crypto ] || continue
 
 		# Check 1 - Is cryptoroot possible?
-		if [ $type = loop-AES ] && [ $mnt = / ]; then
-			templ="partman-crypto/crypto_root_unimplemented"
-			db_set $templ false
-			db_fset $templ seen false
-			db_input critical $templ
-			db_go || true
-			exit 1
+		if [ $mnt = / ]; then
+			crypto_root=yes
+			if [ $type = loop-AES ]; then
+				templ="partman-crypto/crypto_root_unimplemented"
+				db_set $templ false
+				db_fset $templ seen false
+				db_input critical $templ
+				db_go || true
+				exit 1
+			fi
 		fi
 
 		# Check 2 - Is /boot encrypted?
-		if [ $method = crypto ] && [ $mnt = /boot ]; then
+		if [ $mnt = /boot ]; then
 			templ="partman-crypto/crypto_boot_not_possible"
 			db_set $templ false
 			db_fset $templ seen false
@@ -91,3 +98,14 @@ for dev in $DEVICES/*; do
 		fi
 	done
 done
+
+# Check - Is there a /boot partition for encrypted root?
+if [ $crypto_root = yes ] && [ $have_boot = no ]; then
+	templ="partman-crypto/crypto_root_needs_boot"
+	db_set $templ false
+	db_fset $templ seen false
+	db_input critical $templ
+	db_go || true
+	exit 1
+fi
+

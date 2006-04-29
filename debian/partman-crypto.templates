@@ -272,6 +272,15 @@ _Description: Encryption configuration failure
  Please go back and choose a non-encrypted partition for the root
  filesystem.
 
+Template: partman-crypto/crypto_root_needs_boot
+Type: error
+Description: Encryption configuration failure
+ You have selected the root filesystem to be stored on an encrypted
+ partition. This feature requires a separate /boot partition on which 
+ the kernel and initrd can be stored.
+ .
+ Please go back and configure a /boot partition.
+
 Template: partman-crypto/crypto_boot_not_possible
 Type: error
 Description: Encryption configuration failure

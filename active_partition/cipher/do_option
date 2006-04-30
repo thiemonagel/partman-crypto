@@ -1,6 +1,5 @@
 #!/bin/sh
 
-. /lib/partman/definitions.sh
 . /lib/partman/crypto_tools.sh
 
 dev=$2
@@ -30,7 +29,7 @@ select_cipher () {
 	done
 
 	template="partman-crypto/cipher"
-	db_subst $template choices $ciphers
+	db_subst $template CHOICES $ciphers
 	db_input critical $template || true
 	db_go || return
 	db_get $template

@@ -15,7 +15,7 @@ choice_crypto_type () {
 	if [ -f $part/crypto_type ]; then
 		type=$(cat $part/crypto_type)
 		db_metaget partman-crypto/crypto_type/$type description || RET=$type
-	desc="$RET"
+		desc="$RET"
 	fi
 
 	db_metaget partman-crypto/text/specify_crypto_type description

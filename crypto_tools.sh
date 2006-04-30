@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /usr/share/debconf/confmodule
+. /lib/partman/definitions.sh
 
 dm_is_safe() {
 	# Might be non-encrypted, e.g. LVM2
@@ -288,18 +288,21 @@ crypto_dochoice () {
 
 	if [ -f $part/$option ]; then
 		value=$(cat $part/$option)
+		template="partman-crypto/text/$option/$value"
+		db_metaget $template description && value="$RET"
 	else
-		db_metaget partman-basicfilesystems/text/no_mountpoint description
-		value="$RET" # "none"
+		value="none"
+		template=partman-basicfilesystems/text/no_mountpoint
+		db_metaget $template description && value="$RET"
 	fi
 
 	db_metaget partman-crypto/text/specify_$option description
 	RET=$(stralign -25 "$RET")
-	printf "$option\t%s%s\n" "$RET" "$value"
+	printf "%s\t%s%s\n" "$option" "$RET" "$value"
 }
 
 crypto_dooption () {
-	local part type cipher option altfile alternatives template
+	local part type cipher option choices altfile template
 
 	part=$1
 	type=$2
@@ -312,21 +315,17 @@ crypto_dooption () {
 		altfile="/lib/partman/ciphers/$type/$option"
 	fi
 
-	alternatives=""
-	for i in $(cat $altfile); do
-		if [ "$alternatives" ]; then
-			alternatives="$alternatives, $i"
-		else
-			alternatives="$i"
-		fi
-	done
+	choices=$(
+		for value in $(cat $altfile); do
+			description="$value"
+			template="partman-crypto/text/$option/$value"
+			db_metaget $template description && description="$RET" 
+			printf "%s\t%s\n" $value "$description"
+		done
+	)
 
 	template="partman-crypto/$option"
-	db_subst $template choices $alternatives
-	db_input critical $template || true
-	db_go || exit 0
-	db_get $template
-
+	debconf_select critical $template "$choices" "" || exit 0
 	if [ "$RET" = none ]; then
 		rm -f $part/$option
 		return

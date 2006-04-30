@@ -37,7 +37,7 @@ _Description: Encryption:
 
 Template: partman-crypto/cipher
 Type: select
-Choices: ${choices}
+Choices: ${CHOICES}
 _Description: Encryption for this partition:
 
 Template: partman-crypto/text/specify_keysize
@@ -46,7 +46,7 @@ _Description: Key size:
 
 Template: partman-crypto/keysize
 Type: select
-Choices: ${choices}
+Choices: ${CHOICES}
 _Description: Key size for this partition:
 
 Template: partman-crypto/text/specify_ivalgorithm
@@ -55,7 +55,7 @@ Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
 Type: select
-Choices: ${choices}
+Choices: ${CHOICES}
 Description: IV generation algorithm for this partition:
 
 Template: partman-crypto/text/specify_keytype
@@ -64,7 +64,7 @@ _Description: Encryption key:
 
 Template: partman-crypto/keytype
 Type: select
-Choices: ${choices}
+Choices: ${CHOICES}
 _Description: Type of encryption key for this partition:
 
 Template: partman-crypto/text/specify_keyhash
@@ -73,7 +73,7 @@ Description: Encryption key hash:
 
 Template: partman-crypto/keyhash
 Type: select
-Choices: ${choices}
+Choices: ${CHOICES}
 Description: Type of encryption key hash for this partition:
 
 Template: partman-crypto/text/erase_data

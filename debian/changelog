@@ -3,8 +3,8 @@ partman-crypto (2) UNRELEASED; urgency=low
   * Add Depends on loop-aes-modules (provided by loop-aes-$KVERS-di)
   * Add check for separate /boot partition if the root partition 
     should be encrypted. Thanks to Riku Voipio.
-  * Use debconf_select in crypto_dooption/crypto_dochoice, now option
-    values can be translated if corresponding templates exist.
+  * Use debconf_select in crypto_dooption; Option values can now be
+    translated if corresponding templates exist.
 
  -- Max Vozeler <xam@debian.org>  Sun, 30 Apr 2006 20:22:12 +0200
 

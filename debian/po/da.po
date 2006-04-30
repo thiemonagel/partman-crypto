@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-04-24 18:29-0600\n"
+"POT-Creation-Date: 2006-04-29 18:31-0600\n"
 "PO-Revision-Date: 2006-04-26 17:42+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -459,13 +459,13 @@ msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:289
+#: ../partman-crypto.templates:298
 msgid "Are you sure you want to use a random key?"
 msgstr "Er du sikker på, at du vil benytte en tilfældig nøgle?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:289
+#: ../partman-crypto.templates:298
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -475,7 +475,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:289
+#: ../partman-crypto.templates:298
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."

@@ -159,25 +159,25 @@ Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure
  The kernel module package ${PACKAGE} could not be found or an error
- occurred during installation.
+ occurred during its installation.
  .
- There will likely be problems during boot when the system tries to
- setup encrypted partitions. You can still correct them by installing the
- required package later on.
+ It is likely that there will be problems setting up encrypted
+ partitions when the system is rebooted. You may be able to correct
+ this by installing the required package(s) later on.
 
 Template: partman-crypto/confirm
 Type: boolean
 Default: false
 #flag:translate!:4
-_Description: Write the changes to disks and configure encrypted volumes?
+_Description: Write the changes to disk and configure encrypted volumes?
  Before encrypted volumes can be configured, the current
  partitioning scheme has to be written to disk.  These changes
  cannot be undone.
  .
  After the encrypted volumes have been configured, no additional
- changes to the partitions in the disks containing encrypted volumes
+ changes to the partitions on the disks containing encrypted volumes
  are allowed. Please decide if you are satisfied with the current
- partitioning scheme in these disks before continuing.
+ partitioning scheme for these disks before continuing.
  .
  ${ITEMS}
 
@@ -186,20 +186,20 @@ Type: boolean
 Default: false
 _Description: Keep current partition layout and configure encrypted volumes?
  After the encrypted volumes have been configured, no additional changes
- to the partitions in the disks containing encrypted volumes are
+ to the partitions on the disks containing encrypted volumes are
  allowed. Please decide if you are satisfied with the current
- partitioning scheme in these disks before continuing.
+ partitioning scheme for these disks before continuing.
 
 Template: partman-crypto/commit_failed
 Type: error
-_Description: Encrypted volumes configuration failure
+_Description: Configuration of encrypted volumes configuration failed
  An error occurred while configuring encrypted volumes.
  .
- The configuration is aborted.
+ The configuration has been aborted.
 
 Template: partman-crypto/init_failed
 Type: error
-_Description: Encrypted volume initialisation failed
+_Description: Initialisation of encrypted volume failed
  An error occurred while setting up encrypted volumes.
 
 Template: partman-crypto/text/keytype/passphrase
@@ -312,14 +312,14 @@ _Description: Encryption configuration failure
  partition. This feature requires a separate /boot partition on which 
  the kernel and initrd can be stored.
  .
- You should go back and configure a /boot partition.
+ You should go back and setup a /boot partition.
 
 Template: partman-crypto/crypto_boot_not_possible
 Type: error
 _Description: Encryption configuration failure
  You have selected the /boot filesystem to be stored on an encrypted
- partition. This is not possible because the kernel and initrds could
- then not be accessed by the bootloader. Continuing now would result
+ partition. This is not possible because the bootloader would be unable to
+ load the kernel and initrd. Continuing now would result
  in an installation that cannot be used.
  .
  You should go back and choose a non-encrypted partition for the /boot

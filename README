@@ -6,7 +6,7 @@
 
 ------------------------------------------------------------------------
  STATUS:
-  See http://wiki.debian.org/DebianInstallerCrypto
+  See http://wiki.debian.org/DebianInstaller/PartmanCrypto
  
 ------------------------------------------------------------------------
 The scripts do stuff more or less in the following order:

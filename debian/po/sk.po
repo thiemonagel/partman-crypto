@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-04-11 07:34+0200\n"
+"PO-Revision-Date: 2006-04-30 10:52+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -28,16 +28,14 @@ msgstr "neaktívny"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Šifrovací kľúč:"
+msgstr "Spôsob šifrovania:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Šifrovanie pre túto oblasť:"
+msgstr "Spôsob šifrovania pre túto oblasť:"
 
 #. Type: text
 #. Description

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-02-12 16:05+0900\n"
+"PO-Revision-Date: 2006-04-30 21:44+0900\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,16 +29,14 @@ msgstr "비활성"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "암호화키:"
+msgstr "암호화 방식:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "이 파티션에 적용할 암호화 방식"
+msgstr "이 파티션에 적용할 암호화 방식: "
 
 #. Type: text
 #. Description

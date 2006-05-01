@@ -7,7 +7,7 @@ dm_is_safe() {
 	local type
 
 	if [ -x /sbin/dmsetup ]; then
-		type=$(/sbin/dmsetup table $1 | head -1 | cut -d " " -f3)
+		type=$(/sbin/dmsetup table $1 | head -n 1 | cut -d " " -f3)
 		if [ $type = crypt ]; then
 			return 0
 		fi

@@ -6,11 +6,13 @@ partman-crypto (2) UNRELEASED; urgency=low
     should be encrypted. Thanks to Riku Voipio.
   * Use debconf_select in crypto_dooption; Option values can now be
     translated if corresponding templates exist.
+  * Actually build the package in binary-arch, not binary-indep 
+    (leftover from switch to arch: any)
 
   [ Frans Pop ]
   * Old-style options for head/tail are no longer supported by new busybox.
 
- -- Frans Pop <fjp@debian.org>  Mon,  1 May 2006 13:45:45 +0200
+ -- Max Vozeler <xam@debian.org>  Tue,  2 May 2006 20:26:36 +0200
 
 partman-crypto (1) unstable; urgency=low
 

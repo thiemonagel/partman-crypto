@@ -42,7 +42,7 @@ install: build
 	install -m0755 crypto_modules debian/$(PACKAGE)/usr/lib/prebaseconfig.d/05crypto_modules
 	rm -rf `find debian/$(PACKAGE) -name .svn`
 
-binary-indep: install
+binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_installdebconf
@@ -52,7 +52,7 @@ binary-indep: install
 	dh_gencontrol
 	dh_builddeb
 
-binary-arch: build install
+binary-indep:
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install

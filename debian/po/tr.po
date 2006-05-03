@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-04-18 15:53+0300\n"
+"PO-Revision-Date: 2006-05-02 17:33+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,16 +35,14 @@ msgstr "etkin değil"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Şifreleme anahtarı:"
+msgstr "Şifreleme yöntemi:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Bu bölüm için şifreleme:"
+msgstr "Bu bölüm için şifreleme yöntemi:"
 
 #. Type: text
 #. Description

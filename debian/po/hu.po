@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-04-12 00:29+0100\n"
+"PO-Revision-Date: 2006-05-05 01:44+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -31,16 +31,14 @@ msgstr "nem aktív"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Titkosító kulcs:"
+msgstr "Titkosítási mód:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Titkosítás e partícióhoz:"
+msgstr "Titkosítási mód e partícióhoz:"
 
 #. Type: text
 #. Description

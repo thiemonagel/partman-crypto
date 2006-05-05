@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-04-07 14:16+0200\n"
+"PO-Revision-Date: 2006-05-04 21:19+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -37,16 +37,14 @@ msgstr "ikke aktiv"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Krypteringsnøkkel:"
+msgstr "Krypteringsmetode:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Kryptering for denne partisjonen:"
+msgstr "Krypteringsmetode for denne partisjonen:"
 
 #. Type: text
 #. Description
@@ -117,13 +115,12 @@ msgstr "Nødvendige programmer mangler"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:120
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Denne utgaven av debian-installer inneholder ikke ett eller flere programmer "
-"som trengs for at partman-crypt skal fungere riktig."
+"som trengs for at partman-crypto skal fungere riktig."
 
 #. Type: error
 #. Description

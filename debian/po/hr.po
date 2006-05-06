@@ -17,7 +17,7 @@ msgstr ""
 "Last-Translator: Krunoslav Gernhard <kruno@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: text
@@ -31,14 +31,14 @@ msgstr ""
 #: ../partman-crypto.templates:27
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Naèin particioniranja:"
+msgstr "NaÄin particioniranja:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
 #, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Toèka montiranja za ovu particiju:"
+msgstr "ToÄka montiranja za ovu particiju:"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #: ../partman-crypto.templates:41
 #, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Toèka montiranja za ovu particiju:"
+msgstr "ToÄka montiranja za ovu particiju:"
 
 #. Type: text
 #. Description
@@ -64,7 +64,7 @@ msgstr ""
 #: ../partman-crypto.templates:50
 #, fuzzy
 msgid "Key size for this partition:"
-msgstr "Datoteèni sustav za ovu particiju:"
+msgstr "DatoteÄni sustav za ovu particiju:"
 
 #. Type: text
 #. Description
@@ -77,7 +77,7 @@ msgstr ""
 #: ../partman-crypto.templates:68
 #, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Datoteèni sustav za ovu particiju:"
+msgstr "DatoteÄni sustav za ovu particiju:"
 
 #. Type: text
 #. Description
@@ -91,7 +91,7 @@ msgstr "Postavljam okvirni tampon..."
 #: ../partman-crypto.templates:111
 #, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Podesi mre¾u"
+msgstr "Podesi mreÅ¾u"
 
 #. Type: note
 #. Description
@@ -173,7 +173,7 @@ msgstr ""
 #: ../partman-crypto.templates:152
 #, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Zapi¹i promjene na diskove i podesi ULP?"
+msgstr "ZapiÅ¡i promjene na diskove i podesi ULP?"
 
 #. Type: boolean
 #. Description
@@ -183,8 +183,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Prije negoli krenete pode¹avati Upravljaè logièkim prostorom, trenutna shema "
-"particioniranja mora biti zapisana na disk. To se ne mo¾e poni¹titi."
+"Prije negoli krenete podeÅ¡avati UpravljaÄ logiÄkim prostorom, trenutna shema "
+"particioniranja mora biti zapisana na disk. To se ne moÅ¾e poniÅ¡titi."
 
 #. Type: boolean
 #. Description
@@ -197,7 +197,7 @@ msgstr "${ITEMS}"
 #: ../partman-crypto.templates:167
 #, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Zadr¾i trenutni raspored particija i podesi ULP?"
+msgstr "ZadrÅ¾i trenutni raspored particija i podesi ULP?"
 
 #. Type: boolean
 #. Description
@@ -209,9 +209,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
 msgstr ""
-"Nakon ¹to podesite Upravljaè logièkim prostorom, vi¹e neæe biti moguæe "
-"dodatne promjene particija na diskovima koji sadr¾e fizièke prostore. Molim "
-"odluèite jeste li zadovoljni trenutnom shemom particioniranja na tim "
+"Nakon Å¡to podesite UpravljaÄ logiÄkim prostorom, viÅ¡e neÄ‡e biti moguÄ‡e "
+"dodatne promjene particija na diskovima koji sadrÅ¾e fiziÄke prostore. Molim "
+"odluÄite jeste li zadovoljni trenutnom shemom particioniranja na tim "
 "diskovima prije negoli nastavite."
 
 #. Type: error
@@ -219,21 +219,21 @@ msgstr ""
 #: ../partman-crypto.templates:175
 #, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "ULP pode¹avanje neuspjelo"
+msgstr "ULP podeÅ¡avanje neuspjelo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
 #, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Pojavila se pogre¹ka pri zapisivanju promjena na diskove."
+msgstr "Pojavila se pogreÅ¡ka pri zapisivanju promjena na diskove."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
 #, fuzzy
 msgid "The configuration is aborted."
-msgstr "Pode¹avanje RAID-a prekinuto je."
+msgstr "PodeÅ¡avanje RAID-a prekinuto je."
 
 #. Type: error
 #. Description
@@ -247,7 +247,7 @@ msgstr "Instalacija ELILO neuspjela"
 #: ../partman-crypto.templates:182
 #, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Pojavila se pogre¹ka pri zapisivanju promjena na diskove."
+msgstr "Pojavila se pogreÅ¡ka pri zapisivanju promjena na diskove."
 
 #. Type: text
 #. Description
@@ -320,9 +320,9 @@ msgid ""
 "could be easily associated with you."
 msgstr ""
 "Morate postaviti zaporku za daljinski pristup Debianovom instalacijskom "
-"programu. Zlonamjeran ili nestruèan korisnik koji ima pristup instalaciji "
-"mo¾e izazvati golemu ¹tetu, pa se pobrinite da zaporku ne bude jednostavno "
-"odgonetnuti. To ne bi trebala biti obièna rijeè, ili rijeè koju je lako "
+"programu. Zlonamjeran ili nestruÄan korisnik koji ima pristup instalaciji "
+"moÅ¾e izazvati golemu Å¡tetu, pa se pobrinite da zaporku ne bude jednostavno "
+"odgonetnuti. To ne bi trebala biti obiÄna rijeÄ, ili rijeÄ koju je lako "
 "povezati s vama."
 
 #. Type: password
@@ -423,21 +423,21 @@ msgstr ""
 #: ../partman-crypto.templates:262
 #, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Mijenjanje velièine neuspjelo"
+msgstr "Mijenjanje veliÄine neuspjelo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:262
 #, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Pojavila se pogre¹ka pri zapisivanju promjena na diskove."
+msgstr "Pojavila se pogreÅ¡ka pri zapisivanju promjena na diskove."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:267
 #, fuzzy
 msgid "Encryption configuration failure"
-msgstr "ULP pode¹avanje neuspjelo"
+msgstr "ULP podeÅ¡avanje neuspjelo"
 
 #. Type: error
 #. Description
@@ -460,7 +460,7 @@ msgstr ""
 #: ../partman-crypto.templates:298
 #, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Jeste li sigurni da sada ¾elite izaæi?"
+msgstr "Jeste li sigurni da sada Å¾elite izaÄ‡i?"
 
 #. Type: boolean
 #. Description

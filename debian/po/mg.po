@@ -7,23 +7,23 @@
 # Malagasy messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interst, Inc.
 # This file is distributed under the same licence as debian-installer.
-#
 # Jaonary Rabarisoa  <jaonary@ifrance.com>, 2004.
 # Jaonary Rabarisoa <mpandikateny@linuxmg.org>, 2005.
 # Jaonary Rabarisoa <jaonary@free.fr>, 2005, 2006.
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-04-29 18:31-0600\n"
-"PO-Revision-Date: 2006-01-20 10:37+0100\n"
+"PO-Revision-Date: 2006-05-08 22:17+0200\n"
 "Last-Translator: Jaonary Rabarisoa <jaonary@free.fr>\n"
 "Language-Team: Malagasy <jaonary@free.fr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;X-Generator: KBabel 1.10.2\n"
-"X-Generator: KBabel 1.11.1\n"
 
 #. Type: text
 #. Description
@@ -34,16 +34,14 @@ msgstr "tsy miasa"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Fomba fizarana ny kapila:"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Toerana ampakarana ny fizarana:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -54,9 +52,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:41
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Toerana ampakarana ny fizarana:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -67,9 +64,8 @@ msgstr "Haben'ny fanalahidy:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:50
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Ny file system ho an'io fizarana io:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -80,37 +76,32 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:68
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Ny file system ho an'io fizarana io:"
+msgstr ""
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:107
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Manefy ny frame buffer..."
+msgstr ""
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Tefeo ny rezo"
+msgstr "T"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Tsy nahita fizarana"
+msgstr ""
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:115
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Tsy misy pakajy na kernel voafidy izay hapetraka."
+msgstr ""
 
 #. Type: note
 #. Description
@@ -152,9 +143,8 @@ msgstr "tsy ao"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Tsy nahomby ny fametrahana an'i ELILO"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -176,9 +166,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid "Write the changes to disks and configure encrypted volumes?"
-msgstr "Soratana amin'ny kapila ve ny fanovana?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -203,52 +192,42 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:167
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions in the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme in these "
 "disks before continuing."
-msgstr "tsia."
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "Encrypted volumes configuration failure"
-msgstr "Tsy nahomby ny fanefena ny LVM"
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
 msgstr ""
-"Nisy fahadisoana nitranga nandritra ny fandikana ny fanovana tao amin'ny "
-"kapila."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "The configuration is aborted."
-msgstr "Najanona ny fanefena ny periferika RAID."
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:182
-#, fuzzy
 msgid "Encrypted volume initialisation failed"
-msgstr "Tsy nahomby ny fametrahana an'i ELILO"
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:182
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
 msgstr ""
-"Nisy fahadisoana nitranga nandritra ny fandikana ny fanovana tao amin'ny "
-"kapila."
 
 #. Type: text
 #. Description
@@ -434,9 +413,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:267
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Tsy nahomby ny fanefena ny LVM"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -457,9 +435,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:298
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "hiala tokoa ve ianao ?"
+msgstr ""
 
 #. Type: boolean
 #. Description

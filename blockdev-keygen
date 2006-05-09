@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# usage: $0 description keytype keyfile [keysize]
+# usage: $0 description keytype keyfile [keybits]
 #
 # This handles sensitive data that must not be swapped out
 # or written out to disk unencrypted.
@@ -165,7 +165,7 @@ create_gnupg_keyfile () {
 
 # Create a one-time random keyfile for use during install
 create_random_keyfile() {
-	local keyfile keysize
+	local keyfile keybytes
 	keyfile=$1
 	keybytes=$2
 
@@ -196,7 +196,7 @@ problem_dialog () {
 description=$1
 keytype=$2
 keyfile=$3
-keysize=$4
+keybits=$4
 
 if ! ([ "$description" ] && [ "$keytype" ] && [ "$keyfile" ]); then
 	# bad options
@@ -230,18 +230,18 @@ case $keytype in
 		;;
 
 	random)
-		if [ -z "$keysize" ]; then
+		if [ -z "$keybits" ]; then
 			problem_dialog
 			exit 1
 		fi
-		# Round keysize up to closest byte
-		keysize=$(( (keysize + 7)/8 ))
-		if [ $keysize -lt 1 ]; then
-			# keysize invalid
+		# Round keybits up to closest byte
+		keybytes=$(( (keybits + 7)/8 ))
+		if [ $keybytes -lt 1 ]; then
+			# key size invalid
 			problem_dialog
 			exit 1
 		fi
-		if ! create_random_keyfile $keyfile $keysize; then
+		if ! create_random_keyfile $keyfile $keybytes; then
 			problem_dialog
 			exit 1
 		fi

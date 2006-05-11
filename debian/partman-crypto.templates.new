@@ -65,12 +65,7 @@ Template: partman-crypto/text/specify_ivalgorithm
 Type: text
 # An initialization vector is the initial randomness used to seed 
 # the encryption algorithm
-_Description: Initialization vector (IV) algorithm:
- Different algorithms exist to derive the initialization vector
- for each sector. This choice influences the encryption security.
- Normally, there is no reason to change this from the
- recommended default, except for compatibility with older systems.
-
+_Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
 Type: select
@@ -78,19 +73,23 @@ Choices: ${CHOICES}
 # An initialization vector is the initial randomness used to seed 
 # the encryption algorithm
 _Description: Initialization vector generation algorithm for this partition:
+ Different algorithms exist to derive the initialization vector
+ for each sector. This choice influences the encryption security.
+ Normally, there is no reason to change this from the
+ recommended default, except for compatibility with older systems.
 
 Template: partman-crypto/text/specify_keytype
 Type: text
 _Description: Encryption key:
- The encryption key is derived from the passphrase by applying a
- one-way hash function to it. Normally, there is no reason to change
- this from the recommended default and doing so in the wrong way
- can reduce the encryption strength.
 
 Template: partman-crypto/keytype
 Type: select
 Choices: ${CHOICES}
 _Description: Type of encryption key for this partition:
+ The encryption key is derived from the passphrase by applying a
+ one-way hash function to it. Normally, there is no reason to change
+ this from the recommended default and doing so in the wrong way
+ can reduce the encryption strength.
 
 Template: partman-crypto/text/specify_keyhash
 Type: text

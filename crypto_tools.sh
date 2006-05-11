@@ -194,9 +194,9 @@ setup_cryptdev () {
 		  fi
 		  if [ $keytype = passphrase ]; then
 			  setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
-          elif [ $keytype = random ]; then
+		  elif [ $keytype = random ]; then
 			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize $keyfile || return 1
-          else
+		  else
 			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
 		  fi
 		  cryptdev="/dev/mapper/$cryptdev"

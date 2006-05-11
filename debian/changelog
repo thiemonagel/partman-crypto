@@ -9,8 +9,10 @@ partman-crypto (3) UNRELEASED; urgency=low
   * blockdev-keygen: Pass keysize to the entropy frontend module
     using the KEYSIZE template variable. Bump the dependency on
     cdebconf-newt-entropy to >= 0.3 accordingly.
+  * Switch to improved templates. Many thanks to Christian Perrier,
+    Frans Pop, Geert Stappers and Steve Langasek.
 
- -- Max Vozeler <xam@debian.org>  Thu, 11 May 2006 11:40:47 +0200
+ -- Max Vozeler <xam@debian.org>  Thu, 11 May 2006 23:01:08 +0200
 
 partman-crypto (2) unstable; urgency=low
 

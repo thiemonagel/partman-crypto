@@ -1,18 +1,28 @@
 Template: partman/method_long/crypto
 Type: text
-Description: physical volume for encryption
+# File system name
+# Keep translations short enough
+_Description: physical volume for encryption
 
 Template: partman/method_short/crypto
 Type: text
-Description: crypto
+# Short file system name (untranslatable in many languages)
+# Should be kept very short or unstranslated
+_Description: crypto
 
 Template: partman-crypto/crypto_type/loop-AES
 Type: text
-Description: Loopback (loop-AES)
+# This is related to "encryption method"
+# Encryption type for a filesystem
+# Translations should be kept below 40 columns
+_Description: Loopback (loop-AES)
 
 Template: partman-crypto/crypto_type/dm-crypt
 Type: text
-Description: Device-mapper (dm-crypt)
+# This is related to "encryption method"
+# Encryption type for a filesystem
+# Translations should be kept below 40 columns
+_Description: Device-mapper (dm-crypt)
 
 Template: partman-crypto/text/cryptdev_description
 Type: text
@@ -20,6 +30,8 @@ Description: ${CIPHER} ${KEYTYPE}
 
 Template: partman-crypto/text/not_active
 Type: text
+# This is related to "encryption method"
+# Encryption type for a filesystem
 _Description: not active
 
 Template: partman-crypto/text/specify_crypto_type
@@ -51,12 +63,20 @@ _Description: Key size for this partition:
 
 Template: partman-crypto/text/specify_ivalgorithm
 Type: text
-Description: IV algorithm:
+# An initialization vector is the initial randomness used to seed 
+# the encryption algorithm
+_Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
 Type: select
 Choices: ${CHOICES}
-Description: IV generation algorithm for this partition:
+# An initialization vector is the initial randomness used to seed 
+# the encryption algorithm
+_Description: Initialization vector generation algorithm for this partition:
+ Different algorithms exist to derive the initialization vector
+ for each sector. This choice influences the encryption security.
+ Normally, there is no reason to change this from the
+ recommended default, except for compatibility with older systems.
 
 Template: partman-crypto/text/specify_keytype
 Type: text
@@ -69,36 +89,42 @@ _Description: Type of encryption key for this partition:
 
 Template: partman-crypto/text/specify_keyhash
 Type: text
-Description: Encryption key hash:
+_Description: Encryption key hash:
 
 Template: partman-crypto/keyhash
 Type: select
 Choices: ${CHOICES}
-Description: Type of encryption key hash for this partition:
+_Description: Type of encryption key hash for this partition:
+ The encryption key is derived from the passphrase by applying a
+ one-way hash function to it. Normally, there is no reason to change
+ this from the recommended default and doing so in the wrong way
+ can reduce the encryption strength.
 
 Template: partman-crypto/text/erase_data
 Type: text
-Description: Erase data:
+# This shows up in a screen summarizing options and will be followed
+# by "yes" or "no"
+_Description: Erase data:
 
 Template: partman-crypto/text/erase_data_partition
 Type: text
-Description: Erase data on this partition
+_Description: Erase data on this partition
 
 Template: partman-crypto/warn_erase
 Type: boolean
 Default: false
-Description: Are you sure you want to erase the data on ${DEVICE}?
+_Description: Really erase the data on ${DEVICE}?
  The data on ${DEVICE} will be overwritten with random data. It can no
  longer be recovered after this step has completed. This is the last 
  opportunity to abort the erase.
 
 Template: partman-crypto/progress/erase
 Type: text
-Description: Erasing data on ${DEVICE}
+_Description: Erasing data on ${DEVICE}
 
 Template: partman-crypto/erase_failed
 Type: error
-Description: Erasing data on ${DEVICE} failed
+_Description: Erasing data on ${DEVICE} failed
  An error occured trying to erase the data on ${DEVICE}. The data has
  not been erased.
 
@@ -123,6 +149,7 @@ _Description: Required programs missing
 
 Template: partman-crypto/options_missing
 Type: error
+#flag:translate!:3
 _Description: Required encryption options missing
  The encryption options for ${DEVICE} are incomplete. Please return to
  the partition menu and select all required options.
@@ -140,24 +167,25 @@ Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure
  The kernel module package ${PACKAGE} could not be found or an error
- occurred during installation.
+ occurred during its installation.
  .
- There will likely be problems during boot when the system tries to
- setup encrypted partitions. You can still correct them by installing the
- required package later on.
+ It is likely that there will be problems setting up encrypted
+ partitions when the system is rebooted. You may be able to correct
+ this by installing the required package(s) later on.
 
 Template: partman-crypto/confirm
 Type: boolean
 Default: false
-_Description: Write the changes to disks and configure encrypted volumes?
+#flag:translate!:4
+_Description: Write the changes to disk and configure encrypted volumes?
  Before encrypted volumes can be configured, the current
  partitioning scheme has to be written to disk.  These changes
  cannot be undone.
  .
  After the encrypted volumes have been configured, no additional
- changes to the partitions in the disks containing encrypted volumes
+ changes to the partitions on the disks containing encrypted volumes
  are allowed. Please decide if you are satisfied with the current
- partitioning scheme in these disks before continuing.
+ partitioning scheme for these disks before continuing.
  .
  ${ITEMS}
 
@@ -166,32 +194,44 @@ Type: boolean
 Default: false
 _Description: Keep current partition layout and configure encrypted volumes?
  After the encrypted volumes have been configured, no additional changes
- to the partitions in the disks containing encrypted volumes are
+ to the partitions on the disks containing encrypted volumes are
  allowed. Please decide if you are satisfied with the current
- partitioning scheme in these disks before continuing.
+ partitioning scheme for these disks before continuing.
 
 Template: partman-crypto/commit_failed
 Type: error
-_Description: Encrypted volumes configuration failure
+_Description: Configuration of encrypted volumes configuration failed
  An error occurred while configuring encrypted volumes.
  .
- The configuration is aborted.
+ The configuration has been aborted.
 
 Template: partman-crypto/init_failed
 Type: error
-_Description: Encrypted volume initialisation failed
+_Description: Initialisation of encrypted volume failed
  An error occurred while setting up encrypted volumes.
 
 Template: partman-crypto/text/keytype/passphrase
 Type: text
+# This is a key type for encrypted file systems
+# It can be either protected by a passphrase, a keyfile
+# of a random key
+# This text is one of these choices, so keep it short
 _Description: Passphrase
 
 Template: partman-crypto/text/keytype/keyfile
 Type: text
+# This is a key type for encrypted file systems
+# It can be either protected by a passphrase, a keyfile
+# of a random key
+# This text is one of these choices, so keep it short
 _Description: Keyfile (GnuPG)
 
 Template: partman-crypto/text/keytype/random
 Type: text
+# This is a key type for encrypted file systems
+# It can be either protected by a passphrase, a keyfile
+# of a random key
+# This text is one of these choices, so keep it short
 _Description: Random key
 
 Template: partman-crypto/unsafe_swap
@@ -241,6 +281,7 @@ _Description: Empty passphrase
 Template: partman-crypto/weak_passphrase
 Type: boolean
 Default: false
+#flag:comment:2
 # Translators: we unfortunately cannot use plural forms here
 # So, you are suggested to use the plural form adapted for
 # MINIMUM=8, which is the current hardcoded value
@@ -274,22 +315,22 @@ _Description: Encryption configuration failure
 
 Template: partman-crypto/crypto_root_needs_boot
 Type: error
-Description: Encryption configuration failure
+_Description: Encryption configuration failure
  You have selected the root filesystem to be stored on an encrypted
  partition. This feature requires a separate /boot partition on which 
  the kernel and initrd can be stored.
  .
- Please go back and configure a /boot partition.
+ You should go back and setup a /boot partition.
 
 Template: partman-crypto/crypto_boot_not_possible
 Type: error
-Description: Encryption configuration failure
+_Description: Encryption configuration failure
  You have selected the /boot filesystem to be stored on an encrypted
- partition. This is not possible because the kernel and initrds could
- then not be accessed by the bootloader. Continuing now would result
+ partition. This is not possible because the bootloader would be unable to
+ load the kernel and initrd. Continuing now would result
  in an installation that cannot be used.
  .
- Please go back and choose a non-encrypted partition for the /boot
+ You should go back and choose a non-encrypted partition for the /boot
  filesystem.
 
 Template: partman-crypto/use_random_for_nonswap
@@ -306,12 +347,9 @@ _Description: Are you sure you want to use a random key?
 Template: partman-crypto/warning_experimental_nonaudit
 Type: boolean
 Default: false
-Description: Are you sure you want to continue?
- Important warning:
- .
+_Description: Really use block device encryption?
  The support for block device encryption is still experimental and not
  considered ready for production. In particular it may result in setups
  that are easy to break and so give a false sense of security. There are
- no known encryption flaws, however, until we have completed a thorough 
- audit of the implementation, please do NOT USE this feature for production
- setups unless you know what you are doing.
+ no known encryption flaws, however, until the implementation is thoroughly
+ audited, this feature should not be used except for testing purposes.

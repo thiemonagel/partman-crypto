@@ -29,16 +29,14 @@ msgstr "未啟用"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:27
-#, fuzzy
 msgid "Encryption method:"
-msgstr "加密金鑰："
+msgstr "加密方式："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:32
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "這個分割區的加密："
+msgstr "這個分割區的加密方式："
 
 #. Type: text
 #. Description
@@ -109,7 +107,6 @@ msgstr "找不到必需的程式"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:120
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."

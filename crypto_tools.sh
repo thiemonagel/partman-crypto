@@ -133,7 +133,7 @@ setup_dmcrypt () {
 	[ -x /sbin/cryptsetup ] || return 1
 
 	log-output -t partman-crypto \
-	/sbin/cryptsetup -c $cipher-$iv -h $hash -s $size create $mapping $device < $pass
+	/sbin/cryptsetup -c $cipher-$iv -d $pass -h $hash -s $size create $mapping $device
 	if [ $? -ne 0 ] ; then
 		log "cryptsetup failed"
 		return 2
@@ -194,7 +194,9 @@ setup_cryptdev () {
 		  fi
 		  if [ $keytype = passphrase ]; then
 			  setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
-		  else
+          elif [ $keytype = random ]; then
+			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize $keyfile || return 1
+          else
 			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
 		  fi
 		  cryptdev="/dev/mapper/$cryptdev"

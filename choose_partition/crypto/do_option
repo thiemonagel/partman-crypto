@@ -342,6 +342,8 @@ for dev in $DEVICES/*; do
 			fi
 			if [ ! -f $keyfile ]; then
 				if [ $type != loop-AES ]; then
+					keysize=""
+					[ -f $id/keysize ] && keysize=$(cat $id/keysize)
 					create_keyfile $path $keytype $keyfile $keysize
 				else
 					create_keyfile $path $keytype $keyfile

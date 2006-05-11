@@ -86,10 +86,6 @@ Template: partman-crypto/keytype
 Type: select
 Choices: ${CHOICES}
 _Description: Type of encryption key for this partition:
- The encryption key is derived from the passphrase by applying a
- one-way hash function to it. Normally, there is no reason to change
- this from the recommended default and doing so in the wrong way
- can reduce the encryption strength.
 
 Template: partman-crypto/text/specify_keyhash
 Type: text
@@ -99,6 +95,10 @@ Template: partman-crypto/keyhash
 Type: select
 Choices: ${CHOICES}
 _Description: Type of encryption key hash for this partition:
+ The encryption key is derived from the passphrase by applying a
+ one-way hash function to it. Normally, there is no reason to change
+ this from the recommended default and doing so in the wrong way
+ can reduce the encryption strength.
 
 Template: partman-crypto/text/erase_data
 Type: text

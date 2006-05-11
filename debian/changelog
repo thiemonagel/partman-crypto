@@ -4,6 +4,8 @@ partman-crypto (3) UNRELEASED; urgency=low
   * Add support for random keys with dm-crypt
 
   [ Max Vozeler]
+  * Create /etc/default/checkfs-loop in /target to enable file 
+    system checks for loop-AES
   * blockdev-keygen: Pass keysize to the entropy frontend module
     using the KEYSIZE template variable. Bump the dependency on
     cdebconf-newt-entropy to >= 0.3 accordingly.

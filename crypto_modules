@@ -24,10 +24,16 @@ for dev in /var/lib/partman/devices/*; do
 done
 
 if [ $loop_AES = yes ]; then
+	echo loop >> /target/etc/modules
+	
+	cat > /target/etc/default/checkfs-loop <<END
+# Check loop-backed file systems at startup?
+CHECKFS_LOOP_ENABLE=yes
+END
+
 	db_get base-installer/kernel/image
 	KVERS=${RET#*-image-}
-	apt-install loop-aes-$KVERS
-	if [ $? -ne 0 ]; then
+	if ! apt-install loop-aes-$KVERS; then
 		templ="partman-crypto/module_package_missing"
 		db_fset $templ seen false
 		db_subst $templ PACKAGE loop-aes-$KVERS
@@ -35,6 +41,5 @@ if [ $loop_AES = yes ]; then
 		db_go
 		exit 1
 	fi
-	echo loop >> /target/etc/modules
 fi
 

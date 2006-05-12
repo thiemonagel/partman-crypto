@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of fr.po to French
 # French messages for debian-installer.
 # Copyright (C) 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -19,7 +18,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 08:01+0200\n"
+"PO-Revision-Date: 2006-05-12 06:58+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,18 +32,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "volume physique pour LVM"
+msgstr "volume physique pour chiffrement"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Chiffrement :"
+msgstr "chiffré"
 
 #. Type: text
 #. Description
@@ -52,9 +49,8 @@ msgstr "Chiffrement :"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Bouclage (« loopback », loop%s)"
+msgstr "Bouclage (loop-AES)"
 
 #. Type: text
 #. Description
@@ -63,7 +59,7 @@ msgstr "Bouclage (« loopback », loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "« Device-mapper » (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -115,16 +111,16 @@ msgstr "Taille de la clé pour cette partition :"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algorithme IV :"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Méthode de chiffrement pour cette partition :"
+msgstr ""
+"Algorithme de création du vecteur d'initialisation pour cette partition :"
 
 #. Type: select
 #. Description
@@ -137,6 +133,11 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Plusieurs algorithmes peuvent être utilisés pour établir le vecteur "
+"d'initialisation de chaque secteur. Ce choix influence directement la "
+"sécurité du chiffrement. Il n'est généralement pas utile de modifier la "
+"valeur recommandée par défaut, sauf pour conserver la compatibilité avec des "
+"systèmes de chiffrement existants."
 
 #. Type: text
 #. Description
@@ -153,16 +154,14 @@ msgstr "Type de la clé de chiffrement pour cette partition :"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Clé de chiffrement :"
+msgstr "Hachage (« hash ») de la clé de chiffrement :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Type de la clé de chiffrement pour cette partition :"
+msgstr "Type de hachage de la clé de chiffrement pour cette partition :"
 
 #. Type: select
 #. Description
@@ -173,6 +172,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"La clé de chiffrement est construite par hachage à sens unique de la phrase "
+"secrète. Il n'est généralement pas utile de modifier la valeur recommandée "
+"par défaut. Une modification incorrecte est susceptible de diminuer la "
+"sécurité du chiffrement."
 
 #. Type: text
 #. Description
@@ -180,21 +183,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Effacer données :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Chiffrement pour cette partition :"
+msgstr "Effacer les données de cette partition :"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Effacer et utiliser tout le disque ${DEVICE}"
+msgstr "Faut-il vraiment effacer les données sur ${DEVICE} ?"
 
 #. Type: boolean
 #. Description
@@ -204,19 +205,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Les données présentes sur ${DEVICE} seront écrasées avec des données "
+"aléatoires. Cette opération est irréversible. Ceci est la dernière "
+"opportunité pour refuser cette action."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Effacer et utiliser tout le disque ${DEVICE}"
+msgstr "Effacement des données de ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Échec de l'effacement des données sur ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -225,6 +228,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Une erreur s'est produite lors de la tentative d'effacement des données sur "
+"${DEVICE}. Les données n'ont pas été effacées."
 
 #. Type: text
 #. Description
@@ -301,18 +306,16 @@ msgstr "L'installation du paquet de chiffrement a échoué"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Le paquet des modules du noyau ${PACKAGE} n'a pas été trouvé ou une erreur "
+"Le paquet ${PACKAGE} de modules du noyau n'a pas été trouvé ou une erreur "
 "s'est produite pendant son installation."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -320,15 +323,14 @@ msgid ""
 msgstr ""
 "Il est probable que des problèmes auront lieu au démarrage lorsque le "
 "système tentera d'utiliser les partitions chiffrées. Vous pourrez cependant "
-"les corriger plus tard en installant le paquet requis."
+"les corriger plus tard en installant le(s) paquet(s) requis."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
-"Écrire les modifications sur les disques et configurer les volumes chiffrés ?"
+"Écrire les modifications sur le disque et configurer les volumes chiffrés ?"
 
 #. Type: boolean
 #. Description
@@ -352,7 +354,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -367,7 +368,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Échec de la configuration des volumes chiffrés"
 
@@ -381,16 +381,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "La configuration a été interrompue."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Échec d'une étape de configuration"
+msgstr "Échec de l'initialisation du volume chiffré"
 
 #. Type: error
 #. Description
@@ -629,24 +627,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Vous avez choisi de placer le système de fichiers racine sur une partition "
-"chiffrée. Cette fonctionnalité n'est pas disponible et conduirait à une "
-"installation inutilisable."
+"chiffrée. Cette fonctionnalité impose d'utiliser une partition /boot dédiée "
+"sur laquelle le noyau et l'image disque en mémoire (« initrd ») seront "
+"stockés."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Vous devriez utiliser un autre système de fichiers, par exemple ext3, pour "
-"la partition /boot."
+msgstr "Vous devriez revenir en arrière et configurer une partition /boot."
 
 #. Type: error
 #. Description
@@ -657,27 +652,26 @@ msgstr "Échec de la configuration du chiffrement"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Vous avez choisi de placer le système de fichiers racine sur une partition "
-"chiffrée. Cette fonctionnalité n'est pas disponible et conduirait à une "
-"installation inutilisable."
+"Vous avez choisi de placer le système de fichiers /boot sur une partition "
+"chiffrée. Ce choix n'est pas possible car le gestionnaire d'amorçage ne "
+"pourrait pas charger le noyau et l'image disque en mémoire (« initrd »). Si "
+"vous continuez, le système installé sera inutilisable."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"Veuillez revenir en arrière et choisir une partition non chiffrée pour le "
-"système de fichiers racine."
+"Vous devriez revenir en arrière et choisir une partition non chiffrée pour "
+"le système de fichiers /boot."
 
 #. Type: boolean
 #. Description
@@ -710,7 +704,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Faut-il vraiment utiliser le chiffrement du périphérique de bloc ?"
 
 #. Type: boolean
 #. Description
@@ -722,3 +716,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"La gestion du chiffrement des périphériques de bloc est encore expérimentale "
+"et n'est donc pas considérée comme utilisable en production. Plus "
+"particulièrement, elle peut conduire à des configurations faciles à attaquer "
+"et donc donner une fausse impression de sécurité. Il n'existe pas de faille "
+"connue dans le chiffrement ; cependant, tant que la mise en oeuvre de cette "
+"fonctionnalité n'a pas été analysée en détail, elle ne devrait être utilisée "
+"que pour des expérimentations."

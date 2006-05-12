@@ -2,7 +2,7 @@
 
 set -e
 
-PACKAGE=$(dh_listpackages)
+PACKAGE=$(dh_listpackages -a)
 partman=debian/${PACKAGE}/lib/partman
 
 install -d $partman/$1

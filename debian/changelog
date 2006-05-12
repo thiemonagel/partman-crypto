@@ -1,3 +1,11 @@
+partman-crypto (4) UNRELEASED; urgency=low
+
+  * Build partman-crypto-dm and partman-crypto-loop and depend on 
+    respective tools and kernel modules.
+  * Depend on partman-crypto-loop | partman-crypto-dm
+
+ -- Max Vozeler <xam@debian.org>  Fri, 12 May 2006 16:49:08 +0200
+
 partman-crypto (3) unstable; urgency=low
 
   [ David Härdeman and Riku Voipio ]

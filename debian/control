@@ -9,6 +9,6 @@ Standards-Version: 3.6.2
 Package: partman-crypto
 XC-Package-Type: udeb
 Architecture: any
-Depends: partman-base (>= 73), mount-aes-udeb, cdebconf-newt-entropy (>= 0.3), loop-aes-modules, ${shlibs:Depends}, ${misc:Depends}
+Depends: partman-base (>= 73), mount-aes-udeb, cdebconf-newt-entropy (>= 0.3), loop-aes-modules, gnupg-udeb, ${shlibs:Depends}, ${misc:Depends}
 Description: Add to partman support for loop-AES and dm-crypt crypto
 

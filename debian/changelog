@@ -11,6 +11,7 @@ partman-crypto (3) UNRELEASED; urgency=low
     cdebconf-newt-entropy to >= 0.3 accordingly.
   * Switch to improved templates. Many thanks to Christian Perrier,
     Frans Pop, Geert Stappers and Steve Langasek.
+  * Depend on gnupg-udeb
 
  -- Max Vozeler <xam@debian.org>  Thu, 11 May 2006 23:01:08 +0200
 

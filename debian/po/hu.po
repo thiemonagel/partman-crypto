@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-04-29 18:31-0600\n"
+"POT-Creation-Date: 2006-05-11 18:31-0600\n"
 "PO-Revision-Date: 2006-05-05 01:44+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
@@ -24,91 +24,231 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:23
+#. File system name
+#. Keep translations short enough
+#: ../partman-crypto.templates:5
+msgid "physical volume for encryption"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Short file system name (untranslatable in many languages)
+#. Should be kept very short or unstranslated
+#: ../partman-crypto.templates:11
+#, fuzzy
+msgid "crypto"
+msgstr "Titkosítás:"
+
+#. Type: text
+#. Description
+#. This is related to "encryption method"
+#. Encryption type for a filesystem
+#. Translations should be kept below 40 columns
+#: ../partman-crypto.templates:18
+msgid "Loopback (loop-AES)"
+msgstr ""
+
+#. Type: text
+#. Description
+#. This is related to "encryption method"
+#. Encryption type for a filesystem
+#. Translations should be kept below 40 columns
+#: ../partman-crypto.templates:25
+msgid "Device-mapper (dm-crypt)"
+msgstr ""
+
+#. Type: text
+#. Description
+#. This is related to "encryption method"
+#. Encryption type for a filesystem
+#: ../partman-crypto.templates:35
 msgid "not active"
 msgstr "nem aktív"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:27
+#: ../partman-crypto.templates:39
 msgid "Encryption method:"
 msgstr "Titkosítási mód:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:32
+#: ../partman-crypto.templates:44
 msgid "Encryption method for this partition:"
 msgstr "Titkosítási mód e partícióhoz:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:36
+#: ../partman-crypto.templates:48
 msgid "Encryption:"
 msgstr "Titkosítás:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:41
+#: ../partman-crypto.templates:53
 msgid "Encryption for this partition:"
 msgstr "Titkosítás e partícióhoz:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:45
+#: ../partman-crypto.templates:57
 msgid "Key size:"
 msgstr "Kulcsméret:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:50
+#: ../partman-crypto.templates:62
 msgid "Key size for this partition:"
 msgstr "Kulcsméret e partícióhoz:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:63
+#. An initialization vector is the initial randomness used to seed
+#. the encryption algorithm
+#: ../partman-crypto.templates:68
+msgid "IV algorithm:"
+msgstr ""
+
+#. Type: select
+#. Description
+#. An initialization vector is the initial randomness used to seed
+#. the encryption algorithm
+#: ../partman-crypto.templates:75
+#, fuzzy
+msgid "Initialization vector generation algorithm for this partition:"
+msgstr "Titkosítási mód e partícióhoz:"
+
+#. Type: select
+#. Description
+#. An initialization vector is the initial randomness used to seed
+#. the encryption algorithm
+#: ../partman-crypto.templates:75
+msgid ""
+"Different algorithms exist to derive the initialization vector for each "
+"sector. This choice influences the encryption security. Normally, there is "
+"no reason to change this from the recommended default, except for "
+"compatibility with older systems."
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../partman-crypto.templates:83
 msgid "Encryption key:"
 msgstr "Titkosító kulcs:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:68
+#: ../partman-crypto.templates:88
 msgid "Type of encryption key for this partition:"
 msgstr "Titkosító kulcs típusa e partícióhoz:"
 
 #. Type: text
 #. Description
+#: ../partman-crypto.templates:92
+#, fuzzy
+msgid "Encryption key hash:"
+msgstr "Titkosító kulcs:"
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:97
+#, fuzzy
+msgid "Type of encryption key hash for this partition:"
+msgstr "Titkosító kulcs típusa e partícióhoz:"
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:97
+msgid ""
+"The encryption key is derived from the passphrase by applying a one-way hash "
+"function to it. Normally, there is no reason to change this from the "
+"recommended default and doing so in the wrong way can reduce the encryption "
+"strength."
+msgstr ""
+
+#. Type: text
+#. Description
+#. This shows up in a screen summarizing options and will be followed
+#. by "yes" or "no"
 #: ../partman-crypto.templates:107
+msgid "Erase data:"
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../partman-crypto.templates:111
+#, fuzzy
+msgid "Erase data on this partition"
+msgstr "Titkosítás e partícióhoz:"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:116
+msgid "Really erase the data on ${DEVICE}?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:116
+msgid ""
+"The data on ${DEVICE} will be overwritten with random data. It can no longer "
+"be recovered after this step has completed. This is the last  opportunity to "
+"abort the erase."
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../partman-crypto.templates:123
+msgid "Erasing data on ${DEVICE}"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:127
+msgid "Erasing data on ${DEVICE} failed"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:127
+msgid ""
+"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"been erased."
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../partman-crypto.templates:133
 msgid "Setting up encryption..."
 msgstr "Titkosítás beállítása..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:111
+#: ../partman-crypto.templates:137
 msgid "Configure encrypted volumes"
 msgstr "Titkosított partíciók konfigurálása"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:141
 msgid "No partitions to encrypt"
 msgstr "Nincs titkosítandó partíció"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:115
+#: ../partman-crypto.templates:141
 msgid "No partitions have been selected for encryption."
 msgstr "Nincs titkosításra kijelölt partíció."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:120
+#: ../partman-crypto.templates:146
 msgid "Required programs missing"
 msgstr "A kért program nem található"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:120
+#: ../partman-crypto.templates:146
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
@@ -118,13 +258,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:153
 msgid "Required encryption options missing"
 msgstr "Hiányzó titkosítási lehetőségek"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:126
+#: ../partman-crypto.templates:153
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -137,33 +277,35 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:137
+#: ../partman-crypto.templates:164
 msgid "missing"
 msgstr "hiányzik"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:168
 msgid "Encryption package installation failure"
 msgstr "Titkosító csomag telepítő hiba"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:168
+#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
-"during installation."
+"during its installation."
 msgstr ""
 "A ${PACKAGE} rendszermag modul nem található, vagy hiba történt "
 "telepítésekor."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:168
+#, fuzzy
 msgid ""
-"There will likely be problems during boot when the system tries to setup "
-"encrypted partitions. You can still correct them by installing the required "
-"package later on."
+"It is likely that there will be problems setting up encrypted partitions "
+"when the system is rebooted. You may be able to correct this by installing "
+"the required package(s) later on."
 msgstr ""
 "Az indításkor valószínűleg gondok lesznek, mikor a rendszer megpróbálja "
 "beállítani a titkosított partíciókat. A szükséges csomag későbbi "
@@ -171,13 +313,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:152
-msgid "Write the changes to disks and configure encrypted volumes?"
+#: ../partman-crypto.templates:180
+#, fuzzy
+msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Változások lemezre írása és titkosított kötetek konfigurálása?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:152
+#: ../partman-crypto.templates:180
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -187,23 +330,18 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:152
-msgid "${ITEMS}"
-msgstr "${ITEMS}"
-
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:167
+#: ../partman-crypto.templates:195
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "Megtartod e partícionálást és konfigurálod a titkosított köteteket?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:167
+#: ../partman-crypto.templates:195
+#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
-"the partitions in the disks containing encrypted volumes are allowed. Please "
-"decide if you are satisfied with the current partitioning scheme in these "
+"the partitions on the disks containing encrypted volumes are allowed. Please "
+"decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
 "A titkosított kötetek konfigurálása után, nem módosítható a titkosított "
@@ -212,67 +350,81 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:175
-msgid "Encrypted volumes configuration failure"
+#: ../partman-crypto.templates:203
+#, fuzzy
+msgid "Configuration of encrypted volumes configuration failed"
 msgstr "Titkosított kötetek konfigurálásának hibája"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:175
+#: ../partman-crypto.templates:203
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Hiba történt a titkosított kötetek konfigurálásakor"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:175
-msgid "The configuration is aborted."
+#: ../partman-crypto.templates:203
+#, fuzzy
+msgid "The configuration has been aborted."
 msgstr "A beállítás törölve"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:182
-msgid "Encrypted volume initialisation failed"
-msgstr "A titkosított kötet inicializálása meghiúsult"
+#: ../partman-crypto.templates:210
+msgid "Initialisation of encrypted volume failed"
+msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:182
+#: ../partman-crypto.templates:210
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Hiba történt a titkosított kötetek beállításakor"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:187
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:219
 msgid "Passphrase"
 msgstr "Jelszó"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:191
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:227
 msgid "Keyfile (GnuPG)"
 msgstr "Kulcsfájl (GnuPG)"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:195
+#. This is a key type for encrypted file systems
+#. It can be either protected by a passphrase, a keyfile
+#. of a random key
+#. This text is one of these choices, so keep it short
+#: ../partman-crypto.templates:235
 msgid "Random key"
 msgstr "Véletlen kulcs"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:199
+#: ../partman-crypto.templates:239
 msgid "Unsafe swap space detected"
 msgstr "Nem-biztonságos cserehely"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:199
+#: ../partman-crypto.templates:239
 msgid "An unsafe swap space has been detected."
 msgstr "Egy nem-biztonságos cserehelyt érzékeltem."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:199
+#: ../partman-crypto.templates:239
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -284,7 +436,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:199
+#: ../partman-crypto.templates:239
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -296,19 +448,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:252
 msgid "Encryption passphrase:"
 msgstr "A titkosítás jelszava:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:252
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Jelszó-kifejezést kell választani a ${DEVICE} titkosításához"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:252
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -321,7 +473,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:212
+#: ../partman-crypto.templates:252
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -332,13 +484,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:226
+#: ../partman-crypto.templates:266
 msgid "Re-enter passphrase to verify:"
 msgstr "Jelszó-kifejezés újra:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:226
+#: ../partman-crypto.templates:266
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -346,25 +498,25 @@ msgstr "A megadott jelszót ismét be kell írni az elgépelés ellen."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:232
+#: ../partman-crypto.templates:272
 msgid "Passphrase input error"
 msgstr "Jelszó beviteli hiba"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:232
+#: ../partman-crypto.templates:272
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "A két megadott jelszó nem egyezik. Add meg ismét!"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:237
+#: ../partman-crypto.templates:277
 msgid "Empty passphrase"
 msgstr "Üres jelszó"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:237
+#: ../partman-crypto.templates:277
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -374,10 +526,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:247
+#: ../partman-crypto.templates:288
 msgid "Use weak passphrase?"
 msgstr "Gyenge jelszó-kifejezést használsz?"
 
@@ -386,7 +535,7 @@ msgstr "Gyenge jelszó-kifejezést használsz?"
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:247
+#: ../partman-crypto.templates:288
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -396,19 +545,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:253
+#: ../partman-crypto.templates:294
 msgid "Enter random characters"
 msgstr "Véletlen karakterek megadása"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:253
+#: ../partman-crypto.templates:294
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "A ${DEVICE} eszköz titkosítókulcsa létrehozva."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:253
+#: ../partman-crypto.templates:294
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -419,25 +568,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:262
+#: ../partman-crypto.templates:303
 msgid "Keyfile creation failure"
 msgstr "Kulcsfájl létrehozás hiba"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:262
+#: ../partman-crypto.templates:303
 msgid "An error occurred while creating the keyfile."
 msgstr "Hiba történt a kulcsfájl létrehozásakor"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:267
-msgid "Encryption configuration failure"
-msgstr "Titkosítás konfigurációs hiba"
-
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:267
+#: ../partman-crypto.templates:308
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -448,22 +591,70 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:267
+#: ../partman-crypto.templates:308
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
 "Visszalépéssel nem-titkosított fájlrendszert kell választani a root "
 "fájlrendszerhez."
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:318
+#, fuzzy
+msgid ""
+"You have selected the root filesystem to be stored on an encrypted "
+"partition. This feature requires a separate /boot partition on which  the "
+"kernel and initrd can be stored."
+msgstr ""
+"A root fájlrendszerhez titkosított partíció lett kiválasztva. E lehetőség "
+"nem áll rendelkezésre és így használhatatlan telepítés keletkezhet."
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:318
+msgid "You should go back and setup a /boot partition."
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:327
+msgid "Encryption configuration failure"
+msgstr "Titkosítás konfigurációs hiba"
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:327
+#, fuzzy
+msgid ""
+"You have selected the /boot filesystem to be stored on an encrypted "
+"partition. This is not possible because the bootloader would be unable to "
+"load the kernel and initrd. Continuing now would result in an installation "
+"that cannot be used."
+msgstr ""
+"A root fájlrendszerhez titkosított partíció lett kiválasztva. E lehetőség "
+"nem áll rendelkezésre és így használhatatlan telepítés keletkezhet."
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:327
+#, fuzzy
+msgid ""
+"You should go back and choose a non-encrypted partition for the /boot "
+"filesystem."
+msgstr ""
+"Visszalépéssel nem-titkosított fájlrendszert kell választani a root "
+"fájlrendszerhez."
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:339
 msgid "Are you sure you want to use a random key?"
 msgstr "Biztosan véletlen kulcsot akarsz használni?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:339
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -473,10 +664,33 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:339
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "Véletlen kulcs típus használata azt jelenti, hogy a partíció adatai "
 "törlődnek minden újraindításnál. Ez csak a cserepartícióknál használatos"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:350
+msgid "Really use block device encryption?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:350
+msgid ""
+"The support for block device encryption is still experimental and not "
+"considered ready for production. In particular it may result in setups that "
+"are easy to break and so give a false sense of security. There are no known "
+"encryption flaws, however, until the implementation is thoroughly audited, "
+"this feature should not be used except for testing purposes."
+msgstr ""
+
+#~ msgid "${ITEMS}"
+#~ msgstr "${ITEMS}"
+
+#~ msgid "Encrypted volume initialisation failed"
+#~ msgstr "A titkosított kötet inicializálása meghiúsult"

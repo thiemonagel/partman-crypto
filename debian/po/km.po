@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-11 18:31-0600\n"
+"POT-Creation-Date: 2006-05-12 00:21-0600\n"
 "PO-Revision-Date: 2006-05-10 11:01+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -198,7 +198,7 @@ msgstr "លុប​ថាស​ទាំង​ស្រុង ៖ ${DEVICE}"
 #: ../partman-crypto.templates:116
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
-"be recovered after this step has completed. This is the last  opportunity to "
+"be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
 
@@ -356,7 +356,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:203
 #, fuzzy
-msgid "Configuration of encrypted volumes configuration failed"
+msgid "Configuration of encrypted volumes failed"
 msgstr "បរាជ័យ​ក្នុង​ការ​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប"
 
 #. Type: error
@@ -603,7 +603,7 @@ msgstr "សូម​ត្រឡប់​ក្រោយ​វិញ ហើយ�
 #, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
-"partition. This feature requires a separate /boot partition on which  the "
+"partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "អ្នក​បាន​ជ្រើស​ថា​ត្រូវ​ទុក​ប្រព័ន្ធ​ឯកសារ root នៅ​លើ​ភាគថាស​មួយ​ដែល​បាន​អ៊ិនគ្រីប ។ មិន​មាន​លក្ខណៈ​ពិសេស​នេះ​"

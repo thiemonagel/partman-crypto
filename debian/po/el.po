@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-11 18:31-0600\n"
+"POT-Creation-Date: 2006-05-12 00:21-0600\n"
 "PO-Revision-Date: 2006-02-14 13:32+0200\n"
 "Last-Translator: quad-nrg.net <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
@@ -204,7 +204,7 @@ msgstr "Χρήση ολόκληρου του δίσκου: ${DEVICE}"
 #: ../partman-crypto.templates:116
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
-"be recovered after this step has completed. This is the last  opportunity to "
+"be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
 
@@ -373,7 +373,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:203
 #, fuzzy
-msgid "Configuration of encrypted volumes configuration failed"
+msgid "Configuration of encrypted volumes failed"
 msgstr "Αποτυχία στην ρύθμιση των κρυπτογραφημένων τόμων"
 
 #. Type: error
@@ -640,7 +640,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
-"partition. This feature requires a separate /boot partition on which  the "
+"partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Έχετε επιλέξει να αποθηκεύσετε το ριζικό σύστημα αρχείων σε μια "

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-11 18:31-0600\n"
+"POT-Creation-Date: 2006-05-12 00:21-0600\n"
 "PO-Revision-Date: 2006-05-08 15:47+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
@@ -198,7 +198,7 @@ msgstr "Töm hela hårddisken: ${DEVICE}"
 #: ../partman-crypto.templates:116
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
-"be recovered after this step has completed. This is the last  opportunity to "
+"be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
 
@@ -363,7 +363,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:203
 #, fuzzy
-msgid "Configuration of encrypted volumes configuration failed"
+msgid "Configuration of encrypted volumes failed"
 msgstr "Konfiguration av krypterade volymer misslyckades"
 
 #. Type: error
@@ -618,7 +618,7 @@ msgstr "Gå tillbaka och välj en icke-krypterad partition till rotfilsystemet."
 #, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
-"partition. This feature requires a separate /boot partition on which  the "
+"partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Du har valt att rotfilsystemet ska sparas på en krypterad partition. Den här "

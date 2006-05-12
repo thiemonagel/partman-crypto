@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-11 18:31-0600\n"
+"POT-Creation-Date: 2006-05-12 00:21-0600\n"
 "PO-Revision-Date: 2006-03-12 22:52+0530\n"
 "Last-Translator: Nishant Sharma <me@nishants.net>\n"
 "Language-Team:  <en@li.org>\n"
@@ -206,7 +206,7 @@ msgstr "संपूर्ण डिस्क साफ करें: ${DEVICE}"
 #: ../partman-crypto.templates:116
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
-"be recovered after this step has completed. This is the last  opportunity to "
+"be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
 
@@ -354,7 +354,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:203
 #, fuzzy
-msgid "Configuration of encrypted volumes configuration failed"
+msgid "Configuration of encrypted volumes failed"
 msgstr "लॉज़िकल वॉल्यूम कॉन्फ़िगरेशन क्रियाः"
 
 #. Type: error
@@ -586,7 +586,7 @@ msgstr ""
 #: ../partman-crypto.templates:318
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
-"partition. This feature requires a separate /boot partition on which  the "
+"partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 

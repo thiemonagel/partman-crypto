@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-11 18:31-0600\n"
+"POT-Creation-Date: 2006-05-12 00:21-0600\n"
 "PO-Revision-Date: 2006-01-23 17:48-0600\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -190,7 +190,7 @@ msgstr "刪除整個磁碟：${DEVICE}"
 #: ../partman-crypto.templates:116
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
-"be recovered after this step has completed. This is the last  opportunity to "
+"be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
 
@@ -346,7 +346,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:203
 #, fuzzy
-msgid "Configuration of encrypted volumes configuration failed"
+msgid "Configuration of encrypted volumes failed"
 msgstr "加密的 Volume 設定作業失敗了"
 
 #. Type: error
@@ -592,7 +592,7 @@ msgstr "請返回並替 root 檔案系統選擇一個非加密的分割區。"
 #, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
-"partition. This feature requires a separate /boot partition on which  the "
+"partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "您已設定了將 root 檔案系統儲存在加密的分割區上。但目前還沒有這種功能，並且如"

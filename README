@@ -97,7 +97,7 @@ blockdev-keygen
     cdebconf plugin "entropy" if available. See notes at the beginning
     of the script for important steps for the caller.
 
-crypto_modules
+crypto_prebaseconfig
 
     Run by prebaseconfig.d hook; Checks for loop-AES partitions,
     determines target kernel version from base-installer/kernel/image

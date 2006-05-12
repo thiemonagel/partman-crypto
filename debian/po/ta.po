@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-27 22:27+0530\n"
+"PO-Revision-Date: 2006-05-10 19:19+0530\n"
 "Last-Translator: Damodharan Rajalingam <r.damodharan@yahoo.co.in>\n"
 "Language-Team:  <tamil-DI@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -151,8 +151,9 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
+#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான ஏற்றப்புள்ளி:"
 
 #. Type: select
 #. Description
@@ -175,14 +176,16 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
+#, fuzzy
 msgid "Erase data on this partition"
-msgstr ""
+msgstr "புதிய பகிர்வை உருவக்கு"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "வட்டு முழுவதையும் அழி: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -196,8 +199,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "வட்டு முழுவதையும் அழி: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -300,8 +304,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
+#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr ""
+msgstr "முந்தைய மாற்றங்களை வட்டில் எழுதியபின் தொடரவா?"
 
 #. Type: boolean
 #. Description
@@ -342,14 +347,16 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
+#, fuzzy
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "DHCP வடிவமைப்பு செயலி நிறுத்தப்படும்."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "நிறுவல்படி தோல்வியடைந்த்தது"
 
 #. Type: error
 #. Description
@@ -566,8 +573,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "நீங்கள் ext3 போன்ற வேறு ஒரு கோப்பு அமைப்பை /boot பகிர்வுக்கு பயன்படுத்த வேண்டும்."
 
 #. Type: error
 #. Description
@@ -631,6 +639,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"

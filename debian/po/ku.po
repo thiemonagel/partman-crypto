@@ -25,16 +25,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "volume ya fîzîkî ji bo şîfrekirinê"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Şifrekirin:"
+msgstr "şifre"
 
 #. Type: text
 #. Description
@@ -43,7 +42,7 @@ msgstr "Şifrekirin:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -52,7 +51,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -183,8 +182,9 @@ msgstr "Şîfrekirina ji bo vê dabeşê:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -198,8 +198,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -360,8 +361,9 @@ msgstr "Sazkirin tê betalkirin."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Gava sazkirinê bi ser neket"
 
 #. Type: error
 #. Description
@@ -658,9 +660,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Dan destpêkirina volumeya şîfrekirî serneket"

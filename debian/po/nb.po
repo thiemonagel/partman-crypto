@@ -5,22 +5,20 @@
 # 
 # translation of nb.po to Norwegian Bokmål
 # translation of debian-installer.po to Norwegian Bokmål
-# Norwegian Bokmal messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Knut Yrvin <knuty@skolelinux.no>, 2004.
 # Klaus Ade Johnstad <klaus@skolelinux.no>, 2004.
 # Axel Bojer <axelb@skolelinux.no>, 2004.
-# Bjorn Steensrud <bjornst@powertech.no>, 2004.
 # Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005.
-# Bjørn Steensrud <bjornst@powertech.no>, 2005, 2006.
+# Bjørn Steensrud <bjornst@powertech.no>, 2004,2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-05-04 21:19+0200\n"
+"PO-Revision-Date: 2006-05-08 16:51+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -34,16 +32,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "fysisk dataområde for kryptering"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Kryptering:"
+msgstr "krypto"
 
 #. Type: text
 #. Description
@@ -52,7 +49,7 @@ msgstr "Kryptering:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Sløyfekobling (loop-AES)"
 
 #. Type: text
 #. Description
@@ -61,7 +58,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Enhetskartlegger (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -190,8 +187,9 @@ msgstr "Kryptering for denne partisjonen:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Slett hele harddisken: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -205,8 +203,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Slett hele harddisken: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -380,8 +379,9 @@ msgstr "Oppsettet blir avbrutt."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Installasjonstrinnet mislyktes"
 
 #. Type: error
 #. Description
@@ -623,8 +623,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Du burde bruke et annet filsystem, som f.eks. ext3, for /boot-partisjonen."
 
 #. Type: error
 #. Description
@@ -696,9 +698,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Klargjøring av kryptert dataområde mislyktes"

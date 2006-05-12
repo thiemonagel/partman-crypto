@@ -27,16 +27,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "volumi fizik për kriptimin"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Kriptimi:"
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -45,7 +44,7 @@ msgstr "Kriptimi:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (cikël AES)"
 
 #. Type: text
 #. Description
@@ -54,7 +53,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Rilevues i dispozitivit (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -185,8 +184,9 @@ msgstr "Kriptimi për këtë ndarje:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Vërtet ta përdor programin RAID ${LEVEL}?"
 
 #. Type: boolean
 #. Description
@@ -200,8 +200,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Fshi të gjithë diskun: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -371,8 +372,9 @@ msgstr "Konfigurimi ndaloi."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Hapi i instalimit dështoi"
 
 #. Type: error
 #. Description
@@ -620,8 +622,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Duhet të përdorësh një filesistem tjetër, p.sh. ext3, për ndarjen /boot."
 
 #. Type: error
 #. Description
@@ -697,9 +701,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Fillimi i volumit të kriptuar dështoi"

@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-25 08:43+0200\n"
+"PO-Revision-Date: 2006-05-08 08:01+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,8 +33,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "volume physique pour LVM"
 
 #. Type: text
 #. Description
@@ -51,8 +52,9 @@ msgstr "Chiffrement :"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Bouclage (« loopback », loop%s)"
 
 #. Type: text
 #. Description
@@ -190,8 +192,9 @@ msgstr "Chiffrement pour cette partition :"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Effacer et utiliser tout le disque ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -205,8 +208,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Effacer et utiliser tout le disque ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -384,8 +388,9 @@ msgstr "La configuration a été interrompue."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Échec d'une étape de configuration"
 
 #. Type: error
 #. Description
@@ -637,8 +642,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Vous devriez utiliser un autre système de fichiers, par exemple ext3, pour "
+"la partition /boot."
 
 #. Type: error
 #. Description
@@ -714,9 +722,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "L'initialisation du volume chiffré a échoué"

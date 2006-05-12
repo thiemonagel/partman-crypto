@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-08 14:22+0800\n"
+"PO-Revision-Date: 2006-04-19 18:23+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -33,16 +33,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "pisikal na volume para sa encryption"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Encryption:"
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -51,7 +50,7 @@ msgstr "Encryption:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -60,7 +59,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -191,8 +190,9 @@ msgstr "Encryption para sa partisyon na ito:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Burahin ang buong disk: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -206,8 +206,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Burahin ang buong disk: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -382,8 +383,9 @@ msgstr "Hininto ang pagsasaayos."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Bigo ang hakbang na ito sa pagluklok"
 
 #. Type: error
 #. Description
@@ -634,8 +636,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Kailangan niyong gumamit ng ibang file system, tulad ng ext3, para sa /boot "
+"partisyon."
 
 #. Type: error
 #. Description
@@ -709,9 +714,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Bigo ang paghanda ng encrypted na volume"

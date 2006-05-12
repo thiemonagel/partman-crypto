@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-27 21:06+0930\n"
+"PO-Revision-Date: 2006-05-11 22:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -30,8 +30,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "khối tin vật lý cho Bộ Quản lý Khối tin Hợp lý"
 
 #. Type: text
 #. Description
@@ -48,8 +49,9 @@ msgstr "Mật mã:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Vòng lặp (mạch%s)"
 
 #. Type: text
 #. Description
@@ -187,8 +189,9 @@ msgstr "Mật mã cho phân vùng này:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Xóa bỏ toàn bộ đĩa: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -202,8 +205,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Xóa bỏ toàn bộ đĩa: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -374,8 +378,9 @@ msgstr "Việc cấu hình bị hủy bỏ."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Bước cài đặt bị lỗi"
 
 #. Type: error
 #. Description
@@ -604,7 +609,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
-"Hãy trở về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
+"Hãy lùi lại về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
 
 #. Type: error
 #. Description
@@ -622,8 +627,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Bạn nên sử dụng một hệ thống tập tin khác, như ext3, cho phân vùng </boot>."
 
 #. Type: error
 #. Description
@@ -653,7 +660,7 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"Hãy trở về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
+"Hãy lùi lại về và chọn một phân vùng không mật mã cho hệ thống tập tin gốc."
 
 #. Type: boolean
 #. Description
@@ -697,10 +704,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-# Variable: do not translate/ biến: đừng dịch
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Việc sơ khởi khối tin đã mật mã bị lỗi"

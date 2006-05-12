@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-25 22:07+0300\n"
+"PO-Revision-Date: 2006-05-05 21:34+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,8 +39,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "Volumul fizic pentru LVM"
 
 #. Type: text
 #. Description
@@ -57,8 +58,9 @@ msgstr "Criptare:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Dispozitiv buclă (loop%s)"
 
 #. Type: text
 #. Description
@@ -196,8 +198,9 @@ msgstr "Criptarea pentru acestă partiţie:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Utilizează întregul disc ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -211,8 +214,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Utilizează întregul disc ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -388,8 +392,9 @@ msgstr "Procesul de configurare este abandonat."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Pas al procesului de instalare eşuat"
 
 #. Type: error
 #. Description
@@ -640,8 +645,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Ar trebui să utilizaţi un alt sistem de fişiere, ca ext3, pentru partiţia /"
+"boot."
 
 #. Type: error
 #. Description
@@ -717,9 +725,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Iniţializarea volumelor criptate a eşuat"

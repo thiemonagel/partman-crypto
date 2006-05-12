@@ -30,16 +30,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "এনক্রিপশনের জন্য প্রকৃত ভলিউম"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "এনক্রিপশন:"
+msgstr "গুপ্ত"
 
 #. Type: text
 #. Description
@@ -48,7 +47,7 @@ msgstr "এনক্রিপশন:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "লুপব্যাক (loop-AES)"
 
 #. Type: text
 #. Description
@@ -57,7 +56,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "ডিভাইস-ম্যাপার (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -188,8 +187,9 @@ msgstr "এই পার্টিশনের জন্য এনক্রিপ
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "সমগ্র ডিস্ক মুছে ফেল: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -203,8 +203,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "সমগ্র ডিস্ক মুছে ফেল: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -376,8 +377,9 @@ msgstr "কনফিগারেশন প্রক্রিয়া বাতি�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "ইনস্টলেশন প্রক্রিয়ার এই ধাপটি ব্যর্থ হয়েছে"
 
 #. Type: error
 #. Description
@@ -622,8 +624,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"আপনার উচিত্‍ /boot পার্টিশনের জন্য অন্য কোন ফাইল সিস্টেম, যেমন ext3, ব্যবহার করা।"
 
 #. Type: error
 #. Description
@@ -698,9 +702,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "এনক্রিপ্টেড ভলিউম চালুকরণ (initialisation) ব্যর্থ হল"

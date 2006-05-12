@@ -35,8 +35,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "füüsiline volüüm LVH tarvis"
 
 #. Type: text
 #. Description
@@ -196,8 +197,9 @@ msgstr "Selle partitsiooni haakepunkt:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Kustuta terve ketas: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -211,8 +213,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Kustuta terve ketas: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -381,8 +384,9 @@ msgstr "RAID seadistamine on peatatud."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Paigaldamise samm nurjus"
 
 #. Type: error
 #. Description
@@ -613,8 +617,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "Peaksid /boot jaoks kasutama mõnd teist failisüsteemi, näiteks ext3'e."
 
 #. Type: error
 #. Description
@@ -680,10 +685,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#, fuzzy
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "ELILO paigaldamine nurjus"

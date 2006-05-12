@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-05-06 10:05+0200\n"
+"PO-Revision-Date: 2006-05-10 00:01+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,8 +38,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "volume fisico per LVM"
 
 #. Type: text
 #. Description
@@ -56,8 +57,9 @@ msgstr "Cifratura"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop%s)"
 
 #. Type: text
 #. Description
@@ -195,8 +197,9 @@ msgstr "Cifratura per questa partizione:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Cancellare l'intero disco: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -210,8 +213,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Cancellare l'intero disco: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -383,8 +387,9 @@ msgstr "La configurazione è stata interrotta."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Passo di installazione fallito"
 
 #. Type: error
 #. Description
@@ -636,8 +641,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Si dovrebbe usare un altro file system come ext3 per la partizione /boot."
 
 #. Type: error
 #. Description
@@ -713,9 +720,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Inizializzazione del volume cifrato fallita"

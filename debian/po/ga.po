@@ -41,8 +41,9 @@ msgstr "Criptiú:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Aislúbadh (lúb%s)"
 
 #. Type: text
 #. Description
@@ -177,13 +178,14 @@ msgstr ""
 #: ../partman-crypto.templates:111
 #, fuzzy
 msgid "Erase data on this partition"
-msgstr "Suíomh na deighilte nuaí:"
+msgstr "Cruthaigh deighilt nua"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Léirscrios an diosca iomlán: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -197,8 +199,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Léirscrios an diosca iomlán: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -301,8 +304,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
+#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr ""
+msgstr "Scríobh athruithe ar na dioscaí?"
 
 #. Type: boolean
 #. Description
@@ -343,8 +347,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
+#, fuzzy
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "D'éirigh le huathchumraíocht an líonra"
 
 #. Type: error
 #. Description
@@ -632,6 +637,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"

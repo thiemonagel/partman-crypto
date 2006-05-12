@@ -26,16 +26,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "fizyczny wolumin do szyfrowania"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Szyfrowanie:"
+msgstr "szyfrowanie"
 
 #. Type: text
 #. Description
@@ -44,7 +43,7 @@ msgstr "Szyfrowanie:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -53,7 +52,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -182,8 +181,9 @@ msgstr "Szyfrowanie dla tej partycji:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Wyczyść cały dysk: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -197,8 +197,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Wyczyść cały dysk: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -369,8 +370,9 @@ msgstr "Konfiguracja została przerwana."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Jeden z etapów instalacji nie powiódł się"
 
 #. Type: error
 #. Description
@@ -614,8 +616,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "Powinieneś użyć innego systemu plików dla partycji /boot, np. ext3."
 
 #. Type: error
 #. Description
@@ -690,9 +693,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Inicjalizacja szyfrowanego woluminu nie powiodła się"

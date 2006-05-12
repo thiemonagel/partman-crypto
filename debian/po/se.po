@@ -183,7 +183,7 @@ msgstr ""
 #: ../partman-crypto.templates:111
 #, fuzzy
 msgid "Erase data on this partition"
-msgstr "Dán partišuvnna čatnanbáikki:"
+msgstr "Ráhkat ođđa partišuvnna"
 
 #. Type: boolean
 #. Description
@@ -350,14 +350,16 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
+#, fuzzy
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "Gaskkalduhtá DHCP-heivehusa."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Sajáiduhttinlávki filtii"
 
 #. Type: error
 #. Description
@@ -639,6 +641,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"

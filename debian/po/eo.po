@@ -28,16 +28,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "Datumportilaĵo por ĉifrado"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Ĉifrado:"
+msgstr "ĉifro"
 
 #. Type: text
 #. Description
@@ -46,7 +45,7 @@ msgstr "Ĉifrado:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Bukliru ('loop-AES')"
 
 #. Type: text
 #. Description
@@ -55,7 +54,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "'dm-crypt'-adaptilo"
 
 #. Type: text
 #. Description
@@ -184,8 +183,9 @@ msgstr "Ĉifrado por ĉi tiu diskpartigo:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Viŝu la tutan diskon: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -199,8 +199,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Viŝu la tutan diskon: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -372,8 +373,9 @@ msgstr "La akomodado fiaskis."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Malsukcesis instalada paŝo"
 
 #. Type: error
 #. Description
@@ -613,8 +615,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Vi devus uzi alian desiersistemon kiel 'ext3' por la '/boot'-diskpartigo."
 
 #. Type: error
 #. Description
@@ -689,9 +693,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Ĉifra datumportila akomodado malsukcesis"

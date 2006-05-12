@@ -179,8 +179,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Eyða öllu á disknum: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -194,8 +195,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Eyða öllu á disknum: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -340,14 +342,16 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
+#, fuzzy
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "Hætt verður við DHCP stilliferlið."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Þrep uppsetningar mistókst"
 
 #. Type: error
 #. Description

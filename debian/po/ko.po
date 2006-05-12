@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-30 21:44+0900\n"
+"PO-Revision-Date: 2006-05-04 21:53+0900\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,16 +26,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "암호화할 물리 볼륨"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "암호화:"
+msgstr "암호화"
 
 #. Type: text
 #. Description
@@ -44,7 +43,7 @@ msgstr "암호화:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "루프백 (loop-AES)"
 
 #. Type: text
 #. Description
@@ -53,7 +52,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "디바이스 매퍼 (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -182,8 +181,9 @@ msgstr "이 파티션에 적용할 암호화 방식"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "전체 드라이브 지우기: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -197,8 +197,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "전체 드라이브 지우기: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -367,8 +368,9 @@ msgstr "암호화 설정을 그만 둡니다"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "설치 단계가 실패했습니다"
 
 #. Type: error
 #. Description
@@ -608,8 +610,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "/boot 파티션으로 ext3와 같은 다른 파일 시스템을 사용해야 합니다."
 
 #. Type: error
 #. Description
@@ -682,9 +685,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "볼륨 암호화를 초기화 실패"

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-25 20:52+0900\n"
+"PO-Revision-Date: 2006-05-12 00:06+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,16 +25,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "暗号化の物理ボリューム"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "暗号:"
+msgstr "暗号化"
 
 #. Type: text
 #. Description
@@ -43,7 +42,7 @@ msgstr "暗号:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "ループバック (loop-AES)"
 
 #. Type: text
 #. Description
@@ -52,7 +51,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "デバイスマッパー (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -181,8 +180,9 @@ msgstr "このパーティションの暗号化:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "ディスク全体を消去する: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -196,8 +196,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "ディスク全体を消去する: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -369,8 +370,9 @@ msgstr "設定は中止されました。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "インストールステップが失敗しました"
 
 #. Type: error
 #. Description
@@ -617,8 +619,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"/boot パーティションには、ext3 のような別のファイルシステムを使うことをお勧め"
+"します。"
 
 #. Type: error
 #. Description
@@ -693,9 +698,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "暗号化ボリュームの初期化に失敗しました"

@@ -28,8 +28,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "LVM གི་དོན་ལས་དངོས་ཅན་སྐད་ཤུགས།"
 
 #. Type: text
 #. Description
@@ -46,8 +47,9 @@ msgstr "གསང་བཟོ:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "ལུཔ་ཕེཀ་(loop%s)"
 
 #. Type: text
 #. Description
@@ -185,8 +187,9 @@ msgstr "བར་བཅད་འདི་གི་དོན་ལུ་གསང
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "ཌིཀསི་ཧྲིལ་བུ་ཀྲེག་གཏང་ནི་ ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -200,8 +203,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "ཌིཀསི་ཧྲིལ་བུ་ཀྲེག་གཏང་ནི་ ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -371,8 +375,9 @@ msgstr "རིམ་སྒྲིག་འདི་བར་བཤོལ་འབ
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "གཞི་བཙུགས་ཀྱི་རིམ་པ་འཐུས་ཤོར་བྱུང་ནུག"
 
 #. Type: error
 #. Description
@@ -614,8 +619,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "/བུཊི་བར་བཅད་ཀྱི་དོན་ལུ་ ཁྱོད་ཀྱིས་ext3 བཟུམ་སྦེ་ཡིག་སྣོད་རིམ་ལུགས་གཞན་ལང་ལེན་འཐབ་དགོ།"
 
 #. Type: error
 #. Description
@@ -688,9 +694,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "གསང་བཟོས་སྐད་ཤུགས་འགོ་བྱེད་འབད་ནི་ལུ་འཐུས་ཤོར།"

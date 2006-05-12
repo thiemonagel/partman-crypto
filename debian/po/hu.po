@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-05-05 01:44+0100\n"
+"PO-Revision-Date: 2006-05-11 23:50+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "LVM fizikai kötet"
 
 #. Type: text
 #. Description
@@ -184,8 +185,9 @@ msgstr "Titkosítás e partícióhoz:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Egész lemez törlése: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -199,8 +201,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Egész lemez törlése: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -371,8 +374,9 @@ msgstr "A beállítás törölve"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Sikertelen telepítőlépés"
 
 #. Type: error
 #. Description
@@ -613,8 +617,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"E helyett más fájlrendszert, például ext3-at használj a /boot partícióhoz."
 
 #. Type: error
 #. Description
@@ -688,9 +694,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "A titkosított kötet inicializálása meghiúsult"

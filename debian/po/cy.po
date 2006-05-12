@@ -24,8 +24,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "cyfrol corfforol ar gyfer LVM"
 
 #. Type: text
 #. Description
@@ -185,8 +186,9 @@ msgstr "Pwynt clymu ar gyfer y rhaniad hwn:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Gwir ddefnyddio RAID meddalwedd ${LEVEL}?"
 
 #. Type: boolean
 #. Description
@@ -200,8 +202,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Dileu'r disg cyfan: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -370,8 +373,9 @@ msgstr "Mae cyfluniad RAID wedi ei erthylu."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Methodd cam sefydlu."
 
 #. Type: error
 #. Description
@@ -601,8 +605,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Dylwch ddefnyddio system ffeiliau arall, megis ext3, ar gyfer y rhaniad /"
+"boot."
 
 #. Type: error
 #. Description
@@ -668,10 +675,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#, fuzzy
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Methodd sefydliad ELILO"

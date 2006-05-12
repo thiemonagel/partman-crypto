@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-11 18:31-0600\n"
-"PO-Revision-Date: 2006-04-14 10:26+0200\n"
+"PO-Revision-Date: 2006-04-24 14:12+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,9 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
+#, fuzzy
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "физички простори за УЛП"
 
 #. Type: text
 #. Description
@@ -45,8 +46,9 @@ msgstr "Енкрипција:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Повратна врска (loop%s)"
 
 #. Type: text
 #. Description
@@ -186,8 +188,9 @@ msgstr "Енкрипција за оваа партиција:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "Избриши го целиот диск: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -201,8 +204,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Избриши го целиот диск: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -377,8 +381,9 @@ msgstr "Конфигурацијата е откажана."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Чекор од инсталацијата не успеа"
 
 #. Type: error
 #. Description
@@ -626,8 +631,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Би требало да користиш друг датотечен систем, како ext3, за /boot "
+"партицијата."
 
 #. Type: error
 #. Description
@@ -703,9 +711,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Неуспе иницијализацијата на енкриптираните простори "

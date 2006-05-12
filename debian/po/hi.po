@@ -52,8 +52,9 @@ msgstr ""
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "लूपबैक (लूप%s)"
 
 #. Type: text
 #. Description
@@ -196,8 +197,9 @@ msgstr "इस पार्टीशन हेतु माउन्ट प्�
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr ""
+msgstr "संपूर्ण डिस्क साफ करें: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -211,8 +213,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "संपूर्ण डिस्क साफ करें: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -370,8 +373,9 @@ msgstr "नक़ल की प्रक्रिया छोड़ी गई."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "संस्थापना का यह चरण असफल हो गया"
 
 #. Type: error
 #. Description
@@ -656,10 +660,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#, fuzzy
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "एलिलो संस्थापना असफल हो गया"

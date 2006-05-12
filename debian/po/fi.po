@@ -29,16 +29,15 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "fyysinen levynide salaukselle"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Salaus:"
+msgstr "salaus"
 
 #. Type: text
 #. Description
@@ -47,7 +46,7 @@ msgstr "Salaus:"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Takaisinkytkentä (loop-AES)"
 
 #. Type: text
 #. Description
@@ -56,7 +55,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Laiteyhdistäjä (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -187,8 +186,10 @@ msgstr "Tämän osion salaus:"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
+#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
 msgstr ""
+"Käytetäänkö varmasti ohjelmallisesti toteutettua RAID ${LEVEL}-laittetta?"
 
 #. Type: boolean
 #. Description
@@ -202,8 +203,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
+#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Tyhjennä koko levy: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -376,8 +378,9 @@ msgstr "Asetusten teko on keskeytetty."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
+#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Asennuksessa tapahtui virhe"
 
 #. Type: error
 #. Description
@@ -625,8 +628,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
+"Olisi käytettävä jotain muuta tiedostojärjestelmää /boot-levyosiolle. "
+"Esimerkiksi ext3 on sopiva."
 
 #. Type: error
 #. Description
@@ -702,9 +708,3 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-
-#~ msgid "${ITEMS}"
-#~ msgstr "${ITEMS}"
-
-#~ msgid "Encrypted volume initialisation failed"
-#~ msgstr "Salatun levyniteen alustus epäonnistui"

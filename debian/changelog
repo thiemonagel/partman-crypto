@@ -1,10 +1,10 @@
-partman-crypto (3) UNRELEASED; urgency=low
+partman-crypto (3) unstable; urgency=low
 
   [ David Härdeman and Riku Voipio ]
   * Add support for random keys with dm-crypt
 
   [ Max Vozeler]
-  * Create /etc/default/checkfs-loop in /target to enable file 
+  * Create /etc/default/checkfs-loop in /target to enable file
     system checks for loop-AES
   * blockdev-keygen: Pass keysize to the entropy frontend module
     using the KEYSIZE template variable. Bump the dependency on
@@ -13,7 +13,33 @@ partman-crypto (3) UNRELEASED; urgency=low
     Frans Pop, Geert Stappers and Steve Langasek.
   * Depend on gnupg-udeb
 
- -- Max Vozeler <xam@debian.org>  Thu, 11 May 2006 23:01:08 +0200
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Italian (it.po) by Giuseppe Sacco
+  * Japanese (ja.po) by Kenshi Muto
+  * Khmer (km.po) by Khoem Sokhem
+  * Korean (ko.po) by Sunjae park
+  * Malagasy (mg.po) by Jaonary Rabarisoa
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Max Vozeler <xam@debian.org>  Fri, 12 May 2006 16:37:51 +0200
 
 partman-crypto (2) unstable; urgency=low
 

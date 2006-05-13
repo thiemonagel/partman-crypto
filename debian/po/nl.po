@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 14:46+0100\n"
+"PO-Revision-Date: 2006-05-12 10:58+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@linux.be>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -106,16 +106,15 @@ msgstr "Sleutelgrootte voor deze partitie:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV-algoritme:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Encryptiemethode voor deze partitie:"
+msgstr "Installatievector-generatiealgoritme voor deze partitie:"
 
 #. Type: select
 #. Description
@@ -128,6 +127,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Er bestaan verschillende algoritmen om de initialisatie-vector van elke "
+"sector af te leiden. Deze keuze beïnvloed de veiligheid van de "
+"versleuteling. De enige reden om eventueel van de standaardwaarde af te "
+"wijken is compatibiliteit met oudere systemen. "
 
 #. Type: text
 #. Description
@@ -144,16 +147,14 @@ msgstr "Encryptiesleuteltype voor deze partitie:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Encryptiesleutel:"
+msgstr "Encryptiesleutel-hash:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Encryptiesleuteltype voor deze partitie:"
+msgstr "Type Encryptiesleutel-hash voor deze partitie:"
 
 #. Type: select
 #. Description
@@ -164,6 +165,11 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"De encryptiesleutel wordt afgeleid van de wachtwoord-zin door er een "
+"eenrichtings-hashfunctie op toe te passen. Normaal is er geen reden om hier "
+"van de standaardwaarde af te wijken, tevens is het zo dat op de verkeerde "
+"manier van de standaardwaarde afwijken de versleutelingssterkte kan "
+"verminderen."
 
 #. Type: text
 #. Description
@@ -171,21 +177,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Data wissen:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Encryptie voor deze partitie:"
+msgstr "Data op deze partitie wissen"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Volledige schijf wissen: ${DEVICE}"
+msgstr "Bent u zeker dat u de data op ${DEVICE} wilt wissen?"
 
 #. Type: boolean
 #. Description
@@ -195,19 +199,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"De data op ${DEVICE} zal overschreven worden met willekeurige data. Eens "
+"deze stap uitgevoerd is kan de data niet meer teruggehaald worden, bijgevolg "
+"is dit uw laatste kans om het wissen af te breken."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Volledige schijf wissen: ${DEVICE}"
+msgstr "Data op ${DEVICE} wordt gewist"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Wissen van data op ${DEVICE} is mislukt"
 
 #. Type: error
 #. Description
@@ -216,6 +222,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Er is een fout opgetreden tijdens het wissen van de data op ${DEVICE}. De "
+"data is niet gewist."
 
 #. Type: text
 #. Description
@@ -292,31 +300,29 @@ msgstr "Encryptiepakketinstallatie is mislukt"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Het kernelmodulepakket ${PACKAGE} kan niet gevonden worden, of er is een "
+"Het kernelmodule-pakket ${PACKAGE} kan niet gevonden worden, of er is een "
 "fout opgetreden tijdens de installatie ervan."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Er zullen waarschijnlijk problemen optreden tijdens het opstarten wanneer "
+"Er zullen waarschijnlijk problemen optreden tijdens het herstarten wanneer "
 "het systeem probeert om versleutelde partities in te stellen. U kunt deze "
-"later corrigeren door het vereiste pakket te installeren."
+"problemen mogelijk corrigeren door later de vereiste pakketten te "
+"installeren."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
 "Veranderingen naar de schijven wegschrijven en versleutelde volumes "
@@ -342,7 +348,6 @@ msgstr "Huidige schijfindeling behouden en versleutelde volumes instellen?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -357,9 +362,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Versleutelde volumes configuratiefout"
+msgstr "Configuratie van de versleutelde volumes is mislukt"
 
 #. Type: error
 #. Description
@@ -371,16 +375,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "De configuratie is afgebroken."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Installatiestap is mislukt"
+msgstr "Initialisatie van het versleutelde volume is mislukt"
 
 #. Type: error
 #. Description
@@ -619,24 +621,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "U heeft ervoor gekozen om het basisbestandssysteem op te slaan op een "
-"versleutelde partitie. Deze feature is niet beschikbaar, en nu doorgaan zal "
-"dan ook leiden tot een installatie die niet gebruikt kan worden."
+"versleutelde partitie. Deze feature vereist een aparte '/boot'-partitie waar "
+"de kernel en de initrd opgeslagen kunnen worden."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"U kunt best een ander bestandssysteem (bv. ext3) gebruiken voor de '/boot'-"
-"partitie"
+msgstr "U kunt best teruggaan en een '/boot'-partitie instellen."
 
 #. Type: error
 #. Description
@@ -647,27 +645,26 @@ msgstr "Encryptieconfiguratiefout"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"U heeft ervoor gekozen om het basisbestandssysteem op te slaan op een "
-"versleutelde partitie. Deze feature is niet beschikbaar, en nu doorgaan zal "
-"dan ook leiden tot een installatie die niet gebruikt kan worden."
+"U heeft ervoor gekozen om het '/boot'-bestandssysteem op te slaan op een "
+"versleutelde partitie. Dit is onmogelijk omdat de opstartlader dan niet in "
+"staat is om de kernel en de initrd te laden. Toch doorgaan zal dan ook "
+"leiden tot een onbruikbare installatie."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"U dient terug te gaan om een niet-versleutelde partitie te kiezen voor het "
-"basisbestandssysteem."
+"U dient dus terug te gaan om een niet-versleutelde partitie te kiezen voor "
+"het '/boot'-bestandssysteem."
 
 #. Type: boolean
 #. Description
@@ -700,7 +697,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Bent u zeker dat u het blokapparaat-versleuteling wilt gebruiken?"
 
 #. Type: boolean
 #. Description
@@ -712,3 +709,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"De ondersteuning voor blokapparaat-versleuteling is nog experimenteel en "
+"wordt nog niet geschikt geacht voor productiesystemen. Het kan meer bepaald "
+"leiden tot een makkelijk brekende opzetten, en zo een vals gevoel van "
+"veiligheid geven. Er zijn momenteel geen zwakheden in de versleuteling "
+"bekend, maar zolang de implementatie niet grondig onderzocht is het aan te "
+"raden om deze feature enkel voor test-doeleinden te gebruiken."

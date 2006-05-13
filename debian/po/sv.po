@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 15:47+0100\n"
+"PO-Revision-Date: 2006-05-12 12:22+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -112,16 +112,15 @@ msgstr "Nyckellängd för den här partitionen:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV-algoritm:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Krypteringsmetod för den här partitionen:"
+msgstr "Algoritm för generering av initieringsvektorn för den här partitionen:"
 
 #. Type: select
 #. Description
@@ -134,6 +133,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Olika algoritmer finns för att få tag på initieringsvektorn för varje "
+"sektor. Detta val påverkar säkerheten runt krypteringen. Normalt sett finns "
+"det ingen anledning att ändra detta från det rekommenderade valet, förutom "
+"om det gäller kompatibilitet med äldre system."
 
 #. Type: text
 #. Description
@@ -150,16 +153,14 @@ msgstr "Typ av krypteringsnyckel för den här partitionen:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Krypteringsnyckel:"
+msgstr "Hash för krypteringsnyckel:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Typ av krypteringsnyckel för den här partitionen:"
+msgstr "Hashtyp av krypteringsnyckeln för den här partitionen:"
 
 #. Type: select
 #. Description
@@ -170,6 +171,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Krypteringsnyckeln erhålls från lösenfrasen genom att köra en "
+"envägshashfunktion  på den. Normalt sett finns det ingen anledning att ändra "
+"detta från det rekommenderade valet, förutom om det gäller kompatibilitet "
+"med äldre system."
 
 #. Type: text
 #. Description
@@ -177,21 +182,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Radera data:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Kryptering för den här partitionen:"
+msgstr "Radera data på den här partitionen"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Töm hela hårddisken: ${DEVICE}"
+msgstr "Verkligen radera data på ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -201,19 +204,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Data på ${DEVICE} kommer att skrivas över med slumpmässig data. Det kan inte "
+"längre återskapas efter att detta steg har färdigställts. Detta är den sista "
+"chansen att avbryta raderingen."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Töm hela hårddisken: ${DEVICE}"
+msgstr "Raderar data på ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Radering av data på ${DEVICE} misslyckades"
 
 #. Type: error
 #. Description
@@ -222,6 +227,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Ett fel inträffade vid försök att radera data på ${DEVICE}. Data har inte "
+"raderats."
 
 #. Type: text
 #. Description
@@ -297,31 +304,28 @@ msgstr "Installationen av krypteringspaketet misslyckades"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
 "Kärnmodulpaketet ${PACKAGE} kunde inte hittas eller ett fel inträffande "
-"under installationen."
+"under installationen av det."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Det kommer antagligen bli problem under uppstart när systemet försöker att "
-"konfigurera krypterade partitioner. Du kan rätta till det här problemet "
-"genom att installera det nödvändiga paketet senare."
+"Det kommer antagligen bli problem att konfigurera krypterade partitioner när "
+"systemet har startat om. Du kanske kan rätta till det här problemet genom "
+"att installera de nödvändiga paketen senare."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Skriv ändringarna till diskarna och konfigurera krypterade volymer?"
 
@@ -347,22 +351,20 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"När de krypterade volymerna har konfigurerats tillåts inga ytterligare "
-"ändringar på partitionerna på de diskar som innehåller krypterade volymer. "
-"Avgör om du är nöjd med den nuvarande partitioneringsplanen på de här "
-"hårddiskarna innan du fortsätter."
+"Efter att de krypterade volymerna har konfigurerats kommer inga ytterligare "
+"ändringar på partitionerna på de diskar som innehåller krypterade volymer "
+"att tillåtas. Bestäm om du är nöjd med den aktuella partitioneringsplanen "
+"för de här diskarna innan du fortsätter."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Konfiguration av krypterade volymer misslyckades"
 
@@ -375,16 +377,14 @@ msgstr "Ett fel uppstod med konfigurationen av krypterade volymer."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Konfigurationen avbröts."
+msgstr "Konfigurationen har avbrutits."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Installationssteg misslyckades"
+msgstr "Initiering av krypterad volym misslyckades"
 
 #. Type: error
 #. Description
@@ -601,7 +601,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Du har valt att rotfilsystemet ska sparas på en krypterad partition. Den här "
+"Du har valt att rotfilsystemet ska lagras på en krypterad partition. Den här "
 "möjligheten finns inte och fortsätter du med det kommer ditt system inte gå "
 "att använda."
 
@@ -615,22 +615,20 @@ msgstr "Gå tillbaka och välj en icke-krypterad partition till rotfilsystemet."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Du har valt att rotfilsystemet ska sparas på en krypterad partition. Den här "
-"möjligheten finns inte och fortsätter du med det kommer ditt system inte gå "
-"att använda."
+"Du har valt att rotfilsystemet ska lagras på en krypterad partition. Den här "
+"funktionen kräver en separat /boot-partition på vilken kärnan och initrd kan "
+"lagras."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Du bör använda ett annat filsystem, såsom ext3, på /boot-partitionen."
+msgstr "Du bör gå tillbaka och konfigurera en /boot-partition."
 
 #. Type: error
 #. Description
@@ -641,25 +639,25 @@ msgstr "Krypteringskonfigurationen misslyckad"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Du har valt att rotfilsystemet ska sparas på en krypterad partition. Den här "
+"Du har valt att rotfilsystemet ska lagras på en krypterad partition. Den här "
 "möjligheten finns inte och fortsätter du med det kommer ditt system inte gå "
 "att använda."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr "Gå tillbaka och välj en icke-krypterad partition till rotfilsystemet."
+msgstr ""
+"Du bör gå tillbaka och välja en icke-krypterad partition till /boot-"
+"filsystemet."
 
 #. Type: boolean
 #. Description
@@ -691,7 +689,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Verkligen använda blockenhetskryptering?"
 
 #. Type: boolean
 #. Description
@@ -703,3 +701,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Stödet för kryptering av blockenheter är fortfarande på experimentnivå och "
+"är inte klar för produktionsmiljö. Speciellt kan det resultera i att "
+"konfigurationer lätt kan gå sönder och ge en falskt känsla av säkerhet. Det "
+"finns inga kända krypteringssvagheter, dock bör denna funktion inte användas "
+"annat än för teständamål tills implementationen är tillräckligt granskad."

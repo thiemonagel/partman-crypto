@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 09:01+0200\n"
+"PO-Revision-Date: 2006-05-12 14:44+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -103,16 +103,15 @@ msgstr "Velikost klíče pro tuto oblast:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algoritmus IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Způsob šifrování této oblasti:"
+msgstr "Algoritmus pro generování inicializačního vektoru pro tuto oblast:"
 
 #. Type: select
 #. Description
@@ -125,6 +124,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Existují různé algoritmy, jak odvodit inicializační vektor pro každý sektor. "
+"tato volba ovlivňuje bezpečnost šifrování. Obvykle není důvod měnit "
+"doporučené nastavení, výjimkou snad může být kompatibilita se staršími "
+"systémy."
 
 #. Type: text
 #. Description
@@ -141,16 +144,14 @@ msgstr "Typ šifrovacího klíče pro tuto oblast:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Šifrovací klíč:"
+msgstr "Hash šifrovacího klíče:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Typ šifrovacího klíče pro tuto oblast:"
+msgstr "Typ hashe šifrovacího klíče pro tuto oblast:"
 
 #. Type: select
 #. Description
@@ -161,6 +162,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Šifrovací klíč je odvozen od heslové fráze tak, že na ni aplikujeme "
+"jednosměrnou hashovací funkci. Obvykle není důvod měnit doporučenou výchozí "
+"hodnotu, protože špatný výběr může oslabit sílu šifrování."
 
 #. Type: text
 #. Description
@@ -168,21 +172,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Smazat data:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Šifrování této oblasti:"
+msgstr "Smazat data na této oblasti"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Smazat celý disk: ${DEVICE}"
+msgstr "Opravdu smazat data na ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -192,19 +194,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Data na ${DEVICE} budou přepsána náhodnými znaky a po dokončení tohoto "
+"kroku \n"
+"je již nebudete moci obnovit. Toto je poslední možnost mazání přerušit."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Smazat celý disk: ${DEVICE}"
+msgstr "Mazání dat na ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Mazání dat na ${DEVICE} selhalo"
 
 #. Type: error
 #. Description
@@ -213,6 +217,7 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Při pokusu o smazání dat na ${DEVICE} se vyskytla chyba. Data nebyla smazána."
 
 #. Type: text
 #. Description
@@ -288,33 +293,30 @@ msgstr "Chyba při instalaci šifrovacího balíku"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Balík s jaderným modulem ${PACKAGE} nebyl nalezen, nebo se během instalace "
-"vyskytla chyba."
+"Balík s jaderným modulem ${PACKAGE} nebyl nalezen, nebo se během jeho "
+"instalace vyskytla chyba."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Při zavádění, až se nový systém pokusí nastavit šifrované oblasti, se "
-"pravděpodobně vyskytnou problémy. Napravit to můžete později instalací "
-"vyžadovaných balíků."
+"Je pravděpodobné, že se při zavádění nového systému vyskytnou problémy v "
+"okamžiku, kdy se systém pokusí nastavit šifrované oblasti. Napravit to "
+"můžete později instalací vyžadovaných balíků."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Zapsat změny na disky a nastavit šifrované svazky?"
+msgstr "Zapsat změny na disk a nastavit šifrované svazky?"
 
 #. Type: boolean
 #. Description
@@ -335,7 +337,6 @@ msgstr "Ponechat stávající rozložení oblastí a nastavit šifrované svazky
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -349,9 +350,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Chyba nastavení šifrovaných svazků"
+msgstr "Nastavení šifrovaných svazků selhalo"
 
 #. Type: error
 #. Description
@@ -362,16 +362,14 @@ msgstr "Během nastavování šifrovaných svazků nastala chyba."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Nastavování je přerušeno."
+msgstr "Nastavování bylo přerušeno."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Krok instalace selhal"
+msgstr "Inicializace šifrovaného svazku selhala"
 
 #. Type: error
 #. Description
@@ -605,22 +603,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Zvolili jste uložení kořenového souborového systému na šifrované oblasti. "
-"Tato vlastnost zatím není dostupná a případné pokračování by způsobilo, že "
-"instalaci nebudete moci použít."
+"Takové použití vyžaduje samostatnou oblast /boot, na kterou se uloží jádro a "
+"initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Pro oblast /boot byste měli použít jiný souborový systém, např. ext3."
+msgstr "Měli byste se vrátit zpět a nastavit oblast /boot."
 
 #. Type: error
 #. Description
@@ -631,27 +627,25 @@ msgstr "Chyba nastavení šifrování"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Zvolili jste uložení kořenového souborového systému na šifrované oblasti. "
-"Tato vlastnost zatím není dostupná a případné pokračování by způsobilo, že "
-"instalaci nebudete moci použít."
+"Zvolili jste uložení souborového systému /boot na šifrované oblasti. To není "
+"možné, protože zavaděč by neměl jak zavést jádro a initrd. Případné "
+"pokračování by způsobilo, že instalaci nebudete moci použít."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"Vraťte se prosím zpět a pro kořenový souborový systém si zvolte nešifrovanou "
-"oblast."
+"Měli byste se vrátit zpět a pro souborový systém /boot si zvolit "
+"nešifrovanou oblast."
 
 #. Type: boolean
 #. Description
@@ -684,7 +678,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Opravdu použít šifrování blokového zařízení?"
 
 #. Type: boolean
 #. Description
@@ -696,3 +690,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Podpora pro šifrování blokových zařízení je stále experimentální a "
+"nepovažuje se za vhodnou pro produkční nasazení. Konkrétně to znamená, že "
+"může vyvolat falešný pocit bezpečí, i když vytvořené instalace bezpečné být "
+"nemusí. V samotných šifrovacích algoritmech žádné známé problémy neexistují, "
+"ale dokud někdo neprovede audit nad touto konkrétní implementací, měli byste "
+"ji používat jen pro testovací účely."

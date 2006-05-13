@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 16:51+0200\n"
+"PO-Revision-Date: 2006-05-12 16:40+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -110,16 +110,15 @@ msgstr "Nøkkelstørrelse for denne partisjonen:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV-algoritme:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Krypteringsmetode for denne partisjonen:"
+msgstr "Algoritme for å lage initieringsvektor for denne partisjonen:"
 
 #. Type: select
 #. Description
@@ -132,6 +131,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Det finnes forskjellige algoritmer for å utlede initieringsvektor for hver "
+"sektor. Dette valget påvirker krypteringssikkerheten. Som regel er det ingen "
+"grunn til å gå bort fra den anbefalte standarden, unntatt for kompatibilitet "
+"med eldre systemer."
 
 #. Type: text
 #. Description
@@ -148,16 +151,14 @@ msgstr "Type krypteringsnøkkel for denne partisjonen:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Krypteringsnøkkel:"
+msgstr "Hash av krypteringsnøkkel:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Type krypteringsnøkkel for denne partisjonen:"
+msgstr "Type hash for krypteringsnøkkel for denne partisjonen:"
 
 #. Type: select
 #. Description
@@ -168,6 +169,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Krypteringsnøkkelen avledes av passfrasen ved at den kjøres gjennom en "
+"enveis hash-funksjon. Som regel er det ingen grunn til å bruke noe annet en "
+"den anbefalte standarden, og hvis det gjøres på feil måte kan det gå ut over "
+"krypteringsstyrken."
 
 #. Type: text
 #. Description
@@ -175,21 +180,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Slett data:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Kryptering for denne partisjonen:"
+msgstr "Slett alle data på denne partisjonen"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Slett hele harddisken: ${DEVICE}"
+msgstr "Sikkert at du vil slette data på ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -199,19 +202,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Data som ligger på ${DEVICE} vil bli overskrevet med tilfeldige data. De kan "
+"ikke lenger hentes fram etter at dette trinnet er fullført. Dette er siste "
+"sjanse til å avbryte slettingen."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Slett hele harddisken: ${DEVICE}"
+msgstr "Sletter data på ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Det lyktes ikke å slette data på ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -220,6 +225,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Det oppsto en feil under forsøk på å slette data på ${DEVICE}. Dataene er "
+"ikke blitt slettet."
 
 #. Type: text
 #. Description
@@ -295,34 +302,30 @@ msgstr "Klarte ikke å installere krypteringspakka"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Kjernemodul-pakka ${PACKAGE} fantes ikke eller det oppsto en feil under "
+"Kjernemodul-pakka ${PACKAGE} fantes ikke, eller det oppsto en feil under "
 "installeringen."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
 "Det blir antakelig problemer ved oppstarten når systemet forsøker å sette "
-"opp krypterte partisjoner. Du kan ennå rette dem ved å installere den "
-"nødvendige pakka senere."
+"opp krypterte partisjoner. Du kan ennå rette dem ved å installere de(n) "
+"nødvendige pakka/pakkene senere."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr ""
-"Vil du skrive endringene til harddiskene og sette opp krypterte dataområder?"
+msgstr "Vil du skrive endringene til disk og sette opp krypterte dataområder?"
 
 #. Type: boolean
 #. Description
@@ -345,21 +348,20 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Når krypterte dataområder er satt opp, kan man ikke gjøre flere endringer på "
-"partisjonene på enhetene som inneholder krypterte dataområder. Sjekk at du "
-"er fornøyd med partisjonsoppsettet på disse enhetene før du fortsetter."
+"Etter at krypterte dataområder er satt opp, kan man ikke gjøre flere "
+"endringer på partisjonene på enhetene som inneholder krypterte dataområder. "
+"Sjekk at du er fornøyd med partisjonsoppsettet på disse enhetene før du "
+"fortsetter.u"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Oppsett av krypterte dataområder mislyktes"
 
@@ -372,16 +374,14 @@ msgstr "Det oppsto en feil under oppsett av krypterte dataområder."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Oppsettet blir avbrutt."
+msgstr "Oppsettet er blitt avbrutt."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Installasjonstrinnet mislyktes"
+msgstr "Klargjøring av krypterte dataområder mislyktes"
 
 #. Type: error
 #. Description
@@ -611,22 +611,19 @@ msgstr "Gå tilbake og velg en ukryptert partisjon til rot-filsystemet."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Du har valgt at rot-filsystemet skal lagres på en kryptert partisjon. Dette "
-"kan ikke gjøres, og om du fortsetter er resultatet en ubrukelig installasjon."
+"krever en separat /boot-partisjon der kjernen og initrd-fila kan lagres."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Du burde bruke et annet filsystem, som f.eks. ext3, for /boot-partisjonen."
+msgstr "Du bør gå tilbake og sette opp en /boot-partisjon."
 
 #. Type: error
 #. Description
@@ -637,7 +634,6 @@ msgstr "Krypteringsoppsett mislyktes"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -645,16 +641,17 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Du har valgt at rot-filsystemet skal lagres på en kryptert partisjon. Dette "
-"kan ikke gjøres, og om du fortsetter er resultatet en ubrukelig installasjon."
+"kan ikke gjøres fordi oppstartslasteren ikke ville kunne laste inn kjernen "
+"og initrd-fila. Fortsetter du nå får du en installasjon som ikke kan brukes."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr "Gå tilbake og velg en ukryptert partisjon til rot-filsystemet."
+msgstr ""
+"Du bør gå tilbake og velg en ukryptert partisjon til /boot-filsystemet."
 
 #. Type: boolean
 #. Description
@@ -680,13 +677,13 @@ msgid ""
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "Å bruke en tilfeldig nøkkeltype betyr at data på partisjonen blir ødelagt "
-"ved hver oppstart. Dette b ør bare brukes på partisjoner for veksleminne."
+"ved hver oppstart. Dette bør bare brukes på partisjoner for veksleminne."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Sikkert at kryptering for blokk-enhet skal brukes?"
 
 #. Type: boolean
 #. Description
@@ -698,3 +695,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Støtten for kryptering av blokk-enheter er fremdeles på eksperimentstadiet "
+"og er ikke klar til bruk i produksjon. Spesielt kan det resultere i oppsett "
+"som er lette å knekke og derfor gi en falsk trygghetsfølelse. Det er ingen "
+"kjente feil i krypteringen, men inntil implementasjonen har gjennomgått en "
+"grundig revisjon bør dette ikke brukes til annet enn testing."

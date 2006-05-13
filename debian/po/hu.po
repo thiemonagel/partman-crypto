@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-11 23:50+0100\n"
+"PO-Revision-Date: 2006-05-12 17:25+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -27,18 +27,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "LVM fizikai kötet"
+msgstr "fizikai kötet titkosításhoz"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Titkosítás:"
+msgstr "kriptó"
 
 #. Type: text
 #. Description
@@ -108,16 +106,15 @@ msgstr "Kulcsméret e partícióhoz:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV algoritmus:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Titkosítási mód e partícióhoz:"
+msgstr "Inicializáló vektor előállító algoritmus e partícióhoz:"
 
 #. Type: select
 #. Description
@@ -173,21 +170,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Adatok törlése:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Titkosítás e partícióhoz:"
+msgstr "Adatok törlése e partíción"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Egész lemez törlése: ${DEVICE}"
+msgstr "Tényleg törlöd ${DEVICE} adatait?"
 
 #. Type: boolean
 #. Description
@@ -197,19 +192,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} adatai véletlenszerű felülírásra kerülnek. E lépés befejezése után "
+"többé nem lesznek visszaállíthatók. Ez az utolsó lehetőség a törlés "
+"leállítására."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Egész lemez törlése: ${DEVICE}"
+msgstr "Adatok törlése itt: ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} adatainak törlése sikertelen"
 
 #. Type: error
 #. Description
@@ -217,7 +214,7 @@ msgstr ""
 msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "Hiba történt ${DEVICE} adatai törlésekor. Az adatok megmaradtak."
 
 #. Type: text
 #. Description
@@ -293,31 +290,28 @@ msgstr "Titkosító csomag telepítő hiba"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"A ${PACKAGE} rendszermag modul nem található, vagy hiba történt "
+"A ${PACKAGE} rendszermag modul csomag nem található, vagy hiba történt "
 "telepítésekor."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
 "Az indításkor valószínűleg gondok lesznek, mikor a rendszer megpróbálja "
-"beállítani a titkosított partíciókat. A szükséges csomag későbbi "
+"beállítani a titkosított partíciókat. A szükséges csomag(ok) későbbi "
 "telepítésével javítható."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Változások lemezre írása és titkosított kötetek konfigurálása?"
 
@@ -340,7 +334,6 @@ msgstr "Megtartod e partícionálást és konfigurálod a titkosított köteteke
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -354,7 +347,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Titkosított kötetek konfigurálásának hibája"
 
@@ -367,16 +359,14 @@ msgstr "Hiba történt a titkosított kötetek konfigurálásakor"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "A beállítás törölve"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Sikertelen telepítőlépés"
+msgstr "A titkosított kötet beállítása meghiúsult"
 
 #. Type: error
 #. Description
@@ -605,22 +595,19 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "A root fájlrendszerhez titkosított partíció lett kiválasztva. E lehetőség "
-"nem áll rendelkezésre és így használhatatlan telepítés keletkezhet."
+"önálló /boot partíciót igényel, melyen a rendszermag és initrd lesz."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"E helyett más fájlrendszert, például ext3-at használj a /boot partícióhoz."
+msgstr "Lépj vissza ás válassz /boot partíciót."
 
 #. Type: error
 #. Description
@@ -631,25 +618,24 @@ msgstr "Titkosítás konfigurációs hiba"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"A root fájlrendszerhez titkosított partíció lett kiválasztva. E lehetőség "
-"nem áll rendelkezésre és így használhatatlan telepítés keletkezhet."
+"A /boot fájlrendszerhez titkosított partíció lett kiválasztva. Ez így nem "
+"jó, mert a boot betöltő nem tudja majd betölteni a rendszermagot és az "
+"initrd-t. Így használhatatlan telepítés keletkezhet."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"Visszalépéssel nem-titkosított fájlrendszert kell választani a root "
+"Visszalépéssel nem-titkosított fájlrendszert kell választani a /boot "
 "fájlrendszerhez."
 
 #. Type: boolean

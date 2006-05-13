@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-10 11:01+0700\n"
+"PO-Revision-Date: 2006-05-12 15:58+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
@@ -30,18 +30,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "ភាគ​ពិត​សម្រាប់ LVM"
+msgstr "ភាគ​ពិត​សម្រាប់​អ៊ិនគ្រីប"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "ការអ៊ិនគ្រីប ៖"
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -49,9 +47,8 @@ msgstr "ការអ៊ិនគ្រីប ៖"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop%s)"
+msgstr "Loopback (រង្វិលជុំ-AES)"
 
 #. Type: text
 #. Description
@@ -60,7 +57,7 @@ msgstr "Loopback (loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "ឧបករណ៍​ផ្គូផ្គង​ឧបករណ៍ (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -112,16 +109,15 @@ msgstr "ទំហំកូនសោ​សម្រាប់​ភាគ​ថា
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "ក្បួន​ដោះស្រាយ IV ៖"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "វិធីសាស្ត្រ​​អ៊ិនគ្រីប​​សម្រាប់​ភាគ​ថាស​នេះ ៖"
+msgstr "ការ​ចាប់ផ្ដើម​ក្បួន​​ដោះស្រាយ​​វ៉ិចទ័រ​សម្រាប់​ភាគ​នេះ ៖"
 
 #. Type: select
 #. Description
@@ -134,6 +130,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"ក្បួន​ដោះស្រាយ​ខុសគ្នា​ដែល​មាន​ដើម្បី​ទាញ​យក​ពី​វ៉ិចទ័រ​ចាប់ផ្ដើម​សម្រាប់​ផ្នែក​នីមួយៗ ។ ជម្រើស​នេះ​មាន​ឥទ្ធិពល​លើ​"
+"សុវត្ថិភាព​អ៊ិនគ្រីប ។ តាមធម្មតា គ្មាន​ហេតុផល​ដើម្បី​ផ្លាស់ប្ដូរ​វា​ពី​លំនាំដើម​ដែល​បាន​ផ្ដល់​អនុសាសន៍ លើកលែង​តែ​"
+"សម្រាប់​ភាពឆប​គ្នា​នឹង​ប្រព័ន្ធ​ចាស់ៗ ។"
 
 #. Type: text
 #. Description
@@ -150,16 +149,14 @@ msgstr "ប្រភេទ​កូនសោ​អ៊ិនគ្រីប ស�
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "កូនសោ​អ៊ិនគ្រីប ៖"
+msgstr "សញ្ញា (#) កូនសោ​អ៊ិនគ្រីប ៖"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "ប្រភេទ​កូនសោ​អ៊ិនគ្រីប សម្រាប់​ភាគថាស​នេះ ៖"
+msgstr "ប្រភេទ​សញ្ញា (#) កូនសោ​អ៊ិនគ្រីប​សម្រាប់​ភាគថាស​នេះ ៖"
 
 #. Type: select
 #. Description
@@ -170,6 +167,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"កូនសោ​អ៊ិនគ្រីប​ត្រូវ​បាន​ទាញ​យកពី​ឃ្លា​សម្ងាត់​ដោយ​អនុវត្ត​អនុគមន៍​សញ្ញា (#) មួយ​ផ្លូវ​ចំពោះ​​វា ។ តាម​ធម្មតា "
+"គ្មាន​ហេតុផល​ដើម្បី​ផ្លាស់ប្ដូរ​វា​ពី​លំនាំដើម​ដែល​បាន​ផ្ដល់​អនុសាសន៍ និង​ធ្វើ​ដូច្នេះ​ក្នុង​ផ្លូវ​ខុស​​អាច​កាត់បន្ថយ​"
+"កម្លាំង​អ៊ិនគ្រីប ។"
 
 #. Type: text
 #. Description
@@ -177,21 +177,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "លុប​ទិន្នន័យ ៖"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "ការ​អ៊ិនគ្រីប​សម្រាប់​ភាគថាស​នេះ ៖"
+msgstr "លុប​ទិន្នន័យ​នៅ​លើ​ភាគ​ថាស​នេះ"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "លុប​ថាស​ទាំង​ស្រុង ៖ ${DEVICE}"
+msgstr "ពិត​ជា​លុប​ទិន្នន័យ​នៅ​លើ ${DEVICE} មែន​ទេ ?"
 
 #. Type: boolean
 #. Description
@@ -201,19 +199,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"ទិន្នន័យ​នៅលើ​The data on ${DEVICE} will be overwritten with random data. It can "
+"no longer be recovered after this step has completed. This is the last "
+"opportunity to abort the erase."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "លុប​ថាស​ទាំង​ស្រុង ៖ ${DEVICE}"
+msgstr "ការ​លុប​ទិន្នន័យ​នៅ​លើ ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "ការ​លុប​ទិន្នន័យ​នៅ​លើ ${DEVICE} បាន​បរាជ័យ"
 
 #. Type: error
 #. Description
@@ -221,7 +221,7 @@ msgstr ""
 msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើត​ឡើង​ខណៈពេល​ព្យាយាម​លុប​ទិន្នន័យ​នៅ​លើ ${DEVICE} ។ ទិន្នន័យ​មិន​ត្រូវ​បាន​លុប​ទេ ។"
 
 #. Type: text
 #. Description
@@ -297,28 +297,25 @@ msgstr "បរាជ័យ​ក្នុង​ការ​ដំឡើង​ក
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr "មិន​អាច​រកឃើញ​កញ្ចប់​ម៉ូឌុល​ខឺណែល​ ${PACKAGE} ឬ មានកំហុស​កើត​ឡើង​កំឡុង​ពេល​ដំឡើង​ ។"
+msgstr "រក​មិន​ឃើញ​កញ្ចប់​ម៉ូឌុល​ខឺណែល​ ${PACKAGE} ឬ មាន​កំហុស​មួយ​បាន​កើត​ឡើង​​កំឡុង​ពេល​ការ​​ដំឡើង​របស់​វា ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"វា​ទំនង​ជា​នឹង​មាន​បញ្ហា​កំឡុងពេល​ចាប់ផ្ដើម ពេល​ប្រព័ន្ធ​ព្យាយាម​រៀបចំ​ភាគថាស​ដែល​មិន​បាន​អ៊ិនគ្រីប ។ អ្នក​នៅ​តែ​"
-"អាច​កែ​ពួក​វា​បាន​នៅ​ពេល​ក្រោយ ដោយ​ដំឡើង​កញ្ចប់​ដែល​ទាមទារ ។"
+"វា​ទំនង​ជា​នឹង​មាន​បញ្ហា​ក្នុង​ការ​រៀបចំ​ភាគថាស​ដែល​បាន​អ៊ិនគ្រីប នៅ​ពេល​ប្រព័ន្ធ​ត្រូវ​បាន​ចាប់ផ្ដើម​ឡើង​វិញ ។ "
+"អ្នក​ប្រហែល​ជា​អាច​កែ​បញ្ហា​នេះ ដោយ​ដំឡើង​កញ្ចប់​ដែល​ត្រូវ​ការ​នៅ​ពេល​ក្រោយ ។"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "សរសេរ​ការ​ផ្លាស់ប្ដូរ​ទៅ​ថាស ហើយ​កំណត់​រចនា​សម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប ?"
 
@@ -341,23 +338,21 @@ msgstr "រក្សា​ប្លង់​ភាគថាស​បច្ចុ
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"បន្ទាប់​ពី​កំណត់​រចនាសម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប​រួច អ្នក​នឹង​មិន​អាច​ធ្វើ​ការ​ផ្លាស់ប្ដូរ​បន្ថែម​ទៀត​ទៅ​កាន់​ភាគថាស​"
-"នៅ​ក្នុង​ថាស​ដែល​មាន​ភាគ​ដែល​បាន​អ៊ិនគ្រីប​បាន​ឡើយ ។ សូម​សម្រេច​ឲ្យ​បាន​ច្បាស់លាស់​ថា អ្នក​ពិត​ជា​ពេញចិត្ត​នឹង​"
-"គ្រោងការណ៍​ចែក​ថាស​ជា​ភាគ​បច្ចុប្បន្ន​នៅ​ក្នុង​ថាស​ទាំង​នេះ មុន​នឹង​បន្ត ។"
+"បន្ទាប់​ពីភាគ​ដែល​បានអ៊ិនគ្រីប​ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ​រួច​មក គ្មាន​ការ​ផ្លាស់ប្ដូរ​បន្ថែម​ទៅ​ភាគថាស​នៅ​លើ​ថាស​​"
+"ដែល​មាន​ភាគ​ដែល​បាន​អ៊ិនគ្រីប​ត្រូវ​បាន​អនុញ្ញាត ។ សូម​សម្រេចចិត្ត​ ប្រសិន​បើ​អ្នក​ពេញចិត្ត​ជា​មួយ​នឹង​គ្រោងការណ៍​"
+"ភាគ​ថាស​បច្ចុប្បន្ន​ សម្រាប់​ថាស​ទាំង​នេះ​មុន​ពេល​បន្ត ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "បរាជ័យ​ក្នុង​ការ​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប"
+msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​របស់​ភាគ​ដែល​បាន​អ៊ិនគ្រីប​បាន​បរាជ័យ"
 
 #. Type: error
 #. Description
@@ -368,16 +363,14 @@ msgstr "កំហុស​មួយ​បាន​​កើតឡើង ខណ�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "បាន​បញ្ឈប់​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
+msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ត្រូវ​បាន​បោះបង់ ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "ជំហាន​​ដំឡើង​បាន​បរាជ័យ"
+msgstr "ការ​ដំឡើង​ភាគ​ដែល​បាន​អ៊ិនគ្រីប​បាន​បរាជ័យ"
 
 #. Type: error
 #. Description
@@ -600,21 +593,19 @@ msgstr "សូម​ត្រឡប់​ក្រោយ​វិញ ហើយ�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"អ្នក​បាន​ជ្រើស​ថា​ត្រូវ​ទុក​ប្រព័ន្ធ​ឯកសារ root នៅ​លើ​ភាគថាស​មួយ​ដែល​បាន​អ៊ិនគ្រីប ។ មិន​មាន​លក្ខណៈ​ពិសេស​នេះ​"
-"ឡើយ ហើយ​ការ​បន្ត​ទៅ​មុខ​ទៀត​នឹង​បណ្ដាល​ឲ្យ​អ្នក​មិន​អាច​ប្រើ​ការ​ដំឡើង​បាន ។"
+"អ្នក​បាន​ជ្រើស​ប្រព័ន្ធ​ឯកសារ​របស់ root ដែល​ត្រូវ​ទុក​នៅលើ​ភាគថាស​ដែល​បាន​អ៊ិនគ្រីប ។ លក្ខណៈ​ពិសេស​នេះ​ត្រូវ​"
+"ការ​ភាគថាស separate /boot ដែល​ខឺណែល និង initrd អាច​ត្រូវ​បាន​ទុក ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "អ្នក​គួរ​ប្រើ​ប្រព័ន្ធ​ឯកសារមួយ​ទៀត ដូចជា​ ext3 ជាដើម សម្រាប់​​​ភាគថាស /boot ។"
+msgstr "អ្នកគួរ​ត្រឡប់​ថយ​ក្រោយ ហើយ​រៀបចំ​ភាគថាស /boot មួយ ។"
 
 #. Type: error
 #. Description
@@ -625,24 +616,23 @@ msgstr "បរាជ័យ​ក្នុង​ការ​កំណត់​រ
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"អ្នក​បាន​ជ្រើស​ថា​ត្រូវ​ទុក​ប្រព័ន្ធ​ឯកសារ root នៅ​លើ​ភាគថាស​មួយ​ដែល​បាន​អ៊ិនគ្រីប ។ មិន​មាន​លក្ខណៈ​ពិសេស​នេះ​"
-"ឡើយ ហើយ​ការ​បន្ត​ទៅ​មុខ​ទៀត​នឹង​បណ្ដាល​ឲ្យ​អ្នក​មិន​អាច​ប្រើ​ការ​ដំឡើង​បាន ។"
+"អ្នក​បាន​ជ្រើស​ប្រព័ន្ធ​ឯកសារ /boot ដែល​ត្រូវ​ទុក​នៅ​លើ​ភាគថាស​ដែល​បាន​អ៊ិនគ្រីប ។ វា​មិន​អាច​ធ្វើ​បាន​"
+"ទេពីព្រោះ​កម្មវិធី​ចាប់ផ្ដើម​ប្រព័ន្ធ​នឹង​មិន​អាច​ផ្ទុក​ខឺណែល​ និង initrd ។ ឥឡូវ ការ​បន្ត​នឹង​មាន​លទ្ធផល​ក្នុង​ការ​"
+"ដំឡើង​ដែល​មិន​អាច​ត្រូវ​បាន​ប្រើ ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr "សូម​ត្រឡប់​ក្រោយ​វិញ ហើយ​ជ្រើស​ភាគថាស​មួយ​ដែល​មិន​បាន​អ៊ិនគ្រីប សម្រាប់​ប្រព័ន្ធ​ឯកសារ root ។"
+msgstr "អ្នក​គួរ​ត្រឡប់​ក្រោយ ហើយ​ជ្រើស​ភាគ​ថាស​ដែល​មិន​បាន​អ៊ិនគ្រីប​មួយ​សម្រាប់​ប្រព័ន្ធ​ឯកសារ /boot ។"
 
 #. Type: boolean
 #. Description
@@ -674,7 +664,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "ពិត​ជា​ប្រើ​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក ?"
 
 #. Type: boolean
 #. Description
@@ -686,3 +676,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"ការ​គាំទ្រ​សម្រាប់​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក​គឺ​នៅ​តែ​ជា​កា​រពិសោធន៍ និង​មិន​បាន​ពិចារណា​សម្រាប់​ការ​ផលឹត ។ "
+"ជាក់ស្តែង វា​អាច​មាន​លទ្ធផល​ក្នុង​ការ​រៀបចំ​ដែល​​ងាយស្រួល​បំបែក និង​ដូច្នេះ​ផ្ដល់​នូវ​អត្ថន័យ​មិន​ត្រឹមត្រូវ​នៃ​"
+"សុវត្ថិភាព ។ គ្មាន​កំហុស​ដែល​មិន​ស្គាល់ ទោះ​ជា​យ៉ាង​ណា​ក៍​ដោយ រហូត​មក​ដល់​ការ​អនុវត្ត​ត្រូវ​បាន​ពិនិត្យ​យ៉ាង​​តឹងរឹង "
+"លក្ខណៈ​ពិសេស​នេះ​នឹង​មិនគួរ​ត្រូវ​បាន​ប្រើ​​លើក​លែង​តែ​សម្រាប់​សាកល្បង ។"

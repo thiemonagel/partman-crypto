@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-03-31 19:11+0300\n"
+"PO-Revision-Date: 2006-05-12 17:19+0300\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -29,18 +29,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "фізичний том для LVM"
+msgstr "фізичний том для шифрування"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Шифр:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -48,9 +46,8 @@ msgstr "Шифр:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop%s)"
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -59,7 +56,7 @@ msgstr "Loopback (loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -72,16 +69,14 @@ msgstr "не активний"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:39
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Ключ шифрування:"
+msgstr "Метод шифрування:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:44
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Шифр для цього розділу:"
+msgstr "Метод шифрування для цього розділу:"
 
 #. Type: text
 #. Description
@@ -113,16 +108,15 @@ msgstr "Розмір ключа для цього розділу:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Алгоритм для вектора ініціалізації:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Шифр для цього розділу:"
+msgstr "Алгоритм генерації вектора ініціалізації для цього розділу:"
 
 #. Type: select
 #. Description
@@ -135,6 +129,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Існують різні алгоритми для отримання вектора ініціалізації для кожного "
+"сектора. Цей вибір впливає на безпечність шифрування. Зазвичай немає причини "
+"змінювати значення за замовчанням, хіба що для сумісності з іншими системами."
 
 #. Type: text
 #. Description
@@ -151,16 +148,14 @@ msgstr "Тип ключа шифрування для цього розділу:
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Ключ шифрування:"
+msgstr "Хеш ключа шифрування:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Тип ключа шифрування для цього розділу:"
+msgstr "Тип хеша ключа шифрування для цього розділу:"
 
 #. Type: select
 #. Description
@@ -171,6 +166,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Ключ шифрування отримується з пароля шляхом застосування до нього "
+"однонапрямленої хеш-функції. Зазвичай немає причини змінювати рекомендоване "
+"значення за замовчанням і неправильна зміна може погіршити якість шифрування."
 
 #. Type: text
 #. Description
@@ -178,21 +176,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Стерти дані:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Шифр для цього розділу:"
+msgstr "Стерти дані на цьому розділі"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Стерти весь диск: ${DEVICE}"
+msgstr "Справді стерти дані на пристрої ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -202,19 +198,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Інформацію пристрої ${DEVICE} буде перезаписано випадковими даними. "
+"Інформацію не можна буде відновити після закінчення цього кроку. Це остання "
+"можливість перервати стирання."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Стерти весь диск: ${DEVICE}"
+msgstr "Стирання даних на пристрої ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Не вдалося стерти дані на пристрої ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -223,6 +221,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Виникла помилка під час спроби стерти дані на пристрої ${DEVICE}. Інформація "
+"не була стерта."
 
 #. Type: text
 #. Description
@@ -257,13 +257,12 @@ msgstr "Відсутня необхідна програма"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:146
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Ця збірка встановлювача не містить однієї або кількох програм що необхідні "
-"для коректної роботи partman-crypt."
+"для коректної роботи partman-crypto."
 
 #. Type: error
 #. Description
@@ -299,13 +298,12 @@ msgstr "Не вдалося встановити пакунок шифруван
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Неможливо знайти пакунок з ядром ${PACKAGE} або виникла помилка під час "
-"встановлення."
+"Неможливо знайти пакунок з модулями ядра ${PACKAGE} або виникла помилка під "
+"час його встановлення."
 
 #. Type: error
 #. Description
@@ -323,7 +321,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Записати зміни на диски та налаштувати зашифровані томи?"
 
@@ -360,7 +357,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Не вдалося налаштувати зашифровані томи"
 
@@ -373,16 +369,14 @@ msgstr "Виникла помилка під час налаштування з�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Налагодження перервано."
+msgstr "Налаштування було перервано"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Помилка кроку встановлення"
+msgstr "Не вдалося ініціалізувати зашифровані томи"
 
 #. Type: error
 #. Description

@@ -238,39 +238,54 @@ wipe () {
 }
 
 dev_wipe () {
-	local device size loop
+	local device size method targetdevice
 	device=$1
 	size=$2
-	loop=$(get_free_loop)
+	method=$3
 	ret=1
 
+	# Confirm before erasing
 	template="partman-crypto/warn_erase"
 	db_set $template false
 	db_subst $template DEVICE $(humandev $device)
 	db_input critical $template || true
 	db_go || return
 	db_get $template
-		
 	if [ "$RET" != true ]; then
 		return 0
 	fi
 
-	if setup_loopaes $loop $device AES128 random; then
-		template="partman-crypto/progress/erase"
-		db_subst $template DEVICE $(humandev $device)
-		if wipe $template $loop; then
-			ret=0
-		fi
+	# Setup crypto
+	if [ $method = loop-AES ]; then
+		targetdevice=$(get_free_loop)
+		setup_loopaes $targetdevice $device AES128 random || return 1
+	elif [ $method = dm-crypt ]; then
+		targetdevice=$(get_free_mapping)
+		setup_dmcrypt $targetdevice $device aes cbc-essiv:sha256 plain 256 /dev/random || return 1
+		targetdevice="/dev/mapper/$targetdevice"
+	else
+		# Just wipe the device with zeroes
+		targetdevice=$device
 	fi
-	
-	if [ $ret -ne 0 ]; then
+
+	# Erase
+	template="partman-crypto/progress/erase"
+	db_subst $template DEVICE $(humandev $device)
+	if ! wipe $template $targetdevice; then
 		template="partman-crypto/erase_failed"
 		db_subst $template DEVICE $(humandev $device)
 		db_input critical $template || true
 		db_go
+	else
+		ret=0
 	fi
 
-	log-output -t partman-crypto /sbin/losetup-aes -d $loop
+	# Teardown crypto
+	if [ $method = loop-AES ]; then
+		log-output -t partman-crypto /sbin/losetup-aes -d $targetdevice
+	elif [ $method = dm-crypt ]; then
+		log-output -t partman-crypto /sbin/cryptsetup remove ${targetdevice##/dev/mapper/}
+	fi
 
 	return $ret
 }

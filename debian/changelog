@@ -4,6 +4,7 @@ partman-crypto (4) UNRELEASED; urgency=low
   * Add dm-crypt partition wiping
   * Do a plain wipe without crypto if the partition is not going to 
     be an encrypted one.
+  * Fix some bugs in crypttab generation.
 
   [ Max Vozeler ]
   * Build partman-crypto-dm and partman-crypto-loop that depend on 

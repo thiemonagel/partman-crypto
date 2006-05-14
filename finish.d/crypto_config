@@ -83,7 +83,10 @@ crypttab_add_entry () {
 				return 1
 			fi
 		done
-		opts="cipher=$cipher-$ivalgorithm,size=$keysize,hash=$keyhash"
+		opts="cipher=$cipher-$ivalgorithm,size=$keysize"
+		if [ $keytype != random -a -n "$keyhash" ]; then
+			opts="$opts,hash=$keyhash"
+		fi
 	fi
 
 	# Set key source
@@ -104,9 +107,9 @@ crypttab_add_entry () {
 		mnt=$(cat $cryptdevdir/mountpoint)
 	fi
 	if [ $method = swap ]; then
-		$opts="$opts,swap"
+		opts="$opts,swap"
 	elif [ $mnt = /tmp ]; then
-		$opts="$opts,tmp"
+		opts="$opts,tmp"
 	fi
 
 	# Check mapping name

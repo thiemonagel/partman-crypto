@@ -3,6 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of fr.po to French
 # French messages for debian-installer.
 # Copyright (C) 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -18,7 +19,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-12 06:58+0200\n"
+"PO-Revision-Date: 2006-05-13 06:57+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -183,7 +184,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr "Effacer données :"
+msgstr "Effacer les données :"
 
 #. Type: text
 #. Description
@@ -660,7 +661,7 @@ msgid ""
 msgstr ""
 "Vous avez choisi de placer le système de fichiers /boot sur une partition "
 "chiffrée. Ce choix n'est pas possible car le gestionnaire d'amorçage ne "
-"pourrait pas charger le noyau et l'image disque en mémoire (« initrd »). Si "
+"pourra pas charger le noyau et l'image disque en mémoire (« initrd »). Si "
 "vous continuez, le système installé sera inutilisable."
 
 #. Type: error

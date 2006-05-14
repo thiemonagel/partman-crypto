@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-02 17:33+0300\n"
+"PO-Revision-Date: 2006-05-13 09:53+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -110,16 +110,15 @@ msgstr "Bu bölüm için anahtar uzunluğu:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "İV algoritması:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Bu bölüm için şifreleme yöntemi:"
+msgstr "Bu bölüm için \"ilklendirme vektörü\" üretim algoritması:"
 
 #. Type: select
 #. Description
@@ -132,6 +131,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Her bir sektör için ilklendirme vektörünü türeten çeşitli algoritmalar "
+"mevcuttur.  Bu seçim şifrelemenin güvenlik seviyesini etkileyecektir.  "
+"Önerilen öntanımlı seçeneği, eski sistemlerle uyumluluğu gözetme gerekçesi "
+"dışında, normal şartlarda değiştirmek gerekmez."
 
 #. Type: text
 #. Description
@@ -148,14 +151,12 @@ msgstr "Bu bölüm için şifreleme anahtar türü:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
 msgstr "Şifreleme anahtarı:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
 msgstr "Bu bölüm için şifreleme anahtar türü:"
 
@@ -168,6 +169,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Şifreleme anahtarı geçiş parolasına tek yönlü bir eşleştirme işlevi "
+"uygulanarak türetilir.  Önerilen öntanımlı seçeneği normal şartlarda "
+"değiştirmek gerekmez ve bilâkis yanlış bir seçim halinde şifrelemenin "
+"etkililiği azalabilir."
 
 #. Type: text
 #. Description
@@ -175,21 +180,20 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Verileri sil:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Bu bölüm için şifreleme:"
+msgstr "Bu bölümdeki verileri sil"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Tüm diski sil: ${DEVICE}"
+msgstr ""
+"${DEVICE} üzerindeki tüm verinin silinmesini gerçekten istiyor musunuz?"
 
 #. Type: boolean
 #. Description
@@ -199,19 +203,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} üzerindeki verilerin üzerine rastgele veriler yazılacaktır.  Bu "
+"adım tamamlandığında verilerin kurtarılması artık mümkün olmayacaktır.  Bu "
+"uyarı silme işleminden vazgeçmeniz için son şansınızdır."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Tüm diski sil: ${DEVICE}"
+msgstr "${DEVICE} üzerindeki tüm veriler siliniyor"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} üzerindeki verilerin silinmesi başarısız"
 
 #. Type: error
 #. Description
@@ -220,6 +226,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"${DEVICE} üzerindeki veriler silinmeye çalışılırken bir hata oluştu.  "
+"Veriler silinemedi."
 
 #. Type: text
 #. Description
@@ -295,34 +303,31 @@ msgstr "Şifreleme paketinin kurulumu başarısız"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Çekirdek modül paketi ${PACKAGE} bulunamadı veya kurulum sırasında bir hata "
-"oluştu."
+"Çekirdek modül paketi ${PACKAGE} bulunamadı veya paketin kurulumu esnasında "
+"bir hata oluştu."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Açılış sırasında sistem, şifrelenmiş bölümleri ayarlamaya çalışırken büyük "
-"bir olasılıkla hatalar oluşacaktır.  Gerekli paketleri daha sonra kurarak bu "
-"hataları düzeltebilirsiniz."
+"Açılış sırasında şifrelenmiş bölümler ayarlanırken hata oluşması pek "
+"mümkündür.  Gerekli paketleri daha sonra kurarak bu hataları "
+"düzeltebilirsiniz."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
-"Değişiklikler disklere kaydedilerek şifrelenmiş ciltler yapılandırılsın mı?"
+"Değişiklikler diske kaydedilerek şifrelenmiş ciltler yapılandırılsın mı?"
 
 #. Type: boolean
 #. Description
@@ -344,7 +349,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -352,16 +356,15 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Şifrelenmiş ciltler yapılandırıldıktan sonra, şifrelenmiş cilt içeren "
-"disklerdeki bölümler üzerinde ek bir değişikliğe izin verilmez.  Lütfen bu "
-"disklerdeki mevcut bölümlemenin isteğinize uygun şekilde olduğundan emin "
-"olun."
+"disklerdeki bölümler üzerinde ek bir değişikliğe izin verilmez.  Lütfen "
+"devam etmeden önce bu disklerdeki mevcut bölümlemenin isteğinize uygun "
+"şekilde yapıldığından emin olun."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Şifrelenmiş cilt yapılandırma hatası"
+msgstr "Şifrelenmiş ciltlerin yapılandırılması başarısız"
 
 #. Type: error
 #. Description
@@ -372,16 +375,14 @@ msgstr "Şifrelenmiş ciltler yapılandırılırken bir hata oluştu."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Yapılandırma iptal edildi."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Kurulum adımı başarısız"
+msgstr "Şifrelenmiş ciltlerin ilklendirilmesi başarısız"
 
 #. Type: error
 #. Description
@@ -616,22 +617,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Kök dosya sisteminin şifrelenmiş bir bölümde tutulmasını seçtiniz.  Bu "
-"özellik şu an mevcut değil ve devam etmeniz halinde gerçekleşecek kurulum "
-"kullanılabilir nitelikte olmayacak."
+"özellik, çekirdek ve \"initrd\"nin üzerine kaydedileceği ayrı bir /boot "
+"bölümünün varlığını gerektiriyor."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "/boot için ext3 gibi başka bir dosya  sistemi kullanmalısınız."
+msgstr "Geri dönerek bir /boot bölümü ayarlamalısınız."
 
 #. Type: error
 #. Description
@@ -642,26 +641,24 @@ msgstr "Şifreleme yapılandırma hatası"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Kök dosya sisteminin şifrelenmiş bir bölümde tutulmasını seçtiniz.  Bu "
-"özellik şu an mevcut değil ve devam etmeniz halinde gerçekleşecek kurulum "
-"kullanılabilir nitelikte olmayacak."
+"Kök dosya sisteminin şifrelenmiş bir bölümde tutulmasını seçtiniz.  "
+"Önyükleyici, çekirdek ve \"initrd\"yi yükleyemeyeceğinden bu özelliğin "
+"kullanılması mümkün değil.  Devam etmeniz halinde gerçekleşecek kurulum "
+"kullanılabilir nitelikte olmayacaktır."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr ""
-"Lütfen geri dönün ve kök dosya sistemi için şifrelenmemiş bir bölüm seçin."
+msgstr "Lütfen geri dönün ve /boot bölümü için şifrelenmemiş bir bölüm seçin."
 
 #. Type: boolean
 #. Description
@@ -694,7 +691,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Öbek aygıt şifrelemesi gerçekten kullanılsın mı?"
 
 #. Type: boolean
 #. Description
@@ -706,3 +703,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Öbek aygıt (block device) şifrelemesi desteği henüz deneysel safhada "
+"bulunuyor ve ciddi sistemlerde kullanılması önerilmiyor.   Özellikle "
+"vurgulamak gerekirse, bu şekilde şifrelenen sistemler kolayca kırılabilir ve "
+"buna rağmen yanıltıcı bir güvenlik hissi verebilir.  Bilinen bir güvenlik "
+"açığı olmamakla beraber kullanılan gerçeklemenin etkinliği baştan sona "
+"denetleninceye kadar bu özellik, deneme gayesi dışında, kullanılmamalıdır."

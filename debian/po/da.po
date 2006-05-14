@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-08 22:56+0200\n"
+"PO-Revision-Date: 2006-05-13 12:43+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
@@ -107,16 +107,15 @@ msgstr "Denne partitions nøglestørrelse:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV-algoritme:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Denne partitions krypteringsmetode:"
+msgstr "Algoritme til generering af initialiseringsvektor for denne partition:"
 
 #. Type: select
 #. Description
@@ -129,6 +128,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Der findes forskellige algoritmer til at uddrage initialiseringsvektoren for "
+"hver sektor. Dette valg påvirker krypteringssikkerheden. Normalt er der "
+"ingen grund til at ændre den fra den anbefalede værdi, medmindre der ønskes "
+"kompatibilitet med ældre systemer."
 
 #. Type: text
 #. Description
@@ -145,16 +148,14 @@ msgstr "Denne partitions krypteringsnøgletype:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Krypteringsnøgle:"
+msgstr "Krypteringsnøgle-hash:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Denne partitions krypteringsnøgletype:"
+msgstr "Krypteringsnøgle-hashtypen for denne partition:"
 
 #. Type: select
 #. Description
@@ -165,6 +166,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Krypteringsnøglen uddrages fra adgangskoden ved at påføre den en envejs-"
+"hashfunktion. Der er normalt ingen grund til at ændre den fra den anbefalede "
+"type, og det kan nedsætte krypteringsstyrken at gøre det på en forkert måde."
 
 #. Type: text
 #. Description
@@ -172,21 +176,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Slet data:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Denne partitions kryptering:"
+msgstr "Slet data på denne partition"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Vil du virkelig bruge software-RAID ${LEVEL}?"
+msgstr "Vil du virkelig slette data på ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -196,19 +198,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Data på ${DEVICE} vil blive overskrevet med tilfældige data. De kan ikke "
+"genskabes, når dette er sket. Dette er sidste mulighed for at hindre "
+"sletningen."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Slet hele denne disk: ${DEVICE}"
+msgstr "Sletter data på ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Det lykkedes ikke at slette data på ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -217,6 +221,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Der opstod en fejl under forsøget på at slette data på ${DEVICE}. Dataene er "
+"ikke blevet slettet."
 
 #. Type: text
 #. Description
@@ -292,7 +298,6 @@ msgstr "Fejl under installation af krypteringspakke"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -303,20 +308,18 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Det er sandsynligt, at der vil opstå problemer under opstarten, når systemet "
-"prøver på at sætte krypterede partitioner op. Du kan stadig imødegå dem ved "
-"at installere de nødvendige pakker senere."
+"Det er sandsynligt, at der vil opstå problemer med at sætte krypterede "
+"partitioner op, når systemet genstartes. Du kan muligvis undgå dette ved at "
+"installere de nødvendige pakker senere."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Skriv ændringerne til diskene og sæt de krypterede bind op?"
 
@@ -339,7 +342,6 @@ msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -353,9 +355,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Fejl under opsætning af krypterede bind"
+msgstr "Opsætningen af krypterede bind mislykkedes"
 
 #. Type: error
 #. Description
@@ -366,16 +367,14 @@ msgstr "Der opstod en fejl under opsætningen af krypterede bind."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Opsætningen blev afbrudt."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Installationstrinnet mislykkedes"
+msgstr "Initialiseringen af de krypterede bind mislykkedes"
 
 #. Type: error
 #. Description
@@ -605,22 +604,19 @@ msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Denne "
-"funktion er ikke tilgængelig, og hvis du fortsætte nu, vil du ende med at "
-"have en ubrugelig installation."
+"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Det "
+"kræver en separat /boot-partition, hvor kernen og initrd skal placeres."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Du bør benytte et andet filsystem, såsom ext3, til /boot-partitionen."
+msgstr "Du bør gå tilbage og sætte en /boot-partitionen op."
 
 #. Type: error
 #. Description
@@ -631,25 +627,25 @@ msgstr "Fejl under opsætning af kryptering"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Denne "
-"funktion er ikke tilgængelig, og hvis du fortsætte nu, vil du ende med at "
-"have en ubrugelig installation."
+"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Dette "
+"er ikke muligt, da opstartsindlæseren ikke ville kunne indlæse kernen og "
+"initrd. Hvis du fortsætte nu, vil du ende med en installation, der ikke kan "
+"bruges."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
+msgstr ""
+"Du bør gå tilbage og vælge en ikke-krypteret partition til /boot-filsystemet."
 
 #. Type: boolean
 #. Description
@@ -681,7 +677,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Vil du virkelig benytte blokenhedskryptering?"
 
 #. Type: boolean
 #. Description
@@ -693,3 +689,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Understøttelsen af blokenhedskryptering er stadig eksperimentel, og anses "
+"ikke for at være klar til produktionssystemer. Specielt kan det resultere i "
+"opsætninger, der er lette at bryde, og dermed give et falsk indtryk af "
+"sikkerheden. Der er ingen kendte sikkerhedproblemer, men indtil "
+"implementeringen er tilstrækkeligt gennemprøvet, bør denne funktion kun "
+"benyttes i test-øjemed."

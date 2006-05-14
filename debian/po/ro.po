@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-12 00:21-0600\n"
-"PO-Revision-Date: 2006-05-05 21:34+0300\n"
+"PO-Revision-Date: 2006-05-13 13:04+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,18 +39,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "Volumul fizic pentru LVM"
+msgstr "volumul fizic pentru criptare"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Criptare:"
+msgstr "cripto"
 
 #. Type: text
 #. Description
@@ -58,9 +56,8 @@ msgstr "Criptare:"
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Dispozitiv buclă (loop%s)"
+msgstr "Dispozitiv buclă (loop-AES)"
 
 #. Type: text
 #. Description
@@ -69,7 +66,7 @@ msgstr "Dispozitiv buclă (loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Dispozitiv de mapare (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -121,16 +118,16 @@ msgstr "Dimensiunea cheii pentru acestă partiţie:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:68
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algoritmul de iniţializare a vectorului:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:75
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Metoda de criptare pentru acestă partiţie:"
+msgstr ""
+"Algoritmul de iniţializare a vectorului de generare pentru acestă partiţie:"
 
 #. Type: select
 #. Description
@@ -143,6 +140,11 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Există diferiţi algoritimi pentru obţinerea vectorului de iniţializare "
+"pentru fiecare sector. Acestă opţiune influenţează nivelul de securitate la "
+"criptare. În mod normal, nu există un motiv pentru a schimba această opţiune "
+"faţă de cea implicită, exceptând necesitatea de compatibilitate cu sistemele "
+"mai vechi."
 
 #. Type: text
 #. Description
@@ -159,16 +161,14 @@ msgstr "Tipul de cheie de criptare pentru acestă partiţie:"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:92
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Cheia de criptare:"
+msgstr "Cheia de căutare pentru criptare:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:97
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipul de cheie de criptare pentru acestă partiţie:"
+msgstr "Tipul de cheie de căutare pentru criptare asociat acestei partiţii:"
 
 #. Type: select
 #. Description
@@ -179,6 +179,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Cheia de criptare este obţinută dintr-o parolă-frază prin aplicarea asupra "
+"ei a unei funcţii de căutare unidirecţionale. În mod normal, nu există un "
+"motiv pentru a schimba această opţiune faţă de cea implicită, iar shimbarea "
+"ei în direcţia greşită poate reduce calitatea criptării."
 
 #. Type: text
 #. Description
@@ -186,21 +190,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:107
 msgid "Erase data:"
-msgstr ""
+msgstr "Şterge datele:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:111
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Criptarea pentru acestă partiţie:"
+msgstr "Şterge datele de pe acestă partiţie"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:116
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Utilizează întregul disc ${DEVICE}"
+msgstr "Într-adevăr se şterg datele de pe ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -210,19 +212,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Datele de pe ${DEVICE} vor fi supreascrise cu date aleatoare. Acestea nu mai "
+"pot fi recuperate după terminarea acestui pas. Acest moment este ultimul la "
+"care mai puteţi abandona ştergerea."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:123
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Utilizează întregul disc ${DEVICE}"
+msgstr "Se şterg datele de pe ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:127
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Ştergerea datelor de pe ${DEVICE} a eşuat"
 
 #. Type: error
 #. Description
@@ -231,6 +235,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"A apărut o eroare la încercarea de ştergere a datelor de pe ${DEVICE}. "
+"Datele nu au fost şterse."
 
 #. Type: text
 #. Description
@@ -308,33 +314,30 @@ msgstr "Eşec la instalarea pachetului de criptare"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
 "Pachetul de modul de nucleu ${PACKAGE} nu a putut fi găsit sau a apărut o "
-"eroare în timpul instalării."
+"eroare în timpul instalării lui."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:168
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Vor fi probabil probleme în timpul pornirii când sistemul încearcă să "
-"pregătească partiţiile criptate. Încă le puteţi corecta prin instalarea "
-"pachetelor necesare, mai târziu."
+"Probabil că vor fi probleme în timpul pornirii când sistemul încearcă să "
+"pregătească partiţiile criptate. Probabil că veţi putea corecta acest lucru "
+"prin instalarea pachetelor necesare mai târziu."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:180
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Se scriu schimbările pe discuri şi configurează volumele criptate?"
+msgstr "Se scriu schimbările pe disc şi configurează volumele criptate?"
 
 #. Type: boolean
 #. Description
@@ -357,14 +360,13 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:195
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"După ce volumele criptate sunt configurate, nu mai sunt permise alte "
+"După ce volumele criptate vor fi fost configurate, nu mai sunt permise alte "
 "schimbări suplimentare pe discurile care conţin volume criptate. Vă rugăm să "
 "vă decideţi dacă sunteţi satisfăcut cu modelul de partiţionare curent de pe "
 "aceste discuri înainte de a continua."
@@ -372,7 +374,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Eşec la configurarea volumelor criptate"
 
@@ -385,16 +386,14 @@ msgstr "A apărut o eroare în timpul configurării volumelor criptate."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:203
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Procesul de configurare este abandonat."
+msgstr "Procesul de configurare a fost abandonat."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:210
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Pas al procesului de instalare eşuat"
+msgstr "Iniţializarea volumelor criptate a eşuat"
 
 #. Type: error
 #. Description
@@ -632,24 +631,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Aţi selectat să stocaţi sistemul de fişiere rădăcină pe o partiţie criptată. "
-"Această facilitate nu este disponibilă iar continuarea va duce la o "
-"instalare inutilizabilă."
+"Aţi optat să stocaţi sistemul de fişiere rădăcină pe o partiţie criptată. "
+"Această facilitate necesită o partiţie /boot distinctă pe care să se "
+"stocheze nucleul şi imaginea initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:318
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Ar trebui să utilizaţi un alt sistem de fişiere, ca ext3, pentru partiţia /"
-"boot."
+msgstr "Ar trebui să vă întoarceţi şi să pregătiţi o partiţie /boot."
 
 #. Type: error
 #. Description
@@ -660,27 +655,26 @@ msgstr "Eşec la configurarea criptării"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Aţi selectat să stocaţi sistemul de fişiere rădăcină pe o partiţie criptată. "
-"Această facilitate nu este disponibilă iar continuarea va duce la o "
-"instalare inutilizabilă."
+"Aţi selectat să stocaţi sistemul de fişiere /boot pe o partiţie criptată. "
+"Acest lucru nu este posibil deoarece încărcătorul de sistem nu ar putea "
+"încărca nucleul şi imaginea initrd. Continuarea va duce la o instalare de "
+"sistem inutilizabilă."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"Vă rugăm să vă întoarceţi şi să alegeţi o partiţie necriptată pentru "
-"sistemul de fişiere rădăcină."
+"Ar trebui să vă întoarceţi şi să alegeţi o partiţie necriptată pentru "
+"sistemul de fişiere /boot."
 
 #. Type: boolean
 #. Description
@@ -713,7 +707,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Se foloseşte într-adevăr criptarea dispozitivelor bloc?"
 
 #. Type: boolean
 #. Description
@@ -725,3 +719,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Suportul pentru criptarea dispozitivelor bloc este încă la nivel "
+"experimental şi nu este considerat pregătit pentru nivel de producţie. În "
+"anumite cazuri ar putea rezulta în configuraţii care sunt uşor de a fi "
+"învinse astfel dând un setiment fals de securitate. Pe de altă parte nu sunt "
+"cunoscute omisiuni sau greşeli în criptare, însă, până când implementarea "
+"este verficată foarte bine această facilitate nu ar trebui folosită decât în "
+"scop de testare."

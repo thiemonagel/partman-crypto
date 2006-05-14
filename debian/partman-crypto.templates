@@ -36,6 +36,7 @@ _Description: not active
 
 Template: partman-crypto/text/specify_crypto_type
 Type: text
+# Should be kept below 24 columns
 _Description: Encryption method:
 
 Template: partman-crypto/crypto_type
@@ -45,6 +46,7 @@ _Description: Encryption method for this partition:
 
 Template: partman-crypto/text/specify_cipher
 Type: text
+# Should be kept below 24 columns
 _Description: Encryption:
 
 Template: partman-crypto/cipher
@@ -54,6 +56,7 @@ _Description: Encryption for this partition:
 
 Template: partman-crypto/text/specify_keysize
 Type: text
+# Should be kept below 24 columns
 _Description: Key size:
 
 Template: partman-crypto/keysize
@@ -63,8 +66,9 @@ _Description: Key size for this partition:
 
 Template: partman-crypto/text/specify_ivalgorithm
 Type: text
-# An initialization vector is the initial randomness used to seed
+# An initialization vector is the initial value used to seed
 # the encryption algorithm
+# Should be kept below 24 columns
 _Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
@@ -80,6 +84,7 @@ _Description: Initialization vector generation algorithm for this partition:
 
 Template: partman-crypto/text/specify_keytype
 Type: text
+# Should be kept below 24 columns
 _Description: Encryption key:
 
 Template: partman-crypto/keytype
@@ -89,6 +94,7 @@ _Description: Type of encryption key for this partition:
 
 Template: partman-crypto/text/specify_keyhash
 Type: text
+# Should be kept below 24 columns
 _Description: Encryption key hash:
 
 Template: partman-crypto/keyhash

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-14 18:31-0600\n"
-"PO-Revision-Date: 2006-05-12 00:06+0900\n"
+"PO-Revision-Date: 2006-05-15 02:34+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -107,16 +107,15 @@ msgstr "このパーティションの鍵のサイズ:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV アルゴリズム:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "このパーティションの暗号化の方法:"
+msgstr "このパーティションのベクタ生成アルゴリズムの初期化:"
 
 #. Type: select
 #. Description
@@ -129,6 +128,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"各セクタ向けに初期化ベクタから派生した異なるアルゴリズムが存在します。この選"
+"択肢は暗号化セキュリティに影響を与えます。より古いシステムとの互換性を除き、"
+"通常、推奨されているデフォルトからこれを変更する必要はありません。"
 
 #. Type: text
 #. Description
@@ -147,16 +149,14 @@ msgstr "このパーティションの暗号化鍵の形式:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "暗号化鍵:"
+msgstr "暗号化鍵ハッシュ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "このパーティションの暗号化鍵の形式:"
+msgstr "このパーティションの暗号化鍵ハッシュの形式:"
 
 #. Type: select
 #. Description
@@ -167,6 +167,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"暗号化鍵はワンウェイハッシュ関数を適用したパスフレーズから派生されます。通"
+"常、推奨されているデフォルトからこれを変更する必要はなく、やり方を間違えると"
+"暗号強度を弱めることになります。"
 
 #. Type: text
 #. Description
@@ -174,21 +177,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "データの削除:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "このパーティションの暗号化:"
+msgstr "このパーティションのデータの削除"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "ディスク全体を消去する: ${DEVICE}"
+msgstr "本当に ${DEVICE} のデータを削除しますか?"
 
 #. Type: boolean
 #. Description
@@ -198,19 +199,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} のデータはランダムなデータで上書きされます。このステップが完了した"
+"後は、二度と復旧できなくなります。これは削除を中止する最後の機会です。"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "ディスク全体を消去する: ${DEVICE}"
+msgstr "${DEVICE} のデータを削除しています"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} のデータの削除中に失敗しました"
 
 #. Type: error
 #. Description
@@ -219,6 +221,8 @@ msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"${DEVICE} のデータの削除を試行中にエラーが発生しました。データは削除されませ"
+"んでした。"
 
 #. Type: text
 #. Description
@@ -294,7 +298,6 @@ msgstr "暗号化パッケージのインストールに失敗しました"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -305,22 +308,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"システムが暗号化パーティションのセットアップを試行するブート段階で、問題が起"
-"きることでしょう。あとで必要なパッケージをインストールすることにより、まだこ"
-"れらを訂正できます。"
+"システムが再起動された際、暗号化されたパーティションのセットアップに問題が出"
+"ることでしょう。あとで必要なパッケージをインストールすることにより、まだこれ"
+"らを訂正できます。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "ディスクへの変更を書き込み、暗号化ボリュームを設定しますか?"
+msgstr "ディスクに変更を書き込み、暗号化ボリュームを設定しますか?"
 
 #. Type: boolean
 #. Description
@@ -342,7 +343,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -356,7 +356,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "暗号化ボリュームの設定に失敗しました"
 
@@ -369,16 +368,14 @@ msgstr "暗号化ボリュームの設定中にエラーが発生しました。
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "設定は中止されました。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "インストールステップが失敗しました"
+msgstr "暗号化ボリュームの初期化に失敗しました"
 
 #. Type: error
 #. Description
@@ -612,24 +609,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"ルートファイルシステムを暗号化パーティションとして格納するよう選択しました"
-"が、この機能は利用できず、このまま続けるとインストールしたものは利用できませ"
-"ん。"
+"暗号化パーティションにルートファイルシステムを格納するよう選択しました。この"
+"機能はカーネルと initrd を格納する分割された /boot パーティションを必要としま"
+"す。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"/boot パーティションには、ext3 のような別のファイルシステムを使うことをお勧め"
-"します。"
+msgstr "戻って /boot パーティションをセットアップすべきです。"
 
 #. Type: error
 #. Description
@@ -640,27 +633,25 @@ msgstr "暗号化の設定に失敗しました"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"ルートファイルシステムを暗号化パーティションとして格納するよう選択しました"
-"が、この機能は利用できず、このまま続けるとインストールしたものは利用できませ"
-"ん。"
+"暗号化パーティションに /boot ファイルシステムを格納するよう選択しました。ブー"
+"トローダがカーネルと initrd をロードできないので、これは不可能です。このまま"
+"続けると、インストールしたものは利用できません。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
 msgstr ""
-"戻って暗号化されていないパーティションをルートファイルシステムに選んでくださ"
-"い。"
+"戻って暗号化されていないパーティションを /boot ファイルシステムに選ぶべきで"
+"す。"
 
 #. Type: boolean
 #. Description
@@ -692,7 +683,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "本当にブロックデバイス暗号化を使いますか?"
 
 #. Type: boolean
 #. Description
@@ -704,3 +695,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"ブロックデバイス暗号化のサポートはまだ実験的で、商品段階とは見なされていませ"
+"ん。特に、容易に壊れるセットアップに起因して、根拠のない安心を与えます。既知"
+"の暗号化の欠陥はありませんが、実装が完全に監査されるまで、この機能は実験目的"
+"を除けば使うべきではありません。"

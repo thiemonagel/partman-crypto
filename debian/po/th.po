@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-14 18:31-0600\n"
-"PO-Revision-Date: 2006-05-12 18:51+0700\n"
+"PO-Revision-Date: 2006-05-14 19:07+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "โวลุมจริงที่จะเข้ารหัส"
 
 #. Type: text
 #. Description
@@ -33,7 +33,7 @@ msgstr ""
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -41,9 +41,8 @@ msgstr ""
 #. Encryption type for a filesystem
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "วกกลับ (loop%s)"
+msgstr "วกกลับ (loop-AES)"
 
 #. Type: text
 #. Description
@@ -52,7 +51,7 @@ msgstr "วกกลับ (loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "แมปอุปกรณ์ (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -60,46 +59,46 @@ msgstr ""
 #. Encryption type for a filesystem
 #: ../partman-crypto.templates:35
 msgid "not active"
-msgstr ""
+msgstr "ไม่ใช้"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr ""
+msgstr "วิธีเข้ารหัสลับ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "วิธีเข้ารหัสลับสำหรับพาร์ทิชันนี้:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr ""
+msgstr "การเข้ารหัสลับ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr ""
+msgstr "การเข้ารหัสลับสำหรับพาร์ทิชันนี้:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr ""
+msgstr "ขนาดกุญแจ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr ""
+msgstr "ขนาดกุญแจสำหรับพาร์ทิชันนี้:"
 
 #. Type: text
 #. Description
@@ -108,7 +107,7 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "อัลกอริทึม IV:"
 
 #. Type: select
 #. Description
@@ -116,7 +115,7 @@ msgstr ""
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "อัลกอริทึมสำหรับสร้างเวกเตอร์เริ่มต้นสำหรับพาร์ทิชันนี้:"
 
 #. Type: select
 #. Description
@@ -129,32 +128,35 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"มีอัลกอริทึมต่างๆ กันหลายแบบสำหรับสร้างเวกเตอร์เริ่มต้นสำหรับแต่ละเซกเตอร์ "
+"ตัวเลือกนี้มีผลต่อความแน่นหนาของการเข้ารหัสลับ โดยปกติแล้ว "
+"ไม่มีเหตุผลสมควรที่จะเปลี่ยนค่านี้ไปจากค่าปกติที่แนะนำ ยกเว้นเพื่อความเข้ากันได้กับระบบเก่าๆ"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr ""
+msgstr "กุญแจเข้ารหัสลับ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr ""
+msgstr "ชนิดของกุญแจเข้ารหัสลับสำหรับพาร์ทิชันนี้:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr ""
+msgstr "ค่าแฮชของกุญแจเข้ารหัสลับ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr ""
+msgstr "ชนิดของค่าแฮชของกุญแจเข้ารหัสลับสำหรับพาร์ทิชันนี้:"
 
 #. Type: select
 #. Description
@@ -165,6 +167,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"กุญแจเข้ารหัสลับจะสร้างจากวลีรหัสผ่าน โดยคำนวณฟังก์ชันแฮชทางเดียวจากวลีดังกล่าว โดยปกติแล้ว "
+"ไม่มีเหตุผลสมควรที่จะเปลี่ยนค่านี้ไปจากค่าปกติที่แนะนำ และการเปลี่ยนแปลงดังกล่าวแบบผิดวิธี "
+"อาจลดความแน่นหนาของการเข้ารหัสลับได้"
 
 #. Type: text
 #. Description
@@ -172,21 +177,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "ลบข้อมูล:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "สร้างพาร์ทิชันใหม่"
+msgstr "ลบข้อมูลในพาร์ทิชันนี้"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "ลบข้อมูลทั้งดิสก์: ${DEVICE}"
+msgstr "จะลบข้อมูลใน ${DEVICE} จริงๆ หรือไม่?"
 
 #. Type: boolean
 #. Description
@@ -196,19 +199,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"ข้อมูลใน ${DEVICE} จะถูกเขียนทับด้วยข้อมูลสุ่ม "
+"และจะไม่สามารถเรียกคืนมาได้อีกหลังจากเสร็จขั้นตอนนี้แล้ว นี่เป็นโอกาสสุดท้ายที่จะยกเลิกการลบนี้"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "ลบข้อมูลทั้งดิสก์: ${DEVICE}"
+msgstr "กำลังลบข้อมูลใน ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "ลบข้อมูลใน ${DEVICE} ไม่สำเร็จ"
 
 #. Type: error
 #. Description
@@ -216,37 +220,37 @@ msgstr ""
 msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะพยายามลบข้อมูลใน ${DEVICE} ข้อมูลยังไม่ถูกลบ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:139
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "กำลังตั้งค่าการเข้ารหัสลับ..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:143
 msgid "Configure encrypted volumes"
-msgstr ""
+msgstr "ตั้งค่าโวลุมเข้ารหัสลับ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:147
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "ไม่มีพาร์ทิชันที่จะเข้ารหัสลับ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:147
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "ไม่ได้เลือกพาร์ทิชันที่จะเข้ารหัสลับ"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Required programs missing"
-msgstr ""
+msgstr "โปรแกรมที่ต้องการขาดหายไป"
 
 #. Type: note
 #. Description
@@ -255,12 +259,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"โปรแกรมติดตั้งเดเบียนชุดนี้ ไม่ได้รวมโปรแกรมที่ partman-crypto ต้องใช้ "
+"เพื่อจะทำงานได้อย่างถูกต้อง"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "ตัวเลือกการเข้ารหัสลับที่ต้องใช้ขาดหายไป"
 
 #. Type: error
 #. Description
@@ -269,6 +275,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"ตัวเลือกการเข้ารหัสลับสำหรับ ${DEVICE} ไม่สมบูรณ์ กรุณากลับไปที่เมนูแบ่งพาร์ทิชัน "
+"แล้วเลือกตัวเลือกที่จำเป็นให้ครบ"
 
 #. Type: text
 #. Description
@@ -277,13 +285,13 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:170
 msgid "missing"
-msgstr ""
+msgstr "ขาดหาย"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "ติดตั้งแพกเกจสำหรับการเข้ารหัสลับไม่สำเร็จ"
 
 #. Type: error
 #. Description
@@ -292,6 +300,7 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"ไม่พบแพกเกจสำหรับมอดูลของเคอร์เนล ${PACKAGE} หรืออาจเกิดข้อผิดพลาดขณะติดตั้งแพกเกจดังกล่าว"
 
 #. Type: error
 #. Description
@@ -301,13 +310,14 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"เป็นไปได้ว่าจะเกิดปัญหาขณะตั้งค่าพาร์ทิชันเข้ารหัสลับเมื่อรีบูตระบบ คุณอาจแก้ปัญหานี้ภายหลังได้ "
+"ด้วยการติดตั้งแพกเกจที่จำเป็นดังกล่าว"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "จะเขียนการเปลี่ยนแปลงทั้งหมดลงดิสก์แล้วดำเนินการต่อหรือไม่?"
+msgstr "จะบันทึกการเปลี่ยนแปลงทั้งหมดลงดิสก์ แล้วตั้งค่าโวลุมเข้ารหัสลับหรือไม่?"
 
 #. Type: boolean
 #. Description
@@ -316,12 +326,14 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"ก่อนที่จะตั้งค่าโวลุมเข้ารหัสลับได้ จะต้องบันทึกการแบ่งพาร์ทิชันปัจจุบันลงในดิสก์เสียก่อน "
+"ซึ่งการเปลี่ยนแปลงเหล่านี้ ไม่สามารถเรียกคืนได้อีก"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
+msgstr "จะคงโครงสร้างพาร์ทิชันปัจจุบันไว้ แล้วตั้งค่าโวลุมเข้ารหัสลับหรือไม่?"
 
 #. Type: boolean
 #. Description
@@ -332,39 +344,38 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
+"เมื่อตั้งค่าโวลุมเข้ารหัสลับแล้ว จะไม่สามารถเปลี่ยนแปลงพาร์ทิชันต่างๆ ในดิสก์ที่มีโวลุมเข้ารหัสลับได้อีก "
+"กรุณาตัดสินใจ ว่าคุณพอใจกับการแบ่งพาร์ทิชันปัจจุบันในดิสก์เหล่านี้แล้ว ก่อนที่จะดำเนินการต่อไป"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "ขั้นตอนการติดตั้งล้มเหลว"
+msgstr "ตั้งค่าโวลุมเข้ารหัสลับไม่สำเร็จ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะตั้งค่าโวลุมเข้ารหัสลับ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "จะยกเลิกกระบวนการตั้งค่า DHCP"
+msgstr "การตั้งค่าถูกยกเลิก"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "ขั้นตอนการติดตั้งล้มเหลว"
+msgstr "เริ่มสร้างโวลุมเข้ารหัสลับไม่สำเร็จ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะตั้งค่าโวลุมเข้ารหัสลับ"
 
 #. Type: text
 #. Description
@@ -374,7 +385,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:225
 msgid "Passphrase"
-msgstr ""
+msgstr "วลีรหัสผ่าน"
 
 #. Type: text
 #. Description
@@ -384,7 +395,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:233
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "แฟ้มกุญแจ (GnuPG)"
 
 #. Type: text
 #. Description
@@ -394,19 +405,19 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:241
 msgid "Random key"
-msgstr ""
+msgstr "กุญแจสุ่ม"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:245
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "ตรวจพบพื้นที่สลับที่ไม่ปลอดภัย"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:245
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "ตรวจพบพื้นที่สลับที่ไม่ปลอดภัย"
 
 #. Type: error
 #. Description
@@ -416,6 +427,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"เรื่องนี้ถือเป็นเรื่องร้ายแรง เนื่องจากข้อมูลสำคัญอาจถูกเขียนลงดิสก์โดยไม่มีการเข้ารหัสลับ "
+"ทำให้บางคนที่เข้าอ่านดิสก์ได้ สามารถแกะส่วนต่างๆ ของกุญแจในการเข้ารหัสลับ หรือวลีรหัสผ่านได้"
 
 #. Type: error
 #. Description
@@ -425,18 +438,20 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"กรุณาปิดการใช้พื้นที่สลับ (เช่น โดยสั่ง swapoff) หรือกำหนดพื้นที่สลับแบบเข้ารหัสลับ "
+"แล้วเรียกเครื่องมือตั้งค่าโวลุมเข้ารหัสลับใหม่อีกครั้ง จะขอจบการทำงานก่อนในตอนนี้"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "วลีรหัสผ่านสำหรับเข้ารหัสลับ:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:258
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "คุณต้องตั้งวลีรหัสผ่านสำหรับเข้ารหัสลับ ${DEVICE}"
 
 #. Type: password
 #. Description
@@ -447,6 +462,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"ความแน่นหนาของการเข้ารหัสลับ ขึ้นอยู่กับวลีรหัสผ่านนี้อย่างยิ่งยวด ดังนั้น "
+"คุณจึงควรระวังที่จะเลือกวลีรหัสผ่านที่ไม่สามารถเดาได้ง่ายๆ ไม่ควรเป็นคำหรือประโยคที่มีในพจนานุกรม "
+"หรือวลีที่สามารถเชื่อมโยงกับตัวคุณได้ง่าย"
 
 #. Type: password
 #. Description
@@ -456,12 +474,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"วลีรหัสผ่านที่ดี จะมีตัวอักษร ตัวเลข และเครื่องหมายวรรคตอนคละกัน "
+"ขอแนะนำให้ตั้งวลีรหัสผ่านยาวอย่างน้อย 20 ตัวอักษร"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:272
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "ป้อนวลีรหัสผ่านอีกครั้งเพื่อตรวจสอบ:"
 
 #. Type: password
 #. Description
@@ -469,25 +489,25 @@ msgstr ""
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
+msgstr "กรุณาป้อนวลีรหัสผ่านเดิมซ้ำอีกครั้ง เพื่อตรวจสอบว่าคุณไม่ได้พิมพ์ผิด"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:278
 msgid "Passphrase input error"
-msgstr ""
+msgstr "การป้อนวลีรหัสผ่านผิดพลาด"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:278
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "วลีรหัสผ่านที่คุณป้อนทั้งสองครั้งไม่ตรงกัน กรุณาลองใหม่"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:283
 msgid "Empty passphrase"
-msgstr ""
+msgstr "วลีรหัสผ่านว่างเปล่า"
 
 #. Type: note
 #. Description
@@ -495,13 +515,13 @@ msgstr ""
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
+msgstr "คุณได้ป้อนวลีรหัสผ่านที่ว่างเปล่า ซึ่งไม่อนุญาต กรุณาตั้งวลีรหัสผ่านที่ไม่ว่างเปล่า"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:294
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "จะใช้วลีรหัสผ่านหละหลวมจริงหรือ?"
 
 #. Type: boolean
 #. Description
@@ -513,18 +533,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"คุณได้ตั้งวลีรหัสผ่านที่ยาวน้อยกว่า ${MINIMUM} ตัวอักษร ซึ่งถือว่าหละหลวมเกินไป "
+"คุณควรตั้งวลีรหัสผ่านที่แน่นหนากว่านี้"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:300
 msgid "Enter random characters"
-msgstr ""
+msgstr "ป้อนอักขระสุ่ม"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:300
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "กำลังสร้างกุญแจเข้ารหัสลับสำหรับ ${DEVICE}"
 
 #. Type: entropy-text
 #. Description
@@ -534,18 +556,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"คุณสามารถช่วยเร่งกระบวนการดังกล่าวได้ โดยป้อนอักขระสุ่มที่แป้นพิมพ์ "
+"หรืออาจจะรอจนกว่าโปรแกรมจะเก็บข้อมูลสำหรับกุญแจได้เพียงพอ (ข้อสังเกต: การเก็บข้อมูลดังกล่าว "
+"อาจใช้เวลานาน)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:309
 msgid "Keyfile creation failure"
-msgstr ""
+msgstr "สร้างแฟ้มกุญแจไม่สำเร็จ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:309
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "เกิดข้อผิดพลาดขณะสร้างแฟ้มกุญแจ"
 
 #. Type: error
 #. Description
@@ -555,13 +580,15 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"คุณได้เลือกให้ระบบแฟ้มรากอยู่ในพาร์ทิชันที่เข้ารหัสลับ ความสามารถนี้ยังใช้การไม่ได้ "
+"การดำเนินการต่อไปจะทำให้ได้ระบบที่ใช้งานไม่ได้"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
-msgstr ""
+msgstr "กรุณากลับไปเลือกพาร์ทิชันที่ไม่ได้เข้ารหัสลับ เพื่อใช้กับระบบแฟ้มราก"
 
 #. Type: error
 #. Description
@@ -571,19 +598,20 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"คุณได้เลือกให้ระบบแฟ้มรากอยู่ในพาร์ทิชันที่เข้ารหัสลับ ความสามารถนี้ ต้องการให้พาร์ทิชัน /boot "
+"แยกเป็นพาร์ทิชันต่างหาก ซึ่งใช้เก็บเคอร์เนลและ initrd"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "คุณควรใช้ระบบแฟ้มอื่นกับพาร์ทิชัน /boot เช่น ext3"
+msgstr "คุณควรกลับไปตั้งพาร์ทิชัน /boot เสียก่อน"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
 msgid "Encryption configuration failure"
-msgstr ""
+msgstr "ตั้งค่าการเข้ารหัสลับไม่สำเร็จ"
 
 #. Type: error
 #. Description
@@ -594,6 +622,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"คุณได้เลือกให้ระบบแฟ้ม /boot อยู่ในพาร์ทิชันที่เข้ารหัสลับ ซึ่งเป็นไปไม่ได้ "
+"เพราะบูตโหลดเดอร์จะไม่สามารถโหลดเคอร์เนลและ initrd ได้ การดำเนินการต่อไป "
+"จะทำให้ได้ระบบที่ใช้งานไม่ได้"
 
 #. Type: error
 #. Description
@@ -601,13 +632,13 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
 "filesystem."
-msgstr ""
+msgstr "คุณควรกลับไปเลือกพาร์ทิชันที่ไม่ได้เข้ารหัสลับ เพื่อใช้กับระบบแฟ้ม /boot"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "คุณแน่ใจหรือ ว่าต้องการใช้กุญแจสุ่ม?"
 
 #. Type: boolean
 #. Description
@@ -615,7 +646,7 @@ msgstr ""
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
-msgstr ""
+msgstr "คุณได้เลือกที่จะใช้กุญแจสุ่มสำหรับ ${DEVICE} แต่ให้เครื่องมือแบ่งพาร์ทิชันสร้างระบบแฟ้มในนั้น"
 
 #. Type: boolean
 #. Description
@@ -624,12 +655,14 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"การใช้กุญแจแบบสุ่ม หมายความว่า ข้อมูลในพาร์ทิชันจะถูกทำลายทุกครั้งที่บูตเครื่องใหม่ "
+"การใช้กุญแจแบบนี้ ควรใช้กับพาร์ทิชันสลับเท่านั้น"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "จะใช้การเข้ารหัสลับกับอุปกรณ์แบบบล็อคจริงๆ หรือ?"
 
 #. Type: boolean
 #. Description
@@ -641,3 +674,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"การสนับสนุนการเข้ารหัสลับสำหรับอุปกรณ์แบบบล็อค ยังอยู่ในขั้นทดลอง "
+"และยังไม่ถือว่าพร้อมสำหรับการใช้งานจริง โดยเฉพาะอย่างยิ่ง จะทำให้ได้ระบบที่เจาะง่าย "
+"และทำให้รู้สึกถึงความหละหลวมของระบบรักษาความปลอดภัย แต่อย่างไรก็ดี "
+"ยังไม่พบข้อบกพร่องของการเข้ารหัสลับ จนกว่าการทำงานทั้งหมดจะถูกตรวจสอบอย่างถี่ถ้วน "
+"จึงไม่ควรใช้ความสามารถนี้ นอกเสียจากจะเป็นการทดสอบเท่านั้น"

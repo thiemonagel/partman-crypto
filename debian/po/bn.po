@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-12 00:21-0600\n"
+"POT-Creation-Date: 2006-05-14 18:31-0600\n"
 "PO-Revision-Date: 2006-02-26 04:29+0530\n"
 "Last-Translator: Baishampayan Ghose <b.ghose@gnu.org.in>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -68,47 +68,51 @@ msgstr "নিষ্ক্রিয়"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:39
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:40
 #, fuzzy
 msgid "Encryption method:"
 msgstr "এনক্রিপশন কী (key):"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:44
+#: ../partman-crypto.templates:45
 #, fuzzy
 msgid "Encryption method for this partition:"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:48
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:50
 msgid "Encryption:"
 msgstr "এনক্রিপশন:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:53
+#: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:57
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:60
 msgid "Key size:"
 msgstr "মূখ্য আকার:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:62
+#: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
 msgstr "এই পার্টিশনের জন্য মূখ্য আকার:"
 
 #. Type: text
 #. Description
-#. An initialization vector is the initial randomness used to seed
+#. An initialization vector is the initial value used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:68
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:72
 msgid "IV algorithm:"
 msgstr ""
 
@@ -116,7 +120,7 @@ msgstr ""
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:75
+#: ../partman-crypto.templates:79
 #, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন:"
@@ -125,7 +129,7 @@ msgstr "এই পার্টিশনের জন্য এনক্রিপ
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:75
+#: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
 "sector. This choice influences the encryption security. Normally, there is "
@@ -135,33 +139,35 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:83
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:88
 msgid "Encryption key:"
 msgstr "এনক্রিপশন কী (key):"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:88
+#: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন কী'র (key) ধরন:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:92
+#. Should be kept below 24 columns
+#: ../partman-crypto.templates:98
 #, fuzzy
 msgid "Encryption key hash:"
 msgstr "এনক্রিপশন কী (key):"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:97
+#: ../partman-crypto.templates:103
 #, fuzzy
 msgid "Type of encryption key hash for this partition:"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন কী'র (key) ধরন:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:97
+#: ../partman-crypto.templates:103
 msgid ""
 "The encryption key is derived from the passphrase by applying a one-way hash "
 "function to it. Normally, there is no reason to change this from the "
@@ -173,27 +179,27 @@ msgstr ""
 #. Description
 #. This shows up in a screen summarizing options and will be followed
 #. by "yes" or "no"
-#: ../partman-crypto.templates:107
+#: ../partman-crypto.templates:113
 msgid "Erase data:"
 msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:111
+#: ../partman-crypto.templates:117
 #, fuzzy
 msgid "Erase data on this partition"
 msgstr "এই পার্টিশনের জন্য এনক্রিপশন:"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:116
+#: ../partman-crypto.templates:122
 #, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
 msgstr "সমগ্র ডিস্ক মুছে ফেল: ${DEVICE}"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:116
+#: ../partman-crypto.templates:122
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
 "be recovered after this step has completed. This is the last opportunity to "
@@ -202,20 +208,20 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:123
+#: ../partman-crypto.templates:129
 #, fuzzy
 msgid "Erasing data on ${DEVICE}"
 msgstr "সমগ্র ডিস্ক মুছে ফেল: ${DEVICE}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:127
+#: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:127
+#: ../partman-crypto.templates:133
 msgid ""
 "An error occured trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
@@ -223,37 +229,37 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:133
+#: ../partman-crypto.templates:139
 msgid "Setting up encryption..."
 msgstr "এনক্রিপশন স্থাপন করা হচ্ছে..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:137
+#: ../partman-crypto.templates:143
 msgid "Configure encrypted volumes"
 msgstr "এনক্রিপ্টেড ভলিউম কনফিগার করো"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:147
 msgid "No partitions to encrypt"
 msgstr "এনক্রিপ্ট করার জন্য কোন পার্টিশনই নেই"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:147
 msgid "No partitions have been selected for encryption."
 msgstr "কোন পার্টিশনকেই এনক্রিপশন করার জন্য বেছে নেয়া হয় নি।"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:146
+#: ../partman-crypto.templates:152
 msgid "Required programs missing"
 msgstr "প্রয়োজনীয় প্রোগ্রাম নিরুদ্দেশ"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:146
+#: ../partman-crypto.templates:152
 #, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
@@ -264,13 +270,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:153
+#: ../partman-crypto.templates:159
 msgid "Required encryption options missing"
 msgstr "প্রয়োজনীয় এনক্রিপশন অপশন নিরুদ্দেশ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:153
+#: ../partman-crypto.templates:159
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -283,19 +289,19 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:164
+#: ../partman-crypto.templates:170
 msgid "missing"
 msgstr "নিখোঁজ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:168
+#: ../partman-crypto.templates:174
 msgid "Encryption package installation failure"
 msgstr "এনক্রিপশন প্যাকেজ ইনস্টলেশনে ব্যর্থতা"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:168
+#: ../partman-crypto.templates:174
 #, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
@@ -306,7 +312,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:168
+#: ../partman-crypto.templates:174
 #, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
@@ -318,14 +324,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:186
 #, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "ডিস্কে পরিবর্তন লেখার পর এনক্রিপ্টেড ভলিউম কনফিগার করবো কি?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:180
+#: ../partman-crypto.templates:186
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -335,14 +341,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:195
+#: ../partman-crypto.templates:201
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
 "সাম্প্রতিক পার্টিশন বিন্যাস অপরিবর্তিত রেখে এনক্রিপ্টেড ভলিউম কনফিগার করবো কি?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:195
+#: ../partman-crypto.templates:201
 #, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
@@ -356,34 +362,34 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:203
+#: ../partman-crypto.templates:209
 #, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "এনক্রিপ্টেড ভলিউম কনফিগারেশনে ব্যর্থতা"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:203
+#: ../partman-crypto.templates:209
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "এনক্রিপ্টেড ভলিউম কনফিগার করার সময় একটি সমস্যা হয়েছে।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:203
+#: ../partman-crypto.templates:209
 #, fuzzy
 msgid "The configuration has been aborted."
 msgstr "কনফিগারেশন প্রক্রিয়া বাতিল করা হল।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:210
+#: ../partman-crypto.templates:216
 #, fuzzy
 msgid "Initialisation of encrypted volume failed"
 msgstr "ইনস্টলেশন প্রক্রিয়ার এই ধাপটি ব্যর্থ হয়েছে"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:210
+#: ../partman-crypto.templates:216
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "এনক্রিপ্টেড ভলিউম স্থাপন করার সময় একটি ত্রুটি ঘটেছিল।"
 
@@ -393,7 +399,7 @@ msgstr "এনক্রিপ্টেড ভলিউম স্থাপন ক
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:219
+#: ../partman-crypto.templates:225
 msgid "Passphrase"
 msgstr "Passphrase"
 
@@ -403,7 +409,7 @@ msgstr "Passphrase"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:227
+#: ../partman-crypto.templates:233
 msgid "Keyfile (GnuPG)"
 msgstr "কী (key) ফাইল (GnuPG)"
 
@@ -413,25 +419,25 @@ msgstr "কী (key) ফাইল (GnuPG)"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:235
+#: ../partman-crypto.templates:241
 msgid "Random key"
 msgstr "এলোমেলো কী (key)"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:245
 msgid "Unsafe swap space detected"
 msgstr "অনিরাপদন সোয়্যাপ স্থান সনাক্ত করা গিয়েছে"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:245
 msgid "An unsafe swap space has been detected."
 msgstr "একটি অনিরাপদ সোয়্যাপ স্থান সনাক্ত করা হয়েছে।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:245
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -443,7 +449,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:239
+#: ../partman-crypto.templates:245
 #, fuzzy
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
@@ -456,19 +462,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:258
 msgid "Encryption passphrase:"
 msgstr "এনক্রিপশন passphrase:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:258
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "${DEVICE}-কে এনক্রিপ্ট করার জন্য আপনাকে একটি পাসওয়ার্ড বেছে নিতে হবে।"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:258
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -482,7 +488,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:252
+#: ../partman-crypto.templates:258
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -493,13 +499,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:266
+#: ../partman-crypto.templates:272
 msgid "Re-enter passphrase to verify:"
 msgstr "বৈধতা পরীক্ষা করতে পুনরায় passphrase লিখুন:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:266
+#: ../partman-crypto.templates:272
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -508,25 +514,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:278
 msgid "Passphrase input error"
 msgstr "Passphrase ইনপুট ত্রুটি"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:278
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "আপনি যে পাসওয়ার্ডদ্বয় লিখেছেন, তারা এক নয়।  অনুগ্রহপূর্বক পুনরায় চেষ্টা করুন।"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:277
+#: ../partman-crypto.templates:283
 msgid "Empty passphrase"
 msgstr "ফাঁকা passphrase"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:277
+#: ../partman-crypto.templates:283
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -536,7 +542,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:288
+#: ../partman-crypto.templates:294
 msgid "Use weak passphrase?"
 msgstr "দূর্বল passphrase ব্যবহার করবো কি?"
 
@@ -545,7 +551,7 @@ msgstr "দূর্বল passphrase ব্যবহার করবো কি?
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:288
+#: ../partman-crypto.templates:294
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -555,19 +561,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:300
 msgid "Enter random characters"
 msgstr "এলোমেলো অক্ষর লিখুন"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:300
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "${DEVICE}-এর এনক্রিপশন কী (key) তৈরি করা হচ্ছে।"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:300
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -579,19 +585,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:303
+#: ../partman-crypto.templates:309
 msgid "Keyfile creation failure"
 msgstr "কী (key) ফাইল সৃষ্টিতে ব্যর্থতা"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:303
+#: ../partman-crypto.templates:309
 msgid "An error occurred while creating the keyfile."
 msgstr "কী (key) ফাইল তৈরি করার সময় একটি সমস্যা হয়েছে।"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:308
+#: ../partman-crypto.templates:314
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -602,7 +608,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:308
+#: ../partman-crypto.templates:314
 msgid ""
 "Please go back and choose a non-encrypted partition for the root filesystem."
 msgstr ""
@@ -611,7 +617,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:318
+#: ../partman-crypto.templates:324
 #, fuzzy
 msgid ""
 "You have selected the root filesystem to be stored on an encrypted "
@@ -623,7 +629,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:318
+#: ../partman-crypto.templates:324
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
@@ -631,13 +637,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:327
+#: ../partman-crypto.templates:333
 msgid "Encryption configuration failure"
 msgstr "এনক্রিপশন কনফিগারেশনে ব্যর্থতা"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:327
+#: ../partman-crypto.templates:333
 #, fuzzy
 msgid ""
 "You have selected the /boot filesystem to be stored on an encrypted "
@@ -650,7 +656,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:327
+#: ../partman-crypto.templates:333
 #, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot "
@@ -661,13 +667,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:339
+#: ../partman-crypto.templates:345
 msgid "Are you sure you want to use a random key?"
 msgstr "আপনি কি একটি এলোমেলো কী (key) ব্যবহার করার ব্যাপারে নিশ্চিত?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:339
+#: ../partman-crypto.templates:345
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a filesystem on it."
@@ -677,7 +683,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:339
+#: ../partman-crypto.templates:345
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -688,13 +694,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:350
+#: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:350
+#: ../partman-crypto.templates:356
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

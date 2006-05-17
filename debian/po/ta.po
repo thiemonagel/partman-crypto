@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-14 18:31-0600\n"
+"POT-Creation-Date: 2006-05-16 19:26-0600\n"
 "PO-Revision-Date: 2006-05-10 19:19+0530\n"
 "Last-Translator: Damodharan Rajalingam <r.damodharan@yahoo.co.in>\n"
 "Language-Team:  <tamil-DI@yahoogroups.com>\n"
@@ -43,7 +43,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
@@ -52,7 +52,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
@@ -61,7 +61,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
 msgstr ""
@@ -556,7 +556,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:314
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
@@ -565,14 +565,14 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:314
 msgid ""
-"Please go back and choose a non-encrypted partition for the root filesystem."
+"Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
@@ -594,7 +594,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:333
 msgid ""
-"You have selected the /boot filesystem to be stored on an encrypted "
+"You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
@@ -603,10 +603,11 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
+#, fuzzy
 msgid ""
-"You should go back and choose a non-encrypted partition for the /boot "
-"filesystem."
-msgstr ""
+"You should go back and choose a non-encrypted partition for the /boot file "
+"system."
+msgstr "நீங்கள் ext3 போன்ற வேறு ஒரு கோப்பு அமைப்பை /boot பகிர்வுக்கு பயன்படுத்த வேண்டும்."
 
 #. Type: boolean
 #. Description
@@ -619,7 +620,7 @@ msgstr ""
 #: ../partman-crypto.templates:345
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
-"partitioner to create a filesystem on it."
+"partitioner to create a file system on it."
 msgstr ""
 
 #. Type: boolean

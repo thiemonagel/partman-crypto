@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-14 18:31-0600\n"
+"POT-Creation-Date: 2006-05-16 19:26-0600\n"
 "PO-Revision-Date: 2006-05-15 02:34+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
@@ -38,7 +38,7 @@ msgstr "暗号化"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
@@ -47,7 +47,7 @@ msgstr "ループバック (loop-AES)"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
@@ -56,7 +56,7 @@ msgstr "デバイスマッパー (dm-crypt)"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
 msgstr "非活性"
@@ -588,8 +588,9 @@ msgstr "鍵ファイルの作成中にエラーが発生しました。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
@@ -600,8 +601,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"Please go back and choose a non-encrypted partition for the root filesystem."
+"Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
 "戻って暗号化されていないパーティションをルートファイルシステムに選んでくださ"
 "い。"
@@ -609,8 +611,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
+#, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
@@ -633,8 +636,9 @@ msgstr "暗号化の設定に失敗しました"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
+#, fuzzy
 msgid ""
-"You have selected the /boot filesystem to be stored on an encrypted "
+"You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
@@ -646,9 +650,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
+#, fuzzy
 msgid ""
-"You should go back and choose a non-encrypted partition for the /boot "
-"filesystem."
+"You should go back and choose a non-encrypted partition for the /boot file "
+"system."
 msgstr ""
 "戻って暗号化されていないパーティションを /boot ファイルシステムに選ぶべきで"
 "す。"
@@ -662,9 +667,10 @@ msgstr "本当に乱数鍵を使いますか?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
+#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
-"partitioner to create a filesystem on it."
+"partitioner to create a file system on it."
 msgstr ""
 "${DEVICE} に乱数鍵形式を選びましたが、ファイルシステムを作成するのにそれを使"
 "うよう partitioner に要求しています。"

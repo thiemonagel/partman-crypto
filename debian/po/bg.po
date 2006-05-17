@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-14 18:31-0600\n"
+"POT-Creation-Date: 2006-05-16 19:26-0600\n"
 "PO-Revision-Date: 2006-04-08 10:14+0300\n"
 "Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -40,7 +40,7 @@ msgstr "crypto"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
@@ -49,7 +49,7 @@ msgstr "Loopback (loop-AES)"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
@@ -58,7 +58,7 @@ msgstr "Device-mapper (dm-crypt)"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
 msgstr "неактивен"
@@ -596,8 +596,9 @@ msgstr "Получена е грешка при създаване на файл
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
@@ -608,8 +609,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"Please go back and choose a non-encrypted partition for the root filesystem."
+"Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
 "Моля, върнете се обратно и изберете нешифриран дял за коренова файлова "
 "система."
@@ -619,7 +621,7 @@ msgstr ""
 #: ../partman-crypto.templates:324
 #, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
@@ -647,7 +649,7 @@ msgstr "Грешка при настройване на шифриране"
 #: ../partman-crypto.templates:333
 #, fuzzy
 msgid ""
-"You have selected the /boot filesystem to be stored on an encrypted "
+"You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
@@ -661,8 +663,8 @@ msgstr ""
 #: ../partman-crypto.templates:333
 #, fuzzy
 msgid ""
-"You should go back and choose a non-encrypted partition for the /boot "
-"filesystem."
+"You should go back and choose a non-encrypted partition for the /boot file "
+"system."
 msgstr ""
 "Моля, върнете се обратно и изберете нешифриран дял за коренова файлова "
 "система."
@@ -676,9 +678,10 @@ msgstr "Сигурен(-на) ли сте, че искате да използв
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
+#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
-"partitioner to create a filesystem on it."
+"partitioner to create a file system on it."
 msgstr ""
 "Избрахте използване на случаен ключ за ${DEVICE}, но поискахте "
 "манипулирането на дялове да създаде файлова система там."

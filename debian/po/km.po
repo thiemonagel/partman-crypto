@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-14 18:31-0600\n"
+"POT-Creation-Date: 2006-05-16 19:26-0600\n"
 "PO-Revision-Date: 2006-05-12 15:58+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -44,7 +44,7 @@ msgstr "crypto"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
@@ -53,7 +53,7 @@ msgstr "Loopback (រង្វិលជុំ-AES)"
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
@@ -62,7 +62,7 @@ msgstr "ឧបករណ៍​ផ្គូផ្គង​ឧបករណ៍ (dm-c
 #. Type: text
 #. Description
 #. This is related to "encryption method"
-#. Encryption type for a filesystem
+#. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
 msgstr "មិន​សកម្ម"
@@ -581,8 +581,9 @@ msgstr "កំហុស​មួយ​បាន​កើត​ឡើង ខណ�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
@@ -592,15 +593,17 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
+#, fuzzy
 msgid ""
-"Please go back and choose a non-encrypted partition for the root filesystem."
+"Please go back and choose a non-encrypted partition for the root file system."
 msgstr "សូម​ត្រឡប់​ក្រោយ​វិញ ហើយ​ជ្រើស​ភាគថាស​មួយ​ដែល​មិន​បាន​អ៊ិនគ្រីប សម្រាប់​ប្រព័ន្ធ​ឯកសារ root ។"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
+#, fuzzy
 msgid ""
-"You have selected the root filesystem to be stored on an encrypted "
+"You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
@@ -622,8 +625,9 @@ msgstr "បរាជ័យ​ក្នុង​ការ​កំណត់​រ
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
+#, fuzzy
 msgid ""
-"You have selected the /boot filesystem to be stored on an encrypted "
+"You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
@@ -635,9 +639,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
+#, fuzzy
 msgid ""
-"You should go back and choose a non-encrypted partition for the /boot "
-"filesystem."
+"You should go back and choose a non-encrypted partition for the /boot file "
+"system."
 msgstr "អ្នក​គួរ​ត្រឡប់​ក្រោយ ហើយ​ជ្រើស​ភាគ​ថាស​ដែល​មិន​បាន​អ៊ិនគ្រីប​មួយ​សម្រាប់​ប្រព័ន្ធ​ឯកសារ /boot ។"
 
 #. Type: boolean
@@ -649,9 +654,10 @@ msgstr "តើ​អ្នក​ពិត​ជាចង់​ប្រើ​ក
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
+#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
-"partitioner to create a filesystem on it."
+"partitioner to create a file system on it."
 msgstr ""
 "អ្នក​បាន​ជ្រើស​កូនសោ​ប្រភេទ​ចៃដន្យ​សម្រាប់ ${DEVICE} ប៉ុន្តែ​អ្នក​បាន​ស្នើសុំ​ឲ្យ​កម្មវិធី​ចែក​ថាស​ជា​ភាគ "
 "បង្កើត​ប្រព័ន្ធ​ឯកសារ​មួយ​នៅ​លើ​វា ។"

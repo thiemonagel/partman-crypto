@@ -14,9 +14,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-14 18:31-0600\n"
-"PO-Revision-Date: 2006-01-07 15:37+0200\n"
-"Last-Translator: Lior Kaplan <webmaster@guides.co.il>\n"
-"Language-Team: Debian l10n Hebrew <webmaster@guides.co.il>\n"
+"PO-Revision-Date: 2006-05-16 16:43-0500\n"
+"Last-Translator: Lior Kaplan <kaplan@gmail.com>\n"
+"Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,9 +68,8 @@ msgstr "לא פעיל"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "מפתח הצפנה:"
+msgstr "שיטת הצפנה:"
 
 #. Type: select
 #. Description
@@ -155,9 +154,8 @@ msgstr "מערכת קבצים למחיצה:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "מפתח הצפנה:"
+msgstr "ערבול מפתח הצפנה:"
 
 #. Type: select
 #. Description
@@ -237,9 +235,8 @@ msgstr "מגדיר הצפנה..."
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:143
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "הגדרות רשת"
+msgstr "הגדר כרכים מוצפנים"
 
 #. Type: note
 #. Description
@@ -374,9 +371,8 @@ msgstr "שגיאה קרתה בזמן כתיבת השינויים לדיסקים.
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "הגדרת RAID מבוטלת"
+msgstr "תהליך ההגדרה בוטל."
 
 #. Type: error
 #. Description
@@ -577,9 +573,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:309
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "פעולת שינוי הגודל נכשלה"
+msgstr "כשלון ביצירת קובץ המפתח"
 
 #. Type: error
 #. Description

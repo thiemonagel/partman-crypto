@@ -13,14 +13,14 @@ _Description: crypto
 Template: partman-crypto/crypto_type/loop-AES
 Type: text
 # This is related to "encryption method"
-# Encryption type for a filesystem
+# Encryption type for a file system
 # Translations should be kept below 40 columns
 _Description: Loopback (loop-AES)
 
 Template: partman-crypto/crypto_type/dm-crypt
 Type: text
 # This is related to "encryption method"
-# Encryption type for a filesystem
+# Encryption type for a file system
 # Translations should be kept below 40 columns
 _Description: Device-mapper (dm-crypt)
 
@@ -31,7 +31,7 @@ Description: ${CIPHER} ${KEYTYPE}
 Template: partman-crypto/text/not_active
 Type: text
 # This is related to "encryption method"
-# Encryption type for a filesystem
+# Encryption type for a file system
 _Description: not active
 
 Template: partman-crypto/text/specify_crypto_type
@@ -312,17 +312,17 @@ _Description: Keyfile creation failure
 Template: partman-crypto/crypto_root_unimplemented
 Type: error
 _Description: Encryption configuration failure
- You have selected the root filesystem to be stored on an encrypted
+ You have selected the root file system to be stored on an encrypted
  partition. This feature is not available and continuing now would
  result in an installation that cannot be used.
  .
  Please go back and choose a non-encrypted partition for the root
- filesystem.
+ file system.
 
 Template: partman-crypto/crypto_root_needs_boot
 Type: error
 _Description: Encryption configuration failure
- You have selected the root filesystem to be stored on an encrypted
+ You have selected the root file system to be stored on an encrypted
  partition. This feature requires a separate /boot partition on which
  the kernel and initrd can be stored.
  .
@@ -331,20 +331,20 @@ _Description: Encryption configuration failure
 Template: partman-crypto/crypto_boot_not_possible
 Type: error
 _Description: Encryption configuration failure
- You have selected the /boot filesystem to be stored on an encrypted
+ You have selected the /boot file system to be stored on an encrypted
  partition. This is not possible because the bootloader would be unable to
  load the kernel and initrd. Continuing now would result
  in an installation that cannot be used.
  .
  You should go back and choose a non-encrypted partition for the /boot
- filesystem.
+ file system.
 
 Template: partman-crypto/use_random_for_nonswap
 Type: boolean
 Default: false
 _Description: Are you sure you want to use a random key?
  You have chosen a random key type for ${DEVICE} but requested the
- partitioner to create a filesystem on it.
+ partitioner to create a file system on it.
  .
  Using a random key type means that the partition data is going to
  be destroyed upon each reboot. This should only be used for

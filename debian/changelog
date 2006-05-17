@@ -2,17 +2,21 @@ partman-crypto (4) UNRELEASED; urgency=low
 
   [ David Härdeman ]
   * Add dm-crypt partition wiping
-  * Do a plain wipe without crypto if the partition is not going to 
+  * Do a plain wipe without crypto if the partition is not going to
     be an encrypted one.
   * Fix some bugs in crypttab generation.
 
   [ Max Vozeler ]
-  * Build partman-crypto-dm and partman-crypto-loop that depend on 
+  * Build partman-crypto-dm and partman-crypto-loop that depend on
     respective tools and kernel modules.
   * Depend on partman-crypto-loop, partman-crypto-dm for now as
     ORed depends are not possible in udebs.
 
- -- Max Vozeler <xam@debian.org>  Sun, 14 May 2006 12:33:50 +0200
+  [ Christian Perrier ]
+  * Replace "filesystem" by "file system" in templates (overall consistency
+    in D-I)
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 May 2006 20:05:33 -0500
 
 partman-crypto (3) unstable; urgency=low
 

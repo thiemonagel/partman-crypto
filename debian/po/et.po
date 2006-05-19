@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2005-06-08 11:11+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
@@ -647,11 +647,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "Peaksid /boot jaoks kasutama mõnd teist failisüsteemi, näiteks ext3'e."
+msgstr ""
 
 #. Type: boolean
 #. Description

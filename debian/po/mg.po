@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mg\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2006-05-08 22:17+0200\n"
 "Last-Translator: Jaonary Rabarisoa <jaonary@free.fr>\n"
 "Language-Team: Malagasy <jaonary@free.fr>\n"
@@ -617,13 +617,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Tokony hampiasa file system hafa, tahaka ny ext3, ianao ho an'ny fizarana /"
-"boot."
 
 #. Type: boolean
 #. Description

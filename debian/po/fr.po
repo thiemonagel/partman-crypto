@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2006-05-13 06:57+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -613,7 +613,6 @@ msgstr "Une erreur s'est produite lors de la création du fichier de clé."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -626,7 +625,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -636,7 +634,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -662,7 +659,6 @@ msgstr "Échec de la configuration du chiffrement"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -677,7 +673,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -694,7 +689,6 @@ msgstr "Voulez-vous vraiment utiliser une clé aléatoire ?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."

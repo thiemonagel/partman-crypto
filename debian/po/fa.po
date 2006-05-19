@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2005-07-31 18:31+0430\n"
 "Last-Translator: Arash Bijanzadeh\n"
 "Language-Team:  <fa@li.org>\n"
@@ -629,12 +629,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"شما باید از فایل سیستم دیگری مانند ext3.برای پارتیشن /boot  استفاده نمایید."
 
 #. Type: boolean
 #. Description

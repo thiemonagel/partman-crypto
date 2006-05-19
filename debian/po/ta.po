@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2006-05-10 19:19+0530\n"
 "Last-Translator: Damodharan Rajalingam <r.damodharan@yahoo.co.in>\n"
 "Language-Team:  <tamil-DI@yahoogroups.com>\n"
@@ -603,11 +603,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "நீங்கள் ext3 போன்ற வேறு ஒரு கோப்பு அமைப்பை /boot பகிர்வுக்கு பயன்படுத்த வேண்டும்."
+msgstr ""
 
 #. Type: boolean
 #. Description

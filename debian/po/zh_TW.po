@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2006-01-23 17:48-0600\n"
 "Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -577,7 +577,6 @@ msgstr "在建立金鑰檔時發生錯誤。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -589,7 +588,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr "請返回並替 root 檔案系統選擇一個非加密的分割區。"
@@ -650,7 +648,6 @@ msgstr "您是否確定您要使用隨意產生的金鑰？"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."

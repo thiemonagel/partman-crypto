@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
-"PO-Revision-Date: 2006-05-13 12:43+0200\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
+"PO-Revision-Date: 2006-05-19 12:42+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
-"Language-Team: Danish\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -591,7 +591,6 @@ msgstr "Der opstod en fejl under oprettelsen af nøglefilen."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -604,7 +603,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
@@ -612,7 +610,6 @@ msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -636,7 +633,6 @@ msgstr "Fejl under opsætning af kryptering"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -651,7 +647,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -667,7 +662,6 @@ msgstr "Er du sikker på, at du vil benytte en tilfældig nøgle?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."

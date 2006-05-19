@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
-"PO-Revision-Date: 2006-04-19 18:23+0800\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
+"PO-Revision-Date: 2006-05-15 23:13+0200\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -609,24 +609,22 @@ msgstr "May naganap na error habang nililikha ang keyfile."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Pinili niyo na ang root filesystem ay imbakin sa encrypted na partisyon. Ang "
-"feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
+"Pinili niyo na ang root file system ay imbakin sa encrypted na partisyon. "
+"Ang feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
 "iniluklok na sistemang hindi magagamit."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Bumalik at pumili ng hindi encrypted na partisyon para sa root filesystem."
+"Bumalik at pumili ng hindi encrypted na partisyon para sa root file system."
 
 #. Type: error
 #. Description
@@ -637,8 +635,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Pinili niyo na ang root filesystem ay imbakin sa encrypted na partisyon. Ang "
-"feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
+"Pinili niyo na ang root file system ay imbakin sa encrypted na partisyon. "
+"Ang feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
 "iniluklok na sistemang hindi magagamit."
 
 #. Type: error
@@ -666,8 +664,8 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Pinili niyo na ang root filesystem ay imbakin sa encrypted na partisyon. Ang "
-"feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
+"Pinili niyo na ang root file system ay imbakin sa encrypted na partisyon. "
+"Ang feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
 "iniluklok na sistemang hindi magagamit."
 
 #. Type: error
@@ -678,7 +676,7 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Bumalik at pumili ng hindi encrypted na partisyon para sa root filesystem."
+"Bumalik at pumili ng hindi encrypted na partisyon para sa root file system."
 
 #. Type: boolean
 #. Description
@@ -689,13 +687,12 @@ msgstr "Sigurado ba kayong gagamit kayo ng random key?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
 "Kayo ay pumili ng random key type para sa ${DEVICE} ngunit hiniling ninyo "
-"ang taga-partisyon na lumikha ng filesystem dito."
+"ang taga-partisyon na lumikha ng file system dito."
 
 #. Type: boolean
 #. Description

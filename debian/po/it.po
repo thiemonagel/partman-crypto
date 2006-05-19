@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2006-05-16 23:40+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
@@ -215,7 +215,7 @@ msgid ""
 msgstr ""
 "I dati su ${DEVICE} saranno sovrascritti con dati casuali. Non potranno più "
 "essere recuperati al termine di questo passo. Questa è l'ultima possibilità "
-"di interrompre la cancellazione."
+"di interrompere la cancellazione."
 
 #. Type: text
 #. Description
@@ -609,7 +609,6 @@ msgstr "Errore nella scrittura delle modifiche sui dischi."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -622,7 +621,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -632,7 +630,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -646,7 +643,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:324
 msgid "You should go back and setup a /boot partition."
-msgstr "Tornare inidietro è creare una partizione /boot."
+msgstr "Tornare indietro e creare una partizione /boot."
 
 #. Type: error
 #. Description
@@ -657,7 +654,6 @@ msgstr "Configurazione di LVM fallita"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -665,13 +661,12 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Si è scelto di memorizzare il file system /boot su una partizione cifrata. "
-"Questo non è possibile perchè il bootloader non è in grado di caricare il "
-"kernel el'initrd. Continuando si otterrà un'installazione non funzionante."
+"Questo non è possibile perché il bootloader non è in grado di caricare il "
+"kernel e l'initrd. Continuando si otterrà un'installazione non funzionante."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -688,7 +683,6 @@ msgstr "Si è sicuri di voler terminare adesso?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."

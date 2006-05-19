@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
 "PO-Revision-Date: 2005-12-20 10:00+0100\n"
 "Last-Translator: Talgat Daniyarov <tdaniyar@hotmail.com>\n"
 "Language-Team: Kazakh\n"
@@ -639,12 +639,10 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"/boot бөлімі үшін басқа файлдық жүйесін, мысалы ext3 сияқты, қолдану керек."
 
 #. Type: boolean
 #. Description

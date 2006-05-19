@@ -218,7 +218,7 @@ msgstr "${DEVICE} のデータの削除中に失敗しました"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "${DEVICE} のデータの削除を試行中にエラーが発生しました。データは削除されませ"

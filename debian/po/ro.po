@@ -238,7 +238,7 @@ msgstr "Ştergerea datelor de pe ${DEVICE} a eşuat"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "A apărut o eroare la încercarea de ştergere a datelor de pe ${DEVICE}. "

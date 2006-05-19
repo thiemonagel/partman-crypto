@@ -222,7 +222,7 @@ msgstr "Viŝado de '${DEVICE}'-datumoj malsukcesis"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "Eraro okazis dum la viŝado de '${DEVICE}'-datumoj. La datumoj ne estis "

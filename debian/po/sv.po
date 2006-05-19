@@ -230,7 +230,7 @@ msgstr "Radering av data på ${DEVICE} misslyckades"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "Ett fel inträffade vid försök att radera data på ${DEVICE}. Data har inte "

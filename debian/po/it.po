@@ -233,7 +233,7 @@ msgstr "Cancellazione dei dati su ${DEVICE} fallita"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "È occorso un errore nel tentativo di cancellare i dati su ${DEVICE}. I dati "

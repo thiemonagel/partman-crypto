@@ -221,7 +221,7 @@ msgstr "Fallou o borrado dos datos de ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "Houbo un erro ao tentar borrar os datos de ${DEVICE}. Non se borraron os "

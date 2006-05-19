@@ -228,7 +228,7 @@ msgstr "Det lyktes ikke å slette data på ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
 "Det oppsto en feil under forsøk på å slette data på ${DEVICE}. Dataene er "

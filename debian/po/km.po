@@ -225,7 +225,7 @@ msgstr "ការ​លុប​ទិន្នន័យ​នៅ​លើ ${DEV
 #. Description
 #: ../partman-crypto.templates:133
 msgid ""
-"An error occured trying to erase the data on ${DEVICE}. The data has not "
+"An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr "កំហុស​មួយ​បាន​កើត​ឡើង​ខណៈពេល​ព្យាយាម​លុប​ទិន្នន័យ​នៅ​លើ ${DEVICE} ។ ទិន្នន័យ​មិន​ត្រូវ​បាន​លុប​ទេ ។"
 

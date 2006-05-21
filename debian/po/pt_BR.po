@@ -3,7 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# Brazilian Portuguese messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
@@ -12,7 +11,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-04-30 15:26-0300\n"
+"PO-Revision-Date: 2006-05-20 13:07-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -107,16 +106,15 @@ msgstr "Tamanho da chave para esta partição :"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algoritmo IV :"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Método de encriptação para esta partição :"
+msgstr "Algoritmo de geração de inicialização de vetores para esta partição :"
 
 #. Type: select
 #. Description
@@ -129,6 +127,11 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Existem diferentes algoritmos a partir do quais vetores de inicialização "
+"podem ser derivados para cada setor. Esta escolha influencia na segurança da "
+"encriptação. Normalmente, não existem razões para mudar para um algoritmo "
+"diferente do algoritmo padrão recomendado, exceto por compatibilidade com "
+"sistemas mais antigos."
 
 #. Type: text
 #. Description
@@ -147,16 +150,14 @@ msgstr "Tipo de chave de encriptação para esta partição :"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Chave de encriptação :"
+msgstr "Hash de chave de encriptação :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipo de chave de encriptação para esta partição :"
+msgstr "Tipo de hash de chave de encriptação para esta partição :"
 
 #. Type: select
 #. Description
@@ -167,6 +168,11 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"A chave de encriptação é derivada da passphrase através da aplicação de uma "
+"função hash de mão única à mesma. Normalmente, não existem razões para mudar "
+"a chave de encriptação para outra chave diferente da chave padrão "
+"recomendada e, na verdade, fazer essa mudança de maneira errada pode reduzir "
+"a força da encriptação."
 
 #. Type: text
 #. Description
@@ -174,21 +180,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Apagar dados :"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Encriptação para esta partição :"
+msgstr "Apgar dados nesta partição"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Realmente usar RAID via software nível ${LEVEL} ?"
+msgstr "Realmente apagar os dados em ${DEVICE} ?"
 
 #. Type: boolean
 #. Description
@@ -198,19 +202,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Os dados em ${DEVICE} serão sobreescritos com dados aleatórios. Os mesmos "
+"não poderão ser recuperados após este passo ter sido finalizado. Esta é a "
+"última oportunidade de abortar a remoção dos dados."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Apagar todo o disco : ${DEVICE}"
+msgstr "Apagando dados em ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Falha na remoção de dados em ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -219,6 +225,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Um erro ocorreu durante a tentativa dos remoção dos dados em ${DEVICE}. Os "
+"dados não foram removidos."
 
 #. Type: text
 #. Description
@@ -294,18 +302,16 @@ msgstr "Falha na instalação de pacote de encriptação"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
 "O pacote de módulo de kernel ${PACKAGE} não pôde ser encontrado ou um erro "
-"ocorreu durante a instalação."
+"ocorreu durante a instalação do mesmo."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -313,14 +319,13 @@ msgid ""
 msgstr ""
 "Provavelmente ocorrerão problemas durante a inicialização quando o sistema "
 "tentar configurar partições encriptadas. Você ainda poderá corrigí-los "
-"instalando o pacote necessário posteriormente."
+"instalando os pacotes necessário posteriormente."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Gravar as mudanças nos discos e configurar volumes encriptados ?"
+msgstr "Gravar as mudanças no disco e configurar volumes encriptados ?"
 
 #. Type: boolean
 #. Description
@@ -343,7 +348,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -351,14 +355,13 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Depois que os volumes encriptados forem configurados, nenhuma mudança "
-"adicional nos disco que contém os volumes encriptados será permitida. Por "
-"favor, decida se você está satisfeito com o esquema de particionamento atual "
-"nesses discos antes de continuar."
+"adicional nas partições dos disco que contém os volumes encriptados será "
+"permitida. Por favor, decida se você está satisfeito com o esquema de "
+"particionamento atual nesses discos antes de continuar."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Falha na configuração de volumes encriptados"
 
@@ -372,16 +375,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "A configuração foi abortada."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Uma etapa da instalação falhou"
+msgstr "Falha na inicialização de volume encriptado"
 
 #. Type: error
 #. Description
@@ -620,24 +621,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Você selecionou o sistema de arquivos raíz para ser armazenado em uma "
-"partição encriptada. Esse recurso não está disponível e continuar a "
-"instalação resultaria em uma instalação que não poderia ser utilizada."
+"partição encriptada. Esse recurso requer uma partição /boot separada, na "
+"qual o kernel e o initrd possam ser armazenados."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Você deveria usar um outro sistema de arquivos, como ext3, para a partição /"
-"boot."
+msgstr "Você deveria voltar e configurar uma partição /boot."
 
 #. Type: error
 #. Description
@@ -648,27 +645,27 @@ msgstr "Falha na configuração da encriptação"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Você selecionou o sistema de arquivos raíz para ser armazenado em uma "
-"partição encriptada. Esse recurso não está disponível e continuar a "
-"instalação resultaria em uma instalação que não poderia ser utilizada."
+"Você selecionou o sistema de arquivos /boot para ser armazenado em uma "
+"partição encriptada. Isso não é possível devido ao carregador de "
+"inicialização não conseguir carregar o kernel e o initrd a partir de uma "
+"partição encriptada. Continuar agora resultaria em uma instalação que não "
+"poderia ser utilizada."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Por favor, volte e escolha uma partição não encriptada para o sistema de "
-"arquivos raíz."
+"Você deveria voltar e selecionar uma partição não encriptada para o sistema "
+"de arquivos /boot."
 
 #. Type: boolean
 #. Description
@@ -701,7 +698,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Realmente utilizar encriptação de dispositivos de blocos ?"
 
 #. Type: boolean
 #. Description
@@ -713,3 +710,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"O suporte a encriptação de dispositivos de blocos ainda é experimental e não "
+"considerada pronta para ser utilizada em ambientes de produção. "
+"Particularmente, o resultado da mesma pode levar a configurações fáceis de "
+"serem exploradas, fornecendo uma falsa sensação de segurança. Não existem "
+"falhas de segurança conhecidas, mas até que a implementação seja "
+"completamente auditada, essa funcionalidade não deve ser utilizada a não ser "
+"para propósitos de testes."

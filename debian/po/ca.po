@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer 1.1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-04-02 21:56+0200\n"
+"PO-Revision-Date: 2006-05-20 23:39+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -67,16 +67,14 @@ msgstr "inactiu"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Clau de xifrat:"
+msgstr "Mètode de xifrat:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Xifrat per a aquesta partició:"
+msgstr "Mètode de xifrat per a aquesta partició:"
 
 #. Type: text
 #. Description
@@ -111,16 +109,16 @@ msgstr "Mida de clau per a aquesta partició:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algorisme IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Xifrat per a aquesta partició:"
+msgstr ""
+"Algorisme de generació del vector d'inicialització per a aquesta partició:"
 
 #. Type: select
 #. Description
@@ -133,6 +131,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Existeixen diferents algorismes per a derivar el vector d'inicialització per "
+"a cada sector. Aquesta selecció influencia la seguretat del xifratge. "
+"Normalment, no hi ha cap raó per a canviar açò del valor per defecte "
+"recomanat, excepte per compatibilitat amb sistemes vells."
 
 #. Type: text
 #. Description
@@ -151,16 +153,15 @@ msgstr "Tipus de clau de xifrat per a aquesta partició:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Clau de xifrat:"
+msgstr "Resum de la clau de xifrat:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipus de clau de xifrat per a aquesta partició:"
+msgstr ""
+"Tipus de la funció de resum de la clau de xifrat per a aquesta partició:"
 
 #. Type: select
 #. Description
@@ -171,6 +172,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"La clau de xifrat es deriva de la paraula de pas mitjançant l'aplicació "
+"d'una funció de resum irreversible. Normalment, no hi ha cap raó per a "
+"canviar el valor per defecte recomanat, i fer-ho erròniament pot reduir la "
+"força del xifrat."
 
 #. Type: text
 #. Description
@@ -178,21 +183,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Suprimeix les dades:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Xifrat per a aquesta partició:"
+msgstr "Suprimeix les dades d'aquesta partició"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Esteu segur de voler usar RAID ${LEVEL} de programari?"
+msgstr "Esteu segur de voler suprimir les dades de ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -202,19 +205,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Es sobreescriuran les dades de ${DEVICE} amb dades aleatòries. No es podran "
+"recuperar després de que aquest pas s'haja completat. Aquesta és l'última "
+"oportunitat per a avortar la supressió."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Esborra el disc sencer: ${DEVICE}"
+msgstr "S'estan suprimint les dades de ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "La supressió de les dades de ${DEVICE} ha fallat"
 
 #. Type: error
 #. Description
@@ -223,6 +228,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"S'ha produït un error en suprimir les dades de ${DEVICE}. No s'han suprimit "
+"les dades."
 
 #. Type: text
 #. Description
@@ -257,13 +264,12 @@ msgstr "Manquen programes requerits"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Aquesta construcció del debian-installer no inclou un o més programes que "
-"són necessaris per a que partman-crypt funcione correctament."
+"són necessaris per a que partman-crypto funcione correctament."
 
 #. Type: error
 #. Description
@@ -299,33 +305,30 @@ msgstr "Ha fallat la instal·lació del paquet de xifrat"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
 "No s'ha trobat el paquet de mòdul del núcli ${PACKAGE}, o s'ha produït un "
-"error durant la instal·lació."
+"error mentre s'instal·lava."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"És probable que es troben problemes durant l'arrencada quan el sistema "
-"intente configurar les particions xifrades. Encara podeu corregir-los "
-"instal·lant el paquet requerit més endavant."
+"És probable que es troben problemes durant la configuració de particions "
+"xifrades quan es torne a iniciar el sistema. Es possible que encara podeu "
+"corregir açò instal·lant els paquets requerits més endavant."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Voleu escriure els canvis als discs i configurar els volums xifrats?"
+msgstr "Voleu escriure els canvis al disc i configurar els volums xifrats?"
 
 #. Type: boolean
 #. Description
@@ -348,7 +351,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -357,15 +359,14 @@ msgid ""
 msgstr ""
 "Quan els volums xifrats estiguen configurats, no es permetran canvis "
 "addicionals a les particions dels discs que continguen volums xifrats. "
-"Assegureu-vos que esteu satisfets amb l'esquema de particions actual en "
-"aquests discs abans de continuar."
+"Assegureu-vos que esteu satisfets amb l'esquema de particions actual "
+"d'aquests discs abans de continuar."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Error en la configuració dels volums xifrats"
+msgstr "La configuració dels volums xifrats ha fallat"
 
 #. Type: error
 #. Description
@@ -376,16 +377,14 @@ msgstr "S'ha produït un error quan es configuraven els volums xifrats."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "S'ha avortat la configuració."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Ha fallat el pas de la instal·lació"
+msgstr "Ha fallat la inicialització del volum xifrat"
 
 #. Type: error
 #. Description
@@ -480,7 +479,7 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"La protecció del xifratge depén molt d'aquesta frase de pas,, així que "
+"La protecció del xifratge depén molt d'aquesta frase de pas, així doncs "
 "hauríeu de seleccionar una frase de pas que no siga fàcil d'endevinar. No "
 "hauria de ser una paraula o frase que es trobe al diccionari, o una frase "
 "que es puga associar amb vosaltres."
@@ -524,7 +523,7 @@ msgstr "S'ha produït un error d'introducció de la frase de pas"
 #: ../partman-crypto.templates:278
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Les dos frases de pas que heu introduït no són la mateixa. Si us plau, "
+"Les dues frases de pas que heu introduït no són la mateixa. Si us plau, "
 "proveu-ho de nou."
 
 #. Type: note
@@ -540,14 +539,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Heu introduït una frase de pas buida, i això no és permés. Seleccioneu una "
-"frase de pas que no estiga buida."
+"Heu introduït una frase de pas buida, i això no és permés. Trieu-ne una que "
+"no estiga buida."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:294
 msgid "Use weak passphrase?"
-msgstr "Voleu utilitzar una frase de pas febla?"
+msgstr "Voleu utilitzar una frase de pas feble?"
 
 #. Type: boolean
 #. Description
@@ -559,8 +558,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Heu introduït un a frase de pas que té menys de ${MINIMUM} caràcters, i es "
-"considera massa febla. Hauríeu de seleccionar una frase de pas més potent."
+"Heu introduït una frase de pas que té menys de ${MINIMUM} caràcters, i es "
+"considera massa feble. Hauríeu de seleccionar-ne una de més potent."
 
 #. Type: entropy-text
 #. Description
@@ -607,8 +606,8 @@ msgid ""
 "an installation that cannot be used."
 msgstr ""
 "Heu seleccionat emmagatzemar el sistema de fitxers arrel en una partició "
-"xifrada. Aquesta funcionalitat no és disponible i continuar resultarà en una "
-"instal·lació que no es podrà utilitzar."
+"xifrada. Aquesta funcionalitat no és disponible i continuar resultaria en "
+"una instal·lació que no es podrà utilitzar."
 
 #. Type: error
 #. Description
@@ -622,24 +621,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Heu seleccionat emmagatzemar el sistema de fitxers arrel en una partició "
-"xifrada. Aquesta funcionalitat no és disponible i continuar resultarà en una "
-"instal·lació que no es podrà utilitzar."
+"xifrada. Aquesta funcionalitat requereix una partició /boot separada on es "
+"puguen emmagatzemar el nucli i l'initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Hauríeu d'usar un altre sistema de fitxers, com ext3, per a la partició /"
-"boot."
+msgstr "Hauríeu d'anar enrere i configurar una partició /boot."
 
 #. Type: error
 #. Description
@@ -650,33 +645,32 @@ msgstr "Error en la configuració del xifrat"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Heu seleccionat emmagatzemar el sistema de fitxers arrel en una partició "
-"xifrada. Aquesta funcionalitat no és disponible i continuar resultarà en una "
-"instal·lació que no es podrà utilitzar."
+"Heu seleccionat emmagatzemar el sistema de fitxers /boot en una partició "
+"xifrada. Això no és possible perquè el carregador no podria carregar el "
+"nucli i l'initrd. Continuar resultarà en una instal·lació que no es podrà "
+"utilitzar."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Aneu enrere i seleccioneu una partició no xifrada per al sistema de fitxers "
-"arrel."
+"Hauríeu d'anar enrere i seleccionar una partició no xifrada per al sistema "
+"de fitxers /boot."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:345
 msgid "Are you sure you want to use a random key?"
-msgstr "Esteu segur de voler usar una clau aleatòria?"
+msgstr "Esteu segur de voler emprar una clau aleatòria?"
 
 #. Type: boolean
 #. Description
@@ -703,7 +697,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Esteu segur de voler usar xifratge del dispositiu de blocs?"
 
 #. Type: boolean
 #. Description
@@ -715,3 +709,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"La implementació del xifratge dels dispositius de bloc encara és "
+"experimental i no es considera que estiga a punt per a posar-se en "
+"producció. En particular, pot resultar en configuracions que són fàcils de "
+"trencar, donant una falsa sensació de seguretat. No hi ha cap problema amb "
+"el xifratge, tot i així, fins que la implementació s'audite amb deteniment, "
+"aquesta funcionalitat no s'hauria d'utilitzar excepte per a fer proves."

@@ -9,8 +9,8 @@ partman-crypto (4) UNRELEASED; urgency=low
   [ Max Vozeler ]
   * Build partman-crypto-dm and partman-crypto-loop that depend on
     respective tools and kernel modules.
-  * Depend on partman-crypto-loop, partman-crypto-dm for now as
-    ORed depends are not possible in udebs.
+  * For now depend on partman-crypto-loop only as some depends of 
+    cryptsetup-udeb are not there yet.
   * Include ciphers/ entries in -loop and -dm
 
   [ Christian Perrier ]

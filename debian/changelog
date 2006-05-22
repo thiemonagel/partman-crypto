@@ -11,13 +11,14 @@ partman-crypto (4) UNRELEASED; urgency=low
     respective tools and kernel modules.
   * Depend on partman-crypto-loop, partman-crypto-dm for now as
     ORed depends are not possible in udebs.
+  * Include ciphers/ entries in -loop and -dm
 
   [ Christian Perrier ]
   * Replace "filesystem" by "file system" in templates (overall consistency
     in D-I)
   * Typo correction: "occured" replaced by "occurred" in templates
 
- -- Christian Perrier <bubulle@debian.org>  Thu, 18 May 2006 23:22:18 -0500
+ -- Max Vozeler <xam@debian.org>  Mon, 22 May 2006 04:39:35 +0200
 
 partman-crypto (3) unstable; urgency=low
 

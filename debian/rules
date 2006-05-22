@@ -34,13 +34,14 @@ install: build
 	debian/install-rc update.d
 	debian/install-rc finish.d
 	dh_install crypto_tools.sh lib/partman
-	dh_install ciphers lib/partman
 	dh_install base64/base64 bin/
 	dh_install blockdev-keygen bin/
 	dh_install blockdev-wipe/blockdev-wipe bin/
+	dh_install -p $(PACKAGE)-dm ciphers/dm-crypt lib/partman/ciphers
+	dh_install -p $(PACKAGE)-loop ciphers/loop-AES lib/partman/ciphers
 	mkdir -p debian/$(PACKAGE)/usr/lib/prebaseconfig.d
 	install -m0755 crypto_prebaseconfig debian/$(PACKAGE)/usr/lib/prebaseconfig.d/05crypto
-	rm -rf `find debian/$(PACKAGE) -name .svn`
+	rm -rf `find debian/$(PACKAGE) debian/$(PACKAGE)-dm debian/$(PACKAGE)-loop -name .svn`
 
 binary-arch: build install
 	dh_testdir

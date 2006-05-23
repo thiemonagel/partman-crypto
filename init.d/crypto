@@ -5,16 +5,16 @@
 
 . /lib/partman/definitions.sh
 
-partman_devdir () {
+dev_to_devdir () {
 	echo $DEVICES/$(echo $1 | tr / =)
 }
 
-partman_create_disk () {
+create_disk () {
 	device=$1
 	model=$2
 	size=$3
 
-	devdir=$(partman_devdir $device)
+	devdir=$(dev_to_devdir $device)
 	mkdir $devdir || return 1
 	cd $devdir
 
@@ -33,11 +33,11 @@ partman_create_disk () {
 	return 0
 }
 
-partman_create_partition () {
+create_partition () {
 	local id num size type fs path name free_space free_size filesystem
 	filesystem=$2
 
-	cd $(partman_devdir $1)
+	cd $(dev_to_devdir $1)
 
 	open_dialog NEW_LABEL loop
 	close_dialog
@@ -71,7 +71,7 @@ partman_create_partition () {
 	echo $id
 }
 
-partman_create_cryptdisk () {
+create_cryptdisk () {
 	local dev id num size path cryptdev cipher
 	dev=$1
 	id=$2
@@ -93,10 +93,9 @@ partman_create_cryptdisk () {
 
 	# Tell partman about the crypt disk
 	cryptdev=$(cat $id/crypt_active)
-	cryptdir=$(partman_devdir $cryptdev)
+	cryptdir=$(dev_to_devdir $cryptdev)
 	if [ ! -d $cryptdir ]; then
-		partman_create_disk $cryptdev "$model" $size
-		if [ $? -ne 0 ]; then
+		if ! create_disk $cryptdev "$model" $size; then
 			return 2
 		fi
 	fi
@@ -111,7 +110,7 @@ partman_create_cryptdisk () {
 	esac
 	
 	# Create a new partition in there
-	cryptid=$(partman_create_partition $cryptdev $filesystem)
+	cryptid=$(create_partition $cryptdev $filesystem)
 	if [ -z $cryptid ]; then
 		return 3
 	fi
@@ -167,7 +166,7 @@ for dev in /var/lib/partman/devices/*; do
 		method=$(cat $id/method)
 		[ $method = crypto ] || continue
 		
-		if ! partman_create_cryptdisk $dev $id $num $size $path; then
+		if ! create_cryptdisk $dev $id $num $size $path; then
 			db_fset partman-crypto/init_failed seen false
 			db_input critical partman-crypto/init_failed
 			db_go || true

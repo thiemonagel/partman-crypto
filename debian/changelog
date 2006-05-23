@@ -1,4 +1,4 @@
-partman-crypto (4) UNRELEASED; urgency=low
+partman-crypto (4) unstable; urgency=low
 
   [ David Härdeman ]
   * Add dm-crypt partition wiping
@@ -7,20 +7,49 @@ partman-crypto (4) UNRELEASED; urgency=low
   * Fix some bugs in crypttab generation.
 
   [ Max Vozeler ]
-  * Build partman-crypto-dm and partman-crypto-loop that depend on
-    respective tools and kernel modules.
-  * For now depend on partman-crypto-loop only as some depends of 
-    cryptsetup-udeb are not there yet.
-  * Change priority of partman-crypto-dm to optional
+  * Build partman-crypto-dm and partman-crypto-loop packages that
+    depend on respective tools and kernel modules.
+  * Not all depends of cryptsetup-udeb are ready. For the time being
+    change the priority of -dm to optional and depend only on -loop.
   * Include ciphers/ entries in -loop and -dm
   * Don't show erasepart option for virtual partitions
 
   [ Christian Perrier ]
-  * Replace "filesystem" by "file system" in templates (overall consistency
-    in D-I)
+  * Replace "filesystem" by "file system" in templates (overall
+    consistency in D-I)
   * Typo correction: "occured" replaced by "occurred" in templates
 
- -- Max Vozeler <xam@debian.org>  Tue, 23 May 2006 13:32:06 +0200
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po) by Jurmey Rabgay
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Italian (it.po) by Stefano Canepa
+  * Japanese (ja.po) by Kenshi Muto
+  * Khmer (km.po) by Khoem Sokhem
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Tagalog (tl.po) by Eric Pareja
+  * Turkish (tr.po) by Recai Oktaş
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Max Vozeler <xam@debian.org>  Tue, 23 May 2006 17:33:51 +0200
 
 partman-crypto (3) unstable; urgency=low
 

@@ -11,6 +11,7 @@ partman-crypto (4) UNRELEASED; urgency=low
     respective tools and kernel modules.
   * For now depend on partman-crypto-loop only as some depends of 
     cryptsetup-udeb are not there yet.
+  * Change priority of partman-crypto-dm to optional
   * Include ciphers/ entries in -loop and -dm
   * Don't show erasepart option for virtual partitions
 
@@ -19,7 +20,7 @@ partman-crypto (4) UNRELEASED; urgency=low
     in D-I)
   * Typo correction: "occured" replaced by "occurred" in templates
 
- -- Max Vozeler <xam@debian.org>  Mon, 22 May 2006 05:16:31 +0200
+ -- Max Vozeler <xam@debian.org>  Tue, 23 May 2006 13:32:06 +0200
 
 partman-crypto (3) unstable; urgency=low
 

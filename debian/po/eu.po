@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-04-24 22:48+0200\n"
+"PO-Revision-Date: 2006-05-22 23:19+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,18 +29,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "LVMn bolumen fisikoa"
+msgstr "Enkriptatzeko bolumen fisikoa"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Enkriptazioa:"
+msgstr "Enkriptazioa"
 
 #. Type: text
 #. Description
@@ -48,9 +46,8 @@ msgstr "Enkriptazioa:"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop%s)"
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -59,7 +56,7 @@ msgstr "Loopback (loop%s)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Gailu-mapatzailea (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -115,16 +112,15 @@ msgstr "Partizio honen gako-tamaina:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV algoritmoa:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Partizio honen enkriptazio metodoa:"
+msgstr "Partizio honen abio bektore sortze algoritmoa:"
 
 #. Type: select
 #. Description
@@ -137,6 +133,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Sektore bakiotzaren abio bektorearen arabera algotimo ezberdinak daude. "
+"Aukera honek enkriptazio segurtasunean eragiten du. Normalean ez dago "
+"arrazoirik gomendaturiko hobespenak aldatzeko, sistema zaharragoekin "
+"bateragarritasuna ezik."
 
 #. Type: text
 #. Description
@@ -149,22 +149,20 @@ msgstr "Enkriptazio gakoa:"
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Partizio honen enkriptazioaren gako-mota:"
+msgstr "Partizio honen enkriptazioaren gako mota:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Enkriptazio gakoa:"
+msgstr "Enkriptazio gako egiaztapena:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Partizio honen enkriptazioaren gako-mota:"
+msgstr "Partizio honen enkriptazioaren gako egiaztapen mota:"
 
 #. Type: select
 #. Description
@@ -175,6 +173,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Enkriptazio gakoa pasahitz esaldiaren eraldaketa bat da alde batetarako "
+"egiaztapen funtzio bat ezarri ondoren. Normalean ez dago arrazoirik "
+"lehenespen hau aldatzeko eta aldaketa hori modu okerrean egiteak enkriptazio "
+"indarra gutxitu dezake."
 
 #. Type: text
 #. Description
@@ -182,21 +184,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Datuak ezabatu:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Partizio honen enkriptazioa:"
+msgstr "Partizio honetako datuak ezabatu"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Ezabatu disko osoa: ${DEVICE}"
+msgstr "Benetan ${DEVICE}-ko datuak ezabatu nahi dituzula?"
 
 #. Type: boolean
 #. Description
@@ -206,19 +206,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} gailuko datuak ausazko datuekin gainidatziak izango dira. Ezin "
+"izango dira beranduago berreskuratu bein pausu hau amaitu denean. Hau da "
+"azken aukera ezabaketa ekiditeko."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Ezabatu disko osoa: ${DEVICE}"
+msgstr "${DEVICE}-ko datuak ezabatzen"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Huts ${DEVICE}-ko datuak ezabatzerakoan"
 
 #. Type: error
 #. Description
@@ -227,6 +229,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Errore bat gertatu da ${DEVICE}-ko datuak ezabatzerakoan. Datuak ez dira "
+"ezabatuak izan."
 
 #. Type: text
 #. Description
@@ -302,7 +306,6 @@ msgstr "Enkriptazio-paketearen instalazioak huts egin du"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -313,7 +316,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -326,9 +328,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Aldaketak diskoan idatzi eta bolumen-enkriptatuak konfiguratu?"
+msgstr "Aldaketak diskoan idatzi eta bolumen enkriptatuak konfiguratu?"
 
 #. Type: boolean
 #. Description
@@ -349,7 +350,6 @@ msgstr "Uneko partizio-diseinua mantendu eta bolumen-enkriptatuak konfiguratu?"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -357,15 +357,14 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Bolumen-enkriptatuak konfiguratu ondoren, ezin dira partizioetan aldaketa "
-"gehiagorik egin bolumen-enkriptatuak dituen diskoan. Jarraitu aurretik "
-"erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
+"gehiagorik egin bolumen-enkriptatuak dituzten diskoen partizioetan. Jarraitu "
+"aurretik erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Bolumen-enkriptatuen konfigurazioak huts egin du"
+msgstr "Bolumen enkriptatuen konfigurazioak huts egin du"
 
 #. Type: error
 #. Description
@@ -376,16 +375,14 @@ msgstr "Errorea gertatu da bolumen-enkriptatuak konfiguratzean."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Konfigurazioa abortatu egin da."
+msgstr "Konfigurazioa utzi egin da."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Instalatzeko urratsak huts egin du"
+msgstr "Enriptaturiko bolumen abiarazteak huts egin du"
 
 #. Type: error
 #. Description
@@ -620,24 +617,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
-"duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
-"instalazioa erabil ezin geratzea eragin lezake."
+"duzu. Aukera honek bereiziriko /boot partizio bat behar du kernel eta initrd "
+"irudia biltegiratzeko."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Bete fitxategi sistema bat, ext3 antzerakoa, erabili beharko zenuke /boot "
-"partiziorako."
+msgstr "Atzera egin eta /boot partizio bat konfiguratu ebharko zenuke."
 
 #. Type: error
 #. Description
@@ -648,26 +641,24 @@ msgstr "Enkriptazio-konfigurazioak huts egin du"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
+"Zuk /bootfitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
 "duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
 "instalazioa erabil ezin geratzea eragin lezake."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Mesedez atzera jo eta enkriptazio gabeko partizio bat aukeratu erro "
+"Mesedez atzera jo eta enkriptazio gabeko partizio bat aukeratu /boot "
 "fitxategi sistemarentzat."
 
 #. Type: boolean
@@ -700,7 +691,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Benetan bloke gailuko enkriptazioa erabili nahi duzu?"
 
 #. Type: boolean
 #. Description
@@ -712,3 +703,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Bloke gailu enkriptazioa oraindik esperimetal gisa dago eta ezin da "
+"produkzioan balego bezala erabili. Zehazki erraz apur daitezken "
+"konfigurazioak eman ditzake emaitza bezala segurtasun faltsua sortuaz. Ez "
+"dira enkriptazio hutsunerik aurkitu baina eta inplementazioa gogorki "
+"auditatua izan artean ezaugarri hau ez zen erabili beharko proba kasuetarako "
+"ezik."

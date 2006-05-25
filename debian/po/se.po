@@ -15,14 +15,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: se\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-16 19:26-0600\n"
-"PO-Revision-Date: 2006-04-06 15:47+0200\n"
+"POT-Creation-Date: 2006-05-19 00:56-0600\n"
+"PO-Revision-Date: 2006-05-24 20:20+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
-"Language-Team: Northern Sami <se@li.org>\n"
+"Language-Team: Northern Sami <i18n-sme@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #. Type: text
 #. Description
@@ -37,9 +37,8 @@ msgstr ""
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Krypteren:"
+msgstr "krypto"
 
 #. Type: text
 #. Description
@@ -71,16 +70,14 @@ msgstr "ii aktiivalaš"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Krypterenčoavdda:"
+msgstr "Krypterenvuohkki:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Dán partišuvnna čatnanbáikki:"
+msgstr "Dán partišuvnna krypterenvuohki:"
 
 #. Type: text
 #. Description
@@ -100,13 +97,13 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr ""
+msgstr "Čoavddasturrodat:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr ""
+msgstr "Dán partišuvnna čoavddasturrodat:"
 
 #. Type: text
 #. Description
@@ -122,9 +119,8 @@ msgstr ""
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Dán partišuvnna čatnanbáikki:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -155,16 +151,14 @@ msgstr ""
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Krypterenčoavdda:"
+msgstr "Krypterenčoavdaga hash:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Dán partišuvnna čatnanbáikki:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -187,9 +181,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Ráhkat ođđa partišuvnna"
+msgstr "Sihko dáhtaid dán partišuvnnas"
 
 #. Type: boolean
 #. Description
@@ -230,7 +223,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:139
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "Heivet krypterema ..."
 
 #. Type: text
 #. Description
@@ -254,7 +247,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Required programs missing"
-msgstr ""
+msgstr "Dárbbašlaš prográmmat váilut"
 
 #. Type: note
 #. Description
@@ -291,7 +284,7 @@ msgstr "váilu"
 #. Description
 #: ../partman-crypto.templates:174
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "Ii sáhttán sajáiduhttit krypterenpáhka"
 
 #. Type: error
 #. Description
@@ -344,9 +337,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Sajáiduhttinlávki filtii"
+msgstr "Filtii krypterejuvvon dataguovlluid heiveheames"
 
 #. Type: error
 #. Description
@@ -357,16 +349,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Gaskkalduhtá DHCP-heivehusa."
+msgstr "Heivehus gaskkalduvvui."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Sajáiduhttinlávki filtii"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -382,7 +372,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:225
 msgid "Passphrase"
-msgstr ""
+msgstr "Beassansátni"
 
 #. Type: text
 #. Description
@@ -392,7 +382,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:233
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Čoavddafiila (GnuPG)"
 
 #. Type: text
 #. Description
@@ -402,7 +392,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:241
 msgid "Random key"
-msgstr ""
+msgstr "Sáhtedohko čoavdda"
 
 #. Type: error
 #. Description
@@ -438,7 +428,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Krypterenbeassansátni:"
 
 #. Type: password
 #. Description
@@ -469,7 +459,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:272
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Čális beassansáni ođđasit nannen dihte:"
 
 #. Type: password
 #. Description
@@ -478,6 +468,8 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
+"Čális seamma beassansáni ođđasit dárkkistan dihte ahte leat dan čállán dan "
+"riekta."
 
 #. Type: error
 #. Description
@@ -490,12 +482,13 @@ msgstr ""
 #: ../partman-crypto.templates:278
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
+"Dát guokte beassansáni eai leat seamma lágán. Čális beassansáni oktii vel."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:283
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Guorus beassansátni"
 
 #. Type: note
 #. Description
@@ -504,6 +497,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Leat čállán guorus beassansáni, mii lea gieldejuvvon. Čális beassansáni mii "
+"ii leat guorus."
 
 #. Type: boolean
 #. Description
@@ -526,7 +521,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:300
 msgid "Enter random characters"
-msgstr ""
+msgstr "Čális sáhtedohko bustávaid"
 
 #. Type: entropy-text
 #. Description
@@ -590,7 +585,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:333
 msgid "Encryption configuration failure"
-msgstr ""
+msgstr "Krypterenheivehus filtii"
 
 #. Type: error
 #. Description
@@ -614,7 +609,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:345
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "Leatgo sihkkar ahte hálidat sáhtodohko čoavdda?"
 
 #. Type: boolean
 #. Description

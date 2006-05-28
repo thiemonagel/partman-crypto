@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-02-12 21:18+0200\n"
+"PO-Revision-Date: 2006-05-26 11:48+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -68,16 +68,14 @@ msgstr "ne aktyvus"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Šifravimo raktas:"
+msgstr "Šifravimo metodas:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Šio disko skirsnio šifravimas:"
+msgstr "Šio disko skirsnio šifravimas metodas:"
 
 #. Type: text
 #. Description
@@ -112,16 +110,15 @@ msgstr "Rakto dydis šiam disko skirsniui:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV algoritmas:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Šio disko skirsnio šifravimas:"
+msgstr "Inicializacijos vektoriaus generavimo algoritmas šiam disko skirsniui:"
 
 #. Type: select
 #. Description
@@ -179,21 +176,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Ištrinti duomenis:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Šio disko skirsnio šifravimas:"
+msgstr "Duomenų trynimas šiame disko skirsnyje"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Ištrinti visą diską: ${DEVICE}"
+msgstr "Ar tikrai trinti duomenis įrenginyje ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -207,15 +202,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Ištrinti visą diską: ${DEVICE}"
+msgstr "Duomenų trynimas įrenginyje ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Duomenų trynimas įrenginyje ${DEVICE} nepavyko"
 
 #. Type: error
 #. Description
@@ -224,6 +218,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Duomenų trynimo įrenginyje ${DEVICE} metu įvyko klaida. Duomenys liko "
+"neišnaikinti."
 
 #. Type: text
 #. Description
@@ -258,13 +254,12 @@ msgstr "Trūksta reikiamų programų"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Šiame įdiegiklio komplekte neįtraukta viena ar kelios programos, kurios "
-"reikalingos teisingam partman-crypt modulio veikimui."
+"reikalingos teisingam partman-crypto modulio veikimui."
 
 #. Type: error
 #. Description

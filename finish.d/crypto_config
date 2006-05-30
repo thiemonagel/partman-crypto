@@ -152,13 +152,16 @@ for dev in $DEVICES/*; do
 		[ -f $realdevdir/keytype ] || continue
 		[ -f $id/method ] || continue
 
-		# skip unless swap or to be mounted
+		# skip unless swap, to be mounted or lvm on dm-crypt
 		method=$(cat $id/method)
+		type=$(cat $realdevdir/crypto_type)
 		if [ "$method" != swap ] && [ ! -f $id/mountpoint ]; then
 			continue
 		fi
+		if [ "$method" = lvm ] && [ "$type" != dm-crypt ]; then
+			continue
+		fi
 
-		type=$(cat $realdevdir/crypto_type)
 		realdev=$(mapdevfs $realdev)
 		cryptdev=$(mapdevfs $path)
 

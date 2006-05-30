@@ -38,7 +38,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-20 09:13+0200\n"
+"PO-Revision-Date: 2006-05-29 19:39+0200\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -142,7 +142,7 @@ msgstr "Algoritmo de VI:"
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
 msgstr ""
-"Algoritmo de generaciÃ³n del vector de inicializaciÃ n para esta partición:"
+"Algoritmo de generación del vector de inicialización para esta partición:"
 
 #. Type: select
 #. Description
@@ -156,10 +156,10 @@ msgid ""
 "compatibility with older systems."
 msgstr ""
 "Se pueden utilizar distintos algoritmos para derivar el vector de "
-"inicializaciÃ³n (VI) para cada sector. El valor que defina aquÃ­ afectarÃ¡ a "
-"la seguridad del cifrado a utilizar. Habitualmente, no es necesario "
-"cambiarlo del valor recomendado por omisiÃ³n salvo que se quiera tener "
-"compatibilidad con sistemas antiguos."
+"inicialización (VI) para cada sector. El valor que defina aquí afectará a la "
+"seguridad del cifrado a utilizar. Habitualmente, no es necesario cambiarlo "
+"del valor recomendado por omisión salvo que se quiera tener compatibilidad "
+"con sistemas antiguos."
 
 #. Type: text
 #. Description
@@ -179,7 +179,7 @@ msgstr "Tipo de clave de cifrado para esta partición:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Hach de la clave de cifrado:"
+msgstr "Hash de la clave de cifrado:"
 
 #. Type: select
 #. Description
@@ -196,9 +196,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"La clave de cifrado se deriva de la frase de paso definida aplicando a Ã©sta "
-"una funciÃ³n de hash de una sola direcciÃ³. Generalmente no es necesario "
-"cambiar este valor del recomendado por omisiÃ³n. Si lo cambiaerrÃ³neamente "
+"La clave de cifrado se deriva de la frase de paso definida aplicando a ésta "
+"una función de hash de una sola dirección. Generalmente no es necesario "
+"cambiar este valor del recomendado por omisión. Si lo cambia erróneamente "
 "puede reducir la robustez del cifrado que se va a utilizar."
 
 #. Type: text
@@ -219,7 +219,7 @@ msgstr "Borrar datos de esta partición:"
 #. Description
 #: ../partman-crypto.templates:122
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "¿Desea realmente borrar los datos de ${DEVICe}?"
+msgstr "¿Desea realmente borrar los datos de ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -229,8 +229,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Se sobrescribirÃ¡n los datosen ${DEVICE} con datos aleatorios. Este paso no "
-"es recuperabl y es su Ãºltima oportunidad para interrumpir ese borrado."
+"Se sobrescribirán los datos en ${DEVICE} con datos aleatorios. Este paso no "
+"es recuperable y es su última oportunidad para interrumpir ese borrado."
 
 #. Type: text
 #. Description
@@ -242,7 +242,7 @@ msgstr "Borrando los datos en ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "FallÃ³ el borrado de datos en ${DEVICE}"
+msgstr "Falló el borrado de datos en ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -252,7 +252,7 @@ msgid ""
 "been erased."
 msgstr ""
 "Se produjo un error cuando se intentaban borrar los datos en ${DEVICE}. No "
-"se han podido borraro los datos."
+"se han podido borrar los datos."
 
 #. Type: text
 #. Description
@@ -390,7 +390,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:209
 msgid "Configuration of encrypted volumes failed"
-msgstr "Fallo en la configuración de vólumenes cifrados"
+msgstr "Fallo en la configuración de volúmenes cifrados"
 
 #. Type: error
 #. Description
@@ -408,7 +408,7 @@ msgstr "Se ha interrumpido la configuración."
 #. Description
 #: ../partman-crypto.templates:216
 msgid "Initialisation of encrypted volume failed"
-msgstr "Falló un paso de la inicializaciÃ³n de olÃºmenes cifrados"
+msgstr "Falló un paso de la inicialización de volúmenes cifrados"
 
 #. Type: error
 #. Description
@@ -649,15 +649,15 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Ha elegido crear el sisstema de ficheros raíz en una partición cifrada. Para "
-"utilizar esta funciÃ³n necesita utilizar una particiÃ³n /boot donde guardar "
-"elÃºcleo y el initrd."
+"Ha elegido crear el sistema de ficheros raíz en una partición cifrada. Para "
+"utilizar esta función necesita utilizar una partición «/boot» donde guardar "
+"el núcleo y el initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
 msgid "You should go back and setup a /boot partition."
-msgstr "DeberÃ­a volver y configurar una partición /boot."
+msgstr "Debería volver y configurar una partición /boot."
 
 #. Type: error
 #. Description
@@ -675,8 +675,8 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Ha elegido crear el sistema de ficheros /boot en una partición cifrada. No "
-"puede hacer esto porque el cargador de arranque no podrÃ­a cargar el nÃºcleo "
-"y el initrd. Si continÃua obtendrÃ¡ una instalaciÃ³n que no puede utilizarse."
+"puede hacer esto porque el cargador de arranque no podría cargar el núcleo y "
+"el initrd. Si continúa obtendrá una instalación que no puede utilizarse."
 
 #. Type: error
 #. Description
@@ -731,10 +731,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-"La funciÃ³n de cifrado de dispositivos de bloquesse considera aÃºn "
-"experimental y no deberÃ­a considerarse preparada para su uso en entornos de "
-"producciÃ³n. En particular, puede dar lugar a instalaciones que son fÃ¡ciles "
-"de romper y que dan una falsa sensaciÃ³n de seguridad. Aunque no hay ningÃºn "
-"fallo de cifrado conocido, no se recomienda utilizar esta funciÃ³n salvo "
-"para hacer pruebas hasta que la implementaciÃ³n se haya auditado "
-"completamente."
+"La función de cifrado de dispositivos de bloques se considera aín "
+"experimental y no debería considerarse preparada para su uso en entornos de "
+"producción. En particular, puede dar lugar a instalaciones que son fáciles "
+"de romper y que dan una falsa sensación de seguridad. Aunque no hay ningún "
+"fallo de cifrado conocido, no se recomienda utilizar esta función salvo para "
+"hacer pruebas hasta que la implementación se haya auditado completamente."

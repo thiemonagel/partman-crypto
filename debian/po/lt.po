@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-26 11:48+0300\n"
+"PO-Revision-Date: 2006-05-31 13:40+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -131,6 +131,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Egzistuoja keletas algoritmų inicializacijos vektoriui kiekvienam sektoriui "
+"sukurti. Šis pasirinkimas įtakoja šifravimo saugumą. Paprastai nėra prasmės "
+"keisti numatytojo (rekomenduojamo) algoritmo, nebent norima išsaugoti "
+"suderinamumą su senomis sistemomis."
 
 #. Type: text
 #. Description
@@ -149,16 +153,14 @@ msgstr "Šifravimo rakto tipas šiam disko skirsniui:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Šifravimo raktas:"
+msgstr "Šifravimo rakto maiša (hash):"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Šifravimo rakto tipas šiam disko skirsniui:"
+msgstr "Šifravimo rakto maišos (hash) tipas šiam disko skirsniui:"
 
 #. Type: select
 #. Description
@@ -169,6 +171,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Šifravimo raktas sukurtas iš slaptos frazės, jai pritaikant vienpusė maišos "
+"(hash) funkciją. Paprastai nėra prasmės to keisti nuo numatytojo "
+"(rekomenduojamo) būdo, nes tai gali sumažinti šifravimo atsparumą."
 
 #. Type: text
 #. Description
@@ -198,6 +203,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Duomenys įrenginyje ${DEVICE} bus perrašyti atsitiktiniais duomenimis. Po "
+"šio žingsnio duomenys nebegalės būti atstatyti. Tai paskutinė galimybė "
+"atsisakyti jų išnaikinimo."
 
 #. Type: text
 #. Description
@@ -295,32 +303,30 @@ msgstr "Nepavyko įdiegti šifravimo paketo"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Nerastas branduolio modulio paketas ${PACKAGE} arba įvyko klaida jį diegiant."
+"Nerastas branduolio modulio paketas ${PACKAGE}, arba jo įdiegimo metu įvyko "
+"klaida."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:174
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Gali būti, kad sistemos įkėlimo metu bandant nustatyti šifruotus disko "
-"skirsnius, kils problemų. Jūs vis tik galėsite ištaisyti šią padėtį "
-"įdiegdami reikiamą paketą vėliau."
+"Gali būti, kad sistemos įkėlimo metu, bandant nustatyti šifruotus disko "
+"skirsnius, kils problemų. Šią padėtį galėsite ištaisyti, įdiegdami reikiamą"
+"(us) paketą(us) vėliau."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:186
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Ar įrašyti pakeitimus į diskus ir konfigūruoti šifruotus tomus?"
+msgstr "Ar įrašyti pakeitimus į diską ir konfigūruoti šifruotus tomus?"
 
 #. Type: boolean
 #. Description
@@ -342,7 +348,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:201
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -356,9 +361,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Nesėkmė konfigūruojant šifruotus tomus"
+msgstr "Šifruotų tomų konfigūravimas nepavyko"
 
 #. Type: error
 #. Description
@@ -369,16 +373,14 @@ msgstr "Konfigūruojant šifruotus tomus įvyko klaida."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:209
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Konfigūravimas nutrauktas."
+msgstr "Konfigūravimas buvo nutrauktas."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:216
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Įdiegimo žingsnis nepavyko"
+msgstr "Šifruoto tomo inicializavimas nepavyko"
 
 #. Type: error
 #. Description
@@ -404,7 +406,7 @@ msgstr "Slapta frazė"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:233
 msgid "Keyfile (GnuPG)"
-msgstr "Rakto failas·(GnuPG)"
+msgstr "Rakto failas (GnuPG)"
 
 #. Type: text
 #. Description
@@ -571,9 +573,9 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Jūs·galite·padėti·pagreitinti·procesą, įvesdami atsitiktinius simbolius iš "
+"Jūs galite padėti pagreitinti procesą, įvesdami atsitiktinius simbolius iš "
 "klaviatūros, arba tik laukti, kol bus surinkta pakankamai duomenų. (PASTABA: "
-"tai gali trukti ilgą laiko tarpą)·"
+"tai gali trukti ilgą laiko tarpą)"
 
 #. Type: error
 #. Description
@@ -611,22 +613,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Jūs pasirinkote, kad šakninė (root) failų sistema būtų saugoma šifruotame "
-"disko skirsnyje. Ši savybė negalima, ir jei tęsite diegimą dabar, naujoji "
-"sistema negalės būti naudojama. "
+"disko skirsnyje. Šiai savybei reikia atskiro /boot disko skirsnio, kuriame "
+"galės būti saugomas branduolio initrd failas."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:324
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Jūs turite naudoti /boot skirsniui kitą failų sistemą, kaip pvz. ext3."
+msgstr "Jūs turite grįžti atgal ir nustatyti /boot disko skirsnį."
 
 #. Type: error
 #. Description
@@ -637,27 +637,26 @@ msgstr "Šifravimo konfigūravimo nesėkmė"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Jūs pasirinkote, kad šakninė (root) failų sistema būtų saugoma šifruotame "
-"disko skirsnyje. Ši savybė negalima, ir jei tęsite diegimą dabar, naujoji "
-"sistema negalės būti naudojama. "
+"Jūs pasirinkote, kad /boot failų sistema būtų saugoma šifruotame disko "
+"skirsnyje. Tai neįmanoma, kadangi sistemos pradinis įkėliklis negalės įkelti "
+"branduolio ir initrd failo. Jei tęsite diegimą dabar, naujoji sistema "
+"negalės būti naudojama."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:333
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Grįžkite atgal ir šakninei (root) failų sistemai pasirinkite nešifruotą "
-"disko skirsnį."
+"Jūs turite grįžti atgal ir /boot failų sistemai pasirinkti nešifruotą disko "
+"skirsnį."
 
 #. Type: boolean
 #. Description
@@ -690,7 +689,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Ar tikrai naudoti blokinio įrenginio šifravimą?"
 
 #. Type: boolean
 #. Description
@@ -702,3 +701,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Blokinio įrenginio šifravimo palaikymas kol kas yra eksperimentinėje "
+"stadijoje ir nėra laikomas pilnai paruoštu naudojimui. Tam tikromis "
+"aplinkybėmis galimi nustatymai, kuriuos lengva nulaužti, ir tai suteikia "
+"klaidingą saugumo suvokimą. Čia nėra žinomų šifravimo problemų, tačiau kol "
+"realizavimas nėra kruopščiai patikrintas, šią savybę tikslinga naudoti tik "
+"testavimo tikslais."

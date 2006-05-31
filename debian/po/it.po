@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-20 18:45+0200\n"
+"PO-Revision-Date: 2006-05-30 19:56+0200\n"
 "Last-Translator: Stefano Canepa <sc@linux.it>\n"
 "Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -281,7 +281,7 @@ msgid ""
 "are required for partman-crypto to function correctly."
 msgstr ""
 "debian-installer è stato compilato senza uno o più dei programmi che sono "
-"necessari per far funzionare correttamente partman-crypt."
+"necessari per far funzionare correttamente partman-crypto."
 
 #. Type: error
 #. Description

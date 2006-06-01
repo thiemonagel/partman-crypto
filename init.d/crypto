@@ -116,6 +116,11 @@ create_cryptdisk () {
 	fi
 	cryptpart=$cryptdir/$cryptid
 
+	# Make sure partition hasn't been processed already
+	if [ -e $cryptpart/method ]; then
+		return 0
+	fi
+
 	# Select defaults
 	case $filesystem in
 		linux-swap)

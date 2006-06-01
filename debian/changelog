@@ -2,8 +2,11 @@ partman-crypto (5) UNRELEASED; urgency=low
 
   [ David Härdeman ]
   * Allow dm-crypt partitions to be used for LVM.
+  * Make sure old settings are remembered when partman is re-inited.
+  * Only show crypto config menu option if at least one crypto volume is
+    setup.
 
- -- David Härdeman <david@2gen.com>  Wed, 31 May 2006 00:47:32 +0200
+ -- David Härdeman <david@2gen.com>  Wed, 31 May 2006 20:35:33 +0200
 
 partman-crypto (4) unstable; urgency=low
 

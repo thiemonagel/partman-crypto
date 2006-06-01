@@ -19,9 +19,8 @@ for dev in $DEVICES/*; do
 	close_dialog
 done
 
-# always show this for now
-#if [ "$use_crypto" = yes ]; then
+if [ "$use_crypto" = yes ]; then
 	db_metaget partman-crypto/text/configure_crypto description
 	printf "crypto\t%s\n" "$RET"
-#fi
+fi
 

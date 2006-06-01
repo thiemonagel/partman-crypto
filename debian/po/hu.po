@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-12 17:25+0100\n"
+"PO-Revision-Date: 2006-05-31 23:05+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -131,6 +131,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Több algoritmus van az egyes szektorok inicializáló vektora eredetéhez. A "
+"választás hat a titkosítási biztonságra. Az alapértelmezett módosításának "
+"csak régebbi rendszerekhez lehet szükség."
 
 #. Type: text
 #. Description

@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-03-31 17:38+1200\n"
+"PO-Revision-Date: 2006-06-03 04:50+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlosliu@users.sourceforge.net>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -113,16 +113,15 @@ msgstr "此分区的密钥长度："
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV 算法："
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "此分区的加密："
+msgstr "此分区初始向量生成算法："
 
 #. Type: select
 #. Description
@@ -135,6 +134,8 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"不同的算法可以被用来对被个扇区生成初始向量。此选择将影响到加密安全性。除了对"
+"旧系统的兼容性考量外，通常情况下，没有必要改变推荐的默认值。"
 
 #. Type: text
 #. Description
@@ -153,16 +154,14 @@ msgstr "此分区加密密钥的类型："
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "加密密钥："
+msgstr "加密密钥哈希："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "此分区加密密钥的类型："
+msgstr "此分区加密密钥哈希的类型："
 
 #. Type: select
 #. Description
@@ -173,6 +172,8 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"加密密钥是通过对密码句执行单向哈希算法得来。通常情况下，没有理由改变此项的推"
+"荐默认值。如果在此处使用了错误的类型则会降低加密强度。"
 
 #. Type: text
 #. Description
@@ -180,21 +181,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "擦除数据："
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "此分区的加密："
+msgstr "擦除此分区上的数据"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "您确定要使用软件 RAID ${LEVEL} 吗？"
+msgstr "真的要擦除 ${DEVICE} 上的数据吗？"
 
 #. Type: boolean
 #. Description
@@ -204,19 +203,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} 上的数据将会被随机数据所覆盖。此步骤结束后，数据将不能被恢复。这里"
+"是最后中止擦除的机会。"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "清空整个磁盘：${DEVICE}"
+msgstr "正在擦除 ${DEVICE} 上的数据"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "擦除 ${DEVICE} 上的数据失败"
 
 #. Type: error
 #. Description
@@ -224,7 +224,7 @@ msgstr ""
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "擦除 ${DEVICE} 上的数据时出现错误。数据未被擦除。"
 
 #. Type: text
 #. Description
@@ -674,7 +674,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:356
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "真的要使用块设备加密吗？"
 
 #. Type: boolean
 #. Description
@@ -686,3 +686,6 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"块设备加密支持尚处于试验阶段，并不适合生产级系统。特别是它有可能产生容易被攻"
+"破的设置并导致安全上的负面感觉。这里并没有已知的安全缺陷，然而在整个软件实现"
+"被彻底审核之前，除测试用途以外，此项功能不应该被使用。"

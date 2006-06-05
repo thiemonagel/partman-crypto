@@ -97,9 +97,9 @@ blockdev-keygen
     cdebconf plugin "entropy" if available. See notes at the beginning
     of the script for important steps for the caller.
 
-crypto_prebaseconfig
+crypto_finishinstall
 
-    Run by prebaseconfig.d hook; Checks for loop-AES partitions,
+    Run by finish-install.d hook; Checks for loop-AES partitions,
     determines target kernel version from base-installer/kernel/image
     and installs a corresponding loop-aes-$KVERS package into /target.
 

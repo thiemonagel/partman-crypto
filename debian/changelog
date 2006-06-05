@@ -1,3 +1,9 @@
+partman-crypto (6) unstable; urgency=low
+
+  * Switch from prebaseconfig.d to finish-install.d
+
+ -- David Härdeman <david@2gen.com>  Mon,  5 Jun 2006 21:12:34 +0200
+
 partman-crypto (5) unstable; urgency=low
 
   [ David Härdeman ]

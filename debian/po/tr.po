@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-13 09:53+0300\n"
+"PO-Revision-Date: 2006-06-06 09:02+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr "şifreleme için fiziksel hacim"
+msgstr "şifreleme için fiziksel cilt"
 
 #. Type: text
 #. Description

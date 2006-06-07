@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-05-19 00:56-0600\n"
-"PO-Revision-Date: 2006-05-14 19:07+0700\n"
+"PO-Revision-Date: 2006-06-06 20:40+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr "โวลุมจริงที่จะเข้ารหัส"
+msgstr "physical volume ที่จะเข้ารหัส"
 
 #. Type: text
 #. Description

@@ -169,6 +169,10 @@ Type: text
 # language, please contact the maintainer and we can do it differently.
 _Description: missing
 
+Template: partman-crypto/text/in_use
+Type: text
+_Description: In use as physical volume for encrypted volume ${DEV}
+
 Template: partman-crypto/module_package_missing
 Type: error
 _Description: Encryption package installation failure

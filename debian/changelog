@@ -1,8 +1,9 @@
 partman-crypto (6) unstable; urgency=low
 
   * Switch from prebaseconfig.d to finish-install.d
+  * Lock partition when crypto mapping is setup
 
- -- David Härdeman <david@2gen.com>  Mon,  5 Jun 2006 21:12:34 +0200
+ -- David Härdeman <david@2gen.com>  Thu,  8 Jun 2006 20:39:29 +0200
 
 partman-crypto (5) unstable; urgency=low
 

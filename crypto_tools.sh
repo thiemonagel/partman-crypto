@@ -213,6 +213,9 @@ setup_cryptdev () {
 	esac
 
 	echo $cryptdev > $id/crypt_active
+	db_subst partman-crypto/text/in_use DEV "${cryptdev##*/}"
+	db_metaget partman-crypto/text/in_use description
+	partman_lock_unit $(mapdevfs $realdev) "$RET"
 	return 0
 }
 

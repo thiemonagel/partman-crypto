@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-19 00:56-0600\n"
+"POT-Creation-Date: 2006-06-08 18:33-0600\n"
 "PO-Revision-Date: 2005-12-20 10:00+0100\n"
 "Last-Translator: Talgat Daniyarov <tdaniyar@hotmail.com>\n"
 "Language-Team: Kazakh\n"
@@ -297,16 +297,23 @@ msgstr ""
 msgid "missing"
 msgstr ""
 
-#. Type: error
+#. Type: text
 #. Description
 #: ../partman-crypto.templates:174
+#, fuzzy
+msgid "In use as physical volume for encrypted volume ${DEV}"
+msgstr "LVM үшін физикалық том."
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:178
 #, fuzzy
 msgid "Encryption package installation failure"
 msgstr "ELILO-ны орнату мүмкін болмады"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:178
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -314,7 +321,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:178
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -323,14 +330,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:186
+#: ../partman-crypto.templates:190
 #, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Өзгерістерді дискке жазып, LVM-ды баптау керек пе?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:186
+#: ../partman-crypto.templates:190
 #, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
@@ -341,14 +348,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:201
+#: ../partman-crypto.templates:205
 #, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "Өзгерістерді дискке жазып, LVM-ды баптау керек пе?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:201
+#: ../partman-crypto.templates:205
 #, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
@@ -362,35 +369,35 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 #, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "LVM-ді баптау сәтсіз аяқталады."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 #, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Өзгертулерді дискке жазуда кателіктер орын алды."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 #, fuzzy
 msgid "The configuration has been aborted."
 msgstr "RAID-ті баптауын орындатпау."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:216
+#: ../partman-crypto.templates:220
 #, fuzzy
 msgid "Initialisation of encrypted volume failed"
 msgstr "Орнату кезеңінің сәті түскан жоқ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:216
+#: ../partman-crypto.templates:220
 #, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Өзгертулерді дискке жазуда кателіктер орын алды."
@@ -401,7 +408,7 @@ msgstr "Өзгертулерді дискке жазуда кателіктер 
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:225
+#: ../partman-crypto.templates:229
 msgid "Passphrase"
 msgstr ""
 
@@ -411,7 +418,7 @@ msgstr ""
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:237
 msgid "Keyfile (GnuPG)"
 msgstr ""
 
@@ -421,25 +428,25 @@ msgstr ""
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:241
+#: ../partman-crypto.templates:245
 msgid "Random key"
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid "Unsafe swap space detected"
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid "An unsafe swap space has been detected."
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -448,7 +455,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -457,19 +464,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid "Encryption passphrase:"
 msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 #, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
@@ -484,7 +491,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -493,13 +500,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:276
 msgid "Re-enter passphrase to verify:"
 msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:276
 #, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
@@ -508,13 +515,13 @@ msgstr "Бұл парольді дұрыс тергендігіңізге көз
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:278
+#: ../partman-crypto.templates:282
 msgid "Passphrase input error"
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:278
+#: ../partman-crypto.templates:282
 #, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
@@ -522,13 +529,13 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:283
+#: ../partman-crypto.templates:287
 msgid "Empty passphrase"
 msgstr ""
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:283
+#: ../partman-crypto.templates:287
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -536,7 +543,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:298
 msgid "Use weak passphrase?"
 msgstr ""
 
@@ -545,7 +552,7 @@ msgstr ""
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:298
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -553,19 +560,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid "Enter random characters"
 msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -574,21 +581,21 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:309
+#: ../partman-crypto.templates:313
 #, fuzzy
 msgid "Keyfile creation failure"
 msgstr "Көлемдерді өзгерту сәтсіз аяқталды"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:309
+#: ../partman-crypto.templates:313
 #, fuzzy
 msgid "An error occurred while creating the keyfile."
 msgstr "Өзгертулерді дискке жазуда кателіктер орын алды."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:314
+#: ../partman-crypto.templates:318
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -597,14 +604,14 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:314
+#: ../partman-crypto.templates:318
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:324
+#: ../partman-crypto.templates:328
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -613,7 +620,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:324
+#: ../partman-crypto.templates:328
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
@@ -621,14 +628,14 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 #, fuzzy
 msgid "Encryption configuration failure"
 msgstr "LVM-ді баптау сәтсіз аяқталады."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -638,7 +645,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -646,14 +653,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 #, fuzzy
 msgid "Are you sure you want to use a random key?"
 msgstr "Сіз дәл қазір жүйеден шыққыңыз келеді ме?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -661,7 +668,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -669,13 +676,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:356
+#: ../partman-crypto.templates:360
 msgid "Really use block device encryption?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:356
+#: ../partman-crypto.templates:360
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

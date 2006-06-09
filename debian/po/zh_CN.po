@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-05-19 00:56-0600\n"
+"POT-Creation-Date: 2006-06-08 18:33-0600\n"
 "PO-Revision-Date: 2006-06-03 04:50+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlosliu@users.sourceforge.net>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
@@ -289,15 +289,22 @@ msgstr "${DEVICE} 的加密选项不完全。请回到磁盘分区菜单并选�
 msgid "missing"
 msgstr "缺失"
 
-#. Type: error
+#. Type: text
 #. Description
 #: ../partman-crypto.templates:174
+#, fuzzy
+msgid "In use as physical volume for encrypted volume ${DEV}"
+msgstr "加密物理卷"
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:178
 msgid "Encryption package installation failure"
 msgstr "加密软件包安装失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:178
 #, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
@@ -306,7 +313,7 @@ msgstr "无法找到内核模块软件包 ${PACKAGE}，或者安装过程中出�
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:174
+#: ../partman-crypto.templates:178
 #, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
@@ -318,14 +325,14 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:186
+#: ../partman-crypto.templates:190
 #, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "将修改写入磁盘并配置加密卷吗？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:186
+#: ../partman-crypto.templates:190
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -335,13 +342,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:201
+#: ../partman-crypto.templates:205
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr "保留现有的分区设置并配置加密卷吗？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:201
+#: ../partman-crypto.templates:205
 #, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
@@ -354,34 +361,34 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 #, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "加密卷设置失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "在配置加密卷时出现一个错误。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:209
+#: ../partman-crypto.templates:213
 #, fuzzy
 msgid "The configuration has been aborted."
 msgstr "配置被中止。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:216
+#: ../partman-crypto.templates:220
 #, fuzzy
 msgid "Initialisation of encrypted volume failed"
 msgstr "安装步骤失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:216
+#: ../partman-crypto.templates:220
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "在建立加密卷时出现一个错误。"
 
@@ -391,7 +398,7 @@ msgstr "在建立加密卷时出现一个错误。"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:225
+#: ../partman-crypto.templates:229
 msgid "Passphrase"
 msgstr "口令句"
 
@@ -401,7 +408,7 @@ msgstr "口令句"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:233
+#: ../partman-crypto.templates:237
 msgid "Keyfile (GnuPG)"
 msgstr "密钥文件(GnuPG)"
 
@@ -411,25 +418,25 @@ msgstr "密钥文件(GnuPG)"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:241
+#: ../partman-crypto.templates:245
 msgid "Random key"
 msgstr "随机密钥"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid "Unsafe swap space detected"
 msgstr "探测到不安全的交换空间"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid "An unsafe swap space has been detected."
 msgstr "程序已探测到一个不安全的交换空间。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -440,7 +447,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:245
+#: ../partman-crypto.templates:249
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -451,19 +458,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid "Encryption passphrase:"
 msgstr "加密口令句："
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "您需要选择一个口令句来加密 ${DEVICE}。"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -476,7 +483,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:258
+#: ../partman-crypto.templates:262
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -487,13 +494,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:276
 msgid "Re-enter passphrase to verify:"
 msgstr "重新输入口令句以确认："
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:272
+#: ../partman-crypto.templates:276
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -501,25 +508,25 @@ msgstr "请重新输入相同的口令句以确保您的输入正确无误。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:278
+#: ../partman-crypto.templates:282
 msgid "Passphrase input error"
 msgstr "口令句输入错误"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:278
+#: ../partman-crypto.templates:282
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "您所输入的两个口令句并不相同。请重新输入。"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:283
+#: ../partman-crypto.templates:287
 msgid "Empty passphrase"
 msgstr "空口令句"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:283
+#: ../partman-crypto.templates:287
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -527,7 +534,7 @@ msgstr "您输入的是空口令句，这是不被允许的。请输入一个非
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:298
 msgid "Use weak passphrase?"
 msgstr "使用弱口令句吗？"
 
@@ -536,7 +543,7 @@ msgstr "使用弱口令句吗？"
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:294
+#: ../partman-crypto.templates:298
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -546,19 +553,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid "Enter random characters"
 msgstr "请输入任意字符"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "现在正在创建 ${DEVICE} 的加密密钥。"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:300
+#: ../partman-crypto.templates:304
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -569,19 +576,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:309
+#: ../partman-crypto.templates:313
 msgid "Keyfile creation failure"
 msgstr "创建密钥文件失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:309
+#: ../partman-crypto.templates:313
 msgid "An error occurred while creating the keyfile."
 msgstr "将密钥文件写入磁盘时出现一个错误。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:314
+#: ../partman-crypto.templates:318
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -592,14 +599,14 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:314
+#: ../partman-crypto.templates:318
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr "请返回并给根文件系统选择一个未加密的分区。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:324
+#: ../partman-crypto.templates:328
 #, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
@@ -611,20 +618,20 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:324
+#: ../partman-crypto.templates:328
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr "您应该为 /boot 分区配置其它的文件系统，例如 ext3。"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 msgid "Encryption configuration failure"
 msgstr "加密设置失败"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 #, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
@@ -637,7 +644,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:333
+#: ../partman-crypto.templates:337
 #, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
@@ -646,13 +653,13 @@ msgstr "请返回并给根文件系统选择一个未加密的分区。"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 msgid "Are you sure you want to use a random key?"
 msgstr "您确定要使用一个随机密钥吗？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -662,7 +669,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:345
+#: ../partman-crypto.templates:349
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -672,13 +679,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:356
+#: ../partman-crypto.templates:360
 msgid "Really use block device encryption?"
 msgstr "真的要使用块设备加密吗？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:356
+#: ../partman-crypto.templates:360
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

@@ -171,6 +171,7 @@ _Description: missing
 
 Template: partman-crypto/text/in_use
 Type: text
+# What is "in use" is a partition
 _Description: In use as physical volume for encrypted volume ${DEV}
 
 Template: partman-crypto/module_package_missing

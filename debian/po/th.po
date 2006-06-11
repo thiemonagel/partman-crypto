@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-06 20:40+0700\n"
+"PO-Revision-Date: 2006-06-10 14:13+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -291,9 +291,8 @@ msgstr "ขาดหาย"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "physical volume ที่จะเข้ารหัส"
+msgstr "กำลังใช้งานเป็น physical volume สำหรับโวลุม ${DEV} ที่เข้ารหัส"
 
 #. Type: error
 #. Description

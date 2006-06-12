@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-19 14:34+0000\n"
+"PO-Revision-Date: 2006-06-11 09:35+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -296,9 +296,8 @@ msgstr "em falta"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "volume físico para encriptação"
+msgstr "Em utilização como volume físico para o volume encriptado ${DEV}"
 
 #. Type: error
 #. Description

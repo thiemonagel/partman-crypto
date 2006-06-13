@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-13 13:16+0700\n"
+"PO-Revision-Date: 2006-06-10 11:28+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
@@ -298,9 +298,8 @@ msgstr "បាត់"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "ភាគ​ពិត​សម្រាប់​អ៊ិនគ្រីប"
+msgstr "កំពុង​ប្រើ​ជា​ភាគ​ពិត​សម្រាប់​ភាគ​ ${DEV} ដែល​បាន​អ៊ិនគ្រីប"
 
 #. Type: error
 #. Description

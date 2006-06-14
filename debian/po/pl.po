@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-05 18:27+0200\n"
+"PO-Revision-Date: 2006-06-13 17:40+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -108,16 +108,15 @@ msgstr "Rozmiar klucza dla tej partycji:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algorytm IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Rodzaj szyfrowania dla tej partycji:"
+msgstr "Rodzaj algorytmu dla wektora inicjalizacji dla tej partycji:"
 
 #. Type: select
 #. Description
@@ -148,16 +147,14 @@ msgstr "Rodzaj szyfrowania dla tej partycji:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Klucz szyfrujący:"
+msgstr "Skrót klucza szyfrującego:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Rodzaj szyfrowania dla tej partycji:"
+msgstr "Rodzaj skrótu klucza szyfrującego dla tej partycji:"
 
 #. Type: select
 #. Description
@@ -175,21 +172,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Usuwanie danych:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Szyfrowanie dla tej partycji:"
+msgstr "Usuwanie danych z tej partycji:"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Wyczyść cały dysk: ${DEVICE}"
+msgstr "Naprawdę usunąć wszystkie dane z ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -203,15 +198,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Wyczyść cały dysk: ${DEVICE}"
+msgstr "Usuwanie danych z ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Usunięcie danych na ${DEVICE} nie powiodło się"
 
 #. Type: error
 #. Description
@@ -327,7 +321,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:191
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Zapisać zmiany do dysków i skonfigurować szyfrowane woluminy?"
 
@@ -364,7 +357,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Konfiguracja szyfrowanych woluminów nie powiodła się"
 
@@ -377,7 +369,6 @@ msgstr "Wystąpił błąd podczas konfiguracji szyfrowanych woluminów."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Konfiguracja została przerwana."
 
@@ -657,7 +648,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."

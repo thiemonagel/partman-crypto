@@ -5,7 +5,7 @@
 # 
 # translation of eo.po to Esperanto 
 # Esperanto messages for debian-installer.
-# Copyright (C) 2005 Software in the Public Interest, Inc.
+# Copyright (C) 2005,2006 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 # Samuel Gimeno <sgimeno@gmail.com>, 2005.
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-16 17:10+0200\n"
+"PO-Revision-Date: 2006-06-11 21:40+0200\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -297,9 +297,8 @@ msgstr "manka"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Datumportilaĵo por ĉifrado"
+msgstr "Uzata kiel datumportilaĵo por ĉifra '${DEV}'-datumportilo"
 
 #. Type: error
 #. Description

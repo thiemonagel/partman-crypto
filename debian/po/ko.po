@@ -295,9 +295,8 @@ msgstr "없음"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "암호화할 물리 볼륨"
+msgstr "암호화된 물리 볼륨 ${DEV}에서 사용 중"
 
 #. Type: error
 #. Description

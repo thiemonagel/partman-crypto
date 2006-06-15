@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-13 13:04+0300\n"
+"PO-Revision-Date: 2006-06-14 23:30+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -315,9 +315,8 @@ msgstr "lipsă"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "volumul fizic pentru criptare"
+msgstr "Folosită ca volum fizic pentru volumul criptat ${DEV}"
 
 #. Type: error
 #. Description

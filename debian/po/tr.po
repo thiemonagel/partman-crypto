@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-06 09:02+0300\n"
+"PO-Revision-Date: 2006-06-15 05:42+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -304,9 +304,8 @@ msgstr "eksik"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "şifreleme için fiziksel cilt"
+msgstr "Şifrelenmiş ${DEV} cildi için fiziksel cilt olarak kullanılan bölüm"
 
 #. Type: error
 #. Description

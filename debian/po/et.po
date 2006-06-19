@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2005-06-08 11:11+0300\n"
+"PO-Revision-Date: 2006-06-18 20:38+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
 "MIME-Version: 1.0\n"
@@ -240,9 +240,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:139
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Videomälu häälestamine..."
+msgstr "Krüpteerimise häälestamine..."
 
 #. Type: text
 #. Description
@@ -355,59 +354,53 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Jätta praegune partitsioonide paigutus ja seadistad LVH?"
+msgstr ""
+"Jätta praegune partitsioonide paigutus ja seadistada krüpteeritud volüümid?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Peale Loogiliste volüümide halduri seadistamist pole mingeid muudatusi "
-"füüsilisi volüüme sisaldavate ketaste partitsioonidele lubatud. Palun "
+"Peale krüpteeritud volüümide seadistamist pole mingeid muudatusi "
+"krüpteeritud volüüme sisaldavate ketaste partitsioonidele lubatud. Palun "
 "otsusta enne jätkamist, kas oled nende ketaste praeguse "
 "partitsioneerimisskeemiga rahul."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "LVH seadistamine nurjus"
+msgstr "Krüpteeritud volüümide seadistamine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Muudatuste kettale kirjutamisel ilmnes viga."
+msgstr "Krüpteeritud volüümide seadistamisel ilmnes viga."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "RAID seadistamine on peatatud."
+msgstr "Seadistamine on peatatud."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Paigaldamise samm nurjus"
+msgstr "Krüpteeritud volüümi lähtestamine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Muudatuste kettale kirjutamisel ilmnes viga."
+msgstr "Krüpteeritud volüümi ülesseadmisel ilmnes viga."
 
 #. Type: text
 #. Description
@@ -484,19 +477,15 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:263
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Sa pead Debian'i paigaldamise kaugligipääsule parooli määrama. Paigaldajale "
-"ligi pääsenud pahatahtlik või alakvalifitseeritud kasutaja, võib hirmsaid "
-"asju korda saata. Seega tuleks parool hoolikalt valida, et teda poleks liiga "
-"hõlpus ära arvata. Parool ei tohiks olla sõnaraamatusõna ega ka sinuga "
-"otseselt seotatav sõna, näiteks su koera nimi (juhul kui sul koera pole, on "
-"koera nime muidugi raskem ära arvata)."
+"Krüptograafia üldine võimekus sõltub väga palju sellest paroolist - seega "
+"tuleks parool hoolikalt valida, et teda poleks liiga hõlpus ära arvata. "
+"Parool ei tohiks olla sõnaraamatusõna ega ka sinuga otseselt seotatav fraas."
 
 #. Type: password
 #. Description
@@ -516,7 +505,6 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:277
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -533,9 +521,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:283
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Paroolid, mis sa sisestasid, olid erinevad. Palun proovi uuesti."
+msgstr "Sisestatud paroolid olid erinevad. Palun proovi uuesti."
 
 #. Type: note
 #. Description
@@ -592,16 +579,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Suuruse muutmine nurjus"
+msgstr "Võtmefaili loomine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Muudatuste kettale kirjutamisel ilmnes viga."
+msgstr "Võtmefaili kettale kirjutamisel ilmnes viga."
 
 #. Type: error
 #. Description
@@ -631,16 +616,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Peaksid /boot jaoks kasutama mõnd teist failisüsteemi, näiteks ext3'e."
+msgstr "Peaksid minema tagasi ja looma /boot partitsiooni."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "LVH seadistamine nurjus"
+msgstr "Krüpteerimise seadistamine nurjus"
 
 #. Type: error
 #. Description
@@ -663,9 +646,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:350
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Kas oled kindel, et soovid väljuda?"
+msgstr "Kas oled kindel, et soovid kasutad juhuslikku võtit?"
 
 #. Type: boolean
 #. Description

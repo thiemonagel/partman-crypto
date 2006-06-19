@@ -105,7 +105,7 @@ create_cryptdisk () {
 			filesystem=linux-swap
 			;;
 		keyfile|*)
-			filesystem=ext2
+			filesystem=ext3
 			;;
 	esac
 	
@@ -128,7 +128,7 @@ create_cryptdisk () {
 			>$cryptpart/format
 			;;
 
-		ext2)
+		ext3)
 			echo format > $cryptpart/method
 			>$cryptpart/format
 			>$cryptpart/use_filesystem

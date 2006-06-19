@@ -6,8 +6,9 @@ partman-crypto (6) unstable; urgency=low
     types
   * Move some functionality from choose_partition/crypto/do_option to
     crypto_tools.sh for use by partman-auto-crypto.
+  * Change default fs from ext2 to ext3.
 
- -- David Härdeman <david@2gen.com>  Mon, 19 Jun 2006 23:09:40 +0200
+ -- David Härdeman <david@2gen.com>  Mon, 19 Jun 2006 23:12:24 +0200
 
 partman-crypto (5) unstable; urgency=low
 

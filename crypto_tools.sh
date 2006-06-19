@@ -241,21 +241,27 @@ wipe () {
 }
 
 dev_wipe () {
-	local device size method targetdevice
+	local device size method interactive targetdevice
 	device=$1
 	size=$2
 	method=$3
+	interactive=$4
+	if [ "$interactive" != "no" ]; then
+		interactive="yes"
+	fi
 	ret=1
 
-	# Confirm before erasing
-	template="partman-crypto/warn_erase"
-	db_set $template false
-	db_subst $template DEVICE $(humandev $device)
-	db_input critical $template || true
-	db_go || return
-	db_get $template
-	if [ "$RET" != true ]; then
-		return 0
+	if [ $interactive = yes ]; then
+		# Confirm before erasing
+		template="partman-crypto/warn_erase"
+		db_set $template false
+		db_subst $template DEVICE $(humandev $device)
+		db_input critical $template || true
+		db_go || return
+		db_get $template
+		if [ "$RET" != true ]; then
+			return 0
+		fi
 	fi
 
 	# Setup crypto
@@ -416,4 +422,276 @@ crypto_set_defaults () {
 
 	# Also load the modules needed for the chosen type/cipher
 	crypto_load_modules $type "$(cat $part/cipher)"
+}
+
+crypto_check_required_tools() {
+	local tools
+
+	tools=""
+	case $1 in
+		dm-crypt)
+			tools="/bin/blockdev-keygen /sbin/dmsetup /sbin/cryptsetup"
+			;;
+		loop-AES)
+			tools="/bin/blockdev-keygen /usr/bin/gpg /bin/base64"
+			;;
+	esac
+
+	for tool in $tools; do
+		if [ ! -x $tool ]; then
+			db_fset partman-crypto/tools_missing seen false
+			db_input critical partman-crypto/tools_missing
+			db_go || true
+			return 1
+		fi
+	done
+	return 0
+}
+
+crypto_check_required_options() {
+	local id type list options
+	path=$1
+	type=$2
+
+	options=""
+	case $type in
+		dm-crypt)
+			options="cipher keytype keyhash ivalgorithm keysize"
+			;;
+		loop-AES)
+			options="cipher keytype"
+			;;
+	esac
+
+	list=""
+	for opt in $options; do
+		[ -f $path/$opt ] && continue
+		db_metaget partman-crypto/text/specify_$opt description || RET="$opt:"
+		desc=$RET
+		db_metaget partman-crypto/text/missing description || RET="missing"
+		value=$RET
+		if [ "$list" ]; then
+			list="$list
+$desc $value"
+		else
+			list="$desc $value"
+		fi
+	done
+
+	# If list is non-empty, at least one option is missing
+	if [ ! -z "$list" ]; then
+		templ="partman-crypto/options_missing"
+		db_fset $templ seen false
+		db_subst $templ DEVICE "$(humandev $path)"
+		db_subst $templ ITEMS "$list"
+		db_input critical $templ
+		db_go || true
+		return 1
+	fi
+	return 0
+}
+
+crypto_check_setup() {
+	# Show warning before anything else
+	# (should be removed once the code has been audited)
+	templ="partman-crypto/warning_experimental_nonaudit"
+	db_input critical $templ
+	db_go || true
+	db_get $templ || RET=''
+	if [ "$RET" != true ]; then
+		return 1
+	fi
+
+	crypt=
+	for dev in $DEVICES/*; do
+		[ -d "$dev" ] || continue
+		cd $dev
+
+		partitions=
+		open_dialog PARTITIONS
+		while { read_line num id size type fs path name; [ "$id" ]; }; do
+			[ "$fs" != free ] || continue
+			partitions="$partitions $id,$num,$path"
+		done
+		close_dialog
+
+		for p in $partitions; do
+			set -- $(IFS=, && echo $p)
+			id=$1
+			num=$2
+			path=$3
+
+			[ -f $id/method ] || continue
+			[ -f $id/crypto_type ] || continue
+
+			method=$(cat $id/method)
+			if [ $method != crypto ]; then
+				continue
+			fi
+			type=$(cat $id/crypto_type)
+			crypt=yes
+
+			crypto_check_required_tools $type
+			crypto_check_required_options "$dev/$id" $type
+		done
+	done
+
+	if [ -z $crypt ]; then
+		db_fset partman-crypto/nothing_to_setup seen false
+		db_input critical partman-crypto/nothing_to_setup
+		db_go || true
+		return 1
+	fi
+	return 0
+}
+
+crypto_setup() {
+	local interactive s dev id size path methods partitions type keytype keysize 
+	interactive=$1
+	if [ "$interactive" != "no" ]; then
+		interactive="yes"
+	fi
+
+	# Commit the changes
+	for s in /lib/partman/commit.d/*; do
+	    if [ -x $s ]; then
+		$s || {
+		    db_input high partman-crypto/commit_failed || true
+		    db_go || true
+		    for s in /lib/partman/init.d/*; do
+			if [ -x $s ]; then
+			    $s || return 255
+			fi
+		    done
+		    return 0
+		}
+	    fi
+	done
+
+	if ! swap_is_safe; then
+		db_fset partman-crypto/unsafe_swap seen false
+		db_input critical partman-crypto/unsafe_swap
+		db_go || true
+		return 1
+	fi
+
+	# Erase crypto-backing partitions
+	for dev in $DEVICES/*; do
+		[ -d "$dev" ] || continue
+		cd $dev
+
+		partitions=
+		open_dialog PARTITIONS
+		while { read_line num id size type fs path name; [ "$id" ]; }; do
+			[ "$fs" != free ] || continue
+			partitions="$partitions $id,$size,$path"
+		done
+		close_dialog
+		
+		for part in $partitions; do
+			set -- $(IFS=, && echo $part)
+			id=$1
+			size=$2
+			path=$3
+
+			[ -f $id/method ] || continue
+			method=$(cat $id/method)
+			if [ $method != crypto ]; then
+				continue
+			fi
+
+			if [ -f $id/crypt_active ] || [ -f $id/skip_erase ]; then
+				continue
+			fi
+
+			if ! dev_wipe $path $size $(cat $id/crypto_type) $interactive; then
+				db_fset partman-crypto/commit_failed seen false
+				db_input critical partman-crypto/commit_failed
+				db_go || true
+				return 1
+			fi
+		done
+	done
+
+	# Create keys and do losetup/dmsetup
+	for dev in $DEVICES/*; do
+		[ -d "$dev" ] || continue
+		cd $dev
+
+		partitions=
+		open_dialog PARTITIONS
+		while { read_line num id size type fs path name; [ "$id" ]; }; do
+			[ "$fs" != free ] || continue
+			partitions="$partitions $id,$num,$path"
+		done
+		close_dialog
+		
+		for part in $partitions; do
+			set -- $(IFS=, && echo $part)
+			id=$1
+			num=$2
+			path=$3
+
+			[ -f $id/method ] || continue
+			[ -f $id/crypto_type ] || continue
+			[ -f $id/cipher ] || continue
+			[ -f $id/keytype ] || continue
+
+			method=$(cat $id/method)
+			if [ $method != crypto ]; then
+				continue
+			fi
+
+			type=$(cat $id/crypto_type)
+			keytype=$(cat $id/keytype)
+			cipher=$(cat $id/cipher)
+
+			# Cryptsetup uses create_keyfile for all keytypes
+			if [ $keytype = keyfile ] || [ $type != loop-AES ]; then
+				keyfile=$dev/$id/$(mapdevfs $path | tr / _)
+				if [ $type = loop-AES ]; then
+					keyfile="${keyfile#_}.gpg"
+				fi
+				if [ ! -f $keyfile ]; then
+					if [ $type != loop-AES ]; then
+						keysize=""
+						[ -f $id/keysize ] && keysize=$(cat $id/keysize)
+						/bin/blockdev-keygen "$(humandev $path)" $keytype "$keyfile" $keysize
+					else
+						/bin/blockdev-keygen "$(humandev $path)" $keytype "$keyfile"
+					fi
+					if [ $? -ne 0 ]; then
+						db_fset partman-crypto/commit_failed seen false
+						db_input critical partman-crypto/commit_failed
+						db_go || true
+						failed=1
+						break
+					fi
+				fi
+
+				echo $keyfile > $id/keyfile
+			fi
+
+			if [ ! -f $id/crypt_active ]; then
+				log "setting up encrypted device for $path"
+
+				if ! setup_cryptdev $type $id $path; then
+					db_fset partman-crypto/commit_failed seen false
+					db_input critical partman-crypto/commit_failed
+					db_go || true
+					failed=1
+					break
+				fi
+			fi
+		done
+	done
+
+	if [ $failed ]; then
+		return 1
+	fi
+
+	stop_parted_server
+
+	restart_partman
+	return 0
 }

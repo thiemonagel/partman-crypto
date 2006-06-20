@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-31 23:05+0100\n"
+"PO-Revision-Date: 2006-06-20 00:11+0100\n"
 "Last-Translator: SZERVÑC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -152,16 +152,14 @@ msgstr "Titkosító kulcs típusa e partícióhoz:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Titkosító kulcs:"
+msgstr "Titkosító kulcs hash:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Titkosító kulcs típusa e partícióhoz:"
+msgstr "Titkosító kulcs hash típusa e partícióhoz:"
 
 #. Type: select
 #. Description
@@ -172,6 +170,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"A titkosító kulcs a jelmondatból származik egy-irányú hash függvényt "
+"alkalmazva rá. Általában jó az ajánlott alap beállítás, rossz módosítása "
+"csökkenti a titkosítás erejét."
 
 #. Type: text
 #. Description
@@ -294,9 +295,8 @@ msgstr "hiányzik"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "fizikai kötet titkosításhoz"
+msgstr "${DEV} titkosított kötethez fizikai kötetként használt"
 
 #. Type: error
 #. Description
@@ -685,7 +685,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Tényleg blokk eszköz titkosítást használsz?"
 
 #. Type: boolean
 #. Description
@@ -697,3 +697,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"A blokk eszközök titkosítása még kísérleti és nem kész éles használatra. "
+"Egyes esetekben könnyen törhető telepítést, és így hamis biztonság érzetet "
+"adhat. Nem tudunk ilyet, de míg nincs átfogóan ellenőrizve, ne használd, "
+"csak teszt célokra."

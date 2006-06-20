@@ -1,5 +1,6 @@
 partman-crypto (6) unstable; urgency=low
 
+  [ David Härdeman ]
   * Switch from prebaseconfig.d to finish-install.d
   * Lock partition when crypto mapping is setup
   * Improve defaults setting code to only consider available crypto-
@@ -8,7 +9,10 @@ partman-crypto (6) unstable; urgency=low
     crypto_tools.sh for use by partman-auto-crypto.
   * Change default fs from ext2 to ext3.
 
- -- David Härdeman <david@2gen.com>  Mon, 19 Jun 2006 23:12:24 +0200
+  [ Max Vozeler ]
+  * Build arch-all packages in binary-indep
+
+ -- Max Vozeler <xam@debian.org>  Tue, 20 Jun 2006 18:37:12 +0200
 
 partman-crypto (5) unstable; urgency=low
 

@@ -23,7 +23,15 @@ clean:
 	rm -f `find . -name '*~'`
 	dh_clean
 
-install: build
+install-indep:
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_install -p $(PACKAGE)-dm ciphers/dm-crypt lib/partman/ciphers
+	dh_install -p $(PACKAGE)-loop ciphers/loop-AES lib/partman/ciphers
+	rm -rf `find debian/$(PACKAGE)-dm debian/$(PACKAGE)-loop -name .svn`
+
+install-arch: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
@@ -37,23 +45,27 @@ install: build
 	dh_install base64/base64 bin/
 	dh_install blockdev-keygen bin/
 	dh_install blockdev-wipe/blockdev-wipe bin/
-	dh_install -p $(PACKAGE)-dm ciphers/dm-crypt lib/partman/ciphers
-	dh_install -p $(PACKAGE)-loop ciphers/loop-AES lib/partman/ciphers
 	mkdir -p debian/$(PACKAGE)/usr/lib/finish-install.d
 	install -m0755 crypto_finishinstall debian/$(PACKAGE)/usr/lib/finish-install.d/05crypto
-	rm -rf `find debian/$(PACKAGE) debian/$(PACKAGE)-dm debian/$(PACKAGE)-loop -name .svn`
+	rm -rf `find debian/$(PACKAGE) -name .svn`
 
-binary-arch: build install
-	dh_testdir
+binary-indep: install-indep
+	dh_testdir 
 	dh_testroot
-	dh_installdebconf
-	dh_fixperms
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_builddeb
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_builddeb -i
 
-binary-indep:
+binary-arch: build install-arch
+	dh_testdir 
+	dh_testroot
+	dh_installdebconf -s
+	dh_fixperms -s
+	dh_installdeb -s
+	dh_shlibdeps -s
+	dh_gencontrol -s
+	dh_builddeb -s
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install

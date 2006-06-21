@@ -1,4 +1,4 @@
-partman-crypto (6) unstable; urgency=low
+partman-crypto (6) UNRELEASED; urgency=low
 
   [ David Härdeman ]
   * Switch from prebaseconfig.d to finish-install.d

@@ -11,8 +11,9 @@ partman-crypto (6) unstable; urgency=low
 
   [ Max Vozeler ]
   * Build arch-all packages in binary-indep
+  * debian/control: Standards-Version is not used for udebs
 
- -- Max Vozeler <xam@debian.org>  Tue, 20 Jun 2006 18:37:12 +0200
+ -- Max Vozeler <xam@debian.org>  Wed, 21 Jun 2006 14:55:26 +0200
 
 partman-crypto (5) unstable; urgency=low
 

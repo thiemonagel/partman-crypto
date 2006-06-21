@@ -6,23 +6,6 @@
    This makes it impossible for the user to correct /-on-crypto or /boot-
    on-crypto errors. (max)
 
- o Testing has too old cryptsetup which doesn't support LUKS and doesn't
-   include the hooks for dm-crypt/LUKS-on-root
-
- o Grub fails when root is encrypted (even though /boot is not). Seems that
-   it tries to be a bit too smart and gets confused by the encrypted root.
-   It puts up scary error messages and refuses to generate
-   /target/boot/grub/menu.lst but grub is actually installed to the MBR so
-   the install actually works. Workaround: a hand-crafted grub menu.lst can
-   be created from a shell before reboot. (david)
- 
- o The initramfs doesn't include the crypto modules needed for crypto-on-root.
-   I haven't had time to diagnose yet. But my guess is that the hook doesn't
-   appreciate being executed from a chrooted /target without the proper
-   /dev/mapper/crypt0 device to inspect. Will probably solve this by writing
-   the modules to /target/etc/mkinitramfs/modules before initramfs 
-   regeneration. (david)
-
  o Partition erase eats too much memory and causes OOM. Might be a kernel
    problem with loop-AES. Just dd if=/dev/zero of=/dev/loop0 bs=4k on 
    encrypted loop reproducible triggers it (64mb system). There is a big 
@@ -39,4 +22,3 @@
      - The scsi_cmd leak
      - The BIO-uses-ZONE_DMA-hence-oom-killing bug
      - A skbuff_head_cache leak causes oom-killings. 
-

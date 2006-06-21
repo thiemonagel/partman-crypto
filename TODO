@@ -1,28 +1,28 @@
 
 IMPORTANT (must be solved before beta)
 --------------------------------------
- 
+
+  [ All ]
   o Check that the tests in choose_partition/crypto/do_option cover 
     all cases in which unencrypted swap may be setup.
-  
+
+  [ loop-AES ]
   o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
 GENERAL
 -------
- 
+
+  [ All ]
   o Make it possible to de-allocate (losetup -d, cryptsetup ..)
     encrypted partitions.
- 
-  o Should it be possible to put partman disks or partitions into
-    a "locked" state when they are used for encryption/LVM/MD ?
-    partman currently warns but does not prevent changes.
  
   o Understand and add undo.d scripts if required
  
 FEATURES
 --------
 
+  [ All ]
   o Allow use of existing keyfiles. How can we access removable
     media while partman is running ? Interesting media would be
     floppy, USB media, perhaps others.
@@ -32,9 +32,8 @@ FEATURES
     writing the path into $id/keyfile and echoing the passphrase
     into the pass fifo.
  
+  [ loop-AES ]
   o Support for encrypted root partitions. There is a package 
     loop-aes-rootfs for (obsolete) mkinitrd-tools.
-    - TODO: initramfs-tools
-    - TODO: yaird
 
-  o partman-auto-crypto
+  o Add support to partman-auto-crypto

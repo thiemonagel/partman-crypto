@@ -8,6 +8,7 @@ partman-crypto (6) UNRELEASED; urgency=low
   * Move some functionality from choose_partition/crypto/do_option to
     crypto_tools.sh for use by partman-auto-crypto.
   * Change default fs from ext2 to ext3.
+  * Use the generic confirm_changes from partman-base.
 
   [ Max Vozeler ]
   * Build arch-all packages in binary-indep

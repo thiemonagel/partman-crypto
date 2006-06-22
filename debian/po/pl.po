@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-13 17:40+0200\n"
+"PO-Revision-Date: 2006-06-21 17:30+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -129,6 +129,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Istnieją różne algorytmy tworzenia wektora inicjalizacji każdego sektora. "
+"Ich wybór ma wpływ na bezpieczeństwo szyfrowania. Zazwyczaj nie ma potrzeby "
+"zmiany domyślnego, zalecanego ustawienia chyba, że dla zgodności ze "
+"starszymi systemami."
 
 #. Type: text
 #. Description
@@ -284,9 +288,8 @@ msgstr "brak"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "fizyczny wolumin do szyfrowania"
+msgstr "W użyciu jako fizyczny wolumin dla szyfrowanego woluminu ${DEV}"
 
 #. Type: error
 #. Description
@@ -297,18 +300,16 @@ msgstr "Instalacja pakietu szyfrującego nie powiodła się"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
 "Pakiet modułu jądra ${PACKAGE} nie mógł zostać odnaleziony lub wystąpił błąd "
-"podczas instalacji."
+"podczas jego instalacji."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -316,7 +317,7 @@ msgid ""
 msgstr ""
 "Prawdopodobnie wystąpią problemy podczas uruchamiania systemy i próbie "
 "ustawienia szyfrowanych partycji. Można ich będzie uniknąć instalując "
-"wymagany pakiet później."
+"wymagany pakiet lub pakiety później."
 
 #. Type: boolean
 #. Description
@@ -343,7 +344,6 @@ msgstr "Zostawić aktualny układ partycji i skonfigurować szyfrowane woluminy?
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -375,9 +375,8 @@ msgstr "Konfiguracja została przerwana."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Jeden z etapów instalacji nie powiódł się"
+msgstr "Inicjalizacja szyfrowanych woluminów nie powiodła się"
 
 #. Type: error
 #. Description
@@ -608,22 +607,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Wybrano by główny system plików był przechowywany na szyfrowanej partycji. "
-"Taka możliwość nie istnieje i kontynuowanie może doprowadzić do sytuacji, że "
-"system będzie bezużyteczny."
+"Takie rozwiązanie wymaga osobnej partycji /boot na którym przechowywane będą "
+"jądro oraz initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Powinieneś użyć innego systemu plików dla partycji /boot, np. ext3."
+msgstr "Wróć i ustaw partycję /boot."
 
 #. Type: error
 #. Description
@@ -685,7 +682,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Naprawdę użyć szyfrowania urządzenia blokowego?"
 
 #. Type: boolean
 #. Description
@@ -697,3 +694,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Obsługa szyfrowania urządzeń blokowych jest nadal uważana za eksperymentalną "
+"i niegotową do produkcyjnego zastosowania. W niektórych przypadkach używanie "
+"tego może prowadzić do uszkodzeń, więc daje złudne poczucie bezpieczeństwa. "
+"Na dzień dzisiejszy nie są jednakżde znane żadne słabości samego "
+"szyfrowania, ale póki ta implementacja nie zostanie dokładnie przeadytowana "
+"nie powinna być używana do celów innych niż testowe."

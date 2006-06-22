@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-04-24 14:12+0200\n"
+"PO-Revision-Date: 2006-06-21 00:29+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
@@ -27,18 +27,16 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "физички простори за УЛП"
+msgstr "физички простори за енкрипција"
 
 #. Type: text
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Енкрипција:"
+msgstr "крипто"
 
 #. Type: text
 #. Description
@@ -46,9 +44,8 @@ msgstr "Енкрипција:"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Повратна врска (loop%s)"
+msgstr "Повратна врска (loop-AES)"
 
 #. Type: text
 #. Description
@@ -71,16 +68,14 @@ msgstr "не е активно"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Клуч за енкрипција:"
+msgstr "Метод за енкрипција:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Енкрипција за оваа партиција:"
+msgstr "Метод за енкрипција за оваа партиција:"
 
 #. Type: text
 #. Description
@@ -122,9 +117,8 @@ msgstr ""
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Енкрипција за оваа партиција:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -155,9 +149,8 @@ msgstr "Тип на енкрипција за оваа партиција:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Клуч за енкрипција:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -187,16 +180,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Енкрипција за оваа партиција:"
+msgstr "Избриши ги податоците на оваа партиција"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Избриши го целиот диск: ${DEVICE}"
+msgstr "Навистина да ги избришам податоците од ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -210,9 +201,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Избриши го целиот диск: ${DEVICE}"
+msgstr "Бришење на податоците од ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -375,9 +365,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Неуспех при конфигурацијата на енкриптираните простори"
+msgstr "Не успеа конфигурацијата на енкриптираните простори"
 
 #. Type: error
 #. Description
@@ -388,16 +377,14 @@ msgstr "Се случи грешки при конфигурација на ен
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Конфигурацијата е откажана."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Чекор од инсталацијата не успеа"
+msgstr "Иницијализација на енкриптиран простор не успеа"
 
 #. Type: error
 #. Description
@@ -645,11 +632,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Би требало да користиш друг датотечен систем, како ext3, за /boot "
-"партицијата."
+msgstr "Би требало да се вратиш назад и поставиш /boot партиција."
 
 #. Type: error
 #. Description
@@ -674,7 +658,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."

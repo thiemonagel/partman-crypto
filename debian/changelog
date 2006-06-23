@@ -1,4 +1,4 @@
-partman-crypto (6) UNRELEASED; urgency=low
+partman-crypto (6) unstable; urgency=low
 
   [ David Härdeman ]
   * Switch from prebaseconfig.d to finish-install.d
@@ -8,14 +8,42 @@ partman-crypto (6) UNRELEASED; urgency=low
   * Move some functionality from choose_partition/crypto/do_option to
     crypto_tools.sh for use by partman-auto-crypto.
   * Change default fs from ext2 to ext3.
-  * Use the generic confirm_changes from partman-base 
+  * Use the generic confirm_changes from partman-base
     (needs partman-base 87).
 
   [ Max Vozeler ]
   * Build arch-all packages in binary-indep
   * debian/control: Standards-Version is not used for udebs
 
- -- David Härdeman <david@2gen.com>  Wed, 21 Jun 2006 21:57:24 +0200
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Claus Hindsgaul
+  * German (de.po) by Jens Seidel
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Estonian (et.po) by Siim Põder
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hungarian (hu.po) by SZERVÑC Attila
+  * Italian (it.po) by Stefano Canepa
+  * Khmer (km.po) by Khoem Sokhem
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Bokmål, Norwegian (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Polish (pl.po) by Bartosz Fenski
+  * Portuguese (Brazil) (pt_BR.po) by André Luís Lopes
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrişor
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Peter Mann
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Recai Oktaş
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Max Vozeler <xam@debian.org>  Fri, 23 Jun 2006 22:15:44 +0200
 
 partman-crypto (5) unstable; urgency=low
 

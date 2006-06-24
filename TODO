@@ -5,11 +5,18 @@ IMPORTANT (must be solved before beta)
   [ All ]
   o Check that the tests in choose_partition/crypto/do_option cover 
     all cases in which unencrypted swap may be setup.
+  o Partition erase can take a very long time. There should be a
+    way for the user to abort the erase.
 
   [ loop-AES ]
   o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
+  [ dm-crypt ]
+  o initramfs does not set a keymap before asking the passphrase
+    for encrypted root. This can render the installed system 
+    unbootable depending on characters used in the passphrase.
+
 GENERAL
 -------
 

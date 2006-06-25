@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-21 17:30+0200\n"
+"PO-Revision-Date: 2006-06-24 13:39+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -631,7 +631,6 @@ msgstr "Konfiguracja szyfrowania nie powiodła się"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -639,7 +638,8 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Wybrano by główny system plików był przechowywany na szyfrowanej partycji. "
-"Taka możliwość nie istnieje i kontynuowanie może doprowadzić do sytuacji, że "
+"Taka możliwość nie istnieje ponieważ program uruchomieniowy nie będzie mógł "
+"załadować jądra oraz initrd. Kontynuowanie może doprowadzić do sytuacji, że "
 "system będzie bezużyteczny."
 
 #. Type: error

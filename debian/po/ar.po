@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-28 00:46+0300\n"
+"PO-Revision-Date: 2006-06-12 00:39+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -116,7 +116,7 @@ msgstr "لوغاريتم IV:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "تمهيد لوغاريتم توليد المتجه لهذا الجزء:"
 
 #. Type: select
 #. Description
@@ -129,6 +129,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"تتوفر عدة لوغاريتمات لاشتقاق متجه التمهيد لكل قطاع. ويؤثر هذا الخيار في أمن "
+"التشفير. عادة، ليست هناك حاجة لتغيير القيمة الافتراضية المقترحة، عدى التوافق "
+"مع الأنظمة القديمة."
 
 #. Type: text
 #. Description
@@ -165,6 +168,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"يتم توليد مفتاح التشفير من كلمة المرور بتطبيق دالة تشفير أحادية الاتجاه "
+"عليها. عادة، ليست هناك حاجة لتغييرها عن القيمة الافتراضية، كما أن القيام "
+"بذلك بطريقة خاطئة يمكن أن يضعف فعالية التشفير."
 
 #. Type: text
 #. Description
@@ -194,6 +200,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"سيتم استبدال بيانات ${DEVICE} ببيانات عشوائية. ولا يمكن استرجاعها بعد اكتمال "
+"هذه الخطوة. هذه هي فرصتك الأخيرة لإلغاء هذه العملية."
 
 #. Type: text
 #. Description
@@ -311,6 +319,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"يبدو أنه سيكون هناك مشاكل في إعداد الأجزاء المشفرة عند إعادة تشغيل النظام. "
+"قد تستطيع حل هذه المشكلة بتثبيت الحزم المطلوبة لاحقاً."
 
 #. Type: boolean
 #. Description
@@ -337,7 +347,6 @@ msgstr "إبقاء مخطط التجزئة الحالي وتهيئة الكتل 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -345,7 +354,7 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "بعد الانتهاء من تهيئة الكتل المشفّرة، لا يسمح بالقيام بأي تغييرات إضافية على "
-"الأقراص المحتوية للكتل المشفّرة. الرجاء اتخاذ القرار فيما إذا كنت راضياً عند "
+"الأقراص المحتوية للكتل المشفّرة. الرجاء اتخاذ القرار فيما إذا كنت راضياً عن "
 "مخطّط التجزئة الحالي في هذه الأقراص قبل الاستمرار."
 
 #. Type: error
@@ -370,7 +379,7 @@ msgstr "تم إيقاف التهيئة."
 #. Description
 #: ../partman-crypto.templates:221
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "تعذر تمهيد الكتل المشفرة"
 
 #. Type: error
 #. Description
@@ -626,6 +635,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"لقد اخترت تخزين نظام الملفات /boot على جزء مشفر، وهذا غير ممكن حيث أن محمل "
+"الإقلاع قد لا يستطيع تحميل النواة وinitrd. إن استمريت بما تفعله الآن، قد "
+"ينتهي بك الأمر بتثبيت لا يمكن استخدامه."
 
 #. Type: error
 #. Description
@@ -664,9 +676,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:361
-#, fuzzy
 msgid "Really use block device encryption?"
-msgstr "هل حقاً تريد استخدام تشفير الجهاز الكتلي؟"
+msgstr "هل حقاً تريد استخدام تشفير الجهاز القالبي؟"
 
 #. Type: boolean
 #. Description
@@ -678,3 +689,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"دعم تشفير الجهاز القالبي لا يزال تجريبياً ولا يعتبر جاهزاً للاستخدام، أي أنه "
+"قد يتسبب بجعل نظامك سهل الاختراق ويظهر آمناً دون أن يكون كذلك. كما أنه ليست "
+"هناك أية عيوب في التشفير، إلا أنه وحتى يتم التدقيق التام في التنفيذ، فلا يجب "
+"استخدام هذه الميزة إلا لأغراض التجربة فقط."

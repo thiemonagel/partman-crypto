@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-12 00:39+0300\n"
+"PO-Revision-Date: 2006-06-26 01:17+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -292,9 +292,8 @@ msgstr "مفقود"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "الكتلة المادية المطلوب تشفيرها"
+msgstr ""
 
 #. Type: error
 #. Description

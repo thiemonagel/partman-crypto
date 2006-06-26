@@ -25,7 +25,11 @@ GENERAL
     encrypted partitions.
  
   o Understand and add undo.d scripts if required
- 
+
+  o Add support to cdebconf-entropy for frontends other than newt
+    (gtk, text). Currently we refuse to do continue if the setup
+    requires random data (loop-AES keyfile, dm-crypt random key).
+
 FEATURES
 --------
 

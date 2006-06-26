@@ -12,12 +12,12 @@ rm -f $part/use_filesystem
 rm -f $part/format
 
 # Set defaults
-if [ -d /lib/partman/ciphers/loop-AES ]; then
-	echo loop-AES > $part/crypto_type
-	crypto_set_defaults $part loop-AES
-elif [ -d /lib/partman/ciphers/dm-crypt ]; then
+if [ -d /lib/partman/ciphers/dm-crypt ]; then
 	echo dm-crypt > $part/crypto_type
 	crypto_set_defaults $part dm-crypt
+elif [ -d /lib/partman/ciphers/loop-AES ]; then
+	echo loop-AES > $part/crypto_type
+	crypto_set_defaults $part loop-AES
 else
 	exit 1
 fi

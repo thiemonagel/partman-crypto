@@ -1,3 +1,9 @@
+partman-crypto (7) UNRELEASED; urgency=low
+
+  * Switch default crypto system to dm-crypt
+
+ -- Max Vozeler <xam@debian.org>  Mon, 26 Jun 2006 14:54:31 +0200
+
 partman-crypto (6) unstable; urgency=low
 
   [ David Härdeman ]

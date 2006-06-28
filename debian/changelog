@@ -1,4 +1,4 @@
-partman-crypto (7) UNRELEASED; urgency=low
+partman-crypto (7) unstable; urgency=low
 
   [ Max Vozeler ]
   * Switch default crypto system to dm-crypt
@@ -6,7 +6,13 @@ partman-crypto (7) UNRELEASED; urgency=low
   [ David Härdeman ]
   * Re-add accidentally removed partman-crypto-loop dependency.
 
- -- David Härdeman <david@2gen.com>  Wed, 28 Jun 2006 22:53:58 +0200
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Czech (cs.po) by Miroslav Kure
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Polish (pl.po) by Bartosz Fenski
+
+ -- Frans Pop <fjp@debian.org>  Wed, 28 Jun 2006 23:00:11 +0200
 
 partman-crypto (6) unstable; urgency=low
 

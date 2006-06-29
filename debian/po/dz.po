@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-19 22:54+0530\n"
+"PO-Revision-Date: 2006-06-26 09:54+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
@@ -301,9 +301,8 @@ msgstr "བརླག་སྟོར་ཞུགས་པ།"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "གསང་བཟོའི་དོན་ལས་དངོས་ཅན་སྐད་ཤུགས།"
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ ${DEV}གི་དོན་ལུ་ དངོས་ཅན་སྐད་ཤུགས་བཟུམ་སྦེ་ལག་ལེན་འཐབ་ཏེ་ཡོད།"
 
 #. Type: error
 #. Description

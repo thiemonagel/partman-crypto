@@ -41,12 +41,11 @@ install-arch: build
 	debian/install-rc active_partition
 	debian/install-rc update.d
 	debian/install-rc finish.d
+	dh_install finish-install.d usr/lib
 	dh_install crypto_tools.sh lib/partman
 	dh_install base64/base64 bin/
 	dh_install blockdev-keygen bin/
 	dh_install blockdev-wipe/blockdev-wipe bin/
-	mkdir -p debian/$(PACKAGE)/usr/lib/finish-install.d
-	install -m0755 crypto_finishinstall debian/$(PACKAGE)/usr/lib/finish-install.d/05crypto
 	rm -rf `find debian/$(PACKAGE) -name .svn`
 
 binary-indep: install-indep

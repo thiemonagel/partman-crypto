@@ -1,3 +1,9 @@
+partman-crypto (8) UNRELEASED; urgency=low
+
+  * Rename some files to make their purpose clearer.
+
+ -- David Härdeman <david@2gen.com>  Sat,  1 Jul 2006 01:00:25 +0200
+
 partman-crypto (7) unstable; urgency=low
 
   [ Max Vozeler ]

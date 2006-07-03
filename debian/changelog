@@ -1,8 +1,10 @@
 partman-crypto (8) UNRELEASED; urgency=low
 
   * Rename some files to make their purpose clearer.
+  * Depend on base-installer to install cryptsetup when necessary before
+    the initramfs is generated (requires base-installer 1.61).
 
- -- David Härdeman <david@2gen.com>  Sat,  1 Jul 2006 01:00:25 +0200
+ -- David Härdeman <david@2gen.com>  Sat,  1 Jul 2006 01:30:57 +0200
 
 partman-crypto (7) unstable; urgency=low
 

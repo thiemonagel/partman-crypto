@@ -1,8 +1,10 @@
 #!/bin/sh
 
-# Installs userspace tools and helper packages in the target system. This 
-# is responsible for installing loop-aes-utils and loop-aes-rootfs (TODO)
-# for loop-AES and cryptsetup for dm-crypt.
+# Installs userspace tools and helper packages in the target system.
+#
+# Things to install
+# * loop-AES: loop-aes-utils, loop-aes-rootfs (TODO) and loop keys
+# * cryptsetup: relies on base-installer instead
 
 . /lib/partman/definitions.sh
 
@@ -56,8 +58,3 @@ if [ $loop_AES = yes ]; then
 	# TODO loop-aes-rootfs
 	apt-install loop-aes-utils || true
 fi
-
-if [ $dm_crypt = yes ]; then
-	apt-install cryptsetup || true
-fi
-

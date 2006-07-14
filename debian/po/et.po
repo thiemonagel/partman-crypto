@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-22 11:21+0300\n"
+"PO-Revision-Date: 2006-07-12 14:54+0300\n"
 "Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,7 @@ msgstr "krüpto"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Omapöörde (loop-AES)"
 
 #. Type: text
 #. Description
@@ -47,7 +47,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Seadme-kaardistaja (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -124,6 +124,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Sektori algvektori väärtustamiseks on olemas erinevaid algoritme. See valik "
+"mõjutab krüpteerimisest tulenevat turvalisust. Üldjuhul pole mingit vajadust "
+"vaikeväärtust muuta, kui siis vaid vanemate süsteemidega sobitumise nimel."
 
 #. Type: text
 #. Description
@@ -160,6 +163,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Krüpteerimisvõti saadakse paroolist ühesuunalise räsifunktsiooni abil. "
+"Üldjuhul pole vaja soovituslikku vaikeväärtust muuta ning selle vale "
+"muutmine või krüpteerimistugevust vähendada."
 
 #. Type: text
 #. Description
@@ -167,7 +173,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Kustutada andmed:"
 
 #. Type: text
 #. Description
@@ -189,6 +195,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} peal olevad andmed kirjutatakse üle suvalise infojoaga. Peale seda "
+"sammu pole võimalik enam midagi päästa. Praegu on viimane võimalus "
+"kustutamine jätta."
 
 #. Type: text
 #. Description
@@ -200,7 +209,7 @@ msgstr "Seadme ${DEVICE} andmete kustutamine"
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} pealt andmete kustutamine nurjus"
 
 #. Type: error
 #. Description
@@ -209,6 +218,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"${DEVICE} pealt andmete kustutamisel ilmnes viga. Andmeid ei kustutatud."
 
 #. Type: text
 #. Description
@@ -238,7 +248,7 @@ msgstr "Krüpteerimiseks pole valitud ühtki partitsiooni."
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Required programs missing"
-msgstr ""
+msgstr "Vajalikud programmid puudu"
 
 #. Type: note
 #. Description
@@ -247,6 +257,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"Selles debian-installeri versioonis on puudu mõningad programmid, mida "
+"partman-crypto oma tööks vajab."
 
 #. Type: error
 #. Description
@@ -293,6 +305,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"Tuuma moodulite pakki ${PACKAGE} ei leitud või ilmnesid tema paigaldamise "
+"käigus vead."
 
 #. Type: error
 #. Description
@@ -302,6 +316,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"Tõenäoliselt tekib krüpteeritud partitsioonidega süsteemi alglaasimisel "
+"tõrkeid. Probleemi võid lahendada paigaldades hiljem ise vajalikud pakid."
 
 #. Type: boolean
 #. Description
@@ -404,13 +420,13 @@ msgstr "Suvaline võti"
 #. Description
 #: ../partman-crypto.templates:250
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Tuvastati ohtlik saaleala"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:250
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "On tuvastatud ohtlik saaleala."
 
 #. Type: error
 #. Description
@@ -420,6 +436,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"See viga on saatuslik, kuna tundilkku teaved võidaks kettale kirjutda "
+"krüpteerimata, mis omakorda võimaldaks kettale ligi pääsevatel isikutel "
+"kätte saada krüpteerimisvõtme või parooli osi."
 
 #. Type: error
 #. Description
@@ -429,6 +448,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Palun peata saaleala kasutamine (st käivita swapoff) või seadista "
+"krüpteeritud saaleala ja käivita uuesti krüpteeritud volüümide häälestamine. "
+"See programm peatub nüüd."
 
 #. Type: password
 #. Description
@@ -593,6 +615,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"Oled valinud krüpteeritud juurfailisüsteemi. See seade vajab eraldi /boot "
+"partitsiooni, kus hoida tuuma ja initrd kujutist."
 
 #. Type: error
 #. Description
@@ -615,6 +639,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"Oled valinud /boot failisüsteemi krüpteerimise. See on võimatu, kuna "
+"alglaadur ei oleks suuteline tuuma ja intrd kujutist laadima. Jätkates oleks "
+"tulemuseks kasutuskõlbmatu süsteem."
 
 #. Type: error
 #. Description
@@ -623,6 +650,8 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
+"Peaksid minema tagasi ja /boot failisüsteemi jaoks krüpteerimata "
+"partitsiooni valima."
 
 #. Type: boolean
 #. Description
@@ -637,6 +666,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
+"Oled ${DEVICE} jaoks valinud suva-võtmetüübi, kuid palunud partitsioneerijal "
+"sinna failisüsteemi luua."
 
 #. Type: boolean
 #. Description
@@ -645,12 +676,15 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Partitsiooni jaoks suva-võtmetüübi kasutamine tähendab, et igal uuel "
+"alglaadimisel hävib kogu partitsioonil olnud info. Seda tuleks kasutada vaid "
+"saaleala partittsiooni jaoks."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Kas tõesti kasutada blokiseadme krüpteerimist?"
 
 #. Type: boolean
 #. Description
@@ -662,3 +696,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Blokiseadme krüpteerimise tugi on veel katsetamisjärgus ning üldiselt ei "
+"peeta teda veel päris töövalmiks. Tihtilugu on tulemuseks kergesti murtavad "
+"seaded, mis annavad võltsi turvatunde. Pole küll ühtki teadaolevat "
+"krüpteerimisviga, kuid kuni rakendust pole põhjalikult auditeeritud, ei "
+"tohiks krüpteerimisvõimalust kasutada muidu, kui vast testimise eesmärkidel."

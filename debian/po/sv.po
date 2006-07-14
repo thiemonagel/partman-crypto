@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-11 21:39+0100\n"
+"PO-Revision-Date: 2006-07-12 14:03+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -178,7 +178,7 @@ msgid ""
 "strength."
 msgstr ""
 "Krypteringsnyckeln erhålls från lösenfrasen genom att köra en "
-"envägshashfunktion  på den. Normalt sett finns det ingen anledning att ändra "
+"envägshashfunktion på den. Normalt sett finns det ingen anledning att ändra "
 "detta från det rekommenderade valet, förutom om det gäller kompatibilitet "
 "med äldre system."
 
@@ -280,7 +280,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Required encryption options missing"
-msgstr "Nödvändiga krypteringsinställningar saknas"
+msgstr "Nödvändiga krypteringsalternativ saknas"
 
 #. Type: error
 #. Description
@@ -289,8 +289,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Krypteringsinställningen för ${DEVICE} är inte komplett. Gå tillbaka till "
-"partitionsmenyn och korrigera alla nödvändiga inställningar."
+"Krypteringsalternativen för ${DEVICE} är inte kompletta. Gå tillbaka till "
+"partitionsmenyn och välj alla nödvändiga alternativ."
 
 #. Type: text
 #. Description
@@ -467,8 +467,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Var vänlig att inaktivera växlingsutrymmet (kör exempelvis swapoff) eller "
-"konfigurera ett krypterat växlingsutrymme och kör konfigurationen för "
+"Var vänlig att inaktivera växlingsutrymmet (t.ex. genom att köra swapoff) "
+"eller konfigurera ett krypterat växlingsutrymme och kör konfigurationen för "
 "krypterade volymer igen. Det här programmet kommer nu att avslutas."
 
 #. Type: password

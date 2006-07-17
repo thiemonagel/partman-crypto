@@ -30,7 +30,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "એન્ક્રિપ્શન માટે ભૌતિક કદ"
 
 #. Type: text
 #. Description
@@ -112,7 +112,7 @@ msgstr "આ પાર્ટિશન માટે કી માપ:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV અલગોરિધમ:"
 
 #. Type: select
 #. Description
@@ -145,7 +145,7 @@ msgstr "એન્ક્રિપ્શન કી:"
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr ""
+msgstr "આ પાર્ટિશન માટે એન્ક્રિપ્શન કી પ્રકાર:"
 
 #. Type: text
 #. Description
@@ -209,7 +209,7 @@ msgstr "${DEVICE} પર રહેલ માહિતી ભૂંસી ના�
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} પર માહિતી ભૂંસવાનું નિષ્ફળ ગયું"
 
 #. Type: error
 #. Description
@@ -218,6 +218,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"${DEVICE} પર માહિતી ભૂંસવાનો પ્રયત્ન કરતી વખતે ક્ષતિ આવી. માહિતી ભૂંસાઇ શકી નથી."
 
 #. Type: text
 #. Description
@@ -229,7 +230,7 @@ msgstr "એન્ક્રિપ્શન ગોઠવે છે..."
 #. Description
 #: ../partman-crypto.templates:143
 msgid "Configure encrypted volumes"
-msgstr ""
+msgstr "એન્ક્રિપ્ટ કરેલ કદોને રૂપરેખાંકિત કરે છે"
 
 #. Type: note
 #. Description
@@ -241,13 +242,13 @@ msgstr "એન્ક્રિપ્ટ કરવા કોઇ પાર્ટિ
 #. Description
 #: ../partman-crypto.templates:147
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "એન્ક્રિપ્ટ કરવા માટે કોઇ પાર્ટિશનો પસંદ કરેલ નથી."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:152
 msgid "Required programs missing"
-msgstr "જરૂરી કાર્યક્રમો હાજર નથી"
+msgstr "જરૂરી કાર્યક્રમો ગેરહાજર છે"
 
 #. Type: note
 #. Description
@@ -261,7 +262,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "જરૂરી એન્ક્રિપ્શન વિકલ્પો ગેરહાજર છે"
 
 #. Type: error
 #. Description
@@ -291,7 +292,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:179
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "એન્ક્રિપ્શન પેકેજ સ્થાપન નિષ્ફળ"
 
 #. Type: error
 #. Description
@@ -440,7 +441,7 @@ msgstr "એનક્રિપ્શન પાસફ્રેઝ:"
 #. Description
 #: ../partman-crypto.templates:263
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "${DEVICE}ને એન્ક્રિપ્ટ કરવા માટે તમારે પાસફ્રેઝ પસંદ કરવો પડશે."
 
 #. Type: password
 #. Description

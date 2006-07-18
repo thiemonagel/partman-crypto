@@ -122,6 +122,8 @@ crypttab_add_entry () {
 	echo "$target $source $keyfile $opts" >> /target/etc/crypttab
 }
 
+loop_ciphers=
+
 for dev in $DEVICES/*; do
 	[ -d "$dev" ] || continue
 	cd $dev
@@ -168,6 +170,9 @@ for dev in $DEVICES/*; do
 		case $type in
 		loop-AES)
 			fstab_replace_entry $realdev $realdevdir $cryptdev $cryptdevdir
+			cipher=$(cat $realdevdir/cipher)
+			loop_ciphers="$loop_ciphers
+${cipher%%[0-9]*}"
 			;;
 		dm-crypt)
 			crypttab_add_entry $realdev $realdevdir $cryptdev $cryptdevdir
@@ -175,3 +180,10 @@ for dev in $DEVICES/*; do
 		esac
 	done
 done
+
+# Register modules for loop-AES
+register-module loop
+for cipher in $(echo "$loop_ciphers" | sort -u | grep -v AES); do
+	register-module loop_$cipher
+done
+

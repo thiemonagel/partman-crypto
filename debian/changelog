@@ -7,7 +7,6 @@ partman-crypto (8) unstable; urgency=low
 
   [ Max Vozeler ]
   * Add loop-AES ciphers to /etc/modules. Closes: #378687
-  * Make depends reflect requirement of base-installer >= 1.61
 
   [ Updated translations ]
   * Estonian (et.po) by Siim Põder

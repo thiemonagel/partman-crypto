@@ -19,6 +19,9 @@ for dev in /var/lib/partman/devices/*; do
 		type=$(cat $id/crypto_type)		
 		if [ "$type" = "loop-AES" ]; then
 			loop_AES=yes
+			cipher=$(cat $id/cipher)
+			ciphers="$ciphers
+${cipher%%[0-9]*}"
 		fi
 	done
 done
@@ -26,6 +29,11 @@ done
 if [ $loop_AES = yes ]; then
 	echo loop >> /target/etc/modules
 	
+	# Non-AES ciphers need an extra kernel module
+	for cipher in $(echo "$ciphers" | sort -u | grep -v AES); do
+		echo loop_$cipher >> /target/etc/modules
+	done
+
 	cat > /target/etc/default/checkfs-loop <<END
 # Check loop-backed file systems at startup?
 CHECKFS_LOOP_ENABLE=yes

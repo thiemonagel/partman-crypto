@@ -1,4 +1,4 @@
-partman-crypto (8) UNRELEASED; urgency=low
+partman-crypto (8) unstable; urgency=low
 
   [ David Härdeman ]
   * Rename some files to make their purpose clearer.
@@ -7,8 +7,17 @@ partman-crypto (8) UNRELEASED; urgency=low
 
   [ Max Vozeler ]
   * Add loop-AES ciphers to /etc/modules. Closes: #378687
+  * Make depends reflect requirement of base-installer >= 1.61
 
- -- Max Vozeler <xam@debian.org>  Tue, 18 Jul 2006 14:22:50 +0200
+  [ Updated translations ]
+  * Estonian (et.po) by Siim Põder
+  * Gujarati (gu.po) by Kartik Mistry
+  * Japanese (ja.po) by Kenshi Muto
+  * Panjabi; Punjabi (pa.po) by A S Alam
+  * Swedish (sv.po) by Daniel Nylander
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Max Vozeler <xam@debian.org>  Tue, 18 Jul 2006 17:52:02 +0200
 
 partman-crypto (7) unstable; urgency=low
 

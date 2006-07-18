@@ -3,30 +3,30 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of pa_IN.po to Punjabi
-# translation of template.po to Punjabi
+# translation of pa.po to Punjabi
 #
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files#
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
+#
 # Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005, 2006.
 # Amanpreet Singh Alam <apbrar@gmail.com>, 2006.
-#
+# A S Alam <apbrar@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: pa_IN\n"
+"Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-01-27 16:29+0530\n"
-"Last-Translator: Amanpreet Singh Alam <apbrar@gmail.com>\n"
+"PO-Revision-Date: 2006-07-18 12:11+0530\n"
+"Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Type: text
 #. Description
@@ -74,16 +74,14 @@ msgstr "ਸਰਗਰਮ ਨਹੀਂ"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ:"
+msgstr "ਇੰਕਰਿਪਟਡ ਢੰਗ:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਕਰਿਪਸ਼ਨ:"
 
 #. Type: text
 #. Description
@@ -118,16 +116,15 @@ msgstr "ਇਸ ਭਾਗ ਲਈ ਕੁੰਜੀ ਅਕਾਰ:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV ਐਲੋਗਰਿਥਮ:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -158,16 +155,14 @@ msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕ�
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ:"
+msgstr "ਇਕਰਿਪਸ਼ਨ ਕੁੰਜੀ ਹੈਸ਼:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਕਿਸਮਮ:"
+msgstr "ਇਸ ਭਾਗ ਲਈ ਫਾਇਲ ਇੰਕਰਿਪਸ਼ਨ ਕੁੰਜੀ ਦੀ ਕਿਸਮ:"
 
 #. Type: select
 #. Description
@@ -185,21 +180,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "ਡਾਟਾ ਸਾਫ਼:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "ਇਸ ਭਾਗ ਲਈ ਇੰਨਕ੍ਰਿਪਸ਼ਨ:"
+msgstr "ਇਹ ਭਾਗ ਤੋਂ ਡਾਟਾ ਹਟਾਓ"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "ਸਾਰੀ ਡਿਸਕ ਖਾਲੀ ਕਰੋ: ${DEVICE}"
+msgstr "ਕੀ ${DEVICE} ਤੋਂ ਡਾਟਾ ਹਟਾਉਣਾ ਹੈ?"
 
 #. Type: boolean
 #. Description
@@ -213,15 +206,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "ਸਾਰੀ ਡਿਸਕ ਖਾਲੀ ਕਰੋ: ${DEVICE}"
+msgstr "${DEVICE} ਤੋਂ ਡਾਟਾ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} ਉੱਤੇ ਡਾਟਾ ਸਾਫ਼ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
 
 #. Type: error
 #. Description
@@ -314,11 +306,10 @@ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਪੈਕੇਜ ਇੰਸਟਾਲੇਸ਼�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr "ਕਰਨਲ ਮੈਡਿਊਲ ਪੈਕੇਜ ${PACKAGE} ਨਹੀਂ ਲੱਭਿਆ ਜਾਂ ਇੰਸਟਾਲੇਸ਼ਨ ਦੌਰਾਨ ਗਲਤੀ ਵਾਪਰੀ ਹੈ।"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -372,9 +363,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
+msgstr "ਇੰਕਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾ ਫੇਲ੍ਹ ਹੋਈ"
 
 #. Type: error
 #. Description
@@ -385,16 +375,14 @@ msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾਲ�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr " ਸੰਰਚਨਾ ਅਧੂਰੀ ਖਤਮ ਕੀਤੀ ਗਈ।"
+msgstr "ਸੰਰਚਨਾ ਅਧੂਰੀ ਖਤਮ ਕੀਤੀ ਗਈ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪਗ਼ ਅਸਫ਼ਲ"
+msgstr "ਇੰਕਰਿਪਟਡ ਵਾਲੀਅਮ ਸ਼ੁਰੂ ਕਰਨਾ ਅਸਫ਼ਲ ਹੈ"
 
 #. Type: error
 #. Description
@@ -629,9 +617,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "/boot  ਭਾਗ ਲਈ ਤੁਹਾਨੂੰ ਹੋਰ ਫਾਇਲ ਸਿਸਟਮ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ, ਜਿਵੇਂ ext3।"
+msgstr "ਤੁਹਾਨੂੰ ਪਿੱਛੇ ਜਾ ਕੇ /boot ਭਾਗ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #. Type: error
 #. Description
@@ -642,24 +629,20 @@ msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"ਤੁਸੀਂ ਰੂਟ ਫਾਇਸ ਸਿਸਟਮ ਨੂੰ ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਸਹੂਲਤ ਉਪਲੱਬਧ ਨਹੀਂ ਅਤੇ "
-"ਹੁਣ ਜਾਰੀ ਹੋ ਰਹੀ ਹੈ ਇਸ ਦਾ ਨਤੀਜਾ ਇੰਸਟਾਲੇਸ਼ਨ ਹੈ ਜੋ ਵਰਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਚੁਣੋ।"
+msgstr "ਤੁਹਾਨੂੰ ਪਿੱਛੇ ਜਾ ਕੇ /boot ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਕਰਿਪਟਡ ਭਾਗ ਦੀ ਚੋਣ ਕਰਨੀ ਪਵੇਗੀ।"
 
 #. Type: boolean
 #. Description
@@ -691,7 +674,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "ਕੀ ਬਲਾਕ ਜੰਤਰ ਇੰਕਰਿਪਸ਼ਨ ਵਰਤਣੀ ਹੈ?"
 
 #. Type: boolean
 #. Description

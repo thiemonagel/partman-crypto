@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-24 13:39+0200\n"
+"PO-Revision-Date: 2006-07-18 22:43+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -169,6 +169,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Klucz szyfrujący otrzymywany jest z hasła dzięki jednostronnej funkcji "
+"skrótu. Zazwyczaj nie ma potrzeby zmiany zalecanego ustawienia, gdyż może to "
+"zmniejszyć skuteczność szyfrowania."
 
 #. Type: text
 #. Description
@@ -198,6 +201,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Informacje z ${DEVICE} zostaną nadpisane losowymi danymi. Nie będzie można "
+"ich odzyskać gdy ten krok się zakończy. To ostatnia szansa by anulować "
+"usuwanie."
 
 #. Type: text
 #. Description
@@ -218,6 +224,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Wystąpił błąd podczas usuwania danych z ${DEVICE}. Dane nie zostały usunięte."
 
 #. Type: text
 #. Description

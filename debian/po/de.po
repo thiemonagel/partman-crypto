@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-11 21:01+0200\n"
+"PO-Revision-Date: 2006-07-19 21:45+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -102,13 +102,13 @@ msgstr "Verschlüsselung für diese Partition:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Schlüsselgröße:"
+msgstr "Schlüssellänge:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "Schlüsselgröße für diese Partition:"
+msgstr "Schlüssellänge für diese Partition:"
 
 #. Type: text
 #. Description

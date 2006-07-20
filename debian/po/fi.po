@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-07-19 13:41+0300\n"
+"PO-Revision-Date: 2006-07-19 16:20+0300\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -111,7 +111,7 @@ msgstr "Tämän osion avaimen koko:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Alustusalgoritmi:"
 
 #. Type: select
 #. Description
@@ -132,6 +132,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Satunnaissiemenen luomiseen sektorikohtaisesti on useita algoritmeja. Tämä "
+"valinta vaikuttaa salauksen turvallisuuteen. Tavallisesti ei ole mitään "
+"syytä muuttaa tätä suositellusta oletusarvosta, paitsi tarvittaessa "
+"yhteensopivuutta vanhojen järjestelmien kanssa. "
 
 #. Type: text
 #. Description
@@ -168,6 +172,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Salausavain lasketaan salauslauseesta yksisuuntaisella tiivistysfunktiolla. "
+"Tavallisesti ei ole mitään syytä muuttaa tätä suositellusta oletusarvosta, "
+"ja vääränlainen muutos saattaa heikentää salausta."
 
 #. Type: text
 #. Description
@@ -175,7 +182,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Tiedot pyyhitään:"
 
 #. Type: text
 #. Description
@@ -197,6 +204,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Laitteella ${DEVICE} olevien tietojen päälle kirjoitetaan satunnaismössöllä. "
+"Tietoja ei voi palauttaa kun tämä on tehty. Tämä on viimeinen mahdollisuus "
+"keskeyttää tietojen pyyhkiminen."
 
 #. Type: text
 #. Description
@@ -208,7 +218,7 @@ msgstr "Pyyhitään tiedot laitteelta ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Tietojen pyyhkiminen laitteelta ${DEVICE} epäonnistui"
 
 #. Type: error
 #. Description
@@ -217,6 +227,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Tapahtui virhe pyyhittäessä tietoja laitteelta ${DEVICE}. Tietoja ei ole "
+"pyyhitty."
 
 #. Type: text
 #. Description
@@ -685,7 +697,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Varmista käytettävän lohkolaitteen salausta?"
 
 #. Type: boolean
 #. Description
@@ -697,3 +709,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Tuki lohkolaitteen salaukselle on vielä kokeiluluontoinen eikä sitä pidetä "
+"sopivana tuotantokäyttöön. Erityisesti se saattaa tehdä helposti murrettavia "
+"salauksia ja niinmuodoin valheellisen turvallisuudentunteen. Tunnettuja "
+"salausvikoja ei ole, mutta tämän ominaisuuden käyttö pitäisi rajoittaa "
+"kokeiluihin kunnes toteutus on perusteellisesti tarkastettu."

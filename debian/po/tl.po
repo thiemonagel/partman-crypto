@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-05-15 23:13+0200\n"
+"PO-Revision-Date: 2006-07-23 21:43+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -73,16 +73,14 @@ msgstr "hindi aktibo"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Susi ng encryption:"
+msgstr "Pamamaraan ng encryption:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Encryption para sa partisyon na ito:"
+msgstr "Paraan ng encryption para sa partisyon na ito:"
 
 #. Type: text
 #. Description
@@ -117,16 +115,15 @@ msgstr "Laki ng susi para sa partisyon na ito:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algoritmong IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Encryption para sa partisyon na ito:"
+msgstr "Algoritmong pagbuo ng initialization vector para sa partisyong ito:"
 
 #. Type: select
 #. Description
@@ -139,6 +136,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"May iba't ibang mga algoritmo upang makabuo ng initialization vector para sa "
+"bawat sector. May epekto ang pagpili nito sa seguridad ng encryption. "
+"Kadalasan, walang dahilan upang baguhin ito mula sa rekomendadong default "
+"maliban sa pakikibagay sa mga lumang sistema."
 
 #. Type: text
 #. Description
@@ -157,16 +158,14 @@ msgstr "Uri ng encryption key para sa partisyong ito:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Susi ng encryption:"
+msgstr "Hash ng susi ng encryption:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Uri ng encryption key para sa partisyong ito:"
+msgstr "Uri ng encryption key hash para sa partisyong ito:"
 
 #. Type: select
 #. Description
@@ -177,6 +176,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Ang encryption key ay binubuo mula sa kontrasenyas sa pamamagitan ng "
+"paggamit ng one-way hash function dito. Kadalasan, walang dahilan upang "
+"baguhin ito mula sa rekomendadong default at ang pagbabago nito sa maling "
+"paraan ay maaaring makapagpahina ng lakas ng encryption."
 
 #. Type: text
 #. Description
@@ -184,21 +187,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Burahin ang mga datos:"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Encryption para sa partisyon na ito:"
+msgstr "Burahin ang datos sa partisyong ito"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Burahin ang buong disk: ${DEVICE}"
+msgstr "Burahin ang datos sa ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -208,19 +209,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Ang datos sa ${DEVICE} ay papatungan ng datos na random. Hindi na maibabalik "
+"o makukuha ang datos na ito matapos nitong hakbang na ito. Ito ang huling "
+"pagkakataon na mahinto ang pagbubura ng datos."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Burahin ang buong disk: ${DEVICE}"
+msgstr "Binubura ang datos sa ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Bigo ang pagbura ng datos sa ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -229,6 +232,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"May error na naganap habang sinubukang burahin ang datos sa ${DEVICE}. Hindi "
+"nabura ang datos."
 
 #. Type: text
 #. Description
@@ -299,9 +304,8 @@ msgstr "kulang"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "pisikal na volume para sa encryption"
+msgstr "Gamit bilang pisikal na volume para sa encrypted na volume ${DEV}"
 
 #. Type: error
 #. Description
@@ -312,7 +316,6 @@ msgstr "Bigo ang pagluklok ng paketeng encryption"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -716,7 +719,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Talagang gumamit ng encryption sa block device?"
 
 #. Type: boolean
 #. Description
@@ -728,3 +731,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Ang encryption sa block device ay eksperimental pa at hindi pa handa para sa "
+"produksyon. Maaaring magresulta ito sa pagkaayos na madaling masira at "
+"maaaring magdulot ng maling akalang may seguridad. Wala pang kinikilalang "
+"flaw sa encryption, subalit, hanggang sa masusing nai-audit ang "
+"implementasyon, hindi dapat gamitin itong feature na ito maliban sa pag-"
+"testing lamang."

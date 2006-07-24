@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-07-23 21:43+0800\n"
+"PO-Revision-Date: 2006-07-24 20:28+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -326,7 +326,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -334,12 +333,11 @@ msgid ""
 msgstr ""
 "Maaaring magkaroon ng problema sa pagboot kapag sinubukan ng sistema na "
 "isaayos ang mga partisyong may encryption. Maaari niyong ayusin ito sa "
-"pamamagitan ng pagluklok ng mga paketeng kailangan sa susunod."
+"pamamagitan ng pagluklok ng mga paketeng kailangan sa hinaharap."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:191
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Isulat ang mga pagbabago sa mga disk at magsaayos encrypted na volume?"
 
@@ -365,7 +363,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -380,7 +377,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Bigo ang pagsasaayos ng encrypted na volume"
 
@@ -393,16 +389,14 @@ msgstr "May naganap na error habang nagsasaayos ng encrypted na volume."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Hininto ang pagsasaayos."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Bigo ang hakbang na ito sa pagluklok"
+msgstr "Bigo ang paghanda ng encrypted na volume"
 
 #. Type: error
 #. Description
@@ -640,24 +634,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
 "Pinili niyo na ang root file system ay imbakin sa encrypted na partisyon. "
-"Ang feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
-"iniluklok na sistemang hindi magagamit."
+"Kinakailangan ng feature na ito na may hiwalay na partisyong /boot kung saan "
+"ilalagay ang kernel at ang initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Kailangan niyong gumamit ng ibang file system, tulad ng ext3, para sa /boot "
-"partisyon."
+msgstr "Kailangan niyong bumalik at magsaayos ng partisyong /boot."
 
 #. Type: error
 #. Description
@@ -668,26 +658,25 @@ msgstr "Bigo ang pagsasaayos ng encryption"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Pinili niyo na ang root file system ay imbakin sa encrypted na partisyon. "
-"Ang feature na ito ay hindi magagamit at ang pagpapatuloy ay magdudulot ng "
-"iniluklok na sistemang hindi magagamit."
+"Pinili niyo na ang /boot file system ay imbakin sa encrypted na partisyon. "
+"Hindi ito maaaring gawin dahil hindi maipapasok ng bootloader ang kernel at "
+"initrd. Ang pagpapatuloy ay magdudulot ng iniluklok na sistemang hindi "
+"magagamit."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Bumalik at pumili ng hindi encrypted na partisyon para sa root file system."
+"Bumalik at pumili ng hindi encrypted na partisyon para sa /boot file system."
 
 #. Type: boolean
 #. Description

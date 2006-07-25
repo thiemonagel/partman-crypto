@@ -108,16 +108,15 @@ msgstr "此分割區的金鑰大小："
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV 計算法則："
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "這個分割區的加密方式："
+msgstr "這個分割區的初始向量產生法則："
 
 #. Type: select
 #. Description
@@ -130,6 +129,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"不同的計算法則會影響到每個磁區裡的初始向量的產生。這裡的選擇將會影響加密的安"
+"全強度。一般而言，除了為了要和舊有系統相容之外，並沒有必要去修改那建議採用的"
+"預設值。"
 
 #. Type: text
 #. Description
@@ -148,16 +150,14 @@ msgstr "此分割區的加密金鑰格式："
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "加密金鑰："
+msgstr "雜湊加密金鑰："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "此分割區的加密金鑰格式："
+msgstr "此分割區的雜湊加密金鑰格式："
 
 #. Type: select
 #. Description
@@ -168,6 +168,8 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"加密金鑰是由密語再加上單向雜湊函數所產生的。一般而言，並沒有必要去修改那建議"
+"採用的預設值，且如果方法錯誤將會降低加密的強度。"
 
 #. Type: text
 #. Description
@@ -175,21 +177,19 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "消除資料："
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "這個分割區的加密："
+msgstr "消除這個分割區上的資料："
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:122
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "刪除整個磁碟：${DEVICE}"
+msgstr "是否真要消除　${DEVICE}　上的資料？"
 
 #. Type: boolean
 #. Description
@@ -199,19 +199,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"在 ${DEVICE} 裡的資料將會被一些雜亂的資料所覆蓋。在此步驟完成後，這些資料將無"
+"法回復。這是中止消除作業的最後機會。"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:129
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "刪除整個磁碟：${DEVICE}"
+msgstr "消除 ${DEVICE} 上的資籵"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:133
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "在消除 ${DEVICE} 上的資料時失敗了"
 
 #. Type: error
 #. Description
@@ -219,7 +220,7 @@ msgstr ""
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "在消除 ${DEVICE} 上的資料時發生錯誤。這些資料尚未被消除。"
 
 #. Type: text
 #. Description
@@ -288,9 +289,8 @@ msgstr "找不到"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "要進行加密的 Physical Volume"
+msgstr "加密 Volume ${DEV} 所使用的 Physical Volume"
 
 #. Type: error
 #. Description
@@ -301,28 +301,25 @@ msgstr "加密套件的安裝作業失敗了"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr "找不到 Kernel 模組套件 ${PACKAGE}，或是在安裝時發生了錯誤。"
+msgstr "找不到 Kernel 模組套件 ${PACKAGE}，或是它在安裝時發生了錯誤。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"這個問題也許是在開機時，當系統試著設定加密分割區時所發生的。您還是可以在稍後"
-"再安裝必需的套件來修正這些問題。"
+"這也許是在系統重新開機後，當試著設定加密分割區時出現了問題。在稍後再安裝必需"
+"的套件或許可以修正這些問題。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:191
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "是否要將這些變更寫入磁碟中並設定加密的 Volume？"
 
@@ -345,7 +342,6 @@ msgstr "是否保留目前的磁碟配置並設定加密的 Volume？"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -359,9 +355,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "加密的 Volume 設定作業失敗了"
+msgstr "加密的 Volume 的設定作業失敗了"
 
 #. Type: error
 #. Description
@@ -372,16 +367,14 @@ msgstr "在設定加密的 Volume 時發生錯誤。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "設定作業已經中止。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "安裝步驟失敗"
+msgstr "加密的 Volume 的初始化失敗了"
 
 #. Type: error
 #. Description
@@ -603,21 +596,19 @@ msgstr "請返回並替 root 檔案系統選擇一個非加密的分割區。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"您已設定了將 root 檔案系統儲存在加密的分割區上。但目前還沒有這種功能，並且如"
-"果您繼續的話將會導致安裝的系統無法使用。"
+"您已設定了將 root 檔案系統儲存在加密的分割區上。這個功能將需要能儲存 Kernel "
+"和 initrd 的一個個別的 /boot 分割區。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "您應該在 /boot 分割區上使用其它像是 ext3 格式的檔案系統。"
+msgstr "請返回並設定一個 /boot 分割區。"
 
 #. Type: error
 #. Description
@@ -628,24 +619,23 @@ msgstr "加密設定失敗了"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"您已設定了將 root 檔案系統儲存在加密的分割區上。但目前還沒有這種功能，並且如"
-"果您繼續的話將會導致安裝的系統無法使用。"
+"您已設定了將 /boot 檔案系統儲存在加密的分割區上。但這是不可能的做法因為這將導"
+"致開機程式無法載入 kernel 和 initrd。如果您繼續的話將會導致安裝的系統無法使"
+"用。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "請返回並替 root 檔案系統選擇一個非加密的分割區。"
+msgstr "請返回並替 /boot 檔案系統選擇一個非加密的分割區。"
 
 #. Type: boolean
 #. Description
@@ -677,7 +667,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "是否真要使用區塊裝置加密？"
 
 #. Type: boolean
 #. Description
@@ -689,3 +679,6 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"對於區塊裝置加密目前仍在測試中且尚未足以進行實地應用。特別是它很可能會不斷得"
+"會出問題且在安全上也無法讓人安心。在加密上是沒有被找到什麼問題，但在經過完整"
+"的測試之前，這些功能不應用在除了測試之外的其它用途。"

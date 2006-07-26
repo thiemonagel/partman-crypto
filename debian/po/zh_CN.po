@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-03 04:50+1200\n"
+"PO-Revision-Date: 2006-07-25 23:09+1200\n"
 "Last-Translator: Carlos Z.F. Liu <carlosliu@users.sourceforge.net>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -69,16 +69,14 @@ msgstr "未激活"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "加密密钥："
+msgstr "加密方式："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "此分区的加密："
+msgstr "此分区的加密方式："
 
 #. Type: text
 #. Description
@@ -259,12 +257,12 @@ msgstr "缺少所需的程序"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:152
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"这个版本的 debian-installer 缺少一个或多个 partman-crypt 正常工作所需的程序。"
+"这个版本的 debian-installer 缺少一个或多个让 partman-crypt 正常工作所需的程"
+"序。"
 
 #. Type: error
 #. Description
@@ -293,9 +291,8 @@ msgstr "缺失"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "加密物理卷"
+msgstr "已被作为加密卷 ${DEV} 的物理卷使用。"
 
 #. Type: error
 #. Description
@@ -306,28 +303,25 @@ msgstr "加密软件包安装失败"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr "无法找到内核模块软件包 ${PACKAGE}，或者安装过程中出现错误。"
+msgstr "无法找到内核模块软件包 ${PACKAGE}，或者其安装过程中出现错误。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:179
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"系统在启动过程中试图设置加密分区时，很可能会出现问题。你仍可以接下来安装所需"
-"的软件包来修正这些问题。"
+"在系统被重新启动时，设置加密分区很可能会出现问题。你稍后可以通过安装所需的软"
+"件包来修正这些问题。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:191
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "将修改写入磁盘并配置加密卷吗？"
 
@@ -350,7 +344,6 @@ msgstr "保留现有的分区设置并配置加密卷吗？"
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:206
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -363,7 +356,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "加密卷设置失败"
 
@@ -371,21 +363,19 @@ msgstr "加密卷设置失败"
 #. Description
 #: ../partman-crypto.templates:214
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "在配置加密卷时出现一个错误。"
+msgstr "在设置加密卷时出现一个错误。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "配置被中止。"
+msgstr "设置被中止。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:221
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "安装步骤失败"
+msgstr "初始化加密卷失败"
 
 #. Type: error
 #. Description
@@ -608,21 +598,19 @@ msgstr "请返回并给根文件系统选择一个未加密的分区。"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"您选择了将根文件系统放在一个加密分区上。这一功能尚未实现，如果继续下去将会造"
-"成安装的系统无法使用。"
+"您选择了将根文件系统放在一个加密分区上。此功能需要一个用来存放内核和 initrd "
+"的单独 /boot 分区。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:329
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "您应该为 /boot 分区配置其它的文件系统，例如 ext3。"
+msgstr "您应该返回之前的步骤并设置一个 /boot 分区。"
 
 #. Type: error
 #. Description
@@ -633,24 +621,22 @@ msgstr "加密设置失败"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"您选择了将根文件系统放在一个加密分区上。这一功能尚未实现，如果继续下去将会造"
-"成安装的系统无法使用。"
+"您选择了将根文件系统放在一个加密分区上。启动引导器在此设置下无法加载内核和 "
+"initrd，所以这是不可能实现的方案。如果继续下去将会造成安装的系统无法使用。"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:338
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "请返回并给根文件系统选择一个未加密的分区。"
+msgstr "您应该返回之前的步骤并给 /boot 文件系统选择一个非加密分区。"
 
 #. Type: boolean
 #. Description

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer etch\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-06-12 19:02+0200\n"
+"PO-Revision-Date: 2006-07-26 20:59+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +206,7 @@ msgid ""
 "abort the erase."
 msgstr ""
 "Es sobreescriuran les dades de ${DEVICE} amb dades aleatòries. No es podran "
-"recuperar després de que aquest pas s'haja completat. Aquesta és l'última "
+"recuperar després de que aquest pas s'haja completat. Aquesta és la darrera "
 "oportunitat per a avortar la supressió."
 
 #. Type: text
@@ -352,7 +352,7 @@ msgstr ""
 #: ../partman-crypto.templates:206
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Voleu mantenir la disposició de particions actual i configurar els volums "
+"Voleu mantindre la disposició de particions actual i configurar els volums "
 "xifrats?"
 
 #. Type: boolean
@@ -704,7 +704,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:361
 msgid "Really use block device encryption?"
-msgstr "Esteu segur de voler usar xifratge del dispositiu de blocs?"
+msgstr "Esteu segur de voler emprar xifratge del dispositiu de blocs?"
 
 #. Type: boolean
 #. Description

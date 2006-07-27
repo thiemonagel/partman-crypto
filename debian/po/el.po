@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of d-i_level1_el.po to el
+# translation of el.po to el
 # Greek messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -16,10 +16,10 @@
 # quad-nrg.net <yodesy@quad-nrg.net>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: d-i_level1_el\n"
+"Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-07-10 00:04+0300\n"
+"PO-Revision-Date: 2006-07-27 02:19+0300\n"
 "Last-Translator: quad-nrg.net <yodesy@quad-nrg.net>\n"
 "Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -74,16 +74,14 @@ msgstr "μή ενεργή"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Κλειδί κρυπτογράφησης:"
+msgstr "Μέθοδος κρυπτογράφησης:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Κρυπτογράφηση γι' αυτή την κατάτμηση:"
+msgstr "Μέθοδος κρυπτογράφησης γι' αυτήν την κατάτμηση:"
 
 #. Type: text
 #. Description
@@ -118,16 +116,16 @@ msgstr "Μέγεθος κλειδιού γι' αυτή την κατάτμηση
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Αλγόριθμος IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Κρυπτογράφηση γι' αυτή την κατάτμηση:"
+msgstr ""
+"Αλγόριθμος δημιουργίας ανύσματος αρχικοποίησης γι' αυτήν την κατάτμηση:"
 
 #. Type: select
 #. Description

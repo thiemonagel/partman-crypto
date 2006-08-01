@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-06-09 06:07-0600\n"
-"PO-Revision-Date: 2006-01-23 17:48-0600\n"
-"Last-Translator: Tetralet <tetralet@pchome.com.tw>\n"
+"PO-Revision-Date: 2006-07-30 01:30+0800\n"
+"Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -93,13 +93,13 @@ msgstr "這個分割區的加密："
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "金鑰大小："
+msgstr "密鑰大小："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "此分割區的金鑰大小："
+msgstr "此分割區的密鑰大小："
 
 #. Type: text
 #. Description
@@ -129,35 +129,35 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"不同的計算法則會影響到每個磁區裡的初始向量的產生。這裡的選擇將會影響加密的安"
-"全強度。一般而言，除了為了要和舊有系統相容之外，並沒有必要去修改那建議採用的"
-"預設值。"
+"不同的計算法則會影響到每個磁區裡的初始向量是如何產生。這裡的選擇將會影響加密"
+"的安全強度。一般而言，除了為了要和舊有系統相容之外，並沒有必要去修改那建議採"
+"用的預設值。"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "加密金鑰："
+msgstr "加密密鑰："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "此分割區的加密金鑰格式："
+msgstr "此分割區的加密密鑰類型："
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "雜湊加密金鑰："
+msgstr "雜湊加密密鑰："
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "此分割區的雜湊加密金鑰格式："
+msgstr "此分割區的雜湊加密密鑰類型："
 
 #. Type: select
 #. Description
@@ -168,7 +168,7 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"加密金鑰是由密語再加上單向雜湊函數所產生的。一般而言，並沒有必要去修改那建議"
+"加密密鑰是由密語再加上單向雜湊函數所產生的。一般而言，並沒有必要去修改那建議"
 "採用的預設值，且如果方法錯誤將會降低加密的強度。"
 
 #. Type: text
@@ -206,7 +206,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:129
 msgid "Erasing data on ${DEVICE}"
-msgstr "消除 ${DEVICE} 上的資籵"
+msgstr "正在消除 ${DEVICE} 上的資料"
 
 #. Type: error
 #. Description
@@ -259,8 +259,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"這個 debian-installer 版本目前並沒有包含一個或多個 partman-crypt 正常運作時所"
-"需的程式。"
+"這個 debian-installer 版本目前缺少了一個或多個 partman-crypt 正常運作時所需的"
+"程式。"
 
 #. Type: error
 #. Description
@@ -290,7 +290,7 @@ msgstr "找不到"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:175
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "加密 Volume ${DEV} 所使用的 Physical Volume"
+msgstr "被加密 Volume ${DEV} 所使用的 Physical Volume"
 
 #. Type: error
 #. Description
@@ -314,8 +314,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"這也許是在系統重新開機後，當試著設定加密分割區時出現了問題。在稍後再安裝必需"
-"的套件或許可以修正這些問題。"
+"在系統重新開機後，當試著設定加密分割區時可能會出現問題。在稍後再安裝必需的套"
+"件或許可以修正這些問題。"
 
 #. Type: boolean
 #. Description
@@ -380,7 +380,7 @@ msgstr "加密的 Volume 的初始化失敗了"
 #. Description
 #: ../partman-crypto.templates:221
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "在設定加密的 Volume 時發生錯誤。"
+msgstr "在建立加密的 Volume 時發生錯誤。"
 
 #. Type: text
 #. Description
@@ -400,7 +400,7 @@ msgstr "密碼"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Keyfile (GnuPG)"
-msgstr "金鑰檔 (GnuPG)"
+msgstr "密鑰檔 (GnuPG)"
 
 #. Type: text
 #. Description
@@ -410,7 +410,7 @@ msgstr "金鑰檔 (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Random key"
-msgstr "隨機金鑰"
+msgstr "隨機密鑰"
 
 #. Type: error
 #. Description
@@ -422,7 +422,7 @@ msgstr "找到了不安全的置換空間"
 #. Description
 #: ../partman-crypto.templates:250
 msgid "An unsafe swap space has been detected."
-msgstr "已到了一個不安全的置換空間。"
+msgstr "已找到了一個不安全的置換空間。"
 
 #. Type: error
 #. Description
@@ -432,8 +432,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"因為一些私密的資料可能會被以未加密的方式另存，所以這被視為是一個嚴重錯誤。這"
-"將可能讓一些可以存取到磁碟的人有辨法回復加密金鑰或密語。"
+"因為一些私密的資料可能未經加密就轉存到磁碟上，所以這被視為是一個致命的錯誤。"
+"這將可能讓一些可以存取到磁碟的人有辨法回復加密密鑰或密語。"
 
 #. Type: error
 #. Description
@@ -443,8 +443,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"請關閉置換空間（像是執行 swapoff）或是設定加密的Swap 空間，然後再次執行加密"
-"的 volumes 設定。程式將立即中止。"
+"請關閉置換空間（像是執行 swapoff）或是設定加密的 Swap 空間，然後再次執行加密"
+"的 Volumes 設定。程式將立即中止。"
 
 #. Type: password
 #. Description
@@ -505,7 +505,7 @@ msgstr "密語輸入錯誤"
 #. Description
 #: ../partman-crypto.templates:283
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "您所輸入的兩個密語並不相同。請再次輸入密碼。"
+msgstr "您所輸入的兩個密語並不相同。請重新輸入。"
 
 #. Type: note
 #. Description
@@ -537,8 +537,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"您所輸入的密語少於 ${MINIMUM} 字元，被認為是過於薄弱。您應該選擇另一個較為強"
-"悍的密語。"
+"您所輸入的密語少於 ${MINIMUM} 字元，這被認為是過於薄弱。您應該選擇另一個較為"
+"強悍的密語。"
 
 #. Type: entropy-text
 #. Description
@@ -550,7 +550,7 @@ msgstr "請隨意鍵入字母"
 #. Description
 #: ../partman-crypto.templates:305
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "${DEVICE} 的加密金鑰已經產生了"
+msgstr "${DEVICE} 的加密密鑰已經產生了"
 
 #. Type: entropy-text
 #. Description
@@ -560,20 +560,20 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"您可以藉由在鍵盤上隨意得鍵入字母來提高處理速度，或是靜待直到收集了足夠的關鍵"
-"資料。（注意：這可能會花上一段很長的時間）"
+"您可以藉由在鍵盤上隨意得鍵入字母來提高處理速度，或是靜待直到收集了足夠的鍵擊"
+"資訊。（注意：這可能會花上一段很長的時間）"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
 msgid "Keyfile creation failure"
-msgstr "金鑰檔的建立作業失敗了"
+msgstr "密鑰檔的建立作業失敗了"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:314
 msgid "An error occurred while creating the keyfile."
-msgstr "在建立金鑰檔時發生錯誤。"
+msgstr "在建立密鑰檔時發生錯誤。"
 
 #. Type: error
 #. Description
@@ -583,8 +583,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"您已設定了將 root 檔案系統儲存在加密的分割區上。但目前還沒有這種功能，並且如"
-"果您繼續的話將會導致安裝的系統無法使用。"
+"您已選擇了將 root 檔案系統儲存在加密的分割區上。但目前尚未支援此功能，所以如"
+"果您繼續的話將會導致安裝完成的系統無法使用。"
 
 #. Type: error
 #. Description
@@ -601,8 +601,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"您已設定了將 root 檔案系統儲存在加密的分割區上。這個功能將需要能儲存 Kernel "
-"和 initrd 的一個個別的 /boot 分割區。"
+"您已選擇了將 root 檔案系統儲存在加密的分割區上。這個功能將需要一個能儲存 "
+"Kernel 和 initrd 的個別 /boot 分割區。"
 
 #. Type: error
 #. Description
@@ -626,8 +626,8 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "您已設定了將 /boot 檔案系統儲存在加密的分割區上。但這是不可能的做法因為這將導"
-"致開機程式無法載入 kernel 和 initrd。如果您繼續的話將會導致安裝的系統無法使"
-"用。"
+"致開機程式無法載入 kernel 和 initrd。如果您繼續的話將會導致安裝完成的系統無法"
+"使用。"
 
 #. Type: error
 #. Description
@@ -641,7 +641,7 @@ msgstr "請返回並替 /boot 檔案系統選擇一個非加密的分割區。"
 #. Description
 #: ../partman-crypto.templates:350
 msgid "Are you sure you want to use a random key?"
-msgstr "您是否確定您要使用隨意產生的金鑰？"
+msgstr "您是否確定要使用隨機產生的密鑰？"
 
 #. Type: boolean
 #. Description
@@ -650,7 +650,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"您設定 ${DEVICE} 的類型為使用隨意產生的金鑰，但同時又要求分割程式在其上建立檔"
+"您設定 ${DEVICE} 的類型為使用隨機產生的密鑰，但同時又要求分割程式在其上建立檔"
 "案系統。"
 
 #. Type: boolean
@@ -660,8 +660,8 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"類型為使用隨意產生的金鑰表示這個分割區裡的資料會在每次開機時被清除掉。這應該"
-"是用於 Swap 分割區。"
+"類型為使用隨機產生的密鑰表示這個分割區裡的資料會在每次開機時被清除掉。這應該"
+"是只用於 Swap 分割區。"
 
 #. Type: boolean
 #. Description
@@ -679,6 +679,6 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-"對於區塊裝置加密目前仍在測試中且尚未足以進行實地應用。特別是它很可能會不斷得"
-"會出問題且在安全上也無法讓人安心。在加密上是沒有被找到什麼問題，但在經過完整"
-"的測試之前，這些功能不應用在除了測試之外的其它用途。"
+"對於區塊裝置加密目前仍在測試中且尚未足以應用於實務上。特別是它很可能會不斷得"
+"出現問題且在安全上也無法讓人安心。雖然在加密技術上並沒有什麼缺陷，但在經過完"
+"整的測試之前，這些功能不應用於除了測試之外的其它用途。"

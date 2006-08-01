@@ -552,7 +552,7 @@ msgstr "请输入任意字符"
 #. Description
 #: ../partman-crypto.templates:305
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "现在正在创建 ${DEVICE} 的加密密钥。"
+msgstr "${DEVICE} 的加密密钥已经产生了。"
 
 #. Type: entropy-text
 #. Description
@@ -575,7 +575,7 @@ msgstr "创建密钥文件失败"
 #. Description
 #: ../partman-crypto.templates:314
 msgid "An error occurred while creating the keyfile."
-msgstr "将密钥文件写入磁盘时出现一个错误。"
+msgstr "在创建密钥文件时出现一个错误。"
 
 #. Type: error
 #. Description
@@ -586,7 +586,7 @@ msgid ""
 "an installation that cannot be used."
 msgstr ""
 "您选择了将根文件系统放在一个加密分区上。这一功能尚未实现，如果继续下去将会造"
-"成安装的系统无法使用。"
+"成安装完成的系统无法使用。"
 
 #. Type: error
 #. Description
@@ -627,8 +627,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"您选择了将根文件系统放在一个加密分区上。启动引导器在此设置下无法加载内核和 "
-"initrd，所以这是不可能实现的方案。如果继续下去将会造成安装的系统无法使用。"
+"您选择了将 /boot 文件系统放在一个加密分区上。由于启动引导器在此设置下无法加载"
+"内核和 initrd，所以这是不可能实现的方案。如果继续下去将会造成安装完成的系统无"
+"法使用。"
 
 #. Type: error
 #. Description

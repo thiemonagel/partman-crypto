@@ -190,7 +190,7 @@ msgstr "यो विभाजनमा डेटा मेट्नुहोस
 #. Description
 #: ../partman-crypto.templates:122
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "${DEVICE मा डेटा साँच्चैकै मेट्नुहुन्छ ?"
+msgstr "${DEVICE} मा डेटा साँच्चैकै मेट्नुहुन्छ ?"
 
 #. Type: boolean
 #. Description

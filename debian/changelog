@@ -9,6 +9,11 @@ partman-crypto (9) UNRELEASED; urgency=low
   * blockdev-wipe: To compensate for the performance impact of 
     O_SYNC increase blocksize from 4k to 64k.
 
+  * crypto_tools.sh: Use 128 bit (instead of 256 bit) random key
+    when setting up dm-crypt for partition erase. This should
+    speed up erase a bit. Also take the key from /dev/urandom so
+    we don't risk a blocking read.
+
  -- Max Vozeler <xam@debian.org>  Thu,  3 Aug 2006 09:27:11 +0200
 
 partman-crypto (8) unstable; urgency=low

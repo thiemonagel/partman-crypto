@@ -270,7 +270,7 @@ dev_wipe () {
 		setup_loopaes $targetdevice $device AES128 random || return 1
 	elif [ $method = dm-crypt ]; then
 		targetdevice=$(get_free_mapping)
-		setup_dmcrypt $targetdevice $device aes cbc-essiv:sha256 plain 256 /dev/random || return 1
+		setup_dmcrypt $targetdevice $device aes cbc-essiv:sha256 plain 128 /dev/urandom || return 1
 		targetdevice="/dev/mapper/$targetdevice"
 	else
 		# Just wipe the device with zeroes

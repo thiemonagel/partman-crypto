@@ -1,3 +1,13 @@
+partman-crypto (9) UNRELEASED; urgency=low
+
+  * blockdev-wipe: Open the device with O_SYNC to avoid
+    out-of-memory situations during partition erase, which appear
+    to be caused by overcommit and a large number of queued
+    requests. As a side-effect this helps to provide accurate
+    information in the progressbar. Closes: #381135
+
+ -- Max Vozeler <xam@debian.org>  Thu,  3 Aug 2006 09:27:11 +0200
+
 partman-crypto (8) unstable; urgency=low
 
   [ David Härdeman ]

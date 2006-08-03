@@ -149,7 +149,7 @@ int main(int argc, char **argv, char **envp)
 		usage("you must specify one target device", argv[0]);
 
 	/* Get target */
-	target = open(argv[optind], O_WRONLY);
+	target = open(argv[optind], O_WRONLY | O_SYNC);
 	if (target < 0)
 		die("failed to open device", 1);
 

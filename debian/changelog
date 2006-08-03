@@ -6,6 +6,9 @@ partman-crypto (9) UNRELEASED; urgency=low
     requests. As a side-effect this helps to provide accurate
     information in the progressbar. Closes: #381135
 
+  * blockdev-wipe: To compensate for the performance impact of 
+    O_SYNC increase blocksize from 4k to 64k.
+
  -- Max Vozeler <xam@debian.org>  Thu,  3 Aug 2006 09:27:11 +0200
 
 partman-crypto (8) unstable; urgency=low

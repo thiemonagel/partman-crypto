@@ -226,7 +226,7 @@ wipe () {
 	fifo=/var/run/wipe_progress
 
 	mknod $fifo p
-	/bin/blockdev-wipe $dev > $fifo &
+	/bin/blockdev-wipe -s 65536 $dev > $fifo &
 	pid=$!
 
 	db_progress START 0 100 $template

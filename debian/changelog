@@ -1,18 +1,29 @@
-partman-crypto (9) UNRELEASED; urgency=low
+partman-crypto (9) unstable; urgency=low
 
+  [ Max Vozeler ]
   * blockdev-wipe: Open the device with O_SYNC to avoid
     out-of-memory situations during partition erase, which appear
     to be caused by overcommit and a large number of queued
     requests. As a side-effect this helps to provide accurate
     information in the progressbar. Closes: #381135
 
-  * blockdev-wipe: To compensate for the performance impact of 
-    O_SYNC increase blocksize from 4k to 64k.
+  * blockdev-wipe: To compensate for the performance impact
+    of O_SYNC increase blocksize from 4k to 64k.
 
-  * crypto_tools.sh: Use 128 bit (instead of 256 bit) random key
-    when setting up dm-crypt for partition erase. This should
-    speed up erase a bit. Also take the key from /dev/urandom so
-    we don't risk a blocking read.
+  * crypto_tools.sh: Use 128 bit (instead of 256 bit) 
+    random key when setting up dm-crypt for partition erase.
+    This should speed up erase a bit. Also take the key from
+    /dev/urandom so we don't risk a blocking read.
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * German (de.po) by Jens Seidel
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Finnish (fi.po) by Tapio Lehtonen
+  * Polish (pl.po) by Bartosz Fenski
+  * Tagalog (tl.po) by Eric Pareja
+  * Simplified Chinese (zh_CN.po) by Carlos Z.F. Liu
+  * Traditional Chinese (zh_TW.po) by Tetralet
 
  -- Max Vozeler <xam@debian.org>  Thu,  3 Aug 2006 09:27:11 +0200
 

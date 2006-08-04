@@ -279,7 +279,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:159
 msgid "Required encryption options missing"
-msgstr "Mga kinakailangang opsyon ng encryption ay wala"
+msgstr "Mga kinakailangang opsiyon ng encryption ay wala"
 
 #. Type: error
 #. Description
@@ -288,8 +288,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Ang opsyon ng encryption para sa ${DEVICE} ay kulang. Bumalik sa menu ng "
-"pagpartisyon at piliin ang lahat ng mga opsyong kinakailangan."
+"Ang opsiyon ng encryption para sa ${DEVICE} ay kulang. Bumalik sa menu ng "
+"pagpartisyon at piliin ang lahat ng mga opsiyong kinakailangan."
 
 #. Type: text
 #. Description

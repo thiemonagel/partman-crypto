@@ -12,11 +12,6 @@ IMPORTANT (must be solved before beta)
   o Find better sources of entropy. Check if we could load and use
     hw_random, sound, .. ?
   
-  [ dm-crypt ]
-  o initramfs does not set a keymap before asking the passphrase
-    for encrypted root. This can render the installed system 
-    unbootable depending on characters used in the passphrase.
-
 GENERAL
 -------
 

@@ -1,45 +1,9 @@
+IMPORTANT
 
-IMPORTANT (must be solved before beta)
---------------------------------------
-
-  [ All ]
   o Check that the tests in choose_partition/crypto/do_option cover 
     all cases in which unencrypted swap may be setup.
-  o Partition erase can take a very long time. There should be a
-    way for the user to abort the erase.
 
-  [ loop-AES ]
-  o Find better sources of entropy. Check if we could load and use
-    hw_random, sound, .. ?
-  
 GENERAL
--------
 
-  [ All ]
-  o Make it possible to de-allocate (losetup -d, cryptsetup ..)
-    encrypted partitions.
- 
   o Understand and add undo.d scripts if required
 
-  o Add support to cdebconf-entropy for frontends other than newt
-    (gtk, text). Currently we refuse to do continue if the setup
-    requires random data (loop-AES keyfile, dm-crypt random key).
-
-FEATURES
---------
-
-  [ All ]
-  o Allow use of existing keyfiles. How can we access removable
-    media while partman is running ? Interesting media would be
-    floppy, USB media, perhaps others.
-
-  o Allow to create and store keyfiles on removable media. Same
-    questions as above. Using it should simply be a matter of 
-    writing the path into $id/keyfile and echoing the passphrase
-    into the pass fifo.
- 
-  [ loop-AES ]
-  o Support for encrypted root partitions. There is a package 
-    loop-aes-rootfs for (obsolete) mkinitrd-tools.
-
-  o Add support to partman-auto-crypto

@@ -1,7 +1,0 @@
-
- o Mountpoints and fs options for encrypted partitions are not remembered
-   when partman restarts. (max)
-
- o Options like mountpoint are not removed when method changes to swap.
-   This makes it impossible for the user to correct /-on-crypto or /boot-
-   on-crypto errors. (max)

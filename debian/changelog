@@ -2,6 +2,7 @@ partman-crypto (10) unstable; urgency=low
 
   * Name dm-crypt devices according to the underlying block devices
     (like hda5_crypt). Closes: #382398;
+  * Drop leading _dev_ from the name of loop-AES keyfiles
 
  -- Max Vozeler <xam@debian.org>  Fri, 11 Aug 2006 13:52:38 +0200
 

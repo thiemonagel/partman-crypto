@@ -652,10 +652,12 @@ crypto_setup() {
 
 			# Cryptsetup uses create_keyfile for all keytypes
 			if [ $keytype = keyfile ] || [ $type != loop-AES ]; then
-				keyfile=$dev/$id/$(mapdevfs $path | tr / _)
+				keyfile=$(mapdevfs $path | tr / _)
+				keyfile="$dev/$id/${keyfile#_dev_}"
 				if [ $type = loop-AES ]; then
-					keyfile="${keyfile#_}.gpg"
+					keyfile="${keyfile}.gpg"
 				fi
+
 				if [ ! -f $keyfile ]; then
 					if [ $type != loop-AES ]; then
 						keysize=""

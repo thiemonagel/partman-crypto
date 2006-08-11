@@ -188,9 +188,13 @@ setup_cryptdev () {
 
 	case $type in
 		dm-crypt)
-		  cryptdev=$(get_free_mapping)
-		  if [ -z "$cryptdev" ]; then
-			  return 1
+		  cryptdev=$(mapdevfs $realdev)
+		  cryptdev="${cryptdev##*/}_crypt"
+		  if [ -b "/dev/mapper/$cryptdev" ]; then
+			  cryptdev=$(get_free_mapping)
+			  if [ -z "$cryptdev" ]; then
+				  return 1
+			  fi
 		  fi
 		  if [ $keytype = passphrase ]; then
 			  setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1

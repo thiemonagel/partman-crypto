@@ -1,4 +1,4 @@
-partman-crypto (10) unstable; urgency=low
+partman-crypto (10) UNRELEASED; urgency=low
 
   * Name dm-crypt devices according to the underlying block devices
     (like hda5_crypt). Closes: #382398;

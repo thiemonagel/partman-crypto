@@ -179,13 +179,13 @@ msgstr "Kustutada andmed:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "ei"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "jah"
 
 #. Type: text
 #. Description

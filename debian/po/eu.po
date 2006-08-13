@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-13 22:52+0000\n"
-"PO-Revision-Date: 2006-06-11 00:37+0200\n"
+"PO-Revision-Date: 2006-07-03 15:05+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -190,13 +190,13 @@ msgstr "Datuak ezabatu:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "ez"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "bai"
 
 #. Type: text
 #. Description

@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-13 22:52+0000\n"
-"PO-Revision-Date: 2006-06-15 05:42+0300\n"
+"PO-Revision-Date: 2006-07-16 17:29+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -192,13 +192,13 @@ msgstr "Verileri sil:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "hayır"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "evet"
 
 #. Type: text
 #. Description

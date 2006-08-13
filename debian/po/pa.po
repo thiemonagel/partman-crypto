@@ -186,13 +186,13 @@ msgstr "ਡਾਟਾ ਸਾਫ਼:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "ਨਹੀਂ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "ਹਾਂ"
 
 #. Type: text
 #. Description

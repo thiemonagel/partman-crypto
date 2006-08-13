@@ -190,13 +190,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "না"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "হ্যাঁ"
 
 #. Type: text
 #. Description

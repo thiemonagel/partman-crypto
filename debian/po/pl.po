@@ -185,13 +185,13 @@ msgstr "Usuwanie danych:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "nie"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "tak"
 
 #. Type: text
 #. Description

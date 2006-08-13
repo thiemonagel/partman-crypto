@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-13 22:52+0000\n"
-"PO-Revision-Date: 2006-07-16 02:39+0200\n"
+"PO-Revision-Date: 2006-08-10 21:54+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -188,13 +188,13 @@ msgstr "Стерти дані:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "ні"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "так"
 
 #. Type: text
 #. Description

@@ -191,13 +191,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "tidak"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "ya"
 
 #. Type: text
 #. Description

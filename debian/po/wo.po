@@ -187,13 +187,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "déet"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "waaw"
 
 #. Type: text
 #. Description

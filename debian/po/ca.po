@@ -189,13 +189,13 @@ msgstr "Suprimeix les dades:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "no"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "sí"
 
 #. Type: text
 #. Description

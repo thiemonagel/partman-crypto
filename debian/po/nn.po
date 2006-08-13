@@ -4,7 +4,6 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # translation of nn.po to Norwegian Nynorsk
-# translation of nn.po to Norwegian nynorsk
 # translation of debian-installer.po to Norwegian nynorsk
 # Norwegian Nynorsk messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
@@ -16,7 +15,7 @@ msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-13 22:52+0000\n"
-"PO-Revision-Date: 2006-05-14 18:07+0200\n"
+"PO-Revision-Date: 2006-06-19 11:01+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian Nynorsk <nn@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -192,13 +191,13 @@ msgstr "Slett data:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "nei"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "ja"
 
 #. Type: text
 #. Description

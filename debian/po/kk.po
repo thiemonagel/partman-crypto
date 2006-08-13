@@ -188,17 +188,19 @@ msgstr ""
 msgid "Erase data:"
 msgstr ""
 
+# ../partman-basicfile systems.templates:96
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "жоқ"
 
+# ../partman-basicfile systems.templates:91
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "иә"
 
 # ../partman-basicfile systems.templates:71 ../partman-ext2r0.templates:36
 #. Type: text

@@ -183,13 +183,13 @@ msgstr "消除資料："
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "否"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "是"
 
 #. Type: text
 #. Description

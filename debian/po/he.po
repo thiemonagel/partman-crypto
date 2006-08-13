@@ -187,12 +187,18 @@ msgstr ""
 #: ../partman-crypto.templates:117
 msgid "no"
 msgstr ""
+"#-#-#-#-#  he.po (partman-basicmethods)  #-#-#-#-#\n"
+"לא#-#-#-#-#  he.po (partman-basicfilesystems)  #-#-#-#-#\n"
+"לא"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
 msgstr ""
+"#-#-#-#-#  he.po (partman-basicmethods)  #-#-#-#-#\n"
+"כן#-#-#-#-#  he.po (partman-basicfilesystems)  #-#-#-#-#\n"
+"כן"
 
 #. Type: text
 #. Description

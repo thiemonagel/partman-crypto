@@ -184,13 +184,13 @@ msgstr "مسح البيانات:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "لا"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "نعم"
 
 #. Type: text
 #. Description

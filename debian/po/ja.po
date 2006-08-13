@@ -183,13 +183,13 @@ msgstr "データの削除:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "いいえ"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "はい"
 
 #. Type: text
 #. Description

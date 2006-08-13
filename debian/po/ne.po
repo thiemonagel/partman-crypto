@@ -184,13 +184,13 @@ msgstr "डेटा मेट्नुहोस्:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "होइन"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "हो"
 
 #. Type: text
 #. Description

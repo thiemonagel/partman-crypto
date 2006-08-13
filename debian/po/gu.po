@@ -182,13 +182,13 @@ msgstr "માહિતી ભૂંસો:"
 #. Description
 #: ../partman-crypto.templates:117
 msgid "no"
-msgstr ""
+msgstr "ના"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr ""
+msgstr "હા"
 
 #. Type: text
 #. Description

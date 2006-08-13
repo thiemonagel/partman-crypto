@@ -191,8 +191,9 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:121
+#, fuzzy
 msgid "yes"
-msgstr ""
+msgstr "Ewe"
 
 #. Type: text
 #. Description

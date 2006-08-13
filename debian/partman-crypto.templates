@@ -112,6 +112,14 @@ Type: text
 # by "yes" or "no"
 _Description: Erase data:
 
+Template: partman-crypto/text/no_erase_data
+Type: text
+_Description: no
+
+Template: partman-crypto/text/yes_erase_data
+Type: text
+_Description: yes
+
 Template: partman-crypto/text/erase_data_partition
 Type: text
 _Description: Erase data on this partition

@@ -12,11 +12,11 @@ cd $dev
 
 choice_erase () {
 	if [ -f $part/skip_erase ]; then
-		#db_metaget partman-crypto/text/erase_data description
-		erase="no"
+		db_metaget partman-crypto/text/no_erase_data description || RET=''
+		erase=${RET:-no}
 	else
-		#db_metaget partman-crypto/text/dont_erase_data description
-		erase="yes"
+		db_metaget partman-crypto/text/yes_erase_data description || RET=''
+		erase=${RET:-yes}
 	fi
 
 	db_metaget partman-crypto/text/erase_data description

@@ -108,7 +108,7 @@ crypttab_add_entry () {
 	fi
 	if [ $method = swap ]; then
 		opts="$opts,swap"
-	elif [ $mnt = /tmp ]; then
+	elif [ $mnt = /tmp -a $keytype = random ]; then
 		opts="$opts,tmp"
 	fi
 

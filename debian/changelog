@@ -1,13 +1,18 @@
 partman-crypto (10) UNRELEASED; urgency=low
 
+  [ Max Vozeler ]
   * Name dm-crypt devices according to the underlying block devices
     (like hda5_crypt). Closes: #382398;
   * Drop leading _dev_ from the name of loop-AES keyfiles
   * Yes/no choices for erase data can be translated. Thanks to
     Miroslav Kure. Closes: #382605
-  * Limit key sizes for dm-crypt/blowfish. Closes: #381981, #383797 
+  * Limit key sizes for dm-crypt/blowfish. Closes: #381981
 
- -- Max Vozeler <xam@debian.org>  Sat, 19 Aug 2006 17:56:22 +0200
+  [ David Härdeman ]
+  * Only set the tmp option in crypttab if /tmp is on a random keyed
+    mapping (closes: #382374)
+
+ -- David Härdeman <david@2gen.com>  Sat, 19 Aug 2006 20:15:33 +0200
 
 partman-crypto (9) unstable; urgency=low
 

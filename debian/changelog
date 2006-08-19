@@ -5,8 +5,9 @@ partman-crypto (10) UNRELEASED; urgency=low
   * Drop leading _dev_ from the name of loop-AES keyfiles
   * Yes/no choices for erase data can be translated. Thanks to
     Miroslav Kure. Closes: #382605
+  * Limit key sizes for dm-crypt/blowfish. Closes: #381981, #383797 
 
- -- Max Vozeler <xam@debian.org>  Sun, 13 Aug 2006 19:18:12 +0200
+ -- Max Vozeler <xam@debian.org>  Sat, 19 Aug 2006 17:56:22 +0200
 
 partman-crypto (9) unstable; urgency=low
 

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-13 22:52+0000\n"
-"PO-Revision-Date: 2006-07-16 18:04+0100\n"
+"PO-Revision-Date: 2006-08-19 14:42+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -358,7 +358,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Megtartod e partícionálást és konfigurálod a titkosított köteteket?"
+msgstr "Megtartod e particionálást és konfigurálod a titkosított köteteket?"
 
 #. Type: boolean
 #. Description
@@ -680,7 +680,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"A ${DEVICE} eszközhöz véletlen kulcsot választottál, de a partícionálóban "
+"A ${DEVICE} eszközhöz véletlen kulcsot választottál, de a particionálóban "
 "fájlrendszer létrehozást."
 
 #. Type: boolean

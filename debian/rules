@@ -36,6 +36,7 @@ install-arch: build
 	dh_testroot
 	dh_clean -k
 	debian/install-rc init.d
+	debian/install-rc commit.d
 	debian/install-rc choose_partition
 	debian/install-rc choose_method
 	debian/install-rc active_partition

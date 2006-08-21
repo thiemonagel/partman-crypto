@@ -1,0 +1,49 @@
+#!/bin/sh
+
+. /lib/partman/definitions.sh
+
+# 1. Check if active encrypted devices exist
+crypto=no
+for dev in $DEVICES/*; do
+	[ -d "$dev" ] || continue
+	cd $dev
+	if [ -f crypt_realdev ]; then
+		crypto=yes
+		break
+	fi
+done
+
+if [ $crypto = no ]; then
+	exit 0
+fi
+
+# 2. Check if unencrypted swap exists
+for dev in $DEVICES/*; do
+	[ -d "$dev" ] || continue
+	cd $dev
+
+	# Ignore swap on crypto
+	[ -f crypt_realdev ] && continue
+
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		[ "$fs" != free ] || continue
+		partitions="$partitions $id,$num"
+	done
+	close_dialog
+	
+	for part in $partitions; do
+		id=${part%,*}
+		num=${part#*,}
+		[ -f $id/method ] || continue
+		method=$(cat $id/method)
+		if [ "$method" = swap ]; then
+			# Unsafe swap! Abort commit
+			db_fset partman-crypto/unsafe_swap seen false
+			db_input critical partman-crypto/unsafe_swap
+			db_go || true
+			exit 1
+		fi
+	done
+done

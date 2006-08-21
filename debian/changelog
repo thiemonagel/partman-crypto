@@ -8,12 +8,14 @@ partman-crypto (10) UNRELEASED; urgency=low
     Miroslav Kure. Closes: #382605
   * Limit key sizes for dm-crypt/blowfish. Closes: #381981
   * Add lintian override for no-standards-version-field
+  * Check for unencrypted swap in commit.d/unsafe_swap to catch
+    setup after encrypted devices. Closes: #381870
 
   [ David Härdeman ]
   * Only set the tmp option in crypttab if /tmp is on a random keyed
     mapping (closes: #382374)
 
- -- Max Vozeler <xam@debian.org>  Mon, 21 Aug 2006 13:52:27 +0200
+ -- Max Vozeler <xam@debian.org>  Mon, 21 Aug 2006 14:42:53 +0200
 
 partman-crypto (9) unstable; urgency=low
 

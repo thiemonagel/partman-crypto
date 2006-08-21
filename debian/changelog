@@ -7,12 +7,13 @@ partman-crypto (10) UNRELEASED; urgency=low
   * Yes/no choices for erase data can be translated. Thanks to
     Miroslav Kure. Closes: #382605
   * Limit key sizes for dm-crypt/blowfish. Closes: #381981
+  * Add lintian override for no-standards-version-field
 
   [ David Härdeman ]
   * Only set the tmp option in crypttab if /tmp is on a random keyed
     mapping (closes: #382374)
 
- -- David Härdeman <david@2gen.com>  Sat, 19 Aug 2006 20:15:33 +0200
+ -- Max Vozeler <xam@debian.org>  Mon, 21 Aug 2006 13:52:27 +0200
 
 partman-crypto (9) unstable; urgency=low
 

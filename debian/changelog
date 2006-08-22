@@ -15,6 +15,9 @@ partman-crypto (10) UNRELEASED; urgency=low
   * Only set the tmp option in crypttab if /tmp is on a random keyed
     mapping (closes: #382374)
 
+  [ Colin Watson ]
+  * Use /dev/loop$n if the /dev/loop directory doesn't exist.
+
  -- Max Vozeler <xam@debian.org>  Mon, 21 Aug 2006 14:42:53 +0200
 
 partman-crypto (9) unstable; urgency=low

@@ -31,34 +31,28 @@ loop_is_safe() {
 
 swap_is_safe () {
 	local swap
-	local ret=0
 	local IFS="
 "
 
 	for swap in $(cat /proc/swaps); do
 		case $swap in
-			Filename*)
-			  # Header
-			  continue
-			  ;;
-			/dev/loop*)
-			  if ! loop_is_safe ${swap%% *}; then
-				  ret=1
-			  fi
-			  ;;
-			/dev/mapper/*)
-			  if ! dm_is_safe ${swap%% *}; then
-				  ret=1
-			  fi
-			  ;;
-			*)
-			  # Presumably not OK
-			  ret=1
-			  ;;
+		Filename*)
+			continue
+			;;
+		/dev/loop*)
+			loop_is_safe ${swap%% *} || return 1
+			;;
+		/dev/mapper/*)
+			dm_is_safe ${swap%% *} || return 1
+			;;
+		*)
+			# Presume not safe
+			return 1
+			;;
 		esac
 	done
 
-	return $ret
+	return 0
 }
 
 get_free_loop () {
@@ -112,6 +106,7 @@ setup_loopaes () {
 	random)
 		opts="-H random"
 		pass="/dev/null"
+		;;
 	esac
 
 	log-output -t partman-crypto \
@@ -191,32 +186,32 @@ setup_cryptdev () {
 	done
 
 	case $type in
-		dm-crypt)
-		  cryptdev=$(mapdevfs $realdev)
-		  cryptdev="${cryptdev##*/}_crypt"
-		  if [ -b "/dev/mapper/$cryptdev" ]; then
-			  cryptdev=$(get_free_mapping)
-			  if [ -z "$cryptdev" ]; then
-				  return 1
-			  fi
-		  fi
-		  if [ $keytype = passphrase ]; then
-			  setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
-		  elif [ $keytype = random ]; then
-			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize $keyfile || return 1
-		  else
-			  setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
-		  fi
-		  cryptdev="/dev/mapper/$cryptdev"
-		  ;;
-	  
-		loop-AES)
-		  cryptdev=$(get_free_loop);
-		  if [ -z "$cryptdev" ]; then
-			  return 1
-		  fi
-		  setup_loopaes $cryptdev $realdev $cipher $keytype $keyfile || return 1
-		  ;;
+	dm-crypt)
+		cryptdev=$(mapdevfs $realdev)
+		cryptdev="${cryptdev##*/}_crypt"
+		if [ -b "/dev/mapper/$cryptdev" ]; then
+			cryptdev=$(get_free_mapping)
+			if [ -z "$cryptdev" ]; then
+				return 1
+			fi
+		fi
+		if [ $keytype = passphrase ]; then
+			setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
+		elif [ $keytype = random ]; then
+			setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize $keyfile || return 1
+		else
+			setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
+		fi
+		cryptdev="/dev/mapper/$cryptdev"
+		;;
+
+	loop-AES)
+		cryptdev=$(get_free_loop);
+		if [ -z "$cryptdev" ]; then
+			return 1
+		fi
+		setup_loopaes $cryptdev $realdev $cipher $keytype $keyfile || return 1
+		;;
 
 	esac
 
@@ -353,7 +348,7 @@ crypto_dooption () {
 		for value in $(cat $altfile); do
 			description="$value"
 			template="partman-crypto/text/$option/$value"
-			db_metaget $template description && description="$RET" 
+			db_metaget $template description && description="$RET"
 			printf "%s\t%s\n" $value "$description"
 		done
 	)
@@ -381,7 +376,7 @@ crypto_load_modules() {
 
 	for modulefile in \
 	  /lib/partman/ciphers/$type/module \
-	  /lib/partman/ciphers/$type/$cipher/module; do 
+	  /lib/partman/ciphers/$type/$cipher/module; do
 		[ -f $modulefile ] || continue
 		for module in $(cat $modulefile); do
 			if [ -f $moduledir/$module ]; then
@@ -412,19 +407,19 @@ crypto_set_defaults () {
 	[ -d $part ] || return 1
 
 	case $type in
-	loop-AES)
-		echo AES256 > $part/cipher
-		echo keyfile > $part/keytype
-		rm -f $part/keysize
-		rm -f $part/ivalgorithm
-		rm -f $part/keyhash
-		;;
 	dm-crypt)
 		echo aes > $part/cipher
 		echo 256 > $part/keysize
 		echo cbc-essiv:sha256 > $part/ivalgorithm
 		echo passphrase > $part/keytype
 		echo sha256 > $part/keyhash
+		;;
+	loop-AES)
+		echo AES256 > $part/cipher
+		echo keyfile > $part/keytype
+		rm -f $part/keysize
+		rm -f $part/ivalgorithm
+		rm -f $part/keyhash
 		;;
 	esac
 
@@ -437,12 +432,12 @@ crypto_check_required_tools() {
 
 	tools=""
 	case $1 in
-		dm-crypt)
-			tools="/bin/blockdev-keygen /sbin/dmsetup /sbin/cryptsetup"
-			;;
-		loop-AES)
-			tools="/bin/blockdev-keygen /usr/bin/gpg /bin/base64"
-			;;
+	dm-crypt)
+		tools="/bin/blockdev-keygen /sbin/dmsetup /sbin/cryptsetup"
+		;;
+	loop-AES)
+		tools="/bin/blockdev-keygen /usr/bin/gpg /bin/base64"
+		;;
 	esac
 
 	for tool in $tools; do
@@ -461,14 +456,13 @@ crypto_check_required_options() {
 	path=$1
 	type=$2
 
-	options=""
 	case $type in
-		dm-crypt)
-			options="cipher keytype keyhash ivalgorithm keysize"
-			;;
-		loop-AES)
-			options="cipher keytype"
-			;;
+	dm-crypt)
+		options="cipher keytype keyhash ivalgorithm keysize"
+		;;
+	loop-AES)
+		options="cipher keytype"
+		;;
 	esac
 
 	list=""
@@ -554,7 +548,7 @@ crypto_check_setup() {
 }
 
 crypto_setup() {
-	local interactive s dev id size path methods partitions type keytype keysize 
+	local interactive s dev id size path methods partitions type keytype keysize
 	interactive=$1
 	if [ "$interactive" != "no" ]; then
 		interactive="yes"

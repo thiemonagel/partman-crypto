@@ -94,9 +94,10 @@ read_random () {
 
 	db_capb
 	set -- $RET 
-	for cap in $*; do
+	for cap; do
 		if [ "$cap" = plugin-entropy-text ]; then
 			use_entropy_plugin=yes
+			break
 		fi
 	done
 

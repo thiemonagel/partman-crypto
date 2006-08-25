@@ -8,17 +8,19 @@ Build-Depends: debhelper (>= 5.0.25), po-debconf (>= 0.5.0)
 Package: partman-crypto
 XC-Package-Type: udeb
 Architecture: any
-Depends: partman-base (>= 87), partman-crypto-dm, partman-crypto-loop, cdebconf-newt-entropy (>= 0.3), ${shlibs:Depends}, ${misc:Depends}
+Depends: partman-base (>= 87), ${shlibs:Depends}, ${misc:Depends}
 Description: Add to partman support for block device encryption
 
 Package: partman-crypto-dm
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-crypto, crypto-modules, cryptsetup-udeb
+Priority: optional
+Depends: partman-crypto, crypto-modules, cryptsetup-udeb, cdebconf-newt-entropy (>= 0.3)
 Description: Add to partman support for dm-crypt encryption
 
 Package: partman-crypto-loop
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb
+Priority: optional
+Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb, cdebconf-newt-entropy (>= 0.3)
 Description: Add to partman support for loop-AES encryption

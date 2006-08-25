@@ -381,7 +381,7 @@ crypto_load_modules() {
 		for module in $(cat $modulefile); do
 			if [ -f $moduledir/$module ]; then
 				# Already loaded
-				continue;
+				continue
 			fi
 	
 			if modprobe -q $module; then
@@ -396,9 +396,56 @@ crypto_load_modules() {
 	return 0
 }
 
-# Does initial setup for a crypto method:
-#  1) sets default values
-#  2) loads default modules
+# Loads additional crypto udebs
+crypto_load_udebs() {
+	local packages udebdir package memfree
+	packages="$1"
+	udebdir=/var/run/partman-crypto/udebs
+
+	if [ -z "$packages" ]; then
+		return 0
+	fi
+
+	if [ ! -d $udebdir ]; then
+		mkdir -p $udebdir
+	fi
+
+
+	for package in $packages; do
+		if [ -f $udebdir/$package ]; then
+			continue
+		fi
+
+		if [ -e /proc/meminfo ]; then
+			memfree=$(grep MemFree /proc/meminfo | head -1 | \
+				  sed 's/.*:[[:space:]]*\([0-9]*\).*/\1/')
+			# A more or less arbitrary limit
+			if [ "$memfree" -lt 10000 ]; then
+				db_set partman-crypto/install_udebs_low_mem false
+				db_fset partman-crypto/install_udebs_low_mem seen false
+				db_input critical partman-crypto/install_udebs_low_mem
+				db_go || true
+				db_get partman-crypto/install_udebs_low_mem
+				if [ "$RET" != true ]; then
+					return 1
+				fi
+			fi
+		fi
+
+		if ! anna-install $package; then
+			db_fset partman-crypto/install_udebs_failure seen false
+			db_input critical partman-crypto/install_udebs_failure
+			db_go || true
+			return 1
+		fi
+
+		touch $udebdir/$package
+	done
+
+	return 0
+}
+
+# Sets the defaults for a given crypto type
 crypto_set_defaults () {
 	local part type
 	part=$1
@@ -422,9 +469,53 @@ crypto_set_defaults () {
 		rm -f $part/keyhash
 		;;
 	esac
+	return 0
+}
 
-	# Also load the modules needed for the chosen type/cipher
-	crypto_load_modules $type "$(cat $part/cipher)"
+# Does initial setup for a crypto method:
+#  1) Loads the appropriate udebs
+#  2) Loads the appropriate kernel modules
+#  3) Sets default values
+crypto_prepare_method () {
+	local part type package
+	part=$1
+	type=$2
+	package=''
+
+	[ -d $part ] || return 1
+	case $type in
+	dm-crypt)
+		package="partman-crypto-dm"
+		;;
+	loop-AES)
+		package="partman-crypto-loop"
+		;;
+	*)
+		return 1
+		;;
+	esac
+
+	# 1A - Pull in the method package and additional dependencies
+	if ! crypto_load_udebs $package; then
+		return 1
+	fi
+
+	# 1B - Verify that it worked
+	if ! crypto_check_required_tools $type; then
+		return 1
+	fi
+
+	# 2 - Also load the kernel modules needed for the chosen type/cipher
+	if ! crypto_load_modules $type $(cat $part/cipher); then
+		return 1
+	fi
+
+	# 3 - Finally, set the defaults for the chosen type
+	if ! crypto_set_defaults $part $type; then
+		return 1
+	fi
+
+	return 0
 }
 
 crypto_check_required_tools() {
@@ -438,6 +529,8 @@ crypto_check_required_tools() {
 	loop-AES)
 		tools="/bin/blockdev-keygen /usr/bin/gpg /bin/base64"
 		;;
+	*)
+		return 1
 	esac
 
 	for tool in $tools; do

@@ -363,6 +363,18 @@ _Description: Are you sure you want to use a random key?
  be destroyed upon each reboot. This should only be used for
  swap partitions.
 
+Template: partman-crypto/install_udebs_failure
+Type: error
+_Description: Failed to download crypto components
+ An error occurred trying to download additional crypto components.
+
+Template: partman-crypto/install_udebs_low_mem
+Type: boolean
+_Description: Proceed to install crypto components despite insufficient memory?
+ There does not seem to be sufficient memory available to install
+ additional crypto components. Would you like to go ahead and try
+ anyway? Note that this may crash the installation process.
+
 Template: partman-crypto/warning_experimental_nonaudit
 Type: boolean
 Default: false

@@ -25,19 +25,30 @@ select_crypto_type () {
 		done
 	)
 
+	if [ -z "$choices" ]; then
+		return 1
+	fi
+
 	template="partman-crypto/crypto_type"
 	if ! debconf_select critical $template "$choices" ""; then
-		return
+		return 1
 	fi
 	type=$RET
+
 	echo $type > $part/crypto_type
-	crypto_set_defaults $part $type
+	crypto_prepare_method $part $type || return 1
+
+	return 0
 }
 
 [ -f $part/method ] || exit 0
 method=$(cat $part/method)
 
 if [ $method = crypto ]; then
-	select_crypto_type
+	# Load all known crypto types
+	crypto_load_udebs partman-crypto-dm
+	crypto_load_udebs partman-crypto-loop
+
+	select_crypto_type || return 1
 fi
 

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-25 22:53+0000\n"
-"PO-Revision-Date: 2006-07-25 00:05+0900\n"
+"PO-Revision-Date: 2006-08-20 16:56-0400\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -692,8 +692,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "설치 프로그램 구성 요소를 읽어들이는 데 실패했습니다"
 
 #. Type: error
 #. Description

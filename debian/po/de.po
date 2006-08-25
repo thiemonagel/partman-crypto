@@ -14,14 +14,14 @@
 # Jan Luebbe <jluebbe@lasnet.de>, 2003.
 # Thorsten Sauter <tsauter@gmx.net>, 2003.
 #
-# This file is maintained by Dennis Stampfer <seppy@debian.org>
+# This file is maintained by Jens Seidel <jensseidel@users.sf.net>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-25 22:53+0000\n"
-"PO-Revision-Date: 2006-07-19 21:45+0200\n"
+"PO-Revision-Date: 2006-08-23 23:49+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: vim\n"
 
+# FIXME: letzter Buchstabe "g" wird abgeschnitten
 #. Type: text
 #. Description
 #. File system name
@@ -738,8 +739,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Fehler beim Laden der Installer-Komponenten"
 
 #. Type: error
 #. Description

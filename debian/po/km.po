@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-25 22:53+0000\n"
-"PO-Revision-Date: 2006-08-11 14:44+0700\n"
+"PO-Revision-Date: 2006-08-15 13:50+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
@@ -688,8 +688,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "បាន​បរាជ័យ​ក្នុងការ​ផ្ទុក​សមាសភាគ​កម្មវិធី​ដំឡើង"
 
 #. Type: error
 #. Description

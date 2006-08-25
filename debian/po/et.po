@@ -695,8 +695,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Paigaldaja komponendi laadimine nurjus"
 
 #. Type: error
 #. Description

@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-25 22:53+0000\n"
-"PO-Revision-Date: 2006-07-03 15:05+0200\n"
+"PO-Revision-Date: 2006-08-15 01:05+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -709,8 +709,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Ezin izan da instalatzailearen osagaia kargatu"
 
 #. Type: error
 #. Description

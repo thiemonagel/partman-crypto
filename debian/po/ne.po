@@ -699,8 +699,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "स्थापनाकर्ता अवयव लोड हुन सकेन"
 
 #. Type: error
 #. Description

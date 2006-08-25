@@ -740,8 +740,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Σφάλμα κατά τη φόρτωση πακέτου λογισμικού του εγκαταστάτη"
 
 #. Type: error
 #. Description

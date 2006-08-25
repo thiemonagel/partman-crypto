@@ -711,8 +711,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Klarte ikkje laste installsjonskomponent"
 
 #. Type: error
 #. Description

@@ -720,8 +720,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
+#, fuzzy
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "ইনস্টলার অংশ লোড করা যায় নি"
 
 #. Type: error
 #. Description

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-13 22:52+0000\n"
+"POT-Creation-Date: 2006-08-25 22:53+0000\n"
 "PO-Revision-Date: 2006-05-04 20:00+0600\n"
 "Last-Translator: Progga <progga@BengaLinux.Org>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -717,15 +717,43 @@ msgstr ""
 "প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে।  এটি শুধুমাত্র সোয়াপ পার্টিশনের "
 "ক্ষেত্রেই ব্যবহার করা উচিত্‍।"
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+msgid "Failed to download crypto components"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+#, fuzzy
+msgid "An error occurred trying to download additional crypto components."
+msgstr "এনক্রিপ্টেড ভলিউম কনফিগার করার সময় একটি সমস্যা হয়েছে।"
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:373
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:373
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. Would you like to go ahead and try anyway? Note that this "
+"may crash the installation process."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:381
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

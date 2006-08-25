@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-13 22:52+0000\n"
+"POT-Creation-Date: 2006-08-25 22:53+0000\n"
 "PO-Revision-Date: 2006-08-12 19:21+0200\n"
 "Last-Translator: Jacobo Tarrio <jtarrio@debian.org>\n"
 "Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
@@ -704,15 +704,43 @@ msgstr ""
 "destruídos en cada reinicio. Isto só se debería empregar en particións de "
 "intercambio."
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+msgid "Failed to download crypto components"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+#, fuzzy
+msgid "An error occurred trying to download additional crypto components."
+msgstr "Houbo un erro ao configurar os volumes cifrados."
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:373
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:373
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. Would you like to go ahead and try anyway? Note that this "
+"may crash the installation process."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
 msgstr "¿Está seguro de querer empregar cifrado de dispositivos de bloques?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:381
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

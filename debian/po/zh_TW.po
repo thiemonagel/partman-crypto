@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-13 22:52+0000\n"
+"POT-Creation-Date: 2006-08-25 22:53+0000\n"
 "PO-Revision-Date: 2006-07-30 01:30+0800\n"
 "Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -675,15 +675,43 @@ msgstr ""
 "類型為使用隨機產生的密鑰表示這個分割區裡的資料會在每次開機時被清除掉。這應該"
 "是只用於 Swap 分割區。"
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+msgid "Failed to download crypto components"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+#, fuzzy
+msgid "An error occurred trying to download additional crypto components."
+msgstr "在設定加密的 Volume 時發生錯誤。"
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:373
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:373
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. Would you like to go ahead and try anyway? Note that this "
+"may crash the installation process."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
 msgstr "是否真要使用區塊裝置加密？"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:381
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

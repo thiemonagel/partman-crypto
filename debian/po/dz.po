@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-13 22:52+0000\n"
+"POT-Creation-Date: 2006-08-25 22:53+0000\n"
 "PO-Revision-Date: 2006-07-19 15:42+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -698,15 +698,43 @@ msgstr ""
 "གང་བྱུང་ལྡེ་མིག་བུ་གི་དབྱེ་བ་ལག་ལེན་འཐབ་ནི་ཟེར་མི་དེ་བར་བཅད་གནད་སྡུད་འདི་ལོག་བུཊི་རེ་རེ་ལུ་རྩ་མེད་བཏང་"
 "ནི་ཨིན། འ་ནི་འདི་བརྗེ་སོར་བར་བཅད་ཚུ་གི་དོན་ལུ་རྐྱངམ་ཅིག་ལག་ལེན་འཐབ་དགོ།"
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+msgid "Failed to download crypto components"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+#, fuzzy
+msgid "An error occurred trying to download additional crypto components."
+msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:373
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:373
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. Would you like to go ahead and try anyway? Note that this "
+"may crash the installation process."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
 msgstr "སྡེབ་ཚན་ཐབས་འཕྲུལ་གསང་བཟོ་འདི་ འཐད་རི་འབའ་རི་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:381
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-13 22:52+0000\n"
+"POT-Creation-Date: 2006-08-25 22:53+0000\n"
 "PO-Revision-Date: 2006-08-22 08:14+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
@@ -715,15 +715,43 @@ msgstr ""
 "Ibig sabihin ng random key type ay ang nilalaman ng partisyon ay buburahin "
 "sa bawat pag-boot. Dapat gamitin lamang ito sa mga partisyong pang-swap."
 
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+msgid "Failed to download crypto components"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:368
+#, fuzzy
+msgid "An error occurred trying to download additional crypto components."
+msgstr "May naganap na error habang nagsasaayos ng encrypted na volume."
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:373
+msgid "Proceed to install crypto components despite insufficient memory?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:373
+msgid ""
+"There does not seem to be sufficient memory available to install additional "
+"crypto components. Would you like to go ahead and try anyway? Note that this "
+"may crash the installation process."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
 msgstr "Talagang gumamit ng encryption sa block device?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:381
 msgid ""
 "The support for block device encryption is still experimental and not "
 "considered ready for production. In particular it may result in setups that "

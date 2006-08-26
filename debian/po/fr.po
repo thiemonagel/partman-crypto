@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-22 13:53+0200\n"
+"PO-Revision-Date: 2006-08-26 09:30+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -729,32 +729,37 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Échec de l'installation du composant"
+msgstr "Échec de la récupération de composants de chiffrement"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Une erreur s'est produite lors de la configuration des volumes chiffrés."
+"Une erreur s'est produite lors de la récupération de composants "
+"supplémentaires pour la gestion des partitions chiffrées."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Continuer l'installation des composants de chiffrement malgré le manque de "
+"mémoire?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
+#, fuzzy
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"La mémoire disponible semble être insuffisante pour installer des composants "
+"de gestion du chiffrement des partitions. Si vous choisissez de continuer "
+"malgré tout, le processus d'installation pourrait échouer."
 
 #. Type: boolean
 #. Description

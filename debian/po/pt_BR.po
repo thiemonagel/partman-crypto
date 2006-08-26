@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-25 22:53+0000\n"
-"PO-Revision-Date: 2006-07-16 12:48-0300\n"
+"PO-Revision-Date: 2006-08-25 23:15-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -715,23 +715,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Falha ao carregar componente do instalador"
+msgstr "Falha ao carregar componentes de criptografia"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes encriptados."
+"Um erro ocorreu durante a tentativa de fazer o download dos componentes de "
+"criptografia."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Continuar a instalar os componentes de criptografia mesmo com memória "
+"insuficiente ?"
 
 #. Type: boolean
 #. Description
@@ -741,6 +742,9 @@ msgid ""
 "crypto components. Would you like to go ahead and try anyway? Note that this "
 "may crash the installation process."
 msgstr ""
+"Parece não existir memória suficiente disponível para instalar componentes "
+"de criptografia adicionais. Você gostaria de seguir em frente e tentar mesmo "
+"assim ? Note que isso pode congelar o processo de instalação."
 
 #. Type: boolean
 #. Description

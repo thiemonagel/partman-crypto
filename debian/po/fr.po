@@ -751,7 +751,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
-#, fuzzy
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "

@@ -25,9 +25,9 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-11 12:58+0300\n"
+"PO-Revision-Date: 2006-08-27 01:40+0300\n"
 "Last-Translator: Eddy Petrişor <eddy.petrisor@gmail.com>\n"
-"Language-Team: Română <debian-l10n-romanian@lists.debian.org>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -732,22 +732,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Încărcarea componentei programului de instalare a eşuat"
+msgstr "Descărcarea componentelor de criptare a eşuat"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "A apărut o eroare în timpul configurării volumelor criptate."
+msgstr ""
+"A apărut o eroare în timpul tentativei de descărcare a componentelor de "
+"criptare suplimentare."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Se continuă instalarea componentelor de criptare deşi nu este memorie "
+"suficientă?"
 
 #. Type: boolean
 #. Description
@@ -757,6 +759,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Se pare că nu este suficientă memorie disponibilă pantru a instala modulele "
+"de criptare adiţionale. Dacă, totuşi, alegeţi să continuaţi, este posibil ca "
+"instalarea să eşueze."
 
 #. Type: boolean
 #. Description

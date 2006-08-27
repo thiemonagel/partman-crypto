@@ -31,9 +31,8 @@ msgstr ""
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
-#, fuzzy
 msgid "crypto"
-msgstr "Criptiú:"
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -41,9 +40,8 @@ msgstr "Criptiú:"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Aislúbadh (lúb%s)"
+msgstr "Aislúbadh (lúb-AES)"
 
 #. Type: text
 #. Description
@@ -60,22 +58,20 @@ msgstr ""
 #. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
-msgstr ""
+msgstr "neamhghníomhach"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Eochair chriptiúcháin:"
+msgstr "Modh criptithe:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Suíomh na deighilte nuaí:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -110,16 +106,15 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algartam IV:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Suíomh na deighilte nuaí:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -150,16 +145,14 @@ msgstr ""
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Eochair chriptiúcháin:"
+msgstr "Hais le haghaidh na heochrach criptiúcháin:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Suíomh na deighilte nuaí:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -177,7 +170,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Léirscrios sonraí:"
 
 #. Type: text
 #. Description
@@ -194,16 +187,14 @@ msgstr "tá"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Cruthaigh deighilt nua"
+msgstr "Léirscrios sonraí ar an deighilt seo"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Léirscrios an diosca iomlán: ${DEVICE}"
+msgstr "Léirscrios na sonraí ar ${DEVICE} i ndáiríre?"
 
 #. Type: boolean
 #. Description
@@ -217,9 +208,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Léirscrios an diosca iomlán: ${DEVICE}"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -329,9 +319,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Scríobh athruithe ar na dioscaí?"
+msgstr ""
+"Scríobh na hathruithe ar na diosca agus cumraigh imleabhair chriptithe?"
 
 #. Type: boolean
 #. Description
@@ -372,9 +362,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "D'éirigh le huathchumraíocht an líonra"
+msgstr "Tobscoireadh an chumraíocht."
 
 #. Type: error
 #. Description
@@ -649,9 +638,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Theip ar chomhpháirt suiteála a luchtú"
+msgstr "Theip ar chomhpháirteanna criptithe a íosluchtú"
 
 #. Type: error
 #. Description

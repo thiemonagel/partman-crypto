@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-16 20:07+0200\n"
+"PO-Revision-Date: 2006-08-27 13:42+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -697,22 +697,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Načítanie súčasti inštalačného programu zlyhalo"
+msgstr "Načítanie šifrovacích súčastí zlyhalo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Pri nastavení šifrovaných zväzkov došlo k chybe."
+msgstr "Pri sťahovaní dodatočných šifrovacích súčastí došlo k chybe."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Pokračovať v inštalácii šifrovacích súčastí aj napriek nedostatku pamäti?"
 
 #. Type: boolean
 #. Description
@@ -722,6 +721,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Vyzerá to tak, že nemáte dostatok voľnej pamäti na inštaláciu dodatočných "
+"šifrovacích súčastí. Ak sa aj napriek tomu rozhodnete pokračovať, inštalácia "
+"môže zlyhať."
 
 #. Type: boolean
 #. Description

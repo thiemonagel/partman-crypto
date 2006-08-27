@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-25 23:15-0300\n"
+"PO-Revision-Date: 2006-08-27 17:45-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -737,15 +737,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
-#, fuzzy
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
 "Parece não existir memória suficiente disponível para instalar componentes "
-"de criptografia adicionais. Você gostaria de seguir em frente e tentar mesmo "
-"assim ? Note que isso pode congelar o processo de instalação."
+"de criptografia adicionais. Caso você opte por ir em frente e continuar "
+"mesmo assim, o processo de instalação poderá falhar."
 
 #. Type: boolean
 #. Description

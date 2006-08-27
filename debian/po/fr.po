@@ -746,7 +746,7 @@ msgstr ""
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Continuer l'installation des composants de chiffrement malgré le manque de "
-"mémoire?"
+"mémoire ?"
 
 #. Type: boolean
 #. Description

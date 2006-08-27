@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-23 21:28+0400\n"
+"PO-Revision-Date: 2006-08-27 15:00+0400\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -712,22 +712,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Не удалось загрузить компонент программы установки"
+msgstr "Не удалось загрузить компоненты шифрования"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Произошла ошибка при настройке шифрования томов."
+msgstr "Произошла ошибка при получении дополнительных компонент шифрования."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Продолжить установку компонент шифрования несмотря на недостаток памяти?"
 
 #. Type: boolean
 #. Description
@@ -737,6 +736,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Кажется, что для установки дополнительных компонент шифрования недостаточно "
+"памяти. Если вы выберите продолжить, установка может завершиться неудачно."
 
 #. Type: boolean
 #. Description

@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-12 12:56+0200\n"
+"PO-Revision-Date: 2006-08-27 12:52+0200\n"
 "Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
 "Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -726,22 +726,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Il caricamento del componente dell'installatore è fallito"
+msgstr "Il caricamento dei componenti relativi alla cifratura è fallito"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Errore nella configurazione dei volumi cifrati."
+msgstr ""
+"Si è verificato un errore cercando di caricare i componenti aggiuntivi "
+"relativi all cifratura."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Proseguire l'installazione dei componenti relativi alla cifratura nonostante "
+"la memoria sia insufficiente?"
 
 #. Type: boolean
 #. Description
@@ -751,6 +753,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"La memoria non pare sufficiente per l'installazione di moduli di cifratura "
+"aggiuntivi. Se si decide di proseguire il processo di installazione, si "
+"potrebbero riscontrare degli errori."
 
 #. Type: boolean
 #. Description

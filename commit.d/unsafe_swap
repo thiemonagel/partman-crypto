@@ -17,7 +17,7 @@ if [ $crypto = no ]; then
 	exit 0
 fi
 
-# 2. Check if unencrypted swap exists
+# 2. Check if unencrypted swap has been configured
 for dev in $DEVICES/*; do
 	[ -d "$dev" ] || continue
 	cd $dev
@@ -29,13 +29,11 @@ for dev in $DEVICES/*; do
 	open_dialog PARTITIONS
 	while { read_line num id size type fs path name; [ "$id" ]; }; do
 		[ "$fs" != free ] || continue
-		partitions="$partitions $id,$num"
+		partitions="$partitions $id"
 	done
 	close_dialog
 	
-	for part in $partitions; do
-		id=${part%,*}
-		num=${part#*,}
+	for id in $partitions; do
 		[ -f $id/method ] || continue
 		method=$(cat $id/method)
 		if [ "$method" = swap ]; then

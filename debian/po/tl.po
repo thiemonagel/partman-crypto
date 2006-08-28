@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-22 08:14+0800\n"
+"PO-Revision-Date: 2006-08-28 13:43+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -533,8 +533,8 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Ibigay muli ang password para sa remote na pagluklok upang masiguro na ito'y "
-"natanggap ng tugma."
+"Ibigay muli ang kontrasenyas para sa remote na pagluklok upang masiguro na "
+"ito'y natanggap ng tugma."
 
 #. Type: error
 #. Description
@@ -547,8 +547,8 @@ msgstr "Error sa pagpasok ng passphrase"
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Hindi magkapareho ang dalawng password na ibinigay niyo. Pakiulit ang "
-"pagbigay ng password."
+"Hindi magkapareho ang dalawng kontrasenyas na ibinigay niyo. Pakiulit ang "
+"pagbigay ng kontrasenyas."
 
 #. Type: note
 #. Description
@@ -718,22 +718,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Bigo sa pagpasok ng bahagi ng installer"
+msgstr "Bigo sa pagkuha ng mga crypto component"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "May naganap na error habang nagsasaayos ng encrypted na volume."
+msgstr ""
+"May naganap na error habang kinukuha ang mga karagdagang crypto component."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Magpatuloy ng pagluklok ng crypto components kahit kulang ang memory?"
 
 #. Type: boolean
 #. Description
@@ -743,6 +742,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Mukhang kulang ng memory na magagamit upang magluklok ng karagdagang crypto "
+"component. Kung piliin ninyong magpatuloy pa rin, maaaring mabigo ang "
+"proseso ng pagluklok."
 
 #. Type: boolean
 #. Description

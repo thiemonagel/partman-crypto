@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-23 00:12+0100\n"
+"PO-Revision-Date: 2006-08-28 06:24+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -397,7 +397,7 @@ msgstr "Konfiguration av krypterade volymer misslyckades"
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Ett fel uppstod med konfigurationen av krypterade volymer."
+msgstr "Ett fel inträffade med konfigurationen av krypterade volymer."
 
 #. Type: error
 #. Description
@@ -415,7 +415,7 @@ msgstr "Initiering av krypterad volym misslyckades"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Ett fel uppstod när de krypterade volymerna ställdes in."
+msgstr "Ett fel inträffade när de krypterade volymerna ställdes in."
 
 #. Type: text
 #. Description
@@ -616,7 +616,7 @@ msgstr "Skapandet av nyckelfil misslyckades."
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Ett fel uppstod vid skapandet av nyckelfilen."
+msgstr "Ett fel inträffade vid skapandet av nyckelfilen."
 
 #. Type: error
 #. Description
@@ -713,22 +713,22 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Misslyckades att läsa in installationskomponenter"
+msgstr "Misslyckades med att hämta krypteringskomponenter"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Ett fel uppstod med konfigurationen av krypterade volymer."
+msgstr ""
+"Ett fel inträffade vid försök att hämta ytterligare krypteringskomponenter."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Fortsätt att installera krypteringskomponenter trots otillräckligt minne?"
 
 #. Type: boolean
 #. Description
@@ -738,6 +738,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Det verkar inte finnas tillräckligt mycket minne tillgängligt för att "
+"installera ytterligare krypteringskomponenter. Om du väljer att fortsätta "
+"ändå finns det risk för att installationsprocessen misslyckas."
 
 #. Type: boolean
 #. Description

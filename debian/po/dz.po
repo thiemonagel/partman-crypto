@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-19 15:42+0530\n"
+"PO-Revision-Date: 2004-08-28 22:28+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
@@ -701,22 +701,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "གཞི་བཙུགས་ཆ་ཤས་མངོན་གསལ་འབད་ནི་ལུ་འཐུས་ཤོར་འབྱུང་ཡོད།"
+msgstr "ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་ཕབ་ལེན་འབདཝ་ད་ འཐུས་ཤོར་བྱུང་ཡོདཔ།"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "གསང་བཟོས་སྐད་ཤུགས་ཚུ་རིམ་སྒྲིག་འབདཝ་ད་འཛོལ་བ་བྱུང་ནུག།"
+msgstr "ཁ་སྐོང་ཅན་གྱི་ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་ཕབ་ལེན་འབད་ནིའི་འབད་རྩོལ་བསྐྱེདཔ་ད་ འཛོལ་བ་ཅིག་བྱུང་ཡི།"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "དྲན་ཚད་ལངམ་མེད་དེ་འབད་རུང་ ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་གཞི་བཙུགས་འབད་ནི་ལུ་འཕྲོ་མཐུད།"
 
 #. Type: boolean
 #. Description
@@ -726,6 +724,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"དེ་ནང་ཁ་སྐོང་ཅན་གྱི་ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་གཞི་བཙུགས་འབད་ནི་གི་དོན་ལུ་ དྲན་ཚད་ལངམ་མེདཔ་བཟུམ་ཅིག་འདུག "
+"ཁྱོད་ཀྱིས་ གདོང་ཁར་བཤུད་དེ་འཕྲོ་མཐུད་པ་ཅིན་ གཞི་བཙུགས་ལས་སྦྱོར་འདི་འཐུས་ཤོར་འབྱུང་འོང་།"
 
 #. Type: boolean
 #. Description

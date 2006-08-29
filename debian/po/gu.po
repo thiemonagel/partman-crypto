@@ -648,9 +648,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "સ્થાપન ભાગ લાવવામાં નિષ્ફળ"
+msgstr "ક્રાય્પ્ટો ભાગો લાવવામાં નિષ્ફળ"
 
 #. Type: error
 #. Description

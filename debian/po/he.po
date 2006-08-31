@@ -14,9 +14,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-05-20 12:36-0500\n"
+"PO-Revision-Date: 2006-08-30 23:27+0300\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
-"Language-Team: Hebrew\n"
+"Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -180,7 +180,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "למחוק את המידע:"
 
 #. Type: text
 #. Description
@@ -589,8 +589,8 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"תוכל לעזור לזרז את התהליך ע\"י הקשה על תווים אקראיים במקלדת, או חכה עד שיאסף "
-"מספיק מידע על לחיצות מקשים. (שים לב: תהליך זה יכול לקחת הרבה זמן)"
+"תוכל לעזור לזרז את התהליך על ידי הקשה על תווים אקראיים במקלדת, או חכה עד "
+"שיאסף מספיק מידע על לחיצות מקשים. (שים לב: תהליך זה יכול לקחת הרבה זמן)"
 
 #. Type: error
 #. Description

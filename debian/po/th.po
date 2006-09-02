@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-23 09:09+0700\n"
+"PO-Revision-Date: 2006-09-02 12:43+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
 "MIME-Version: 1.0\n"
@@ -680,22 +680,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "โหลดองค์ประกอบการติดตั้งไม่สำเร็จ"
+msgstr "ดาวน์โหลดองค์ประกอบ crypto ไม่สำเร็จ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "เกิดข้อผิดพลาดขณะตั้งค่าโวลุมเข้ารหัสลับ"
+msgstr "เกิดข้อผิดพลาดขณะดาวน์โหลดองค์ประกอบเข้ารหัสลับเพิ่มเติม"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "ดำเนินการติดตั้งองค์ประกอบ crypto ต่อไปแม้หน่วยความจำจะไม่พอหรือไม่?"
 
 #. Type: boolean
 #. Description
@@ -705,6 +703,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"ดูเหมือนหน่วยความจำจะไม่พอสำหรับติดตั้งองค์ประกอบเข้ารหัสลับเพิ่มเติม ถ้าคุณเลือกที่จะดำเนินการต่อ "
+"กระบวนการติดตั้งอาจล้มเหลวได้"
 
 #. Type: boolean
 #. Description

@@ -12,7 +12,7 @@
 # David Martínez Moreno <ender@debian.org>, 2003, 2005.
 # Carlos Alberto Martín Edo <carlos@dat.etsit.upm.es>, 2003
 # Carlos Valdivia Yagüe <valyag@dat.etsit.upm.es>, 2003
-# Rudy Godoy <rudy@kernel-panik.org>, 2003
+# Rudy Godoy <rudy@kernel-panik.org>, 2003-2006
 # Steve Langasek <vorlon@debian.org>, 2004
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
 # Rubén Porras Campo <nahoo@inicia.es>, 2005
@@ -49,7 +49,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-30 14:33+0200\n"
+"PO-Revision-Date: 2006-09-02 01:25-0500\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -293,7 +293,7 @@ msgstr "Configurar los volúmenes cifrados"
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
-msgstr "No se han encontraron particiones para cifrar"
+msgstr "No se han encontrado particiones para cifrar"
 
 #. Type: note
 #. Description
@@ -347,7 +347,7 @@ msgstr "no disponible"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Utilizado como volumen físico para el volumen cifrado ${DEV}"
+msgstr "Utilizada como volumen físico para el volumen cifrado ${DEV}"
 
 #. Type: error
 #. Description
@@ -391,8 +391,9 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Debe guardarse el esquema de particionado actual en el disco antes de poder "
-"configurar los volúmenes cifrados. Estos cambios no pueden deshacerse."
+"Debe guardarse el esquema de particionado actual en el disco antes de\n"
+"que pueda configurar los volúmenes cifrados. Estos cambios no se\n"
+"pueden deshacer."
 
 #. Type: boolean
 #. Description
@@ -444,7 +445,7 @@ msgstr "Falló un paso de la inicialización de volúmenes cifrados"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Se produjo un error mientras se definan los volúmenes cifrados."
+msgstr "Se produjo un fallo al definir los volúmenes cifrados."
 
 #. Type: text
 #. Description

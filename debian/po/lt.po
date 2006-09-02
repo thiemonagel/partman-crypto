@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-10 00:35+0300\n"
+"PO-Revision-Date: 2006-09-02 22:53+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -707,22 +707,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Nepavyko įkelti įdiegiklio komponento"
+msgstr "Nepavyko atsisiųsti šifravimo komponentų"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Konfigūruojant šifruotus tomus įvyko klaida."
+msgstr "Bandant atsisiųsti papildomus šifravimo komponentus įvyko klaida."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Ar tęsti šifravimo komponentų įdiegimą, nepaisant atminties stokos?"
 
 #. Type: boolean
 #. Description
@@ -732,6 +730,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Atrodo, kad papildomų šifravimo komponentų įdiegimui nepakanka atminties. "
+"Jei pasirinksite tęsti įdiegimą, jis gali nepavykti."
 
 #. Type: boolean
 #. Description

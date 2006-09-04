@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-23 10:54+0100\n"
+"PO-Revision-Date: 2006-09-04 11:14+0100\n"
 "Last-Translator: Bart Cornelis <cobaco@skolelinux.no>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -721,17 +721,16 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Laden van de installatiemodule is mislukt"
+msgstr "Ophalen van de cryptomodules is mislukt"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Er is een fout opgetreden tijdens het instellen van de versleutelde volumes."
+"Er is een fout opgetreden tijdens het ophalen van de aanvullende "
+"cryptomodules."
 
 #. Type: boolean
 #. Description

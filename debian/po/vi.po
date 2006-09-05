@@ -16,14 +16,14 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-11 17:31+0930\n"
+"PO-Revision-Date: 2006-09-05 16:44+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: LocFactoryEditor 1.6b36\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.6fc1\n"
 
 #. Type: text
 #. Description
@@ -710,22 +710,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Việc tải thành phần cài đặt bị lỗi"
+msgstr "Lỗi tải về thành phần mật mã"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Gặp lỗi khi cấu hình khối tin đã mật mã."
+msgstr "Gặp lỗi khi cố tải về thành phần mật mã thêm."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Bất chấp không đủ bộ nhớ, tiếp tục cài đặt các thành phần mật mã không?"
 
 #. Type: boolean
 #. Description
@@ -735,6 +734,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Có vẻ không có đủ bộ nhớ còn rảnh để cài đặt các thành phần mật mã thêm. Nếu "
+"bạn chọn vẫn tiếp tục, tiến trình cài đặt có thể bị lỗi."
 
 #. Type: boolean
 #. Description

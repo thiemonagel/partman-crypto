@@ -25,6 +25,23 @@ for dev in $DEVICES/*; do
 	# Ignore swap on crypto
 	[ -f crypt_realdev ] && continue
 
+	# Ignore e.g. swap on lvm on crypto
+	device=$(cat $dev/device)
+	if $(echo $device | grep -q "^/dev/mapper/"); then
+		found=1
+		for majmin in $(dmsetup deps $device | cut -d ":" -f2 |\
+				tr -d " (" | tr ")" "\n"); do
+			maj=$(echo $majmin | sed 's/,.*//')
+			min=$(echo $majmin | sed 's/.*,//')
+			status=$(dmsetup status -j $maj -m $min 2> /dev/null |\
+				cut -d' ' -f3)
+			if [ $? -ne 0 ] || [ $status != "crypt" ]; then
+				found=0
+			fi
+		done
+		[ $found ] && continue
+	fi
+
 	partitions=
 	open_dialog PARTITIONS
 	while { read_line num id size type fs path name; [ "$id" ]; }; do

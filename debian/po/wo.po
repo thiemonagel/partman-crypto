@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: wo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-28 15:00+0000\n"
+"PO-Revision-Date: 2006-09-05 19:50+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgstr "Yoonu Kiripte bu bii partisoŋ:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr "Kiripte"
+msgstr "Kiripte:"
 
 #. Type: select
 #. Description
@@ -134,7 +134,7 @@ msgstr ""
 "bi sektoor bu nekk. Li ngay tann fii nak dana am jeexiit ci kaaraange gi "
 "(sekirite). Li ci ëppu sax, doo soxlaa soppi dara ci waloor biñuy laabiiree "
 "nga jëlko, ndare ba da ngaa yor yaneen sistemi kiripte ta ragal ñuy am ak "
-"ñakka mana and"
+"ñakka mana ànd."
 
 #. Type: text
 #. Description
@@ -200,13 +200,13 @@ msgstr "waaw"
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
-msgstr "Far  done yi nekk ci bii partisoŋ:"
+msgstr "Far  done yi nekk ci bii partisoŋ"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Ndax wóorna nu far done yi ci ${DEVICE}"
+msgstr "Ndax wóorna nu far done yi ci ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -278,7 +278,7 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Porogaraamu istalaasioŋ u Debian bii dafa maaŋki yenn porogaraam yunuy soxla "
+"Porogaraamu istalaasioŋ u Debian bii dafa maaŋki yenn prograam yunuy soxla "
 "ngir parman-crypto man a dox nimu ware."
 
 #. Type: error
@@ -702,22 +702,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Sëf kompóosaŋ bi antuwul"
+msgstr "Sëf kompóosaŋ yu cryto antuwul"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Ab njuumte amna bi nuy komfigure wolim yiñu kiripte."
+msgstr "Ab njuumte amna ci bi nuy jéema sippi yaneen komposaŋ yu crypto."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Ndax ñu wéy ci istale komposaŋ yu crypto, doonte sax memwaar bi doyul?"
 
 #. Type: boolean
 #. Description
@@ -727,6 +725,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Dafa melne amuñu memwaar bu doy ngir ñu mana istale yaneen komposaŋ yu "
+"crypto. Boo kontinée ne dangay istale ak lu man di xew rek, kon istalaasioŋ "
+"bi amaana du àntu."
 
 #. Type: boolean
 #. Description

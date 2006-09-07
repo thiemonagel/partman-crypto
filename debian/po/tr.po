@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-25 00:54+0300\n"
+"PO-Revision-Date: 2006-09-08 00:02+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -715,22 +715,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Kurulum bileşeni yüklenemedi"
+msgstr "Şifreleme bileşenleri indirilemedi"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Şifrelenmiş ciltler yapılandırılırken bir hata oluştu."
+msgstr "İlâve şifreleme bileşenleri indirilirken bir hata oluştu."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Şifreleme bileşenlerinin kurulumuna yetersiz belleğe rağmen devam edilsin mi?"
 
 #. Type: boolean
 #. Description
@@ -740,6 +739,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"İlâve şifreleme bileşenlerinin kurulumu için yeterli bellek mevcut değil "
+"gözüküyor.  Buna rağmen devam etmeyi seçerseniz kurulum işlemi başarısız "
+"olabilir."
 
 #. Type: boolean
 #. Description

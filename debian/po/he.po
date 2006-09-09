@@ -9,14 +9,13 @@
 # This file is distributed under the same license as debian-installer.
 #
 #
-# <>, 2004.
-# Lior Kaplan <kaplan@debian.org>, 2006.
+# Lior Kaplan <kaplan@debian.org>, 2004-2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-08 19:51+0200\n"
+"PO-Revision-Date: 2006-09-09 03:01+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -76,9 +75,8 @@ msgstr "שיטת הצפנה:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "נקודת עגינה למחיצה זאת:"
+msgstr "שיטת הצפנה בשביל המחיצה:"
 
 #. Type: text
 #. Description
@@ -90,9 +88,8 @@ msgstr "הצפנה:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "נקודת עגינה למחיצה זאת:"
+msgstr "הצפנה בשביל המחיצה:"
 
 #. Type: text
 #. Description
@@ -104,9 +101,8 @@ msgstr "גודל מפתח:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "מערכת קבצים למחיצה:"
+msgstr "מפתח בשביל המחיצה:"
 
 #. Type: text
 #. Description
@@ -115,16 +111,15 @@ msgstr "מערכת קבצים למחיצה:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "אלגוריתם לווקטור אתחול:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "נקודת עגינה למחיצה זאת:"
+msgstr "אלגוריתם עבור ווקטור אתחול של המחיצה:"
 
 #. Type: select
 #. Description
@@ -148,9 +143,8 @@ msgstr "מפתח הצפנה:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "מערכת קבצים למחיצה:"
+msgstr "סוג מפתח הצפנה עבור המחיצה:"
 
 #. Type: text
 #. Description
@@ -162,9 +156,8 @@ msgstr "ערבול מפתח הצפנה:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "מערכת קבצים למחיצה:"
+msgstr "סוג מפתח ערבול (hash) עבור המחיצה:"
 
 #. Type: select
 #. Description
@@ -175,6 +168,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"מפתח ההצפנה נוצר ע\"י יישום של פונקציית ערבול חד כיוונית על משפט הסיסמה. "
+"במצב נורמלי אין צורך לשנות זאת מברירת המחדל, וביצוע לא נכון יכול להוריד את "
+"חוזק ההצפנה."
 
 #. Type: text
 #. Description
@@ -229,7 +225,7 @@ msgstr "מוחק את כל הדיסק ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "נכשלה מחיקת המידע על ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -254,16 +250,14 @@ msgstr "הגדר כרכים מוצפנים"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "לא נמצאו מחיצות"
+msgstr "אין מחיצות להצפנה"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "אף חבילת קרנל נבחרה להתקנה"
+msgstr "לא נבחרו מחיצות להצפנה"
 
 #. Type: note
 #. Description
@@ -274,13 +268,12 @@ msgstr "תוכנה נדרשת חסרה"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"הבניה הנוכחית של התקנת דביאן לא כוללת אחת או יותר תוכניות אשר דרושות בשביל "
-"partman-crypt כדי לתפקד באופן תקין."
+"הבניה הנוכחית של תוכנית ההתקנה של דביאן לא כוללת אחת או יותר תוכניות אשר "
+"דרושות בשבילן ש-partman-crypto יתפקד באופן תקין."
 
 #. Type: error
 #. Description
@@ -295,6 +288,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"אפשרויות ההצפנה עבור ${DEVICE} אינן מלאות. חזור אחורה אל תפריט החלוקה "
+"למחיצות ובחר בכל אפשרויות שצריך."
 
 #. Type: text
 #. Description
@@ -309,16 +304,14 @@ msgstr "חסר"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "כרך פיזי ל-LVM"
+msgstr "בשימוש ככרך פיזי עבור כרך מוצפן ${DEV}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "התקנת ELILO נכשלה"
+msgstr "כשלון בהתקנת חבילת הצפנה"
 
 #. Type: error
 #. Description
@@ -340,20 +333,16 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "כתוב את השינויים לדיסקים והגדר את LVM?"
+msgstr "לכתוב את השינויים לדיסקים ולהגדיר כרכים מוצפנים?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"לפני שניתן יהיה להגדיר את LVM, השינויים צריכים להיכתב לדיסק.  השינויים האלה "
-"לא הפיכים."
 
 #. Type: boolean
 #. Description
@@ -377,16 +366,14 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "שגיאה בהגדרת LVM"
+msgstr "הגדרת כרכים מוצפנים נכשלה"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "שגיאה קרתה בזמן כתיבת השינויים לדיסקים."
+msgstr "שגיאה קרתה בזמן הגדרת כרכים מוצפנים."
 
 #. Type: error
 #. Description

@@ -4,6 +4,7 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # translation of lv.po to Latvian
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
 # Latvian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -12,12 +13,15 @@ msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-02-11 15:42+0200\n"
-"Last-Translator: Aigars Mahinovs <aigarius@laka.lv>\n"
-"Language-Team: locale@laka.lv <locale@laka.lv>\n"
+"PO-Revision-Date: 2006-09-08 19:09+0200\n"
+"Last-Translator: Aigars Mahinovs <aigarius@debian.org>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #. Type: text
 #. Description
@@ -65,14 +69,12 @@ msgstr "nav aktīvs"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Šifrēšanas atslēga:"
+msgstr "Šifrēšanas metode:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
 msgstr "Šīs partīcijas šifrēšanas metode:"
 
@@ -109,16 +111,15 @@ msgstr "Šīs partīcijas šifrēšanas atslēgas izmērs:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV algoritms:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Šīs partīcijas šifrēšanas metode:"
+msgstr "Inicializācijas vektora generācijas algoritms šai partīcijai:"
 
 #. Type: select
 #. Description
@@ -131,6 +132,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Eksistē dažādi algoritmi inicializācijas vektora izvēlei katram sektoram. Šī "
+"izvēle ietekmē šifrēšanas drošības līmeni. Parasti mainīt šo izvēli no "
+"noklusētā varianta nav ietecams, izņemot gadījumus, kad nepieciešams "
+"nodrošināt savietojamību ar vecākām sistēmām."
 
 #. Type: text
 #. Description
@@ -149,16 +154,14 @@ msgstr "Šīs partīcijas šifrēšanas atslēga:"
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Šifrēšanas atslēga:"
+msgstr "Šifrēšanas atslēgas hešs:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Šīs partīcijas šifrēšanas atslēga:"
+msgstr "Šīs partīcijas jaucējatslēgas (heša) tips:"
 
 #. Type: select
 #. Description
@@ -169,6 +172,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Šifrēšanas atslēga tiek iegūta no paroles pielietojot vinvirziena "
+"jaucējfunkciju, lai iegūtu paroles hešu. Parasti nav pamata mainīt šo "
+"izvēlni no noklusējuma varianta, jo izdarot to nekorektā veidā var novajināt "
+"šifrēšanas drošību."
 
 #. Type: text
 #. Description
@@ -176,7 +183,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Dzēst datus:"
 
 #. Type: text
 #. Description
@@ -193,16 +200,14 @@ msgstr "jā"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Šīs partīcijas šifrēšanas metode:"
+msgstr "Dzēst datus no šīs partīcijas"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Izdzēst visu disku: ${DEVICE}"
+msgstr "Tiešam dzēst datus no ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -212,19 +217,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Dati no iekārtas ${DEVICE} tiks pārrakstīti ar gadījuma datiem. Pēc šī soļa "
+"veikšanas nekāda informācija no šīs iekārtas vairs nevarēs būt atjaunota. Šī "
+"ir pēdējā iespēja atcelt dzēsšanu."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Izdzēst visu disku: ${DEVICE}"
+msgstr "Datu dzēsšana no ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Datu dzēsšana no ${DEVICE} neizdevās"
 
 #. Type: error
 #. Description
@@ -232,7 +239,7 @@ msgstr ""
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "Kļūda dzēšot datus no ${DEVICE} iekārtas. Dati nav pilnība izdzesti."
 
 #. Type: text
 #. Description
@@ -267,13 +274,12 @@ msgstr "Trūkst nepieciešamās programmas"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Šajā debian instalatora versijā nav iekļautas vairākas programmas, kas ir "
-"nepieciešamas, lai partman-crypt darbotos korekti."
+"nepieciešamas, lai partman-crypto darbotos korekti."
 
 #. Type: error
 #. Description
@@ -304,9 +310,8 @@ msgstr "trūkst"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "šifrējamais fiziskais sējums"
+msgstr "Tiek lietota kā fiziskais sejums priekš šifrētā sējuma ${DEV}"
 
 #. Type: error
 #. Description
@@ -317,7 +322,6 @@ msgstr "Kļūda instalējot šifrēšanas paku"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -328,7 +332,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -341,7 +344,6 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Saglabāt izmaiņas diskā un konfigurēt šifrētos sējumus?"
 
@@ -364,7 +366,6 @@ msgstr "Saglabāt esošo partīciju izkārtojumu un konfigurēt šifrētos sēju
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -378,7 +379,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
 msgstr "Kļūda konfigurējot šifrētos sējumus"
 
@@ -391,16 +391,14 @@ msgstr "Konfigurējot šifrētos sējumus radusies kļūda."
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Konfigurācija pārtraukta."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Instalācijas soļa izpilde neizdevās"
+msgstr "Šifrēto sējumu inicializācija neizdevās"
 
 #. Type: error
 #. Description
@@ -632,24 +630,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Jūs esat izvēlējies novietot saknes failu sistēmu uz šifrētas partīcijas. Šī "
-"iespēja pagaidām nav pieejama, šādas konfigutācijas saglabāšana novedīs pie "
-"nelietojamas instalācijas."
+"Jūs esat izvēlējies novietot saknes failu sistēmu uz šifrētas partīcijas. "
+"Lai lietotu šādu sistēmu, ir nepieciešams izveidot /boot partīciju uz kuras "
+"glabātos kodols un initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"/boot partīcijai jums vajadzētu lietot kādu citu failu sistēmu, piemēram "
-"ext3."
+msgstr "Jums vajdzētu atgriezties un izveitod /boot partīciju."
 
 #. Type: error
 #. Description
@@ -660,26 +654,25 @@ msgstr "Šifrēšanas konfigurācija nav izveidota"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Jūs esat izvēlējies novietot saknes failu sistēmu uz šifrētas partīcijas. Šī "
-"iespēja pagaidām nav pieejama, šādas konfigutācijas saglabāšana novedīs pie "
-"nelietojamas instalācijas."
+"Jūs esat izvēlējies novietot /boot failu sistēmu uz šifrētas partīcijas. Šī "
+"iespēja nav isepējama, jo saknētājs nespēs ielādēt kodolu un sākuma initrd "
+"sistēmu. Šādas konfigutācijas saglabāšana novedīs pie nelietojamas "
+"instalācijas."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Lūdzu atgriezieties un saknes failu sistēmai izvēlieties nešifrētu partīciju."
+"Lūdzu atgriezieties un izvēlieties nešifrētu partīciju /boot failu sistēmai."
 
 #. Type: boolean
 #. Description
@@ -711,22 +704,23 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Kļūda ielādējot instalatora komponentu"
+msgstr "Kļūda lejuplādējot kriptogrāfijas komponentus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Konfigurējot šifrētos sējumus radusies kļūda."
+msgstr ""
+"Mēģinot lejuplādēt papildus kriptogrāfiskos komponentus radusies kļūda."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Turpināt kriptogrāfisko komponenši installāciju neskatoties uz atmiņas "
+"nepietiekamību?"
 
 #. Type: boolean
 #. Description
@@ -736,12 +730,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Atmiņas apjoms nav pietiekošs papildus kriptogrāfisko komponentu "
+"instalācijai. Ja jūs izvēlēsieties turpināt to installāciju, installācijas "
+"process var beigties kļūdaini."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Tiešām pielietot blokiekārtu šifrēšanu?"
 
 #. Type: boolean
 #. Description
@@ -753,3 +750,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Blokiekārtu šifrēšanas atbalsts vēl ir eksperimentālā stadijā un netiek "
+"uzskatīts par gatavu lietošanai. Šāda veida installācijas var veidot viegli "
+"uzlaužamas sistēmas, kas dot tikai drošības sajūtu. Taču drošības problēmas "
+"varēs tikt atrastas tikai pēc koda audita veikšanas."

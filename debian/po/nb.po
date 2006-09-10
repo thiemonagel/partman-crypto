@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-10 12:19+0200\n"
+"PO-Revision-Date: 2006-09-09 20:18+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -381,7 +381,7 @@ msgstr ""
 "Etter at krypterte dataområder er satt opp, kan man ikke gjøre flere "
 "endringer på partisjonene på enhetene som inneholder krypterte dataområder. "
 "Sjekk at du er fornøyd med partisjonsoppsettet på disse enhetene før du "
-"fortsetter.u"
+"fortsetter."
 
 #. Type: error
 #. Description
@@ -706,22 +706,23 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Klarte ikke å laste installasjonskomponenten"
+msgstr "Klarte ikke å laste ned krypto-komponenter"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Det oppsto en feil under oppsett av krypterte dataområder."
+msgstr ""
+"Det oppsto en feil under forsøk på å laste ned ytterligere krypto-"
+"komponenter."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Fortsett med å installere krypto-komponenter på tross av for lite minne?"
 
 #. Type: boolean
 #. Description
@@ -731,6 +732,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Det ser ikke ut til at det er tilstrekkelig minne tilgjengelig for å kunne "
+"installere ytterligere krypto-komponenter. Hvis du velger å fortsette "
+"likevel kan installasjonsprosessen mislykkes."
 
 #. Type: boolean
 #. Description

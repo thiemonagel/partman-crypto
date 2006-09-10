@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-09 03:01+0200\n"
+"PO-Revision-Date: 2006-09-09 23:35+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -707,7 +707,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "האם אתה בטוח שברצונך להשתמש בהצפנה על התקן בלוקים?"
 
 #. Type: boolean
 #. Description

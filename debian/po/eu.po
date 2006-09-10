@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-03 23:55+0200\n"
+"PO-Revision-Date: 2006-09-10 01:59+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Transfer-Encoding=UTF-8Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: (n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. Type: text
 #. Description
@@ -723,7 +723,7 @@ msgstr "Errorea gertatu da zifraketa elementu gehigarriak deskargatzerakoan."
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Kriptografia osagaiak instalatu nahi memoria askieza izan?"
 
 #. Type: boolean
 #. Description
@@ -733,6 +733,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Dirudienez ez dago memoria nahikorik kriptografia osagai gehigarriak "
+"instalatzeko, aurrera jarraitzea hautatu ezkero instalazio prozesuak huts "
+"egin dezake."
 
 #. Type: boolean
 #. Description

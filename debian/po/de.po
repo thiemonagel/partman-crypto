@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-23 23:49+0200\n"
+"PO-Revision-Date: 2006-09-11 21:07+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -739,24 +739,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Fehler beim Laden der Installer-Komponenten"
+msgstr "Herunterladen der Verschlüsselungskomponenten fehlgeschlagen"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Es trat ein Fehler auf, als die verschlüsselten Datenträger konfiguriert "
-"wurden."
+"Es trat ein Fehler beim Versuch, zusätzliche Verschlüsselungskomponenten "
+"herunterzuladen, auf."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Trotz unzureichendem Speicher mit der Installation der "
+"Verschlüsselungskomponenten fortfahren?"
 
 #. Type: boolean
 #. Description
@@ -766,6 +766,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Es scheint nicht ausreichend Speicher vorhanden zu sein, um zusätzliche "
+"Verschlüsselungskomponenten zu installieren. Der Installationsvorgang kann "
+"fehlschlagen, falls Sie sich entscheiden dennoch fortzufahren."
 
 #. Type: boolean
 #. Description

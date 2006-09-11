@@ -7,16 +7,16 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004
-# Tapio Lehtonen <tale@debian.org>, 2004 - 2005
+# Tapio Lehtonen <tale@debian.org>, 2004 - 2006
 # Thanks to lokalisointi-laatu@linux-aktivaattori.org.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-06 15:53+0300\n"
+"PO-Revision-Date: 2006-09-11 17:07+0300\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -708,22 +708,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Asentimen osan lataus epäonnistui"
+msgstr "Salauksen osien nouto epäonnistui"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Tapahtui virhe tehtäessä salattujen levyniteiden asetuksia."
+msgstr "Tapahtui virhe noudettaessa lisää salauksen osia."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Jatketaanko salausosien asennusta vaikka muisti ei riitä?"
 
 #. Type: boolean
 #. Description
@@ -733,6 +731,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Muistia näyttäisi olevan liian vähän jotta voitaisiin asentaa lisää "
+"salauksen osia. Jos tästä huolimatta jatketaan, saattaa asennus epäonnistua."
 
 #. Type: boolean
 #. Description

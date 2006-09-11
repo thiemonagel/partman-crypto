@@ -422,6 +422,8 @@ crypto_check_mem() {
 			return 1
 		fi
 	fi
+
+	return 0
 }
 
 # Loads additional crypto udebs
@@ -437,7 +439,6 @@ crypto_load_udebs() {
 	if [ ! -d $udebdir ]; then
 		mkdir -p $udebdir
 	fi
-
 
 	for package in $packages; do
 		if [ -f $udebdir/$package ]; then

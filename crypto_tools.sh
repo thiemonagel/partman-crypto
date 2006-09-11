@@ -396,6 +396,34 @@ crypto_load_modules() {
 	return 0
 }
 
+# Checks that we have sufficient memory to load crypto udebs
+crypto_check_mem() {
+	local verbose="$1"
+	local memfree
+
+	if [ ! -e /proc/meminfo ]; then
+		return 0
+	fi
+
+	memfree=$(grep MemFree /proc/meminfo | head -1 | \
+		  sed 's/.*:[[:space:]]*\([0-9]*\).*/\1/')
+	# A more or less arbitrary limit
+	if [ "$memfree" -lt 10000 ]; then
+		if [ "$verbose" != "true" ]; then
+			return 1
+		fi
+
+		db_set partman-crypto/install_udebs_low_mem false
+		db_fset partman-crypto/install_udebs_low_mem seen false
+		db_input critical partman-crypto/install_udebs_low_mem
+		db_go || true
+		db_get partman-crypto/install_udebs_low_mem
+		if [ "$RET" != true ]; then
+			return 1
+		fi
+	fi
+}
+
 # Loads additional crypto udebs
 crypto_load_udebs() {
 	local packages udebdir package memfree
@@ -416,21 +444,7 @@ crypto_load_udebs() {
 			continue
 		fi
 
-		if [ -e /proc/meminfo ]; then
-			memfree=$(grep MemFree /proc/meminfo | head -1 | \
-				  sed 's/.*:[[:space:]]*\([0-9]*\).*/\1/')
-			# A more or less arbitrary limit
-			if [ "$memfree" -lt 10000 ]; then
-				db_set partman-crypto/install_udebs_low_mem false
-				db_fset partman-crypto/install_udebs_low_mem seen false
-				db_input critical partman-crypto/install_udebs_low_mem
-				db_go || true
-				db_get partman-crypto/install_udebs_low_mem
-				if [ "$RET" != true ]; then
-					return 1
-				fi
-			fi
-		fi
+		crypto_check_mem "true" || return 1
 
 		if ! anna-install $package; then
 			db_fset partman-crypto/install_udebs_failure seen false

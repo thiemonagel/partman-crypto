@@ -1,8 +1,25 @@
-partman-crypto (12) UNRELEASED; urgency=low
+partman-crypto (12) unstable; urgency=low
 
+  [ David Härdeman ]
   * Allow swap-on-lvm-on-crypto. Closes: 385927
 
- -- David Härdeman <david@2gen.com>  Wed,  6 Sep 2006 02:06:04 +0200
+  [ Updated translations ]
+  * Danish (da.po) by Claus Hindsgaul
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by Jacobo Tarrio
+  * Hebrew (he.po) by Lior Kaplan
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Norwegian Bokmål (nb.po) by Bjørn Steensrud
+  * Dutch (nl.po) by Bart Cornelis
+  * Slovenian (sl.po) by Jure Čuhalev
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Recai Oktaş
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+
+ -- Max Vozeler <xam@debian.org>  Mon, 11 Sep 2006 07:47:49 +0200
 
 partman-crypto (11) unstable; urgency=low
 

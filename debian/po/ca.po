@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer etch\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-26 20:59+0200\n"
+"PO-Revision-Date: 2006-09-15 10:39+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -715,22 +715,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "No s'ha pogut instal·lar el component de l'instal·lador"
+msgstr "No s'ha pogut baixar els components del xifratge"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "S'ha produït un error quan es configuraven els volums xifrats."
+msgstr ""
+"S'ha produït un error quan s'intentava baixar els components de xifratge "
+"addicional."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Voleu continuar amb la instal·lació dels components criptogràfics tot i que "
+"no hi ha suficient memòria?"
 
 #. Type: boolean
 #. Description
@@ -740,6 +742,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Sembla que no hi ha suficient memòria disponible per a instal·lar components "
+"de xifratge addicionals. Si tot i així decidiu continuar, és possible que el "
+"procés d'instal·lació falle."
 
 #. Type: boolean
 #. Description

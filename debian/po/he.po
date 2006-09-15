@@ -15,13 +15,13 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-09 23:35+0200\n"
+"PO-Revision-Date: 2006-09-15 17:06+0300\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Type: text
 #. Description
@@ -132,6 +132,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"קיימים אלגוריתמים שונים כדי להפעיל את ווקטור האתחול עבור חלקים שונים. בחירה "
+"זאת משפיעה על אבטחת ההצפנה. באופן נורמלי, אין סיבה לשנות זאת מברירת המחדל "
+"המומלצת, למעט תאימות למערכות ישנות יותר."
 
 #. Type: text
 #. Description
@@ -168,7 +171,7 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"מפתח ההצפנה נוצר ע\"י יישום של פונקציית ערבול חד כיוונית על משפט הסיסמה. "
+"מפתח ההצפנה נוצר על ידי יישום של פונקציית ערבול חד כיוונית על משפט הסיסמה. "
 "במצב נורמלי אין צורך לשנות זאת מברירת המחדל, וביצוע לא נכון יכול להוריד את "
 "חוזק ההצפנה."
 
@@ -212,8 +215,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"המידע על ${DEVICE} ידרס עם מידע אקראי. הוא לא יהיה ניתן לשחזור לאחר סיום שלב "
-"זה. זאת ההזדמנות האחרונה לביטול המחיקה."
+"המידע על ${DEVICE} יידרס עם מידע אקראי. הוא לא יהיה ניתן לשחזור לאחר סיום "
+"שלב זה. זאת ההזדמנות האחרונה לביטול המחיקה."
 
 #. Type: text
 #. Description
@@ -233,7 +236,7 @@ msgstr "נכשלה מחיקת המידע על ${DEVICE}"
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "שגיאה התרחשה בזמן הניסיון למחיקת המידע על ${DEVICE}. המידע לא נמחק."
 
 #. Type: text
 #. Description
@@ -311,7 +314,7 @@ msgstr "בשימוש ככרך פיזי עבור כרך מוצפן ${DEV}"
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "כשלון בהתקנת חבילת הצפנה"
+msgstr "כישלון בהתקנת חבילת הצפנה"
 
 #. Type: error
 #. Description
@@ -320,6 +323,7 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"חבילת מודול הקרנל ${PACKAGE} לא נמצאה, או שהתרחשה שגיאה בזמן ההתקנה שלה."
 
 #. Type: error
 #. Description
@@ -329,6 +333,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"ישנו סיכוי שיהיו בעיות בהגדרת מחיצות מוצפנות לאחר שהמערכת תאותחל. תוכל לתקן "
+"זאת על ידי התקנה של החבילות הנחוצות בהמשך."
 
 #. Type: boolean
 #. Description
@@ -343,6 +349,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"לפני שניתן יהיה להגדיר מחיצות מוצפנות, הסכמה הנוכחית של החלוקה למחיצות צריכה "
+"להיכתב לדיסק. שינויים אלה אינם הפיכים."
 
 #. Type: boolean
 #. Description
@@ -353,15 +361,15 @@ msgstr "לשמור את הפריסה הקיימת של המחיצות ולהגד
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"אחרי ש-LVM מוגדר, נאסר לעשות שינויים במחיצות שבדיסקים המכילים כרכים פיזיים. "
-"וודא כי אתה מרוצה עם החלוקה הנוכחית למחיצות בדיסקים האלו."
+"אחרי שכרכים מוצפנים הוגדרו, נאסר לעשות שינויים במחיצות שבדיסקים המכילים "
+"כרכים מוצפנים. וודא כי אתה מרוצה עם החלוקה הנוכחית למחיצות בדיסקים האלו לפני "
+"שתמשיך."
 
 #. Type: error
 #. Description
@@ -385,7 +393,7 @@ msgstr "תהליך ההגדרה בוטל."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "כשלון בהתקנת כרך מוצפן"
+msgstr "כישלון בהתקנת כרך מוצפן"
 
 #. Type: error
 #. Description
@@ -443,6 +451,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"זאת היא שגיאה מוחלטת, מאחר ומידע רגיש עלול להיכתב לדיסק בצורה לא מוצפנת. "
+"כלומר מישהו עם גישה לדיסק יכול לדלות חלקים של מפתח ההצפנה או משפט הסיסמה. "
 
 #. Type: error
 #. Description
@@ -452,6 +462,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"בטל את שטח הדפדוף (לדוגמה על ידי הרצה של swapoff) או הגדר שטח דפדוף מוצפן. "
+"לאחר מכן הרץ את התקנת הכרכים המוצפנים מחדש. תוכנית זאת תסיים עכשיו."
 
 #. Type: password
 #. Description
@@ -468,17 +480,15 @@ msgstr "צריך לבחור משפט סיסמה כדי להצפין את ${DEVIC
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"צריך לקבוע סיסמה לגישה מרחוק למתקין של דביאן. משתמש לא מורשה או עם כוונות "
-"זדון יכול לגרום לתוצאות הרות אסון, כלומר כדאי לבחור סיסמה שאינה קלה לניחוש. "
-"בנוסף, זאת לא צריכה להיות מילה שמופיעה במילון או מילה שמתקשרת אליך בקלות (שם "
-"אמצעי, תאריך לידה וכו')."
+"החוזק הכללי של ההצפה תלוי במידה רבה במשפט הסיסמה, ולכן הקדש תשומת לב לבחירת "
+"משפט סיסמה שאינו קל לניחוש. זאת לא צריכה להיות מילה או משפט שמופיעים "
+"במילונים או משפט שמתקשר אליך בקלות."
 
 #. Type: password
 #. Description
@@ -503,7 +513,7 @@ msgstr "הכנס משפט סיסמה לווידוא:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "הכנס בבקשה שוב את אותו משפט סיסמה כדי לוודא שהקלדת אותו נכון."
+msgstr "הכנס שוב את אותו משפט סיסמה כדי לוודא שהקלדת אותו נכון."
 
 #. Type: error
 #. Description
@@ -515,7 +525,7 @@ msgstr "שגיאת קלט במשפט סיסמה"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "שני משפטי הסיסמה שהכנסת אינם זהים, נסה בבקשה שוב."
+msgstr "שני משפטי הסיסמה שהכנסת אינם זהים, נסה שוב."
 
 #. Type: note
 #. Description
@@ -529,7 +539,7 @@ msgstr "משפט סיסמה ריק"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "הכנסת משפט סיסמה ריק, דבר שאין מותר, בחר בבקשה משפט סימה שאינו ריק."
+msgstr "הכנסת משפט סיסמה ריק, דבר שאין מותר, בחר משפט סימה שאינו ריק."
 
 #. Type: boolean
 #. Description
@@ -571,13 +581,13 @@ msgid ""
 "can take a long time)"
 msgstr ""
 "תוכל לעזור לזרז את התהליך על ידי הקשה על תווים אקראיים במקלדת, או חכה עד "
-"שיאסף מספיק מידע על לחיצות מקשים. (שים לב: תהליך זה יכול לקחת הרבה זמן)"
+"שייאסף מספיק מידע על לחיצות מקשים. (שים לב: תהליך זה יכול לקחת הרבה זמן)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "כשלון ביצירת קובץ המפתח"
+msgstr "כישלון ביצירת קובץ המפתח"
 
 #. Type: error
 #. Description
@@ -601,19 +611,18 @@ msgstr ""
 #: ../partman-crypto.templates:327
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
-msgstr "חזור בבקשה, בוחר מחיצה לא מוצפנת עבור שורש מערכת הקבצים."
+msgstr "חזור, בוחר מחיצה לא מוצפנת עבור שורש מערכת הקבצים."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"בחרת כי שורש מערכת הקבצים יאוחסן במחיצה מוצפנת. אפשרות זאת אינה זמינה, והשאר "
-"המצב כך, יוביל להתקנה שלא ניתן להשתמש בה לאחר סיומה."
+"בחרת כי שורש מערכת הקבצים יאוחסן במחיצה מוצפנת. תוכנה זאת דורשת מחיצה נפרדת "
+"עבור /boot שעליה הקרנל וה-initrd יכולו להישמר."
 
 #. Type: error
 #. Description
@@ -630,15 +639,15 @@ msgstr "שגיאה בהגדרת הצפנה"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"בחרת כי שורש מערכת הקבצים יאוחסן במחיצה מוצפנת. אפשרות זאת אינה זמינה, והשאר "
-"המצב כך, יוביל להתקנה שלא ניתן להשתמש בה לאחר סיומה."
+"בחרת כי מערכת הקבצים /boot תאוחסן במחיצה מוצפנת. אפשרות זאת אינה אפשרית, "
+"מאחר ומנהל האתחול לא יוכל לטעון את הקרנל ואת ה-initrd. המשך הלאה ייצור התקנה "
+"שאינה ניתנת לשימוש."
 
 #. Type: error
 #. Description
@@ -671,28 +680,26 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"שימוש במחיצה מסוג מפתח אקראי, משמעותו כי המידע על המחיצה יהרס בכל אתחול של "
+"שימוש במחיצה מסוג מפתח אקראי, משמעותו כי המידע על המחיצה ייהרס בכל אתחול של "
 "המערכת. שימוש זה צריך להיות מוגבל למחיצות דפדוף בלבד."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "כשלון בטעינת רכיב מתקין"
+msgstr "כישלון בהורדה של רכיבי הצפנה"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "שגיאה קרתה בזמן כתיבת השינויים לדיסקים."
+msgstr "שגיאה קרתה בזמן הורדה של רכיבי הצפנה נוספים."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "להמשיך להתקנת רכיבי הצפנה למקום חוסר בזיכרון?"
 
 #. Type: boolean
 #. Description
@@ -702,6 +709,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"נראה שאין מספיק מקום פנוי בזיכרון כדי להתקין רכיבי הצפנה נוספים. אם תבחר "
+"להמשיך בכל זאת, תהליך ההתקנה עלול להיכשל."
 
 #. Type: boolean
 #. Description
@@ -719,3 +728,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"התמיכה בהצפנה של התקני בלוקים נחשבת עדיין לניסיונית ואינה מתאימה לשימוש "
+"בייצור. בפרט, מדובר בהגדרות שקל לשבור ובכך לתת תחושה מזויפת של אבטחה. למרות "
+"שאין כשלי אבטחה ידועים, עד שהמימוש יתועד (audit) לעומק, יכולת זאת לא צריכה "
+"להיות בשימוש, אלא למטרות בדיקה."

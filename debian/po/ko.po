@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-20 16:56-0400\n"
+"PO-Revision-Date: 2006-09-14 12:11-0400\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -692,22 +692,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "설치 프로그램 구성 요소를 읽어들이는 데 실패했습니다"
+msgstr "암호화 구성요소를 다운로드 받는 데 실패했습니다"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "암호화된 볼륨을 설정하는 중에 오류가 발생했습니다."
+msgstr "암호화 구성요소를 다운로드 받는 도중 오류가 발생했습니다."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "메모리가 부족함에도 암호화 구성요소의 설치를 계속하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -717,6 +715,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"추가적인 암호화 구성요소를 설치하는데 필요한 메모리가 부족한 것 같습니다. 그"
+"래도 계속 진행할 경우, 설치 작업이 실패할 수 있습니다."
 
 #. Type: boolean
 #. Description

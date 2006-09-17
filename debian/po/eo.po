@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-16 15:52+0200\n"
+"PO-Revision-Date: 2006-09-16 14:41+0200\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -701,22 +701,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Elŝutado de instaleroj malsukcesas"
+msgstr "Elŝutado de ŝifraj konsistigaĵoj malsukcesas"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Eraro okazis dum la akomodado de ĉifraj datumportiloj."
+msgstr "Eraro okazis dum la elŝultado de pluaj ŝifraj konsistigaĵoj."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Ĉu la instalado de ŝifra konsistigaĵo daŭras malgraŭ la nesufiĉa momoro?"
 
 #. Type: boolean
 #. Description
@@ -726,6 +725,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"La disponebla memoro ŝajnas esti malsufiĉa por instali pluajn ŝifrajn "
+"konsistigaĵojn. Malgraŭe se vi elektas daŭri, la instalado eble fiaskos."
 
 #. Type: boolean
 #. Description

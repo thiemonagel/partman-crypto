@@ -8,19 +8,19 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Eugeniy Meshcheryakov <eugen@univ.kiev.ua>, 2005, 2006.
+# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-10 21:54+0200\n"
-"Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
+"PO-Revision-Date: 2006-09-21 21:05+0200\n"
+"Last-Translator: Eugeniy Meshcheryakov <eugen@debian.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -707,22 +707,22 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Не вдалося завантажити компонент встановлювача"
+msgstr "Невдалося завантажити криптографічні компоненти"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Виникла помилка під час налаштування зашифрованих томів."
+msgstr ""
+"Виникла помилка при спробі завантаження додаткових криптографічних "
+"компонентів."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Встановити криптографічні компоненти не дивлячись на нестачу пам'яті?"
 
 #. Type: boolean
 #. Description
@@ -732,6 +732,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Здається, доступно недостатньо пам'яті для встановлення додаткових "
+"криптографічних компонентів. Процес встановлення може завершитися невдачею, "
+"якщо ви вирішите продовжити."
 
 #. Type: boolean
 #. Description

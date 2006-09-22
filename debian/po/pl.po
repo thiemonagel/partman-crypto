@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-18 22:43+0200\n"
+"PO-Revision-Date: 2006-09-21 19:52+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
 "MIME-Version: 1.0\n"
@@ -700,22 +700,22 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Załadowanie składnika instalatora nie powiodło się"
+msgstr "Załadowanie składników szyfrujących nie powiodło się"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Wystąpił błąd podczas konfiguracji szyfrowanych woluminów."
+msgstr ""
+"Wystąpił błąd podczas próby pobrania dodatkowych składników szyfrujących. "
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Kontynuować instalację składników szyfrujących pomimo małej ilości pamięci?"
 
 #. Type: boolean
 #. Description
@@ -725,6 +725,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Wygląda na to, że w systemie nie ma wystarczającej ilości pamięci "
+"operacyjnej potrzebnej do instalacji składników szyfrujących. Jeśli "
+"wybierzesz by mimo to kontynuować instalacja może się nie powieść."
 
 #. Type: boolean
 #. Description

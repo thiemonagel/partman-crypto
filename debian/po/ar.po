@@ -687,22 +687,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "فشل تحميل مكوّن برنامج التثبيت"
+msgstr "فشل تحميل مكون crypto"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "حدث خطأ أثناء تهيئة الكتل المشفرة."
+msgstr "حدث خطأ أثناء محاولة تنزيل مكونات crypto الإضافية."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"هل تريد الاستمرار في تثبيت مكونات crypto على الرغم من عدم توفر ذاكرة كافية؟"
 
 #. Type: boolean
 #. Description
@@ -712,6 +711,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"لا يبدو أن هناك ذاكرة كافية متوفرة لتثبيت مكونات crypto الإضافية. إن أردت "
+"الاستمرار والقيام بذلك على أي حال، فقد تفشل عملية التثبيت."
 
 #. Type: boolean
 #. Description

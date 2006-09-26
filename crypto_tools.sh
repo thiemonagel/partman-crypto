@@ -457,6 +457,11 @@ crypto_load_udebs() {
 		touch $udebdir/$package
 	done
 
+	# The udeb installation run usually adds new kernel modules
+	if [ -x /sbin/depmod ]; then
+		depmod -a > /dev/null 2>&1 || true
+	fi
+
 	return 0
 }
 
@@ -536,13 +541,13 @@ crypto_prepare_method () {
 crypto_check_required_tools() {
 	local tools
 
-	tools=""
+	tools="/bin/blockdev-keygen /usr/lib/cdebconf/frontend/newt/plugin-entropy-text.so"
 	case $1 in
 	dm-crypt)
-		tools="/bin/blockdev-keygen /sbin/dmsetup /sbin/cryptsetup"
+		tools="$tools /sbin/dmsetup /sbin/cryptsetup /lib/libpopt.so.0"
 		;;
 	loop-AES)
-		tools="/bin/blockdev-keygen /usr/bin/gpg /bin/base64"
+		tools="$tools /usr/bin/gpg /bin/base64"
 		;;
 	*)
 		return 1

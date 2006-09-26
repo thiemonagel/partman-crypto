@@ -1,3 +1,9 @@
+partman-crypto (14) UNRELEASED; urgency=low
+
+  * Add fixes for udeb-on-demand loading. Closes: #389456
+
+ -- David Härdeman <david@2gen.com>  Tue, 26 Sep 2006 18:36:34 +0200
+
 partman-crypto (13) unstable; urgency=low
 
   [ David Härdeman ]

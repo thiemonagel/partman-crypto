@@ -3,7 +3,10 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of debian-installer_packages_po.po to Hindi
+# translation of new-hi.po to Hindi
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
+# translation of debian-installer_packages_po.po to
 #
 #
 # Debian Installer master translation file template
@@ -16,19 +19,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer_packages_po\n"
+"Project-Id-Version: new-hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-03-12 22:52+0530\n"
-"Last-Translator: Nishant Sharma <me@nishants.net>\n"
-"Language-Team:  <en@li.org>\n"
+"PO-Revision-Date: 2006-09-25 23:23+0530\n"
+"Last-Translator: Nishant Sharma <me at nishants.net>\n"
+"Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: 2\n"
 "X-Poedit-Language: Hindi\n"
 "X-Poedit-Country: INDIA\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #. Type: text
 #. Description
@@ -52,9 +55,8 @@ msgstr ""
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "लूपबैक (लूप%s)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -77,16 +79,14 @@ msgstr ""
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "पार्टीशन करने की विधिः"
+msgstr "कूटबद्ध करने की विधिः"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "इस पार्टीशन हेतु माउन्ट प्वाइंटः"
+msgstr "इस पार्टीशन हेतु कूटबद्ध करने की विधि:"
 
 #. Type: text
 #. Description
@@ -98,9 +98,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "इस पार्टीशन हेतु माउन्ट प्वाइंटः"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -112,9 +111,8 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "इस पार्टीशन हेतु फ़ाइल सिस्टम:"
+msgstr "इस पार्टीशन हेतु कुंजी का आकारः"
 
 #. Type: text
 #. Description
@@ -130,9 +128,8 @@ msgstr ""
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "इस पार्टीशन हेतु माउन्ट प्वाइंटः"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -156,24 +153,21 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "इस पार्टीशन हेतु फ़ाइल सिस्टम:"
+msgstr "इस पार्टीशन हेतु कूटबद्ध करने की कुंजी का प्रकारः"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "पार्टीशन करने की विधिः"
+msgstr "कूटबद्ध करने की कुंजी का हैशः"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "इस पार्टीशन हेतु फ़ाइल सिस्टम:"
+msgstr "इस पार्टीशन हेतु कूटबद्ध करने की कुंजी के हैश का प्रकारः"
 
 #. Type: select
 #. Description
@@ -208,16 +202,14 @@ msgstr "हाँ"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "इस पार्टीशन हेतु माउन्ट प्वाइंटः"
+msgstr "इस पार्टिशन का डाटा मिटाएँ"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "संपूर्ण डिस्क साफ करें: ${DEVICE}"
+msgstr "वास्तव में ${DEVICE} से डाटा मिटाएँ?"
 
 #. Type: boolean
 #. Description
@@ -231,9 +223,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "संपूर्ण डिस्क साफ करें: ${DEVICE}"
+msgstr "${DEVICE} से डाटा मिटा रहे हैं"
 
 #. Type: error
 #. Description
@@ -252,9 +243,8 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "फ्रेम बफर सेटअप किया जा रहा है..."
+msgstr ""
 
 #. Type: text
 #. Description
@@ -380,7 +370,7 @@ msgstr ""
 #: ../partman-crypto.templates:222
 #, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "लॉज़िकल वॉल्यूम कॉन्फ़िगरेशन क्रियाः"
+msgstr "नेटवर्क कॉन्फ़िगर करें"
 
 #. Type: error
 #. Description

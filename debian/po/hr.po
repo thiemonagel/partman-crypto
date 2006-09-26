@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2005-03-05 21:51+0100\n"
-"Last-Translator: Krunoslav Gernhard <kruno@linux.hr>\n"
+"PO-Revision-Date: 2006-09-25 23:55+0200\n"
+"Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,9 +25,8 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "fizički prostor za ULP"
+msgstr "fizički prostor za enkripciju"
 
 #. Type: text
 #. Description
@@ -35,7 +34,7 @@ msgstr "fizički prostor za ULP"
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #. Type: text
 #. Description
@@ -44,7 +43,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -53,7 +52,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -61,50 +60,46 @@ msgstr ""
 #. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
-msgstr ""
+msgstr "nije aktivna"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Način particioniranja:"
+msgstr "Način enkripcije:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Točka montiranja za ovu particiju:"
+msgstr "Način enkripcije za ovu particiju:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr ""
+msgstr "Enkripcija:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Točka montiranja za ovu particiju:"
+msgstr "Enkripcija za ovu particiju:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr ""
+msgstr "Key size:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Datotečni sustav za ovu particiju:"
+msgstr "Key size za ovu particiju:"
 
 #. Type: text
 #. Description
@@ -113,16 +108,15 @@ msgstr "Datotečni sustav za ovu particiju:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "IV algoritam:"
 
 #. Type: select
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
-#, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Točka montiranja za ovu particiju:"
+msgstr "Initialization vector generation algoritam za ovu particiju:"
 
 #. Type: select
 #. Description
@@ -135,35 +129,36 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Postoje razni algoritmi kojima se određuje inicijalizacijski vektor za svaki "
+"sector. Ovaj izbor utječe na sigurnost enkripcije. U normalnim okolnostima "
+"nema razloga za promjenu preporučene zadane vrijednosti, osim zbog "
+"kompatibilnosti sa starijim sustavima."
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr ""
+msgstr "Ključ za enkripciju:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Datotečni sustav za ovu particiju:"
+msgstr "Tip enkripcijskog ljuča za ovu particiju:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Način particioniranja:"
+msgstr "Hash enkripcijskog ključa:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Datotečni sustav za ovu particiju:"
+msgstr "Tip hasha za enkripcijski ključ ove particije:"
 
 #. Type: select
 #. Description
@@ -174,6 +169,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Enkripcijski ključ se izvodi iz lozinke (passphrase) tako da se na njega "
+"primijeni jednosmjerna hash funkcija. U normalnim okolnostima nema razloga "
+"za promjenu preporučene zadane vrijednosti, i neispravna promjena može "
+"smanjiti snagu enkripcije."
 
 #. Type: text
 #. Description
@@ -181,7 +180,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Obriši podatke:"
 
 #. Type: text
 #. Description
@@ -198,16 +197,14 @@ msgstr "da"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Točka montiranja za ovu particiju:"
+msgstr "Obriši podatke na ovoj particiji:"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Obriši cijeli disk: ${DEVICE}"
+msgstr "Stvarno obrisati podatke na ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -217,19 +214,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Podaci na ${DEVICE} će biti prepisani s nasumce generiranim podacima. "
+"Prijašnji podaci se neće moći vratiti nakon što završi ovaj korak. Ovo je "
+"zadnja prilika za odustajanje od brisanja."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Obriši cijeli disk: ${DEVICE}"
+msgstr "Brišem podatke na ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Brisanje podataka na ${DEVICE} nije uspjelo"
 
 #. Type: error
 #. Description
@@ -238,40 +237,38 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Dogodila se greška pri pokušaju brisanja podataka na ${DEVICE}. Podaci nisu "
+"obrisani."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
-#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Postavljam okvirni tampon..."
+msgstr "Postavljam enkripciju..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Podesi mrežu"
+msgstr "Podesi enkriptirane prostore"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Nema particija"
+msgstr "Nema particija za enkripciju"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "Nije izabran paket kernela za instalaciju."
+msgstr "Nije izabrana nijedna particija za enkripciju."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr ""
+msgstr "Nedostaju potrebni programi"
 
 #. Type: note
 #. Description
@@ -280,12 +277,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"Ovo izdanje debian-installera ne sadrži jedan ili više programa koji su "
+"potrebni da bi partman-crypto ispravno funkcionirao."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Nedostaju potrebne enkripcijske opcije"
 
 #. Type: error
 #. Description
@@ -294,6 +293,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Enkripcijske opcije za ${DEVICE} nisu potpune. Molim vratite se na izbornik "
+"particija i odaberite sve potrebne opcije."
 
 #. Type: text
 #. Description
@@ -302,22 +303,20 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:178
 msgid "missing"
-msgstr ""
+msgstr "nedostaje"
 
 #. Type: text
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "fizički prostor za ULP"
+msgstr "Koristi se kao fizički prostor za enkriptirani prostor ${DEV}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Instalacija ELILO neuspjela"
+msgstr "Instalacija enkripcijskog paketa nije uspjela"
 
 #. Type: error
 #. Description
@@ -326,6 +325,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"Paket s kernel modulima ${PACKAGE} nije pronađen ili se dogodila greška pri "
+"njegovoj instalaciji."
 
 #. Type: error
 #. Description
@@ -335,81 +336,75 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"Vjerojatno će biti problema pri postavljanju enkriptiranih particija nakon "
+"što se sustav ponovo podigne. To ćete moći ispraviti naknadnom instalacijom "
+"potrebnih paketa."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Zapiši promjene na diskove i podesi ULP?"
+msgstr "Zapiši promjene na diskove i podesi enkriptirane prostore?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Prije negoli krenete podešavati Upravljač logičkim prostorom, trenutna shema "
+"Prije negoli krenete podešavati enkriptirane prostore, trenutna shema "
 "particioniranja mora biti zapisana na disk. To se ne može poništiti."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Zadrži trenutni raspored particija i podesi ULP?"
+msgstr "Zadrži trenutni raspored particija i podesi enkriptirane prostore?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Nakon što podesite Upravljač logičkim prostorom, više neće biti moguće "
-"dodatne promjene particija na diskovima koji sadrže fizičke prostore. Molim "
+"Nakon što podesite enkriptirane prostore, više neće biti moguće dodatne "
+"promjene particija na diskovima koji sadrže enkriptirane prostore. Molim "
 "odlučite jeste li zadovoljni trenutnom shemom particioniranja na tim "
 "diskovima prije negoli nastavite."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "ULP podešavanje neuspjelo"
+msgstr "Podešavanje enkriptiranih prostora nije uspjelo"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Pojavila se pogreška pri zapisivanju promjena na diskove."
+msgstr "Pojavila se pogreška pri podešavanju enkriptiranih prostora."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Podešavanje RAID-a prekinuto je."
+msgstr "Podešavanje je prekinuto."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Korak instalacije neuspio."
+msgstr "Inicijalizacija enkriptiranog prostora nije uspjela."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Pojavila se pogreška pri zapisivanju promjena na diskove."
+msgstr "Pojavila se pogreška pri podešavanju enkriptiranih prostora."
 
 #. Type: text
 #. Description
@@ -419,7 +414,7 @@ msgstr "Pojavila se pogreška pri zapisivanju promjena na diskove."
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Passphrase"
-msgstr ""
+msgstr "Lozinka (passphrase)"
 
 #. Type: text
 #. Description
@@ -429,7 +424,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Keyfile (GnuPG)"
 
 #. Type: text
 #. Description
@@ -439,19 +434,19 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr ""
+msgstr "Random key"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Pronađen nesigurni swap prostor"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Pronađen je nesigurni swap prostor."
 
 #. Type: error
 #. Description
@@ -461,6 +456,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Ovo je fatalna greška zbog toga što se osjetljivi podaci mogu zapisati na "
+"disk bez da se enkriptiraju. To bi omogućilo nekome s prisupom disku da "
+"povrati dijelove enkripcijskog ključa ili lozinke."
 
 #. Type: error
 #. Description
@@ -470,34 +468,35 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Molim onemogućite swap prostor (npr. pokretanjem naredbe swapoff) ili "
+"podesite enkriptirani swap prostor i onda ponovo pokrenite podešavanje "
+"enkriptiranih prostora. Ovaj program će se sada prekinuti."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Enkripcijska lozinka (passphrase):"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Morate odabrati lozinku (passphrase) za enkripciju ${DEVICE}."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Morate postaviti zaporku za daljinski pristup Debianovom instalacijskom "
-"programu. Zlonamjeran ili nestručan korisnik koji ima pristup instalaciji "
-"može izazvati golemu štetu, pa se pobrinite da zaporku ne bude jednostavno "
-"odgonetnuti. To ne bi trebala biti obična riječ, ili riječ koju je lako "
-"povezati s vama."
+"Sveukupna snaga enkripcije jako ovisi o ovoj lozinki, pa biste trebali "
+"pažljivo odabrati lozinku koju nije lako pogoditi. To ne bi smjela biti "
+"riječ ili rečenica koja se nalazi u rječnicima, niti fraza koju bi se lako "
+"moglo asocirati sa vama."
 
 #. Type: password
 #. Description
@@ -507,41 +506,43 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Dobra lozinka treba sadržavati miješana slova, brojeve i interpunkcijske "
+"znakove. Za lozinke u smislu 'passphrases' se preporučuje da imaju dužinu od "
+"20 ili više znakova."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Ponovo upišite lozinku (passphrase) za provjeru:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Molim unesite istu zaporku opet, za potvrdu da ste je pravilno utipkali."
+"Molim unesite istu lozinku (passphrase) opet, za potvrdu da ste je pravilno "
+"utipkali."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr ""
+msgstr "Greška u unosu lozinke"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
-#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Zaporke koje ste unijeli nisu iste. Molim unesite zaporku ponovo."
+msgstr "Lozinke koje ste unijeli nisu iste. Molim pokušajte ponovo."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr ""
+msgstr "Prazna lozinka (passphrase)"
 
 #. Type: note
 #. Description
@@ -550,12 +551,13 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"Unijeli ste praznu lozinku, što nije dozvoljeno. Molim odaberite lozinku."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "Koristi slabu lozinku?"
 
 #. Type: boolean
 #. Description
@@ -567,18 +569,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"Upisali ste lozinku (passphrase) koja sadrži manje od ${MINIMUM} znakova, "
+"što se smatra preslabim. Trebali biste odabrati jaču lozinku."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr ""
+msgstr "Upisati nasumce odabrane znakove"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Radi se enkripcijski ključ za ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
@@ -588,20 +592,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"Možete pomoći ubrzati ovaj proces tako da unosite nasumce odabrane znakove "
+"putem tipkovnice, ili samo pričekajte dovoljno dugo dok se ne skupi dovoljno "
+"podataka. (POZOR: ovo može dosta potrajati)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Mijenjanje veličine neuspjelo"
+msgstr "Greška pri pravljenju keyfilea"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Pojavila se pogreška pri zapisivanju promjena na diskove."
+msgstr "Dogodila se greška pri pravljenju keyfilea."
 
 #. Type: error
 #. Description
@@ -611,6 +616,9 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"Odabrali ste korijenski datotečni sustav na enkriptiranoj particiji. Ova "
+"mogućnost nije dostupna i ako biste sad nastavili, ova instalacija ne bi "
+"bila upotrebljiva."
 
 #. Type: error
 #. Description
@@ -618,6 +626,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
+"Molim vratite se i odaberite neenkriptiranu particiju za korijenski "
+"datotečni sustav."
 
 #. Type: error
 #. Description
@@ -627,21 +637,21 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"Odabrali ste korijenski datotečni sustav na enkriptiranoj particiji. Ova "
+"mogućnost zahtijeva zasebnu /boot particiju na kojoj će se pohraniti kernel "
+"i initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Trebali biste rabiti drugi datotečni sustav, recimo ext3, za /boot particiju."
+msgstr "Trebate se vratiti i podesiti /boot particiju."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "ULP podešavanje neuspjelo"
+msgstr "Podešavanje enkripcije nije uspjelo"
 
 #. Type: error
 #. Description
@@ -652,6 +662,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"Odabrali ste da se /boot datotečni sustav nalazi na enkriptiranoj particiji. "
+"To nije moguće jer onda boot učitavač ne bi mogao učitati kernel i initrd. "
+"Ako biste sad nastavili, ova instalacija ne bi bila upotrebljiva."
 
 #. Type: error
 #. Description
@@ -660,13 +673,14 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
+"Trebate se vratiti i odabrati neenkriptiranu particiju za /boot datotečni "
+"sustav."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Jeste li sigurni da sada želite izaći?"
+msgstr "Jeste li sigurni da želite koristiti nasumce odabrani ključ?"
 
 #. Type: boolean
 #. Description
@@ -675,6 +689,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
+"Odabrali ste nasumce odabrani tip ključa za ${DEVICE} ali ste rekli programu "
+"za particije da na tom uređaju napravi i datotečni sustav."
 
 #. Type: boolean
 #. Description
@@ -683,26 +699,30 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Korištenje nasumce odabranog ključa znači da će podaci na particiji biti "
+"uništeni pri svakom ponovnom pokretanju sustava. To se treba raditi samo sa "
+"swap particijama."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Učitavanje instalacijskog dijela neuspjelo"
+msgstr "Neuspjeh pri skidanju kriptografskih komponenti"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Pojavila se pogreška pri zapisivanju promjena na diskove."
+msgstr ""
+"Dogodila se greška pri pokušaju skidanja dodatnih kriptografskih komponenti."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Nastaviti s instalacijom kriptografskih komponenti unatoč nedostatku radne "
+"memorije?"
 
 #. Type: boolean
 #. Description
@@ -712,12 +732,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Čini se da nije dostupno dovoljno memorije da bi se instalirale dodatne "
+"kriptografske komponente. Ako odlučite nastaviti ovako, instalacijski proces "
+"bi mogao naići na probleme."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Stvarno koristiti enkripciju block uređaja?"
 
 #. Type: boolean
 #. Description
@@ -729,3 +752,9 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Podrška za enkripciju block uređaja je još uvijek eksperimentalna i smatra "
+"se nespremnom za produkcijsku upotrebu. Konkretno, njena upotreba bi mogla "
+"prouzročiti takve postavke koji su lako provaljivi i na taj način odavati "
+"lažan osjećaj sigurnosti. Iako nema poznatih problema s enkripcijom, dok se "
+"ova mogućnost temeljito ne istestira, ne bi se trebala koristiti osim za "
+"potrebe testiranja."

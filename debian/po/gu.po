@@ -56,7 +56,7 @@ msgstr "લુપબેક (લુપ-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "ઉપકરણ-સંબંધક (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -298,7 +298,7 @@ msgstr "ગેરહાજર"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr ""
+msgstr "એન્ક્રિપ્ટેડ કદ ${DEV} માટે ભૌતિક કદ તરીકે ઉપયોગમાં"
 
 #. Type: error
 #. Description
@@ -312,7 +312,7 @@ msgstr "એન્ક્રિપ્શન પેકેજ સ્થાપન ન
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr ""
+msgstr "કર્નલ મોડ્યુલ પેકેજ ${PACKAGE} મળ્યું નહી અથવા તેના સ્થાપન વખતે ક્ષતિ આવી."
 
 #. Type: error
 #. Description
@@ -341,7 +341,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
+msgstr "હાલની પાર્ટિશન પધ્ધતિ એમ જ રાખશો અને એન્ક્રિપ્ટેડ કદો રૂપરેખાંકિત કરશો?"
 
 #. Type: boolean
 #. Description
@@ -357,13 +357,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "એન્ક્રિપ્ટ કરેલ કદોનું રૂપરેખાંકન નિષ્ફળ ગયું"
+msgstr "એન્ક્રિપ્ટેડ કરેલ કદોનું રૂપરેખાંકન નિષ્ફળ ગયું"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "એન્ક્રિપ્ટેડ કદોનાં રૂપરેખાંકન વખતે ક્ષતિ આવી."
 
 #. Type: error
 #. Description
@@ -381,7 +381,7 @@ msgstr "એન્ક્રિપ્ટેડ કદની શરૂઆત નિ
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "એન્ક્રિપ્ટેડ કદો ગોઠવતી વખતે ક્ષતિ આવી."
 
 #. Type: text
 #. Description
@@ -401,7 +401,7 @@ msgstr "પાસફ્રેઝ"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "કીફાઇલ (ગ્નુ પીજી)"
+msgstr "કીફાઇલ (ગ્નુપીજી)"
 
 #. Type: text
 #. Description
@@ -500,7 +500,7 @@ msgstr "પાસફ્રેઝ ઇનપુટ ક્ષતિ"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "તમે દાખલ કરેલ બે પાસફ્રેઝ સરખાં નહોતાં. મહેરબાની કરી ફરી પ્રયત્ન કરો."
 
 #. Type: note
 #. Description
@@ -515,8 +515,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"તમે ખાલી પાસફ્રેઝ દાખલ કર્યો છે, જે માન્ય નથી. મહેરબાની કરી ખાલી ન હોય તેવોપાસફ્રેઝ પસંદ "
-"કરો."
+"તમે ખાલી પાસફ્રેઝ દાખલ કર્યો છે, જે માન્ય નથી. મહેરબાની કરી ખાલી ન હોય તેવો પાસફ્રેઝ "
+"પસંદ કરો."
 
 #. Type: boolean
 #. Description
@@ -583,6 +583,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
+"મહેરબાની કરી પાછા જાવ અને રૂટ ફાઇલ સિસ્ટમ માટે એન્ક્રિપ્ટ ન હોય તેવું પાર્ટિશન પસંદ કરો."
 
 #. Type: error
 #. Description
@@ -622,12 +623,14 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
+"તમારે પાછા જવું જોઇએ અને /boot ફાઇલ સિસ્ટમ માટે એન્ક્રિપ્ટ ન હોય તેવું પાર્ટિશન પસંદ કરવું "
+"જોઇએ."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "તમે ચોક્કસ છો કે ગમે તે કી વાપરવા માંગો છો?"
 
 #. Type: boolean
 #. Description
@@ -655,13 +658,13 @@ msgstr "ક્રાય્પ્ટો ભાગો લાવવામાં ન
 #. Description
 #: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
-msgstr ""
+msgstr "વધારાના ક્રાય્પટો ભાગો ડાઉનલોડ કરતી વખતે ક્ષતિ આવી."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "અપૂરતી મેમરી હોવા છતાં ક્રાય્પટો ભાગો સ્થાપન કરવા માટે આગળ વધશો?"
 
 #. Type: boolean
 #. Description
@@ -676,7 +679,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "ખરેખર બ્લોક ઉપકરણ એન્ક્રિપ્શન વાપરશો?"
 
 #. Type: boolean
 #. Description

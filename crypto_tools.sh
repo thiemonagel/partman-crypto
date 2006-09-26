@@ -554,7 +554,7 @@ crypto_check_required_tools() {
 	esac
 
 	for tool in $tools; do
-		if [ ! -x $tool ]; then
+		if [ ! -e $tool ]; then
 			db_fset partman-crypto/tools_missing seen false
 			db_input critical partman-crypto/tools_missing
 			db_go || true

@@ -1,4 +1,4 @@
-partman-crypto (14) UNRELEASED; urgency=low
+partman-crypto (14) unstable; urgency=low
 
   [ David Härdeman ]
   * Add fixes for udeb-on-demand loading. Closes: #389456
@@ -7,7 +7,24 @@ partman-crypto (14) UNRELEASED; urgency=low
   * No need to check for plugin-entropy-text.so as we already
     check db_capb
 
- -- Max Vozeler <xam@debian.org>  Thu, 28 Sep 2006 08:23:23 +0200
+  [ Updated translations ]
+  * Bengali (bn.po) by Mahay Alam Khan (মাহে আলম খান)
+  * Catalan (ca.po) by Jordi Mallach
+  * Greek, Modern (1453-) (el.po) by quad-nrg.net
+  * Esperanto (eo.po) by Serge Leblanc
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Nishant Sharma
+  * Croatian (hr.po) by Josip Rodin
+  * Italian (it.po) by Giuseppe Sacco
+  * Korean (ko.po) by Sunjae park
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Dutch (nl.po) by Bart Cornelis
+  * Polish (pl.po) by Bartosz Fenski
+  * Albanian (sq.po) by Elian Myftiu
+  * Ukrainian (uk.po) by Eugeniy Meshcheryakov
+
+ -- Max Vozeler <xam@debian.org>  Thu, 28 Sep 2006 08:26:35 +0200
 
 partman-crypto (13) unstable; urgency=low
 

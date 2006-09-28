@@ -19,13 +19,13 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-27 02:19+0300\n"
+"PO-Revision-Date: 2006-09-27 17:50+0300\n"
 "Last-Translator: quad-nrg.net <yodesy@quad-nrg.net>\n"
 "Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
@@ -138,6 +138,11 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Υπάρχουν διαφορετικοί αλγόριθμοι για την παραγωγή του διάνυσματος "
+"αρχικοποίησης για κάθε τομέα. Η επιλογή αυτή επηρεάζει την ασφάλεια της "
+"κρυπτογράφησης. Συνήθως, δεν υπάρχει λόγος να αλλάξετε την συνιστώμενη "
+"προκαθορισμένη τιμή, παρά μόνον ίσως για λόγους συμβατότητας με παλιότερα "
+"συστήματα."
 
 #. Type: text
 #. Description
@@ -156,16 +161,14 @@ msgstr "Είδος κλειδιού κρυπτογράφησης γι' αυτή 
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
-#, fuzzy
 msgid "Encryption key hash:"
-msgstr "Κλειδί κρυπτογράφησης:"
+msgstr "Κλειδί hash κρυπτογράφησης:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Είδος κλειδιού κρυπτογράφησης γι' αυτή την κατάτμηση:"
+msgstr "Τύπος του κλειδιού hash κρυπτογράφησης γι' αυτήν την κατάτμηση:"
 
 #. Type: select
 #. Description
@@ -176,6 +179,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Το κλειδί της κρυπτογράφησης παράγεται από την συνθηματική φράση με την "
+"εφαρμογή μιας μονόδρομης συνάρτησης hash σ' αυτήν. Συνήθως, δεν υπάρχει "
+"λόγος να το αλλάξετε αυτό από την συνιστώμενη προκαθορισμένη τιμή και αν το "
+"κάνετε με λάθος τρόπο πιθανόν να μειώσετε την ισχύ της κρυπτογράφησης."
 
 #. Type: text
 #. Description
@@ -183,7 +190,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Διαγραφή δεδομένων:"
 
 #. Type: text
 #. Description
@@ -200,16 +207,14 @@ msgstr "ναι"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Κρυπτογράφηση γι' αυτή την κατάτμηση:"
+msgstr "Διαγραφή δεδομένων σ' αυτήν την κατάτμηση"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Χρήση ολόκληρου του δίσκου: ${DEVICE}"
+msgstr "Να διαγραφούν πραγματικά τα δεδομένα στη συσκευή ${DEVICE};"
 
 #. Type: boolean
 #. Description
@@ -219,19 +224,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Τα δεδομένα στην συσκευή ${DEVICE} θα αντικατασταθούν από τυχαία δεδομένα. "
+"Δεν θα μπορούν πλέον να ανακτηθούν μετά την ολοκλήρωση αυτού του βήματος. "
+"Αυτή είναι η τελευταία σας ευκαιρία να ακυρώσετε την διαγραφή."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Χρήση ολόκληρου του δίσκου: ${DEVICE}"
+msgstr "Διαγραφή των δεδομένων στη συσκευή ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Η διαγραφή των δεδομένων στη συσκευή ${DEVICE} απέτυχε"
 
 #. Type: error
 #. Description
@@ -240,6 +247,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Προέκυψε σφάλμα κατά την προσπάθεια διαγραφής των δεδομένων στη συσκευή "
+"{DEVICE}. Τα δεδομένα δεν διεγράφησαν."
 
 #. Type: text
 #. Description
@@ -274,13 +283,12 @@ msgstr "Λείπουν προγράμματα που απαιτούνται."
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Αυτή η έκδοση του debian-installer δεν περιλαμβάνει ένα ή περισσότερα "
-"προγράμματα που απαιτούνται για την σωστή λειτουργία του partman-crypt"
+"προγράμματα που απαιτούνται για την σωστή λειτουργία του partman-crypto."
 
 #. Type: error
 #. Description
@@ -312,9 +320,8 @@ msgstr "λείπει"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "φυσικός τόμος για κρυπτογράφηση"
+msgstr "Σε χρήση σαν φυσικός τόμος για τον κρυπτογραφημένο τόμο ${DEV}"
 
 #. Type: error
 #. Description
@@ -325,34 +332,31 @@ msgstr "Αποτυχία στην εγκατάσταση του πακέτου �
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Το πακέτο του αρθρώματος του πυρήνα ${PACKAGE} δεν μπόρεσε να βρεθεί ή "
-"συνέβη κάποιο σφάλμα κατά την εγκατάσταση."
+"Δεν βρέθηκε το πακέτο του αρθρώματος του πυρήνα ${PACKAGE} ή συνέβη κάποιο "
+"σφάλμα κατά την εγκατάστασή του."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Πιθανόν να υπάρξουν προβλήματα κατά τηνεκκίνηση όταν το σύστημα προσπαθήσει "
-"να ρυθμίσει κρυπτογραφημένες κατατμήσεις. Μπορείτα ακόμα να διορθώσετε τα "
-"προβλήματα αυτά εγκαθιστώντας το απαιτούμενο πακέτο αργότερα."
+"Πιθανόν να υπάρξουν προβλήματα κατά την ρύθμιση κρυπτογραφημένων κατατμήσεων "
+"όταν το σύστημα επανεκκινήσει. Μπορείτε πιθανόν ακόμα να το διορθώσετε αυτό "
+"εγκαθιστώντας το(α) απαιτούμενα(α) πακέτο(α) αργότερα."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
-"Να αποθηκευθούν οι αλλαγές στους δίσκους και να γίνει ρύθμιση των "
+"Να αποθηκευτούν οι αλλαγές στους δίσκους και να γίνει ρύθμιση των "
 "κρυπτογραφημένων τόμων;"
 
 #. Type: boolean
@@ -377,24 +381,22 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Μετά τη ρύθμιση των κρυπτογραφημένων τόμων, δεν επιτρέπονται αλλαγές στις "
-"κατατμήσεις των δίσκων που περιέχουν κρυπτογραφημένους τόμους. Παρακαλώ, "
-"αποφασίστε αν είσαστε ικανοποιημένος/η με το παρόν σχήμα διαμέρισης σ' "
-"αυτούς τους δίσκους πριν προχωρήσετε."
+"Μετά τη ρύθμιση των κρυπτογραφημένων τόμων, δεν επιτρέπονται επιπλέον "
+"αλλαγές στις κατατμήσεις των δίσκων που περιέχουν κρυπτογραφημένους τόμους. "
+"Παρακαλώ, βεβαιωθείτε ότι είσαστε ικανοποιημένος/η με το παρόν σχήμα "
+"διαμέρισης γι' αυτούς τους δίσκους πριν συνεχίσετε."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "Αποτυχία στην ρύθμιση των κρυπτογραφημένων τόμων"
+msgstr "Η ρύθμιση των κρυπτογραφημένων τόμων απέτυχε"
 
 #. Type: error
 #. Description
@@ -405,16 +407,14 @@ msgstr "Προέκυψε σφάλμα κατά την ρύθμιση των κρ
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "The configuration has been aborted."
 msgstr "Η ρύθμιση εγκαταλείφθηκε."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Απέτυχε η εργασία της εγκατάστασης"
+msgstr "Η αρχικοποίηση των κρυπτογραφημένων τόμων απέτυχε."
 
 #. Type: error
 #. Description
@@ -657,25 +657,21 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Έχετε επιλέξει να αποθηκεύσετε το ριζικό σύστημα αρχείων σε μια "
-"κρυπτογραφημένη κατάτμηση. Αυτό το χαρακτηριστικό δεν είναι τώρα διαθέσιμο "
-"και αν συνεχίσετε τώρα αυτό θα έχει σαν αποτέλεσμα μια εγκατάσταση που δεν "
-"θα μπορεί να χρησιμοποιηθεί."
+"Έχετε επιλέξει την αποθήκευση του ριζικού συστήματος αρχείων σε μια "
+"κρυπτογραφημένη κατάτμηση. Αυτό το χαρακτηριστικό απαιτεί μια ξεχωριστή "
+"κατάτμηση /boot στην οποία να μπορούν να αποθηκευτούν ο πυρήνας και ο δίσκος "
+"μνήμης initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Θα πρέπει να χρησιμοποιήσετε έναν άλλο τύπο συστήματος αρχείων, όπως ext3, "
-"για την κατάτμηση /boot."
+msgstr "Θα πρέπει να πάτε πίσω και να προσδιορίσετε μια κατάτμηση /boot."
 
 #. Type: error
 #. Description
@@ -686,28 +682,27 @@ msgstr "Αποτυχία ρύθμισης της κρυπτογράφησης"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Έχετε επιλέξει να αποθηκεύσετε το ριζικό σύστημα αρχείων σε μια "
-"κρυπτογραφημένη κατάτμηση. Αυτό το χαρακτηριστικό δεν είναι τώρα διαθέσιμο "
-"και αν συνεχίσετε τώρα αυτό θα έχει σαν αποτέλεσμα μια εγκατάσταση που δεν "
-"θα μπορεί να χρησιμοποιηθεί."
+"Έχετε επιλέξει την αποθήκευση του συστήματος αρχείων /boot σε μια "
+"κρυπτογραφημένη κατάτμηση. Αυτό δεν είναι δυνατόν γιατί ο φορτωτής εκκίνησης "
+"δεν θα μπορούσε να φορτώσει τον πυρήνα και τον δίσκο μνήμης initrd. Αν "
+"συνεχίσετε θα καταλήξετε με μια εγκατάσταση που δεν θα μπορεί να "
+"χρησιμοποιηθεί."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Παρακαλώ επιστρέψτε πίσω και επιλέξτε μια μη κρυπτογραφημένη κατάτμηση για "
-"το ριζικό σύστημα αρχείων."
+"Θα πρέπει να πάτε πίσω και να επιλέξετε μια μη-κρυπτογραφημένη κατάτμηση για "
+"το σύστημα αρχείων /boot."
 
 #. Type: boolean
 #. Description
@@ -740,22 +735,24 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Σφάλμα κατά τη φόρτωση πακέτου λογισμικού του εγκαταστάτη"
+msgstr "Αποτυχία στο κατέβασμα των συνιστωσών του crypto"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Προέκυψε σφάλμα κατά την ρύθμιση των κρυπτογραφημένων τόμων."
+msgstr ""
+"Προέκυψε σφάλμα κατά την προσπάθεια κατεβάσματος επιπλέον συνιστωσών του "
+"crypto."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Να προχωρήσει η εγκατάσταση συνιστωσών της κρυπτογράφησης παρά την ανεπαρκή "
+"μνήμη;"
 
 #. Type: boolean
 #. Description
@@ -765,12 +762,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Φαίνεται να μην υπάρχει επαρκής διαθέσιμη μνήμη για την εγκατάσταση επιπλέον "
+"συνιστωσών κρυπτογράφησης. Αν επιλέξετε να προχωρήσετε και να συνεχίσετε "
+"έτσι κι αλλιώς, η διαδικασία εγκατάστασης μπορεί να αποτύχει."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Να χρησιμοποιηθεί πραγματικά κρυπτογράφηση της συσκευής block;"
 
 #. Type: boolean
 #. Description
@@ -782,3 +782,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Η υποστήριξη για την κρυπτογράφηση μιας συσκευής block είναι ακόμα "
+"πειραματική και δεν θεωρείται έτοιμη για συστήματα παραγωγής. Πιο "
+"συγκεκριμένα μπορεί να έχει σαν αποτέλεσμα σε διαμορφώσεις που είναι εύκολο "
+"να παραβιαστούν δίνοντας έτσι μια ανακριβή αίσθηση ασφάλειας. Δεν υπάρχουν "
+"γνωστά ελαττώματα στην κρυπογράφηση, παρ' όλα αυτά μέχρι η υλοποίηση να "
+"ελεγχθεί εξαντλητικά, αυτό το γνώρισμα δεν θα πρέπει να χρησιμοποιείται παρά "
+"μόνον για λόγους δοκιμής."

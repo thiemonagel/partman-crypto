@@ -541,7 +541,7 @@ crypto_prepare_method () {
 crypto_check_required_tools() {
 	local tools
 
-	tools="/bin/blockdev-keygen /usr/lib/cdebconf/frontend/newt/plugin-entropy-text.so"
+	tools="/bin/blockdev-keygen"
 	case $1 in
 	dm-crypt)
 		tools="$tools /sbin/dmsetup /sbin/cryptsetup /lib/libpopt.so.0"

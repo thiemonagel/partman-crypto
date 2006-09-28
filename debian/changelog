@@ -1,8 +1,13 @@
 partman-crypto (14) UNRELEASED; urgency=low
 
+  [ David Härdeman ]
   * Add fixes for udeb-on-demand loading. Closes: #389456
 
- -- David Härdeman <david@2gen.com>  Tue, 26 Sep 2006 18:36:34 +0200
+  [ Max Vozeler ]
+  * No need to check for plugin-entropy-text.so as we already
+    check db_capb
+
+ -- Max Vozeler <xam@debian.org>  Thu, 28 Sep 2006 08:23:23 +0200
 
 partman-crypto (13) unstable; urgency=low
 

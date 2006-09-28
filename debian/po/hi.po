@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of new-hi.po to Hindi
+# translation of hi.po to Hindi
 # translation of debian-installer_packages_po.po to
 # translation of debian-installer_packages_po.po to
 # translation of debian-installer_packages_po.po to
@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: new-hi\n"
+"Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-25 23:23+0530\n"
+"PO-Revision-Date: 2006-09-28 09:32+0530\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -249,16 +249,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
-#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "नेटवर्क कॉन्फ़िगर करें"
+msgstr "कूटबद्ध वॉल्यूम व्यवस्थित करें"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "कोई पार्टीशन नहीं मिला"
+msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं"
 
 #. Type: note
 #. Description
@@ -313,9 +311,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "एलिलो संस्थापना असफल हो गया"
+msgstr "कूट संबद्ध पैकेज के संस्थापन में त्रुटि"
 
 #. Type: error
 #. Description
@@ -337,9 +334,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "परिवर्तनों को डिस्क में लिखें?"
+msgstr "परिवर्तनों को डिस्क में लिखें और कूटबद्ध वॉल्यूमों को व्यवस्थित करें?"
 
 #. Type: boolean
 #. Description
@@ -368,9 +364,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "Configuration of encrypted volumes failed"
-msgstr "नेटवर्क कॉन्फ़िगर करें"
+msgstr "कूटबद्ध वॉल्यूमों का व्यवस्थापन असफल"
 
 #. Type: error
 #. Description
@@ -381,22 +376,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "नक़ल की प्रक्रिया छोड़ी गई."
+msgstr "व्यवस्थापन की प्रक्रिया छोड़ी गई."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
-#, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "संस्थापना का यह चरण असफल हो गया"
+msgstr "कूटबद्ध वॉल्यूम का प्रारंभ असफल"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "कूटबद्ध वॉल्यूमों को व्यवस्थित करने में त्रुटि हुई."
 
 #. Type: text
 #. Description
@@ -570,9 +563,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
-#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "नया आकार देने की प्रक्रिया असफल रही"
+msgstr "कुंजीफाइल की रचना असफल रही"
 
 #. Type: error
 #. Description
@@ -614,9 +606,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "नेटवर्क कान्फ़िगरेशन असफल"
+msgstr "कूट संबद्ध व्यवस्थापन असफल रहा"
 
 #. Type: error
 #. Description
@@ -639,9 +630,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
-#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "क्या आप सुनिश्चित हैं कि आप अब बाहर होना चाहते हैं?"
+msgstr "क्या आप सुनिश्चित हैं कि आप आकस्मिक कुंजी का प्रयोग करना चाहते हैं?"
 
 #. Type: boolean
 #. Description
@@ -662,9 +652,8 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "संस्थापक अवयव लोड करने में असफल"
+msgstr "कूट अवयव डाउनलोड करने में असफल"
 
 #. Type: error
 #. Description

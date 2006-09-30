@@ -120,7 +120,7 @@ msgstr "IV અલગોરિધમ:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "આ પાર્ટિશન માટે વેક્ટર બનાવનાર અલગોરિધમ:"
 
 #. Type: select
 #. Description

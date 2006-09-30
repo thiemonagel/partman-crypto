@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-11 17:07+0300\n"
+"PO-Revision-Date: 2006-09-29 18:40+0300\n"
 "Last-Translator: Tapio Lehtonen <tale@debian.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +55,7 @@ msgstr "Takaisinkytkentä (loop-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr "Laiteyhdistäjä (dm-crypt)"
+msgstr "Laiteyhdistin (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -495,10 +495,10 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Tämä salasana vaikuttaa oleellisesti salauksen vahvuuteen. Salasanaolisi "
-"valittava huolellisesti siten ettei sitä ole helppo arvata. Se ei saisi olla "
-"sanakirjasta löytyvä sana tai lause tai sinuun helposti yhdistettävissä "
-"oleva lause."
+"Tämä tunnuslause vaikuttaa oleellisesti salauksen vahvuuteen. Tunnuslause "
+"olisi valittava huolellisesti siten ettei sitä ole helppo arvata. Se ei "
+"saisi olla sanakirjasta löytyvä sana tai lause tai sinuun helposti "
+"yhdistettävissä oleva lause."
 
 #. Type: password
 #. Description
@@ -524,7 +524,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Kirjoita sama salauslause uudestaan jotta varmistutaan sen "
+"Kirjoita sama tunnuslause uudestaan jotta varmistutaan sen "
 "oikeinkirjoituksesta."
 
 #. Type: error
@@ -538,7 +538,8 @@ msgstr "Tapahtui virhe kirjoitettaessa tunnuslausetta"
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Kirjoittamasi kaksi salasanaa eivät ole samat. Kirjoita salasanat uudelleen."
+"Kirjoittamasi kaksi tunnuslausetta eivät ole samat. Kirjoita tunnuslauseet "
+"uudelleen."
 
 #. Type: note
 #. Description

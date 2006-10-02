@@ -283,6 +283,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"${DEVICE} માટે એન્ક્રિપ્શન વિકલ્પો અધુરા છે. મહેરબાની કરી પાર્ટિશન મેનુમાં પાછા જાવ અને "
+"બધાં જરુરી વિકલ્પો પસંદ કરો."
 
 #. Type: text
 #. Description

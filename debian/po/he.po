@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-15 17:06+0300\n"
+"PO-Revision-Date: 2006-10-02 10:09+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr "כרך פיזי להצפנה"
+msgstr "נפח פיזי להצפנה"
 
 #. Type: text
 #. Description
@@ -248,7 +248,7 @@ msgstr "בונה הצפנה..."
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "הגדר כרכים מוצפנים"
+msgstr "הגדר נפחים מוצפנים"
 
 #. Type: note
 #. Description
@@ -308,7 +308,7 @@ msgstr "חסר"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "בשימוש ככרך פיזי עבור כרך מוצפן ${DEV}"
+msgstr "בשימוש כנפח פיזי עבור נפח מוצפן ${DEV}"
 
 #. Type: error
 #. Description
@@ -340,7 +340,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "לכתוב את השינויים לדיסקים ולהגדיר כרכים מוצפנים?"
+msgstr "לכתוב את השינויים לדיסקים ולהגדיר נפחים מוצפנים?"
 
 #. Type: boolean
 #. Description
@@ -356,7 +356,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "לשמור את הפריסה הקיימת של המחיצות ולהגדיר כרכים מוצפנים?"
+msgstr "לשמור את הפריסה הקיימת של המחיצות ולהגדיר נפחים מוצפנים?"
 
 #. Type: boolean
 #. Description
@@ -367,21 +367,21 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"אחרי שכרכים מוצפנים הוגדרו, נאסר לעשות שינויים במחיצות שבדיסקים המכילים "
-"כרכים מוצפנים. וודא כי אתה מרוצה עם החלוקה הנוכחית למחיצות בדיסקים האלו לפני "
+"אחרי שנפחים מוצפנים הוגדרו, נאסר לעשות שינויים במחיצות שבדיסקים המכילים "
+"נפחים מוצפנים. וודא כי אתה מרוצה עם החלוקה הנוכחית למחיצות בדיסקים האלו לפני "
 "שתמשיך."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "הגדרת כרכים מוצפנים נכשלה"
+msgstr "הגדרת נפחים מוצפנים נכשלה"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "שגיאה קרתה בזמן הגדרת כרכים מוצפנים."
+msgstr "שגיאה קרתה בזמן הגדרת נפחים מוצפנים."
 
 #. Type: error
 #. Description
@@ -393,13 +393,13 @@ msgstr "תהליך ההגדרה בוטל."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "כישלון בהתקנת כרך מוצפן"
+msgstr "כישלון בהתקנת נפח מוצפן"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "שגיאה קרתה בזמן הגדרת כרכים מוצפנים."
+msgstr "שגיאה קרתה בזמן הגדרת נפחים מוצפנים."
 
 #. Type: text
 #. Description
@@ -463,7 +463,7 @@ msgid ""
 "program will now abort."
 msgstr ""
 "בטל את שטח הדפדוף (לדוגמה על ידי הרצה של swapoff) או הגדר שטח דפדוף מוצפן. "
-"לאחר מכן הרץ את התקנת הכרכים המוצפנים מחדש. תוכנית זאת תסיים עכשיו."
+"לאחר מכן הרץ את התקנת נפחים המוצפנים מחדש. תוכנית זאת תסיים עכשיו."
 
 #. Type: password
 #. Description

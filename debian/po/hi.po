@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-29 01:05+0530\n"
+"PO-Revision-Date: 2006-10-01 21:33+0530\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "कूटबद्ध करने के लिए फिज़िकल वॉल्यूम"
 
 #. Type: text
 #. Description
@@ -42,7 +42,7 @@ msgstr ""
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr ""
+msgstr "क्रिप्टो"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "लूपबैक (लूप-एईएस)"
 
 #. Type: text
 #. Description
@@ -60,7 +60,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "डिवाइस-मैपर (डीएम-क्रिप्ट)"
 
 #. Type: text
 #. Description
@@ -68,7 +68,7 @@ msgstr ""
 #. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
-msgstr ""
+msgstr "अक्रिय"
 
 #. Type: text
 #. Description
@@ -88,20 +88,20 @@ msgstr "इस पार्टीशन हेतु कूटबद्ध क�
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr ""
+msgstr "कूटबद्ध करना:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr ""
+msgstr "इस पार्टिशन के लिए कूटबद्ध करना:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr ""
+msgstr "कुंजी का आकार:"
 
 #. Type: select
 #. Description
@@ -116,7 +116,7 @@ msgstr "इस पार्टीशन हेतु कुंजी का आ�
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "आइवी कलनविधि:"
 
 #. Type: select
 #. Description
@@ -124,7 +124,7 @@ msgstr ""
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "इस पार्टिशन के लिए इनिशियलाइज़ेशन वेक्टर जेनेरेशन कलनविधि:"
 
 #. Type: select
 #. Description
@@ -143,7 +143,7 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr ""
+msgstr "एनक्रिप्शन कुंजी:"
 
 #. Type: select
 #. Description
@@ -180,7 +180,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "डाटा मिटाएँ:"
 
 #. Type: text
 #. Description
@@ -214,6 +214,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} के डाटा का क्रम रहित डाटा से उपरिलेखन कर दिया जाएगा. यह चरण पूरा होने के "
+"बाद उस डाटा को नहीं पाया जा सकेगा. यह डाटा को मिटने से बचाने का अंतिम अवसर है."
 
 #. Type: text
 #. Description
@@ -225,7 +227,7 @@ msgstr "${DEVICE} से डाटा मिटा रहे हैं"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "${DEVICE} से डाटा मिटाने में असफल"
 
 #. Type: error
 #. Description
@@ -233,13 +235,13 @@ msgstr ""
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "${DEVICE} से डाटा मिटाने का प्रयास करने में असफल. डाटा नहीं मिटाया गया."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "एनक्रिप्शन को सेटअप कर रहे हैं..."
 
 #. Type: text
 #. Description
@@ -257,13 +259,13 @@ msgstr "कूटबद्ध करने के लिए कोई भी प
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं चुने गये हैं."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr ""
+msgstr "आवश्यक अनुप्रयोग अनुपस्थित हैं"
 
 #. Type: note
 #. Description
@@ -272,12 +274,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"डेबियन-संस्थापक के इस बिल्ड में एक या अधिक वे अनुप्रयोग अनुपस्थित हैं जोकि पार्टमैन-क्रिप्टो के "
+"सही कार्य करने के लिए आवश्यक हैं."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "आवश्यक एनक्रिप्शन विकल्प अनुपस्थित"
 
 #. Type: error
 #. Description
@@ -286,6 +290,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"${DEVICE} के लिए एनक्रिप्शन विकल्प पूर्ण नहीं हैं. कृपया पार्टिशन सूची में वापस जाकर सभी "
+"आवश्यक विकल्प चुनिए."
 
 #. Type: text
 #. Description
@@ -294,14 +300,14 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:178
 msgid "missing"
-msgstr ""
+msgstr "अनुपस्थित"
 
 #. Type: text
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr ""
+msgstr "कूटबद्ध वॉल्यूम ${DEV} के लिए फिज़िकल वॉल्यूम के रूप में उपयोग में है"
 
 #. Type: error
 #. Description
@@ -316,6 +322,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"कर्नेल मॉड्यूल पैकेज ${PACKAGE} या तो पाया नहीं जा सका या फिर उसके संस्थापन के दौरान कुछ "
+"त्रुटि हुई है."
 
 #. Type: error
 #. Description
@@ -325,6 +333,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"ऐसा संभव है कि तंत्र के रीबूट होने पर कूटबद्ध पार्टिशनों को व्यवस्थित करने में समस्याएँ आएँ. आप "
+"बाद में आवश्यक पैकेज संस्थापित करके इसका निदान कर सकते हैं."
 
 #. Type: boolean
 #. Description
@@ -339,12 +349,14 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"इससे पहले कि एनक्रिपटेड वॉल्यूमों को व्यवस्थित किया जा सके, वर्तमान पार्टिशनिंग पद्धति को "
+"डिस्क पर लिखना ही होगा. इन परिवर्तनों को वापस नहीं पाया जा सकेगा."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
+msgstr "वर्तमान पार्टिशनिंग अभिन्यास को रखते हुए और एनक्रिप्टेड वॉल्यूमों को व्यवस्थित करें?"
 
 #. Type: boolean
 #. Description
@@ -355,6 +367,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
+"एनक्रिपटेड वॉल्यूमों को व्यवस्थित कर दिए जाने के बाद, कूटबद्ध वॉल्यूमों को धारण करने वाले "
+"पार्टिशनों पर कोई अतिरिक्त परिवर्तन स्वाकार्य नहीं होंगे. कृपया आगे बढ़ने से पूर्व निश्चय कर "
+"लें कि आप वर्तमान पार्टिशनिंग पद्धति से संतुष्ट हैं."
 
 #. Type: error
 #. Description
@@ -366,7 +381,7 @@ msgstr "कूटबद्ध वॉल्यूमों का व्यवस
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "एनक्रिप्टड वॉल्यूमों को व्यवस्थित करने में एक त्रुटि हुई."
 
 #. Type: error
 #. Description
@@ -404,7 +419,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "कुंजीफाइल (ग्नूपीजी)"
 
 #. Type: text
 #. Description
@@ -420,13 +435,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "असुरक्षित स्वैप क्षेत्र पाया गया"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "एक असुरक्षित स्वैप क्षेत्र पाया गया है."
 
 #. Type: error
 #. Description
@@ -544,7 +559,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "${DEVICE} के लिए एनक्रिप्शन कुंजी अब बनाई जा रही है."
 
 #. Type: entropy-text
 #. Description
@@ -565,7 +580,7 @@ msgstr "कुंजीफाइल की रचना असफल रही"
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "कुंजीफाइल बनाते समय एक त्रुटि हुई."
 
 #. Type: error
 #. Description
@@ -575,13 +590,16 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"आपने रूट फाइलतंत्र को एक कूटबद्ध पार्टिशन पर भंडारित करने के लिए चुना है. यह सुविधा उपलब्ध "
+"नहीं है और इसको जारी रखने की परिणति एक ऐसे संस्थापन में होगी जोकि प्रयोग नहीं किया जा "
+"सकेगा."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
-msgstr ""
+msgstr "कृपया पीछे जाएँ और रूट फाइलतंत्र के लिए एक बिना कूटबद्ध पार्टिशन चुनें."
 
 #. Type: error
 #. Description
@@ -591,12 +609,14 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"आपने रूट फाइलतंत्र को एक कूटबद्ध पार्टिशन पर भंडारित करने के लिए चुना है. ऐसा करने के लिए "
+"एक अलग से /boot पार्टिशन चाहिए होता है जिस पर कर्नेल और इनिटआरडी को रखा जा सके."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "आपको पीछे जाकर अलग से एक /boot विभाजन व्यवस्थित करना चाहिए."
 
 #. Type: error
 #. Description
@@ -613,6 +633,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"आपने /boot पार्टिशन को एक कूटबद्ध पार्टिशन पर भंडारित करने के लिए चुना है. ऐसा इसलिए "
+"संभव नहीं है कि बूटलोडर कर्नेल व इनिटआरडी को लोड करने में असमर्थ हो जाएगा. ऐसे ही जारी "
+"रखने से आपका संस्थापन उपयोग के योग्य नहीं रह जाएगा."
 
 #. Type: error
 #. Description
@@ -620,7 +643,7 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr ""
+msgstr "आपको पीछे जाकर /boot फाइलतंत्र के लिए एक बिना कूट बद्ध पार्टिशन चुनना चाहिए."
 
 #. Type: boolean
 #. Description
@@ -648,19 +671,19 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr "कूट अवयव डाउनलोड करने में असफल"
+msgstr "क्रिप्टो अवयव डाउनलोड करने में असफल"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
-msgstr ""
+msgstr "अतिरिक्त क्रिप्टो अवयव डाउनलोड करने के प्रयास में एक त्रुटि हो गई."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "अपर्याप्त मेमोरी होते हुए भी अतिरिक्त क्रिप्टो अव्यव का संस्थापन जारी रखें?"
 
 #. Type: boolean
 #. Description
@@ -670,12 +693,14 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"अतिरिक्त क्रिप्टो अवयवों को संस्थापित करने के लिए पर्याप्त मेमोरी उपलब्ध प्रतीत नहीं हो "
+"रही है. यदि आप जारी रखने को चुनते हैं तो संस्थापना की प्रक्रिया असफल हो सकती है."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "क्या वास्तव में ब्लॉक डिवाइस एनक्रिप्शन का प्रयोग करें? "
 
 #. Type: boolean
 #. Description

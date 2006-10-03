@@ -8,11 +8,11 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-07-12 14:54+0300\n"
-"Last-Translator: Siim Põder <windo@windowlicker.dyn.ee>\n"
+"PO-Revision-Date: 2006-10-03 10:20+0300\n"
+"Last-Translator: Siim PÃµder <windo@p6drad-teel.net>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: text
@@ -21,7 +21,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr "krüpteeritav füüsiline volüüm"
+msgstr "krÃ¼pteeritav fÃ¼Ã¼siline volÃ¼Ã¼m"
 
 #. Type: text
 #. Description
@@ -29,7 +29,7 @@ msgstr "krüpteeritav füüsiline volüüm"
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr "krüpto"
+msgstr "krÃ¼pto"
 
 #. Type: text
 #. Description
@@ -38,7 +38,7 @@ msgstr "krüpto"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr "Omapöörde (loop-AES)"
+msgstr "OmapÃ¶Ã¶rde (loop-AES)"
 
 #. Type: text
 #. Description
@@ -62,39 +62,39 @@ msgstr "mitteaktiivne"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr "Krüpteerimismeetod:"
+msgstr "KrÃ¼pteerimismeetod:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr "Selle partitsiooni krüpteerimismeetod:"
+msgstr "Selle partitsiooni krÃ¼pteerimismeetod:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr "Krüpteerimine:"
+msgstr "KrÃ¼pteerimine:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr "Selle partitsiooni krüpteerimine:"
+msgstr "Selle partitsiooni krÃ¼pteerimine:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Võtme suurus:"
+msgstr "VÃµtme suurus:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "Selle partitsiooni võtme suurus:"
+msgstr "Selle partitsiooni vÃµtme suurus:"
 
 #. Type: text
 #. Description
@@ -124,35 +124,35 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Sektori algvektori väärtustamiseks on olemas erinevaid algoritme. See valik "
-"mõjutab krüpteerimisest tulenevat turvalisust. Üldjuhul pole mingit vajadust "
-"vaikeväärtust muuta, kui siis vaid vanemate süsteemidega sobitumise nimel."
+"Sektori algvektori vÃ¤Ã¤rtustamiseks on olemas erinevaid algoritme. See valik "
+"mÃµjutab krÃ¼pteerimisest tulenevat turvalisust. Ãœldjuhul pole mingit vajadust "
+"vaikevÃ¤Ã¤rtust muuta, kui siis vaid vanemate sÃ¼steemidega sobitumise nimel."
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "Krüpteerimisvõti:"
+msgstr "KrÃ¼pteerimisvÃµti:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Selle partitsiooni krüpteerimisvõtme tüüp:"
+msgstr "Selle partitsiooni krÃ¼pteerimisvÃµtme tÃ¼Ã¼p:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Krüpteerimisvõtme räsi:"
+msgstr "KrÃ¼pteerimisvÃµtme rÃ¤si:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Selle partitsiooni krüpteerimisvõtme räsi tüüp:"
+msgstr "Selle partitsiooni krÃ¼pteerimisvÃµtme rÃ¤si tÃ¼Ã¼p:"
 
 #. Type: select
 #. Description
@@ -163,9 +163,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Krüpteerimisvõti saadakse paroolist ühesuunalise räsifunktsiooni abil. "
-"Üldjuhul pole vaja soovituslikku vaikeväärtust muuta ning selle vale "
-"muutmine või krüpteerimistugevust vähendada."
+"KrÃ¼pteerimisvÃµti saadakse paroolist Ã¼hesuunalise rÃ¤sifunktsiooni abil. "
+"Ãœldjuhul pole vaja soovituslikku vaikevÃ¤Ã¤rtust muuta ning selle vale "
+"muutmine vÃµi krÃ¼pteerimistugevust vÃ¤hendada."
 
 #. Type: text
 #. Description
@@ -197,7 +197,7 @@ msgstr "Kustuta sellel partitsioonil olevad andmed"
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Tõesti kustuta kõik andmed seadmel ${DEVICE}?"
+msgstr "TÃµesti kustuta kÃµik andmed seadmel ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -207,9 +207,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"${DEVICE} peal olevad andmed kirjutatakse üle suvalise infojoaga. Peale seda "
-"sammu pole võimalik enam midagi päästa. Praegu on viimane võimalus "
-"kustutamine jätta."
+"${DEVICE} peal olevad andmed kirjutatakse Ã¼le suvalise infojoaga. Peale seda "
+"sammu pole vÃµimalik enam midagi pÃ¤Ã¤sta. Praegu on viimane vÃµimalus "
+"kustutamine jÃ¤tta."
 
 #. Type: text
 #. Description
@@ -236,25 +236,25 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Krüpteerimise häälestamine..."
+msgstr "KrÃ¼pteerimise hÃ¤Ã¤lestamine..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "Seadista krüpteeritud volüümid"
+msgstr "Seadista krÃ¼pteeritud volÃ¼Ã¼mid"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
-msgstr "Pole ühtki krüpteeritavat partitsiooni"
+msgstr "Pole Ã¼htki krÃ¼pteeritavat partitsiooni"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr "Krüpteerimiseks pole valitud ühtki partitsiooni."
+msgstr "KrÃ¼pteerimiseks pole valitud Ã¼htki partitsiooni."
 
 #. Type: note
 #. Description
@@ -269,14 +269,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Selles debian-installeri versioonis on puudu mõningad programmid, mida "
-"partman-crypto oma tööks vajab."
+"Selles debian-installeri versioonis on puudu mÃµningad programmid, mida "
+"partman-crypto oma tÃ¶Ã¶ks vajab."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr "Vajaminevad krüpteerimisvalikud on puudu"
+msgstr "Vajaminevad krÃ¼pteerimisvalikud on puudu"
 
 #. Type: error
 #. Description
@@ -285,8 +285,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Krüpteerimisvalikud ${DEVICE} jaoks on tegemata. Palun naase "
-"partitsioneerimismenüüsse ning tee kõik vajalikud valikud."
+"KrÃ¼pteerimisvalikud ${DEVICE} jaoks on tegemata. Palun naase "
+"partitsioneerimismenÃ¼Ã¼sse ning tee kÃµik vajalikud valikud."
 
 #. Type: text
 #. Description
@@ -302,13 +302,13 @@ msgstr "puudu"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "On krüpteeritud volüümi ${DEV} füüsilise volüümina kasutusel."
+msgstr "On krÃ¼pteeritud volÃ¼Ã¼mi ${DEV} fÃ¼Ã¼silise volÃ¼Ã¼mina kasutusel."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "Krüpteerimispaki paigaldamise viga"
+msgstr "KrÃ¼pteerimispaki paigaldamise viga"
 
 #. Type: error
 #. Description
@@ -317,8 +317,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Tuuma moodulite pakki ${PACKAGE} ei leitud või ilmnesid tema paigaldamise "
-"käigus vead."
+"Tuuma moodulite pakki ${PACKAGE} ei leitud vÃµi ilmnesid tema paigaldamise "
+"kÃ¤igus vead."
 
 #. Type: error
 #. Description
@@ -328,14 +328,14 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Tõenäoliselt tekib krüpteeritud partitsioonidega süsteemi alglaasimisel "
-"tõrkeid. Probleemi võid lahendada paigaldades hiljem ise vajalikud pakid."
+"TÃµenÃ¤oliselt tekib krÃ¼pteeritud partitsioonidega sÃ¼steemi alglaasimisel "
+"tÃµrkeid. Probleemi vÃµid lahendada paigaldades hiljem ise vajalikud pakid."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Kirjutada muudatused kettale ja seadistada krüpteeritud volüümid?"
+msgstr "Kirjutada muudatused kettale ja seadistada krÃ¼pteeritud volÃ¼Ã¼mid?"
 
 #. Type: boolean
 #. Description
@@ -344,15 +344,15 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Enne kui krüpteeritud volüüme seadistada saab, tuleb praegune "
-"paritsioneerimisskeem kettale kirjutada. Neid muudatusi ei saa tagasi võtta."
+"Enne kui krÃ¼pteeritud volÃ¼Ã¼me seadistada saab, tuleb praegune "
+"paritsioneerimisskeem kettale kirjutada. Neid muudatusi ei saa tagasi vÃµtta."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Jätta praegune partitsioonide paigutus ja seadistada krüpteeritud volüümid?"
+"JÃ¤tta praegune partitsioonide paigutus ja seadistada krÃ¼pteeritud volÃ¼Ã¼mid?"
 
 #. Type: boolean
 #. Description
@@ -363,22 +363,22 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Peale krüpteeritud volüümide seadistamist pole mingeid muudatusi "
-"krüpteeritud volüüme sisaldavate ketaste partitsioonidele lubatud. Palun "
-"otsusta enne jätkamist, kas oled nende ketaste praeguse "
+"Peale krÃ¼pteeritud volÃ¼Ã¼mide seadistamist pole mingeid muudatusi "
+"krÃ¼pteeritud volÃ¼Ã¼me sisaldavate ketaste partitsioonidele lubatud. Palun "
+"otsusta enne jÃ¤tkamist, kas oled nende ketaste praeguse "
 "partitsioneerimisskeemiga rahul."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "Krüpteeritud volüümide seadistamine nurjus"
+msgstr "KrÃ¼pteeritud volÃ¼Ã¼mide seadistamine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Krüpteeritud volüümide seadistamisel ilmnes viga."
+msgstr "KrÃ¼pteeritud volÃ¼Ã¼mide seadistamisel ilmnes viga."
 
 #. Type: error
 #. Description
@@ -390,13 +390,13 @@ msgstr "Seadistamine on peatatud."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "Krüpteeritud volüümi lähtestamine nurjus"
+msgstr "KrÃ¼pteeritud volÃ¼Ã¼mi lÃ¤htestamine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Krüpteeritud volüümi ülesseadmisel ilmnes viga."
+msgstr "KrÃ¼pteeritud volÃ¼Ã¼mi Ã¼lesseadmisel ilmnes viga."
 
 #. Type: text
 #. Description
@@ -416,7 +416,7 @@ msgstr "Parool"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "Võtmefail (GnuPG)"
+msgstr "VÃµtmefail (GnuPG)"
 
 #. Type: text
 #. Description
@@ -426,7 +426,7 @@ msgstr "Võtmefail (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr "Suvaline võti"
+msgstr "Suvaline vÃµti"
 
 #. Type: error
 #. Description
@@ -448,9 +448,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"See viga on saatuslik, kuna tundilkku teaved võidaks kettale kirjutda "
-"krüpteerimata, mis omakorda võimaldaks kettale ligi pääsevatel isikutel "
-"kätte saada krüpteerimisvõtme või parooli osi."
+"See viga on saatuslik, kuna tundilkku teaved vÃµidaks kettale kirjutda "
+"krÃ¼pteerimata, mis omakorda vÃµimaldaks kettale ligi pÃ¤Ã¤sevatel isikutel "
+"kÃ¤tte saada krÃ¼pteerimisvÃµtme vÃµi parooli osi."
 
 #. Type: error
 #. Description
@@ -460,21 +460,21 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Palun peata saaleala kasutamine (st käivita swapoff) või seadista "
-"krüpteeritud saaleala ja käivita uuesti krüpteeritud volüümide häälestamine. "
-"See programm peatub nüüd."
+"Palun peata saaleala kasutamine (st kÃ¤ivita swapoff) vÃµi seadista "
+"krÃ¼pteeritud saaleala ja kÃ¤ivita uuesti krÃ¼pteeritud volÃ¼Ã¼mide hÃ¤Ã¤lestamine. "
+"See programm peatub nÃ¼Ã¼d."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "Krüpteerimisparool:"
+msgstr "KrÃ¼pteerimisparool:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Pead valima parooli ${DEVICE} krüpteerimiseks."
+msgstr "Pead valima parooli ${DEVICE} krÃ¼pteerimiseks."
 
 #. Type: password
 #. Description
@@ -485,9 +485,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Krüptograafia üldine võimekus sõltub väga palju sellest paroolist - seega "
-"tuleks parool hoolikalt valida, et teda poleks liiga hõlpus ära arvata. "
-"Parool ei tohiks olla sõnaraamatusõna ega ka sinuga otseselt seotatav fraas."
+"KrÃ¼ptograafia Ã¼ldine vÃµimekus sÃµltub vÃ¤ga palju sellest paroolist - seega "
+"tuleks parool hoolikalt valida, et teda poleks liiga hÃµlpus Ã¤ra arvata. "
+"Parool ei tohiks olla sÃµnaraamatusÃµna ega ka sinuga otseselt seotatav fraas."
 
 #. Type: password
 #. Description
@@ -497,8 +497,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Üks hea parool sisaldab segu tähtedest, numbritest ja kirjavahemärkidest. "
-"Paroolid peaksid soovitatavalt olema 20 või enam tähemärki pikad."
+"Ãœks hea parool sisaldab segu tÃ¤htedest, numbritest ja kirjavahemÃ¤rkidest. "
+"Paroolid peaksid soovitatavalt olema 20 vÃµi enam tÃ¤hemÃ¤rki pikad."
 
 #. Type: password
 #. Description
@@ -513,8 +513,8 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Palun sisesta sama kaugligipääsuparool uuesti, veendumaks, et kogemada mõnd "
-"tähgde valetsi ei tippinud."
+"Palun sisesta sama kaugligipÃ¤Ã¤suparool uuesti, veendumaks, et kogemada mÃµnd "
+"tÃ¤hgde valetsi ei tippinud."
 
 #. Type: error
 #. Description
@@ -532,7 +532,7 @@ msgstr "Sisestatud paroolid olid erinevad. Palun proovi uuesti."
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr "Tühi parool"
+msgstr "TÃ¼hi parool"
 
 #. Type: note
 #. Description
@@ -541,14 +541,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Sisestasid tühja parooli, mis pole paraku lubatud. Palun vali midagi "
+"Sisestasid tÃ¼hja parooli, mis pole paraku lubatud. Palun vali midagi "
 "sisaldav parool."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "Kasutada nõrka parooli?"
+msgstr "Kasutada nÃµrka parooli?"
 
 #. Type: boolean
 #. Description
@@ -560,20 +560,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Sisestasid parooli, kus on vähem kui ${MINIMUM} tähemärki. Seda peetakse "
-"üldiselt liiga nõrgaks. Peaksid valima tugevama parooli."
+"Sisestasid parooli, kus on vÃ¤hem kui ${MINIMUM} tÃ¤hemÃ¤rki. Seda peetakse "
+"Ã¼ldiselt liiga nÃµrgaks. Peaksid valima tugevama parooli."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr "Sisesta suvalisi tähemärke"
+msgstr "Sisesta suvalisi tÃ¤hemÃ¤rke"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Luuakse krüpteerimisvõtit ${DEVICE} jaoks."
+msgstr "Luuakse krÃ¼pteerimisvÃµtit ${DEVICE} jaoks."
 
 #. Type: entropy-text
 #. Description
@@ -583,21 +583,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Võid kiirendada protsessi klaviatuuril suvalise nuppe vajutades või siis "
-"lihtsalt oodata, kuni võtme jaoks piisavalt entroopiat kogutakse. "
-"(Tähelepanu: see võib kaua aega võtta)"
+"VÃµid kiirendada protsessi klaviatuuril suvalise nuppe vajutades vÃµi siis "
+"lihtsalt oodata, kuni vÃµtme jaoks piisavalt entroopiat kogutakse. "
+"(TÃ¤helepanu: see vÃµib kaua aega vÃµtta)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "Võtmefaili loomine nurjus"
+msgstr "VÃµtmefaili loomine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Võtmefaili kettale kirjutamisel ilmnes viga."
+msgstr "VÃµtmefaili kettale kirjutamisel ilmnes viga."
 
 #. Type: error
 #. Description
@@ -607,8 +607,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Oled juursüsteemi jaoks valinud krüpteeritud partitsiooni. Selline võimalus "
-"pole hetkel saadaval ning jätkamine põhjustaks kasutuskõlbamtu paigalduse."
+"Oled juursÃ¼steemi jaoks valinud krÃ¼pteeritud partitsiooni. Selline vÃµimalus "
+"pole hetkel saadaval ning jÃ¤tkamine pÃµhjustaks kasutuskÃµlbamtu paigalduse."
 
 #. Type: error
 #. Description
@@ -616,7 +616,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Palun mine tagasi ning vali juurfailisüsteemi jaoks krüpteerimata "
+"Palun mine tagasi ning vali juurfailisÃ¼steemi jaoks krÃ¼pteerimata "
 "partitsioon."
 
 #. Type: error
@@ -627,7 +627,7 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Oled valinud krüpteeritud juurfailisüsteemi. See seade vajab eraldi /boot "
+"Oled valinud krÃ¼pteeritud juurfailisÃ¼steemi. See seade vajab eraldi /boot "
 "partitsiooni, kus hoida tuuma ja initrd kujutist."
 
 #. Type: error
@@ -640,7 +640,7 @@ msgstr "Peaksid minema tagasi ja looma /boot partitsiooni."
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Krüpteerimise seadistamine nurjus"
+msgstr "KrÃ¼pteerimise seadistamine nurjus"
 
 #. Type: error
 #. Description
@@ -651,9 +651,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Oled valinud /boot failisüsteemi krüpteerimise. See on võimatu, kuna "
-"alglaadur ei oleks suuteline tuuma ja intrd kujutist laadima. Jätkates oleks "
-"tulemuseks kasutuskõlbmatu süsteem."
+"Oled valinud /boot failisÃ¼steemi krÃ¼pteerimise. See on vÃµimatu, kuna "
+"alglaadur ei oleks suuteline tuuma ja intrd kujutist laadima. JÃ¤tkates oleks "
+"tulemuseks kasutuskÃµlbmatu sÃ¼steem."
 
 #. Type: error
 #. Description
@@ -662,14 +662,14 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Peaksid minema tagasi ja /boot failisüsteemi jaoks krüpteerimata "
+"Peaksid minema tagasi ja /boot failisÃ¼steemi jaoks krÃ¼pteerimata "
 "partitsiooni valima."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Kas oled kindel, et soovid kasutad juhuslikku võtit?"
+msgstr "Kas oled kindel, et soovid kasutad juhuslikku vÃµtit?"
 
 #. Type: boolean
 #. Description
@@ -678,8 +678,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Oled ${DEVICE} jaoks valinud suva-võtmetüübi, kuid palunud partitsioneerijal "
-"sinna failisüsteemi luua."
+"Oled ${DEVICE} jaoks valinud suva-vÃµtmetÃ¼Ã¼bi, kuid palunud partitsioneerijal "
+"sinna failisÃ¼steemi luua."
 
 #. Type: boolean
 #. Description
@@ -688,29 +688,28 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Partitsiooni jaoks suva-võtmetüübi kasutamine tähendab, et igal uuel "
-"alglaadimisel hävib kogu partitsioonil olnud info. Seda tuleks kasutada vaid "
+"Partitsiooni jaoks suva-vÃµtmetÃ¼Ã¼bi kasutamine tÃ¤hendab, et igal uuel "
+"alglaadimisel hÃ¤vib kogu partitsioonil olnud info. Seda tuleks kasutada vaid "
 "saaleala partittsiooni jaoks."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Paigaldaja komponendi laadimine nurjus"
+msgstr "KrÃ¼ptokomponentide laadimine nurjus"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Krüpteeritud volüümide seadistamisel ilmnes viga."
+msgstr "Lisa krÃ¼ptokomponentide laadimisel ilmnes viga."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"JÃ¤tkata krÃ¼ptokomponentide paigaldamisega, vaatamata ebapiisavale mÃ¤lumahule?"
 
 #. Type: boolean
 #. Description
@@ -720,12 +719,14 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Paistab, et lisakrÃ¼ptokomponentide paigaldamiseks ei ole saadaval piisavalt "
+"mÃ¤lu. Kui soovid siiski jÃ¤tkata, tea, et paigaldamine vÃµib niimoodi nurjuda."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr "Kas tõesti kasutada blokiseadme krüpteerimist?"
+msgstr "Kas tÃµesti kasutada blokiseadme krÃ¼pteerimist?"
 
 #. Type: boolean
 #. Description
@@ -737,8 +738,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-"Blokiseadme krüpteerimise tugi on veel katsetamisjärgus ning üldiselt ei "
-"peeta teda veel päris töövalmiks. Tihtilugu on tulemuseks kergesti murtavad "
-"seaded, mis annavad võltsi turvatunde. Pole küll ühtki teadaolevat "
-"krüpteerimisviga, kuid kuni rakendust pole põhjalikult auditeeritud, ei "
-"tohiks krüpteerimisvõimalust kasutada muidu, kui vast testimise eesmärkidel."
+"Blokiseadme krÃ¼pteerimise tugi on veel katsetamisjÃ¤rgus ning Ã¼ldiselt ei "
+"peeta teda veel pÃ¤ris tÃ¶Ã¶valmiks. Tihtilugu on tulemuseks kergesti murtavad "
+"seaded, mis annavad vÃµltsi turvatunde. Pole kÃ¼ll Ã¼htki teadaolevat "
+"krÃ¼pteerimisviga, kuid kuni rakendust pole pÃµhjalikult auditeeritud, ei "
+"tohiks krÃ¼pteerimisvÃµimalust kasutada muidu, kui vast testimise eesmÃ¤rkidel."

@@ -541,20 +541,20 @@ crypto_prepare_method () {
 crypto_check_required_tools() {
 	local tools
 
-	tools="/bin/blockdev-keygen"
+	tools="blockdev-keygen"
 	case $1 in
 	dm-crypt)
-		tools="$tools /sbin/dmsetup /sbin/cryptsetup /lib/libpopt.so.0"
+		tools="$tools dmsetup cryptsetup"
 		;;
 	loop-AES)
-		tools="$tools /usr/bin/gpg /bin/base64"
+		tools="$tools gpg base64"
 		;;
 	*)
 		return 1
 	esac
 
 	for tool in $tools; do
-		if [ ! -e $tool ]; then
+		if ! type $tool > /dev/null 2>&1 ; then
 			db_fset partman-crypto/tools_missing seen false
 			db_input critical partman-crypto/tools_missing
 			db_go || true

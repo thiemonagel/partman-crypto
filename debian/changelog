@@ -1,8 +1,9 @@
 partman-crypto (15) UNRELEASED; urgency=low
 
   * Remove some hardcoded paths
+  * Change order of tests in crypto_prepare_method. Closes: 390568
 
- -- David Härdeman <david@2gen.com>  Wed,  4 Oct 2006 23:04:24 +0200
+ -- David Härdeman <david@2gen.com>  Wed,  4 Oct 2006 23:34:12 +0200
 
 partman-crypto (14) unstable; urgency=low
 

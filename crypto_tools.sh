@@ -492,10 +492,7 @@ crypto_set_defaults () {
 	return 0
 }
 
-# Does initial setup for a crypto method:
-#  1) Loads the appropriate udebs
-#  2) Loads the appropriate kernel modules
-#  3) Sets default values
+# Does initial setup for a crypto method
 crypto_prepare_method () {
 	local part type package
 	part=$1
@@ -525,13 +522,13 @@ crypto_prepare_method () {
 		return 1
 	fi
 
-	# 2 - Also load the kernel modules needed for the chosen type/cipher
-	if ! crypto_load_modules $type $(cat $part/cipher); then
+	# 2 - Set the defaults for the chosen type
+	if ! crypto_set_defaults $part $type; then
 		return 1
 	fi
 
-	# 3 - Finally, set the defaults for the chosen type
-	if ! crypto_set_defaults $part $type; then
+	# 3 - Also load the kernel modules needed for the chosen type/cipher
+	if ! crypto_load_modules $type $(cat $part/cipher); then
 		return 1
 	fi
 

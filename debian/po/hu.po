@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-20 07:22+0100\n"
+"PO-Revision-Date: 2006-10-04 07:29+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgstr "kriptó"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "Visszacsatoló (loop-AES)"
 
 #. Type: text
 #. Description
@@ -696,22 +696,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Egy telepítőrész betöltése meghiúsult"
+msgstr "Nem tudtam letölteni a titkosító összetevőket"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Hiba történt a titkosított kötetek konfigurálásakor"
+msgstr "Hiba történt a további titkosító összetevők letöltésekor"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "Folytatod a titkosító összetevők telepítését a kevés memória ellenére?"
 
 #. Type: boolean
 #. Description
@@ -721,6 +719,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Úgy fest, nincs elég szabad memória további titkosító összetevők "
+"telepítésére. Ha mindenképp így folytatod, a telepítés meghiúsulhat."
 
 #. Type: boolean
 #. Description

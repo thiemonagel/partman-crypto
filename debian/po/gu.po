@@ -536,6 +536,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"તમે પાસફ્રેઝ દાખલ કર્યો છે તે ${MINIMUM} અક્ષરો કરતાં ઓછા અક્ષરો ધરાવે છે, જે ઘણો નબળો "
+"ગણાય છે. તમારે મજબૂત પાસવર્ડ દાખલ કરવો જોઇએ."
 
 #. Type: entropy-text
 #. Description

@@ -269,6 +269,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"આ ડેબિયન-સ્થાપનનું બિલ્ડ પાર્ટમેન-ક્રાય્પ્ટોને યોગ્ય રીતે કામ કરવા માટે એક અથવા વધુ "
+"કાર્યક્રમો ધરાવતું નથી."
 
 #. Type: error
 #. Description
@@ -338,6 +340,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"એન્ક્રપ્ટેડ કદો રુપરેખાંકિત કરી શકાય તે પહેલાં, હાલની પાર્ટિશન પધ્ધતિ ડિસ્કમાં લખાવી જ "
+"જોઇએ.  આ ફેરફારો પાછા ફેરવી શકાશે નહીં."
 
 #. Type: boolean
 #. Description
@@ -475,6 +479,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"સારો પાસફ્રેઝ અક્ષરો, આંકડાઓ અને વિરામચિહ્નોનું મિશ્રણ ધરાવશે. પાસફ્રેઝના લંબાઇ ૨૦ અથવા "
+"વધુ અક્ષરોની હોય તે સલાહભર્યુ છે."
 
 #. Type: password
 #. Description
@@ -559,6 +565,8 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
+"તમે ઝડપ વધારવા માટે કીબોર્ડથી ગમે તેમ અક્ષરો દાખલ કરી શકો છો, અથવા પૂરતી કી માહિતી "
+"ભેગી થાય તેની રાહ જુઓ. (નોંધ: આ લાંબો સમય લઇ શકે છે)"
 
 #. Type: error
 #. Description
@@ -643,6 +651,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
+"તમે ${DEVICE} માટે ગમે તે કી પ્રકાર પસંદ કર્યો છે પણ પાર્ટિશન કરનારને તેના પર ફાઇલ "
+"સિસ્ટમ બનાવવાની વિનંતિ કરેલ છે."
 
 #. Type: boolean
 #. Description
@@ -651,6 +661,8 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"ગમે તે કી પ્રકારનો અર્થ એ કે પાર્ટિશનની માહિતી ફરી શરુ કરતી વખતે દર વખતે નાશ પામશે. આ "
+"માત્ર સ્વેપ પાર્ટિશનો માટે જ ઉપયોગ કરવું જોઇએ."
 
 #. Type: error
 #. Description

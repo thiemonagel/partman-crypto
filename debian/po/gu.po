@@ -588,6 +588,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
+"તમે રુટ ફાઇલ સિસ્ટમ એન્ક્રિપ્ટેડ પાર્ટિશન પર સંગ્રહ કરવાનું પસંદ કર્યુ છે. આ લાક્ષણિકતા પ્રાપ્ત "
+"નથી અને હવે આગળ વધવાથી સ્થાપન હવે ઉપયોગમાં લઇ શકાશે નહી."
 
 #. Type: error
 #. Description
@@ -605,6 +607,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"તમે રુટ ફાઇલ સિસ્ટમ એન્ક્રિપ્ટેડ પાર્ટિશન પર સંગ્રહ કરવાનું પસંદ કર્યુ છે. આ લાક્ષણિકતાને અલગ /"
+"boot પાર્ટિશન જોઇશે જેમાં કર્નલ અને inintrd સંગ્રહવામાં આવશે."
 
 #. Type: error
 #. Description
@@ -690,6 +694,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"વધારાનાં ક્રાય્પ્ટો ભાગોનાં સ્થાપન માટે પૂરતી મેમરી હોય તેવું લાગતું નથી. જો તમે તેમ છતાં આગળ "
+"વધવાનું પસંદ કરશો તો, સ્થાપન પ્રક્રિયા નિષ્ફળ જઇ શકે છે."
 
 #. Type: boolean
 #. Description

@@ -1,4 +1,4 @@
-partman-crypto (15) UNRELEASED; urgency=low
+partman-crypto (15) unstable; urgency=low
 
   [ David Härdeman ]
   * Remove some hardcoded paths
@@ -8,7 +8,19 @@ partman-crypto (15) UNRELEASED; urgency=low
   * finish-install.d/05crypto: Install either loop-aes-$KVERS or
     loop-aes-modules-$KVERS
 
- -- Max Vozeler <xam@debian.org>  Sat,  7 Oct 2006 18:49:27 +0200
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Estonian (et.po) by Siim Põder
+  * Finnish (fi.po) by Tapio Lehtonen
+  * French (fr.po) by Christian Perrier
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Nishant Sharma
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Khmer (km.po) by Khoem Sokhem
+  * Romanian (ro.po) by Eddy Petrişor
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Max Vozeler <xam@debian.org>  Sat,  7 Oct 2006 19:37:49 +0200
 
 partman-crypto (14) unstable; urgency=low
 

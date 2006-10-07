@@ -520,6 +520,7 @@ crypto_prepare_method () {
 	crypto_set_defaults $part $type || return 1
 
 	# 3 - Also load the kernel modules needed for the chosen type/cipher
+	[ -f $part/cipher ] || return 1
 	crypto_load_modules $type $(cat $part/cipher) || return 1
 
 	return 0

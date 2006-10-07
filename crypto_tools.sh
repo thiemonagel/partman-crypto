@@ -511,24 +511,16 @@ crypto_prepare_method () {
 	esac
 
 	# 1A - Pull in the method package and additional dependencies
-	if ! crypto_load_udebs $package; then
-		return 1
-	fi
+	crypto_load_udebs $package || return 1
 
 	# 1B - Verify that it worked
-	if ! crypto_check_required_tools $type; then
-		return 1
-	fi
+	crypto_check_required_tools $type || return 1
 
 	# 2 - Set the defaults for the chosen type
-	if ! crypto_set_defaults $part $type; then
-		return 1
-	fi
+	crypto_set_defaults $part $type || return 1
 
 	# 3 - Also load the kernel modules needed for the chosen type/cipher
-	if ! crypto_load_modules $type $(cat $part/cipher); then
-		return 1
-	fi
+	crypto_load_modules $type $(cat $part/cipher) || return 1
 
 	return 0
 }

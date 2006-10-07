@@ -1,9 +1,14 @@
 partman-crypto (15) UNRELEASED; urgency=low
 
+  [ David Härdeman ]
   * Remove some hardcoded paths
   * Change order of tests in crypto_prepare_method. Closes: 390568
 
- -- David Härdeman <david@2gen.com>  Wed,  4 Oct 2006 23:34:12 +0200
+  [ Max Vozeler ]
+  * finish-install.d/05crypto: Install either loop-aes-$KVERS or
+    loop-aes-modules-$KVERS
+
+ -- Max Vozeler <xam@debian.org>  Sat,  7 Oct 2006 18:49:27 +0200
 
 partman-crypto (14) unstable; urgency=low
 

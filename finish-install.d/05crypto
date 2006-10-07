@@ -31,10 +31,19 @@ END
 
 	db_get base-installer/kernel/image
 	KVERS=${RET#*-image-}
-	if ! apt-install loop-aes-$KVERS; then
+
+	failed=yes
+	for package in loop-aes-$KVERS loop-aes-modules-$KVERS; do
+		if apt-install $package; then
+			failed=no
+			break
+		fi
+	done
+	
+	if [ "$failed" = "yes" ]; then
 		templ="partman-crypto/module_package_missing"
 		db_fset $templ seen false
-		db_subst $templ PACKAGE loop-aes-$KVERS
+		db_subst $templ PACKAGE loop-aes-modules-$KVERS
 		db_input critical $templ
 		db_go
 		exit 1

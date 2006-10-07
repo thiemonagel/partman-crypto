@@ -1,5 +1,3 @@
-#!/bin/sh
-
 . /lib/partman/definitions.sh
 
 dm_is_safe() {

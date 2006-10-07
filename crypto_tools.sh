@@ -6,7 +6,7 @@ dm_is_safe() {
 
 	if [ -x /sbin/dmsetup ]; then
 		type=$(/sbin/dmsetup table $1 | head -n 1 | cut -d " " -f3)
-		if [ $type = crypt ]; then
+		if [ "$type" = crypt ]; then
 			return 0
 		fi
 	fi
@@ -639,7 +639,7 @@ crypto_check_setup() {
 		done
 	done
 
-	if [ -z $crypt ]; then
+	if [ -z "$crypt" ]; then
 		db_fset partman-crypto/nothing_to_setup seen false
 		db_input critical partman-crypto/nothing_to_setup
 		db_go || true

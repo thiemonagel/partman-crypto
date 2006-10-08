@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-09-26 12:56+0200\n"
+"PO-Revision-Date: 2006-10-08 14:29+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,7 @@ msgstr "Повратна врска (loop-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -208,6 +208,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Податоците на ${DEVICE} ќе бидат препишани со случајни податоци. Тие не ќе "
+"можат да се вратат по завршувањето на овој чекор. Ова е последната шанса да "
+"се прекине бришењето."
 
 #. Type: text
 #. Description
@@ -228,6 +231,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Се случи грешка при обидот да се избришат податоците на ${DEVICE}. "
+"Податоците не беа избришани."
 
 #. Type: text
 #. Description
@@ -713,6 +718,8 @@ msgstr "Се случи грешкa при преземањето на допо�
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Да продолжам со инсталирање на крипто компонентите покрај недостатокот на "
+"меморија?"
 
 #. Type: boolean
 #. Description
@@ -722,12 +729,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Изгледа дека нема доволно меморија достапно за да се инсталираат "
+"дополнителни крупто компоненти. Ако избереш да продолжиш инсталацијата може "
+"да не успее."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Навистина да користам енкрипција за блок уред?"
 
 #. Type: boolean
 #. Description

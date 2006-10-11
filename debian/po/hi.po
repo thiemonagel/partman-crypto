@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-01 21:33+0530\n"
+"PO-Revision-Date: 2006-10-12 02:29+0530\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -409,7 +409,7 @@ msgstr "कूटबद्ध वॉल्यूमों को व्यवस
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Passphrase"
-msgstr ""
+msgstr "कूटवाक्यांश"
 
 #. Type: text
 #. Description
@@ -429,7 +429,7 @@ msgstr "कुंजीफाइल (ग्नूपीजी)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr ""
+msgstr "एकाएक उत्पन्न कुंजी"
 
 #. Type: error
 #. Description
@@ -465,13 +465,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "कूटबद्ध करने का कूटवाक्यांश:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "${DEVICE} को कूटबद्ध करने के लिए आपको एक कूटवाक्यांश चुनना है."
 
 #. Type: password
 #. Description
@@ -491,12 +491,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"एक अच्छा कूटवाक्यांश अक्षरों, अंकों व विराम चिन्हों का सम्मिश्रण होगा. कूटवाक्यांशों की "
+"लम्बाई 20 या उससे अधिक अक्षरों की रखने की संस्तुति की जाती है."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "सुनिश्चित करने के लिए कूटवाक्यांश पुनः भरें:"
 
 #. Type: password
 #. Description
@@ -504,25 +506,25 @@ msgstr ""
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
+msgstr "यह जाँचने के लिए कि आपने सही टंकित किया है, कृपया वही कूटवाक्यांश फिर से भरिये."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr ""
+msgstr "कूटवाक्यांश के निवेश में त्रुटि"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "जो दो कूटवाक्यांश आपने भरे थे वे समान नहीं थे. कृपया फिर से प्रयास करें."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr ""
+msgstr "खाली कूटवाक्यांश"
 
 #. Type: note
 #. Description
@@ -531,12 +533,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"आपने एक खाली कूटवाक्यांश भरा है जोकि मान्य नहीं है. कृपया ऐसा कूटवाक्यांश चुनें जोकि खाली न "
+"हो."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "कमज़ोर कूटवाक्यांश का प्रयोग करें?"
 
 #. Type: boolean
 #. Description
@@ -548,6 +552,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"आपने ऐसा कूटवाक्यांश भरा है जिसके अक्षरों की संख्या ${MINIMUM} से कम है और इसे कमज़ोर माना "
+"जाएगा. आपको ा एक तगड़ा कूटवाक्यांश चना चाहिए.ं."
 
 #. Type: entropy-text
 #. Description
@@ -658,6 +664,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
+"आपने ${DEVICE} के लिए एकाएक उत्पन्न कुंजी का प्रयोग करने का चयन किया है पर विभाजक को "
+"इस पर फाइलतंत्र का निर्माण करने को भी कहा है."
 
 #. Type: boolean
 #. Description
@@ -666,6 +674,8 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"एकाएक उत्पन्न कुंजी का प्रयोग करने का अर्थ यह हुआ कि प्रत्येक रीबूट पर पार्टिशन का डाटा "
+"नष्ट हो जाएगा. यह केवल स्वैप विभाजनों के लिए ही प्रयोग किया जाना चाहिए."
 
 #. Type: error
 #. Description

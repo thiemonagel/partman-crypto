@@ -4,21 +4,18 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # translation of ta.po to Tamil
-# translation of ta.po to
+# Tamil messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
 #
-# Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files
-#
-# Debian Installer translators, please read the D-I i18n documentation
-# in doc/i18n/i18n.txt
-#
+# drtvasudevan <agnihot3@gmail.com>, 2006.
 # Damodharan Rajalingam <rdamodharan@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-08 23:51+0530\n"
+"PO-Revision-Date: 2006-10-12 01:25+0530\n"
 "Last-Translator: Damodharan Rajalingam <rdamodharan@gmail.com>\n"
 "Language-Team: Tamil <tamil-DI@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +29,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "பௌதிகத் தொகுதிக்கான மறைகுறியீடாக்கல்"
 
 #. Type: text
 #. Description
@@ -49,7 +46,7 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr ""
+msgstr "லூப்பேக் (loop-AES)"
 
 #. Type: text
 #. Description
@@ -73,26 +70,26 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr ""
+msgstr "மறைகுறியீட்டு முறை:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான மறைகுறியீட்டு முறை:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr ""
+msgstr "மறைக்குறியீடு:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான மறைக்குறியீடு :"
 
 #. Type: text
 #. Description
@@ -105,7 +102,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான சாவி அளவு:"
 
 #. Type: text
 #. Description
@@ -141,13 +138,13 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr ""
+msgstr "மறைக்குறியீடு சாவி:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான மறைக்குறியீடு சாவி வகை:"
 
 #. Type: text
 #. Description
@@ -160,7 +157,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr ""
+msgstr "இந்த பகிர்வுக்கான மறைக்குறியீடு சாவி கலவை வகை:"
 
 #. Type: select
 #. Description
@@ -237,19 +234,19 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "மறைக்குறியீடு அமைக்கப்படுகிறது..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr ""
+msgstr "மறைகுறியாக்கப்பட்ட தொகுதி (%s)"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "மறைகுறியாக்க பகிர்வுகள் ஏதும் காணவில்லை"
 
 #. Type: note
 #. Description
@@ -305,7 +302,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "மறைகுறியாக்க தொகுதி ோ நிறுவல் தோல்வியடைந்தது. "
 
 #. Type: error
 #. Description
@@ -329,6 +326,7 @@ msgstr ""
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
+"மாறுதல்களை சேமிப்பு சாதனங்களில் எழுதி மறைகுறியாக்கப்பட்ட தொகுதிகளை வடிவமைக்கவா?"
 
 #. Type: boolean
 #. Description
@@ -337,12 +335,16 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"மறைகுறியாக்கப்பட்ட தொகுதிகளைொகுதி மேலாளரை வடிவமைக்கும் முன்னால் தற்போதய பகிர்வு "
+"உருவமைப்பு வன் வட்டுக்கு எழுதப்பட வேண்டும். இந்த மாறுதல்களை மீட்க இயலாது."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
+"தற்போதய பகிர்வு உருவமைப்பை அப்படியே வைத்துக் கொண்டு மறைகுறியாக்கப்பட்ட தொகுதிகளைஎல்விஎம் "
+"(LVM) ஐ வடிவமைக்கவா?"
 
 #. Type: boolean
 #. Description
@@ -353,6 +355,10 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
+"மறைகுறியாக்கப்பட்ட தொகுதிகளைுதி மேலாளரை ஐ வடமறைகுறியாக்கப்பட்ட தொகுதிகள்ின் பௌதிக "
+"தொகுதிகள் உள்ள வன்வட்டின் பகிர்வு உருவமைப்பில் கூடுதல் மாறுதல்களை நிறுவலின் போது செய்ய "
+"இயலாது. ஆகவே தொடரும் முன் வன்வட்டுக்களின் தற்போதய பகிர்வு உருவமைப்பு உங்களுக்கு "
+"திருப்தியாக உள்ளதா என உறுதி செய்து கொள்ளுங்கள்."
 
 #. Type: error
 #. Description
@@ -364,25 +370,25 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "மறைகுறியாக்கப்பட்ட தொகுதிகளை தவறு நேர்ந்தது."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "வடிவமைப்பு கைவிடப்பட்டது."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "மறைகுறியாக்கப்பட்ட தொகுதிகளை துவக்குவது தோல்வியடைந்தது"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "மறைகுறியாக்கப்பட்ட தொகுதிகளை அமைக்கும் போது தவறு நேர்ந்தது."
 
 #. Type: text
 #. Description
@@ -418,7 +424,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "பாதுகாப்பில்லாத இடமாற்று வெளி கண்டுபிடக்கப்பட்டுள்ளது"
 
 #. Type: error
 #. Description
@@ -465,6 +471,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"மறைகுறியாக்கத்தின் வலிமை கடவுச்சொல்லை மிகவும் சார்ந்துள்ளது. ஆகவே இந்த கடவுச் சொல் "
+"சுலபமாக கண்டு பிடிக்க முடியாததாக இருக்க வேண்டும். அகராதியில் காணக் கூடிய சொல்லாகவோ "
+"அல்லது உங்களுடன் இணைக்கக் கூடிய சொல்லாகவோ இருத்தல் ஆகாது."
 
 #. Type: password
 #. Description
@@ -474,12 +483,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"ஒரு நல்ல கடவுச்சொல் என்பது எழுத்துக்கள் எண்கள் மற்ற குறியீடுகள் உள்ளடக்கிய ஒரு கலவை. இதை "
+"அடிக்கடி மாற்ற வேண்டும். கடவுச்சொல் 20 எழுத்துக்களுக்கு மேலிருப்பது நல்லது"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "கடவுச்சொல்லை உறுதி செய்ய மீண்டும் உள்ளிடுக:"
 
 #. Type: password
 #. Description
@@ -488,24 +499,25 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
+"அதே சொல்லை மீண்டும் உள்ளீடு செய்க. இதனால் சரியாக உள்ளீடு செய்யப் பட்டதா என சோதிக்க இயலும்."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr ""
+msgstr "கடவுச்சொல் உள்ளீட்டு பிழை"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "தாங்கள் உள்ளிட்ட இரு கடவுச்சொற்களும் வெவ்வேறானவை. மீண்டும் முயற்சி செய்க."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr ""
+msgstr "வெற்று கடவுச்சொல்"
 
 #. Type: note
 #. Description
@@ -514,6 +526,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"நீங்கள் வெற்று கடவுச்சொலை உள்ளிட்டீர்கள். இதற்கு அனுமதியில்லை. வெற்றல்லாத கடவுச்சொல்லை "
+"உள்ளிடவும்."
 
 #. Type: boolean
 #. Description
@@ -557,13 +571,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr ""
+msgstr "சாவிக்கோப்பு உருவாக்குதல் தோல்வியடைந்தது"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "சாவிக்கோப்பை உருவாக்குப்போது தவறு நேர்ந்தது."
 
 #. Type: error
 #. Description
@@ -600,7 +614,7 @@ msgstr "நீங்கள் பின்சென்று /boot பகிர�
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr ""
+msgstr "மறைக்குறியீடு வடிவமைப்பு தோல்வியுற்றது."
 
 #. Type: error
 #. Description
@@ -618,13 +632,13 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr ""
+msgstr "நீங்கள் பின்சென்று மறைகுறியாக்கப்படாத /boot கோப்பு அமைப்பிற்கு தேர்வு செய்யவும்."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr ""
+msgstr "நிச்சயமாக தற்போக்கு (random) சாவியை பயன்படுத்த விரும்புகிறீர்களா?"
 
 #. Type: boolean
 #. Description
@@ -646,7 +660,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "மறைக்குறியீட்டு பாகங்களை பதிவிறக்கம் செய்வது தோல்வியடந்தது."
 
 #. Type: error
 #. Description

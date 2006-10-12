@@ -210,6 +210,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} પર રહેલ માહિતી ગમે તે માહિતી સાથે ઉપર લખાઇ જશે.  આ પગથિયું પૂર્ણ થયા પછી તે "
+"પાછો મેળવી શકાશે નહી. આ ભૂંસી નાખતા પહેલાં બહાર નીકળવાની છેલ્લી તક છે."
 
 #. Type: text
 #. Description
@@ -326,6 +328,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"એવું દેખાય છે કે જ્યારે સિસ્ટમ ફરી શરૂ થશે ત્યારે એન્ક્રિપ્ટેડ પાર્ટિશનો ગોઠવતી વખતે મુશ્કેલીઓ "
+"આવી શકે છે. તમે આને પછીથી જરૂરી પેકેજો સ્થાપિત કરીને સુધારી શકો છો."
 
 #. Type: boolean
 #. Description
@@ -439,6 +443,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"આ ઘાતક ક્ષતિ છે કારણકે સંવેદનશીલ માહિતી એન્ક્રિપ્ટેડ ન થયેલ રીતે ડિસ્કમાં લખાઇ શકે છે. આ "
+"કદાચ ડિસ્કને ઉપયોગ કરી શકતાં કોઇને એનક્રિપ્શન કી અથવા પાસફ્રેઝ પાછો મેળવવાનું શક્ય બનાવી "
+"શકે છે."
 
 #. Type: error
 #. Description
@@ -448,6 +455,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"મહેરબાની કરી સ્વેપ જગ્યા અસક્રિય કરો  (દા.ત. swapoff ચલાવીને) અથવા એન્ક્રિપ્ટેડ જગ્યા "
+"રૂપરેખાંકિતકરો અને પછી એન્ક્રિપ્ટેડ કદોની ગોઠવણી ફરીથી ચલાવો. આ કાર્યક્રમ હવે બહાર "
+"નીકળશે."
 
 #. Type: password
 #. Description
@@ -470,6 +480,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"એન્ક્રિપ્શનની બધી મજબૂતાઇ બધી રીતે આ પાસફ્રેઝ પર રહેલી છે, તેથી તમારે પાસફ્રેઝ પસંદ કરવામાં "
+"કાળજી લેવી જોઇએ જે સહેલાઇથી ધારી ન શકાય તેવો હોય. તે શબ્દકોષમાં મળે તેવો શબ્દ અથવા "
+"વાક્ય ન હોવો જોઇએ, અથવા શબ્દ કે જે સહેલાઇથી તમારી જોડે સંબંધિત કરી શકાય."
 
 #. Type: password
 #. Description
@@ -631,6 +644,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"તમે /boot ફાઇલ સિસ્ટમ  એન્ક્રિપ્ટેડ પાર્ટિશન પર સંગ્રહવાનું પસંદ કર્યું છે. આશક્ય નથી કારણકે "
+"બુટલોડર કર્નલ અને initrd લાવવામાં અસર્મથ હશે. આગળવધવાનું હવે એવું સ્થાપન પરિણામ લાવશે જે "
+"ઉપયોગ કરી શકાશે નહી."
 
 #. Type: error
 #. Description

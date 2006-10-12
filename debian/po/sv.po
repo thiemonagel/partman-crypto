@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-08-28 06:24+0100\n"
+"PO-Revision-Date: 2006-10-12 08:46+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -604,7 +604,7 @@ msgid ""
 msgstr ""
 "Du kan få fart på processen genom att mata in slumpmässiga tecken på "
 "tangentbordet eller vänta tills tillräckligt mycket data har samlats in. "
-"(NOTERA: det här kan ta lång tid)"
+"(OBSERVERA: det här kan ta lång tid)"
 
 #. Type: error
 #. Description
@@ -688,7 +688,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Är du säker att du vill använda en slumpmässig nyckel?"
+msgstr "Är du säker på att du vill använda en slumpmässig nyckel?"
 
 #. Type: boolean
 #. Description

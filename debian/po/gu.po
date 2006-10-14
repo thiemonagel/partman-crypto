@@ -133,6 +133,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"જુદા જુદા અલગોરિથમ દરેક સેક્ટર માટેનાં વેક્ટરને શરુઆત કરવા માટે પ્રાપ્ત છે. આ વિકલ્પ "
+"એન્ક્રિપ્શન સલામતી પર અસર કરે છે. સામાન્ય રીતે, આને મૂળભૂત કરતાં બદલવાનું કોઇ કારણ નથી, "
+"સિવાય કે જૂની સિસ્ટમો જોડે સંગતતા જાળવવા માટે."
 
 #. Type: text
 #. Description
@@ -169,6 +172,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"એન્ક્રિપશન કી પાસફ્રેઝ માંથી એક-તરફી હેશ વિધેયનો ઉપયોગ કરીને તારવવામાં આવી છે. સામાન્ય "
+"રીતે, આને સૂચવેલ મૂળભૂત કરતાં બદલવાનું કોઇ કારણ નથી, અને તેમ ખોટી રીતે કરવાથી તે "
+"એન્ક્રિપ્શનની મજબૂતાઇ ઘટાડી શકે છે."
 
 #. Type: text
 #. Description
@@ -362,6 +368,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
+"એન્ક્રિપ્ટેડ કદો રુપરેખાંકિત થઇ ગયા પછી, સ્થાપન દરમિયાન એન્ક્રિપ્ટેડ કદો ધરાવતી ડિસ્કસમાં "
+"કોઇ વધારાનાં ફેરફારો માન્ય રાખવામાં આવશે નહી. આગળ વધતાં પહેલાં મહેરબાની કરી નક્કી કરો "
+"કે તમે હાલની આ ડિસ્કસની પાર્ટિશન પધ્ધતિ સાથે સંતોષીત છો."
 
 #. Type: error
 #. Description
@@ -729,3 +738,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"બ્લોક ઉપરકણ માટે એન્ક્રિપ્શન આધાર હજી સુધી પ્રાયોગિક ધોરણે છે અને ઉત્પાદન માટે તૈયાર નથી. "
+"વાસ્તવમાં, તે સરળતાથી નાશ પામે તેવી ગોઠવણીઓ અને ખોટું સલામતી આશ્વાસન આપે તે પ્રકારનાં છે. "
+"કોઇ જાણીતી એન્ક્રિપ્શન ક્ષતિ નથી, જ્યાં સુધી તે યોગ્ય રીતે ચકાસવામાં ન આવે, આ લાક્ષણિકતા "
+"પ્રાયોગિક ધોરણ સિવાય ઉપયોગ ન કરવી જોઇએ."

@@ -2,26 +2,25 @@
 
 dm_is_safe() {
 	# Might be non-encrypted, e.g. LVM2
-	local type
+	local dmtype
+	type dmsetup > /dev/null 2>&1 || return 1
 
-	if [ -x /sbin/dmsetup ]; then
-		type=$(/sbin/dmsetup table "$1" | head -n 1 | cut -d " " -f3)
-		if [ "$type" = crypt ]; then
-			return 0
-		fi
+	dmtype=$(dmsetup table "$1" | head -n 1 | cut -d " " -f3)
+	if [ "$dmtype" = crypt ]; then
+		return 0
 	fi
+
 	return 1
 }
 
 loop_is_safe() {
 	local opts
+	type losetup-aes > /dev/null 2>&1 || return 1
 
-	if [ -x /sbin/losetup-aes ]; then
-		opts=$(/sbin/losetup-aes $1 2>&1)
-		if [ $? -eq 0 ] && echo "$opts" | grep -q encryption=; then
-			# loop entry has an encryption= option, assume it's safe
-			return 0
-		fi
+	opts=$(losetup-aes $1 2>&1)
+	if [ $? -eq 0 ] && echo "$opts" | grep -q encryption=; then
+		# loop entry has an encryption= option, assume it's safe
+		return 0
 	fi
 
 	return 1

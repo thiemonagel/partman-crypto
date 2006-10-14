@@ -1,8 +1,12 @@
 partman-crypto (16) UNRELEASED; urgency=low
 
+  [ Frans Pop ]
   * crypto_tools.sh: quote variable to avoid syntax error.
 
- -- Frans Pop <fjp@debian.org>  Sat,  7 Oct 2006 22:02:33 +0200
+  [ David Härdeman ]
+  * Remove some hardcoded paths
+
+ -- David Härdeman <david@hardeman.nu>  Sun, 15 Oct 2006 01:04:54 +0200
 
 partman-crypto (15) unstable; urgency=low
 

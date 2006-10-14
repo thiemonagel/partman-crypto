@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-04 07:29+0100\n"
+"PO-Revision-Date: 2006-10-14 12:38+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,7 @@ msgstr "Visszacsatoló (loop-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Eszköz-mapper (dm-crypt)"
 
 #. Type: text
 #. Description

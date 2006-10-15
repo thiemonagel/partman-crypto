@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-12 02:29+0530\n"
+"PO-Revision-Date: 2006-10-15 03:10+0530\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -553,7 +553,7 @@ msgid ""
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
 "आपने ऐसा कूटवाक्यांश भरा है जिसके अक्षरों की संख्या ${MINIMUM} से कम है और इसे कमज़ोर माना "
-"जाएगा. आपको ा एक तगड़ा कूटवाक्यांश चना चाहिए.ं."
+"जाएगा. आपको एक तगड़ा कूटवाक्यांश चुनना चाहिए."
 
 #. Type: entropy-text
 #. Description

@@ -6,13 +6,13 @@ dm_dev_is_safe() {
 	min="$2"
 
 	# First try the device itself
-	dminfo=$(dmsetup table -j$maj -m$min | head -n1 | cut -d' ' -f3) || return 1
+	dminfo=$(dmsetup table -j$maj -m$min 2> /dev/null | head -n1 | cut -d' ' -f3) || return 1
 	if [ "$dminfo" = crypt ]; then
 		return 0
 	fi
 
 	# Then check its deps instead
-	deps=$(dmsetup deps -j "$maj" -m "$min") || return 1
+	deps=$(dmsetup deps -j "$maj" -m "$min" 2> /dev/null) || return 1
 	deps=$(echo "$deps" | sed -e 's/.*://;s/[ (]//g;s/)/ /g')
 
 	# deps is now a list like 3,2 3,1

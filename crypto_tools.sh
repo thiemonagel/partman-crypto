@@ -1,16 +1,41 @@
 . /lib/partman/definitions.sh
 
-dm_is_safe() {
-	# Might be non-encrypted, e.g. LVM2
-	local dmtype
-	type dmsetup > /dev/null 2>&1 || return 1
+dm_dev_is_safe() {
+	local maj min dminfo deps
+	maj="$1"
+	min="$2"
 
-	dmtype=$(dmsetup table "$1" | head -n 1 | cut -d " " -f3)
-	if [ "$dmtype" = crypt ]; then
+	# First try the device itself
+	dminfo=$(dmsetup table -j$maj -m$min | head -n1 | cut -d' ' -f3) || return 1
+	if [ "$dminfo" = crypt ]; then
 		return 0
 	fi
 
-	return 1
+	# Then check its deps instead
+	deps=$(dmsetup deps -j "$maj" -m "$min") || return 1
+	deps=$(echo "$deps" | sed -e 's/.*://;s/[ (]//g;s/)/ /g')
+
+	# deps is now a list like 3,2 3,1
+	for dep in $deps; do
+		maj=${dep%%,*}
+		min=${dep##*,}
+		dm_dev_is_safe "$maj" "$min" || return 1
+	done
+
+	return 0
+}
+
+dm_is_safe() {
+	# Might be non-encrypted, e.g. LVM2
+	local dminfo major minor
+	type dmsetup > /dev/null 2>&1 || return 1
+
+	dminfo=$(dmsetup info -c "$1" | tail -1) || return 1
+	major=$(echo "$dminfo" | sed 's/ \+/ /g' | cut -d' ' -f2)
+	minor=$(echo "$dminfo" | sed 's/ \+/ /g' | cut -d' ' -f3)
+
+	dm_dev_is_safe "$major" "$minor" || return 1
+	return 0
 }
 
 loop_is_safe() {

@@ -5,8 +5,12 @@ partman-crypto (16) UNRELEASED; urgency=low
 
   [ David Härdeman ]
   * Remove some hardcoded paths
+  * Allow safe-swap checks to walk the entire device-mapper tree,
+    meaning that swap-on-whatever-on-crypto is now ok. Loosely based on
+    a patch from James Westby <jw+debian@jameswestby.net>. Closes:
+    392080
 
- -- David Härdeman <david@hardeman.nu>  Sun, 15 Oct 2006 01:04:54 +0200
+ -- David Härdeman <david@hardeman.nu>  Sun, 15 Oct 2006 02:34:32 +0200
 
 partman-crypto (15) unstable; urgency=low
 

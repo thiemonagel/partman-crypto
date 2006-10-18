@@ -99,7 +99,7 @@ have_entropy_plugin () {
 	return 1
 }
 
-read_random () {
+call_entropy_plugin () {
 	local keybytes
 	keybytes=$1
 
@@ -148,7 +148,7 @@ create_gnupg_keyfile () {
 	gpg_pid=$!
 
 	# Call plugin to feed randfifo
-	read_random 2925
+	call_entropy_plugin 2925
 	if [ $? -ne 0 ] || ! wait $gpg_pid; then
 		rm $keyfile
 		kill $gpg_pid
@@ -175,7 +175,7 @@ create_random_keyfile() {
 	writer_pid=$!
 
 	# Call plugin to feed randfifo
-	read_random $keybytes
+	call_entropy_plugin $keybytes
 	if [ $? -ne 0 ] || ! wait $writer_pid; then
 		rm $keyfile
 		kill $writer_pid

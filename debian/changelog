@@ -3,6 +3,10 @@ partman-crypto (16) UNRELEASED; urgency=low
   [ Frans Pop ]
   * crypto_tools.sh: quote variable to avoid syntax error.
 
+  [ Max Vozeler ]
+  * blockdev-keygen: Kill writer pipes on failure and move the 
+    check for the entropy plugin to the start.
+
   [ David Härdeman ]
   * Remove some hardcoded paths
   * Allow safe-swap checks to walk the entire device-mapper tree,
@@ -10,7 +14,7 @@ partman-crypto (16) UNRELEASED; urgency=low
     a patch from James Westby <jw+debian@jameswestby.net>. Closes:
     392080
 
- -- David Härdeman <david@hardeman.nu>  Sun, 15 Oct 2006 02:34:32 +0200
+ -- Max Vozeler <xam@debian.org>  Wed, 18 Oct 2006 13:06:34 +0200
 
 partman-crypto (15) unstable; urgency=low
 

@@ -88,25 +88,20 @@ get_passphrase () {
 	fi
 }
 
-read_random () {
-	local keybytes
-	keybytes=$1
-
+have_entropy_plugin () {
 	db_capb
 	set -- $RET 
 	for cap; do
 		if [ "$cap" = plugin-entropy-text ]; then
-			use_entropy_plugin=yes
-			break
+			return 0
 		fi
 	done
+	return 1
+}
 
-	if [ -z "$use_entropy_plugin" ]; then
-		db_fset partman-crypto/tools_missing seen false
-		db_input critical partman-crypto/tools_missing
-		db_go || true
-		return 1
-	fi
+read_random () {
+	local keybytes
+	keybytes=$1
 
 	templ=partman-crypto/entropy-text
 	db_fset $templ seen false
@@ -150,12 +145,13 @@ create_gnupg_keyfile () {
 	# Fork off gnupg encrypting pipe
 	echo -n "$pass" > $passfifo &
 	gnupg_encrypt $keyfile $passfifo &
-	pid=$!
+	gpg_pid=$!
 
 	# Call plugin to feed randfifo
 	read_random 2925
-	if [ $? -ne 0 ] || ! wait $pid; then
+	if [ $? -ne 0 ] || ! wait $gpg_pid; then
 		rm $keyfile
+		kill $gpg_pid
 		return 1
 	fi
 
@@ -176,12 +172,13 @@ create_random_keyfile() {
 	 done
 	 cat $randfifo > $keyfile
 	) &
-	pid=$!
+	writer_pid=$!
 
 	# Call plugin to feed randfifo
 	read_random $keybytes
-	if [ $? -ne 0 ] || ! wait $pid; then
+	if [ $? -ne 0 ] || ! wait $writer_pid; then
 		rm $keyfile
+		kill $writer_pid
 		return 1
 	fi
 
@@ -207,6 +204,15 @@ fi
 
 # Log available entropy
 logger -t partman-crypto "kernel entropy_avail: $(cat /proc/sys/kernel/random/entropy_avail) bits"
+
+if [ "$keytype" = random ] || [ "$keytype" = keyfile ]; then
+	if ! have_entropy_plugin; then
+		db_fset partman-crypto/tools_missing seen false
+		db_input critical partman-crypto/tools_missing
+		db_go || true
+		exit 1
+	fi
+fi
 
 case $keytype in
 	keyfile)

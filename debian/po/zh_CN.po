@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-18 06:59-0500\n"
+"PO-Revision-Date: 2006-10-18 21:41-0500\n"
 "Last-Translator: Ming Hua <minghua@rice.edu>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -680,22 +680,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "无法下载 crypto 组件"
+msgstr "无法下载密码处理 (crypto) 组件"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "在设置加密卷时出现一个错误。"
+msgstr "在下载额外的密码处理组件时发生了一个错误。"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "尽管没有足够内存，仍然下载密码处理 (crypto) 组件？"
 
 #. Type: boolean
 #. Description
@@ -705,6 +703,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"看来没有足够的内存用于安装额外的密码处理组件。如果您仍然选择继续，安装过程将"
+"有可能失败。"
 
 #. Type: boolean
 #. Description

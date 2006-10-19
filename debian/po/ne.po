@@ -3,22 +3,24 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of template.po to Nepali
+# translation of ne.po to Nepali
 # Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
 # Shiva Pokharel <pokharelshiva@hotmail.com>, 2006.
+# Shyam Krishna Bal <shyam@mpp.org.np>, 2006.
+# Shiva Prasad Pokharel <pokharelshiva@hotmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: template\n"
+"Project-Id-Version: ne\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-06-06 14:34+0545\n"
-"Last-Translator: Shiva Pokharel <pokharelshiva@hotmail.com>\n"
+"PO-Revision-Date: 2006-10-18 11:05+0545\n"
+"Last-Translator: Shiva Prasad Pokharel <pokharelshiva@hotmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2;plural=(n!=1)\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #. Type: text
 #. Description
@@ -230,11 +232,10 @@ msgstr "${DEVICE} मा डेटा मेटिएको असफल भय�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr "${DEVICE} मा डेटा मेट्ने प्रयास गर्दा त्रुटि उत्पन्न भयो । डेटा मेट्न सकिएन ।"
+msgstr "${DEVICE} मा डेटा मेट्ने प्रयास गर्दा एउटा त्रुटि उत्पन्न भयो । डेटा मेट्न सकिएन ।"
 
 #. Type: text
 #. Description
@@ -305,9 +306,8 @@ msgstr "हराईरहेको"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "गुप्तीकरणका लागि भौतिक भोल्युम"
+msgstr "गुप्तीकृत भोल्युम ${DEV} को लागि भौतिक भोल्युमको रूपमा प्रयोग"
 
 #. Type: error
 #. Description
@@ -603,7 +603,6 @@ msgstr "कुञ्जी फाइल सिर्जना गर्दा �
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -615,7 +614,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:327
-#, fuzzy
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -624,14 +622,13 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"तपाईँले गुप्तिकृत विभाजनमा भण्डारण गर्न मूल फाइल प्रणाली चयन गर्नुभयो । यो विशेषताले कर्नेल "
-"र initrd भण्डारण हुने भिन्न /boot विभाजनको आवश्यकता देखाउदछ ।"
+"तपाईँले एउटा गुप्तिकृत विभाजनमा भण्डारण गर्न मूल फाइल प्रणाली चयन गर्नुभयो । यो विशेषताले "
+"कर्नेल र initrd भण्डारण हुने भिन्न /बुट विभाजनको आवश्यकता देखाउदछ ।"
 
 #. Type: error
 #. Description
@@ -648,7 +645,6 @@ msgstr "गुप्तीकरण कन्फिगरेशन असफल 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -662,7 +658,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -678,7 +673,6 @@ msgstr "अनियमित कुञ्जी प्रयोग गर्न
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
-#, fuzzy
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -699,22 +693,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "स्थापनाकर्ता अवयव लोड हुन सकेन"
+msgstr "crypto अवयवहरू डाउनलोड गर्न असफल भयो"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "गुप्तीकृत भोल्युम कन्फिगर गर्दा त्रुटि उत्पन्न भयो ।"
+msgstr "थप crypto अभयवहरू डाउनलोड गर्ने प्रयास गर्दा एउटा त्रुटि देखापर्यो ।"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "अपर्याप्त स्मृतिको प्रतिरोधमा crypto अभयवहरू स्थापना गर्न प्रक्रिया गर्नुहुन्छ ?"
 
 #. Type: boolean
 #. Description
@@ -724,6 +716,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"त्यहाँ थप crypto अभयवहरू स्थापना गर्न पर्याप्त स्मृति उपलब्ध देखिदैन । यदि तपाईँले अगाडि "
+"जाने र कुनै हालतमा पनि निरन्तर दिने रोज्नु भयो भने, स्थापना प्रक्रिया असफल हुन सक्छ ।"
 
 #. Type: boolean
 #. Description

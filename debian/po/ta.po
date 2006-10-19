@@ -322,7 +322,7 @@ msgstr "மறைகுறியாக்க தொகுதி ோ நிறு
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
-msgstr "{PACKAGE} கரு பகுதியைக் காணவில்லை அல்லது அதை நிறுவுவதில் பிழை ஏற்பட்டது."
+msgstr "${PACKAGE} கரு பகுதியைக் காணவில்லை அல்லது அதை நிறுவுவதில் பிழை ஏற்பட்டது."
 
 #. Type: error
 #. Description

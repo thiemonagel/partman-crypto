@@ -3,25 +3,18 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of ku-neu.po to Kurdish
-# Kurdish messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
-#
-# Erdal Ronahi <erdal.ronahi@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: ku-neu\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-16 03:50+0100\n"
+"PO-Revision-Date: 2006-10-19 01:12+0100\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural= n != 1\n"
+"X-Poedit-Language: Kurdish\n"
 
 #. Type: text
 #. Description
@@ -30,7 +23,7 @@ msgstr ""
 #: ../partman-crypto.templates:5
 #, fuzzy
 msgid "physical volume for encryption"
-msgstr "Volume ya fîzîkî ji bo RAID"
+msgstr "Volume ya f�z�k� ji bo RAID"
 
 #. Type: text
 #. Description
@@ -38,7 +31,7 @@ msgstr "Volume ya fîzîkî ji bo RAID"
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr "şifre"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -65,49 +58,50 @@ msgstr "Device-mapper (dm-crypt)"
 #. Encryption type for a file system
 #: ../partman-crypto.templates:35
 msgid "not active"
-msgstr "neçalak"
+msgstr "ne�alak"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
+#, fuzzy
 msgid "Encryption method:"
-msgstr "Renga şîfrekirinê:"
+msgstr "Away� part�siyonkirin�:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 #, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr "Şifrekirin:"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 #, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Mezinahiya mifteyê:"
+msgstr "Mezinahiya miftey�:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 #, fuzzy
 msgid "Key size for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: text
 #. Description
@@ -116,7 +110,7 @@ msgstr "Niqteya mount ji bo vê partîsiyonê:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algor�tma IV:"
 
 #. Type: select
 #. Description
@@ -125,7 +119,7 @@ msgstr ""
 #: ../partman-crypto.templates:79
 #, fuzzy
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Şîfrekirina ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: select
 #. Description
@@ -144,14 +138,14 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "Mifteya şîfrekirinê:"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 #, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: text
 #. Description
@@ -159,14 +153,14 @@ msgstr "Niqteya mount ji bo vê partîsiyonê:"
 #: ../partman-crypto.templates:98
 #, fuzzy
 msgid "Encryption key hash:"
-msgstr "Mifteya şîfrekirinê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 #, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Niqteya mount ji bo v� part�siyon�:"
 
 #. Type: select
 #. Description
@@ -184,7 +178,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Daneyan j� bibe:"
 
 #. Type: text
 #. Description
@@ -196,21 +190,21 @@ msgstr "na"
 #. Description
 #: ../partman-crypto.templates:121
 msgid "yes"
-msgstr "erê"
+msgstr "er�"
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
 #, fuzzy
 msgid "Erase data on this partition"
-msgstr "partîsiyoneke nû biafirîne"
+msgstr "part�siyoneke n� biafir�ne"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
 #, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr "Disk� bi tevah� pakij bike: ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -226,14 +220,14 @@ msgstr ""
 #: ../partman-crypto.templates:137
 #, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr "Disk� bi tevah� pakij bike: ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 #, fuzzy
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr "Disk� bi tevah� pakij bike: ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -246,33 +240,36 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
+#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Şîfrekirin tê sazkirin..."
+msgstr "T� sazkirin..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
+#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Volumên şifrekirî mîheng bike"
+msgstr "Her�ma dem� saz bike"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 #, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Tu partîsiyon nehat dîtin"
+msgstr "Tu part�siyon nehat d�tin"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
+#, fuzzy
 msgid "No partitions have been selected for encryption."
-msgstr "partîsiyonên bên şîfrekirin nehatin hilbijartin."
+msgstr "Tu part�siyon nehat d�tin"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr "Bernameyên pêwîst ne amade ne"
+msgstr "Bernamey�n p�w�st ne amade ne"
 
 #. Type: note
 #. Description
@@ -285,8 +282,9 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
+#, fuzzy
 msgid "Required encryption options missing"
-msgstr "Mîhengên şîfrekirinê yên pêwîst ne amade ne"
+msgstr "Bernamey�n p�w�st ne amade ne"
 
 #. Type: error
 #. Description
@@ -295,8 +293,6 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Mîhengên şîfrekirinê yên ${DEVICE}·ne temam in. Ji kerema xwe bizivire "
-"menuya partîsiyonkirinê û mîhengên pêwîst hilbijêre."
 
 #. Type: text
 #. Description
@@ -313,14 +309,14 @@ msgstr "neamade"
 #: ../partman-crypto.templates:183
 #, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "volume ya fîzîkî ji bo şîfrekirinê"
+msgstr "Volume ya f�z�k� ji bo RAID"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
 #, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Sazkirina bixweser a torê serneket"
+msgstr "Sazkirina bixweser a tor� serneket"
 
 #. Type: error
 #. Description
@@ -330,8 +326,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Paketa modula kernel ${PACKAGE}·nehat dîtin an di sazkirinê de çewtiyek "
-"derket holê."
+"Paketa modula kernel ${PACKAGE}�nehat d�tin an di sazkirin� de �ewtiyek "
+"derket hol�."
 
 #. Type: error
 #. Description
@@ -347,72 +343,68 @@ msgstr ""
 #: ../partman-crypto.templates:199
 #, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Guherandinê binivîse diskê û voluman şîfrekirî mîheng bike?"
+msgstr "Bila guher�n li ser d�skan were tomarkirin � LVM were veavakirin?"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
+#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Berê sazkirina volumên şîfrekirî, divê şablona partîsiyonkirinê bê "
-"nivîsandin diskê.  Ev guherandin nayên bizivirandin paşê."
+"Ber� ku RAID were veavakirin div� ber� ber� guher�n li c�haz�n depokirin� "
+"were tomarkirin. Ev guher�n d� re nay� vegerandin."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Bila pergala dabeşkirina heyî were parastin û LVM were veava kirin?"
+msgstr ""
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Di dema veavakirina RAIDê de li ser beşên dîskan de ye yên cîltên fîzîkî "
-"dihundirîne, destûr nayê dayîn ku bila guherîneke din were kirin. Ji kerema "
-"xwe re sax bin bê ka dabeşkirinên heyî yên li ser van dîskan gorî xwestekên "
-"te ye yan na."
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:222
+msgid "Configuration of encrypted volumes failed"
+msgstr ""
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 #, fuzzy
-msgid "Configuration of encrypted volumes failed"
-msgstr "Çewtiya sazkirina volumên şîfrekirî"
-
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Çewtiya sazkirina volumên şîfrekirî derket holê."
+msgstr "Di afirandina dosiya miftey� de pirsgir�k derket hol�."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 #, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Veavakirina RAIDê hate betalkirin."
+msgstr "Veavakirina RAID� hate betalkirin."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 #, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Çewtiya sazkirina volumên şîfrekirî"
+msgstr "Gava sazkirin� bi ser neket"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
+#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Di sazkirina volumên şîfrekirî çewtiyek derket holê."
+msgstr "Di afirandina dosiya miftey� de pirsgir�k derket hol�."
 
 #. Type: text
 #. Description
@@ -421,8 +413,9 @@ msgstr "Di sazkirina volumên şîfrekirî çewtiyek derket holê."
 #. of a random key
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
+#, fuzzy
 msgid "Passphrase"
-msgstr "Hevoka şîfreyê"
+msgstr "Nasnav� vala"
 
 #. Type: text
 #. Description
@@ -431,6 +424,7 @@ msgstr "Hevoka şîfreyê"
 #. of a random key
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
+#, fuzzy
 msgid "Keyfile (GnuPG)"
 msgstr "Dosiya mifteyan (GnuPG)"
 
@@ -442,20 +436,20 @@ msgstr "Dosiya mifteyan (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr "Mifteya tesadufî"
+msgstr "Mifteya tesaduf�"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 #, fuzzy
 msgid "Unsafe swap space detected"
-msgstr "Cihê swap a ne ewlekar hat dîtin."
+msgstr "Cih� swap a ne ewlekar hat d�tin."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "Cihê swap a ne ewlekar hat dîtin."
+msgstr "Cih� swap a ne ewlekar hat d�tin."
 
 #. Type: error
 #. Description
@@ -478,15 +472,15 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
+#, fuzzy
 msgid "Encryption passphrase:"
-msgstr "Hevoka şîfrekirinê:"
+msgstr "Nasnav� vala"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr ""
-"Ji bo şîfrekirina ${DEVICE} pêwîst e tu hevokeke şîfrekirinê hilbijêrî."
 
 #. Type: password
 #. Description
@@ -511,55 +505,50 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "Ji bo rastkirinê nasnavî carekî din binivîse:"
+msgstr "Ji bo rastkirin� nasnav� carek� din biniv�se:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
-#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Ji bo rastkirina te rast nivîsand, vê hevoka şîfrekirinê carekî din binivîse."
-
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:291
-msgid "Passphrase input error"
-msgstr "Çewtiya nivîsandina nasnavê"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 #, fuzzy
+msgid "Passphrase input error"
+msgstr "�ewtiya niv�sandina nasnav�"
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Her du hevokên şîfrekirinê hevdu nagirin. Ji kerema xwe carekî din "
-"biceribîne."
-
-#. Type: note
-#. Description
-#: ../partman-crypto.templates:296
-msgid "Empty passphrase"
-msgstr "Nasnavê vala"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:296
 #, fuzzy
+msgid "Empty passphrase"
+msgstr "Nasnav� vala"
+
+#. Type: note
+#. Description
+#: ../partman-crypto.templates:296
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Hevoka şîfrekirinê ya te nivîsand vala ya. Ev ne caîz e. Ji kerema xwe "
-"hevokeke ne vala hilbijêre."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
+#, fuzzy
 msgid "Use weak passphrase?"
-msgstr "Hevoka şîfreyê ya bêhêz bi kar bîne?"
+msgstr "Nasnav� vala"
 
 #. Type: boolean
 #. Description
@@ -571,20 +560,19 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Di hevoka şîfrekirina tê ji ·${MINIMUM} kêmtir tîp hene. Ji ber vê gelek "
-"lawaz e. Hevokeke şîfrekirina ye xurtir hilbijêre."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
+#, fuzzy
 msgid "Enter random characters"
-msgstr "Tîpên tesadufî binivîse"
+msgstr "T�p�n tesaduf� biniv�se"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Mifteya şîfrekirinê ji bo ${DEVICE} niha tê afirandin."
+msgstr ""
 
 #. Type: entropy-text
 #. Description
@@ -600,13 +588,13 @@ msgstr ""
 #: ../partman-crypto.templates:322
 #, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Neserkeftina guherandina mezinahiyê"
+msgstr "Neserkeftina guherandina mezinahiy�"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Di afirandina dosiya mifteyê de pirsgirêk derket holê."
+msgstr "Di afirandina dosiya miftey� de pirsgir�k derket hol�."
 
 #. Type: error
 #. Description
@@ -623,8 +611,6 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala pelan root partîsiyoneke neşîfrekirî "
-"hilbijêre."
 
 #. Type: error
 #. Description
@@ -640,16 +626,14 @@ msgstr ""
 #: ../partman-crypto.templates:337
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala pelan root partîsiyoneke neşîfrekirî "
-"hilbijêre."
+msgstr "Ji bo /boot div� tu pergaleke din ya pel�n m�na ext3 bikar b�ne."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
 #, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Sazkirina bixweser a torê serneket"
+msgstr "Sazkirina bixweser a tor� serneket"
 
 #. Type: error
 #. Description
@@ -664,20 +648,17 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala pelan root partîsiyoneke neşîfrekirî "
-"hilbijêre."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 #, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Li xwe bawer î ku dixwazî dekevî?"
+msgstr "Li xwe bawer � ku dixwaz� dekev�?"
 
 #. Type: boolean
 #. Description
@@ -694,23 +675,23 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Bikaranîna mifteyeke tesadufî tê wateyê agahiyên partîsiyonê di her "
-"bootkirinê de bên tunekirin. Ev bi tenê ji bo partîsiyonên swap bê bi kar "
-"anîn."
+"Bikaran�na mifteyeke tesaduf� t� watey� agahiy�n part�siyon� di her "
+"bootkirin� de b�n tunekirin. Ev bi ten� ji bo part�siyon�n swap b� bi kar "
+"an�n."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 #, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Pêkhatiya sazkirinê nehate barkirin"
+msgstr "P�khatiya sazkirin� nehate barkirin"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 #, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Çewtiya sazkirina volumên şîfrekirî derket holê."
+msgstr "P�khatiya sazkirin� nehate barkirin"
 
 #. Type: boolean
 #. Description

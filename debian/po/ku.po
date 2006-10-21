@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: ku-neu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-21 12:05+0100\n"
+"PO-Revision-Date: 2006-10-21 15:08+0100\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -198,16 +198,15 @@ msgstr "erê"
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:125
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "partîsiyoneke nû biafirîne"
+msgstr "Daneyên vê partîsiyonê jê bibe"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
-#, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr ""
+"Bi rastî daneyên diska ${DEVICE} bi tevahî werin pakijkirin, yanî jêbirin?"
 
 #. Type: boolean
 #. Description
@@ -221,16 +220,14 @@ msgstr ""
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
-#, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr "Diska ${DEVICE} bi tevahî tê pakijkirin"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
-#, fuzzy
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Diskê bi tevahî pakij bike: ${DEVICE}"
+msgstr "Pakijkirina ${DEVICE} serneket"
 
 #. Type: error
 #. Description

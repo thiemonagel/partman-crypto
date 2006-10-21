@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: ku-neu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-08-26 18:50+0000\n"
-"PO-Revision-Date: 2006-10-16 03:50+0100\n"
+"PO-Revision-Date: 2006-10-21 12:05+0100\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,9 +28,8 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
-#, fuzzy
 msgid "physical volume for encryption"
-msgstr "Volume ya fîzîkî ji bo RAID"
+msgstr "volume ya fîzîkî ji bo şîfrekirinê"
 
 #. Type: text
 #. Description
@@ -46,9 +45,8 @@ msgstr "şifre"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop%s)"
+msgstr "Loopback (loop-AES)"
 
 #. Type: text
 #. Description
@@ -77,9 +75,8 @@ msgstr "Renga şîfrekirinê:"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Niqteya mount ji bo vê partîsiyonê:"
+msgstr "Awaza şîfrekirina ji bo vê partîsiyonê:"
 
 #. Type: text
 #. Description
@@ -258,9 +255,8 @@ msgstr "Volumên şifrekirî mîheng bike"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
-#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Tu partîsiyon nehat dîtin"
+msgstr "Tu partîsiyona ji bo şîfrekirinê tune"
 
 #. Type: note
 #. Description
@@ -318,9 +314,8 @@ msgstr "volume ya fîzîkî ji bo şîfrekirinê"
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Sazkirina bixweser a torê serneket"
+msgstr "Sazkirina pakêta şîfrekirinê serneket"
 
 #. Type: error
 #. Description

@@ -292,7 +292,7 @@ _Description: Passphrase input error
  The two passphrases you entered were not the same. Please try again.
 
 Template: partman-crypto/passphrase-empty
-Type: note
+Type: error
 _Description: Empty passphrase
  You entered an empty passphrase, which is not allowed.
  Please choose a non-empty passphrase.

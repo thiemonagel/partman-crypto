@@ -2,9 +2,11 @@ partman-crypto (16) UNRELEASED; urgency=low
 
   [ Frans Pop ]
   * crypto_tools.sh: quote variable to avoid syntax error.
+  * Ask for passphrase and passphrase confirmation in one db_go.
+  * Change template type for empty passphrase to error.
 
   [ Max Vozeler ]
-  * blockdev-keygen: Kill writer pipes on failure and move the 
+  * blockdev-keygen: Kill writer pipes on failure and move the
     check for the entropy plugin to the start.
   * Show short name of the crypto device in the mountpoint column
     of the corresponding partition. Closes: #381968, #393919
@@ -16,7 +18,7 @@ partman-crypto (16) UNRELEASED; urgency=low
     a patch from James Westby <jw+debian@jameswestby.net>. Closes:
     392080
 
- -- Max Vozeler <xam@debian.org>  Sun, 22 Oct 2006 17:55:42 +0200
+ -- Frans Pop <fjp@debian.org>  Sun, 22 Oct 2006 22:43:28 +0200
 
 partman-crypto (15) unstable; urgency=low
 

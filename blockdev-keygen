@@ -37,28 +37,28 @@ get_passphrase () {
 		db_fset $templ seen false
 		db_subst $templ DEVICE "$description"
 		db_input critical $templ
-		db_go || return 1
-		db_get $templ || RET=''
-		pass=$RET
-		if [ -z "$pass" ]; then
-			templ="partman-crypto/passphrase-empty"
-			db_fset $templ seen false
-			db_input critical $templ
-			db_go || true
-			continue
-		fi
 	
 		templ="partman-crypto/passphrase-again"
 		db_set $templ ""
 		db_fset $templ seen false
 		db_input critical $templ
+
 		db_go || return 1
-		db_get $templ || RET=''
+
+		db_get partman-crypto/passphrase || RET=''
+		pass=$RET
+		if [ -z "$pass" ]; then
+			templ="partman-crypto/passphrase-empty"
+			db_fset $templ seen false
+			db_input critical $templ
+			continue
+		fi
+
+		db_get partman-crypto/passphrase-again || RET=''
 		if [ "$pass" != "$RET" ]; then
 			templ="partman-crypto/passphrase-mismatch"
 			db_fset $templ seen false
 			db_input critical $templ
-			db_go || true
 			continue
 		fi
 

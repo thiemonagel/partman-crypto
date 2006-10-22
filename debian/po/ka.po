@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-06-01 02:28+0400\n"
 "Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
 "Language-Team: Debian Georgian <ka@aiet.qartuli.net>\n"
@@ -514,13 +514,13 @@ msgstr "შიფრირების ფრაზის შეყვანი�
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "შიფრირების ცარიელი ფრაზა"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

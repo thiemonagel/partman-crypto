@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer etch\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-04 10:37+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -545,13 +545,13 @@ msgstr ""
 "Les dues frases de pas que heu introduït no són la mateixa. Si us plau, "
 "proveu-ho de nou."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Frase de pas buida"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

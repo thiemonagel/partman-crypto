@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-16 15:34+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -544,13 +544,13 @@ msgstr "Lỗi nhập cụm từ mật khẩu"
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Bạn đã nhập hai cụm từ mật khẩu không trùng. Hãy thử lại."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Cụm từ mật khẩu rỗng"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

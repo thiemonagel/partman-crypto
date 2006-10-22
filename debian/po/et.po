@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-03 23:32+0300\n"
 "Last-Translator: Siim Põder <windo@p6drad-teel.net>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
@@ -528,13 +528,13 @@ msgstr "Parooli sisestamise viga"
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Sisestatud paroolid olid erinevad. Palun proovi uuesti."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Tühi parool"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

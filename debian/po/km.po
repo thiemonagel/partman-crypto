@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-04 09:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team:  <en@li.org>\n"
@@ -527,13 +527,13 @@ msgstr "កំហុស​បញ្ចូល​ឃ្លា​សម្ងាត
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "ឃ្លាសម្ងាត់​ទាំងពីរ​ដែល​អ្នក​បាន​បញ្ចូល មិនដូច​គ្នា​ឡើយ​ ។​ សូម​ព្យាយាម​ម្ដង​ទៀត ។"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "ឃ្លាសម្ងាត់​ទទេ"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

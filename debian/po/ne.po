@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ne\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-18 11:05+0545\n"
 "Last-Translator: Shiva Prasad Pokharel <pokharelshiva@hotmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -530,13 +530,13 @@ msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
 "तपाईँले प्रविष्टि गर्नु भएको दुईवटा पास वाक्यांशहरू उही छैन । कृपया फेरी प्रयास गर्नुहोस् । "
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "खाली पास वाक्यांश"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

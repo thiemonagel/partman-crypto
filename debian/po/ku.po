@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ku-neu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-10-21 15:08+0100\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
@@ -530,13 +530,13 @@ msgstr ""
 "Her du hevokên şîfrekirinê hevdu nagirin. Ji kerema xwe carekî din "
 "biceribîne."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Nasnavê vala"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 #, fuzzy

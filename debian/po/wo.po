@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-09-05 19:50+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
@@ -534,13 +534,13 @@ msgstr "Njuumte ci dugal waxjall bi"
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Ñaari waxjall yi nga def bokkuñu. Jéematal baneen yoon."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Waxjall bu amul dara"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

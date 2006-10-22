@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-08-26 18:50+0000\n"
+"POT-Creation-Date: 2006-10-22 22:52+0000\n"
 "PO-Revision-Date: 2006-09-14 12:11-0400\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
@@ -530,13 +530,13 @@ msgstr "패스프레이즈 입력 오류"
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "입력한 패스프레이즈가 같지 않습니다. 다시 입력하십시오."
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "빈 패스프레이즈입니다"
 
-#. Type: note
+#. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid ""

@@ -20,12 +20,29 @@ cd $dev
 [ -f $id/method ] || exit 0
 method=$(cat $id/method)
 
+cryptdev_shortname ()
+{
+	case "$1" in
+	/dev/loop*)
+		n=${1#/dev/loop}
+		n=${n#/}
+		echo "loop${n}"
+		;;
+	/dev/mapper/*)
+		echo "${1#/dev/mapper/}"
+		;;
+	*)
+		echo "$1"
+		;;
+	esac
+}
+
 if [ $method = crypto ]; then
 	db_metaget partman/method_short/$method description || RET=''
 	echo ${RET:-crypto} >$id/visual_filesystem
 
 	if [ -f $id/crypt_active ]; then
-		RET=$(humandev $(cat $id/crypt_active))
+		RET=$(cryptdev_shortname $(cat $id/crypt_active))
 	else
 		db_metaget partman-crypto/text/not_active description || RET=''
 	fi

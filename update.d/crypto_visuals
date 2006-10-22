@@ -43,6 +43,7 @@ if [ $method = crypto ]; then
 
 	if [ -f $id/crypt_active ]; then
 		RET=$(cryptdev_shortname $(cat $id/crypt_active))
+		RET="($RET)"
 	else
 		db_metaget partman-crypto/text/not_active description || RET=''
 	fi

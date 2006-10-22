@@ -1,4 +1,4 @@
-partman-crypto (16) UNRELEASED; urgency=low
+partman-crypto (16) unstable; urgency=low
 
   [ Frans Pop ]
   * crypto_tools.sh: quote variable to avoid syntax error.
@@ -14,11 +14,31 @@ partman-crypto (16) UNRELEASED; urgency=low
   [ David Härdeman ]
   * Remove some hardcoded paths
   * Allow safe-swap checks to walk the entire device-mapper tree,
-    meaning that swap-on-whatever-on-crypto is now ok. Loosely based on
-    a patch from James Westby <jw+debian@jameswestby.net>. Closes:
-    392080
+    meaning that swap-on-whatever-on-crypto is now ok. Loosely based
+    on a patch from James Westby <jw+debian@jameswestby.net>.
+    Closes: #392080
 
- -- Frans Pop <fjp@debian.org>  Sun, 22 Oct 2006 22:43:28 +0200
+  [ Updated translations ]
+  * Belarusian (be.po) by Andrei Darashenka
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * Basque (eu.po) by Piarres Beobide
+  * Hindi (hi.po) by Nishant Sharma
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Icelandic (is.po) by David Steinn Geirsson
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Macedonian (mk.po) by Georgi Stanojevski
+  * Norwegian Bokmål (nb.po) by Bjørn Steensrud
+  * Nepali (ne.po) by Shiva Prasad Pokharel
+  * Dutch (nl.po) by Bart Cornelis
+  * Romanian (ro.po) by Eddy Petrișor
+  * Russian (ru.po) by Yuri Kozlov
+  * Albanian (sq.po) by Elian Myftiu
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by Damodharan Rajalingam
+  * Vietnamese (vi.po) by Clytie Siddall
+  * Simplified Chinese (zh_CN.po) by Ming Hua
+
+ -- Max Vozeler <xam@debian.org>  Sun, 22 Oct 2006 23:49:42 +0200
 
 partman-crypto (15) unstable; urgency=low
 

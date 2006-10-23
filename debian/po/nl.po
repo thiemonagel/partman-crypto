@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-10-22 22:38+0200\n"
+"PO-Revision-Date: 2006-10-23 20:15+0200\n"
 "Last-Translator: Bart Cornelis <cobaco@skolelinux.no>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -118,7 +118,7 @@ msgstr "IV-algoritme:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Installatievector-generatiealgoritme voor deze partitie:"
+msgstr "Generatie-algoritme voor de initialisatievector voor deze partitie:"
 
 #. Type: select
 #. Description
@@ -131,8 +131,8 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Er bestaan verschillende algoritmen om de initialisatie-vector van elke "
-"sector af te leiden. Deze keuze beïnvloed de veiligheid van de "
+"Er bestaan verschillende algoritmen om de initialisatievector van elke "
+"sector af te leiden. Deze keuze beïnvloet de veiligheid van de "
 "versleuteling. De enige reden om eventueel van de standaardwaarde af te "
 "wijken is compatibiliteit met oudere systemen. "
 
@@ -160,7 +160,7 @@ msgstr "Encryptiesleutel-hash:"
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Type Encryptiesleutel-hash voor deze partitie:"
+msgstr "Type encryptiesleutel-hash voor deze partitie:"
 
 #. Type: select
 #. Description
@@ -217,9 +217,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"De data op ${DEVICE} zal overschreven worden met willekeurige data. Eens "
-"deze stap uitgevoerd is kan de data niet meer teruggehaald worden, bijgevolg "
-"is dit uw laatste kans om het wissen af te breken."
+"De data op ${DEVICE} zal overschreven worden met willekeurige data. Nadat "
+"deze stap uitgevoerd is, kan de data niet meer teruggehaald worden. Dit is "
+"dus uw laatste kans om het wissen af te breken."
 
 #. Type: text
 #. Description
@@ -320,7 +320,7 @@ msgstr "in gebruik als fysiek volume voor het versleutelde volume ${DEV}"
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "Encryptiepakketinstallatie is mislukt"
+msgstr "Installatie van encryptie-pakket is mislukt"
 
 #. Type: error
 #. Description
@@ -362,7 +362,7 @@ msgid ""
 msgstr ""
 "Voordat de versleutelde volumes ingesteld kunnen worden dient het huidige "
 "schijfindelingsschema naar de schijf weggeschreven te worden. Deze "
-"aanpassingen kunnen niet meer ongedaan gemaakt worden."
+"aanpassingen kunnen niet ongedaan gemaakt worden."
 
 #. Type: boolean
 #. Description
@@ -379,10 +379,10 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Verder veranderingen aan de partities van schijven met versleutelde volumes "
-"zijn niet toegestaan eens de versleutelde volumes ingesteld zijn. U kunt "
-"alvorens verder te gaan best controleren of het huidige "
-"schijfindelingsschema is wat u wilt."
+"Verdere veranderingen aan de partities van schijven met versleutelde volumes "
+"zijn niet toegestaan nadat de versleutelde volumes ingesteld zijn. "
+"Controleer of het huidige schijfindelingsschema is wat u wilt voordat u "
+"verder gaat."
 
 #. Type: error
 #. Description
@@ -414,7 +414,7 @@ msgstr "Initialisatie van het versleutelde volume is mislukt"
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
 msgstr ""
-"Er is een fout opgetreden tijdens het opzetten van de versleutelde volumes."
+"Er is een fout opgetreden tijdens het instellen van de versleutelde volumes."
 
 #. Type: text
 #. Description
@@ -478,7 +478,7 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"U kunt dit wisselgeheugen best deactiveren (e.g. door swapoff te draaien), "
+"U kunt dit wisselgeheugen best deactiveren (b.v. door swapoff te draaien), "
 "of instellen als een versleuteld wisselgeheugen en vervolgens de "
 "configuratie van de versleutelde volumes opnieuw uitvoeren. Dit programma "
 "sluit nu af."
@@ -517,7 +517,7 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Een goede wachtzin bevat een mengeling van letters, nummers, en punctuatie. "
+"Een goede wachtzin bevat een mengeling van letters, cijfers, en leestekens. "
 "Wachtzinnen hebben een aan te raden lengte van tenminste 20 karakters."
 
 #. Type: password
@@ -582,7 +582,7 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"U heeft een wachtzin in gevoerd die uit minder dan ${MINIMUM} karakters "
+"U heeft een wachtzin ingevoerd die uit minder dan ${MINIMUM} karakters "
 "bestaat. Dit wordt als te zwak beschouwd. U kunt best een krachtigere "
 "wachtzin invoeren."
 
@@ -590,7 +590,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr "Voer random karakters in"
+msgstr "Voer willekeurige tekens in"
 
 #. Type: entropy-text
 #. Description
@@ -606,8 +606,8 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"U kunt dit proces versnellen door random karakters in te voeren via het "
-"toetsenbord, of u kunt wachten dot voldoende sleutelmateriaal verzameld is. "
+"U kunt dit proces versnellen door willekeurige tekens in te voeren via het "
+"toetsenbord, of u kunt wachten tot voldoende sleutelmateriaal verzameld is. "
 "(OPGELET: dit kan lang duren)"
 
 #. Type: error
@@ -631,8 +631,8 @@ msgid ""
 "an installation that cannot be used."
 msgstr ""
 "U heeft ervoor gekozen om het basisbestandssysteem op te slaan op een "
-"versleutelde partitie. Deze feature is niet beschikbaar, en nu doorgaan zal "
-"dan ook leiden tot een installatie die niet gebruikt kan worden."
+"versleutelde partitie. Deze functionaliteit is niet beschikbaar, en nu "
+"doorgaan zal dan ook leiden tot een installatie die niet gebruikt kan worden."
 
 #. Type: error
 #. Description
@@ -652,8 +652,8 @@ msgid ""
 "kernel and initrd can be stored."
 msgstr ""
 "U heeft ervoor gekozen om het basisbestandssysteem op te slaan op een "
-"versleutelde partitie. Deze feature vereist een aparte '/boot'-partitie waar "
-"de kernel en de initrd opgeslagen kunnen worden."
+"versleutelde partitie. Deze functionaliteit vereist een afzonderlijke '/"
+"boot'-partitie waar de kernel en de initrd opgeslagen kunnen worden."
 
 #. Type: error
 #. Description
@@ -695,7 +695,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Weet u zeker dat u een random sleutel wilt gebruiken?"
+msgstr "Weet u zeker dat u een willekeurige sleutel wilt gebruiken?"
 
 #. Type: boolean
 #. Description
@@ -704,7 +704,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Hoewel u een random sleutel gekozen heeft voor ${DEVICE}, heeft u de "
+"Hoewel u een willekeurige sleutel gekozen heeft voor ${DEVICE}, heeft u de "
 "schijfindeler gevraagd hier een bestandssysteem op aan te maken."
 
 #. Type: boolean
@@ -714,9 +714,9 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Gebruik van een random sleutel heeft als gevolg dat alle data op de partitie "
-"vernietigd wordt met elke herstart. Dit wordt normaal enkel gebruikt voor "
-"wisselgeheugenpartities."
+"Gebruik van een willekeurige sleutel heeft als gevolg dat alle data op de "
+"partitie vernietigd wordt met elke herstart. Dit wordt normaal enkel "
+"gebruikt voor wisselgeheugenpartities."
 
 #. Type: error
 #. Description

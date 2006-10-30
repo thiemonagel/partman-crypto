@@ -8,14 +8,15 @@
 # This file is distributed under the same license as debian-installer.
 # Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
 # Nikola Antonov <nikola@linux-bg.org>, 2004.
+# Damyan Ivanov <dam@modsoftsys.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-04-08 10:14+0300\n"
-"Last-Translator:  Ognyan Kulev <ogi@fmi.uni-sofia.bg>\n"
+"PO-Revision-Date: 2006-10-30 17:36+0200\n"
+"Last-Translator:  Damyan Ivaniv <dam@modsoftsys.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,7 +112,7 @@ msgstr "Големина на ключ за този дял:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Алгоритъм на ИВ:"
 
 #. Type: select
 #. Description
@@ -133,6 +134,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Съществуват различни алгоритми за получаване на инициализационния вектор "
+"(ИВ) за всеки сектор. От избора на ИВ-алгоритъм зависи сигурността на "
+"шифрирането. Обикновено алгоритъмът, който се предлага по подразбиране е "
+"подходящ, освен ако се търси съвместимост със стари системи."
 
 #. Type: text
 #. Description
@@ -171,6 +176,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Ключът за кодиране се получава чрез прилагане на еднопосочна хеш-функция към "
+"въведената парола. Промяната на предложения по подразбиране метод може да "
+"доведе до намаляване на ефективността на шифрирането."
 
 #. Type: text
 #. Description
@@ -178,7 +186,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr ""
+msgstr "Изтриване на данните:"
 
 #. Type: text
 #. Description
@@ -214,6 +222,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Данните на ${DEVICE} ще бъдат презаписани със случайни числа. След "
+"тазиоперация първоначалните данни не могат да бъдат възстановени. Това е "
+"последната Ви възможност да откажете изтриването."
 
 #. Type: text
 #. Description
@@ -226,7 +237,7 @@ msgstr "Изтриване на цял диск: ${DEVICE}"
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Грешка при изтриването на данните на ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -235,6 +246,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Появи се проблем при опита за изтриване на данните на ${DEVICE}. Данните не "
+"са изтрити."
 
 #. Type: text
 #. Description
@@ -733,6 +746,8 @@ msgstr "Грешка при настройване на шифрирани то�
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Да бъде ли направен опит да се инсталират компонентите за шифриране въпреки "
+"недостига на памет?"
 
 #. Type: boolean
 #. Description
@@ -742,12 +757,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Изглежда наличната оперативна памет е недостатъчна за зареждане на "
+"допълнителните компоненти, осигуряващи функциите за шифриране. Ако "
+"продължите въпреки това, процесът на инсталиране може да не завърши успешно."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr ""
+msgstr "Да се използва ли шифриране на ниво блокови устройства?"
 
 #. Type: boolean
 #. Description
@@ -759,3 +777,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"Поддръжката на шифриране на ниво блокови устройства е все още в "
+"експериментален стадий и не се смята за готова за използване в индустриални "
+"системи. В частност, използването ѝ може да доведе то системи, чието "
+"шифриране е лесно за пробиване, като по този начин дава лъжливо чувство за "
+"сигурност. Към момента не са известни слабости в шифрирането, но докато "
+"реализацията не премине разширено тестване, използването ѝ не се препоръчва, "
+"освен за тестови цели."

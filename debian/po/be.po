@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of be-20061012.po to Belarussian
+# translation of be-20061017-cristian-in.po to Belarusian
 #
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files#
@@ -11,14 +11,18 @@
 # in doc/i18n/i18n.txt#
 #
 # Andrei Darashenka <adorosh2@it.org.by>, 2005, 2006.
+# Pavel Piatruk <berserker@neolocation.com>, 2006.
+# Nasciona Piatrouskaja <naska1@tut.by>, 2006.
+# Hleb Rubanau <g.rubanau@gmail.com>, 2006.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: be-20061012\n"
+"Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-10-15 02:08+0200\n"
+"PO-Revision-Date: 2006-10-17 23:34+0300\n"
 "Last-Translator: Andrei Darashenka <adorosh2@it.org.by>\n"
-"Language-Team: Belarussian <be@li.org>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,13 +75,13 @@ msgstr "неактыўны"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr "Метад шыфравання:"
+msgstr "Спосаб шыфравання:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr "Метад шыфравання для гэтага падзела:"
+msgstr "Спосаб шыфравання для гэтага падзела:"
 
 #. Type: text
 #. Description
@@ -112,7 +116,7 @@ msgstr "Памер ключа для гэтага падзела:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr "ІВ алгарытм:"
+msgstr "Алгарытм ВІ:"
 
 #. Type: select
 #. Description
@@ -120,7 +124,7 @@ msgstr "ІВ алгарытм:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Алгарытм стварэння ініцыялізацыйнага вектара для гэтага падзела"
+msgstr "Алгарытм стварэння вектара ініцыялізацыі для гэтага падзела"
 
 #. Type: select
 #. Description
@@ -133,10 +137,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Розныя алгарытмы існуюць для здабывання ініцыялізацыйнага вектара для "
-"кожнага сектара. Гэты выбар уплывае на бяспеку шыфравання. Звычайна, няма "
-"нагоды змяняць прадвызначаную наладку, за выняткам сумяшчальнасці з іншымі "
-"сістэмамі."
+"Існуюць розныя алгарытмы здабывання вектара ініцыялізацыі для кожнага "
+"сектару. Гэты выбар уплывае на бяспеку шыфравання. Звычайна, няма нагоды "
+"змяняць прапанаваную наладку, акрамя патрабаванняў сумяшчальнасці з "
+"ранейшымі сістэмамі."
 
 #. Type: text
 #. Description
@@ -173,9 +177,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Ключ шыфравання здабываецца з сакрэтнай фразы шляхам прымянення "
-"аднанакіраванай хэш-функцыі. Звычайна, няма нагоды змяняць прадвызначаную "
-"наладку. Гэта можа паменшыць моц шыфравання."
+"Ключ шыфравання здабываецца з сакрэтнага сказу шляхам прымянення аднабаковай "
+"хэш-функцыі. Звычайна, няма нагоды змяняць прапанаваную наладку. "
+"Няправільныя дзеяннямі зараз можа саслабіць абарону шыфравання."
 
 #. Type: text
 #. Description
@@ -183,7 +187,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr "Ачысціць данні:"
+msgstr "Ачысціць дадзеныя:"
 
 #. Type: text
 #. Description
@@ -201,13 +205,13 @@ msgstr "так"
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
-msgstr "Ачысціць данні гэтага падзела:"
+msgstr "Ачысціць дадзеныя ў гэтым падзеле:"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Сапраўды ачысціць данні на ${DEVICE}?"
+msgstr "Сапраўды ачысціць дадзеныя на ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -217,21 +221,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Данні на ${DEVICE} будуць перапісаны выпадковым зместам. Гэта не можа быць "
-"адноўлена пасля сканчэння гэтага крока. Гэта апошняя магчымасць перарваць "
-"ачыстку."
+"Дадзеныя на ${DEVICE} будуць перазапісаныя выпадковым зместам. Пасля гэтага "
+"кроку іх немагчыма будзе аднавіць. Гэта апошняя магчымасць спыніць зачыстку."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
 msgid "Erasing data on ${DEVICE}"
-msgstr "Ачыстка данніх на ${DEVICE}"
+msgstr "Зачыстка дадзеных на ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Ачыстка данніх на ${DEVICE} не атрымалася"
+msgstr "Не атрымалася знішчыць дадзеныя на ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -246,13 +249,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Устанаўленне шыфравання..."
+msgstr "Наладка шыфравання..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "Сканфігураваць шыфраваныя тамы"
+msgstr "Наладзіць шыфраваныя тамы"
 
 #. Type: note
 #. Description
@@ -264,13 +267,13 @@ msgstr "Няма падзелаў для шыфравання"
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr "Не вылучана падзелаў для шыфравання."
+msgstr "Не прызначана падзелаў для шыфравання."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr "Патрэбныя праграмы адсутнічаюць"
+msgstr "Адсутнічаюць патрэбныя праграмы"
 
 #. Type: note
 #. Description
@@ -279,8 +282,8 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"У гэтую зборку debian-installer не ўключана адна ці больш праграм, што "
-"патрэбныя для нармальнага функцыянавання partman-crypto."
+"У гэтую зборку праграмы ўсталявання debian не ўключана адна ці больш "
+"праграм, што патрэбныя для нармальнай працы partman-crypto."
 
 #. Type: error
 #. Description
@@ -295,8 +298,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Параметры шыфравання для ${DEVICE} непоўныя. Вярніцеся ў меню раздзелу і "
-"вылучце ўсе патрэбныя параметры."
+"Параметры шыфравання для ${DEVICE} непоўныя. Вярніцеся ў меню падзелу і "
+"прызначце ўсе патрэбныя параметры."
 
 #. Type: text
 #. Description
@@ -312,13 +315,13 @@ msgstr "адсутнічае"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "У выкарыстанні як фізічны том для шыфраванага тома ${DEV}"
+msgstr "Выкарыстоўваецца як фізічны том для шыфраванага тома ${DEV}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "Усталяванне пакета шыфравання не ўдалося"
+msgstr "Не атрымалася ўсталяваць пакет шыфравання"
 
 #. Type: error
 #. Description
@@ -327,8 +330,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Пакет модуля ядра ${PACKAGE} не можа быць знойдзены, або памылка узнікла "
-"падчас яго ўсталявання."
+"Пакет модуля ядра ${PACKAGE} не можа быць знойдзены, альбо падчас яго "
+"ўсталявання адбылася памылка."
 
 #. Type: error
 #. Description
@@ -338,7 +341,7 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Здаецца, будуць праблемы наладак шыфраваных падзелаў, калі сістэма "
+"Падобна, што будуць праблемы з наладкай шыфраваных падзелаў, калі сістэма "
 "перазагрузіцца. Вы можаце гэта выправіць, усталяваўшы пазней патрэбны(я) "
 "пакет(ы)."
 
@@ -346,7 +349,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Ці запісаць змены на дыскі сканфігураваць шыфраваныя тамы?"
+msgstr "Ці запісаць змены на дыск і наладзіць шыфраваныя тамы?"
 
 #. Type: boolean
 #. Description
@@ -355,14 +358,15 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Да таго, як шыфраваныя тамы могуць быць сканфігураваныя, бягучая схема "
-"падзелу павінна быць запісана на дыск. Гэтыя змены нельга будзе вярнуць."
+"Перад тым, як наладжваць шыфраваныя тамы, трэба запісаць актуальную схему "
+"падзелаў на дыск. Гэтыя змены немагчыма будзе скасаваць."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Запісаць змены на дыск і наладзіць шыфраваныя тамы?"
+msgstr ""
+"Запісаць актуальную схему падзелаў на дыск і наладзіць шыфраваныя тамы?"
 
 #. Type: boolean
 #. Description
@@ -373,39 +377,39 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Калі шыфраваныя тамы сканфігураваны, не дазволены ніякія дадатковыя змены ў "
-"падзелах на дысках, дзе змешчаны шыфраваныя тамы. Упэўніцеся, што вы "
-"задаволены бягучай схемай падзелу ў гэтых дысках да працягу."
+"Пасля наладкі шыфраваных тамоў нельга будзе дадаткова змяняць ніякіх "
+"падзелаў на дысках, дзе месцяцца шыфраваныя тамы. Перад працягам "
+"пераканайцеся, што Вас задавальняе актуальная схема падзелу гэтых дыскаў."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "Канфігураванне шыфраваных тамоў не атрымалася"
+msgstr "Не атрымалася наладзіць шыфраваныя тамы"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Памылка ўзнікла падчас канфігуравання шыфраваных тамоў."
+msgstr "Падчас наладкі шыфраваных тамоў адбылася памылка."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr "Канфігураванне перарвана."
+msgstr "Працэс наладкі быў перарваны."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "Ініцыялізацыя шыфраваных тамоў не атрымалася"
+msgstr "Не атрымалася ініцыялізаваць шыфраваныя тамы"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Памылка ўзнікла падчас наладкі шыфраваных тамоў."
+msgstr "Падчас падключэння шыфраваных тамоў адбылася памылка."
 
 #. Type: text
 #. Description
@@ -415,7 +419,7 @@ msgstr "Памылка ўзнікла падчас наладкі шыфрава
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Passphrase"
-msgstr "Сакрэтная фраза"
+msgstr "Сакрэтны сказ"
 
 #. Type: text
 #. Description
@@ -441,13 +445,13 @@ msgstr "Выпадковы ключ"
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr "Выяўлены небяспечны swap падзел"
+msgstr "Выяўленая небяспечная прастора swap"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "Быў выяўлены небяспечны swap падзел"
+msgstr "Была выяўленая не абароненая прастора swap."
 
 #. Type: error
 #. Description
@@ -457,9 +461,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Гэта фатальная памылка, бо адчувальныя данні будуць запісвацца на "
-"нешыфраваны дыск. Гэта дазволіць некаму з доступам да дыска аднавіць часткі "
-"ключа шыфравання або сакрэтнай фразы."
+"Гэта фатальная памылка, бо адчувальныя дадзеныя будуць запісвацца на "
+"нешыфраваны дыск. Гэта дазваляе камусьці з доступам да дыска аднавіць часткі "
+"ключа шыфравання або сакрэтнага сказу."
 
 #. Type: error
 #. Description
@@ -469,21 +473,21 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Выключце swap падзел (выканаўшы swapoff) аба сканфігуруйце зашыфраваны "
-"падзел swap і тады запусціке наладку шыфраваных падзелаў зноў. Бягучая "
-"праграма перарываецца."
+"Калі ласка, адключыце прастору swap (выканаўшы swapoff) або наладзьце "
+"шыфраваную прастору swap і перазапусціце наладку шыфраваных падзелаў. Гэтая "
+"праграма зараз будзе спыненая."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "Сакрэтная фраза шыфравання:"
+msgstr "Сакрэтны сказ для шыфравання:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Вам патрабуецца выбраць сакрэтную фразу для шыфравання ${DEVICE}."
+msgstr "Вам трэба выбраць сакрэтны сказ для шыфравання ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -494,9 +498,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Агульная трываласць шыфравання залежыць менавіта ад сакрэтнай фразы, таму вы "
-"павінны пастарацца выбраць фразу, складаную для здагадвання. Яна не можа "
-"быць паслядоўнасцю слоў са слоўнікаў ці фразаў, што лёгка асацыюецца з вамі."
+"Агульная моц шыфравання залежыць менавіта ад сакрэтнага сказу, таму Вам "
+"варта паклапаціцца, каб абраны сказ было цяжка падабраць. Ён не павінны быць "
+"паслядоўнасцю словаў са слоўніку або сказам, што шчыльна асацыюецца з Вамі."
 
 #. Type: password
 #. Description
@@ -506,14 +510,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Добрая сакрэтная фраза змяшчае сумесь літар, лічбаў і знакаў прыпынку. "
-"Рэкамендаваная даўжыня фразы - 20 ці больш сімвалаў."
+"Добры сакрэтны сказ змяшчае сумесь літараў, лічбаў і знакаў прыпынку. "
+"Рэкамендаваная даўжыня фразы - не менш за 20 сімвалаў."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "Пераўвядзіце сакрэтную фразу для праверкі:"
+msgstr "Увядзіце сакрэтны сказ яшчэ раз для праверкі:"
 
 #. Type: password
 #. Description
@@ -521,25 +525,27 @@ msgstr "Пераўвядзіце сакрэтную фразу для праве
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "Увядзіце тую ж сакрэтную фразу зноў для праверкі яе правільнага ўводу."
+msgstr ""
+"Увядзіце той жа самы сакрэтны сказ ізноў, каб пераканацца, што першы раз ён "
+"быў уведзены дакладна."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr "Памылка ўводу сакрэтнай фразы."
+msgstr "Памылка пры ўводзе сакрэтнага сказу."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Дзве сакрэтныя фразы, уведзеныя вамі, неаднолькавыя. Паспрабуйце зноў."
+msgstr "Два сакрэтных сказы, што Вы ўвялі, не супадаюць. Паспрабуйце зноў."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr "Пустая сакрэтная фраза"
+msgstr "Пусты сакрэтны сказ"
 
 #. Type: error
 #. Description
@@ -548,14 +554,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Вы ўвялі пустую сакрэтную фразу, што не дапушчальна. Выберыце непустую "
-"сакрэтную фразу."
+"Вы ўвялі пусты сакрэтны сказ, што, на жаль, не дазволена. Калі ласка, "
+"абярыце непусты сакрэтны сказ."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "Ужыць слабую сакрэтную фразу?"
+msgstr "Ужыць слаба абаронены сакрэтны сказ?"
 
 #. Type: boolean
 #. Description
@@ -567,20 +573,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Вы ўвялі сакрэтную фразу, што змяшчае менш за ${MINIMUM} сімвалаў. Трэба "
-"выбраць мацнейшую сакрэтную фразу."
+"Вы ўвялі сакрэтны сказ даўжынёй менш за ${MINIMUM} сімвалаў. Трэба "
+"прызначыць больш моцны сакрэтны сказ."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr "Увесці выпадковую сакрэтную фразу"
+msgstr "Увесці выпадковы набор сімвалаў"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Ключ шыфравання для ${DEVICE} цяпер створаны."
+msgstr "Ствараецца ключ шыфравання для ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
@@ -590,21 +596,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Вы можаце дапамагчы паскорыць працэс шляхам увядзення выпадковых сімвалаў з "
-"клавіятуры, або проста чакайце, пакуль дастаткова дадзеных з клавіятуры не "
-"будзе сабрана. (ЗАЎВАЖЦЕ: на гэта можа спатэбіцца шмат часу)"
+"Вы можаце паскорыць працэс, уводзячы выпадковыя сімвалы з клавіятуры, або "
+"проста пачакаць, пакуль не будзе сабраная дастатковая колькасць дадзеных. "
+"(ЗАЎВАГА: на гэта можа спатэбіцца шмат часу)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "Стварэнне файла ключа не ўдалося"
+msgstr "Не атрымалася стварыць файл ключа"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Памылка ўзнікла падчас стварэння файла ключа."
+msgstr "Падчас стварэння файла ключа адбылася памылка."
 
 #. Type: error
 #. Description
@@ -614,9 +620,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Вы выбралі, што каранёвая файлавая сістэма будзе месціцца на шыфраваным "
-"падзеле. Гэтая асаблівасць недаступна і ў выніку працягу ўсталяванне не "
-"будзе прыгодным да ўжывання."
+"Вы прызначылі захаванне каранёвай файлавай сістэмы на шыфраваным падзеле. На "
+"жаль, гэта немагчыма. У выніку працягу сістэма стане непрыдатнай да ўжывання."
 
 #. Type: error
 #. Description
@@ -624,7 +629,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Вярніцеся назаді выберыце нешыфраваны падзел для каранёвай файлавай сістэмы."
+"Калі ласка, вярніцеся, каб прызначыць нешыфраваны падзел для каранёвай "
+"файлавай сістэмы."
 
 #. Type: error
 #. Description
@@ -634,21 +640,21 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Вы выбралі, што каранёвая файлавая сістэма будзе месціцца на шыфраваным "
-"падзеле. Гэтая асаблівасць патрабуе асобнага /boot падзела, дзе будуць "
-"змешчаны ядро і initrd."
+"Вы прызначылі захаванне каранёвай файлавай сістэмы на шыфраваным падзеле. "
+"Гэтая асаблівасць патрабуе асобнага падзела \"/boot\", каб захоўваць ядро і "
+"загрузачны вобраз initrd."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
-msgstr "Вы павінны вярнуцца назад і наладзіць падзел /boot."
+msgstr "Вам трэба вярнуцца назад, каб наладзіць падзел /boot."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Не атрымалася канфігураванне шыфравання"
+msgstr "Не атрымалася наладзіць шыфраванне"
 
 #. Type: error
 #. Description
@@ -659,9 +665,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Вы выбралі, што /boot будзе змешчаны на шыфраваным падзеле. Гэта немагчыма,"
-"бо пачынальны запускальнік не зможа загрузіць ядро і initrd. У выніку "
-"працягу ўсталяванне не будзе прыгодным да ўжывання."
+"Вы прызначылі захаванне файлавай сістэмы /boot у шыфраваным падзеле. Гэта "
+"немагчыма, бо загрузчык не будзе здольны загрузіць ядро і initrd. У выніку "
+"працягу сістэма стане непрыдатнай да ўжывання."
 
 #. Type: error
 #. Description
@@ -670,13 +676,14 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Вярніцеся назаді выберыце нешыфраваны падзел для файлавай сістэмы /boot."
+"Калі ласка, вярніцеся назад, каб прызначыць нешыфраваны падзел для файлавай "
+"сістэмы /boot."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Вы ўпэўнены, што хочаце выкарыставаць выпадковы ключ?"
+msgstr "Вы ўпэўнены, што хочаце выкарыстаць выпадковы ключ?"
 
 #. Type: boolean
 #. Description
@@ -685,8 +692,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Вы выбралі выпадковы тып ключа для ${DEVICE}, але запыталі раздзяляльнік "
-"стварыць файлавую сістэму на гэтай прыладзе."
+"Вы выбралі выпадковы тып ключа для ${DEVICE}, але запрасілі праграму "
+"перадзелу стварыць на гэтай прыладзе файлавую сістэму."
 
 #. Type: boolean
 #. Description
@@ -695,15 +702,15 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Выкарыставанне выпадковага ключа азначае, што данні падзела будуць знішчацца "
-"падчас кожнай перазагрузкі. Гэта мусіць быць выкарыставана хіба для падзелаў "
-"swap."
+"Выкарыстанне выпадковага ключа азначае, што дадзеныя ў падзеле будуць "
+"знішчацца падчас кожнай перазагрузкі. Гэта варта выкарыстоўваць хіба для "
+"падзелаў swap."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr "Не ўдалося спампаваць крыпта-кампаненты."
+msgstr "Не атрымалася спампаваць крыпта-кампаненты."
 
 #. Type: error
 #. Description
@@ -727,15 +734,15 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Падобна да того, што не хапае памяці, каб усталяваць дадатковыя крыпта-"
-"кампаненты. Калі вы ўсё роўна працягнеце, працэс усталявання можа перарвацца."
+"Падобна, што памяці не хапае, каб усталяваць дадатковыя крыпта-кампаненты. "
+"Калі Вы працягнеце, працэс усталявання можа скончыцца няўдала."
 
 # ==1400===
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr "Сапраўды выкарыставаць шыфраванне блокавай прылады?"
+msgstr "Сапраўды ўжываць шыфраванне блокавай прылады?"
 
 #. Type: boolean
 #. Description
@@ -747,8 +754,10 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-"Падтрымка шыфравання блочных прылад усё яшчэ эксперыментальная і не "
-"разглядаецца ў якасці прамысловага выкарыстання. Дакладней, гэта можа "
-"скончыцца ўсталяваннямі, лёгкімі для ўзлому, і дае ілжывы сэнс бяспекі. Няма "
-"вядомых заган шыфравання, аднак, пакуль здзяйсненне напоўніцу правяраецца, "
-"гэта можа быць выкарыставана для тэставання."
+"Падтрымка шыфравання блокавых прыладаў усё яшчэ эксперыментальная і не "
+"лічыцца прыдатнай да прамысловага выкарыстання. У прыватнасці, такім чынам "
+"можна атрымаць сістэмы, якія ствараюць падманнае пачуццё бяспекі, але "
+"адначасова з'яўляюцца неўстойлівымі да ўзломаў. У самім механізме няма "
+"вядомых памылак шыфравання, але пакуль не скончаная поўная й дасканалая "
+"праверка рэалізацыі, гэтую асаблівасць варта ўжываць выключна ў тэставых "
+"мэтах."

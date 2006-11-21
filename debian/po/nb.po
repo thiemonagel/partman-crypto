@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-10-07 20:49+0200\n"
+"PO-Revision-Date: 2006-11-18 16:27+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -366,8 +366,8 @@ msgstr ""
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Vil du beholde det nåværende partisjonsoppsettet og sette opp krypterte "
-"dataområder?"
+"Vil du beholde det nåværende partisjonsoppsettet og sette opp "
+"kryptertedataområder?"
 
 #. Type: boolean
 #. Description
@@ -528,7 +528,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Skriv samme passord-streng en gang til for å verifisere at den er skrevet "
+"Skriv samme passord-streng en gang til fopr å verifisere at den er skrevet "
 "riktig."
 
 #. Type: error
@@ -541,7 +541,7 @@ msgstr "Inndata-feil i passord-strengen"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "De to passord-strengene som ble oppgitt er ikke like. Forsøk igjen."
+msgstr "De to passord-strengeneene som ble oppgitt er ikke like. Forsøk igjen."
 
 #. Type: error
 #. Description
@@ -599,7 +599,7 @@ msgid ""
 "can take a long time)"
 msgstr ""
 "Du kan gjøre prosessen raskere ved å taste vilkårlige tegn på tastaturet, "
-"eller bare vente til nok slumpdata er blitt samlet inn. (MERK: dette kan ta "
+"eller bare vente til nok slunpdata er blitt samlet inn. (MERK: dette kan ta "
 "lang tid)"
 
 #. Type: error

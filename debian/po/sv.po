@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-11-06 18:22+0100\n"
+"PO-Revision-Date: 2006-11-19 10:06+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +60,7 @@ msgstr "Loopback (loop-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr "Enhetsmappare (dm-crypt)"
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -761,5 +761,6 @@ msgstr ""
 "Stödet för kryptering av blockenheter är fortfarande på experimentnivå och "
 "är inte klar för produktionsmiljö. Speciellt kan det resultera i att "
 "konfigurationer lätt kan gå sönder och ge en falskt känsla av säkerhet. Det "
-"finns inga kända krypteringssvagheter, dock bör denna funktion inte användas "
-"annat än för teständamål tills implementationen är tillräckligt granskad."
+"finns inga kända svagheter i krypteringen, dock bör denna funktion inte "
+"användas annat än för teständamål tills implementationen är tillräckligt "
+"granskad."

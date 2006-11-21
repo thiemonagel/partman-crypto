@@ -3,26 +3,26 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of nn.po to Norwegian Nynorsk
-# translation of debian-installer.po to Norwegian nynorsk
+# translation of d-i_nn.po to
 # Norwegian Nynorsk messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Håvard Korsvoll <korsvoll@skulelinux.no>, 2004, 2005, 2006.
 #
+# Håvard Korsvoll <korsvoll@skulelinux.no>, 2004, 2005, 2006.
+# Håvard Korsvoll <korsvoll@gmail.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: nn\n"
+"Project-Id-Version: d-i_nn\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-06-19 11:01+0200\n"
-"Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
-"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"PO-Revision-Date: 2006-11-19 15:58+0100\n"
+"Last-Translator: Håvard Korsvoll <korsvoll@gmail.com>\n"
+"Language-Team:  <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "nynorsk@lists.debian.org>\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
@@ -314,9 +314,8 @@ msgstr "manglar"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "fysisk dataområde for kryptering"
+msgstr "I bruk som fysisk dataområde for kryptert dataområde ${DEV}"
 
 #. Type: error
 #. Description
@@ -711,22 +710,23 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Klarte ikkje laste installsjonskomponent"
+msgstr "Klarte ikkje å laste ned krypteringskomponentar"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Ein feil oppsto ved oppsett av krypterte dataområde."
+msgstr ""
+"Ein feil råka ved forsøk på å laste ned ytterlegare krypteringskomponentar."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"Halda fram med å installere krypteringskomponentar på tross av for lite "
+"minne?"
 
 #. Type: boolean
 #. Description
@@ -736,6 +736,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Det ser ut til ikkje å vere nok minne tilgjengeleg for å installere "
+"ytterlegare krypteringskomponentar. Viss du vel å halde fram likevel, kan "
+"installasjonsprosessen mislukkast."
 
 #. Type: boolean
 #. Description

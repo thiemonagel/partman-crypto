@@ -19,14 +19,14 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-07-18 12:11+0530\n"
+"PO-Revision-Date: 2006-11-25 12:39+0530\n"
 "Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -124,7 +124,7 @@ msgstr "IV ਐਲੋਗਰਿਥਮ:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "ਵੈਕਟਰ ਬਣਾਉਣ ਐਲੋਗਰਿਥਮ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਇਹ ਭਾਗ:"
 
 #. Type: select
 #. Description
@@ -233,7 +233,7 @@ msgstr "${DEVICE} ਉੱਤੇ ਡਾਟਾ ਸਾਫ਼ ਕਰਨ ਦੌਰਾ�
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
+msgstr "${DEVICE} ਤੋਂ ਡਾਟਾ ਹਟਾਉਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ। ਡਾਟਾ ਹਟਾਇਆ ਨਹੀਂ ਗਿਆ ਹੈ।"
 
 #. Type: text
 #. Description
@@ -268,12 +268,11 @@ msgstr "ਲੋੜੀਂਦਾ ਪਰੋਗਰਾਮ ਗੁੰਮ ਹੈ"
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
-#, fuzzy
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"ਡੇਬੀਅਨ-ਇੰਸਟਾਲਰ ਦੇ ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਇੱਕ ਦਾਂ ਜਿਆਦਾ ਪਰੋਗਰਾਮ ਸ਼ਾਮਲ ਹਨ ਜੋ partman-crypt ਦੇ ਠੀਕ "
+"debian-installer ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਇੱਕ ਦਾਂ ਜਿਆਦਾ ਪਰੋਗਰਾਮ ਸ਼ਾਮਲ ਹਨ ਜੋ partman-crypt ਦੇ ਠੀਕ "
 "ਤਰਾਂ ਕੰਮ ਕਰਨ ਲਈ ਲੋੜੀਂਦੇ ਹਨ।"
 
 #. Type: error
@@ -305,9 +304,8 @@ msgstr "ਗੁੰਮ ਹੈ"
 #. Description
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "ਇੰਨਕ੍ਰਿਪਸ਼ਨ ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ"
+msgstr "ਇੰਕਰਿਪਟਡ ਵਾਲੀਅਠ ${DEV} ਲਈ ਭੌਤਿਕ ਵਾਲੀਅਮ ਵਿੱਚ ਵਰਤੋਂ"
 
 #. Type: error
 #. Description
@@ -326,21 +324,19 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
-#, fuzzy
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"ਉੱਥੇ ਬੂਟ ਦੌਰਾਨ ਸਮੱਸਿਆ ਹੋਵੇਗੀ ਜਦੋਂ ਸਿਸਟਮ ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗਾਂ ਨੂੰ ਨਿਰਧਾਰਤ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੇਗਾ। ਤੁਸੀਂ "
-"ਇਸ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਲੋੜੀਂਦੇ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਕੇ ਠੀਕ ਕਰ ਸਕਦੇ ਹੋ।"
+"ਇੰਜ ਜਾਪਦਾ ਹੈ ਕਿ ਸਿਸਟਮ ਦੇ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੌਰਾਨ ਇੰਕਰਿਪਟਡ ਭਾਗ ਸੈੱਟਅੱਪ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਵੇਗੀ। "
+"ਤੁਸੀਂ ਇਸ ਲਈ ਲੋੜੀਦੇ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਸਥਿਰ ਕਰ ਸਕਦੇ ਹੋ।"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "ਡਿਸਕ ਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖੋ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
+msgstr "ਕੀ ਡਿਸਕ ਉੱਤੇ ਤਬਦੀਲੀਆਂ ਲਿਖਣੀਆਂ ਅਤੇ ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰਨੇ ਹਨ?"
 
 #. Type: boolean
 #. Description
@@ -361,16 +357,15 @@ msgstr "ਮੌਜੂਦਾ ਭਾਗ ਖਾਕਾ ਰੱਖੋ ਅਤੇ ਇੰ�
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"ਇੰਨਕ੍ਰਿਪਟਡਕਲ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦਇੰਨਕ੍ਰਿਪਟਡਿਕ ਵਾਲੀਅਮ ਵਾਲੀ ਡਿਸਕ ਤੇ ਭਾਗਾਂ "
-"ਵਿੱਚ ਕੋ ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਕਿਰਪਾ ਕਰਕੇ ਫੈਸਲਾ ਕਰੋ ਕਿ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ "
-"ਇਹਨਾ ਡਿਸਕਾਂ ਤੇ ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
+"ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦ ਇੰਕ੍ਰਿਪਟਿਡ ਵਾਲੀਅਮ ਵਾਲੀ ਡਿਸਕ ਤੇ ਭਾਗਾਂ ਵਿੱਚ ਕੋਈ "
+"ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਇਹ ਫੈਸਲਾ ਕਰੋ ਕਿ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਇਹਨਾ ਡਿਸਕਾਂ ਤੇ "
+"ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
 
 #. Type: error
 #. Description
@@ -617,14 +612,13 @@ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂ�
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
-#, fuzzy
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"ਤੁਸੀਂ ਰੂਟ ਫਾਇਸ ਸਿਸਟਮ ਨੂੰ ਇੰਨਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਸਹੂਲਤ ਉਪਲੱਬਧ ਨਹੀਂ ਅਤੇ "
-"ਹੁਣ ਜਾਰੀ ਹੋ ਰਹੀ ਹੈ ਇਸ ਦਾ ਨਤੀਜਾ ਇੰਸਟਾਲੇਸ਼ਨ ਹੈ ਜੋ ਵਰਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।"
+"ਤੁਸੀਂ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਇਹ ਫੀਚਰ ਲਈ ਵੱਖਰੇ /boot "
+"ਭਾਗ ਦੀ ਲੋੜ ਹੈ, ਜਿਸ ਉੱਤੇ ਕਰਨਲ ਅਤੇ initrd ਨੂੰ ਸੰਭਾਲਿਆ ਜਾ ਸਕੇ।"
 
 #. Type: error
 #. Description
@@ -685,22 +679,20 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "Failed to download crypto components"
-msgstr "ਇੰਸਟਾਲਰ ਸੰਖੇਪ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
+msgstr "cryto ਭਾਗ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "ਇੰਨਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਨਾਲਿਖਣ ਸਮੇਂ ਗਲਤੀ ਹੋਈ ਹੈ।"
+msgstr "ਹੋਰ cryto ਭਾਗ ਡਾਊਨਲੋਡ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ।"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "ਘੱਟ ਮੈਮੋਰੀ ਹੋਣ ਦੀ ਹਾਲਤ ਵਿੱਚ ਵੀ ਕੀ cryto ਭਾਗ ਇੰਸਟਾਲ ਕਰਨੇ ਹਨ?"
 
 #. Type: boolean
 #. Description

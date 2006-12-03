@@ -413,7 +413,7 @@ msgstr "口令句"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "密钥文件(GnuPG)"
+msgstr "密钥文件 (GnuPG)"
 
 #. Type: text
 #. Description
@@ -456,8 +456,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"请禁用交换空间(例如运行 swapoff)或配置一个加密的交换空间，然后再重新进行加密"
-"卷设置。本程序现在将中止。"
+"请禁用交换空间 (例如运行 swapoff) 或配置一个加密的交换空间，然后再重新进行加"
+"密卷设置。本程序现在将中止。"
 
 #. Type: password
 #. Description

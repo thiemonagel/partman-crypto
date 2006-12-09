@@ -1,3 +1,9 @@
+partman-crypto (18) UNRELEASED; urgency=low
+
+  * Remove scary warnings in preparation for RC2
+
+ -- David Härdeman <david@hardeman.nu>  Sat,  9 Dec 2006 18:04:56 +0100
+
 partman-crypto (17) unstable; urgency=low
 
   [ Updated translations ]

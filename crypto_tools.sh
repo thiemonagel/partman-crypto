@@ -619,17 +619,6 @@ $desc $value"
 }
 
 crypto_check_setup() {
-	# Show warning before anything else
-	#
-	# NOTE: Only commented out because we might want to reenable this post-Etch
-	#templ="partman-crypto/warning_experimental_nonaudit"
-	#db_input critical $templ
-	#db_go || true
-	#db_get $templ || RET=''
-	#if [ "$RET" != true ]; then
-	#	return 1
-	#fi
-
 	crypt=
 	for dev in $DEVICES/*; do
 		[ -d "$dev" ] || continue

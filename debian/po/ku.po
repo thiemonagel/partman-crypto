@@ -7,18 +7,19 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+# Main translator: Rizoyê Xerzî <riza.seckin@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-12-08 13:44+0000\n"
-"Last-Translator: rizoye-xerzi <rizoxerzi@gmail.com>\n"
+"PO-Revision-Date: 2006-12-24 12:56+0200\n"
+"Last-Translator: Amed Çeko Jiyan <amedcj@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Export-Date: 2006-12-09 12:48+0000\n"
+"X-Rosetta-Export-Date: 2006-12-02 05:38+0000\n"
 
 #. Type: text
 #. Description
@@ -285,7 +286,7 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Mîhengên şîfrekirinê yên ${DEVICE}·ne temam in. Ji kerema xwe bizivire "
+"Mîhengên şîfrekirinê yên ${DEVICE}·ne temam in. Ji kerema xwe re bizivire "
 "menuya partîsiyonkirinê û mîhengên pêwîst hilbijêre."
 
 #. Type: text
@@ -421,7 +422,7 @@ msgstr "Hevoka şîfreyê"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "Dosiya mifteyan (GnuPG)"
+msgstr "pela mifteyan (GnuPG)"
 
 #. Type: text
 #. Description
@@ -524,7 +525,7 @@ msgstr "Çewtiya nivîsandina nasnavê"
 #, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Her du hevokên şîfrekirinê hevdu nagirin. Ji kerema xwe carekî din "
+"Her du hevokên şîfrekirinê hevdu nagirin. Ji kerema xwe re carekî din "
 "biceribîne."
 
 #. Type: error
@@ -541,7 +542,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Hevoka şîfrekirinê ya te nivîsand vala ya. Ev ne caîz e. Ji kerema xwe "
+"Hevoka şîfrekirinê ya te nivîsand vala ya. Ev ne caîz e. Ji kerema xwe re "
 "hevokeke ne vala hilbijêre."
 
 #. Type: boolean
@@ -595,7 +596,7 @@ msgstr "Neserkeftina guherandina mezinahiyê"
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Di afirandina dosiya mifteyê de pirsgirêk derket holê."
+msgstr "Di afirandina pela mifteyê de pirsgirêk derket holê."
 
 #. Type: error
 #. Description
@@ -612,7 +613,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala dosiyan root partîsiyoneke "
+"Ji kerema xwe re bizivire û ji bo pergala pelan root partîsiyoneke "
 "neşîfrekirî hilbijêre."
 
 #. Type: error
@@ -630,8 +631,8 @@ msgstr ""
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
 msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala pelan root partîsiyoneke neşîfrekirî "
-"hilbijêre."
+"Ji kerema xwe re bizivire û ji bo pergala pelan root partîsiyoneke "
+"neşîfrekirî hilbijêre."
 
 #. Type: error
 #. Description
@@ -658,7 +659,7 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Ji kerema xwe bizivire û ji bo pergala dosiyan root partîsiyoneke "
+"Ji kerema xwe re bizivire û ji bo pergala pelan root partîsiyoneke "
 "neşîfrekirî hilbijêre."
 
 #. Type: boolean

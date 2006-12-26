@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-12-17 23:15+0530\n"
+"PO-Revision-Date: 2006-12-26 07:47+0530\n"
 "Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -137,6 +137,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"ਹਰੇਕ ਸੈਕਟਰ ਲਈ ਸ਼ੁਰੂਆਤੀ ਵੈਕਟਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰਾ ਐਲੋਗਰਿਥਮ ਮੌਜੂਦ ਹੈ। ਇਹ ਚੋਣ ਇਕ੍ਰਿਪਸ਼ਨ ਸੁਰੱਖਿਆ ਨੂੰ "
+"ਪਰਭਾਵਿਤ ਕਰਦੀ ਹੈ। ਆਮ ਤੌਰ ਤੇ, ਇਸ ਨੂੰ ਮੂਲ ਸਿਫਾਰਸ਼ੀ ਤੋਂ ਬਦਲਣ ਦਾ ਕੋਈ ਕਾਰਨ ਨਹੀਂ ਹੁੰਦਾ ਹੈ, ਸਿਰਫ਼ "
+"ਪੁਰਾਣੇ ਸਿਸਟਮ ਨਾਲ ਅਨੁਕੂਲਤਾ ਨੂੰ ਛੱਡ ਕੇ।"
 
 #. Type: text
 #. Description
@@ -173,6 +176,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"ਇੰਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਇਸ ਉੱਤੇ ਇੱਕ ਪਾਸੇ ਦਾ ਹੈਸ਼ ਫੰਕਸ਼ਨ ਲਾਗੂ ਕਰਕੇ ਪ੍ਹੈਰਾ ਤਿਆਰ ਕਰਕੇ ਤਿਆਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।  "
+"ਆਮ ਤੌਰ ਤੇ, ਇਸ ਨੂੰ ਮੂਲ ਸਿਫਾਰਸ਼ੀ ਤੋਂ ਬਦਲਣ ਦਾ ਕੋਈ ਕਾਰਨ ਨਹੀਂ ਹੁੰਦਾ ਹੈ, ਅਤੇ ਇਸ ਨੂੰ ਗਲਤ ਢੰਗ ਨਾਲ ਕਰਨ "
+"ਨਾਲ ਇੰਕ੍ਰਿਪਸ਼ਨ ਦੀ ਸਮੱਰਥਾ ਘੱਟਦੀ ਹੈ।"
 
 #. Type: text
 #. Description
@@ -214,6 +220,8 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"${DEVICE} ਉੱਤੇ ਡਾਟੇ ਨੂੰ ਰਲਵੇਂ ਡਾਟੇ ਨਾਲ ਲਿਖ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਹ ਪਗ਼ ਪੂਰਾ ਹੋਣ ਉਪਰੰਤ ਇਹ ਮੁੜ-ਪ੍ਰਾਪਤ "
+"ਨਹੀਂ ਹੋਵੇਗਾ। ਇਹ ਸਾਫ਼ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਆਖਰੀ ਮੌਕਾ ਹੈ।"
 
 #. Type: text
 #. Description
@@ -641,6 +649,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"ਤੁਸੀਂ  /boot ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਤੇ ਸੰਭਾਲਣ ਦੀ ਚੋਣ ਕੀਤੀ ਹੈ। ਇਹ ਸੰਭਵ ਨਹੀਂ ਹੈ, "
+"ਕਿਉਂਕਿ ਬੂਟ-ਲੋਡਰ ਕਰਨਲ ਅਤੇ initrd ਨੂੰ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇਗਾ। ਹੁਣ ਜਾਰੀ ਰੱਖਿਆ ਤਾਂ ਇੱਕ ਇੰਸਟਾਲੇਸ਼ਨ "
+"ਹੋਵੇਗੀ, ਜਿਸ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੇਗੀ।"
 
 #. Type: error
 #. Description
@@ -702,6 +713,8 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"ਹੋਰ crypto ਭਾਗ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਜਾਪਦੀ ਹੈ। ਜੇ ਤੁਸੀਂ ਅੱਗੇ ਜਾਣਾ ਜਾਰੀ ਰੱਖਿਆ "
+"ਅਤੇ ਕਿਸੇ ਵੀ ਤਰਾਂ ਅੱਗੇ ਗਏ ਤਾਂ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋ ਜਾਵੇਗੀ।"
 
 #. Type: boolean
 #. Description
@@ -719,3 +732,7 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
+"ਬਲਾਕ ਜੰਤਰ ਲਈ ਇੰਕ੍ਰਿਪਸ਼ਨ ਦੀ ਸਹਾਇਤਾ ਹਾਲੇ ਵੀ ਤਜਰਬੇ ਅਧੀਨ ਹੈ ਅਤੇ ਉਤਪਾਦਨ ਲਈ ਤਿਆਰ ਨਹੀਂ ਗਿਣੀ "
+"ਗਈ ਹੈ। ਖਾਸ ਤੌਰ ਉੱਤੇ ਇਹ ਸੈੱਟਅੱਪ ਵਿੱਚ ਇਹ ਸੌਖੀ ਤਰ੍ਹਾਂ ਖਰਾਬੀ ਦੇ ਸਕਦੀ ਹੈ ਅਤੇ ਸੁਰੱਖਿਆ ਬਾਰੇ ਗਲਤ ਭਰਮ "
+"ਪੈਦਾ ਕਰ ਸਕਦੀ ਹੈ। ਹਾਲਾਂਕਿ ਕੋਈ ਵੀ ਇੰਕ੍ਰਿਪਸ਼ਨ ਸਮੱਸਿਆ ਨਹੀਂ ਹੈ, ਪਰ ਜਦੋਂ ਤੱਕ ਆਡਿਟ ਰਾਹੀਂ ਸਥਾਪਿਤ "
+"ਨਾ ਕੀਤਾ ਜਾਵੇ ਤਾਂ ਇਹ ਫੀਚਰ ਨੂੰ ਟੈਸਟਿੰਗ ਇਰਾਦੇ ਤੋਂ ਬਿਨਾਂ ਕਿਤੇ ਵੀ ਵਰਤਿਆ ਨਹੀਂ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"

@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-11-25 15:09-0200\n"
-"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
-"Language-Team:  Debia-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
+"PO-Revision-Date: 2006-12-27 00:59-0200\n"
+"Last-Translator: Felipe Augusto van de Wiel (faw) <faw@cathedrallabs.org>\n"
+"Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. Keep translations short enough
 #: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
-msgstr "volume físico a ser encriptado"
+msgstr "volume físico a ser criptografado"
 
 #. Type: text
 #. Description
@@ -64,26 +64,26 @@ msgstr "não ativo"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr "Método de encriptação :"
+msgstr "Método de criptografia :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr "Método de encriptação para esta partição :"
+msgstr "Método de criptografia para esta partição :"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:50
 msgid "Encryption:"
-msgstr "Encriptação :"
+msgstr "Criptografia:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr "Encriptação para esta partição :"
+msgstr "Criptografia para esta partição:"
 
 #. Type: text
 #. Description
@@ -128,7 +128,7 @@ msgid ""
 msgstr ""
 "Existem diferentes algoritmos a partir do quais vetores de inicialização "
 "podem ser derivados para cada setor. Esta escolha influencia na segurança da "
-"encriptação. Normalmente, não existem razões para mudar para um algoritmo "
+"criptografia. Normalmente, não existem razões para mudar para um algoritmo "
 "diferente do algoritmo padrão recomendado, exceto por compatibilidade com "
 "sistemas mais antigos."
 
@@ -137,26 +137,26 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "Chave de encriptação :"
+msgstr "Chave criptográfica :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Tipo de chave de encriptação para esta partição :"
+msgstr "Tipo de chave criptográfica para esta partição :"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Hash de chave de encriptação :"
+msgstr "Hash de chave criptográfica :"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipo de hash de chave de encriptação para esta partição :"
+msgstr "Tipo de hash de chave criptográfica para esta partição :"
 
 #. Type: select
 #. Description
@@ -167,11 +167,11 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"A chave de encriptação é derivada da passphrase através da aplicação de uma "
+"A chave criptográfica é derivada da passphrase através da aplicação de uma "
 "função hash de mão única à mesma. Normalmente, não existem razões para mudar "
-"a chave de encriptação para outra chave diferente da chave padrão "
-"recomendada e, na verdade, fazer essa mudança de maneira errada pode reduzir "
-"a força da encriptação."
+"a chave criptográfica para outra chave diferente da chave padrão recomendada "
+"e, na verdade, fazer essa mudança de maneira errada pode reduzir a força da "
+"criptografia."
 
 #. Type: text
 #. Description
@@ -213,9 +213,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Os dados em ${DEVICE} serão sobreescritos com dados aleatórios. Os mesmos "
-"não poderão ser recuperados após este passo ter sido finalizado. Esta é a "
-"última oportunidade de abortar a remoção dos dados."
+"Os dados em ${DEVICE} serão sobrescritos com dados aleatórios. Os mesmos não "
+"poderão ser recuperados após este passo ter sido finalizado. Esta é a última "
+"oportunidade de abortar a remoção dos dados."
 
 #. Type: text
 #. Description
@@ -243,25 +243,25 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Configurando encriptação ..."
+msgstr "Configurando criptografia ..."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "Configurar volumes encriptados"
+msgstr "Configurar volumes criptografados"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
-msgstr "Nenhuma partição a ser encriptada"
+msgstr "Nenhuma partição a ser criptografada"
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr "Nenhuma partição foi selecionada para encriptação."
+msgstr "Nenhuma partição foi selecionada para criptografia."
 
 #. Type: note
 #. Description
@@ -283,7 +283,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr "Opções de encriptação necessárias faltando"
+msgstr "Opções de criptografia necessárias faltando"
 
 #. Type: error
 #. Description
@@ -292,7 +292,7 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"As opções de encriptação para ${DEVICE} estão incompletas. Por favor, "
+"As opções de criptografia para ${DEVICE} estão incompletas. Por favor, "
 "retorne ao menu de particionamento e selecione todas as opções necessárias."
 
 #. Type: text
@@ -309,13 +309,13 @@ msgstr "faltando"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Em uso como volume físico para volume encriptado ${DEV}"
+msgstr "Em uso como volume físico para volume criptografado ${DEV}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "Falha na instalação de pacote de encriptação"
+msgstr "Falha na instalação de pacote de criptografia"
 
 #. Type: error
 #. Description
@@ -336,14 +336,14 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "Provavelmente ocorrerão problemas durante a inicialização quando o sistema "
-"tentar configurar partições encriptadas. Você ainda poderá corrigí-los "
+"tentar configurar partições criptografadas. Você ainda poderá corrigí-los "
 "instalando os pacotes necessário posteriormente."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Gravar as mudanças no disco e configurar volumes encriptados ?"
+msgstr "Gravar as mudanças no disco e configurar volumes criptografados ?"
 
 #. Type: boolean
 #. Description
@@ -352,7 +352,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Antes que os volumes encriptados possam ser configurados, o esquema de "
+"Antes que os volumes criptografados possam ser configurados, o esquema de "
 "particionamento atual precisa ser gravado em disco. Essas mudanças não "
 "poderão ser desfeitas."
 
@@ -361,7 +361,8 @@ msgstr ""
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Manter o layout de particionamento atual e configurar volumes encriptados ?"
+"Manter o layout de particionamento atual e configurar volumes "
+"criptografados ?"
 
 #. Type: boolean
 #. Description
@@ -372,8 +373,8 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Depois que os volumes encriptados forem configurados, nenhuma mudança "
-"adicional nas partições dos disco que contém os volumes encriptados será "
+"Depois que os volumes criptografados forem configurados, nenhuma mudança "
+"adicional nas partições dos disco que contém os volumes criptografados será "
 "permitida. Por favor, decida se você está satisfeito com o esquema de "
 "particionamento atual nesses discos antes de continuar."
 
@@ -381,14 +382,14 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "Falha na configuração de volumes encriptados"
+msgstr "Falha na configuração de volumes criptografados"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
 msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes encriptados."
+"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
 
 #. Type: error
 #. Description
@@ -400,14 +401,14 @@ msgstr "A configuração foi abortada."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "Falha na inicialização de volume encriptado"
+msgstr "Falha na inicialização de volume criptografado"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
 msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes encriptados."
+"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
 
 #. Type: text
 #. Description
@@ -460,8 +461,8 @@ msgid ""
 "parts of the encryption key or passphrase."
 msgstr ""
 "Esse é um erro fatal, uma vez que dados sensíveis podem ser gravados no "
-"disco não encriptados. Isso poderia permitir a alguém com acesso ao disco "
-"recuperar partes da chave de encriptação ou da passphrase."
+"disco não criptografado. Isso poderia permitir a alguém com acesso ao disco "
+"recuperar partes da chave criptográfica ou da passphrase."
 
 #. Type: error
 #. Description
@@ -472,20 +473,20 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Por favor, desabilite o espaço de troca (por exemplo, executando swapoff) ou "
-"configure um espaço de troca encriptado e então execute a configuração dos "
-"volumes encriptados novamente. Esse programa irá agora abortar."
+"configure um espaço de troca criptografado e então execute a configuração "
+"dos volumes criptografados novamente. Esse programa irá agora abortar."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "Passphrase de encriptação :"
+msgstr "Passphrase criptográfico :"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Você precisa escolher uma passphrase para encriptar ${DEVICE}."
+msgstr "Você precisa escolher uma passphrase para criptografar ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -496,7 +497,7 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"A força geral da encriptação depende fortemente dessa passphrase, portanto "
+"A força geral da criptografia depende fortemente dessa passphrase, portanto "
 "você deve se certificar de escolher uma passphrase que não seja fácil de ser "
 "adivinhada. A mesma não deverá ser uma palavra ou uma sentença encontrada em "
 "dicionários ou mesmo uma frase que possa ser facilmente associada a você."
@@ -589,7 +590,7 @@ msgstr "Informe caracteres aleatórios"
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "A chave de encriptação para ${DEVICE} está agora sendo criada."
+msgstr "A chave criptográfica para ${DEVICE} está agora sendo criada."
 
 #. Type: entropy-text
 #. Description
@@ -623,8 +624,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Você selecionou o sistema de arquivos raíz para ser armazenado em uma "
-"partição encriptada. Esse recurso não está disponível e continuar a "
+"Você selecionou o sistema de arquivos raiz para ser armazenado em uma "
+"partição criptografada. Esse recurso não está disponível e continuar a "
 "instalação resultaria em uma instalação que não poderia ser utilizada."
 
 #. Type: error
@@ -633,8 +634,8 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Por favor, volte e escolha uma partição não encriptada para o sistema de "
-"arquivos raíz."
+"Por favor, volte e escolha uma partição não criptografada para o sistema de "
+"arquivos raiz."
 
 #. Type: error
 #. Description
@@ -644,8 +645,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Você selecionou o sistema de arquivos raíz para ser armazenado em uma "
-"partição encriptada. Esse recurso requer uma partição /boot separada, na "
+"Você selecionou o sistema de arquivos raiz para ser armazenado em uma "
+"partição criptografada. Esse recurso requer uma partição /boot separada, na "
 "qual o kernel e o initrd possam ser armazenados."
 
 #. Type: error
@@ -658,7 +659,7 @@ msgstr "Você deveria voltar e configurar uma partição /boot."
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Falha na configuração da encriptação"
+msgstr "Falha na configuração da criptografia"
 
 #. Type: error
 #. Description
@@ -670,9 +671,9 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Você selecionou o sistema de arquivos /boot para ser armazenado em uma "
-"partição encriptada. Isso não é possível devido ao carregador de "
+"partição criptografada. Isso não é possível devido ao carregador de "
 "inicialização não conseguir carregar o kernel e o initrd a partir de uma "
-"partição encriptada. Continuar agora resultaria em uma instalação que não "
+"partição criptografada. Continuar agora resultaria em uma instalação que não "
 "poderia ser utilizada."
 
 #. Type: error
@@ -682,8 +683,8 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Você deveria voltar e selecionar uma partição não encriptada para o sistema "
-"de arquivos /boot."
+"Você deveria voltar e selecionar uma partição não criptografada para o "
+"sistema de arquivos /boot."
 
 #. Type: boolean
 #. Description
@@ -750,7 +751,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:381
 msgid "Really use block device encryption?"
-msgstr "Realmente utilizar encriptação de dispositivos de blocos ?"
+msgstr "Realmente utilizar criptografia de dispositivos de blocos ?"
 
 #. Type: boolean
 #. Description
@@ -762,8 +763,8 @@ msgid ""
 "encryption flaws, however, until the implementation is thoroughly audited, "
 "this feature should not be used except for testing purposes."
 msgstr ""
-"O suporte a encriptação de dispositivos de blocos ainda é experimental e não "
-"considerada pronta para ser utilizada em ambientes de produção. "
+"O suporte a criptografia de dispositivos de blocos ainda é experimental e "
+"não considerada pronta para ser utilizada em ambientes de produção. "
 "Particularmente, o resultado da mesma pode levar a configurações fáceis de "
 "serem exploradas, fornecendo uma falsa sensação de segurança. Não existem "
 "falhas de segurança conhecidas, mas até que a implementação seja "

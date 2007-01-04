@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2006-10-22 22:52+0000\n"
-"PO-Revision-Date: 2006-09-06 23:07+0100\n"
-"Last-Translator: Jure Čuhalev <gandalf@owca.info>\n"
+"PO-Revision-Date: 2007-01-04 14:08+0100\n"
+"Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgstr "fizičen nosilec za šifriranje"
 #. Should be kept very short or unstranslated
 #: ../partman-crypto.templates:11
 msgid "crypto"
-msgstr "šifriranje"
+msgstr "kripto"
 
 #. Type: text
 #. Description
@@ -130,7 +130,7 @@ msgstr "IV algoritem:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Šifrirna metoda za ta razdelek:"
+msgstr "Algoritem za ustvarjanje inicializacijskega vektorja za ta razdelek:"
 
 #. Type: select
 #. Description
@@ -143,9 +143,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Različni algoritmi obstajajo za izpeljevanje inicializacijskega nosilca za "
-"vsak sektor. Ta izbira vpliva na varnost šifriranja. Običajno ni razloga za "
-"spreminjanje privzete nastavitve, razen združljivosti s starejšimi sistemi."
+"Za izpeljevanje inicializacijskega vektorja za vsak sektor nosilca podatkov "
+"obstajajo različni algoritmi. Ta izbira vpliva na varnost šifriranja. "
+"Običajno ni razloga za spreminjanje privzete nastavitve, razen zaradi "
+"združljivosti s starejšimi sistemi."
 
 #. Type: text
 #. Description
@@ -165,7 +166,7 @@ msgstr "Tip šifrirnega ključa za ta razdelek:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Izvleček šifrirnega ključa:"
+msgstr "Izvleček šif. ključa:"
 
 #. Type: select
 #. Description
@@ -192,7 +193,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr "Pobriši podatke:"
+msgstr "Izbriši podatke:"
 
 #. Type: text
 #. Description
@@ -210,7 +211,7 @@ msgstr "da"
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
-msgstr "Pobriši podatke na tem razdelku"
+msgstr "Izbriši podatke na tem razdelku"
 
 #. Type: boolean
 #. Description
@@ -227,7 +228,7 @@ msgid ""
 "abort the erase."
 msgstr ""
 "Podatke na napravi ${DEVICE} bodo prepisali naključni podatki. Po tem koraku "
-"podatkov ni možno obnoviti. To je zadnja priložnost za preklic brisanja."
+"podatkov ni mogoče obnoviti. To je zadnja priložnost za preklic brisanja."
 
 #. Type: text
 #. Description
@@ -249,13 +250,13 @@ msgid ""
 "been erased."
 msgstr ""
 "Med brisanjem podatkov na ${DEVICE} je prišlo do napake. Podatki niso "
-"brisani."
+"izbrisani."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Pripravljam šifriranje..."
+msgstr "Nastavitev šifriranja..."
 
 #. Type: text
 #. Description
@@ -267,7 +268,7 @@ msgstr "Nastavi šifrirane nosilce"
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
-msgstr "Ni razdelkov za kriptiranje"
+msgstr "Ni razdelkov za šifriranje"
 
 #. Type: note
 #. Description
@@ -288,7 +289,7 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Ta različica debian namestitve ne vsebuje enega ali več programov, ki jih "
+"Ta različica debian namestilnika ne vsebuje enega ali več programov, ki jih "
 "partman-crypt potrebuje za pravilno delovanje."
 
 #. Type: error
@@ -347,7 +348,7 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Verjetno bo med nastavljenjem šifriranih razdelkov med ponovnim zagonom "
+"Verjetno bo med nastavljanjem šifriranih razdelkov med ponovnim zagonom "
 "sistema prišlo do težav. Še zmeraj jih lahko popravite tako, da kasneje "
 "naložite potrebne pakete."
 
@@ -450,13 +451,13 @@ msgstr "Naključni ključ"
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr "Nevarni izmenjevalni prostor zaznan"
+msgstr "Zaznan ne-varni izmenjevalni prostor"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "Zaznan je nevarni izmenjevalni prostor."
+msgstr "Zaznan je izmenjevalni prostor, ki ni varen."
 
 #. Type: error
 #. Description
@@ -479,7 +480,7 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Onemogočite izmenjevalni prostor (npr. z ukazom swapoff) ali nastavitve "
-"šifrirani izmenjevalni prostor in potem ponovno poženite nastavitev "
+"šifrirani izmenjevalni prostor in potem ponovno zaženite nastavljanje "
 "šifriranih nosilcev. Ta program bo sedaj prekinjen."
 
 #. Type: password
@@ -503,7 +504,7 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Skupna moč šifriranja je močno odvisna od tega gesla, zato se še posebej "
+"Od tega gesla je močno odvisna skupna moč šifriranja, zato se še posebej "
 "posvetite njegovi izbiri tako, da ni lahko uganljivo. Naj ne bo katera izmed "
 "besed ali stavkov, ki jih lahko najdemo v slovarju ali fraza, ki jo je "
 "mogoče povezati z vami."
@@ -576,7 +577,7 @@ msgid ""
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
 "Vnesli ste geslo, ki vsebuje manj kot ${MINIMUM} znakov, kar se smatra za "
-"prešibko. Poskusite izbrati težje geslo."
+"prešibko. Poskusite izbrati boljše geslo."
 
 #. Type: entropy-text
 #. Description
@@ -606,13 +607,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "Napaka pri ustvarjanju ključa"
+msgstr "Napaka pri ustvarjanju datoteke s ključem"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Prišlo je do napake med ustvarjanjem ključa."
+msgstr "Prišlo je do napake med ustvarjanjem datoteke s ključem."
 
 #. Type: error
 #. Description
@@ -695,8 +696,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Izbrali ste naključni ključ za napravo ${DEVICE}vendar ste zahtevali od "
-"orodja za razdeljevanje naj ustvari datotečni sistem na njem."
+"Izbrali ste naključni ključ za napravo ${DEVICE} vendar ste zahtevali od "
+"orodja za razdeljevanje naj na njem ustvari datotečni sistem."
 
 #. Type: boolean
 #. Description
@@ -724,7 +725,8 @@ msgstr "Med poskusom prenosa dodatnih šifrirnih komponent je prišlo do napake.
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr "Pričnem z nameščanje šifrirnih komponent kljub pomanjkanju pomnilnika?"
+msgstr ""
+"Pričnem z nameščanjem šifrirnih komponent kljub pomanjkanju pomnilnika?"
 
 #. Type: boolean
 #. Description

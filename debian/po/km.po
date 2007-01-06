@@ -3,6 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of km.po to Khmer
 # translation of km.po to
 #
 # Debian Installer master translation file template
@@ -10,20 +11,19 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 #
-# Leang Chumsoben <soben@khmeros.info>, 2006.
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-10-04 09:11+0700\n"
+"PO-Revision-Date: 2006-10-17 14:18+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
-"Language-Team:  <en@li.org>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Type: text
 #. Description
@@ -720,19 +720,3 @@ msgid ""
 msgstr ""
 "ហាក់បី​ដូចជា​គ្មាន​សតិ​គ្រប់គ្រាន់​ដែល​អាច​ប្រើ​បាន​ដើម្បី​ដំឡើង​សមាសភាគ​គ្រីបតូ​បន្ថែម ។ ប្រសិន​បើ​អ្នក​ជ្រើស​ទៅ​"
 "មុខ និង​បន្ត ដំណើរការ​ដំឡើង​អាច​បរាជ័យ ។"
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "ពិត​ជា​ប្រើ​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក ?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "ការ​គាំទ្រ​សម្រាប់​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក​គឺ​នៅ​តែ​ជា​កា​រពិសោធន៍ និង​មិន​បាន​ពិចារណា​សម្រាប់​ការ​ផលឹត ។ "
-#~ "ជាក់ស្តែង វា​អាច​មាន​លទ្ធផល​ក្នុង​ការ​រៀបចំ​ដែល​​ងាយស្រួល​បំបែក និង​ដូច្នេះ​ផ្ដល់​នូវ​អត្ថន័យ​មិន​ត្រឹមត្រូវ​នៃ​"
-#~ "សុវត្ថិភាព ។ គ្មាន​កំហុស​ដែល​មិន​ស្គាល់ ទោះ​ជា​យ៉ាង​ណា​ក៍​ដោយ រហូត​មក​ដល់​ការ​អនុវត្ត​ត្រូវ​បាន​ពិនិត្យ​យ៉ាង​​"
-#~ "តឹងរឹង លក្ខណៈ​ពិសេស​នេះ​នឹង​មិនគួរ​ត្រូវ​បាន​ប្រើ​​លើក​លែង​តែ​សម្រាប់​សាកល្បង ។"

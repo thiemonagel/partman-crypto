@@ -14,13 +14,14 @@
 # This file is maintained by Eric Pareja <xenos@upm.edu.ph>
 # Inaalagaan ang talaksang ito ni Eric Pareja <xenos@upm.edu.ph>
 #
+# ituloy angsulong mga kapatid http://www.upm.edu.ph/~xenos
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-08-28 13:43+0800\n"
+"PO-Revision-Date: 2006-11-24 03:00+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
 "MIME-Version: 1.0\n"
@@ -752,21 +753,3 @@ msgstr ""
 "Mukhang kulang ng memory na magagamit upang magluklok ng karagdagang crypto "
 "component. Kung piliin ninyong magpatuloy pa rin, maaaring mabigo ang "
 "proseso ng pagluklok."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "Talagang gumamit ng encryption sa block device?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "Ang encryption sa block device ay eksperimental pa at hindi pa handa para "
-#~ "sa produksyon. Maaaring magresulta ito sa pagkaayos na madaling masira at "
-#~ "maaaring magdulot ng maling akalang may seguridad. Wala pang kinikilalang "
-#~ "flaw sa encryption, subalit, hanggang sa masusing nai-audit ang "
-#~ "implementasyon, hindi dapat gamitin itong feature na ito maliban sa pag-"
-#~ "testing lamang."

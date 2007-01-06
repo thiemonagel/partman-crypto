@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of el.po to el
+# translation of el.po to Greek
 # Greek messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -14,14 +14,15 @@
 # Greek Translation Team <debian-l10n-greek@lists.debian.org>, 2004, 2005.
 # quad-nrg.net <galaxico@quad-nrg.net>, 2005, 2006.
 # quad-nrg.net <yodesy@quad-nrg.net>, 2006.
+# QUAD-nrg.net <yodesy@quad-nrg.net>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-09-27 17:50+0300\n"
-"Last-Translator: quad-nrg.net <yodesy@quad-nrg.net>\n"
-"Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
+"PO-Revision-Date: 2006-10-17 12:45+0300\n"
+"Last-Translator: QUAD-nrg.net <yodesy@quad-nrg.net>\n"
+"Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -772,22 +773,3 @@ msgstr ""
 "Φαίνεται να μην υπάρχει επαρκής διαθέσιμη μνήμη για την εγκατάσταση επιπλέον "
 "συνιστωσών κρυπτογράφησης. Αν επιλέξετε να προχωρήσετε και να συνεχίσετε "
 "έτσι κι αλλιώς, η διαδικασία εγκατάστασης μπορεί να αποτύχει."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "Να χρησιμοποιηθεί πραγματικά κρυπτογράφηση της συσκευής block;"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "Η υποστήριξη για την κρυπτογράφηση μιας συσκευής block είναι ακόμα "
-#~ "πειραματική και δεν θεωρείται έτοιμη για συστήματα παραγωγής. Πιο "
-#~ "συγκεκριμένα μπορεί να έχει σαν αποτέλεσμα σε διαμορφώσεις που είναι "
-#~ "εύκολο να παραβιαστούν δίνοντας έτσι μια ανακριβή αίσθηση ασφάλειας. Δεν "
-#~ "υπάρχουν γνωστά ελαττώματα στην κρυπογράφηση, παρ' όλα αυτά μέχρι η "
-#~ "υλοποίηση να ελεγχθεί εξαντλητικά, αυτό το γνώρισμα δεν θα πρέπει να "
-#~ "χρησιμοποιείται παρά μόνον για λόγους δοκιμής."

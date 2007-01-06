@@ -11,7 +11,7 @@
 #
 # This file is maintained by Aiet Kolkhi <aietkolkhi@gmail.com>
 #
-# Includes contributions by Malkhaz Barkalaza <malxaz@gmail.com>, 
+# Includes contributions by Malkhaz Barkalaza <malxaz@gmail.com>,
 # Alexander Didebulidze <didebuli@in.tum.de>, Vladimer Sichinava <vlsichinava@gmail.com>
 # Taya Kharitonashvili <taya13@gmail.com>
 #
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-10-26 11:58+0400\n"
+"PO-Revision-Date: 2006-11-27 12:27+0400\n"
 "Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
 "Language-Team: Georgian <www.gia.ge>\n"
 "MIME-Version: 1.0\n"
@@ -744,21 +744,3 @@ msgstr ""
 "როგორც ჩანს დამატებითი crypto კომპონენტების დასაყენებლად საკმარისი "
 "მეხსიერება არ არის. თუ მაინც შეეცდებით დაყენებას, შესაძლოა ინსტალაცია ვერ "
 "განხორციელდეს."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "ნამდვილად გსურთ block device დაშიფვრის გამოყენება?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."

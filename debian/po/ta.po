@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of ta.po to Tamil
+# translation of ta.po to TAMIL
 # Tamil messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -15,12 +15,13 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-10-18 05:21+0530\n"
-"Last-Translator: Damodharan Rajalingam <rdamodharan@gmail.com>\n"
-"Language-Team: Tamil <tamil-DI@yahoogroups.com>\n"
+"PO-Revision-Date: 2006-12-26 21:01+0530\n"
+"Last-Translator: drtvasudevan <agnihot3@gmail.com>\n"
+"Language-Team: TAMIL <Ubuntu-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Type: text
 #. Description
@@ -728,20 +729,3 @@ msgid ""
 msgstr ""
 "கூடுதல் மறைகுரியீட்டு பகுதிகளை நிறுவ தேவையான நினைவகம் இல்லை. நீங்கள் மேலும் தொடர "
 "விரும்பினால் நிறுவல் தோல்வியடையக் கூடும்."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "தொகுதி சாதன மறைகுறியீட்டை பயன்படுத்தவா?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "தொகுதி சாதன மறைகுறியீடு இன்னும் ஆராச்சி நிலையிலே உள்ளது மற்றும் இன்னும் முழு "
-#~ "பயன்பாட்டிற்கு தயாராகவில்லை. குறிப்பாக எளிதில் உடைக்ககூடிய பாதுகாப்பு நிறுவலில் "
-#~ "முடியலாம். மேலும் தவறான பாதுகாப்பு எண்ணத்தை உருவாக்கலாம். அறியப்பட்ட மறைகுறியீட்டு "
-#~ "பிழைகள் ஏதும் இல்லை. இருப்பினும் முழுதும் பரிசோதிக்கப்படும் வரையில் இந்த செயல்பாட்டை "
-#~ "சோதனைக்கு மட்டுமே பயன்படுத்த வேண்டும்."

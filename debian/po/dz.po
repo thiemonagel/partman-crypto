@@ -4,7 +4,7 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # translation of dz.po to Dzongkha
-# Translation of debain-installer level 1 Dzongkha
+# Translation of debian-installer level 1 Dzongkha
 # Debian Installer master translation file template
 # Copyright @ 2006 Free Software Foundation, Inc.
 # Sonam Rinchen <somchen@druknet.bt>, 2006.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2004-08-28 22:28+0530\n"
+"PO-Revision-Date: 2006-10-16 01:20+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
@@ -733,20 +733,3 @@ msgid ""
 msgstr ""
 "དེ་ནང་ཁ་སྐོང་ཅན་གྱི་ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་གཞི་བཙུགས་འབད་ནི་གི་དོན་ལུ་ དྲན་ཚད་ལངམ་མེདཔ་བཟུམ་ཅིག་འདུག "
 "ཁྱོད་ཀྱིས་ གདོང་ཁར་བཤུད་དེ་འཕྲོ་མཐུད་པ་ཅིན་ གཞི་བཙུགས་ལས་སྦྱོར་འདི་འཐུས་ཤོར་འབྱུང་འོང་།"
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "སྡེབ་ཚན་ཐབས་འཕྲུལ་གསང་བཟོ་འདི་ འཐད་རི་འབའ་རི་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "སྡེབ་ཚན་ཐབས་འཕྲུལ་གསང་བཟོའི་དོན་ལུ་རྒྱབ་སྐྱོར་འདི་ ད་ལྟོ་ཡང་མོ་བཏབ་ཨིནམ་དང་ ཐོན་འབྲས་ཀྱི་དོན་ལས་"
-#~ "ཆ་འཇོག་མིན་འདུག བྱེ་བྲག་ཏུ་ གཞི་སྒྲིག་ནང་འབྱུང་འོང་ དེ་ཡང་ འཇམ་ཏོང་ཏོ་སྦེ་བར་བཏོག་འབད་ཚུགསཔ་"
-#~ "ལས་ སྲུང་སྐྱོབ་ཀྱི་དོན་དག་ཕྱི་འགྱུར་བྱིན་འོང་། ཤེས་པའི་གསང་བཟོའི་སྐྱོན་མེད་དེ་འབད་རུང་ བསྟར་བཅོས་འདི་"
-#~ "མཐིལ་ཕྱིན་སྦེ་རྩིས་ཞིབ་མ་འབད་ཚུན་ ཁྱད་རྣམ་འདི་བརྟག་ཞིབ་འབད་ནིའི་དོན་ལུ་རྐྱངམ་ཅིག་མ་གཏོགས་ ལག་ལེན་"
-#~ "འཐབ་མི་ཆོག"

@@ -4,7 +4,7 @@
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
 # Spanish messages for debian-installer.
-# Copyright (C) 2003, 2004, 2005 Software in the Public Interest, Inc.
+# Copyright (C) 2003-2007 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 # Contributors to the translation of debian-installer:
@@ -49,7 +49,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-10-15 23:14-0500\n"
+"PO-Revision-Date: 2007-01-03 15:08+0100\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -786,22 +786,3 @@ msgstr ""
 "No parece tener suficiente memoria disponible para poder instalar los "
 "componentes adicionales relacionados con la criptografía. El proceso de "
 "instalación fallará si decide seguir y continuar de todas formas."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "¿Utilizar realmente el cifrado de dispositivo de bloques?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "La función de cifrado de dispositivos de bloques se considera aún "
-#~ "experimental y no debería considerarse preparada para su uso en entornos "
-#~ "de producción. En específico, puede dar lugar a instalaciones que son "
-#~ "fáciles de romper y que dan una falsa sensación de seguridad. Aunque no "
-#~ "hay ningún fallo conocido del cifrado, no se recomienda utilizar esta "
-#~ "función salvo para hacer pruebas hasta que la implementación se haya "
-#~ "auditado completamente."

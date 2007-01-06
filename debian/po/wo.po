@@ -3,6 +3,37 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
+# translation of wo[1].po to Wolof
 # translation of wo.po to Wolof
 # translation of Debian Installer to Wolof
 # Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>, 2005, 2006.
@@ -10,10 +41,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wo\n"
+"Project-Id-Version: wo[1]\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-09-05 19:50+0000\n"
+"PO-Revision-Date: 2006-10-18 00:27+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -735,22 +766,3 @@ msgstr ""
 "Dafa melne amuñu memwaar bu doy ngir ñu mana istale yaneen komposaŋ yu "
 "crypto. Boo kontinée ne dangay istale ak lu man di xew rek, kon istalaasioŋ "
 "bi amaana du àntu."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr ""
-#~ "Ndax wóorna nujëfandikoo kiripte ci periferik bu blok (block device) bi?"
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "Doxal kiripte bu periferik bu blok dafa tollu rekk ci ñukoy esee, ba "
-#~ "taxna noppeegul ngir ñukoy jëfandikoo ci liggéey. Man naa tax boo noppee "
-#~ "dangay yor istalaasioŋ bu yomba batt, ta day tax nga wóolu foo warula "
-#~ "wóoló. jammi kiripte be giseesaguci benn poroxndollu, waaye nak faii ak "
-#~ "nuy xoolaat foŋsioŋ boobu xool bu gëna xóot, kenn warukoo jëfandikoo "
-#~ "kudul ku bëgga esee."

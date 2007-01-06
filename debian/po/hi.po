@@ -3,10 +3,6 @@
 #
 # DO NOT MODIFY IT DIRECTLY : SUCH CHANGES WILL BE LOST
 # 
-# translation of hi.po to Hindi
-# translation of debian-installer_packages_po.po to
-# translation of debian-installer_packages_po.po to
-# translation of debian-installer_packages_po.po to
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files
 # Debian Installer translators, please read the D-I i18n documentation
@@ -19,7 +15,7 @@ msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-06 19:46+0100\n"
-"PO-Revision-Date: 2006-10-17 01:04+0530\n"
+"PO-Revision-Date: 2006-10-22 22:15+0200\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
 "MIME-Version: 1.0\n"
@@ -729,20 +725,3 @@ msgid ""
 msgstr ""
 "अतिरिक्त क्रिप्टो अवयवों को संस्थापित करने के लिए पर्याप्त मेमोरी उपलब्ध प्रतीत नहीं हो "
 "रही है. यदि आप जारी रखने को चुनते हैं तो संस्थापना की प्रक्रिया असफल हो सकती है."
-
-#~ msgid "Really use block device encryption?"
-#~ msgstr "क्या वास्तव में ब्लॉक डिवाइस एनक्रिप्शन का प्रयोग करें? "
-
-#~ msgid ""
-#~ "The support for block device encryption is still experimental and not "
-#~ "considered ready for production. In particular it may result in setups "
-#~ "that are easy to break and so give a false sense of security. There are "
-#~ "no known encryption flaws, however, until the implementation is "
-#~ "thoroughly audited, this feature should not be used except for testing "
-#~ "purposes."
-#~ msgstr ""
-#~ "कूटबद्ध ब्लॉक उपकरण अभी भी केवल प्रायोगिक रूप से ही समर्थित हैं और इन्हें उत्पादन तंत्रों "
-#~ "के लिए तैयार नहीं समझा जाना चाहिए. विशिष्ट रूप से इसकी परिणति ऐसे तंत्रों में हो सकती "
-#~ "है जोकि आसानी से भंजित किये जा सकते हैं और इसलिए यह सुरक्षा की गलत भावना देते हैं. "
-#~ "हालाँकि कूटबद्ध करने में कोई भी ज्ञात कमी नहीं है, फिर भी जब तक इसके कार्यानवयन का "
-#~ "पूर्ण परीक्षण नहीं हो जाता तब तक इसको परीक्षण के अलावा प्रयोग नहीं करना चाहिए."

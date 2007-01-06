@@ -15,8 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-04 09:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team:  <en@li.org>\n"
@@ -125,8 +125,6 @@ msgstr "ការ​ចាប់ផ្ដើម​ក្បួន​​ដោះ
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -283,6 +281,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "បាត់​ជម្រើស​អ៊ិនគ្រីប​ដែល​ទាមទារ"
@@ -340,6 +339,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "សរសេរ​ការ​ផ្លាស់ប្ដូរ​ទៅ​ថាស ហើយ​កំណត់​រចនា​សម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប ?"
@@ -353,6 +353,12 @@ msgid ""
 msgstr ""
 "មុននឹង​អាច​កំណត់​រចនាសម្ព័ន្ធ​ភាគ​ដែល​អ៊ិនគ្រីប​រួច​បាន អ្នក​ត្រូវ​តែ​សរសេរ​គ្រោងការណ៍​ចែក​ថាស​ជា​ភាគ​បច្ចុប្បន្ន​ទៅ​"
 "ថាស ។ អ្នក​មិន​អាច​ត្រឡប់​ក្រោយ​វិញ​​បាន​ឡើយ ។"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -545,15 +551,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "ប្រើ​ឃ្លាសម្ងាត់​ខ្សោយ ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -714,23 +721,18 @@ msgstr ""
 "ហាក់បី​ដូចជា​គ្មាន​សតិ​គ្រប់គ្រាន់​ដែល​អាច​ប្រើ​បាន​ដើម្បី​ដំឡើង​សមាសភាគ​គ្រីបតូ​បន្ថែម ។ ប្រសិន​បើ​អ្នក​ជ្រើស​ទៅ​"
 "មុខ និង​បន្ត ដំណើរការ​ដំឡើង​អាច​បរាជ័យ ។"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "ពិត​ជា​ប្រើ​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក ?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "ពិត​ជា​ប្រើ​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក ?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"ការ​គាំទ្រ​សម្រាប់​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក​គឺ​នៅ​តែ​ជា​កា​រពិសោធន៍ និង​មិន​បាន​ពិចារណា​សម្រាប់​ការ​ផលឹត ។ "
-"ជាក់ស្តែង វា​អាច​មាន​លទ្ធផល​ក្នុង​ការ​រៀបចំ​ដែល​​ងាយស្រួល​បំបែក និង​ដូច្នេះ​ផ្ដល់​នូវ​អត្ថន័យ​មិន​ត្រឹមត្រូវ​នៃ​"
-"សុវត្ថិភាព ។ គ្មាន​កំហុស​ដែល​មិន​ស្គាល់ ទោះ​ជា​យ៉ាង​ណា​ក៍​ដោយ រហូត​មក​ដល់​ការ​អនុវត្ត​ត្រូវ​បាន​ពិនិត្យ​យ៉ាង​​តឹងរឹង "
-"លក្ខណៈ​ពិសេស​នេះ​នឹង​មិនគួរ​ត្រូវ​បាន​ប្រើ​​លើក​លែង​តែ​សម្រាប់​សាកល្បង ។"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "ការ​គាំទ្រ​សម្រាប់​ការ​អ៊ិនគ្រីប​ឧបករណ៍​ប្លុក​គឺ​នៅ​តែ​ជា​កា​រពិសោធន៍ និង​មិន​បាន​ពិចារណា​សម្រាប់​ការ​ផលឹត ។ "
+#~ "ជាក់ស្តែង វា​អាច​មាន​លទ្ធផល​ក្នុង​ការ​រៀបចំ​ដែល​​ងាយស្រួល​បំបែក និង​ដូច្នេះ​ផ្ដល់​នូវ​អត្ថន័យ​មិន​ត្រឹមត្រូវ​នៃ​"
+#~ "សុវត្ថិភាព ។ គ្មាន​កំហុស​ដែល​មិន​ស្គាល់ ទោះ​ជា​យ៉ាង​ណា​ក៍​ដោយ រហូត​មក​ដល់​ការ​អនុវត្ត​ត្រូវ​បាន​ពិនិត្យ​យ៉ាង​​"
+#~ "តឹងរឹង លក្ខណៈ​ពិសេស​នេះ​នឹង​មិនគួរ​ត្រូវ​បាន​ប្រើ​​លើក​លែង​តែ​សម្រាប់​សាកល្បង ។"

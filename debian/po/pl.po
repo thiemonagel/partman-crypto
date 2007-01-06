@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-21 19:52+0200\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
@@ -120,8 +120,6 @@ msgstr "Rodzaj algorytmu dla wektora inicjalizacji dla tej partycji:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -280,6 +278,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Brak wymaganych opcji szyfrowania"
@@ -340,6 +339,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Zapisać zmiany do dysków i skonfigurować szyfrowane woluminy?"
@@ -353,6 +353,12 @@ msgid ""
 msgstr ""
 "Zanim szyfrowany wolumin będzie mógł zostać skonfigurowany, aktualny schemat "
 "partycjonowania musi zostać zapisany na dysku. Zmian tych nie można cofnąć."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -550,15 +556,16 @@ msgstr "Wprowadzono puste hasło, a jest to zabronione. Proszę wybrać hasło."
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Użyć słabego hasła?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -729,25 +736,21 @@ msgstr ""
 "operacyjnej potrzebnej do instalacji składników szyfrujących. Jeśli "
 "wybierzesz by mimo to kontynuować instalacja może się nie powieść."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Naprawdę użyć szyfrowania urządzenia blokowego?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Naprawdę użyć szyfrowania urządzenia blokowego?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Obsługa szyfrowania urządzeń blokowych jest nadal uważana za eksperymentalną "
-"i niegotową do produkcyjnego zastosowania. W niektórych przypadkach używanie "
-"tego może prowadzić do uszkodzeń, więc daje złudne poczucie bezpieczeństwa. "
-"Na dzień dzisiejszy nie są jednakżde znane żadne słabości samego "
-"szyfrowania, ale póki ta implementacja nie zostanie dokładnie przeadytowana "
-"nie powinna być używana do celów innych niż testowe."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Obsługa szyfrowania urządzeń blokowych jest nadal uważana za "
+#~ "eksperymentalną i niegotową do produkcyjnego zastosowania. W niektórych "
+#~ "przypadkach używanie tego może prowadzić do uszkodzeń, więc daje złudne "
+#~ "poczucie bezpieczeństwa. Na dzień dzisiejszy nie są jednakżde znane żadne "
+#~ "słabości samego szyfrowania, ale póki ta implementacja nie zostanie "
+#~ "dokładnie przeadytowana nie powinna być używana do celów innych niż "
+#~ "testowe."

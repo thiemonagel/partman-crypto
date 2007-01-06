@@ -47,8 +47,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-15 23:14-0500\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -157,8 +157,6 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -319,6 +317,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Faltan opciones necesarias para el cifrado"
@@ -379,6 +378,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -394,6 +394,12 @@ msgstr ""
 "Debe guardarse el esquema de particionado actual en el disco antes de\n"
 "que pueda configurar los volúmenes cifrados. Estos cambios no se\n"
 "pueden deshacer."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -598,15 +604,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "¿Utilizar una frase de contraseña débil?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -780,26 +787,21 @@ msgstr ""
 "componentes adicionales relacionados con la criptografía. El proceso de "
 "instalación fallará si decide seguir y continuar de todas formas."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "¿Utilizar realmente el cifrado de dispositivo de bloques?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "¿Utilizar realmente el cifrado de dispositivo de bloques?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"La función de cifrado de dispositivos de bloques se considera aún "
-"experimental y no debería considerarse preparada para su uso en entornos de "
-"producción. En específico, puede dar lugar a instalaciones que son fáciles "
-"de romper y que dan una falsa sensación de seguridad. Aunque no hay ningún "
-"fallo conocido del cifrado, no se recomienda utilizar esta función salvo "
-"para hacer pruebas hasta que la implementación se haya auditado "
-"completamente."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "La función de cifrado de dispositivos de bloques se considera aún "
+#~ "experimental y no debería considerarse preparada para su uso en entornos "
+#~ "de producción. En específico, puede dar lugar a instalaciones que son "
+#~ "fáciles de romper y que dan una falsa sensación de seguridad. Aunque no "
+#~ "hay ningún fallo conocido del cifrado, no se recomienda utilizar esta "
+#~ "función salvo para hacer pruebas hasta que la implementación se haya "
+#~ "auditado completamente."

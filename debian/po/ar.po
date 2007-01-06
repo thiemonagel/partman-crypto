@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-06-26 01:17+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
@@ -120,8 +120,6 @@ msgstr "تمهيد لوغاريتم توليد المتجه لهذا الجزء:
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -277,6 +275,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "خيارات التشفير المطلوبة مفقودة"
@@ -335,6 +334,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "كتابة التغييرات إلى أقراص وتهيئة الكتل المشفرة؟"
@@ -348,6 +348,12 @@ msgid ""
 msgstr ""
 "قبل أن يمكن تهيئة الكتل المشفرة، يجب كتابة مخطط التجزئة الحالي إلى القرص. لا "
 "يمكن التراجع عن هذه التغييرات."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -543,15 +549,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "استخدام جملة مرور ضعيفة؟"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -714,23 +721,18 @@ msgstr ""
 "لا يبدو أن هناك ذاكرة كافية متوفرة لتثبيت مكونات crypto الإضافية. إن أردت "
 "الاستمرار والقيام بذلك على أي حال، فقد تفشل عملية التثبيت."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "هل حقاً تريد استخدام تشفير الجهاز القالبي؟"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "هل حقاً تريد استخدام تشفير الجهاز القالبي؟"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"دعم تشفير الجهاز القالبي لا يزال تجريبياً ولا يعتبر جاهزاً للاستخدام، أي أنه "
-"قد يتسبب بجعل نظامك سهل الاختراق ويظهر آمناً دون أن يكون كذلك. كما أنه ليست "
-"هناك أية عيوب في التشفير، إلا أنه وحتى يتم التدقيق التام في التنفيذ، فلا يجب "
-"استخدام هذه الميزة إلا لأغراض التجربة فقط."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "دعم تشفير الجهاز القالبي لا يزال تجريبياً ولا يعتبر جاهزاً للاستخدام، أي "
+#~ "أنه قد يتسبب بجعل نظامك سهل الاختراق ويظهر آمناً دون أن يكون كذلك. كما أنه "
+#~ "ليست هناك أية عيوب في التشفير، إلا أنه وحتى يتم التدقيق التام في التنفيذ، "
+#~ "فلا يجب استخدام هذه الميزة إلا لأغراض التجربة فقط."

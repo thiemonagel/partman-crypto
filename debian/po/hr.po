@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-25 23:55+0200\n"
 "Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -120,8 +120,6 @@ msgstr "Initialization vector generation algoritam za ovu particiju:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -282,6 +280,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Nedostaju potrebne enkripcijske opcije"
@@ -342,6 +341,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Zapiši promjene na diskove i podesi enkriptirane prostore?"
@@ -355,6 +355,12 @@ msgid ""
 msgstr ""
 "Prije negoli krenete podešavati enkriptirane prostore, trenutna shema "
 "particioniranja mora biti zapisana na disk. To se ne može poništiti."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -555,15 +561,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Koristi slabu lozinku?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -736,25 +743,20 @@ msgstr ""
 "kriptografske komponente. Ako odlučite nastaviti ovako, instalacijski proces "
 "bi mogao naići na probleme."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Stvarno koristiti enkripciju block uređaja?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Stvarno koristiti enkripciju block uređaja?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Podrška za enkripciju block uređaja je još uvijek eksperimentalna i smatra "
-"se nespremnom za produkcijsku upotrebu. Konkretno, njena upotreba bi mogla "
-"prouzročiti takve postavke koji su lako provaljivi i na taj način odavati "
-"lažan osjećaj sigurnosti. Iako nema poznatih problema s enkripcijom, dok se "
-"ova mogućnost temeljito ne istestira, ne bi se trebala koristiti osim za "
-"potrebe testiranja."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Podrška za enkripciju block uređaja je još uvijek eksperimentalna i "
+#~ "smatra se nespremnom za produkcijsku upotrebu. Konkretno, njena upotreba "
+#~ "bi mogla prouzročiti takve postavke koji su lako provaljivi i na taj "
+#~ "način odavati lažan osjećaj sigurnosti. Iako nema poznatih problema s "
+#~ "enkripcijom, dok se ova mogućnost temeljito ne istestira, ne bi se "
+#~ "trebala koristiti osim za potrebe testiranja."

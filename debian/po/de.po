@@ -19,8 +19,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-22 21:30+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
@@ -131,8 +131,6 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -294,6 +292,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Benötigte Verschlüsselungsoptionen fehlen"
@@ -356,6 +355,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -372,6 +372,12 @@ msgstr ""
 "Bevor verschlüsselte Datenträger konfiguriert werden können, muss die "
 "aktuelle Aufteilung der Partitionen auf die Festplatte geschrieben werden. "
 "Diese Änderungen können nicht rückgängig gemacht werden."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -584,15 +590,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Schwache Passphrasen verwenden?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -770,25 +777,21 @@ msgstr ""
 "Verschlüsselungskomponenten zu installieren. Der Installationsvorgang kann "
 "fehlschlagen, falls Sie sich entscheiden dennoch fortzufahren."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Wirklich eine Blockgeräteverschlüsselung verwenden?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Wirklich eine Blockgeräteverschlüsselung verwenden?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Die Unterstützung von Blockgeräteverschlüsselung ist noch experimentell und "
-"nicht für ein Produktionssystem geeignet. Insbesondere kann es zu "
-"Einstellungen führen, die leicht durchbrochen werden können und so ein "
-"falsches Gefühl von Sicherheit erzeugen. Es gibt keine bekannten "
-"Verschlüsselungsprobleme, jedoch sollte diese Einstellung außer für Tests "
-"nicht verwendet werden, bis die Implementation sorgfältig analysiert wurde."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Die Unterstützung von Blockgeräteverschlüsselung ist noch experimentell "
+#~ "und nicht für ein Produktionssystem geeignet. Insbesondere kann es zu "
+#~ "Einstellungen führen, die leicht durchbrochen werden können und so ein "
+#~ "falsches Gefühl von Sicherheit erzeugen. Es gibt keine bekannten "
+#~ "Verschlüsselungsprobleme, jedoch sollte diese Einstellung außer für Tests "
+#~ "nicht verwendet werden, bis die Implementation sorgfältig analysiert "
+#~ "wurde."

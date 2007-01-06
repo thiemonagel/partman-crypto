@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-02 21:45+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -129,8 +129,6 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -292,6 +290,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Options requises de chiffrement manquantes"
@@ -353,6 +352,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -368,6 +368,12 @@ msgstr ""
 "Avant que les volumes chiffrés puissent être configurés, le schéma actuel de "
 "partitionnement doit être appliqué aux disques. Ces changements seront "
 "irréversibles."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -575,15 +581,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Faut-il vraiment utiliser une phrase secrète si faible ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -760,26 +767,23 @@ msgstr ""
 "de gestion du chiffrement des partitions. Si vous choisissez de continuer "
 "malgré tout, le processus d'installation pourrait échouer."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Faut-il vraiment utiliser le chiffrement des périphériques de bloc ?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr ""
+#~ "Faut-il vraiment utiliser le chiffrement des périphériques de bloc ?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"La gestion du chiffrement des périphériques de bloc est encore expérimentale "
-"et n'est donc pas considérée comme utilisable en production. Plus "
-"particulièrement, elle peut conduire à des configurations faciles à attaquer "
-"et donc donner une fausse impression de sécurité. Il n'existe pas de faille "
-"connue dans le chiffrement ; cependant, tant que la mise en oeuvre de cette "
-"fonctionnalité n'a pas été analysée en détail, elle ne devrait être utilisée "
-"que pour des expérimentations."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "La gestion du chiffrement des périphériques de bloc est encore "
+#~ "expérimentale et n'est donc pas considérée comme utilisable en "
+#~ "production. Plus particulièrement, elle peut conduire à des "
+#~ "configurations faciles à attaquer et donc donner une fausse impression de "
+#~ "sécurité. Il n'existe pas de faille connue dans le "
+#~ "chiffrement ; cependant, tant que la mise en oeuvre de cette "
+#~ "fonctionnalité n'a pas été analysée en détail, elle ne devrait être "
+#~ "utilisée que pour des expérimentations."

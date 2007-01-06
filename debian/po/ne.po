@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ne\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-18 11:05+0545\n"
 "Last-Translator: Shiva Prasad Pokharel <pokharelshiva@hotmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -122,8 +122,6 @@ msgstr "यो विभाजनका लागि भेक्टर सि�
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -279,6 +277,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "आवश्यक गुप्तीकरण विकल्पहरू हराईरहेको छ"
@@ -337,6 +336,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "डिस्कमा परिवर्तनहरू लेख्नुहुन्छ र गुप्तिकृत भोल्युमहरू कनफिगर गर्नुहुन्छ ?"
@@ -350,6 +350,12 @@ msgid ""
 msgstr ""
 "गुप्तीकृत भोल्युमहरू कन्फिगर हुनु पहिले, हालको विभाजन योजना डिस्कमा लेखिनु पर्दछ । यो "
 "परिवर्तनहरू पूर्वस्थितिमा फर्कन सक्दैन ।"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -548,15 +554,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "कमजोर पास वाक्यांश प्रयोग गर्नुहुन्छ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -719,23 +726,18 @@ msgstr ""
 "त्यहाँ थप crypto अभयवहरू स्थापना गर्न पर्याप्त स्मृति उपलब्ध देखिदैन । यदि तपाईँले अगाडि "
 "जाने र कुनै हालतमा पनि निरन्तर दिने रोज्नु भयो भने, स्थापना प्रक्रिया असफल हुन सक्छ ।"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "साँच्चै बन्द भएको यन्त्र गुप्तिकरण प्रयोग गर्नुहुन्छ ? "
+#~ msgid "Really use block device encryption?"
+#~ msgstr "साँच्चै बन्द भएको यन्त्र गुप्तिकरण प्रयोग गर्नुहुन्छ ? "
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"बन्द भएको यन्त्र गुप्तिकरणका लागि समर्थन अहिले पनि प्रयोगात्मक छ र उत्पादनका लागि मान्न "
-"तयार छैन । खासमा यसले विच्छेदन हुन सजिलो हुने सेटअपमा नतिजा गर्दछ र सुरक्षाको गलत अर्थ "
-"दिन्छ । यद्यपि त्यहाँ ज्ञात गुप्तिकरण दोष छैन, कार्यन्वयन लेखापरिक्षण नभएसम्म, उद्देश्यहरू "
-"परीक्षण गर्नु बाहेक यो सुविधा प्रयोग हुने छैन ।"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "बन्द भएको यन्त्र गुप्तिकरणका लागि समर्थन अहिले पनि प्रयोगात्मक छ र उत्पादनका लागि "
+#~ "मान्न तयार छैन । खासमा यसले विच्छेदन हुन सजिलो हुने सेटअपमा नतिजा गर्दछ र सुरक्षाको "
+#~ "गलत अर्थ दिन्छ । यद्यपि त्यहाँ ज्ञात गुप्तिकरण दोष छैन, कार्यन्वयन लेखापरिक्षण नभएसम्म, "
+#~ "उद्देश्यहरू परीक्षण गर्नु बाहेक यो सुविधा प्रयोग हुने छैन ।"

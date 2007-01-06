@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-17 01:04+0530\n"
 "Last-Translator: Nishant Sharma <me at nishants.net>\n"
 "Language-Team: Hindi\n"
@@ -128,8 +128,6 @@ msgstr "इस पार्टिशन के लिए इनिशियल�
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -285,6 +283,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "आवश्यक एनक्रिप्शन विकल्प अनुपस्थित"
@@ -344,6 +343,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "परिवर्तनों को डिस्क में लिखें और कूटबद्ध वॉल्यूमों को व्यवस्थित करें?"
@@ -357,6 +357,12 @@ msgid ""
 msgstr ""
 "इससे पहले कि एनक्रिपटेड वॉल्यूमों को व्यवस्थित किया जा सके, वर्तमान पार्टिशनिंग पद्धति को "
 "डिस्क पर लिखना ही होगा. इन परिवर्तनों को वापस नहीं पाया जा सकेगा."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -552,15 +558,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "कमज़ोर कूटवाक्यांश का प्रयोग करें?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -723,24 +730,19 @@ msgstr ""
 "अतिरिक्त क्रिप्टो अवयवों को संस्थापित करने के लिए पर्याप्त मेमोरी उपलब्ध प्रतीत नहीं हो "
 "रही है. यदि आप जारी रखने को चुनते हैं तो संस्थापना की प्रक्रिया असफल हो सकती है."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "क्या वास्तव में ब्लॉक डिवाइस एनक्रिप्शन का प्रयोग करें? "
+#~ msgid "Really use block device encryption?"
+#~ msgstr "क्या वास्तव में ब्लॉक डिवाइस एनक्रिप्शन का प्रयोग करें? "
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"कूटबद्ध ब्लॉक उपकरण अभी भी केवल प्रायोगिक रूप से ही समर्थित हैं और इन्हें उत्पादन तंत्रों के "
-"लिए तैयार नहीं समझा जाना चाहिए. विशिष्ट रूप से इसकी परिणति ऐसे तंत्रों में हो सकती है "
-"जोकि आसानी से भंजित किये जा सकते हैं और इसलिए यह सुरक्षा की गलत भावना देते हैं. हालाँकि "
-"कूटबद्ध करने में कोई भी ज्ञात कमी नहीं है, फिर भी जब तक इसके कार्यानवयन का पूर्ण परीक्षण "
-"नहीं हो जाता तब तक इसको परीक्षण के अलावा प्रयोग नहीं करना चाहिए."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "कूटबद्ध ब्लॉक उपकरण अभी भी केवल प्रायोगिक रूप से ही समर्थित हैं और इन्हें उत्पादन तंत्रों "
+#~ "के लिए तैयार नहीं समझा जाना चाहिए. विशिष्ट रूप से इसकी परिणति ऐसे तंत्रों में हो सकती "
+#~ "है जोकि आसानी से भंजित किये जा सकते हैं और इसलिए यह सुरक्षा की गलत भावना देते हैं. "
+#~ "हालाँकि कूटबद्ध करने में कोई भी ज्ञात कमी नहीं है, फिर भी जब तक इसके कार्यानवयन का "
+#~ "पूर्ण परीक्षण नहीं हो जाता तब तक इसको परीक्षण के अलावा प्रयोग नहीं करना चाहिए."

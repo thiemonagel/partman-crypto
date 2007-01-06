@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-20 20:53-0500\n"
 "Last-Translator: Ming Hua <minghua@rice.edu>\n"
 "Language-Team: Debian Chinese [GB] <debian-chinese-gb@lists.debian.org>\n"
@@ -123,8 +123,6 @@ msgstr "此分区初始向量生成算法："
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -278,6 +276,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "缺少所需的加密选项"
@@ -333,6 +332,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "将修改写入磁盘并配置加密卷吗？"
@@ -346,6 +346,12 @@ msgid ""
 msgstr ""
 "必须先将当前的分区方案写入磁盘，然后才能开始对加密卷进行配置。这些改动将不再"
 "可以撤消。"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -537,15 +543,16 @@ msgstr "您输入的是空口令句，这是不被允许的。请输入一个非
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "使用弱口令句吗？"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -706,22 +713,17 @@ msgstr ""
 "看来没有足够的内存用于安装额外的密码处理组件。如果您仍然选择继续，安装过程将"
 "有可能失败。"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "真的要使用块设备加密吗？"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "真的要使用块设备加密吗？"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"块设备加密支持尚处于试验阶段，并不适合生产级系统。特别是它有可能产生容易被攻"
-"破的设置并导致安全上的负面感觉。这里并没有已知的安全缺陷，然而在整个软件实现"
-"被彻底审核之前，除测试用途以外，此项功能不应该被使用。"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "块设备加密支持尚处于试验阶段，并不适合生产级系统。特别是它有可能产生容易被"
+#~ "攻破的设置并导致安全上的负面感觉。这里并没有已知的安全缺陷，然而在整个软件"
+#~ "实现被彻底审核之前，除测试用途以外，此项功能不应该被使用。"

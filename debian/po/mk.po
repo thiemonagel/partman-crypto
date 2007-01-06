@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-15 15:53+0200\n"
 "Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -123,8 +123,6 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -284,6 +282,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Недостасуваат потребните опции за енкрипција"
@@ -344,6 +343,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Да ги запишам измените на диск и конфигурурам енкриптираните простори?"
@@ -358,6 +358,12 @@ msgstr ""
 "Пред да може да се конфигурираат енкриптираните простори, моменталната "
 "партициона шема мора да биде запишана на диск. Овие промени не може да се "
 "отповикаат."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -561,15 +567,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Користи слаба лозинка?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -741,25 +748,20 @@ msgstr ""
 "дополнителни крупто компоненти. Ако избереш да продолжиш инсталацијата може "
 "да не успее."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Навистина да користам енкрипција за блок уред?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Навистина да користам енкрипција за блок уред?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Подршката за енкрипција на блок уреди е сеуште во експериментална фаза и не "
-"се препорачува за нормална работа. На пример може да се доведе до инсталации "
-"кои може лесно да бидат пробиени и да даде чувство на лажна сигурност. Нема "
-"познати фаличности во енкрипциските методи, но сепак, се додека "
-"имплементациите темелно не се тестираат, оваа можност не треба да се користи "
-"освен за тестирање."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Подршката за енкрипција на блок уреди е сеуште во експериментална фаза и "
+#~ "не се препорачува за нормална работа. На пример може да се доведе до "
+#~ "инсталации кои може лесно да бидат пробиени и да даде чувство на лажна "
+#~ "сигурност. Нема познати фаличности во енкрипциските методи, но сепак, се "
+#~ "додека имплементациите темелно не се тестираат, оваа можност не треба да "
+#~ "се користи освен за тестирање."

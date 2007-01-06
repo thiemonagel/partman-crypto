@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-08 00:02+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -126,8 +126,6 @@ msgstr "Bu bölüm için \"ilklendirme vektörü\" üretim algoritması:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -289,6 +287,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Gerekli şifreleme seçenekleri eksik"
@@ -349,6 +348,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -363,6 +363,12 @@ msgid ""
 msgstr ""
 "Şifrelenmiş ciltler yapılandırılmadan önce mevcut bölümleme şeması diske "
 "kaydedilmelidir.  Bu değişiklikler geri alınamaz."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -566,15 +572,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Zayıf geçiş parolası kullanılsın mı?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -743,25 +750,21 @@ msgstr ""
 "gözüküyor.  Buna rağmen devam etmeyi seçerseniz kurulum işlemi başarısız "
 "olabilir."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Öbek aygıt şifrelemesi gerçekten kullanılsın mı?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Öbek aygıt şifrelemesi gerçekten kullanılsın mı?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Öbek aygıt (block device) şifrelemesi desteği henüz deneysel safhada "
-"bulunuyor ve ciddi sistemlerde kullanılması önerilmiyor.   Özellikle "
-"vurgulamak gerekirse, bu şekilde şifrelenen sistemler kolayca kırılabilir ve "
-"buna rağmen yanıltıcı bir güvenlik hissi verebilir.  Bilinen bir güvenlik "
-"açığı olmamakla beraber kullanılan gerçeklemenin etkinliği baştan sona "
-"denetleninceye kadar bu özellik, deneme gayesi dışında, kullanılmamalıdır."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Öbek aygıt (block device) şifrelemesi desteği henüz deneysel safhada "
+#~ "bulunuyor ve ciddi sistemlerde kullanılması önerilmiyor.   Özellikle "
+#~ "vurgulamak gerekirse, bu şekilde şifrelenen sistemler kolayca kırılabilir "
+#~ "ve buna rağmen yanıltıcı bir güvenlik hissi verebilir.  Bilinen bir "
+#~ "güvenlik açığı olmamakla beraber kullanılan gerçeklemenin etkinliği "
+#~ "baştan sona denetleninceye kadar bu özellik, deneme gayesi dışında, "
+#~ "kullanılmamalıdır."

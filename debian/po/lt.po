@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-02 22:53+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -122,8 +122,6 @@ msgstr "Inicializacijos vektoriaus generavimo algoritmas šiam disko skirsniui:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -283,6 +281,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Trūksta reikiamų šifravimo parametrų"
@@ -343,6 +342,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Ar įrašyti pakeitimus į diską ir konfigūruoti šifruotus tomus?"
@@ -356,6 +356,12 @@ msgid ""
 msgstr ""
 "Prieš šifruotų tomų konfigūravimą, dabartinė disko skirsnių schema turibūti "
 "įrašyta į diską. Šių pakeitimų vėliau atšaukti nebebus galima."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -555,15 +561,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Ar naudoti neatsparią silpną slaptą frazę?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -733,25 +740,20 @@ msgstr ""
 "Atrodo, kad papildomų šifravimo komponentų įdiegimui nepakanka atminties. "
 "Jei pasirinksite tęsti įdiegimą, jis gali nepavykti."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Ar tikrai naudoti blokinio įrenginio šifravimą?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Ar tikrai naudoti blokinio įrenginio šifravimą?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Blokinio įrenginio šifravimo palaikymas kol kas yra eksperimentinėje "
-"stadijoje ir nėra laikomas pilnai paruoštu naudojimui. Tam tikromis "
-"aplinkybėmis galimi nustatymai, kuriuos lengva nulaužti, ir tai suteikia "
-"klaidingą saugumo suvokimą. Čia nėra žinomų šifravimo problemų, tačiau kol "
-"realizavimas nėra kruopščiai patikrintas, šią savybę tikslinga naudoti tik "
-"testavimo tikslais."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Blokinio įrenginio šifravimo palaikymas kol kas yra eksperimentinėje "
+#~ "stadijoje ir nėra laikomas pilnai paruoštu naudojimui. Tam tikromis "
+#~ "aplinkybėmis galimi nustatymai, kuriuos lengva nulaužti, ir tai suteikia "
+#~ "klaidingą saugumo suvokimą. Čia nėra žinomų šifravimo problemų, tačiau "
+#~ "kol realizavimas nėra kruopščiai patikrintas, šią savybę tikslinga "
+#~ "naudoti tik testavimo tikslais."

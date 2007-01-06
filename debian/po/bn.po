@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-12 02:47+0600\n"
 "Last-Translator: Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
@@ -127,8 +127,6 @@ msgstr "ইনিশিয়ালাইজেশন ভেক্টর জেন�
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -285,6 +283,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "প্রয়োজনীয় এনক্রিপশন অপশন নিরুদ্দেশ"
@@ -345,6 +344,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -359,6 +359,12 @@ msgid ""
 msgstr ""
 "এনক্রিপ্টেড ভলিউমগুলোকে কনফিগার করার পূর্বে বর্তমান পার্টিশন বিন্যাসকে ডিস্কে লিখতে "
 "হবে। এই পরিবর্তনগুলোকে পরে আর বাতিল করা যাবে না।"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -558,15 +564,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "দূর্বল passphrase ব্যবহার করবো কি?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -733,24 +740,19 @@ msgstr ""
 "হচ্ছে। আপনি যদি তারপরও সামনে এগিয়ে যেতে চান, তাহলে হয়তো ইনস্টলেশন প্রক্রিয়া ব্যর্থ "
 "হতে পারে।"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "সত্যিই কি ব্লক ডিভাইস এনক্রিপশন ব্যবহার করা হবে?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "সত্যিই কি ব্লক ডিভাইস এনক্রিপশন ব্যবহার করা হবে?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"ব্লক ডিভাইস এনক্রিপশন সাপোর্ট এখনও পরীক্ষার পর্যায়ে রয়েছে এবং এটি ব্যবহারের উপযোগী "
-"বলে মনে করা হয় না। সঠিকভাবে বললে, এতে করে সেটআপের ফলাফল এতটা সহজ হতে পারে "
-"যে, নিরপত্তার বিবেচনায় তা ভাঙ্গা সহজ। এটিতে কোন এনক্রিপশন ত্রুটি নেই, তবুও, যতদিন "
-"এর বাস্তবায়ন যথাযথভাবে নিরীক্ষা করা না হচ্ছে, ততদিন এই সুবিধাটি নিতান্তই "
-"পরীক্ষামূলক ব্যাতীত অন্য কোন কারণে ব্যবহার করা উচিত না।"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "ব্লক ডিভাইস এনক্রিপশন সাপোর্ট এখনও পরীক্ষার পর্যায়ে রয়েছে এবং এটি ব্যবহারের "
+#~ "উপযোগী বলে মনে করা হয় না। সঠিকভাবে বললে, এতে করে সেটআপের ফলাফল এতটা সহজ "
+#~ "হতে পারে যে, নিরপত্তার বিবেচনায় তা ভাঙ্গা সহজ। এটিতে কোন এনক্রিপশন ত্রুটি নেই, "
+#~ "তবুও, যতদিন এর বাস্তবায়ন যথাযথভাবে নিরীক্ষা করা না হচ্ছে, ততদিন এই সুবিধাটি "
+#~ "নিতান্তই পরীক্ষামূলক ব্যাতীত অন্য কোন কারণে ব্যবহার করা উচিত না।"

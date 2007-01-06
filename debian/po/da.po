@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2007-01-03 22:21+0100\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
@@ -124,8 +124,6 @@ msgstr "Algoritme til generering af initialiseringsvektor for denne partition:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -285,6 +283,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Krævede krypteringsindstillinger mangler"
@@ -345,6 +344,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Skriv ændringerne til diskene og sæt de krypterede bind op?"
@@ -358,6 +358,12 @@ msgid ""
 msgstr ""
 "Den valgte partitionering skal skrives til diskene før de krypterede bind "
 "kan sættes op. Disse ændringer kan ikke fortrydes."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -555,15 +561,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Benyt svag kode?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -731,25 +738,20 @@ msgstr ""
 "krypteringskomponenter. Hvis du vælger at fortsætte alligevel, kan det være, "
 "at installationen mislykkes."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Vil du virkelig benytte blokenhedskryptering?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Vil du virkelig benytte blokenhedskryptering?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Understøttelsen af blokenhedskryptering er stadig eksperimentel, og anses "
-"ikke for at være klar til produktionssystemer. Specielt kan det resultere i "
-"opsætninger, der er lette at bryde, og dermed give et falsk indtryk af "
-"sikkerheden. Der er ingen kendte sikkerhedproblemer, men indtil "
-"implementeringen er tilstrækkeligt gennemprøvet, bør denne funktion kun "
-"benyttes i test-øjemed."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Understøttelsen af blokenhedskryptering er stadig eksperimentel, og anses "
+#~ "ikke for at være klar til produktionssystemer. Specielt kan det resultere "
+#~ "i opsætninger, der er lette at bryde, og dermed give et falsk indtryk af "
+#~ "sikkerheden. Der er ingen kendte sikkerhedproblemer, men indtil "
+#~ "implementeringen er tilstrækkeligt gennemprøvet, bør denne funktion kun "
+#~ "benyttes i test-øjemed."

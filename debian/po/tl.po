@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-08-28 13:43+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
@@ -127,8 +127,6 @@ msgstr "Algoritmong pagbuo ng initialization vector para sa partisyong ito:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -289,6 +287,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Mga kinakailangang opsiyon ng encryption ay wala"
@@ -349,6 +348,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Isulat ang mga pagbabago sa mga disk at magsaayos encrypted na volume?"
@@ -363,6 +363,12 @@ msgstr ""
 "Bago maisaayos ang mga encrypted na volume, kailangan maisulat sa disk ang "
 "kasalukuyang pagkaayos ng mga partisyon.  Hindi maaaring ibawi ang mga "
 "pagbabagong ito."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -568,15 +574,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Gumamit ng mahinang passphrase?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -746,25 +753,20 @@ msgstr ""
 "component. Kung piliin ninyong magpatuloy pa rin, maaaring mabigo ang "
 "proseso ng pagluklok."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Talagang gumamit ng encryption sa block device?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Talagang gumamit ng encryption sa block device?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Ang encryption sa block device ay eksperimental pa at hindi pa handa para sa "
-"produksyon. Maaaring magresulta ito sa pagkaayos na madaling masira at "
-"maaaring magdulot ng maling akalang may seguridad. Wala pang kinikilalang "
-"flaw sa encryption, subalit, hanggang sa masusing nai-audit ang "
-"implementasyon, hindi dapat gamitin itong feature na ito maliban sa pag-"
-"testing lamang."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Ang encryption sa block device ay eksperimental pa at hindi pa handa para "
+#~ "sa produksyon. Maaaring magresulta ito sa pagkaayos na madaling masira at "
+#~ "maaaring magdulot ng maling akalang may seguridad. Wala pang kinikilalang "
+#~ "flaw sa encryption, subalit, hanggang sa masusing nai-audit ang "
+#~ "implementasyon, hindi dapat gamitin itong feature na ito maliban sa pag-"
+#~ "testing lamang."

@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-12-10 23:34+0300\n"
 "Last-Translator: Pavel Piatruk <berserker@neolocation.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -128,8 +128,6 @@ msgstr "Алгарытм стварэння вектара ініцыяліза�
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -288,6 +286,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Патрэбныя параметры шыфравання адсутнічаюць"
@@ -348,6 +347,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Ці запісаць змены на дыск і наладзіць шыфраваныя тамы?"
@@ -361,6 +361,12 @@ msgid ""
 msgstr ""
 "Перад тым, як наладжваць шыфраваныя тамы, трэба запісаць актуальную схему "
 "падзелаў на дыск. Гэтыя змены немагчыма будзе скасаваць."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -560,15 +566,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Ужыць слаба абаронены сакрэтны сказ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -738,26 +745,21 @@ msgstr ""
 "Падобна, што памяці не хапае, каб усталяваць дадатковыя крыпта-кампаненты. "
 "Калі Вы працягнеце, працэс усталявання можа скончыцца няўдала."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Сапраўды ўжываць шыфраванне блокавай прылады?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Сапраўды ўжываць шыфраванне блокавай прылады?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Падтрымка шыфравання блокавых прыладаў усё яшчэ эксперыментальная і не "
-"лічыцца прыдатнай да прамысловага выкарыстання. У прыватнасці, такім чынам "
-"можна атрымаць сістэмы, якія ствараюць падманнае пачуццё бяспекі, але "
-"адначасова з'яўляюцца неўстойлівымі да ўзломаў. У самім механізме няма "
-"вядомых памылак шыфравання, але пакуль не скончаная поўная і дасканалая "
-"праверка рэалізацыі, гэтую асаблівасць варта ўжываць выключна ў тэставых "
-"мэтах."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Падтрымка шыфравання блокавых прыладаў усё яшчэ эксперыментальная і не "
+#~ "лічыцца прыдатнай да прамысловага выкарыстання. У прыватнасці, такім "
+#~ "чынам можна атрымаць сістэмы, якія ствараюць падманнае пачуццё бяспекі, "
+#~ "але адначасова з'яўляюцца неўстойлівымі да ўзломаў. У самім механізме "
+#~ "няма вядомых памылак шыфравання, але пакуль не скончаная поўная і "
+#~ "дасканалая праверка рэалізацыі, гэтую асаблівасць варта ўжываць выключна "
+#~ "ў тэставых мэтах."

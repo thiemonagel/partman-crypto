@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ml\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-12-03 15:43+0530\n"
 "Last-Translator: Praveen A <pravi.a@gmail.com>\n"
 "Language-Team: malayalam <smc-discuss@googlegroups.com>\n"
@@ -127,8 +127,6 @@ msgstr "ഈ ഭാഗത്തിനു വേണ്ട ഇനിഷ്യലൈ
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -286,6 +284,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "ആവശ്യമായ എന്ക്രിപ്ഷന്‍ ഉപാധികള്‍ കാണ്മാനില്ല"
@@ -346,6 +345,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "മാറ്റങ്ങള്‍ ഡിസ്കിലേക്ക് എഴുതി എന്ക്രിപ്റ്റഡ് വാള്യമുകള്‍ ക്രമീകരിക്കട്ടെ?"
@@ -359,6 +359,12 @@ msgid ""
 msgstr ""
 "എന്ക്രിപ്റ്റഡ് വാള്യമുകള്‍ ക്രമീകരിക്കുന്നതിനു മുമ്പായി ഇപ്പോഴുള്ള വിഭജന പദ്ധതി ഡിസ്കിലേക്ക് "
 "എഴുതേണ്ടതുണ്ട്. ഈ മാറ്റങ്ങള്‍ തിരിച്ചെടുക്കാന്‍ പറ്റാത്തവയാണ്."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -555,15 +561,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "ദുര്ബലമായ അടയാള വാക്യം ഉപയോഗിക്കണോ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -730,24 +737,19 @@ msgstr ""
 "കൂടുതല്‍ ക്രിപ്റ്റോ ഘടകങ്ങളുടെ ഇന്സ്റ്റലേഷനാവശ്യമായ മെമ്മറി ലഭ്യമല്ലെന്ന് തോന്നുന്നു. എന്നാലും "
 "മുന്നോട്ട് പോകാന്‍ തന്നെയാണ് തീരുമാനമെങ്കില്‍ ഇന്സ്റ്റലേഷന്‍ പ്രക്രിയ പരാജയപ്പെട്ടേക്കാം."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "ബ്ലോക്ക് ഉപകരണം ഉപയോഗിക്കണമെന്നുറപ്പാണോ?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "ബ്ലോക്ക് ഉപകരണം ഉപയോഗിക്കണമെന്നുറപ്പാണോ?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"ബ്ലോക്ക് ഉപകരണത്തിനുള്ള എന്ക്രിപ്ഷന്‍ ഇപ്പോഴും പരീക്ഷണാടിസ്ഥാനത്തിലുള്ളതാണ് എന്നതിനാല്‍ പ്രൊഡക്ഷനു "
-"തയ്യാറായതായി കണക്കാക്കുന്നില്ല. പ്രത്യേകിച്ചും ഇത് പെട്ടെന്ന് തകര്ക്കാവുന്ന ഒരുക്കങ്ങള്ക്ക് "
-"കാരണമായേക്കാം. ഇത് വരെ അറിയാവുന്ന എന്ക്രിപ്ഷന്‍ പിഴവുകളൊന്നുമില്ല, എന്നിരുന്നാലും "
-"ഇംപ്ലിമെന്റേഷന്‍ മുഴുവനായും ഓഡിറ്റ് ചെയ്യുന്നത് വരെ പരിശോധനാവശ്യങ്ങള്ക്കല്ലാതെ ഈ കഴിവ് "
-"ഉപയോഗിക്കരുത്."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "ബ്ലോക്ക് ഉപകരണത്തിനുള്ള എന്ക്രിപ്ഷന്‍ ഇപ്പോഴും പരീക്ഷണാടിസ്ഥാനത്തിലുള്ളതാണ് എന്നതിനാല്‍ പ്രൊഡക്ഷനു "
+#~ "തയ്യാറായതായി കണക്കാക്കുന്നില്ല. പ്രത്യേകിച്ചും ഇത് പെട്ടെന്ന് തകര്ക്കാവുന്ന ഒരുക്കങ്ങള്ക്ക് "
+#~ "കാരണമായേക്കാം. ഇത് വരെ അറിയാവുന്ന എന്ക്രിപ്ഷന്‍ പിഴവുകളൊന്നുമില്ല, എന്നിരുന്നാലും "
+#~ "ഇംപ്ലിമെന്റേഷന്‍ മുഴുവനായും ഓഡിറ്റ് ചെയ്യുന്നത് വരെ പരിശോധനാവശ്യങ്ങള്ക്കല്ലാതെ ഈ കഴിവ് "
+#~ "ഉപയോഗിക്കരുത്."

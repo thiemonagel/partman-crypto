@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-08-27 12:04+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
@@ -119,8 +119,6 @@ msgstr "Algoritmus pro generování inicializačního vektoru pro tuto oblast:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -279,6 +277,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Vyžadované parametry pro šifrování chybí"
@@ -339,6 +338,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Zapsat změny na disk a nastavit šifrované svazky?"
@@ -352,6 +352,12 @@ msgid ""
 msgstr ""
 "Dříve než budete moci nastavit šifrované svazky, musí se aktuální rozdělení "
 "zapsat na disk. Tyto změny nebudete moci vrátit zpět."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -551,15 +557,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Použít slabou přístupovou frázi?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -729,25 +736,20 @@ msgstr ""
 "Zdá se, že nemáte dostatek volné paměti pro instalaci kryptografických "
 "komponent. Budete-li přesto pokračovat, je možné, že instalace selže."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Opravdu použít šifrování blokového zařízení?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Opravdu použít šifrování blokového zařízení?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Podpora pro šifrování blokových zařízení je stále experimentální a "
-"nepovažuje se za vhodnou pro produkční nasazení. Konkrétně to znamená, že "
-"může vyvolat falešný pocit bezpečí, i když vytvořené instalace bezpečné být "
-"nemusí. V samotných šifrovacích algoritmech žádné známé problémy neexistují, "
-"ale dokud někdo neprovede audit nad touto konkrétní implementací, měli byste "
-"ji používat jen pro testovací účely."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Podpora pro šifrování blokových zařízení je stále experimentální a "
+#~ "nepovažuje se za vhodnou pro produkční nasazení. Konkrétně to znamená, že "
+#~ "může vyvolat falešný pocit bezpečí, i když vytvořené instalace bezpečné "
+#~ "být nemusí. V samotných šifrovacích algoritmech žádné známé problémy "
+#~ "neexistují, ale dokud někdo neprovede audit nad touto konkrétní "
+#~ "implementací, měli byste ji používat jen pro testovací účely."

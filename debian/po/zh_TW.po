@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-01 22:24+0800\n"
 "Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
@@ -120,8 +120,6 @@ msgstr "這個分割區的初始向量產生法則："
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -276,6 +274,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "找不到必需的加密選項"
@@ -331,6 +330,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "是否要將這些變更寫入磁碟中並設定加密的 Volume？"
@@ -344,6 +344,12 @@ msgid ""
 msgstr ""
 "必須先將目前的磁碟分割結果寫入磁碟中，然後才能對加密的 Volume 進行設定。這些"
 "變更將無法還原。"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -535,15 +541,16 @@ msgstr "您所輸入的是空的密語，而這是不允許的。請選擇一個
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "是否使用強度薄弱的密語？"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -704,22 +711,17 @@ msgstr ""
 "似乎沒有足夠的記憶體可用來安裝額外的加密元件。如果您決定無論如何都要繼續進"
 "行，安裝程序將會失敗。"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "是否真要使用區塊裝置加密？"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "是否真要使用區塊裝置加密？"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"對於區塊裝置加密目前仍在測試中且尚未足以應用於實務上。特別是它很可能會不斷得"
-"出現問題且在安全上也無法讓人安心。雖然在加密技術上並沒有什麼缺陷，但在經過完"
-"整的測試之前，這些功能不應用於除了測試之外的其它用途。"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "對於區塊裝置加密目前仍在測試中且尚未足以應用於實務上。特別是它很可能會不斷"
+#~ "得出現問題且在安全上也無法讓人安心。雖然在加密技術上並沒有什麼缺陷，但在經"
+#~ "過完整的測試之前，這些功能不應用於除了測試之外的其它用途。"

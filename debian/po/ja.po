@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-08-28 10:29+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
@@ -119,8 +119,6 @@ msgstr "このパーティションのベクタ生成アルゴリズムの初期
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -278,6 +276,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "必要な暗号化オプションが見つかりません"
@@ -338,6 +337,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "ディスクに変更を書き込み、暗号化ボリュームを設定しますか?"
@@ -351,6 +351,12 @@ msgid ""
 msgstr ""
 "暗号化ボリュームを設定する前に、現在のパーティショニング機構をディスクに書き"
 "込む必要があります。これらの変更は元に戻せません。"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -551,15 +557,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "脆弱なパスフレーズを使いますか?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -728,23 +735,18 @@ msgstr ""
 "見えます。それでも進めることを選択した場合、インストール処理が失敗するかもし"
 "れません。"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "本当にブロックデバイス暗号化を使いますか?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "本当にブロックデバイス暗号化を使いますか?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"ブロックデバイス暗号化のサポートはまだ実験的で、商品段階とは見なされていませ"
-"ん。特に、容易に壊れるセットアップに起因して、根拠のない安心を与えます。既知"
-"の暗号化の欠陥はありませんが、実装が完全に監査されるまで、この機能は実験目的"
-"を除けば使うべきではありません。"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "ブロックデバイス暗号化のサポートはまだ実験的で、商品段階とは見なされていま"
+#~ "せん。特に、容易に壊れるセットアップに起因して、根拠のない安心を与えます。"
+#~ "既知の暗号化の欠陥はありませんが、実装が完全に監査されるまで、この機能は実"
+#~ "験目的を除けば使うべきではありません。"

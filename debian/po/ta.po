@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-18 05:21+0530\n"
 "Last-Translator: Damodharan Rajalingam <rdamodharan@gmail.com>\n"
 "Language-Team: Tamil <tamil-DI@yahoogroups.com>\n"
@@ -122,8 +122,6 @@ msgstr "இந்த பகிர்வுக்கான துவக்க ந
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -280,6 +278,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "தேவையான மறைகுறியீட்டு விருப்பத்தேர்வுகளைக் காணவில்லை"
@@ -337,6 +336,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
@@ -351,6 +351,12 @@ msgid ""
 msgstr ""
 "மறைகுறியாக்கப்பட்ட தொகுதிகளைொகுதி மேலாளரை வடிவமைக்கும் முன்னால் தற்போதய பகிர்வு "
 "உருவமைப்பு வன் வட்டுக்கு எழுதப்பட வேண்டும். இந்த மாறுதல்களை மீட்க இயலாது."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -551,15 +557,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "வலுவில்லாத கடவுச்சொல்லை பயன்படுத்தவா?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -722,24 +729,19 @@ msgstr ""
 "கூடுதல் மறைகுரியீட்டு பகுதிகளை நிறுவ தேவையான நினைவகம் இல்லை. நீங்கள் மேலும் தொடர "
 "விரும்பினால் நிறுவல் தோல்வியடையக் கூடும்."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "தொகுதி சாதன மறைகுறியீட்டை பயன்படுத்தவா?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "தொகுதி சாதன மறைகுறியீட்டை பயன்படுத்தவா?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"தொகுதி சாதன மறைகுறியீடு இன்னும் ஆராச்சி நிலையிலே உள்ளது மற்றும் இன்னும் முழு "
-"பயன்பாட்டிற்கு தயாராகவில்லை. குறிப்பாக எளிதில் உடைக்ககூடிய பாதுகாப்பு நிறுவலில் "
-"முடியலாம். மேலும் தவறான பாதுகாப்பு எண்ணத்தை உருவாக்கலாம். அறியப்பட்ட மறைகுறியீட்டு "
-"பிழைகள் ஏதும் இல்லை. இருப்பினும் முழுதும் பரிசோதிக்கப்படும் வரையில் இந்த செயல்பாட்டை "
-"சோதனைக்கு மட்டுமே பயன்படுத்த வேண்டும்."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "தொகுதி சாதன மறைகுறியீடு இன்னும் ஆராச்சி நிலையிலே உள்ளது மற்றும் இன்னும் முழு "
+#~ "பயன்பாட்டிற்கு தயாராகவில்லை. குறிப்பாக எளிதில் உடைக்ககூடிய பாதுகாப்பு நிறுவலில் "
+#~ "முடியலாம். மேலும் தவறான பாதுகாப்பு எண்ணத்தை உருவாக்கலாம். அறியப்பட்ட மறைகுறியீட்டு "
+#~ "பிழைகள் ஏதும் இல்லை. இருப்பினும் முழுதும் பரிசோதிக்கப்படும் வரையில் இந்த செயல்பாட்டை "
+#~ "சோதனைக்கு மட்டுமே பயன்படுத்த வேண்டும்."

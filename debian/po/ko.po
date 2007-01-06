@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-14 12:11-0400\n"
 "Last-Translator:  Sunjae park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
@@ -120,8 +120,6 @@ msgstr "이 파티션에 적용할 초기화 벡터(IV) 생성 알고리즘: "
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -280,6 +278,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "필요한 암호화 옵션이 불충분합니다."
@@ -339,6 +338,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "바뀐 점을 디스크에 쓰고 암호화를 적용한 파티션을 설정하시겠습니까?"
@@ -352,6 +352,12 @@ msgid ""
 msgstr ""
 "암호화된 볼륨을 설정하기 전에, 현재 파티션 구성을 디스크에 써야 합니다.  한"
 "번 쓰면 되돌릴 수 없습니다."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -546,15 +552,16 @@ msgstr "패스프레이즈에 아무것도 입력하지 않으셨습니다. 다�
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "약한 패스프레이즈라도 사용하시겠습니까?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -718,24 +725,19 @@ msgstr ""
 "추가적인 암호화 구성요소를 설치하는데 필요한 메모리가 부족한 것 같습니다. 그"
 "래도 계속 진행할 경우, 설치 작업이 실패할 수 있습니다."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "블록 장치 암호화를 사용합니까?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "블록 장치 암호화를 사용합니까?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"블록 장치를 암호화하는 기능은 아직 시험단계에 있으며 현장에서 사용하기에는 아"
-"직 적합하지 못합니다. 특히 이 기능을 잘못 사용하면 침입하기 쉬운 시스템이 되"
-"므로 보안을 거짓으로 보장받는 결과를 초래할 수 있습니다. 특별히 알려진 암호화"
-"상 문제점은 없지만, 구현 결과가 충분히 검증받기 전에는 테스트 용도로만 사용하"
-"시기 바랍니다."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "블록 장치를 암호화하는 기능은 아직 시험단계에 있으며 현장에서 사용하기에"
+#~ "는 아직 적합하지 못합니다. 특히 이 기능을 잘못 사용하면 침입하기 쉬운 시스"
+#~ "템이 되므로 보안을 거짓으로 보장받는 결과를 초래할 수 있습니다. 특별히 알"
+#~ "려진 암호화상 문제점은 없지만, 구현 결과가 충분히 검증받기 전에는 테스트 "
+#~ "용도로만 사용하시기 바랍니다."

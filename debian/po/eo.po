@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eo\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-31 14:06+0100\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
@@ -122,8 +122,6 @@ msgstr "Creada algoritmo de pravolarizada vektoro por ĉi tiu diskpartigo:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -282,6 +280,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Necesaj ĉifraj elektoj mankas"
@@ -342,6 +341,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifrajn datumportilojn?"
@@ -355,6 +355,12 @@ msgid ""
 msgstr ""
 "Antaŭ ol akomodi la ĉifran datumportilon, nuntempa diskaranĝo endas skribota "
 "sur disko. Tiuj ŝanĝoj estas definitivaj."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -552,15 +558,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Ĉu vi vere uzu tian malfortan pasfrazon?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -728,24 +735,19 @@ msgstr ""
 "La disponebla memoro ŝajnas esti malsufiĉa por instali pluajn ŝifrajn "
 "konsistigaĵojn. Malgraŭe se vi elektas daŭri, la instalado eble fiaskos."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Ĉu vi vere uzu la blokaparatan ĉifradon?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Ĉu vi vere uzu la blokaparatan ĉifradon?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"La administrado de blokaparata ĉifrado estas ankoraŭ eksperimenta kaj ne "
-"industrie uzebla. Aparte, ĝi povas alvenigi al facile atakema akomodo kaj "
-"doni malveran sekurecan impreson. Nuntempe, ne okazas konata maloportunaĵo ; "
-"tamen tiam, kiam la utiligado ne podetale estis analizita tiu funkcio ne "
-"devos esti uzita krom por eksperimentaj okazoj."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "La administrado de blokaparata ĉifrado estas ankoraŭ eksperimenta kaj ne "
+#~ "industrie uzebla. Aparte, ĝi povas alvenigi al facile atakema akomodo kaj "
+#~ "doni malveran sekurecan impreson. Nuntempe, ne okazas konata "
+#~ "maloportunaĵo ; tamen tiam, kiam la utiligado ne podetale estis analizita "
+#~ "tiu funkcio ne devos esti uzita krom por eksperimentaj okazoj."

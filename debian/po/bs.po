@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bs\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-10-31 02:55+0100\n"
 "Last-Translator: Safir Secerovic <sapphire@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
@@ -125,8 +125,6 @@ msgstr "Algoritam generisanja inicijalizacionog vektora za ovu particiju:"
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -286,6 +284,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Nedostaju zahtjevane ekripcijske opcije"
@@ -346,6 +345,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Zapisati izmjene na disk i podesiti enkriptovane particije?"
@@ -359,6 +359,12 @@ msgid ""
 msgstr ""
 "Prije nego enkriptovani diskovi mogu biti podešeni, trenutna particiona šema "
 "se mora zapisati na disk.  Ove promjene se ne mogu poništiti."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -559,15 +565,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Koristiti slabu šifru?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -742,23 +749,19 @@ msgstr ""
 "enkripcionih komponenata. Ako odaberete ići dalje i nastavite, instalacioni "
 "proces bi mogao otkazati."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Zaista koristiti enkripciju blok uređaja?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Zaista koristiti enkripciju blok uređaja?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Podrška za blok uređaje je još uvijek u eksperimentalnoj fazi i ne smatra se "
-"spremnom za produkciju. Naime, može rezultovati u instalacijama koje se lako "
-"kvare i tako daju lažni osjećaj sigurnosti. Nema ekripcionih propusta, "
-"međutim, ova osobina se ne bi trebala koristiti osim u svrhu testiranja."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Podrška za blok uređaje je još uvijek u eksperimentalnoj fazi i ne smatra "
+#~ "se spremnom za produkciju. Naime, može rezultovati u instalacijama koje "
+#~ "se lako kvare i tako daju lažni osjećaj sigurnosti. Nema ekripcionih "
+#~ "propusta, međutim, ova osobina se ne bi trebala koristiti osim u svrhu "
+#~ "testiranja."

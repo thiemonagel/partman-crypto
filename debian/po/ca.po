@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer etch\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-11-03 14:57+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -122,8 +122,6 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -285,6 +283,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Manquen opcions de xifratge requerides"
@@ -345,6 +344,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Voleu escriure els canvis al disc i configurar els volums xifrats?"
@@ -358,6 +358,12 @@ msgid ""
 msgstr ""
 "Abans de poder configurar volums xifrats, s'ha d'escriure l'esquema de "
 "particions actual al disc. Aquests canvis no es poden desfer."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -563,15 +569,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Voleu utilitzar una frase de pas feble?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -746,25 +753,21 @@ msgstr ""
 "de xifratge addicionals. Si tot i així decidiu continuar, és possible que el "
 "procés d'instal·lació falle."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Esteu segur de voler emprar xifratge del dispositiu de blocs?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Esteu segur de voler emprar xifratge del dispositiu de blocs?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"La implementació del xifratge dels dispositius de bloc encara és "
-"experimental i no es considera que estiga a punt per a posar-se en "
-"producció. En particular, pot resultar en configuracions que són fàcils de "
-"trencar, donant una falsa sensació de seguretat. No hi ha cap problema amb "
-"el xifratge, tot i així, fins que la implementació s'audite amb deteniment, "
-"aquesta funcionalitat no s'hauria d'utilitzar excepte per a fer proves."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "La implementació del xifratge dels dispositius de bloc encara és "
+#~ "experimental i no es considera que estiga a punt per a posar-se en "
+#~ "producció. En particular, pot resultar en configuracions que són fàcils "
+#~ "de trencar, donant una falsa sensació de seguretat. No hi ha cap problema "
+#~ "amb el xifratge, tot i així, fins que la implementació s'audite amb "
+#~ "deteniment, aquesta funcionalitat no s'hauria d'utilitzar excepte per a "
+#~ "fer proves."

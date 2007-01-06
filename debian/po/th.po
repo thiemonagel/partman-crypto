@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-09-02 12:43+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <l10n@opentle.org>\n"
@@ -119,8 +119,6 @@ msgstr "อัลกอริทึมสำหรับสร้างเวก
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -276,6 +274,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "ตัวเลือกการเข้ารหัสลับที่ต้องใช้ขาดหายไป"
@@ -334,6 +333,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "จะบันทึกการเปลี่ยนแปลงทั้งหมดลงดิสก์ แล้วตั้งค่าโวลุมเข้ารหัสลับหรือไม่?"
@@ -347,6 +347,12 @@ msgid ""
 msgstr ""
 "ก่อนที่จะตั้งค่าโวลุมเข้ารหัสลับได้ จะต้องบันทึกการแบ่งพาร์ทิชันปัจจุบันลงในดิสก์เสียก่อน "
 "ซึ่งการเปลี่ยนแปลงเหล่านี้ ไม่สามารถเรียกคืนได้อีก"
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -538,15 +544,16 @@ msgstr "คุณได้ป้อนวลีรหัสผ่านที่
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "จะใช้วลีรหัสผ่านหละหลวมจริงหรือ?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -706,24 +713,19 @@ msgstr ""
 "ดูเหมือนหน่วยความจำจะไม่พอสำหรับติดตั้งองค์ประกอบเข้ารหัสลับเพิ่มเติม ถ้าคุณเลือกที่จะดำเนินการต่อ "
 "กระบวนการติดตั้งอาจล้มเหลวได้"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "จะใช้การเข้ารหัสลับกับอุปกรณ์แบบบล็อคจริงๆ หรือ?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "จะใช้การเข้ารหัสลับกับอุปกรณ์แบบบล็อคจริงๆ หรือ?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"การสนับสนุนการเข้ารหัสลับสำหรับอุปกรณ์แบบบล็อค ยังอยู่ในขั้นทดลอง "
-"และยังไม่ถือว่าพร้อมสำหรับการใช้งานจริง โดยเฉพาะอย่างยิ่ง จะทำให้ได้ระบบที่เจาะง่าย "
-"และทำให้รู้สึกถึงความหละหลวมของระบบรักษาความปลอดภัย แต่อย่างไรก็ดี "
-"ยังไม่พบข้อบกพร่องของการเข้ารหัสลับ จนกว่าการทำงานทั้งหมดจะถูกตรวจสอบอย่างถี่ถ้วน "
-"จึงไม่ควรใช้ความสามารถนี้ นอกเสียจากจะเป็นการทดสอบเท่านั้น"
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "การสนับสนุนการเข้ารหัสลับสำหรับอุปกรณ์แบบบล็อค ยังอยู่ในขั้นทดลอง "
+#~ "และยังไม่ถือว่าพร้อมสำหรับการใช้งานจริง โดยเฉพาะอย่างยิ่ง จะทำให้ได้ระบบที่เจาะง่าย "
+#~ "และทำให้รู้สึกถึงความหละหลวมของระบบรักษาความปลอดภัย แต่อย่างไรก็ดี "
+#~ "ยังไม่พบข้อบกพร่องของการเข้ารหัสลับ จนกว่าการทำงานทั้งหมดจะถูกตรวจสอบอย่างถี่ถ้วน "
+#~ "จึงไม่ควรใช้ความสามารถนี้ นอกเสียจากจะเป็นการทดสอบเท่านั้น"

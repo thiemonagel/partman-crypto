@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2006-10-22 22:52+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-06 19:08+0100\n"
 "PO-Revision-Date: 2006-11-20 10:50+0200\n"
 "Last-Translator: Damyan Ivanov <dam@modsoftsys.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -124,8 +124,6 @@ msgstr "Алгоритъм за създаване на инициализаци
 
 #. Type: select
 #. Description
-#. An initialization vector is the initial randomness used to seed
-#. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
@@ -285,6 +283,7 @@ msgstr ""
 
 #. Type: error
 #. Description
+#. flag:translate!:3
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Липсват изисквани опции за шифриране"
@@ -345,6 +344,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:translate!:4
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Записване на промените на диска и настройване на шифрирани томове?"
@@ -359,6 +359,12 @@ msgstr ""
 "Преди шифрираните томове да може да бъдат настроени, текущата схема на "
 "разделянето трябва да бъде записана на диска. Тези промени не могат да бъдат "
 "отменени по-късно."
+
+#. Type: boolean
+#. Description
+#: ../partman-crypto.templates:199
+msgid "${ITEMS}"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -559,15 +565,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#. flag:comment:2
+#. Translators: we unfortunately cannot use plural forms here
+#. So, you are suggested to use the plural form adapted for
+#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Използване на празна парола?"
 
 #. Type: boolean
 #. Description
-#. Translators: we unfortunately cannot use plural forms here
-#. So, you are suggested to use the plural form adapted for
-#. MINIMUM=8, which is the current hardcoded value
 #: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
@@ -741,26 +748,21 @@ msgstr ""
 "допълнителните компоненти, осигуряващи функциите за шифриране. Ако "
 "продължите въпреки това, процесът на инсталиране може да не завърши успешно."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid "Really use block device encryption?"
-msgstr "Да се използва ли шифриране на ниво блокови устройства?"
+#~ msgid "Really use block device encryption?"
+#~ msgstr "Да се използва ли шифриране на ниво блокови устройства?"
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:381
-msgid ""
-"The support for block device encryption is still experimental and not "
-"considered ready for production. In particular it may result in setups that "
-"are easy to break and so give a false sense of security. There are no known "
-"encryption flaws, however, until the implementation is thoroughly audited, "
-"this feature should not be used except for testing purposes."
-msgstr ""
-"Поддръжката на шифриране на ниво блокови устройства е все още в "
-"експериментален стадий и не се смята за готова за използване в индустриални "
-"системи. В частност, използването ѝ може да доведе то системи, чието "
-"шифриране е лесно за пробиване, като по този начин дава лъжливо чувство за "
-"сигурност. Към момента не са известни слабости в шифрирането, но докато "
-"реализацията не премине разширено тестване, използването ѝ не се препоръчва, "
-"освен за тестови цели."
+#~ msgid ""
+#~ "The support for block device encryption is still experimental and not "
+#~ "considered ready for production. In particular it may result in setups "
+#~ "that are easy to break and so give a false sense of security. There are "
+#~ "no known encryption flaws, however, until the implementation is "
+#~ "thoroughly audited, this feature should not be used except for testing "
+#~ "purposes."
+#~ msgstr ""
+#~ "Поддръжката на шифриране на ниво блокови устройства е все още в "
+#~ "експериментален стадий и не се смята за готова за използване в "
+#~ "индустриални системи. В частност, използването ѝ може да доведе то "
+#~ "системи, чието шифриране е лесно за пробиване, като по този начин дава "
+#~ "лъжливо чувство за сигурност. Към момента не са известни слабости в "
+#~ "шифрирането, но докато реализацията не премине разширено тестване, "
+#~ "използването ѝ не се препоръчва, освен за тестови цели."

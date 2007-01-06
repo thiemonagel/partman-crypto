@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wo[1]\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 19:46+0100\n"
+"POT-Creation-Date: 2007-01-06 22:48+0100\n"
 "PO-Revision-Date: 2006-10-18 00:27+0000\n"
 "Last-Translator: Mouhamadou Mamoune Mbacke <mouhamadoumamoune@gmail.com>\n"
 "Language-Team: Wolof <debian-boot@lists.debian.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 #. Description
 #. File system name
 #. Keep translations short enough
-#: ../partman-crypto.templates:1001
+#: ../partman-crypto.templates:5
 msgid "physical volume for encryption"
 msgstr "wolim u fisik biñuy kiripte"
 
@@ -64,7 +64,7 @@ msgstr "wolim u fisik biñuy kiripte"
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
-#: ../partman-crypto.templates:2001
+#: ../partman-crypto.templates:11
 msgid "crypto"
 msgstr "crypto"
 
@@ -73,7 +73,7 @@ msgstr "crypto"
 #. This is related to "encryption method"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
-#: ../partman-crypto.templates:3001
+#: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
 msgstr "Loopback (loop-AES)"
 
@@ -82,7 +82,7 @@ msgstr "Loopback (loop-AES)"
 #. This is related to "encryption method"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
-#: ../partman-crypto.templates:4001
+#: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
 msgstr "Device-mapper (dm-crypt)"
 
@@ -90,46 +90,46 @@ msgstr "Device-mapper (dm-crypt)"
 #. Description
 #. This is related to "encryption method"
 #. Encryption type for a file system
-#: ../partman-crypto.templates:6001
+#: ../partman-crypto.templates:35
 msgid "not active"
 msgstr "doxul"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:7001
+#: ../partman-crypto.templates:40
 msgid "Encryption method:"
 msgstr "Yoonu kiripte bi:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:8001
+#: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
 msgstr "Yoonu Kiripte bu bii partisoŋ:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:9001
+#: ../partman-crypto.templates:50
 msgid "Encryption:"
 msgstr "Kiripte:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:10001
+#: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
 msgstr "Kiripte bu bii partisoŋ:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:11001
+#: ../partman-crypto.templates:60
 msgid "Key size:"
 msgstr "Rëyaay u caabi ji:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:12001
+#: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
 msgstr "Rëyaay u caabi bu bii partisoŋ:"
 
@@ -138,7 +138,7 @@ msgstr "Rëyaay u caabi bu bii partisoŋ:"
 #. An initialization vector is the initial value used to seed
 #. the encryption algorithm
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:13001
+#: ../partman-crypto.templates:72
 msgid "IV algorithm:"
 msgstr "Algoritm IV :"
 
@@ -146,7 +146,7 @@ msgstr "Algoritm IV :"
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:14001
+#: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
 msgstr "Algoritm bu sos wektóor (vecteur) bu tambule bu bii partisoŋ:"
 
@@ -154,7 +154,7 @@ msgstr "Algoritm bu sos wektóor (vecteur) bu tambule bu bii partisoŋ:"
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:14001
+#: ../partman-crypto.templates:79
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
 "sector. This choice influences the encryption security. Normally, there is "
@@ -170,32 +170,32 @@ msgstr ""
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:15001
+#: ../partman-crypto.templates:88
 msgid "Encryption key:"
 msgstr "Caabi bu kiripte bi:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:16001
+#: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
 msgstr "Fasoŋ u kiripte bu bii partisoŋ:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:17001
+#: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
 msgstr "hash bu caabi bu kiripte bi:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:18001
+#: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
 msgstr "Fasoŋu hash bu caabi kiripte bu bii partisoŋ:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:18001
+#: ../partman-crypto.templates:103
 msgid ""
 "The encryption key is derived from the passphrase by applying a one-way hash "
 "function to it. Normally, there is no reason to change this from the "
@@ -211,37 +211,37 @@ msgstr ""
 #. Description
 #. This shows up in a screen summarizing options and will be followed
 #. by "yes" or "no"
-#: ../partman-crypto.templates:19001
+#: ../partman-crypto.templates:113
 msgid "Erase data:"
 msgstr "Fara done yi:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:20001
+#: ../partman-crypto.templates:117
 msgid "no"
 msgstr "déet"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:21001
+#: ../partman-crypto.templates:121
 msgid "yes"
 msgstr "waaw"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:22001
+#: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
 msgstr "Far  done yi nekk ci bii partisoŋ"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:23001
+#: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
 msgstr "Ndax wóorna nu far done yi ci ${DEVICE}?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:23001
+#: ../partman-crypto.templates:130
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
 "be recovered after this step has completed. This is the last opportunity to "
@@ -253,19 +253,19 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:24001
+#: ../partman-crypto.templates:137
 msgid "Erasing data on ${DEVICE}"
 msgstr "Mingiy far done yi ci ${DEVICE}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:25001
+#: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
 msgstr "Far done yi ci ${DEVICE} antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:25001
+#: ../partman-crypto.templates:141
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
@@ -274,37 +274,37 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:26001
+#: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
 msgstr "Mi ngi komfigure kiripte bi..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:27001
+#: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
 msgstr "Komfigure wolim yiñu kiripte"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:28001
+#: ../partman-crypto.templates:155
 msgid "No partitions to encrypt"
 msgstr "Amul benn partisoŋ bu nuy kiripte"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:28001
+#: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
 msgstr "Tanneesul benn partisoŋ ngir kiripte ko."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:29001
+#: ../partman-crypto.templates:160
 msgid "Required programs missing"
 msgstr "Amna porogaraamu yu nu soxla yu fi nekkul"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:29001
+#: ../partman-crypto.templates:160
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
@@ -314,13 +314,13 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:30001
+#: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
 msgstr "Amna ay tann u kiripte yufi maaŋki"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:30001
+#: ../partman-crypto.templates:167
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -333,26 +333,26 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:31001
+#: ../partman-crypto.templates:178
 msgid "missing"
 msgstr "yu maaŋki"
 
 #. Type: text
 #. Description
 #. What is "in use" is a partition
-#: ../partman-crypto.templates:32001
+#: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
 msgstr "jëfandikoo muy wolim fisik bu wolim buñu kiripte bii di ${DEV}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:33001
+#: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
 msgstr "Istalaasioŋ u paket u kiripte bi antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:33001
+#: ../partman-crypto.templates:187
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -362,7 +362,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:33001
+#: ../partman-crypto.templates:187
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -374,13 +374,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:34001
+#: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Ndax nu bind coppat yi ca disk ba ta komfigure wolim yiñu kiripte?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:34001
+#: ../partman-crypto.templates:199
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -390,9 +390,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
+#: ../partman-crypto.templates:214
+msgid "Keep current partition layout and configure encrypted volumes?"
+msgstr "Ndax nu tëye tëraliin u partisoŋ bii ta komfigure wolim yiñu kiripte?"
+
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:34001 ../partman-crypto.templates:35001
+#: ../partman-crypto.templates:214
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -403,39 +407,33 @@ msgstr ""
 "wolim yiñu kiripte deesuca man a soppiwaat dara. Seetal bubaax baxam palaŋ "
 "(eskeem) bu partisoŋ bii ne ci disk yi neexna la bala ngay jall."
 
-#. Type: boolean
-#. Description
-#: ../partman-crypto.templates:35001
-msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Ndax nu tëye tëraliin u partisoŋ bii ta komfigure wolim yiñu kiripte?"
-
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:36001
+#: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
 msgstr "Komfiguraasioŋ u wolim yiñu kiripte antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:36001
+#: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Ab njuumte amna bi nuy komfigure wolim yiñu kiripte."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:36001
+#: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
 msgstr "Komfiguraasioŋ bi bayyeesna ko."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:37001
+#: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
 msgstr "Tambule wolimu biñu kiripte antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:37001
+#: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Ab njuumte amna bi nuy sampu wolim yiñu kiripte."
 
@@ -445,7 +443,7 @@ msgstr "Ab njuumte amna bi nuy sampu wolim yiñu kiripte."
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:38001
+#: ../partman-crypto.templates:238
 msgid "Passphrase"
 msgstr "Waxjall"
 
@@ -455,7 +453,7 @@ msgstr "Waxjall"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:39001
+#: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
 msgstr "Fiise bu caabi (GnuPG)"
 
@@ -465,25 +463,25 @@ msgstr "Fiise bu caabi (GnuPG)"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:40001
+#: ../partman-crypto.templates:254
 msgid "Random key"
 msgstr "Caabi tandale"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:41001
+#: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
 msgstr "Dajnañu barab u weccoonte (swap) buñu kiriptewul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:41001
+#: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
 msgstr "Dajnañu fi ab barab u weccoonte (swap) buñu kiriptewul."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:41001
+#: ../partman-crypto.templates:258
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -495,7 +493,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:41001
+#: ../partman-crypto.templates:258
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -507,19 +505,19 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:42001
+#: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
 msgstr "Waxjall bu kiripte bi:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:42001
+#: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Da nga soxlaa tann ab waxjall ngir man a kiripte ${DEVICE}."
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:42001
+#: ../partman-crypto.templates:271
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -532,7 +530,7 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:42001
+#: ../partman-crypto.templates:271
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -543,13 +541,13 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:43001
+#: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
 msgstr "Dugalaatal waxjall bi ngir wóorlu:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:43001
+#: ../partman-crypto.templates:285
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -557,25 +555,25 @@ msgstr "Defaatal benn waxjall bi ngir wóorlu ne amul njuumte."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:44001
+#: ../partman-crypto.templates:291
 msgid "Passphrase input error"
 msgstr "Njuumte ci dugal waxjall bi"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:44001
+#: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Ñaari waxjall yi nga def bokkuñu. Jéematal baneen yoon."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:45001
+#: ../partman-crypto.templates:296
 msgid "Empty passphrase"
 msgstr "Waxjall bu amul dara"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:45001
+#: ../partman-crypto.templates:296
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -585,7 +583,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:46001
+#: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
 msgstr "Ndax nu jëfandikoo waxjall bu néew doole?"
 
@@ -594,7 +592,7 @@ msgstr "Ndax nu jëfandikoo waxjall bu néew doole?"
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:46001
+#: ../partman-crypto.templates:307
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -605,19 +603,19 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:47001
+#: ../partman-crypto.templates:313
 msgid "Enter random characters"
 msgstr "Jabbutul tappe ay karakteer"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:47001
+#: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Caabi kiripte bu ${DEVICE} migni nii ñuy sos."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:47001
+#: ../partman-crypto.templates:313
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -629,30 +627,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
 msgstr "Sos fiise bu caabi ji antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
 msgstr "Ab njuumte amna bi nuy sos fiise jaabi ji."
 
 #. Type: error
 #. Description
-#. Type: error
-#. Description
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
-msgid "Encryption configuration failure"
-msgstr "Komfiguraasioŋ u kiripte bi antuwul"
-
-#. Type: error
-#. Description
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:327
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -663,7 +650,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:327
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -672,7 +659,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:337
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -684,13 +671,19 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
 msgstr "Da ngaa wara delluwaat gannaaw, daldi sos abi partisoŋ bu /boot."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:346
+msgid "Encryption configuration failure"
+msgstr "Komfiguraasioŋ u kiripte bi antuwul"
+
+#. Type: error
+#. Description
+#: ../partman-crypto.templates:346
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the bootloader would be unable to "
@@ -703,7 +696,7 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:346
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -713,13 +706,13 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
 msgstr "Ndax wóorna la ne bëgg ngaa jëfandikoo caabi jabbutu?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:358
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -729,7 +722,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:358
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -739,25 +732,25 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
 msgstr "Sëf kompóosaŋ yu cryto antuwul"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
 msgstr "Ab njuumte amna ci bi nuy jéema sippi yaneen komposaŋ yu crypto."
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr "Ndax ñu wéy ci istale komposaŋ yu crypto, doonte sax memwaar bi doyul?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:373
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "

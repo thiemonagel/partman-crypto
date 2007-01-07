@@ -658,7 +658,7 @@ msgstr "Šifravimo konfigūravimo nesėkmė"
 #: ../partman-crypto.templates:346
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
-"partition. This is not possible because the bootloader would be unable to "
+"partition. This is not possible because the boot loader would be unable to "
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""

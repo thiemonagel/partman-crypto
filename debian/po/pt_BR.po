@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-01-15 03:14-0200\n"
+"PO-Revision-Date: 2007-01-20 02:07-0200\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@cathedrallabs.org>\n"
 "Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -64,13 +64,13 @@ msgstr "não ativo"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:40
 msgid "Encryption method:"
-msgstr "Método de criptografia :"
+msgstr "Método de criptografia:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr "Método de criptografia para esta partição :"
+msgstr "Método de criptografia para esta partição:"
 
 #. Type: text
 #. Description
@@ -90,13 +90,13 @@ msgstr "Criptografia para esta partição:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Tamanho da chave :"
+msgstr "Tamanho da chave:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "Tamanho da chave para esta partição :"
+msgstr "Tamanho da chave para esta partição:"
 
 #. Type: text
 #. Description
@@ -105,7 +105,7 @@ msgstr "Tamanho da chave para esta partição :"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr "Algoritmo IV :"
+msgstr "Algoritmo IV:"
 
 #. Type: select
 #. Description
@@ -113,7 +113,7 @@ msgstr "Algoritmo IV :"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Algoritmo de geração de inicialização de vetores para esta partição :"
+msgstr "Algoritmo de geração de inicialização de vetores para esta partição:"
 
 #. Type: select
 #. Description
@@ -137,26 +137,26 @@ msgstr ""
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "Chave criptográfica :"
+msgstr "Chave criptográfica:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Tipo de chave criptográfica para esta partição :"
+msgstr "Tipo de chave criptográfica para esta partição:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Hash de chave criptográfica :"
+msgstr "Hash de chave criptográfica:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipo de hash de chave criptográfica para esta partição :"
+msgstr "Tipo de hash de chave criptográfica para esta partição:"
 
 #. Type: select
 #. Description
@@ -179,7 +179,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr "Apagar dados :"
+msgstr "Apagar dados:"
 
 #. Type: text
 #. Description
@@ -203,7 +203,7 @@ msgstr "Apagar dados nesta partição"
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Realmente apagar os dados em ${DEVICE} ?"
+msgstr "Realmente apagar os dados em ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -243,7 +243,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Configurando criptografia ..."
+msgstr "Configurando criptografia..."
 
 #. Type: text
 #. Description
@@ -343,7 +343,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Gravar as mudanças no disco e configurar volumes criptografados ?"
+msgstr "Gravar as mudanças no disco e configurar volumes criptografados?"
 
 #. Type: boolean
 #. Description
@@ -361,8 +361,7 @@ msgstr ""
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Manter o layout de particionamento atual e configurar volumes "
-"criptografados ?"
+"Manter o layout de particionamento atual e configurar volumes criptografados?"
 
 #. Type: boolean
 #. Description
@@ -480,7 +479,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "Passphrase criptográfico :"
+msgstr "Passphrase criptográfico:"
 
 #. Type: password
 #. Description
@@ -518,7 +517,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "Informa a passphrase novamente para verificação :"
+msgstr "Informa a passphrase novamente para verificação:"
 
 #. Type: password
 #. Description
@@ -564,7 +563,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "Utilizar passphrase fraca ?"
+msgstr "Utilizar passphrase fraca?"
 
 #. Type: boolean
 #. Description
@@ -602,7 +601,7 @@ msgid ""
 msgstr ""
 "Você pode ajudar a acelerar o processo digitando caracteres aleatórios no "
 "teclado ou simplesmente esperar até que dados o bastante sejam coletados. "
-"(NOTA : isto pode demorar)"
+"(NOTA: isto pode demorar)"
 
 #. Type: error
 #. Description
@@ -690,7 +689,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Você têm certeza que deseja utilizar uma chave aleatória ?"
+msgstr "Você têm certeza que deseja utilizar uma chave aleatória?"
 
 #. Type: boolean
 #. Description
@@ -733,7 +732,7 @@ msgstr ""
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Continuar a instalar os componentes de criptografia mesmo com memória "
-"insuficiente ?"
+"insuficiente?"
 
 #. Type: boolean
 #. Description

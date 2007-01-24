@@ -9,13 +9,13 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Samuel Gimeno <sgimeno@gmail.com>, 2005.
-# Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005-2006.
+# Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005-2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2007-01-04 11:49+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-01-24 22:48+0100\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgstr "ĉifro"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:18
 msgid "Loopback (loop-AES)"
-msgstr "Bukliru ('loop-AES')"
+msgstr "Buklado ('loop-AES')"
 
 #. Type: text
 #. Description
@@ -118,7 +118,7 @@ msgstr "'IV'-algoritmo:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Creada algoritmo de pravolarizada vektoro por ĉi tiu diskpartigo:"
+msgstr "Kreado algoritma de vektora pravalorado por ĉi tiu diskpartigo:"
 
 #. Type: select
 #. Description
@@ -131,9 +131,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Multaj algoritmoj povas esti uzitaj por derivi la komencivalorizada vektoro "
-"de ĉiuj sektoroj. Tiu elekto influas la ĉifradon sekurecon. Kutime, estas ne "
-"utila de ŝanĝi la preskriban valoron, krom por gardi akordigeblan kun "
+"Multaj algoritmoj povas esti uzitaj por derivi la vektoran komencvaloradon "
+"de ĉiuj sektoroj. Tiu elekto influas la ĉifradan sekurecon. Kutime, ne "
+"utilas ŝanĝi la preskriban valoron, krom por gardi akordigeblecon kun "
 "malnovaj sistemoj."
 
 #. Type: text
@@ -154,7 +154,7 @@ msgstr "Ĉifra ŝlosila tipo por ĉi tiu diskpartigo:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Haketa ĉifrada ŝlosilo:"
+msgstr "Hakado de la ĉifrada ŝlosilo:"
 
 #. Type: select
 #. Description
@@ -171,9 +171,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"La hakĉifra ŝlosilo estas derivita de la pasfrazo per apliki al ĝi "
-"soladirektan hakfunktion. Kutime, estas ne utila de ŝanĝi la preskriban "
-"valoron. Plue, maltaŭga ŝanĝo povos malpliigi la ĉifran sekurecon."
+"La hakĉifra ŝlosilo estas derivita de la pasfrazo per aplikado al ĝi de "
+"unudirekta hakfunkcio. Kutime, ne utilas ŝanĝi la preskribitan valoron. "
+"Plie, maltaŭga ŝanĝo povos malpliigi la ĉifran sekurecon."
 
 #. Type: text
 #. Description
@@ -216,7 +216,7 @@ msgid ""
 "abort the erase."
 msgstr ""
 "La '${DEVICE}'-datumoj estos superskribitaj per hazardaj datumoj. Tiuj "
-"ŝanĝoj estas definitiva. Tio estas la lasta okazo de aborti la viŝon."
+"ŝanĝoj estas definitivaj. Tio estas la lasta okazo aborti la viŝon."
 
 #. Type: text
 #. Description
@@ -293,8 +293,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"La ĉifraj elektoj por '${DEVICE}'-o estas malkampletaj. Bonvolu reigi "
-"diskpartigadan menuon kaj elekti ĉiujn necesajn elektojn."
+"La ĉifraj elektoj por '${DEVICE}'-o estas malkompletaj. Bonvolu reiri al "
+"diskpartigada menuo kaj elekti ĉiujn necesajn elektojn."
 
 #. Type: text
 #. Description
@@ -325,8 +325,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"La kerna modula '${PACKAGE}'-enpako ne eblis trovita aŭ eraro okazis dum ĝia "
-"instalado."
+"La kernan modulan '${PACKAGE}'-enpakadon ne eblis trovi aŭ eraro okazis dum "
+"ĝia instalado."
 
 #. Type: error
 #. Description
@@ -336,8 +336,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Eble, problemoj okazos dum la ekŝargo kiam la sistemo provos uzi ĉifrajn "
-"diskpartigojn. Tamen, vi povos poste korekti ilin per instalu la necesajn "
+"Eble, problemoj okazos dum la ekŝargo kiam la sistemo provos uzi ĉifritajn "
+"diskpartigojn. Tamen, vi povos poste korekti ilin instalante la necesajn "
 "pakojn."
 
 #. Type: boolean
@@ -353,8 +353,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Antaŭ ol akomodi la ĉifran datumportilon, nuntempa diskaranĝo endas skribota "
-"sur disko. Tiuj ŝanĝoj estas definitivaj."
+"Antaŭ ol akomodi la ĉifritan datumportilon, nuntempan diskaranĝon endas "
+"skribi sur disko. Tiuj ŝanĝoj estas definitivaj."
 
 #. Type: boolean
 #. Description
@@ -372,8 +372,8 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Post la akomodado de la ĉifra datumportilo, neniu plua ŝanĝo en "
-"diskpartigotablo estas permesa sur la diskoj kiuj enhavas ĉifrajn "
+"Post la akomodado de la ĉifrita datumportilo, neniu plua ŝanĝo en "
+"diskpartigotablo estas permesita sur la diskoj kiuj enhavas ĉifrajn "
 "datumpartilojn. Antaŭ ol daŭriĝi, bonvolu kontroli la taŭgontan nuntempan "
 "diskaranĝon."
 
@@ -399,7 +399,7 @@ msgstr "La akomodado fiaskis."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "Pravalorizado de ĉifra datumportilo malsukcesis"
+msgstr "Pravalorizado de ĉifrita datumportilo malsukcesis"
 
 #. Type: error
 #. Description
@@ -441,13 +441,13 @@ msgstr "Aleatora ŝlosilo"
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr "Detektita malĉifra interŝanĝa spaco"
+msgstr "Detektita malĉifrita interŝanĝa spaco"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "Malĉifra interŝanĝa spaco estis detektita."
+msgstr "Malĉifrita interŝanĝa spaco estis detektita."
 
 #. Type: error
 #. Description
@@ -457,9 +457,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Tio estas fatala eraro ĉar iom da esencaj datumoj eblas malĉifre skribitaj "
-"sur disko. Tio lasas iun kun diska uzorajto de akiri parte aŭ tute la "
-"ĉifroŝlosilon aŭ pasfrazon."
+"Tio estas fatala eraro ĉar iom da esencaj datumoj eblas malĉifre skribiĝis "
+"sur disko. Tio lasas iun kun diska uzorajto akiri parte la ĉifroŝlosilon aŭ "
+"tuton, aŭ pasfrazon."
 
 #. Type: error
 #. Description
@@ -469,9 +469,9 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Bonvolu malaktivi la interŝanĝan spacon (ekzemple per la 'swapoff'-ordono) "
-"aŭ akomodi ĉifran interŝanĝan spacon. Poste, reprovu akomodadon de la ĉifraj "
-"datumportiloj. Nun tio programo ĉesos."
+"Bonvolu malaktivigi la interŝanĝan spacon (ekzemple per la 'swapoff'-ordono) "
+"aŭ akomodi ĉifritan interŝanĝan spacon. Poste, reprovu akomodadon de la "
+"ĉifritaj datumportiloj. Nun tio programo ĉesos."
 
 #. Type: password
 #. Description
@@ -494,9 +494,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"La ĉifra fortikeco forte dependas de ĉi tiu pasfrazo. Vi nepre elektu iun "
-"kiu ne estas facile divenebla. Ĝi ne devos kongrui kun devenanta vorto aŭ "
-"frazo el vortaro, aŭ rilata kun vi frazo."
+"La ĉifra fortikeco forte dependas de ĉi tiu pasfrazo. Vi nepre elektu iun, "
+"kiu ne estas facile divenebla. Ĝi ne devos kongrui kun vorto aŭ frazo el "
+"vortaro, aŭ rilata al via frazo."
 
 #. Type: password
 #. Description
@@ -506,8 +506,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Bona pasfrazo prefere enhavas literojn, ciferojn, signojn kaj 20 aŭ pli "
-"signoj da amplekso."
+"Bona pasfrazo prefere enhavos miksaĵon de literoj, ciferoj, signoj. "
+"Pasfrazoj enhavu minimume 20 signojn da amplekso."
 
 #. Type: password
 #. Description
@@ -527,7 +527,7 @@ msgstr "Bonvolu retajpi la saman pasfrazon por kontroli ĝian tajpĝustecon."
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr "Maltajpĝusta pasfrazo"
+msgstr "Maltajpita pasfrazo"
 
 #. Type: error
 #. Description

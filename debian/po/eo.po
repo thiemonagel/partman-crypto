@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-01-24 22:48+0100\n"
+"PO-Revision-Date: 2007-01-30 16:48+0100\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -147,7 +147,7 @@ msgstr "Ĉifrada ŝlosilo:"
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Ĉifra ŝlosila tipo por ĉi tiu diskpartigo:"
+msgstr "Ĉifrita ŝlosila tipo por ĉi tiu diskpartigo:"
 
 #. Type: text
 #. Description
@@ -250,7 +250,7 @@ msgstr "Akomodu ĉifradon..."
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "Akomodu ĉifrajn datumportilojn"
+msgstr "Akomodu ĉifritajn datumportilojn"
 
 #. Type: note
 #. Description
@@ -310,7 +310,7 @@ msgstr "manka"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Uzata kiel datumportilaĵo por ĉifra '${DEV}'-datumportilo"
+msgstr "Uzata kiel datumportilaĵo por ĉifrita '${DEV}'-datumportilo"
 
 #. Type: error
 #. Description
@@ -344,7 +344,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifrajn datumportilojn?"
+msgstr "Skribu ŝanĝojn en diskoj kaj akomodu ĉifritajn datumportilojn?"
 
 #. Type: boolean
 #. Description
@@ -361,7 +361,8 @@ msgstr ""
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉifrajn datumportilojn?"
+"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉ1ifritajn "
+"datumportilojn?"
 
 #. Type: boolean
 #. Description
@@ -373,7 +374,7 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Post la akomodado de la ĉifrita datumportilo, neniu plua ŝanĝo en "
-"diskpartigotablo estas permesita sur la diskoj kiuj enhavas ĉifrajn "
+"diskpartigotablo estas permesita sur la diskoj kiuj enhavas ĉifritajn "
 "datumpartilojn. Antaŭ ol daŭriĝi, bonvolu kontroli la taŭgontan nuntempan "
 "diskaranĝon."
 
@@ -381,13 +382,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "Akomadoj de la ĉifraj datumportilaj malsukcesis"
+msgstr "Akomadoj de la ĉifritaj datumportilaj malsukcesis"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Eraro okazis dum la akomodado de ĉifraj datumportiloj."
+msgstr "Eraro okazis dum la akomodado de ĉifritaj datumportiloj."
 
 #. Type: error
 #. Description
@@ -405,7 +406,7 @@ msgstr "Pravalorizado de ĉifrita datumportilo malsukcesis"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Eraro okazis dum la agordado de ĉifraj datumportiloj."
+msgstr "Eraro okazis dum la agordado de ĉifritaj datumportiloj."
 
 #. Type: text
 #. Description
@@ -554,7 +555,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "Ĉu vi vere uzu tian malfortan pasfrazon?"
+msgstr "Ĉu vere vi uzos tian malfortan pasfrazon?"
 
 #. Type: boolean
 #. Description
@@ -566,8 +567,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Vi tajpis pasfrazon konstitui malpli ol '${MINIMUM}' signoj. Tio ne estas "
-"sufiĉe fortika. Vi devus elekti plifortan pasfrazon."
+"Vi tajpis pasfrazon konstitanta el malpli ol '${MINIMUM}' signoj. Tio ne "
+"estas sufiĉe fortika. Vi devus elekti plifortan pasfrazon."
 
 #. Type: entropy-text
 #. Description
@@ -579,7 +580,7 @@ msgstr "Hazarde klavu"
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "La ĉifroŝlosilo por '${DEVICE}'-o estas nuntempe kreata."
+msgstr "La ĉifroŝlosilo por '${DEVICE}'-o estas nuntempe kreita."
 
 #. Type: entropy-text
 #. Description
@@ -589,8 +590,8 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Vi povas hastigi la procezon per klavi hazardaj datumoj aŭ simple atendi ĝis "
-"sufiĉe datumoj estos kolektitaj (Notu: tio longtempe daŭrus). "
+"Vi povas hastigi la procezon klavante hazardajn datumojn aŭ simple atendante "
+"ĝis kiam sufiĉe datumoj estos kolektitaj (Notu: tio longtempe daŭros). "
 
 #. Type: error
 #. Description
@@ -612,8 +613,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Vi elektis lokotan radikan dosiersistemon en ĉifra diskpartigo. Tiu funkcio "
-"estas maldisponebla kaj daŭrigi malsukcesos la instalon."
+"Vi elektis lokotan radikan dosiersistemon en ĉifrita diskpartigo. Tiu "
+"funkcio estas maldisponebla kaj plu malsukcesos la instaladon."
 
 #. Type: error
 #. Description
@@ -621,7 +622,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"Bonvole retroiru kaj elekti malĉifran diskpartigon por la radika "
+"Bonvolu retroiri kaj elekti malĉifritan diskpartigon por la radika "
 "dosiersistemo."
 
 #. Type: error
@@ -632,9 +633,9 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Vi elektis lokotan radikan dosiersistemon en ĉifra diskpartigo. Tiu funkcio "
-"bezonas apartan '/boot'-diskpartigon kie la kerno kaj la 'initrd'-"
-"memoradiskbildo povas esti deponitaj."
+"Vi elektis lokotan radikan dosiersistemon en ĉifrita diskpartigo. Tiu "
+"funkcio bezonas apartan '/boot'-diskpartigon kie la kerno kaj la 'initrd'-"
+"memora diskbildo povas esti deponitaj."
 
 #. Type: error
 #. Description
@@ -646,7 +647,7 @@ msgstr "Vi nepre retroiru kaj akomodu '/boot'-diskpartigon."
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Ĉifra akomodado malsukcesis"
+msgstr "Ĉifrita akomodado malsukcesis"
 
 #. Type: error
 #. Description
@@ -657,9 +658,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Vi elektis lokotan '/root'-dosiersistemon en ĉifra diskpartigo. Tio ne estas "
-"ebla ĉar la ekŝargilo ne povos ŝargi la kernon kaj la 'initrd'-"
-"memoradiskbildon. Nu daŭrigi malsukcesos la instalon."
+"Vi elektis lokotan '/root'-dosiersistemon en ĉifrita diskpartigo. Tio ne "
+"eblas ĉar la ekŝargilo ne povos ŝargi la kernon kaj la 'initrd'-memoran "
+"diskbildon. Nu daŭrigi malsukcesos la instalon."
 
 #. Type: error
 #. Description
@@ -668,14 +669,14 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Bonvole retroiru kaj elekti malĉifran diskpartigon por la '/boot'-"
+"Bonvolu retroiri kaj elekti malĉifritan diskpartigon por la '/boot'-"
 "dosiersistemo."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Ĉu vi vere uzu hazardan ŝlosilon?"
+msgstr "Ĉu vi vere uzos hazardan ŝlosilon?"
 
 #. Type: boolean
 #. Description
@@ -684,8 +685,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Vi elektis hazardan ŝlosiltipo por '${DEVICE}'-o sed vi petis diskpartigilon "
-"por krei dosiersistemon sur ĝin."
+"Vi elektis hazardan ŝlosiltipon por '${DEVICE}'-o sed vi petis "
+"diskpartigilon por krei dosiersistemon sur ĝin."
 
 #. Type: boolean
 #. Description
@@ -694,28 +695,28 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"La uzado de hazarda ŝlosilo implicas la forviŝotan de diskpartigaj datumoj "
-"en ĉiu starto. Tiu funkciado endas uzita nur per la interŝanĝaj spacoj "
-"('swap'-diskpartigoj)."
+"La uzado de hazarda ŝlosilo implicos la forviŝadon de diskpartigaj datumoj "
+"en ĉiu starto. Tiu funkciado uzendas nur per la interŝanĝaj spacoj ('swap'-"
+"diskpartigoj)."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr "Elŝutado de ŝifraj konsistigaĵoj malsukcesas"
+msgstr "Elŝutado de ĉifritaj konsistigaĵoj malsukcesas"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Eraro okazis dum la elŝultado de pluaj ŝifraj konsistigaĵoj."
+msgstr "Eraro okazis dum la elŝultado de pluaj ĉifritaj konsistigaĵoj."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Ĉu la instalado de ŝifra konsistigaĵo daŭras malgraŭ la nesufiĉa momoro?"
+"Ĉu la instalado de ĉifrita konsistigaĵo daŭras malgraŭ la nesufiĉa momoro?"
 
 #. Type: boolean
 #. Description
@@ -725,5 +726,5 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"La disponebla memoro ŝajnas esti malsufiĉa por instali pluajn ŝifrajn "
-"konsistigaĵojn. Malgraŭe se vi elektas daŭri, la instalado eble fiaskos."
+"La disponebla memoro ŝajnas esti malsufiĉa por instali pluajn ĉifrajn "
+"konsistigaĵojn. Kvankam vi elektas daŭri, la instalado eble fiaskos."

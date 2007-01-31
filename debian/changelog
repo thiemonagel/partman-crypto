@@ -1,9 +1,30 @@
-partman-crypto (19) UNRELEASED; urgency=low
+partman-crypto (19) unstable; urgency=low
 
+  [ Christian Perrier ]
   * Replace "bootloader" by "boot loader" in templates for overall writing style
-    consistency
+    consistency.
 
- -- Christian Perrier <bubulle@debian.org>  Sun,  7 Jan 2007 22:20:59 +0100
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Danish (da.po) by Claus Hindsgaul
+  * Esperanto (eo.po) by Serge Leblanc
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Malayalam (ml.po) by Praveen A
+  * Dutch (nl.po) by Bart Cornelis
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Romanian (ro.po) by Eddy Petrișor
+  * Slovenian (sl.po) by Matej Kovačič
+  * Swedish (sv.po) by Daniel Nylander
+  * Tamil (ta.po) by drtvasudevan
+
+ -- Frans Pop <fjp@debian.org>  Wed, 31 Jan 2007 12:23:23 +0100
 
 partman-crypto (18) unstable; urgency=low
 

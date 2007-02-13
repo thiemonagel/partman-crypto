@@ -7,7 +7,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Jens Seidel <jensseidel@users.sf.net>, 2005, 2006.
+# Jens Seidel <jensseidel@users.sf.net>, 2005, 2006, 2007.
 # Dennis Stampfer <seppy@debian.org>, 2003, 2004, 2005.
 # Alwin Meschede <ameschede@gmx.de>, 2003, 2004.
 # Bastian Blank <waldi@debian.org>, 2003.
@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-04 18:36+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-02-11 21:23+0100\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -647,7 +647,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Sie wählten aus, dass das root-Dateisystem auf einer verschlüsselten "
+"Sie wählten aus, dass das Root-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dieses Merkmal ist nicht verfügbar und ein "
 "Fortfahren würde in einer Installation enden, die nicht benutzt werden kann."
 
@@ -658,7 +658,7 @@ msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
 "Bitte gehen Sie zurück und wählen Sie eine nicht verschlüsselte Partition "
-"für das root-Dateisystem."
+"für das Root-Dateisystem."
 
 #. Type: error
 #. Description
@@ -668,9 +668,9 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Sie wählten aus, dass das root-Dateisystem auf einer verschlüsselten "
+"Sie wählten aus, dass das Root-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dieses Merkmal erfordert eine separate /boot-"
-"Partition auf die der Kernel und das initrd gespeichert werden kann."
+"Partition, auf die der Kernel und das initrd gespeichert werden kann."
 
 #. Type: error
 #. Description

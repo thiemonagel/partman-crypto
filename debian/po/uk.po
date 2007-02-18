@@ -8,13 +8,13 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006.
+# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-12 20:17+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-02-18 18:56+0100\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@debian.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -161,7 +161,7 @@ msgstr "Хеш ключа шифрування:"
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Тип хеша ключа шифрування для цього розділу:"
+msgstr "Тип хешу ключа шифрування для цього розділу:"
 
 #. Type: select
 #. Description
@@ -339,7 +339,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "Після перезавантаження ймовірно виникнуть проблеми коли система буде "
-"намагатися налаштувати зашифровані розіділи. Ви можливо зможете вирішити їх "
+"намагатися налаштувати зашифровані розділи. Ви можливо зможете вирішити їх "
 "встановивши необхідні пакунки пізніше."
 
 #. Type: boolean
@@ -708,7 +708,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr "Невдалося завантажити криптографічні компоненти"
+msgstr "Не вдалося завантажити криптографічні компоненти"
 
 #. Type: error
 #. Description

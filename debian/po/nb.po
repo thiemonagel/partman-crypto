@@ -11,19 +11,19 @@
 # Klaus Ade Johnstad <klaus@skolelinux.no>, 2004.
 # Axel Bojer <axelb@skolelinux.no>, 2004.
 # Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005.
-# Bjørn Steensrud <bjornst@powertech.no>, 2004,2005, 2006.
+# Bjørn Steensrud <bjornst@powertech.no>, 2004,2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-18 16:27+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-03-27 20:15+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #. Type: text
 #. Description
@@ -541,7 +541,7 @@ msgstr "Inndata-feil i passord-strengen"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "De to passord-strengeneene som ble oppgitt er ikke like. Forsøk igjen."
+msgstr "De to passord-strengenene som ble oppgitt er ikke like. Forsøk igjen."
 
 #. Type: error
 #. Description
@@ -599,7 +599,7 @@ msgid ""
 "can take a long time)"
 msgstr ""
 "Du kan gjøre prosessen raskere ved å taste vilkårlige tegn på tastaturet, "
-"eller bare vente til nok slunpdata er blitt samlet inn. (MERK: dette kan ta "
+"eller bare vente til nok slumpdata er blitt samlet inn. (MERK: dette kan ta "
 "lang tid)"
 
 #. Type: error

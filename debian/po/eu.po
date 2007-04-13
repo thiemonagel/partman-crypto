@@ -9,13 +9,13 @@
 # This file is distributed under the same license as debian-installer.
 # Inaki Larranaga Murgoitio 2005
 #
-# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006.
+# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-29 15:35+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-04-13 13:12+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "MIME-Version: 1.0\n"
@@ -98,13 +98,13 @@ msgstr "Partizio honen enkriptazioa:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Gako-tamaina:"
+msgstr "Gako tamaina:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "Partizio honen gako-tamaina:"
+msgstr "Partizio honen gako tamaina:"
 
 #. Type: text
 #. Description
@@ -134,7 +134,7 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Sektore bakiotzaren abio bektorearen arabera algotimo ezberdinak daude. "
+"Sektore bakoitzaren abio bektorearen arabera algotimo ezberdinak daude. "
 "Aukera honek enkriptazio segurtasunean eragiten du. Normalean ez dago "
 "arrazoirik gomendaturiko hobespenak aldatzeko, sistema zaharragoekin "
 "bateragarritasuna ezik."
@@ -220,7 +220,7 @@ msgid ""
 "abort the erase."
 msgstr ""
 "${DEVICE} gailuko datuak ausazko datuekin gainidatziak izango dira. Ezin "
-"izango dira beranduago berreskuratu bein pausu hau amaitu denean. Hau da "
+"izango dira beranduago berreskuratu behin pausu hau amaitu denean. Hau da "
 "azken aukera ezabaketa ekiditeko."
 
 #. Type: text
@@ -255,7 +255,7 @@ msgstr "Enkriptazioa konfiguratzen..."
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "Konfiguratu bolumen-enkriptatuak"
+msgstr "Konfiguratu bolumen enkriptatuak"
 
 #. Type: note
 #. Description
@@ -273,7 +273,7 @@ msgstr "Ez da partiziorik hautatu enkriptatzeko."
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr "Beharrazko programak falta dira"
+msgstr "Beharrezko programak falta dira"
 
 #. Type: note
 #. Description
@@ -315,7 +315,7 @@ msgstr "falta da"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "${DEV} enkriptaturiko bolumerako bolumen fiiskoa bezala erabilia"
+msgstr "${DEV} enkriptatutako bolumerako bolumen fisikoa bezala erabilia"
 
 #. Type: error
 #. Description
@@ -330,7 +330,7 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"${PACKAGE} nukleo modulo paketea ezin da aurkitu edo errore bat gertatu da "
+"${PACKAGE} nukleo modulu paketea ezin da aurkitu edo errore bat gertatu da "
 "instalatzerakoan."
 
 #. Type: error
@@ -358,14 +358,14 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Uneko partizio-eskema diskoan idatzi behar da bolumen-enkriptatuak "
+"Uneko partizio-eskema diskoan idatzi behar da bolumen enkriptatuak "
 "konfiguratu aurretik. Aldaketa horiek ezin dira desegin."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Uneko partizio-diseinua mantendu eta bolumen-enkriptatuak konfiguratu?"
+msgstr "Uneko partizio-diseinua mantendu eta bolumen enkriptatuak konfiguratu?"
 
 #. Type: boolean
 #. Description
@@ -376,8 +376,8 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Bolumen-enkriptatuak konfiguratu ondoren, ezin dira partizioetan aldaketa "
-"gehiagorik egin bolumen-enkriptatuak dituzten diskoen partizioetan. Jarraitu "
+"Bolumen enkriptatuak konfiguratu ondoren, ezin dira partizioetan aldaketa "
+"gehiagorik egin bolumen enkriptatuak dituzten diskoen partizioetan. Jarraitu "
 "aurretik erabaki gustura zauden disko hauetako uneko partizio-eskemarekin."
 
 #. Type: error
@@ -390,7 +390,7 @@ msgstr "Bolumen enkriptatuen konfigurazioak huts egin du"
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Errorea gertatu da bolumen-enkriptatuak konfiguratzean."
+msgstr "Errorea gertatu da bolumen enkriptatuak konfiguratzean."
 
 #. Type: error
 #. Description
@@ -402,13 +402,13 @@ msgstr "Konfigurazioa utzi egin da."
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "Enriptaturiko bolumen abiarazteak huts egin du"
+msgstr "Enkriptaturiko bolumen abiarazteak huts egin du"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Errorea gertatu da bolumen-enkriptatuak konfiguratzean."
+msgstr "Errorea gertatu da bolumen enkriptatuak konfiguratzean."
 
 #. Type: text
 #. Description
@@ -444,7 +444,7 @@ msgstr "Ausazko gakoa"
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr "Seguratusn gabeko swap lekua aurkitu da"
+msgstr "Segurtasun gabeko swap lekua aurkitu da"
 
 #. Type: error
 #. Description
@@ -472,8 +472,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Mesedez ezgaitu swap lekua (adibidez swapoff abiaraziaz) edo enkriptaturiko "
-"swap leku bat konfiguratu eta orduan berriz ezarri enkriptaturiko bolumenak "
+"Mesedez ezgaitu swap lekua (adibidez swapoff abiaraziaz) edo enkriptatutako "
+"swap leku bat konfiguratu eta orduan berriz ezarri enkriptatutako bolumenak "
 "berriz. Programa hau orain itxi egingo da."
 
 #. Type: password
@@ -621,7 +621,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
+"Zuk erro fitxategi sistema enkriptatutako partizio batetan ezartzea aukeratu "
 "duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
 "instalazioa erabil ezin geratzea eragin lezake."
 
@@ -642,7 +642,7 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Zuk erro fitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
+"Zuk erro fitxategi sistema enkriptatutako partizio batetan ezartzea aukeratu "
 "duzu. Aukera honek bereiziriko /boot partizio bat behar du kernel eta initrd "
 "irudia biltegiratzeko."
 
@@ -650,13 +650,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
-msgstr "Atzera egin eta /boot partizio bat konfiguratu ebharko zenuke."
+msgstr "Atzera egin eta /boot partizio bat konfiguratu beharko zenuke."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Enkriptazio-konfigurazioak huts egin du"
+msgstr "Enkriptazio konfigurazioak huts egin du"
 
 #. Type: error
 #. Description
@@ -667,7 +667,7 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Zuk /bootfitxategi sistema enkriptaturiko partizio batetan ezartzea aukeratu "
+"Zuk /bootfitxategi sistema enkriptatutako partizio batetan ezartzea aukeratu "
 "duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
 "instalazioa erabil ezin geratzea eragin lezake."
 

@@ -2,7 +2,7 @@
 
 set -e
 
-PACKAGE=$(dh_listpackages -a)
+# PACKAGE is exported from debian/rules
 partman=debian/${PACKAGE}/lib/partman
 
 install -d $partman/$1

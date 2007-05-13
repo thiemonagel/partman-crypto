@@ -3,12 +3,13 @@ partman-crypto (21) UNRELEASED; urgency=low
   [ Frans Pop ]
   * Move "Use as" option together with raid and lvm. Closes: #414411.
   * Move deletion of SVN directories to install-rc script.
+  * Improve the way install-rc is called.
 
   [ Colin Watson ]
   * Move sanity-checking scripts from finish.d to check.d. Requires
     partman-base 106.
 
- -- Frans Pop <fjp@debian.org>  Sun, 13 May 2007 02:50:43 +0200
+ -- Frans Pop <fjp@debian.org>  Sun, 13 May 2007 04:04:04 +0200
 
 partman-crypto (20) unstable; urgency=low
 

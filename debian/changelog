@@ -1,4 +1,4 @@
-partman-crypto (21) UNRELEASED; urgency=low
+partman-crypto (21) unstable; urgency=low
 
   [ Frans Pop ]
   * Move "Use as" option together with raid and lvm. Closes: #414411.

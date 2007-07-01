@@ -11,13 +11,13 @@
 # Russian L10N Team <debian-l10n-russian@lists.debian.org>, 2004.
 # Yuri Kozlov <yuray@id.ru>, 2004, 2005.
 # Dmitry Beloglazov <dm-guest@alioth.debian.org>, 2005.
-# Yuri Kozlov <kozlov.y@gmail.com>, 2005, 2006.
+# Yuri Kozlov <kozlov.y@gmail.com>, 2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-12-02 13:22+0300\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-07-01 16:16+0400\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -159,13 +159,13 @@ msgstr "Тип ключа шифрования для этого раздела:
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Хеш ключа шифрования:"
+msgstr "Хэш ключа шифрования:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Тип хеша ключа шифрования для этого раздела:"
+msgstr "Тип хэша ключа шифрования для этого раздела:"
 
 #. Type: select
 #. Description
@@ -176,7 +176,7 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Ключ шифрования получается с помощью вычисления односторонней хеш функции "
+"Ключ шифрования получается с помощью вычисления односторонней хэш функции "
 "над ключевой фразой. Обычно, не нужно изменять значения по умолчанию и "
 "изменение может понизить стойкость шифрования."
 
@@ -409,7 +409,7 @@ msgstr "Не удалось инициализировать шифрованн�
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Произошла ошибка при при настройке шифрования томов."
+msgstr "Произошла ошибка при настройке шифрования томов."
 
 #. Type: text
 #. Description

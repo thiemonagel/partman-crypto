@@ -14,14 +14,15 @@
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005, 2006.
 # Amanpreet Singh Alam <apbrar@gmail.com>, 2006.
 # A S Alam <apbrar@gmail.com>, 2006.
+# A S Alam <aalam@users.sf.net>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-12-26 07:47+0530\n"
-"Last-Translator: A S Alam <apbrar@gmail.com>\n"
-"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-07-01 12:10+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -295,9 +296,7 @@ msgstr "ਲੋੜੀਂਦੀ ਇੰਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਗੁੰ
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
-msgstr ""
-"${DEVICE} ਲਈ ਇੰਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਅਧੂਰੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਵਿਭਾਗ ਮੇਨੂ ਵਿੱਚ ਜਾਓ ਅਤੇ ਸਭ ਲੋੜੀਂਦੀਆਂ ਚੋਣਾਂ "
-"ਚੁਣੋ।"
+msgstr "${DEVICE} ਲਈ ਇੰਕ੍ਰਿਪਸ਼ਨ ਚੋਣ ਅਧੂਰੀ ਹੈ। ਵਿਭਾਗ ਮੇਨੂ ਵਿੱਚ ਜਾਓ ਅਤੇ ਸਭ ਲੋੜੀਂਦੀਆਂ ਚੋਣਾਂ ਚੁਣੋ।"
 
 #. Type: text
 #. Description
@@ -466,8 +465,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"ਕਿਰਪਾ ਕਰਕੇ ਸਵੈਪ ਸਪੇਸ ਨੂੰ ਅਯੋਗ ਕਰੋ (ਉਦਾਪਰਨ ਲਈ swapoff ਚਲਾ ਕੇ) ਜਾਂ ਇੱਕ ਇੰਕ੍ਰਿਪਟਡ ਸਵੈਪ ਸਪੇਸ "
-"ਸੰਰਚਿਤ ਕਰੋ ਅਤੇ ਫਿਰ ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਨਿਰਧਾਰਨ ਚਲਾਓ। ਇਹ ਪਰੋਗਰਾਮ ਹੁਣ ਅਧੂਰਾ ਖਤਮ ਹੋਵੇਗਾ।"
+"ਸਵੈਪ ਸਪੇਸ ਨੂੰ ਅਯੋਗ ਕਰੋ (ਉਦਾਪਰਨ ਲਈ swapoff ਚਲਾ ਕੇ) ਜਾਂ ਇੱਕ ਇੰਕ੍ਰਿਪਟਡ ਸਵੈਪ ਸਪੇਸ ਸੰਰਚਿਤ ਕਰੋ ਅਤੇ "
+"ਫਿਰ ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੈੱਟਅੱਪ ਚਲਾਓ। ਇਹ ਪਰੋਗਰਾਮ ਹੁਣ ਅਧੂਰਾ ਖਤਮ ਹੋਵੇਗਾ।"
 
 #. Type: password
 #. Description
@@ -517,7 +516,7 @@ msgstr "ਜਾਂਚ ਲਈ ਸ਼ਬਦ ਮੁੜ ਭਰੋ:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਪ੍ਹੈਰਾ ਗੁਪਤ-ਕੋਡ ਭਰੋ।"
+msgstr "ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਪ੍ਹੈਰਾ ਗੁਪਤ-ਕੋਡ ਭਰੋ।"
 
 #. Type: error
 #. Description
@@ -529,7 +528,7 @@ msgstr "ਸ਼ਬਦ ਇੰਪੁੱਟ ਗਲਤੀ"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "ਭਰੇ ਹੋਏ ਦੋਨੋਂ ਪ੍ਹੈਰੇ ਇੱਕੋ ਜਿਹੇ ਨਹੀਂ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਭਰੋ।"
+msgstr "ਭਰੇ ਹੋਏ ਦੋਨੋਂ ਪ੍ਹੈਰੇ ਇੱਕੋ ਜਿਹੇ ਨਹੀਂ ਹਨ। ਫਿਰ ਕੋਸ਼ਿਸ਼ ਭਰੋ।"
 
 #. Type: error
 #. Description
@@ -543,7 +542,7 @@ msgstr "ਖਾਲੀ ਸ਼ਬਦ"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "ਤੁਸੀਂ ਖਾਲੀ ਸ਼ਬਦ ਭਰਿਆ ਹੈ, ਜਿਸ ਦੀ ਮਨਜ਼ੂਰੀ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਨਾ-ਖਾਲੀ ਸ਼ਬਦ ਚੁਣੋ।"
+msgstr "ਤੁਸੀਂ ਖਾਲੀ ਸ਼ਬਦ ਭਰਿਆ ਹੈ, ਜਿਸ ਦੀ ਮਨਜ਼ੂਰੀ ਨਹੀਂ ਹੈ। ਨਾ-ਖਾਲੀ ਸ਼ਬਦ ਚੁਣੋ।"
 
 #. Type: boolean
 #. Description
@@ -607,7 +606,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"ਤੁਸੀਂ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਸਹੂਲਤ ਉਪਲੱਬਧ ਨਹੀਂ ਅਤੇ ਹੁਣ "
+"ਤੁਸੀਂ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਤੇ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਸਹੂਲਤ ਉਪਲੱਬਧ ਨਹੀਂ ਅਤੇ ਹੁਣ "
 "ਜਾਰੀ ਹੋ ਰਹੀ ਹੈ ਇਸ ਦਾ ਨਤੀਜਾ ਇੰਸਟਾਲੇਸ਼ਨ ਹੈ, ਜੋ ਵਰਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।"
 
 #. Type: error
@@ -615,7 +614,7 @@ msgstr ""
 #: ../partman-crypto.templates:327
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਚੁਣੋ।"
+msgstr "ਪਿੱਛੇ ਜਾਓ ਅਤੇ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਲਈ ਨਾ-ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਚੁਣੋ।"
 
 #. Type: error
 #. Description
@@ -625,8 +624,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"ਤੁਸੀਂ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਪਰ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਫੀਚਰ ਲਈ ਵੱਖਰੇ /boot "
-"ਭਾਗ ਦੀ ਲੋੜ ਹੈ, ਜਿਸ ਉੱਤੇ ਕਰਨਲ ਅਤੇ initrd ਨੂੰ ਸੰਭਾਲਿਆ ਜਾ ਸਕੇ।"
+"ਤੁਸੀਂ ਰੂਟ ਫਾਇਲ ਸਿਸਟਮ ਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਭਾਗ ਉੱਤੇ ਸੰਭਾਲਣ ਲਈ ਚੁਣਿਆ ਹੈ। ਇਹ ਫੀਚਰ ਲਈ ਵੱਖਰੇ /boot ਭਾਗ "
+"ਦੀ ਲੋੜ ਹੈ, ਜਿਸ ਉੱਤੇ ਕਰਨਲ ਅਤੇ initrd ਨੂੰ ਸੰਭਾਲਿਆ ਜਾ ਸਕੇ।"
 
 #. Type: error
 #. Description
@@ -674,7 +673,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"ਤੁਸੀਂ ${DEVICE} ਲਈ ਲਗਾਤਾਰ ਕੁੰਜੀ ਚੁਣੀ ਹੈ ਪਰ ਇਸ ਉੱਪਰ ਫਾਇਲ ਸਿਸਟਮ ਬਣਾਉਣ ਲਈ ਵਿਭਾਗੀਕਰਨ "
+"ਤੁਸੀਂ ${DEVICE} ਲਈ ਲਗਾਤਾਰ ਕੁੰਜੀ ਚੁਣੀ ਹੈ ਪਰ ਇਸ ਉੱਤੇ ਫਾਇਲ ਸਿਸਟਮ ਬਣਾਉਣ ਲਈ ਵਿਭਾਗੀਕਰਨ "
 "ਕਰਤਾ ਨੂੰ ਬੇਨਤੀ ਕੀਤੀ ਹੈ।"
 
 #. Type: boolean

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-06-30 15:46+0100\n"
+"PO-Revision-Date: 2007-07-19 21:22+0100\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "MIME-Version: 1.0\n"
@@ -261,7 +261,7 @@ msgstr "Nenhuma partição para encriptar"
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr "Não foi seleccionada nenhuma partição para encriptação."
+msgstr "Não foi escolhida nenhuma partição para encriptação."
 
 #. Type: note
 #. Description
@@ -293,7 +293,7 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "Estão incompletas as opções de encriptação para o dispositivo ${DEVICE}. Por "
-"favor volte ao menu de particionamento e seleccione as opções necessárias."
+"favor volte ao menu de particionamento e escolha as opções necessárias."
 
 #. Type: text
 #. Description
@@ -414,7 +414,7 @@ msgstr "Ocorreu um erro ao configurar os volumes encriptados."
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Passphrase"
-msgstr "Frase chave"
+msgstr "Frase-passe"
 
 #. Type: text
 #. Description
@@ -458,7 +458,7 @@ msgid ""
 msgstr ""
 "Este é um erro fatal já que dados sensíveis podem ser escritos para um disco "
 "não encriptado. Isto pode permitir a alguém com acesso ao disco recuperar "
-"partes da chave de encriptação ou da frase chave."
+"partes da chave de encriptação ou da frase-passe."
 
 #. Type: error
 #. Description
@@ -476,13 +476,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "Frase chave de encriptação:"
+msgstr "frase-passe de encriptação:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Você necessita escolher uma frase chave para encriptar ${DEVICE}."
+msgstr "Você necessita escolher uma frase-chave para encriptar ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -493,8 +493,8 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"O poder total da encriptação depende fortemente desta frase chave, por isso "
-"deve tomar o cuidado de escolher uma frase chave que não seja fácil de "
+"O poder total da encriptação depende fortemente desta frase-passe, por isso "
+"deve tomar o cuidado de escolher uma frase-passe que não seja fácil de "
 "adivinhar. Não deve ser uma palavra ou frase que possa ser encontrada em "
 "dicionários, ou uma frase que possa facilmente ser associada consigo."
 
@@ -506,7 +506,7 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"uma boa frase chave irá conter uma mistura de letras, números e de "
+"Uma boa frase-chave irá conter uma mistura de letras, números e de "
 "pontuação. É recomendado que as frases chave tenham um comprimento de 20 ou "
 "mais caracteres."
 
@@ -514,7 +514,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "Re-introduza a frase chave para verificar:"
+msgstr "Re-introduza a frase-chave para verificar:"
 
 #. Type: password
 #. Description
@@ -523,28 +523,28 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Por favor introduza a mesma frase chave para verificar que você a escreveu "
+"Por favor introduza a mesma frase-chave para verificar que você a escreveu "
 "correctamente."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr "Erro de entrada da frase chave"
+msgstr "Erro de entrada da frase-chave"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"As duas frases chave que você introduziu não são as mesmas. Por favor tente "
+"As duas frases-chave que você introduziu não são as mesmas. Por favor tente "
 "novamente."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr "Frase chave vazia"
+msgstr "Frase-chave vazia"
 
 #. Type: error
 #. Description
@@ -553,14 +553,14 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Você introduziu uma frase chave vazia, o que não é permitido. Por favor "
-"escolha uma frase chave que não seja vazia."
+"Você introduziu uma frase-passe vazia, o que não é permitido. Por favor "
+"escolha uma frase-passe que não seja vazia."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "Utilizar uma frase chave fraca?"
+msgstr "Utilizar uma frase-passe fraca?"
 
 #. Type: boolean
 #. Description
@@ -572,9 +572,9 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Você introduziu uma frase chave que consiste em menos de ${MINIMUM} "
+"Você introduziu uma frase-passe que consiste em menos de ${MINIMUM} "
 "caracteres, o que é considerado demasiado débil. Você deve escolher uma "
-"frase chave mais forte."
+"frase-passe mais forte."
 
 #. Type: entropy-text
 #. Description
@@ -620,7 +620,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Você seleccionou o sistema de ficheiros raiz para ser guardado numa partição "
+"Você escolheu o sistema de ficheiros raiz para ser guardado numa partição "
 "encriptada. Esta funcionalidade não está disponível e continuar agora iria "
 "resultar numa instalação que não pode ser utilizada."
 
@@ -641,9 +641,9 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Você seleccionou o sistema de ficheiros raiz para ser guardado numa partição "
-"encriptada. Esta funcionalidade requer uma partição /boot separada na qual "
-"possa guardada o kernel e o initrd."
+"Você escolheu o sistema de ficheiros raiz para ser guardado numa partição "
+"encriptada. Esta funcionalidade necessita duma partição /boot separada na "
+"qual possam ser guardados o kernel e o initrd."
 
 #. Type: error
 #. Description
@@ -666,10 +666,10 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Você seleccionou o sistema de ficheiros /boot para ser guardado numa "
-"partição encriptada. Isto não é possível porque o gestor de arranque seria "
-"incapaz de carregar o kernel e o initrd. Continuar agora resultaria numa "
-"instalação que não pode ser usada."
+"Você escolheu o sistema de ficheiros /boot para ser guardado numa partição "
+"encriptada. Isto não é possível porque o gestor de arranque seria incapaz de "
+"carregar o kernel e o initrd. Continuar agora resultaria numa instalação que "
+"não pode ser utilizada."
 
 #. Type: error
 #. Description

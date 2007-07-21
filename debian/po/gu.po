@@ -9,13 +9,13 @@
 # Don't forget to properly fill-in the header of PO files#
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006.
+# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: d-i\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
 "PO-Revision-Date: 2006-07-10 15:53+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -135,7 +135,7 @@ msgid ""
 msgstr ""
 "જુદા જુદા અલગોરિથમ દરેક સેક્ટર માટેનાં વેક્ટરને શરુઆત કરવા માટે પ્રાપ્ત છે. આ વિકલ્પ "
 "એન્ક્રિપ્શન સલામતી પર અસર કરે છે. સામાન્ય રીતે, આને મૂળભૂત કરતાં બદલવાનું કોઇ કારણ નથી, "
-"સિવાય કે જૂની સિસ્ટમો જોડે સંગતતા જાળવવા માટે."
+"સિવાય કે જૂની સિસ્ટમ્સ જોડે સંગતતા જાળવવા માટે."
 
 #. Type: text
 #. Description

@@ -385,6 +385,57 @@ crypto_dooption () {
 	echo $RET > $part/$option
 }
 
+# Unmount CD image (if any); switch to loop-aes module; remount
+# As we don't have losetup available, we cannot see what's mounted,
+# so assume loop is only used for the CD image in hd-media installs
+crypto_reload_loop() {
+	local iso_image iso_mp
+
+	if db_get iso-scan/filename && [ "$RET" ]; then
+		iso_image=$RET
+		iso_mp=$(grep "^/dev/loop.*iso9660" /proc/mounts | \
+			 head -n1 | cut -d" " -f2)
+		if [ "$iso_mp" ]; then
+			log-output -t partman-crypto umount $iso_mp || return $?
+		fi
+	fi
+
+	RET=0
+	if log-output -t partman-crypto modprobe -r loop; then
+		modprobe -q loop-aes || return $?
+		sleep 1
+	else
+		RET=$?
+	fi
+
+	if [ "$iso_mp" ]; then
+		log "remounting CD image"
+		log-output -t partman-crypto \
+			mount -t iso9660 -o loop,ro,exec $iso_image $iso_mp || return $?
+	fi
+
+	return $RET
+}
+
+crypto_load_module() {
+	local module=$1
+
+	if [ "$module" != loop-aes ]; then
+		modprobe -q $module
+		return $?
+	fi
+
+	# loop-aes cannot be loaded if loop is already loaded (hd-media installs)
+	if ! log-output -t partman-crypto modprobe --first-time $module; then
+		log "failed to load module loop-aes; loop already loaded?"
+
+		if ! crypto_reload_loop; then
+			log "error: failed to replace already loaded module loop with loop-aes"
+			return 1
+		fi
+	fi
+}
+
 # Loads all modules for a given crypto type and cipher
 crypto_load_modules() {
 	local type cipher moduledir modulefile module
@@ -406,7 +457,7 @@ crypto_load_modules() {
 				continue
 			fi
 	
-			if modprobe -q $module; then
+			if crypto_load_module $module; then
 				touch $moduledir/$module
 			else
 				rm -f $moduledir/$module

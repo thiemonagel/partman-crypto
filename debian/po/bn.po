@@ -12,15 +12,15 @@
 # Quazi Ashfaq-ur Rahman <quazi.ashfaq@gmail.com>, 2005.
 # Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2005, 2006.
 # Progga <progga@BengaLinux.Org>, 2005, 2006.
-# Jamil Ahmed <jamil@bengalinux.org>, 2006.
-# Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>, 2006.
+# Jamil Ahmed <jamil@bengalinux.org>, 2006-2007.
+# Mahay Alam Khan (মাহে আলম খান) <makl10n@yahoo.com>, 2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-21 00:34+0600\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-07-22 23:44+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <core@BengaLinux.Org>\n"
 "MIME-Version: 1.0\n"
@@ -296,7 +296,7 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"${DEVICE}-এর এনক্রিপশন সংক্রান্ত অপশনগুলো অসম্পূর্ণ।  অনুগ্রহপূর্বক পার্টিশনকারী মেনুতে "
+"${DEVICE}-এর এনক্রিপশন সংক্রান্ত অপশনগুলো অসম্পূর্ণ। অনুগ্রহপূর্বক পার্টিশনকারী মেনুতে "
 "ফিরে গিয়ে প্রয়োজনীয় সকল অপশন বেছে নিন।"
 
 #. Type: text
@@ -340,7 +340,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "এরকম হতে পারে যে, সিস্টেম রিবুট হওয়ার সময় এনক্রিপ্টেড পার্টিশন ব্যবহার করতে গেলে "
-"সমস্যা হতে পারে।  তবে সমস্যা দূর করার জন্য প্রয়োজনীয় প্যাকেজগুলোকে আপনি পরেও ইনস্টল "
+"সমস্যা হতে পারে। তবে সমস্যা দূর করার জন্য প্রয়োজনীয় প্যাকেজগুলোকে আপনি পরেও ইনস্টল "
 "করতে পারবেন।"
 
 #. Type: boolean
@@ -353,6 +353,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
+#, fuzzy
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -461,7 +462,7 @@ msgid ""
 "parts of the encryption key or passphrase."
 msgstr ""
 "স্পর্শকাতর তথ্য এনক্রিপশনবিহীন অবস্থায় ডিস্কে লেখা হতে পারে বিধায় এটি একটি মারাত্মক "
-"সমস্যা।  এর ফলে ডিস্ক ব্যবহার করতে সক্ষম এরূপ কোন ব্যক্তি এনক্রিপশন কী (key) বা "
+"সমস্যা। এর ফলে ডিস্ক ব্যবহার করতে সক্ষম এরূপ কোন ব্যক্তি এনক্রিপশন কী (key) বা "
 "পাসওয়ার্ডের অংশ বিশেষ পড়তে পারবে।"
 
 #. Type: error
@@ -473,7 +474,7 @@ msgid ""
 "program will now abort."
 msgstr ""
 "অনুগ্রহপূর্বক সোয়াপ নিষ্ক্রিয় করুন (যেমন swapoff চালিয়ে) বা প্রথমে একটি এনক্রিপ্টেড "
-"সোয়াপ কনফিগার করে তারপর এনক্রিপ্টেড ভলিউম কনফিগারকারী প্রোগ্রাম চালান।  এই "
+"সোয়াপ কনফিগার করে তারপর এনক্রিপ্টেড ভলিউম কনফিগারকারী প্রোগ্রাম চালান। এই "
 "প্রোগ্রামটি এখন প্রস্থান করবে।"
 
 #. Type: password
@@ -497,8 +498,8 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"পাসওয়ার্ডের অভেদ্যতার ওপর এনক্রিপশনের অভেদ্যতা বহুলাংশে নির্ভরশীল।  এ কারণে আপনার "
-"উচিত্‍ এমন একটি পাসওয়ার্ড বেছে নেওয়া, যা অন্য কেউ সহজে অনুমান করতে পারবে না।  "
+"পাসওয়ার্ডের অভেদ্যতার ওপর এনক্রিপশনের অভেদ্যতা বহুলাংশে নির্ভরশীল। এ কারণে আপনার "
+"উচিত্‍ এমন একটি পাসওয়ার্ড বেছে নেওয়া, যা অন্য কেউ সহজে অনুমান করতে পারবে না। "
 "পাসওয়ার্ড হিসেবে এমন কোন শব্দ বা বাক্য নির্বাচন করবেন না যা অভিধানে রয়েছে, বা "
 "আপনার সাথে কোনভাবে সম্পর্কিত।"
 
@@ -510,8 +511,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"ভাল একটি পাসওয়ার্ডের মধ্যে অক্ষর, অংক ও যতিচিহ্ন থাকবে।  পাসওয়ার্ডের দৈর্ঘ্য অন্তত "
-"২০ অক্ষর হওয়া উচিত্‍।"
+"ভাল একটি পাসওয়ার্ডের মধ্যে অক্ষর, অংক ও যতিচিহ্ন থাকবে। পাসওয়ার্ডের দৈর্ঘ্য অন্তত ২০ "
+"অক্ষর হওয়া উচিত্‍।"
 
 #. Type: password
 #. Description
@@ -538,7 +539,7 @@ msgstr "Passphrase ইনপুট ত্রুটি"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "আপনি যে পাসওয়ার্ডদ্বয় লিখেছেন, তারা এক নয়।  অনুগ্রহপূর্বক পুনরায় চেষ্টা করুন।"
+msgstr "আপনি যে পাসওয়ার্ডদ্বয় লিখেছেন, তারা এক নয়। অনুগ্রহপূর্বক পুনরায় চেষ্টা করুন।"
 
 #. Type: error
 #. Description
@@ -553,7 +554,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"আপনি পাসওয়ার্ড হিসেবে কিছুই লিখেন নি, যা অননুমোদিত।  অনুগ্রহপূর্বক এমন কোন পাসওয়ার্ড "
+"আপনি পাসওয়ার্ড হিসেবে কিছুই লিখেন নি, যা অননুমোদিত। অনুগ্রহপূর্বক এমন কোন পাসওয়ার্ড "
 "বেছে নিন যা ফাঁকা নয়।"
 
 #. Type: boolean
@@ -573,7 +574,7 @@ msgid ""
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
 "আপনার লিখিত পাসওয়ার্ডের দৈর্ঘ্য ${MINIMUM} অক্ষর অপেক্ষা কম বিধায় এটি দূর্বল "
-"পাসওয়ার্ড হিসেবে গণ্য হবে।  আপনার আরো জটিল একটি পাসওয়ার্ড বেছে নেওয়া উচিত্‍।"
+"পাসওয়ার্ড হিসেবে গণ্য হবে। আপনার আরো জটিল একটি পাসওয়ার্ড বেছে নেওয়া উচিত্‍।"
 
 #. Type: entropy-text
 #. Description
@@ -596,7 +597,7 @@ msgid ""
 "can take a long time)"
 msgstr ""
 "কীবোর্ডে এলোমেলোভাবে অক্ষর লিখে আপনি এই প্রক্রিয়াকে ত্বরান্বিত করতে পারেন, অথবা "
-"যথেষ্ট তথ্য (keydata) সংগৃহীত হওয়া পর্যন্ত অপেক্ষা করুন।  (লক্ষ্যণীয়: এতে বেশ কিছুটা "
+"যথেষ্ট তথ্য (keydata) সংগৃহীত হওয়া পর্যন্ত অপেক্ষা করুন। (লক্ষ্যণীয়: এতে বেশ কিছুটা "
 "সময় লাগতে পারে)"
 
 #. Type: error
@@ -619,7 +620,7 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"আপনি রুট ফাইল সিস্টেমকে একটি এনক্রিপ্টেড পার্টিশনে সংরক্ষণের সিদ্ধান্ত নিয়েছেন।  এটি "
+"আপনি রুট ফাইল সিস্টেমকে একটি এনক্রিপ্টেড পার্টিশনে সংরক্ষণের সিদ্ধান্ত নিয়েছেন। এটি "
 "এখনো সমর্থিত নয় এবং এ অবস্থায় এগিয়ে গেলে ইনস্টলেশনটি ব্যবহার করা যাবে না।"
 
 #. Type: error
@@ -700,7 +701,7 @@ msgid ""
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "এলোমেলো ধরনের কী (key) বেছে নেওয়ার অর্থ হল যে সংশ্লিষ্ট পার্টিশনে সংরক্ষিত তথ্য "
-"প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে।  এটি শুধুমাত্র সোয়াপ পার্টিশনের "
+"প্রতিবার সিস্টেম রিবুট হওয়ার সময় ধ্বংস হয়ে যাবে। এটি শুধুমাত্র সোয়াপ পার্টিশনের "
 "ক্ষেত্রেই ব্যবহার করা উচিত্‍।"
 
 #. Type: error

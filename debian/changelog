@@ -1,11 +1,15 @@
 partman-crypto (22) UNRELEASED; urgency=low
 
+  [ Frans Pop ]
   * For hd-media installs the module loop will already be loaded, which
     prevents loop-aes from being loaded. Attempt to replace loop with loop-aes
     by unmounting the CD image, replacing the module and remounting the image.
     As losetup is not available, we cannot check what exactly is loop-mounted,
     so we just assume that loop is only used for a CD image.
     Many thanks to Nemui Ailin for identifying the issue. Closes: #434027.
+
+  [ Colin Watson ]
+  * Use 'mkdir -p' rather than more awkward test-then-create constructions.
 
  -- Frans Pop <fjp@debian.org>  Sun, 22 Jul 2007 11:15:18 +0200
 

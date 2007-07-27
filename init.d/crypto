@@ -67,7 +67,7 @@ create_partition () {
 	open_dialog DISK_UNCHANGED
 	close_dialog
 	
-	[ -d $id ] || mkdir $id
+	mkdir -p $id
 	echo $id
 }
 

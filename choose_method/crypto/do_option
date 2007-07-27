@@ -7,7 +7,7 @@ dev=$2
 id=$3
 part=$dev/$id
 
-[ -d $part ] || mkdir $part
+mkdir -p $part
 rm -f $part/use_filesystem
 rm -f $part/format
 

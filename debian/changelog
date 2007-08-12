@@ -1,4 +1,4 @@
-partman-crypto (22) UNRELEASED; urgency=low
+partman-crypto (22) unstable; urgency=low
 
   [ Frans Pop ]
   * For hd-media installs the module loop will already be loaded, which
@@ -11,7 +11,7 @@ partman-crypto (22) UNRELEASED; urgency=low
   [ Colin Watson ]
   * Use 'mkdir -p' rather than more awkward test-then-create constructions.
 
- -- Frans Pop <fjp@debian.org>  Sun, 22 Jul 2007 11:15:18 +0200
+ -- Max Vozeler <xam@debian.org>  Sun, 12 Aug 2007 20:31:48 +0200
 
 partman-crypto (21) unstable; urgency=low
 

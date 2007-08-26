@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-11-04 13:19+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-08-25 21:48+0200\n"
 "Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
 "Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgstr "Veľkosť kľúča pre túto oblasť:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:72
 msgid "IV algorithm:"
-msgstr "Algoritmus inic. vektora"
+msgstr "Algoritmus IV:"
 
 #. Type: select
 #. Description
@@ -115,7 +115,7 @@ msgstr "Algoritmus inic. vektora"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Algoritmus pre generovanie inicializačného vektora pre túto oblasť:"
+msgstr "Algoritmus generovania inicializačného vektora pre túto oblasť:"
 
 #. Type: select
 #. Description

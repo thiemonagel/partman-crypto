@@ -25,10 +25,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-10-15 23:38+0200\n"
-"Last-Translator: Giuseppe Sacco <eppesuig@debian.org>\n"
-"Language-Team:   Italian <debian-l10n-italian@lists.debian.org>\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-08-27 17:49+0200\n"
+"Last-Translator: Stefano Canepa <sc@linux.it>\n"
+"Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -259,7 +259,7 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Configurazione della cifratura in corso."
+msgstr "Configurazione della cifratura in corso"
 
 #. Type: text
 #. Description
@@ -308,7 +308,7 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Le opzioni di cifratura per ${DEVICE} sono incomplete. Tornare al menù di "
+"Le opzioni di cifratura per ${DEVICE} sono incomplete. Tornare al menu di "
 "partizionamento e selezionare tutte le opzioni obbligatorie."
 
 #. Type: text
@@ -352,8 +352,8 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "È probabile che si verifichino problemi durante l'avvio quando il sistema "
-"cerca di impostare partizioni cifrate. Si può ancora correggere installando "
-"i pacchetti necessari in un successivo momento."
+"cerca di impostare partizioni cifrate. È possibile ancora correggere "
+"installando i pacchetti necessari in un successivo momento."
 
 #. Type: boolean
 #. Description
@@ -484,7 +484,7 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Disabilitare l'area di swap (ad esempio: usando swapoff) o configurare "
+"Disabilitare l'area di swap (per esempio: usando swapoff) o configurare "
 "un'area di swap cifrata e quindi configurare nuovamente i volumi cifrati. "
 "Questo programma sarà interrotto ora."
 
@@ -609,10 +609,10 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Si può velocizzare il processo inserendo caratteri a caso sulla tastiera "
-"oppure si può semplicemente aspettare fino a quando saranno raccolti dati "
-"sufficienti per creare la chiave. (NOTA: questo potrebbe richiedere molto "
-"tempo)"
+"È possibile velocizzare il processo inserendo caratteri a caso sulla "
+"tastiera oppure si può semplicemente aspettare fino a quando saranno "
+"raccolti dati sufficienti per creare la chiave. (NOTA: questo potrebbe "
+"richiedere molto tempo)"
 
 #. Type: error
 #. Description
@@ -636,7 +636,7 @@ msgid ""
 msgstr ""
 "Si è scelto di memorizzare il file system di root su una partizione cifrata. "
 "Questa funzionalità non è ancora disponibile e continuare così potrebbe "
-"portare a una installazione inutilizzabile."
+"portare a un'installazione inutilizzabile."
 
 #. Type: error
 #. Description

@@ -6,7 +6,7 @@
 # Lithuanian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2005, 2006.
+# Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004...2007.
 # Marius Gedminas <mgedmin@b4net.lt>, 2004.
 # Darius Skilinskas <darius10@takas.lt>, 2005.
 #
@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-10-15 12:53+0300\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-08-28 12:39+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -393,7 +393,7 @@ msgstr "Konfigūruojant šifruotus tomus įvyko klaida."
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr "Konfigūravimas buvo nutrauktas."
+msgstr "Konfigūravimas nutrauktas."
 
 #. Type: error
 #. Description

@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-08-31 00:42+0200\n"
+"PO-Revision-Date: 2007-08-31 15:19+0200\n"
 "Last-Translator: Stefano Canepa <sc@linux.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -657,7 +657,7 @@ msgid ""
 msgstr ""
 "Si è scelto di memorizzare il file system di root su una partizione cifrata. "
 "Questa funzionalità richiede una partizione /boot separata sulla quale poter "
-"memorizzare il kernel e initrd."
+"memorizzare il kernel e l'initrd."
 
 #. Type: error
 #. Description
@@ -707,8 +707,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Si è scelto il tipo di chiave casuale per ${DEVICE} ma si è chiesto al "
-"programma di partizionamento di creare un file system su di essa."
+"Si è scelto un tipo di chiave casuale per ${DEVICE} ma si è chiesto al "
+"programma di partizionamento di creare un file system su di esso."
 
 #. Type: boolean
 #. Description
@@ -717,8 +717,8 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Usare una chiave di tipo casuale significa che i dati della partizione "
-"saranno distrutti a ogni riavvio. Questo dovrebbe essere usato solo per "
+"Usando una chiave di tipo casuale i dati presenti sulla partizione\n"
+"verranno distrutti ad ogni riavvio. Questo dovrebbe essere usato solo per "
 "partizioni di swap."
 
 #. Type: error
@@ -733,7 +733,7 @@ msgstr "Il caricamento dei componenti relativi alla cifratura è fallito"
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
 "Si è verificato un errore cercando di caricare i componenti aggiuntivi "
-"relativi all cifratura."
+"relativi alla cifratura."
 
 #. Type: boolean
 #. Description
@@ -752,5 +752,5 @@ msgid ""
 "installation process could fail."
 msgstr ""
 "La memoria non pare sufficiente per l'installazione di moduli di cifratura "
-"aggiuntivi. Se si decide di proseguire il processo di installazione, si "
-"potrebbero riscontrare degli errori."
+"aggiuntivi. Si potrebbero riscontrare errori nel caso si decidesse di "
+"proseguire l'installazione"

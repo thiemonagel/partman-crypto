@@ -13,12 +13,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2007-01-03 22:21+0100\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-05-28 14:22+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Bookmarks: 282,1006,1041,-1,-1,-1,-1,-1,-1,-1\n"
@@ -56,7 +56,7 @@ msgstr "Loopback (loop-AES)"
 #. Translations should be kept below 40 columns
 #: ../partman-crypto.templates:25
 msgid "Device-mapper (dm-crypt)"
-msgstr "Enhedsoverføring (dm-crypt)"
+msgstr "EnhedsoverfÃ¸ring (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -97,13 +97,13 @@ msgstr "Denne partitions kryptering:"
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "Nøglestørrelse:"
+msgstr "NÃ¸glestÃ¸rrelse:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "Denne partitions nøglestørrelse:"
+msgstr "Denne partitions nÃ¸glestÃ¸rrelse:"
 
 #. Type: text
 #. Description
@@ -134,35 +134,35 @@ msgid ""
 "compatibility with older systems."
 msgstr ""
 "Der findes forskellige algoritmer til at uddrage initialiseringsvektoren for "
-"hver sektor. Dette valg påvirker krypteringssikkerheden. Normalt er der "
-"ingen grund til at ændre den fra den anbefalede værdi, medmindre der ønskes "
-"kompatibilitet med ældre systemer."
+"hver sektor. Dette valg pÃ¥virker krypteringssikkerheden. Normalt er der "
+"ingen grund til at Ã¦ndre den fra den anbefalede vÃ¦rdi, medmindre der Ã¸nskes "
+"kompatibilitet med Ã¦ldre systemer."
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "Krypteringsnøgle:"
+msgstr "KrypteringsnÃ¸gle:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "Denne partitions krypteringsnøgletype:"
+msgstr "Denne partitions krypteringsnÃ¸gletype:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "Krypteringsnøgle-hash:"
+msgstr "KrypteringsnÃ¸gle-hash:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "Krypteringsnøgle-hashtypen for denne partition:"
+msgstr "KrypteringsnÃ¸gle-hashtypen for denne partition:"
 
 #. Type: select
 #. Description
@@ -173,9 +173,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Krypteringsnøglen uddrages fra adgangskoden ved at påføre den en envejs-"
-"hashfunktion. Der er normalt ingen grund til at ændre den fra den anbefalede "
-"type, og det kan nedsætte krypteringsstyrken at gøre det på en forkert måde."
+"KrypteringsnÃ¸glen uddrages fra adgangskoden ved at pÃ¥fÃ¸re den en envejs-"
+"hashfunktion. Der er normalt ingen grund til at Ã¦ndre den fra den anbefalede "
+"type, og det kan nedsÃ¦tte krypteringsstyrken at gÃ¸re det pÃ¥ en forkert mÃ¥de."
 
 #. Type: text
 #. Description
@@ -201,13 +201,13 @@ msgstr "ja"
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
-msgstr "Slet data på denne partition"
+msgstr "Slet data pÃ¥ denne partition"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Vil du virkelig slette data på ${DEVICE}?"
+msgstr "Vil du virkelig slette data pÃ¥ ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -217,21 +217,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Data på ${DEVICE} vil blive overskrevet med tilfældige data. De kan ikke "
-"genskabes, når dette er sket. Dette er sidste mulighed for at hindre "
+"Data pÃ¥ ${DEVICE} vil blive overskrevet med tilfÃ¦ldige data. De kan ikke "
+"genskabes, nÃ¥r dette er sket. Dette er sidste mulighed for at hindre "
 "sletningen."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
 msgid "Erasing data on ${DEVICE}"
-msgstr "Sletter data på ${DEVICE}"
+msgstr "Sletter data pÃ¥ ${DEVICE}"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Det lykkedes ikke at slette data på ${DEVICE}"
+msgstr "Det lykkedes ikke at slette data pÃ¥ ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -240,14 +240,14 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Der opstod en fejl under forsøget på at slette data på ${DEVICE}. Dataene er "
+"Der opstod en fejl under forsÃ¸get pÃ¥ at slette data pÃ¥ ${DEVICE}. Dataene er "
 "ikke blevet slettet."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:147
 msgid "Setting up encryption..."
-msgstr "Sætter kryptering op..."
+msgstr "SÃ¦tter kryptering op..."
 
 #. Type: text
 #. Description
@@ -271,7 +271,7 @@ msgstr "Der er ikke udpeget nogen partitioner at kryptere."
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr "Nødvendige programmer mangler"
+msgstr "NÃ¸dvendige programmer mangler"
 
 #. Type: note
 #. Description
@@ -281,13 +281,13 @@ msgid ""
 "are required for partman-crypto to function correctly."
 msgstr ""
 "Denne udgave af installationsprogrammet mangler et eller flere programmer, "
-"der kræves for at partman-crypto kan fungere korrekt."
+"der krÃ¦ves for at partman-crypto kan fungere korrekt."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr "Krævede krypteringsindstillinger mangler"
+msgstr "KrÃ¦vede krypteringsindstillinger mangler"
 
 #. Type: error
 #. Description
@@ -296,8 +296,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Krypteringsindstillingerne for ${DEVICE} er ufuldstændige. Gå tilbage til "
-"partitioneringsmenuen og vælg alle de nødvendige indstillinger."
+"Krypteringsindstillingerne for ${DEVICE} er ufuldstÃ¦ndige. GÃ¥ tilbage til "
+"partitioneringsmenuen og vÃ¦lg alle de nÃ¸dvendige indstillinger."
 
 #. Type: text
 #. Description
@@ -328,7 +328,7 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Kernemodul-pakken ${PACKAGE} blev ikke fundet eller også opstod der en fejl "
+"Kernemodul-pakken ${PACKAGE} blev ikke fundet eller ogsÃ¥ opstod der en fejl "
 "under installationen."
 
 #. Type: error
@@ -339,15 +339,15 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Det er sandsynligt, at der vil opstå problemer med at sætte krypterede "
-"partitioner op, når systemet genstartes. Du kan muligvis undgå dette ved at "
-"installere de nødvendige pakker senere."
+"Det er sandsynligt, at der vil opstÃ¥ problemer med at sÃ¦tte krypterede "
+"partitioner op, nÃ¥r systemet genstartes. Du kan muligvis undgÃ¥ dette ved at "
+"installere de nÃ¸dvendige pakker senere."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Skriv ændringerne til diskene og sæt de krypterede bind op?"
+msgstr "Skriv Ã¦ndringerne til diskene og sÃ¦t de krypterede bind op?"
 
 #. Type: boolean
 #. Description
@@ -356,14 +356,14 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Den valgte partitionering skal skrives til diskene før de krypterede bind "
-"kan sættes op. Disse ændringer kan ikke fortrydes."
+"Den valgte partitionering skal skrives til diskene fÃ¸r de krypterede bind "
+"kan sÃ¦ttes op. Disse Ã¦ndringer kan ikke fortrydes."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
+msgstr "Bevar nuvÃ¦rende partitionslayout og sÃ¦t krypterede bind op?"
 
 #. Type: boolean
 #. Description
@@ -374,27 +374,27 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Når de krypterede bind er sat op, er det ikke tilladt at ændre partitionerne "
-"på de diske, der indeholder krypterede bind. Vær sikker på at du er tilfreds "
-"med det aktuelle partitionslayout på disse diske, inden du fortsætter."
+"NÃ¥r de krypterede bind er sat op, er det ikke tilladt at Ã¦ndre partitionerne "
+"pÃ¥ de diske, der indeholder krypterede bind. VÃ¦r sikker pÃ¥ at du er tilfreds "
+"med det aktuelle partitionslayout pÃ¥ disse diske, inden du fortsÃ¦tter."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "Opsætningen af krypterede bind mislykkedes"
+msgstr "OpsÃ¦tningen af krypterede bind mislykkedes"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af krypterede bind."
+msgstr "Der opstod en fejl under opsÃ¦tningen af krypterede bind."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr "Opsætningen blev afbrudt."
+msgstr "OpsÃ¦tningen blev afbrudt."
 
 #. Type: error
 #. Description
@@ -406,7 +406,7 @@ msgstr "Initialiseringen af de krypterede bind mislykkedes"
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af de krypterede bind."
+msgstr "Der opstod en fejl under opsÃ¦tningen af de krypterede bind."
 
 #. Type: text
 #. Description
@@ -426,7 +426,7 @@ msgstr "Kode"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "Nøglefil (GnuPG)"
+msgstr "NÃ¸glefil (GnuPG)"
 
 #. Type: text
 #. Description
@@ -436,19 +436,19 @@ msgstr "Nøglefil (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr "Tilfældig nøgle"
+msgstr "TilfÃ¦ldig nÃ¸gle"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "Unsafe swap space detected"
-msgstr "Fandt et usikkert swapområde"
+msgstr "Fandt et usikkert swapomrÃ¥de"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "Der blev fundet et usikkert swapområde."
+msgstr "Der blev fundet et usikkert swapomrÃ¥de."
 
 #. Type: error
 #. Description
@@ -458,9 +458,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Denne fejl er alvorlig, da følsomme data kunne blive skrevet ukrypteret til "
+"Denne fejl er alvorlig, da fÃ¸lsomme data kunne blive skrevet ukrypteret til "
 "disken. Det ville give personer med adgang til disken mulighed for at "
-"genskabe dele af krypteringsnøglen eller koden."
+"genskabe dele af krypteringsnÃ¸glen eller koden."
 
 #. Type: error
 #. Description
@@ -470,8 +470,8 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Deaktivér swapområdet (f.eks. ved at køre swapoff) eller sæt et krypteret "
-"swapområde op og gennemfør opsætningen af krypterede bind igen. Dette "
+"DeaktivÃ©r swapomrÃ¥det (f.eks. ved at kÃ¸re swapoff) eller sÃ¦t et krypteret "
+"swapomrÃ¥de op og gennemfÃ¸r opsÃ¦tningen af krypterede bind igen. Dette "
 "program afbrydes nu."
 
 #. Type: password
@@ -484,7 +484,7 @@ msgstr "Krypteringskode:"
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Du skal vælge en kode for at kryptere ${DEVICE}."
+msgstr "Du skal vÃ¦lge en kode for at kryptere ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -495,9 +495,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Krypteringens styrke afhænger i høj grad af denne kode, så du skal sørge for "
-"at vælge en kode, der ikke er let at gætte. Den bør ikke være et ord eller "
-"en sætning, der findes i ordbøger, eller et ord som nemt kan forbindes med "
+"Krypteringens styrke afhÃ¦nger i hÃ¸j grad af denne kode, sÃ¥ du skal sÃ¸rge for "
+"at vÃ¦lge en kode, der ikke er let at gÃ¦tte. Den bÃ¸r ikke vÃ¦re et ord eller "
+"en sÃ¦tning, der findes i ordbÃ¸ger, eller et ord som nemt kan forbindes med "
 "dig."
 
 #. Type: password
@@ -508,14 +508,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"En god kode indeholder en blanding af bogstaver, tal og tegnsætning. Det "
-"anbefales at adgangskoder består af 20 eller flere tegn."
+"En god kode indeholder en blanding af bogstaver, tal og tegnsÃ¦tning. Det "
+"anbefales at adgangskoder bestÃ¥r af 20 eller flere tegn."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "Gentag koden for at bekræfte:"
+msgstr "Gentag koden for at bekrÃ¦fte:"
 
 #. Type: password
 #. Description
@@ -536,7 +536,7 @@ msgstr "Fejl ved indtastning af kode"
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "De to koder, du indtastede, var ikke ens. Prøv igen."
+msgstr "De to koder, du indtastede, var ikke ens. PrÃ¸v igen."
 
 #. Type: error
 #. Description
@@ -551,7 +551,7 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Du har indtastet en tom kode, hvilket ikke er tilladt. Vælg en ikke-tom kode."
+"Du har indtastet en tom kode, hvilket ikke er tilladt. VÃ¦lg en ikke-tom kode."
 
 #. Type: boolean
 #. Description
@@ -569,20 +569,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Du har indtastet en kode, der består af færre end ${MINIMUM} tegn, hvilket "
-"anses for at være for usikkert. Du bør vælge en stærkere kode."
+"Du har indtastet en kode, der bestÃ¥r af fÃ¦rre end ${MINIMUM} tegn, hvilket "
+"anses for at vÃ¦re for usikkert. Du bÃ¸r vÃ¦lge en stÃ¦rkere kode."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr "Indtast tilfældige tegn"
+msgstr "Indtast tilfÃ¦ldige tegn"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Krypteringsnøglen for ${DEVICE} genereres."
+msgstr "KrypteringsnÃ¸glen for ${DEVICE} genereres."
 
 #. Type: entropy-text
 #. Description
@@ -592,21 +592,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Du kan gøre denne proces hurtigere ved at indtaste tilfældige tegn på "
-"tastaturet eller blot vente indtil der er indsamlet nok nøgledata. (BEMÆRK: "
+"Du kan gÃ¸re denne proces hurtigere ved at indtaste tilfÃ¦ldige tegn pÃ¥ "
+"tastaturet eller blot vente indtil der er indsamlet nok nÃ¸gledata. (BEMÃ†RK: "
 "dette kan tage lang tid)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "Oprettelsen af nøglefilen mislykkedes"
+msgstr "Oprettelsen af nÃ¸glefilen mislykkedes"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Der opstod en fejl under oprettelsen af nøglefilen."
+msgstr "Der opstod en fejl under oprettelsen af nÃ¸glefilen."
 
 #. Type: error
 #. Description
@@ -616,8 +616,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Denne "
-"funktion er ikke tilgængelig, og hvis du fortsætter nu, vil du ende med at "
+"Du har valgt at rod-filsystemet skal gemmes pÃ¥ en krypteret partition. Denne "
+"funktion er ikke tilgÃ¦ngelig, og hvis du fortsÃ¦tter nu, vil du ende med at "
 "have en ubrugelig installation."
 
 #. Type: error
@@ -625,7 +625,7 @@ msgstr ""
 #: ../partman-crypto.templates:327
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
-msgstr "Gå tilbage og vælg en ikke-krypteret partition til rod-filsystemet."
+msgstr "GÃ¥ tilbage og vÃ¦lg en ikke-krypteret partition til rod-filsystemet."
 
 #. Type: error
 #. Description
@@ -635,20 +635,20 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Det "
-"kræver en separat /boot-partition, hvor kernen og initrd skal placeres."
+"Du har valgt at rod-filsystemet skal gemmes pÃ¥ en krypteret partition. Det "
+"krÃ¦ver en separat /boot-partition, hvor kernen og initrd skal placeres."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
-msgstr "Du bør gå tilbage og sætte /boot-partitionen op."
+msgstr "Du bÃ¸r gÃ¥ tilbage og sÃ¦tte /boot-partitionen op."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:346
 msgid "Encryption configuration failure"
-msgstr "Fejl under opsætning af kryptering"
+msgstr "Fejl under opsÃ¦tning af kryptering"
 
 #. Type: error
 #. Description
@@ -659,9 +659,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Dette "
-"er ikke muligt, da opstartsindlæseren ikke ville kunne indlæse kernen og "
-"initrd. Hvis du fortsætte nu, vil du ende med en installation, der ikke kan "
+"Du har valgt at rod-filsystemet skal gemmes pÃ¥ en krypteret partition. Dette "
+"er ikke muligt, da opstartsindlÃ¦seren ikke ville kunne indlÃ¦se kernen og "
+"initrd. Hvis du fortsÃ¦tte nu, vil du ende med en installation, der ikke kan "
 "bruges."
 
 #. Type: error
@@ -671,13 +671,13 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Du bør gå tilbage og vælge en ikke-krypteret partition til /boot-filsystemet."
+"Du bÃ¸r gÃ¥ tilbage og vÃ¦lge en ikke-krypteret partition til /boot-filsystemet."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "Er du sikker på, at du vil benytte en tilfældig nøgle?"
+msgstr "Er du sikker pÃ¥, at du vil benytte en tilfÃ¦ldig nÃ¸gle?"
 
 #. Type: boolean
 #. Description
@@ -686,8 +686,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Du har valgt en tilfældig-nøgletype til ${DEVICE}, men bedt "
-"partitionsprogrammet om at oprette et filsystem på den."
+"Du har valgt en tilfÃ¦ldig-nÃ¸gletype til ${DEVICE}, men bedt "
+"partitionsprogrammet om at oprette et filsystem pÃ¥ den."
 
 #. Type: boolean
 #. Description
@@ -696,8 +696,8 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Hvis du benytter en en tilfældig-nøgletype, vil partitionens data blive "
-"ødelagt ved hver genstart. Den bør kun benyttes til swap-partitioner."
+"Hvis du benytter en en tilfÃ¦ldig-nÃ¸gletype, vil partitionens data blive "
+"Ã¸delagt ved hver genstart. Den bÃ¸r kun benyttes til swap-partitioner."
 
 #. Type: error
 #. Description
@@ -709,14 +709,14 @@ msgstr "Kunne ikke hente krypteringskomponenter"
 #. Description
 #: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Der opstod en fejl under forsøget på at hente krypteringskomponenter."
+msgstr "Der opstod en fejl under forsÃ¸get pÃ¥ at hente krypteringskomponenter."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Fortsæt med at installere krypteringskomponenter på trods af, at der ikke er "
+"FortsÃ¦t med at installere krypteringskomponenter pÃ¥ trods af, at der ikke er "
 "nok hukommelse?"
 
 #. Type: boolean
@@ -728,5 +728,5 @@ msgid ""
 "installation process could fail."
 msgstr ""
 "Det ser ud til, at der ikke er nok hukommelse til at installere yderligere "
-"krypteringskomponenter. Hvis du vælger at fortsætte alligevel, kan det være, "
+"krypteringskomponenter. Hvis du vÃ¦lger at fortsÃ¦tte alligevel, kan det vÃ¦re, "
 "at installationen mislykkes."

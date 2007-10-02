@@ -20,4 +20,4 @@ test-stamp:
 	touch test-stamp
 
 clean:
-	-rm base64 test-stamp
+	rm -f base64 test-stamp

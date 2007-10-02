@@ -5,4 +5,4 @@ blockdev-wipe: blockdev-wipe.c
 	strip -s $@
 
 clean:
-	-rm blockdev-wipe
+	rm -f blockdev-wipe

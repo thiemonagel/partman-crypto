@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-06 22:48+0100\n"
-"PO-Revision-Date: 2006-10-17 21:41-0400\n"
-"Last-Translator: Sunjae park <darehanl@gmail.com>\n"
+"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"PO-Revision-Date: 2007-10-21 00:37-0400\n"
+"Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,9 +168,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"암호화키는 패스프레이즈에 단방향 해시 함수를 적용하여 구합니다. 일반적으로는 "
-"권장하는 값에서 다른 값으로 바꿀 필요가 없으며 잘못 바꿀 경우에는 암호화 성능"
-"을 저하시킬 수도 있습니다."
+"암호화키는 암호문에 단방향 해시 함수를 적용하여 구합니다. 일반적으로는 권장하"
+"는 값에서 다른 값으로 바꿀 필요가 없으며 잘못 바꿀 경우에는 암호화 성능을 저"
+"하시킬 수도 있습니다."
 
 #. Type: text
 #. Description
@@ -410,7 +410,7 @@ msgstr "암호화된 볼륨을 설정하는 도중 오류가 발생했습니다.
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:238
 msgid "Passphrase"
-msgstr "패스프레이즈"
+msgstr "암호문"
 
 #. Type: text
 #. Description
@@ -453,8 +453,8 @@ msgid ""
 "parts of the encryption key or passphrase."
 msgstr ""
 "기밀정보가 암호화도 되지 않고 하드디스크에 저장될 수 있기 때문에 이 문제는 매"
-"우 심각합니다. 하드디스크를 통해 다른 사람이 암호키나 패스프레이즈의 일부를 "
-"복원할 수도 있습니다."
+"우 심각합니다. 하드디스크를 통해 다른 사람이 암호키나 암호문의 일부를 복원할 "
+"수도 있습니다."
 
 #. Type: error
 #. Description
@@ -472,13 +472,13 @@ msgstr ""
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "암호화 패스프레이즈: "
+msgstr "암호화 암호문: "
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "${DEVICE}를 암호화 하기 위한 패스프레이즈를 입력하십시오."
+msgstr "${DEVICE}를 암호화 하기 위한 암호문을 입력하십시오."
 
 #. Type: password
 #. Description
@@ -489,9 +489,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"암호화의 성능은 이 패스프레이즈에 크게 좌우되기 때문에 쉽게 추측이 가능한 패"
-"스프레이즈는 가급적 사용하지 마십시오. 사전에서 있는 단어나 문장을 사용하지 "
-"말아야 하며 별명 등 개인적으로 연관이 있는 문구를 사용해서도 안 됩니다."
+"암호화의 성능은 이 암호문에 크게 좌우되기 때문에 쉽게 추측이 가능한 패스프레"
+"이즈는 가급적 사용하지 마십시오. 사전에서 있는 단어나 문장을 사용하지 말아야 "
+"하며 별명 등 개인적으로 연관이 있는 문구를 사용해서도 안 됩니다."
 
 #. Type: password
 #. Description
@@ -501,14 +501,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"문자나 숫자, 기타 기호를 섞는 것이 좋은 패스프레이즈를 만드는 지름길입니다. "
-"길이는 20자 이상은 되도록 하십시오."
+"문자나 숫자, 기타 기호를 섞는 것이 좋은 암호문을 만드는 지름길입니다. 길이는 "
+"20자 이상은 되도록 하십시오."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "확인하기 위해 패스프레이즈를 다시 입력하십시오:"
+msgstr "확인하기 위해 암호문을 다시 입력하십시오:"
 
 #. Type: password
 #. Description
@@ -516,25 +516,25 @@ msgstr "확인하기 위해 패스프레이즈를 다시 입력하십시오:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "올바르게 입력했는지 확인하기 위해 패스프레이즈를 다시 입력하십시오."
+msgstr "올바르게 입력했는지 확인하기 위해 암호문을 다시 입력하십시오."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "Passphrase input error"
-msgstr "패스프레이즈 입력 오류"
+msgstr "암호문 입력 오류"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:291
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "입력한 패스프레이즈가 같지 않습니다. 다시 입력하십시오."
+msgstr "입력한 암호문이 같지 않습니다. 다시 입력하십시오."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:296
 msgid "Empty passphrase"
-msgstr "빈 패스프레이즈입니다"
+msgstr "빈 암호문입니다"
 
 #. Type: error
 #. Description
@@ -542,13 +542,13 @@ msgstr "빈 패스프레이즈입니다"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "패스프레이즈에 아무것도 입력하지 않으셨습니다. 다시 입력해주십시오."
+msgstr "암호문에 아무것도 입력하지 않으셨습니다. 다시 입력해주십시오."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "약한 패스프레이즈라도 사용하시겠습니까?"
+msgstr "약한 암호문이라도 사용하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -560,8 +560,8 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"패스프레이즈는 ${MINIMUM}자 이상을 권장합니다. 그렇지 않을 경우 풀리기 쉽습니"
-"다. 더 긴 패스프레이즈를 사용하시기 바랍니다. "
+"암호문은 ${MINIMUM}자 이상을 권장합니다. 그렇지 않을 경우 풀리기 쉽습니다. "
+"더 긴 암호문을 사용하시기 바랍니다. "
 
 #. Type: entropy-text
 #. Description

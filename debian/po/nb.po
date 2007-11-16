@@ -10,20 +10,20 @@
 # Knut Yrvin <knuty@skolelinux.no>, 2004.
 # Klaus Ade Johnstad <klaus@skolelinux.no>, 2004.
 # Axel Bojer <axelb@skolelinux.no>, 2004.
-# Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005.
+# Hans Fredrik Nordhaug <hans@nordhaug.priv.no>, 2005, 2007.
 # Bjørn Steensrud <bjornst@powertech.no>, 2004,2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-03-27 20:15+0200\n"
-"Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
+"PO-Revision-Date: 2007-11-14 16:31+0100\n"
+"Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Emacs po-mode\n"
 
 #. Type: text
 #. Description
@@ -399,7 +399,7 @@ msgstr "Det oppsto en feil under oppsett av krypterte dataområder."
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr "Oppsettet er blitt avbrutt."
+msgstr "Oppsettet ble avbrutt."
 
 #. Type: error
 #. Description

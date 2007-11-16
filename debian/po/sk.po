@@ -6,15 +6,18 @@
 # Slovak messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-#
+# 
+# Peter Mann
+# Ivan Masár <helix84@centrum.sk>, 2007.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-08-25 21:48+0200\n"
-"Last-Translator: Peter Mann <Peter.Mann@tuke.sk>\n"
-"Language-Team:  Slovak <sk-i18n@lists.linux.sk>\n"
+"PO-Revision-Date: 2007-11-15 16:03+0100\n"
+"Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -583,7 +586,7 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"Tento proces môžete urýchliť zadaním náhodných údajov na klávesnici, alebo "
+"Tento proces môžete urýchliť zadaním náhodných údajov na klávesnici alebo "
 "môžete počkať, kým sa nazbiera dostatočný počet náhodných údajov. "
 "(UPOZORNENIE: môže to trvať veľmi dlho)"
 
@@ -597,7 +600,7 @@ msgstr "Vytvorenie kľúča zlyhalo"
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "Pri vytáraní kľúča došlo k chybe."
+msgstr "Pri vytváraní kľúča došlo k chybe."
 
 #. Type: error
 #. Description

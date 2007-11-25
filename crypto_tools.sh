@@ -91,11 +91,7 @@ get_free_loop () {
 
 	for n in 0 1 2 3 4 5 6 7; do
 		if eval [ -z "\$loop$n" ]; then
-			if [ -d /dev/loop ]; then
-				echo /dev/loop/$n
-			else
-				echo /dev/loop$n
-			fi
+			echo /dev/loop$n
 			break
 		fi
 	done

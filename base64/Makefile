@@ -6,8 +6,8 @@ base64: base64.c
 	$(CC) $(CFLAGS) -o $@ $< 
 	strip -s $@
 
-test: base64 test-stamp
-test-stamp:
+test: test-stamp
+test-stamp: base64
 	@set -e; \
 	echo "Running self-tests"; \
 	for t in tests/case*; do \

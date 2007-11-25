@@ -1,8 +1,13 @@
 partman-crypto (23) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Reduce noise from repeated 'debian/rules clean' runs.
 
- -- Colin Watson <cjwatson@debian.org>  Tue, 02 Oct 2007 16:30:15 +0100
+  [ Max Vozeler ]
+  * Correct dependencies in base64/Makefile; Thanks to 
+    Robert Millan for report + patch. Closes: #452830
+
+ -- Max Vozeler <xam@debian.org>  Sun, 25 Nov 2007 17:01:43 +0100
 
 partman-crypto (22) unstable; urgency=low
 

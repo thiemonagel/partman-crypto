@@ -6,7 +6,10 @@ partman-crypto (23) UNRELEASED; urgency=low
   [ Max Vozeler ]
   * Correct dependencies in base64/Makefile; Thanks to 
     Robert Millan for report + patch. Closes: #452830
+
   * Drop use of the obsolete /dev/loop/ directory
+
+  * Make erase cancellable. Closes: #381898, #400034
 
  -- Max Vozeler <xam@debian.org>  Sun, 25 Nov 2007 17:01:43 +0100
 

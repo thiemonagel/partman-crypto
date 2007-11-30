@@ -250,15 +250,25 @@ wipe () {
 	/bin/blockdev-wipe -s 65536 $dev > $fifo &
 	pid=$!
 
+	cancelled=0
+	db_capb progresscancel
 	db_progress START 0 100 $template
 	while read x <&9; do
 		db_progress STEP 1
+		if [ $? -eq 30 ]; then
+			cancelled=1
+			kill $pid
+			break
+		fi
 	done 9< $fifo
 	db_progress STOP
 
 	rm $fifo
 	wait $pid
-	return $?
+	ret=$?
+
+	[ $cancelled -eq 1 ] && ret=0
+	return $ret
 }
 
 dev_wipe () {

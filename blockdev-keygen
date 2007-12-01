@@ -21,6 +21,9 @@
 . /usr/share/debconf/confmodule
 
 umask 077
+
+# When changing minlen care must be taken about the
+# consequences for translations, see #326482
 minlen=8
 
 passphrase_is_weak () {

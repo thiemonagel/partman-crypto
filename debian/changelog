@@ -1,4 +1,4 @@
-partman-crypto (23) UNRELEASED; urgency=low
+partman-crypto (23) unstable; urgency=low
 
   [ Colin Watson ]
   * Reduce noise from repeated 'debian/rules clean' runs.
@@ -6,10 +6,17 @@ partman-crypto (23) UNRELEASED; urgency=low
   [ Max Vozeler ]
   * Correct dependencies in base64/Makefile; Thanks to 
     Robert Millan for report + patch. Closes: #452830
-
   * Drop use of the obsolete /dev/loop/ directory
-
   * Make erase cancellable. Closes: #381898, #400034
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Hleb Rubanau
+  * Italian (it.po) by Stefano Canepa
+  * Korean (ko.po) by Sunjae Park
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Norwegian Bokmål (nb.po) by Hans Fredrik Nordhaug
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Slovak (sk.po) by Ivan Masár
 
  -- Max Vozeler <xam@debian.org>  Sun, 25 Nov 2007 17:01:43 +0100
 

@@ -685,16 +685,11 @@ crypto_check_setup() {
 		open_dialog PARTITIONS
 		while { read_line num id size type fs path name; [ "$id" ]; }; do
 			[ "$fs" != free ] || continue
-			partitions="$partitions $id,$num,$path"
+			partitions="$partitions $id"
 		done
 		close_dialog
 
-		for p in $partitions; do
-			set -- $(IFS=, && echo $p)
-			id=$1
-			num=$2
-			path=$3
-
+		for id in $partitions; do
 			[ -f $id/method ] || continue
 			[ -f $id/crypto_type ] || continue
 
@@ -796,15 +791,13 @@ crypto_setup() {
 		open_dialog PARTITIONS
 		while { read_line num id size type fs path name; [ "$id" ]; }; do
 			[ "$fs" != free ] || continue
-			partitions="$partitions $id,$num,$path"
+			partitions="$partitions $id,$path"
 		done
 		close_dialog
 		
 		for part in $partitions; do
-			set -- $(IFS=, && echo $part)
-			id=$1
-			num=$2
-			path=$3
+			id=${part%,*}
+			path=${part#*,}
 
 			[ -f $id/method ] || continue
 			[ -f $id/crypto_type ] || continue

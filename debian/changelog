@@ -1,3 +1,11 @@
+partman-crypto (24) UNRELEASED; urgency=low
+
+  * Use veto_filesystems to allow only ext2 on crypto
+    devices with random keys. Closes: #414638. This is only 
+    effective with partman-basicmethods 36 or later.
+
+ -- Max Vozeler <xam@debian.org>  Mon, 03 Dec 2007 00:19:49 +0100
+
 partman-crypto (23) unstable; urgency=low
 
   [ Colin Watson ]

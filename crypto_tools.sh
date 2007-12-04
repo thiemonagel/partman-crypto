@@ -129,7 +129,7 @@ setup_loopaes () {
 
 	log-output -t partman-crypto \
 	/sbin/losetup-aes -e $cipher $opts -p0 -G / $loop $device < $pass
-	if [ $? -ne 0 ] ; then
+	if [ $? -ne 0 ]; then
 		log "losetup failed"
 		return 2
 	fi
@@ -151,7 +151,7 @@ setup_dmcrypt () {
 
 	log-output -t partman-crypto \
 	/sbin/cryptsetup -c $cipher-$iv -d $pass -h $hash -s $size create $mapping $device
-	if [ $? -ne 0 ] ; then
+	if [ $? -ne 0 ]; then
 		log "cryptsetup failed"
 		return 2
 	fi
@@ -172,14 +172,14 @@ setup_luks () {
 
 	log-output -t partman-crypto \
 	/sbin/cryptsetup -c $cipher-$iv -s $size luksFormat $device $pass
-	if [ $? -ne 0 ] ; then
+	if [ $? -ne 0 ]; then
 		log "luksFormat failed"
 		return 2
 	fi
 
 	log-output -t partman-crypto \
 	/sbin/cryptsetup -d $pass luksOpen $device $mapping
-	if [ $? -ne 0 ] ; then
+	if [ $? -ne 0 ]; then
 		log "luksOpen failed"
 		return 2
 	fi
@@ -240,7 +240,7 @@ setup_cryptdev () {
 	return 0
 }
 
-wipe () {
+crypto_do_wipe () {
 	local template dev fifo pid x
 	template=$1
 	dev=$2
@@ -271,14 +271,14 @@ wipe () {
 	return $ret
 }
 
-dev_wipe () {
+crypto_wipe_device () {
 	local device size method interactive targetdevice
 	device=$1
 	size=$2
 	method=$3
 	interactive=$4
-	if [ "$interactive" != "no" ]; then
-		interactive="yes"
+	if [ "$interactive" != no ]; then
+		interactive=yes
 	fi
 	ret=1
 
@@ -311,7 +311,7 @@ dev_wipe () {
 	# Erase
 	template="partman-crypto/progress/erase"
 	db_subst $template DEVICE $(humandev $device)
-	if ! wipe $template $targetdevice; then
+	if ! crypto_do_wipe $template $targetdevice; then
 		template="partman-crypto/erase_failed"
 		db_subst $template DEVICE $(humandev $device)
 		db_input critical $template || true
@@ -759,7 +759,7 @@ crypto_setup() {
 				continue
 			fi
 
-			if ! dev_wipe $path $size $(cat $id/crypto_type) $interactive; then
+			if ! crypto_wipe_device $path $size $(cat $id/crypto_type) $interactive; then
 				db_fset partman-crypto/commit_failed seen false
 				db_input critical partman-crypto/commit_failed
 				db_go || true

@@ -4,6 +4,10 @@ partman-crypto (24) UNRELEASED; urgency=low
     devices with random keys. Closes: #414638. This is only 
     effective with partman-basicmethods 36 or later.
 
+  * Replace code to commit partman changes to disk with
+    call to commit_changes from partman-base (>= 113) and
+    version the dependency accordingly.
+
  -- Max Vozeler <xam@debian.org>  Mon, 03 Dec 2007 00:19:49 +0100
 
 partman-crypto (23) unstable; urgency=low

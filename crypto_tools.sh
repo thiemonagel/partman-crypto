@@ -721,21 +721,7 @@ crypto_setup() {
 		interactive="yes"
 	fi
 
-	# Commit the changes
-	for s in /lib/partman/commit.d/*; do
-	    if [ -x $s ]; then
-		$s || {
-		    db_input high partman-crypto/commit_failed || true
-		    db_go || true
-		    for s in /lib/partman/init.d/*; do
-			if [ -x $s ]; then
-			    $s || return 255
-			fi
-		    done
-		    return 0
-		}
-	    fi
-	done
+	commit_changes partman-crypto/commit_failed || return $?
 
 	if ! swap_is_safe; then
 		db_fset partman-crypto/unsafe_swap seen false

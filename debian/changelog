@@ -2,18 +2,19 @@ partman-crypto (25) UNRELEASED; urgency=low
 
   * Moved definitions.sh to ./lib/base.sh. Requires partman-base (>= 114).
   * Move crypto-tools.sh to ./lib/crypto-base.
+  * finish.d/crypto_config: fix script error when $tmp is empty.
 
- -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 15:53:56 +0100
+ -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 16:36:52 +0100
 
 partman-crypto (24) unstable; urgency=low
 
   [ Max Vozeler ]
-  * Use veto_filesystems to allow only ext2 on crypto
-    devices with random keys. Closes: #414638. This is only
-    effective with partman-basicmethods 36 or later.
-  * Replace code to commit partman changes to disk with
-    call to commit_changes from partman-base (>= 113) and
-    version the dependency accordingly.
+  * Use veto_filesystems to allow only ext2 on crypto devices with random
+    keys. This is only effective with partman-basicmethods 36 or later.
+    Closes: #414638.
+  * Replace code to commit partman changes to disk with call to
+    commit_changes from partman-base (>= 113) and version the dependency
+    accordingly.
 
   [ Frans Pop ]
   * Rename functions dev_wipe and wipe to be in crypto namespace.

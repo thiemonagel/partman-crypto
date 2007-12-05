@@ -84,7 +84,7 @@ crypttab_add_entry () {
 			fi
 		done
 		opts="cipher=$cipher-$ivalgorithm,size=$keysize"
-		if [ $keytype != random -a -n "$keyhash" ]; then
+		if [ $keytype != random ] && [ -n "$keyhash" ]; then
 			opts="$opts,hash=$keyhash"
 		fi
 	fi
@@ -108,7 +108,7 @@ crypttab_add_entry () {
 	fi
 	if [ $method = swap ]; then
 		opts="$opts,swap"
-	elif [ $mnt = /tmp -a $keytype = random ]; then
+	elif [ "$mnt" = /tmp ] && [ $keytype = random ]; then
 		opts="$opts,tmp"
 	fi
 

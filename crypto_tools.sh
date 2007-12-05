@@ -251,7 +251,7 @@ crypto_do_wipe () {
 	pid=$!
 
 	cancelled=0
-	db_capb progresscancel
+	db_capb backup progresscancel
 	db_progress START 0 100 $template
 	while read x <&9; do
 		db_progress STEP 1
@@ -262,6 +262,7 @@ crypto_do_wipe () {
 		fi
 	done 9< $fifo
 	db_progress STOP
+	db_capb backup
 
 	rm $fifo
 	wait $pid

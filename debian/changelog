@@ -10,8 +10,11 @@ partman-crypto (24) UNRELEASED; urgency=low
 
   [ Frans Pop ]
   * Rename functions dev_wipe and wipe to be in crypto namespace.
+  * Remove progresscancel capability again after erase progress bar to avoid
+    all following progress bars to become cancelable as well. Ensure backup
+    capability is retained.
 
- -- Frans Pop <fjp@debian.org>  Tue, 04 Dec 2007 22:36:38 +0100
+ -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 12:50:33 +0100
 
 partman-crypto (23) unstable; urgency=low
 

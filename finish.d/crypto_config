@@ -9,7 +9,8 @@
 . /lib/partman/lib/base.sh
 
 fstab_replace_entry () {
-	local realdev realdevdir cryptdev cryptdevdir entry new_entry opts cipher keytype keyfile dev mnt fstype opts freq passno
+	local realdev realdevdir cryptdev cryptdevdir entry new_entry opts
+	local cipher keytype keyfile dev mnt fstype freq passno
 	realdev=$1
 	realdevdir=$2
 	cryptdev=$3
@@ -64,7 +65,8 @@ fstab_replace_entry () {
 }
 
 crypttab_add_entry () {
-	local realdev realdevdir cryptdev cryptdevdir keytype opts keyfile method mnt target source
+	local realdev realdevdir cryptdev cryptdevdir keytype keyfile opts
+	local method mnt target source
 	realdev=$1
 	realdevdir=$2
 	cryptdev=$3
@@ -157,7 +159,8 @@ for dev in $DEVICES/*; do
 		# skip unless swap, to be mounted or lvm on dm-crypt
 		method=$(cat $id/method)
 		type=$(cat $realdevdir/crypto_type)
-		if [ "$method" != swap ] && [ "$method" != lvm ] && [ ! -f $id/mountpoint ]; then
+		if [ "$method" != swap ] && [ "$method" != lvm ] && \
+		   [ ! -f $id/mountpoint ]; then
 			continue
 		fi
 		if [ "$method" = lvm ] && [ "$type" != dm-crypt ]; then

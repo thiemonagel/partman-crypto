@@ -6,7 +6,7 @@
 # * loop-AES: loop-aes-utils, loop-aes-rootfs (TODO) and loop keys
 # * cryptsetup: relies on base-installer instead
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 loop_AES=no
 dm_crypt=no

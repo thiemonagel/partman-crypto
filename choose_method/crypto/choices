@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 . /lib/partman/crypto_tools.sh
 
 dev=$1

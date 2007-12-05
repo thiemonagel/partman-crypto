@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 # 1. Check if active encrypted devices exist
 crypto=no

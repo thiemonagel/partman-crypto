@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 dev=$2
 id=$3

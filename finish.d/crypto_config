@@ -6,7 +6,7 @@
 # dm-crypt:  creates /etc/crypttab entries
 # luks:	  creates /etc/crypttab entries
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 fstab_replace_entry () {
 	local realdev realdevdir cryptdev cryptdevdir entry new_entry opts cipher keytype keyfile dev mnt fstype opts freq passno

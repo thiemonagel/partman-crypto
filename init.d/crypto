@@ -3,7 +3,7 @@
 # This script creates partman cryptdisks for the encrypted devices
 # setup in choose_partition/crypto/do_option.
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 dev_to_devdir () {
 	echo $DEVICES/$(echo $1 | tr / =)

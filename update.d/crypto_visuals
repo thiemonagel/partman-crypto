@@ -4,7 +4,7 @@
 # the humandev name of the crypt disk as mountpoint, so the user can see which
 # loop/dm device is which after they've been setup.
 
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 dev=$1
 num=$2

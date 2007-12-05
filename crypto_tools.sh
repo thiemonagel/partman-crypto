@@ -1,4 +1,4 @@
-. /lib/partman/definitions.sh
+. /lib/partman/lib/base.sh
 
 dm_dev_is_safe() {
 	local maj min dminfo deps

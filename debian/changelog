@@ -1,4 +1,4 @@
-partman-crypto (24) UNRELEASED; urgency=low
+partman-crypto (24) unstable; urgency=low
 
   [ Max Vozeler ]
   * Use veto_filesystems to allow only ext2 on crypto
@@ -14,7 +14,10 @@ partman-crypto (24) UNRELEASED; urgency=low
     all following progress bars to become cancelable as well. Ensure backup
     capability is retained.
 
- -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 12:50:33 +0100
+  [ Updated translations ]
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+
+ -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 13:18:55 +0100
 
 partman-crypto (23) unstable; urgency=low
 

@@ -10,7 +10,7 @@
 #  7. Does losetup/dmsetup
 #  8. Restarts partman
 
-. /lib/partman/crypto_tools.sh
+. /lib/partman/lib/crypto-base.sh
 
 crypto_check_setup || exit 1
 

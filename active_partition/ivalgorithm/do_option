@@ -3,7 +3,7 @@
 # This script handles selecting the IV generation algorithm for crypt_types
 # that use variable IV algorithms (ie. not loop-AES)
 
-. /lib/partman/crypto_tools.sh
+. /lib/partman/lib/crypto-base.sh
 
 dev=$2
 id=$3

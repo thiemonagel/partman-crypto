@@ -3,7 +3,7 @@
 # This script handles selecting the hash function for crypt_types
 # that don't link them to the ciphers (ie. all but loop-AES)
 
-. /lib/partman/crypto_tools.sh
+. /lib/partman/lib/crypto-base.sh
 
 dev=$2
 id=$3

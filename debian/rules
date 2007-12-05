@@ -44,7 +44,7 @@ install-arch: build
 	debian/install-rc update.d
 	debian/install-rc finish.d
 	dh_install finish-install.d usr/lib
-	dh_install crypto_tools.sh lib/partman
+	dh_install lib lib/partman
 	dh_install base64/base64 bin/
 	dh_install blockdev-keygen bin/
 	dh_install blockdev-wipe/blockdev-wipe bin/

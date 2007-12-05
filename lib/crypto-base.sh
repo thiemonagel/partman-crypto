@@ -479,16 +479,9 @@ crypto_load_modules() {
 # Checks that we have sufficient memory to load crypto udebs
 crypto_check_mem() {
 	local verbose="$1"
-	local memfree
 
-	if [ ! -e /proc/meminfo ]; then
-		return 0
-	fi
-
-	memfree=$(grep MemFree /proc/meminfo | head -1 | \
-		  sed 's/.*:[[:space:]]*\([0-9]*\).*/\1/')
 	# A more or less arbitrary limit
-	if [ "$memfree" -lt 10000 ]; then
+	if [ $(memfree) -lt 10000 ]; then
 		if [ "$verbose" != "true" ]; then
 			return 1
 		fi
@@ -508,7 +501,7 @@ crypto_check_mem() {
 
 # Loads additional crypto udebs
 crypto_load_udebs() {
-	local packages udebdir package memfree
+	local packages udebdir package
 	packages="$1"
 	udebdir=/var/run/partman-crypto/udebs
 

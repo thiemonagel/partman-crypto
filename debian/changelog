@@ -4,8 +4,9 @@ partman-crypto (25) UNRELEASED; urgency=low
   * Move crypto-tools.sh to ./lib/crypto-base.
   * finish.d/crypto_config: fix script error when $tmp is empty.
   * crypto-base.sh: use new memfree function from base.sh.
+  * Change priority to optional to allow dynamic loading by partman-base.
 
- -- Frans Pop <fjp@debian.org>  Wed, 05 Dec 2007 16:56:43 +0100
+ -- Frans Pop <fjp@debian.org>  Thu, 06 Dec 2007 16:11:23 +0100
 
 partman-crypto (24) unstable; urgency=low
 

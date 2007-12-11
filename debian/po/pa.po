@@ -13,21 +13,22 @@
 # Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005, 2006.
 # Amanpreet Singh Alam <apbrar@gmail.com>, 2006.
-# A S Alam <apbrar@gmail.com>, 2006.
+# A S Alam <apbrar@gmail.com>, 2006, 2007.
 # A S Alam <aalam@users.sf.net>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-07-01 12:10+0530\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
+"PO-Revision-Date: 2007-12-11 08:55+0530\n"
+"Last-Translator: A S Alam <apbrar@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-l10n@users.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
 
 #. Type: text
 #. Description
@@ -352,7 +353,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਡਿਸਕ ਤੇ ਲਿਖੀ ਹੋਵੇ। ਇਹ "
+"ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਮੌਜੂਦਾ ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ ਡਿਸਕ ਤੇ ਲਿਖੀ ਹੋਵੇ। ਇਹ "
 "ਤਬਦੀਲੀਆਂ ਰੱਦ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕਦੀਆਂ।"
 
 #. Type: boolean
@@ -372,7 +373,7 @@ msgid ""
 msgstr ""
 "ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਮੈਨੇਜਰ ਸੰਰਚਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦ ਇੰਕ੍ਰਿਪਟਿਡ ਵਾਲੀਅਮ ਵਾਲੀ ਡਿਸਕ ਤੇ ਭਾਗਾਂ ਵਿੱਚ ਕੋਈ "
 "ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਇਹ ਫੈਸਲਾ ਕਰੋ ਕਿ ਜਾਰੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਸੀਂ ਇਹਨਾ ਡਿਸਕਾਂ ਤੇ "
-"ਮੌਜੂਦਾ ਵਿਭਾਗੀਕਰਨ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
+"ਮੌਜੂਦਾ ਪਾਰਟੀਸ਼ਨਿੰਗ ਸਕੀਮ ਨਾਲ ਸਹਿਮਤ ਹੋ।"
 
 #. Type: error
 #. Description
@@ -516,7 +517,7 @@ msgstr "ਜਾਂਚ ਲਈ ਸ਼ਬਦ ਮੁੜ ਭਰੋ:"
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਪ੍ਹੈਰਾ ਗੁਪਤ-ਕੋਡ ਭਰੋ।"
+msgstr "ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ ਤੁਸੀਂ ਇਹ ਠੀਕ ਲਿਖਿਆ ਹੈ ਫਿਰ ਉਹੀ ਪ੍ਹੈਰਾ ਪਾਸਵਰਡ ਭਰੋ।"
 
 #. Type: error
 #. Description
@@ -673,7 +674,7 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"ਤੁਸੀਂ ${DEVICE} ਲਈ ਲਗਾਤਾਰ ਕੁੰਜੀ ਚੁਣੀ ਹੈ ਪਰ ਇਸ ਉੱਤੇ ਫਾਇਲ ਸਿਸਟਮ ਬਣਾਉਣ ਲਈ ਵਿਭਾਗੀਕਰਨ "
+"ਤੁਸੀਂ ${DEVICE} ਲਈ ਲਗਾਤਾਰ ਕੁੰਜੀ ਚੁਣੀ ਹੈ ਪਰ ਇਸ ਉੱਤੇ ਫਾਇਲ ਸਿਸਟਮ ਬਣਾਉਣ ਲਈ ਪਾਰਟੀਸ਼ਨਿੰਗ "
 "ਕਰਤਾ ਨੂੰ ਬੇਨਤੀ ਕੀਤੀ ਹੈ।"
 
 #. Type: boolean

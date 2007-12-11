@@ -1,4 +1,4 @@
-partman-crypto (25) UNRELEASED; urgency=low
+partman-crypto (25) unstable; urgency=low
 
   * Moved definitions.sh to ./lib/base.sh.
   * Move crypto-tools.sh to ./lib/crypto-base.
@@ -7,7 +7,10 @@ partman-crypto (25) UNRELEASED; urgency=low
   * Change priority to optional to allow dynamic loading by partman-base.
   * Requires partman-base (>= 114).
 
- -- Frans Pop <fjp@debian.org>  Thu, 06 Dec 2007 16:11:23 +0100
+  [ Updated translations ]
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+
+ -- Frans Pop <fjp@debian.org>  Tue, 11 Dec 2007 14:01:41 +0100
 
 partman-crypto (24) unstable; urgency=low
 

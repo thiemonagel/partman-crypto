@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# This script is run by finish-install after the kernel was chosen. 
+# This script is run by finish-install after the kernel was chosen.
 # It installs a corresponding loop-aes-$KVERS module if any loop-AES
 # encrypted partitions have been configured.
 #
@@ -16,7 +16,7 @@ for dev in /var/lib/partman/devices/*; do
 		[ -f $id/crypto_type ] || continue
 		[ -f $id/crypt_active ] || continue
 
-		type=$(cat $id/crypto_type)		
+		type=$(cat $id/crypto_type)
 		if [ "$type" = "loop-AES" ]; then
 			loop_AES=yes
 		fi
@@ -39,7 +39,7 @@ END
 			break
 		fi
 	done
-	
+
 	if [ "$failed" = "yes" ]; then
 		templ="partman-crypto/module_package_missing"
 		db_fset $templ seen false

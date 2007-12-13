@@ -33,12 +33,12 @@ select_cipher () {
 	db_input critical $template || true
 	db_go || return
 	db_get $template
-	
+
 	if [ "$RET" = none ]; then
 		rm -f $part/cipher
 		return
 	fi
-	
+
 	echo ${RET%% *} > $part/cipher
 }
 

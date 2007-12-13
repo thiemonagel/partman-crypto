@@ -4,7 +4,7 @@
 #  1. Checks required tools
 #  2. Checks for valid cipher options
 #  3. Commits partman changes
-#  4. Checks for safe swap 
+#  4. Checks for safe swap
 #  5. Creates keyfiles
 #  6. Erases to-be-encrypted partitions
 #  7. Does losetup/dmsetup

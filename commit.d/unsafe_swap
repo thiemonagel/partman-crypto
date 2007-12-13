@@ -49,7 +49,7 @@ for dev in $DEVICES/*; do
 		partitions="$partitions $id"
 	done
 	close_dialog
-	
+
 	for id in $partitions; do
 		[ -f $id/method ] || continue
 		method=$(cat $id/method)

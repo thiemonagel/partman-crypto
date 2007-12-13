@@ -6,9 +6,9 @@
 # or written out to disk unencrypted.
 #
 # Important: before running this script the caller has
-# to check for unsafe swap partitions. This is done in 
+# to check for unsafe swap partitions. This is done in
 # choose_method/encrypt/do_options.
-# 
+#
 # Assumption: This runs as part of d-i. Therefore, temp
 # files outside of /target reside in a ramdisk. Process
 # information (think [ "$pass" ]) is not exposed to anyone
@@ -40,7 +40,7 @@ get_passphrase () {
 		db_fset $templ seen false
 		db_subst $templ DEVICE "$description"
 		db_input critical $templ
-	
+
 		templ="partman-crypto/passphrase-again"
 		db_set $templ ""
 		db_fset $templ seen false
@@ -73,7 +73,7 @@ get_passphrase () {
 			db_input critical $templ || true
 			db_go || true
 			db_get $templ || RET=''
-		
+
 			if [ "$RET" != true ]; then
 				# user doesn't want to force weak passphrase
 				continue
@@ -93,7 +93,7 @@ get_passphrase () {
 
 have_entropy_plugin () {
 	db_capb
-	set -- $RET 
+	set -- $RET
 	for cap; do
 		if [ "$cap" = plugin-entropy-text ]; then
 			return 0
@@ -125,7 +125,7 @@ gnupg_encrypt () {
 	passfifo=$2
 	gpgopts="--batch --no-options --no-random-seed-file --no-default-keyring --keyring /dev/null --passphrase-fd 3 --symmetric -a"
 
-	while [ ! -p $randfifo ]; do 
+	while [ ! -p $randfifo ]; do
 		sleep 1
 	done
 
@@ -170,7 +170,7 @@ create_random_keyfile() {
 	keybytes=$2
 
 	# Fork off file writer
-	(while [ ! -p $randfifo ]; do 
+	(while [ ! -p $randfifo ]; do
 		 sleep 1
 	 done
 	 cat $randfifo > $keyfile

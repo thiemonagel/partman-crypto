@@ -45,14 +45,14 @@ fstab_replace_entry () {
 		mountpoint=$(cat $cryptdevdir/mountpoint)
 		if [ "$mountpoint" = /tmp ]; then
 			opts="${opts},phash=random/1777"
-		else 
+		else
 			opts="${opts},phash=random"
 		fi
 	fi
 
-	# Build the new entry; Replace $cryptdev with $realdev, include the 
+	# Build the new entry; Replace $cryptdev with $realdev, include the
 	# crypto-specific options and set fs_passno to 0 because checkfs.sh
-	# can't handle encrypted devices. 
+	# can't handle encrypted devices.
 	new_entry=$(
 		printf "%-15s %-15s %-7s %-15s %-7s %s" \
 			$realdev $mnt $fstype $opts $freq 0

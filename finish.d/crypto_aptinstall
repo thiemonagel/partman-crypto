@@ -21,7 +21,7 @@ install_loopkeys () {
 	for key in $*; do
 		if [ -f $dir/$key ]; then
 			: TODO show error
-		else 
+		else
 			mv $key $dir
 			chmod 0600 $dir/$key
 		fi

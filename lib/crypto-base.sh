@@ -195,7 +195,7 @@ setup_cryptdev () {
 
 	for opt in keytype cipher keyfile ivalgorithm keyhash keysize; do
 		eval local $opt
-		
+
 		if [ -r "$id/$opt" ]; then
 			eval $opt=$(cat $id/$opt)
 		else
@@ -463,7 +463,7 @@ crypto_load_modules() {
 				# Already loaded
 				continue
 			fi
-	
+
 			if crypto_load_module $module; then
 				touch $moduledir/$module
 			else
@@ -736,7 +736,7 @@ crypto_setup() {
 			partitions="$partitions $id,$size,$path"
 		done
 		close_dialog
-		
+
 		for part in $partitions; do
 			set -- $(IFS=, && echo $part)
 			id=$1
@@ -774,7 +774,7 @@ crypto_setup() {
 			partitions="$partitions $id,$path"
 		done
 		close_dialog
-		
+
 		for part in $partitions; do
 			id=${part%,*}
 			path=${part#*,}

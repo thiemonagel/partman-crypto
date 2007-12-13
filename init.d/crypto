@@ -66,7 +66,7 @@ create_partition () {
 	fi
 	open_dialog DISK_UNCHANGED
 	close_dialog
-	
+
 	mkdir -p $id
 	echo $id
 }
@@ -101,14 +101,14 @@ create_cryptdisk () {
 	fi
 
 	case $keytype in
-		random) 
+		random)
 			filesystem=linux-swap
 			;;
 		keyfile|*)
 			filesystem=ext3
 			;;
 	esac
-	
+
 	# Create a new partition in there
 	cryptid=$(create_partition $cryptdev $filesystem)
 	if [ -z $cryptid ]; then
@@ -170,7 +170,7 @@ for dev in /var/lib/partman/devices/*; do
 
 		method=$(cat $id/method)
 		[ $method = crypto ] || continue
-		
+
 		if ! create_cryptdisk $dev $id $num $size $path; then
 			db_fset partman-crypto/init_failed seen false
 			db_input critical partman-crypto/init_failed

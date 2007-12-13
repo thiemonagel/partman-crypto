@@ -12,7 +12,7 @@ close_dialog
 if [ "$virtual" = yes ]; then
 	exit 0
 fi
-	
+
 db_metaget partman-crypto/text/erase_data_partition description
 printf "erase_partition\t${RET}\n"
 

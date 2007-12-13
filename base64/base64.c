@@ -2,13 +2,13 @@
  * This is a minimal base64 encoder. It is derived from b64.c
  * version 08/04/01 -- Create Version 0.00.00B by Bob Trower,
  * with the following changes by Max Vozeler <xam@debian.org>
- * 
+ *
  * - Stripped code not required for encoding
  * - Use LF line endings instead of CRLF
  * - Use fixed LINESIZE of 60 to follow uuencode -m
  *
  * Copyright (c) 2001 Bob Trower, Trantor Standard Systems Inc.
- * 
+ *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated
  * documentation files (the "Software"), to deal in the
@@ -17,11 +17,11 @@
  * sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so,
  * subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall
  * be included in all copies or substantial portions of the
  * Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
  * KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR

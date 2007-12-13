@@ -16,7 +16,7 @@ for dev in $DEVICES/*; do
 		partitions="$partitions $id,$path"
 	done
 	close_dialog
-	
+
 	for part in $partitions; do
 		id=${part%,*}
 		path=${part#*,}

@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-01-07 22:48+0100\n"
-"PO-Revision-Date: 2007-10-21 00:37-0400\n"
-"Last-Translator: Sunjae Park <darehanl@gmail.com>\n"
+"PO-Revision-Date: 2007-12-18 11:06+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,7 +73,7 @@ msgstr "암호화 방식:"
 #. Description
 #: ../partman-crypto.templates:45
 msgid "Encryption method for this partition:"
-msgstr "이 파티션에 적용할 암호화 방식: "
+msgstr "이 파티션에 적용할 암호화 방식:"
 
 #. Type: text
 #. Description
@@ -86,20 +86,20 @@ msgstr "암호화:"
 #. Description
 #: ../partman-crypto.templates:55
 msgid "Encryption for this partition:"
-msgstr "이 파티션에 적용할 암호화 방식"
+msgstr "이 파티션에 적용할 암호화 방식:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:60
 msgid "Key size:"
-msgstr "암호화키 길이: "
+msgstr "암호화 키 길이:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:65
 msgid "Key size for this partition:"
-msgstr "이 파티션에 쓸 암호화키 길이:"
+msgstr "이 파티션에 쓸 암호화 키 길이:"
 
 #. Type: text
 #. Description
@@ -116,7 +116,7 @@ msgstr "IV 알고리즘:"
 #. the encryption algorithm
 #: ../partman-crypto.templates:79
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "이 파티션에 적용할 초기화 벡터(IV) 생성 알고리즘: "
+msgstr "이 파티션에 적용할 초기화 벡터 (IV) 만들기 알고리즘:"
 
 #. Type: select
 #. Description
@@ -129,35 +129,35 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"각 섹터의 초기화 벡터를 생성하는 알고리즘이 다양하게 존재합니다. 어떤 알고리"
-"즘을 선택하느냐는 암호화의 성능을 좌우합니다. 일반적으로는 구형 시스템과의 호"
-"환성 문제가 아니라면 이 선택을 변경할 필요는 없습니다."
+"각 섹터의 초기화 벡터를 구하는 다양한 알고리즘이 있습니다. 어떤 알고리즘을 선"
+"택하느냐에 따라 암호화의 보안 수준이 달라집니다. 구형 시스템과의 호환성 문제"
+"가 아니라면, 알고리즘 선택을 따로 바꿔야 할 필요는 없습니다."
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:88
 msgid "Encryption key:"
-msgstr "암호화키:"
+msgstr "암호화 키:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:93
 msgid "Type of encryption key for this partition:"
-msgstr "이 파티션에 사용할 암호화키의 종류:"
+msgstr "이 파티션에 사용할 암호화 키의 종류:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #: ../partman-crypto.templates:98
 msgid "Encryption key hash:"
-msgstr "암호화키의 해시값:"
+msgstr "암호화 키의 해시값:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:103
 msgid "Type of encryption key hash for this partition:"
-msgstr "이 파티션에 사용할 암호화키 해시값의 종류:"
+msgstr "이 파티션에 사용할 암호화 키 해시값의 종류:"
 
 #. Type: select
 #. Description
@@ -168,7 +168,7 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"암호화키는 암호문에 단방향 해시 함수를 적용하여 구합니다. 일반적으로는 권장하"
+"암호화 키는 암호문에 단방향 해시 함수를 적용해 구합니다. 일반적으로는 권장하"
 "는 값에서 다른 값으로 바꿀 필요가 없으며 잘못 바꿀 경우에는 암호화 성능을 저"
 "하시킬 수도 있습니다."
 
@@ -178,7 +178,7 @@ msgstr ""
 #. by "yes" or "no"
 #: ../partman-crypto.templates:113
 msgid "Erase data:"
-msgstr "데이터 삭제:"
+msgstr "데이터 지우기:"
 
 #. Type: text
 #. Description
@@ -196,13 +196,13 @@ msgstr "예"
 #. Description
 #: ../partman-crypto.templates:125
 msgid "Erase data on this partition"
-msgstr "이 파티션에 있는 데이터 삭제합니다"
+msgstr "이 파티션의 데이터를 지웁니다"
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:130
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "${DEVICE}에 있는 데이터를 전부 지웁니까?"
+msgstr "${DEVICE}에 있는 데이터를 정말로 지우시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -212,21 +212,21 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"${DEVICE}에 있는 데이터를 랜덤한 값으로 덮어쓸 것입니다. 이 과정을 마친 후 "
-"원 데이터를 복구할 수 없게 됩니다. 데이터 삭제를 취소할 수 있는 마지막 기회입"
-"니다."
+"${DEVICE}에 있는 데이터를 무작위 값으로 덮어씁니다. 이 과정을 마치면 기존 데"
+"이터를 복구할 수 없습니다. 지금이 데이터 지우기를 취소할 수 있는 마지막 기회"
+"입니다."
 
 #. Type: text
 #. Description
 #: ../partman-crypto.templates:137
 msgid "Erasing data on ${DEVICE}"
-msgstr "데이터 삭제 중: ${DEVICE}"
+msgstr "${DEVICE}의 데이터를 지우는 중입니다"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:141
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "${DEVICE}에 있는 데이터를 삭제하는 데 실패했습니다."
+msgstr "${DEVICE}의 데이터를 지우는 데 실패했습니다"
 
 #. Type: error
 #. Description
@@ -235,8 +235,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"${DEVICE}에 있는 데이터를 삭제하는 데 오류가 발생했습니다. 데이터는 삭제 되"
-"지 않았습니다."
+"${DEVICE}에 있는 데이터를 지우는 데 오류가 발생했습니다. 데이터는 지우지 않았"
+"습니다."
 
 #. Type: text
 #. Description
@@ -248,7 +248,7 @@ msgstr "암호화를 준비하는 중입니다..."
 #. Description
 #: ../partman-crypto.templates:151
 msgid "Configure encrypted volumes"
-msgstr "암호화된 볼륨을 설정"
+msgstr "암호화 볼륨 설정"
 
 #. Type: note
 #. Description
@@ -260,13 +260,13 @@ msgstr "암호화할 파티션이 없습니다"
 #. Description
 #: ../partman-crypto.templates:155
 msgid "No partitions have been selected for encryption."
-msgstr "암호화를 적용할 파티션을 선택하지 않았습니다"
+msgstr "암호화할 파티션을 선택하지 않았습니다."
 
 #. Type: note
 #. Description
 #: ../partman-crypto.templates:160
 msgid "Required programs missing"
-msgstr "필요한 프로그램을 찾을 수 없습니다."
+msgstr "필요한 프로그램이 없습니다"
 
 #. Type: note
 #. Description
@@ -275,14 +275,14 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"현재 버전의 Debian-installer는 partman-crypt 프로그램이 제대로 동작하기 위해 "
-"필요로 하는 프로그램을 포함하고 있지 않습니다."
+"현재 버전의 debian-installer는 partman-crypt 프로그램이 제대로 동작하기 위해 "
+"필요한 프로그램이 들어 있지 않습니다."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:167
 msgid "Required encryption options missing"
-msgstr "필요한 암호화 옵션이 불충분합니다."
+msgstr "필요한 암호화 옵션이 없습니다."
 
 #. Type: error
 #. Description
@@ -292,7 +292,7 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "${DEVICE}의 암호화 옵션이 불충분합니다. 파티션하기 메뉴로 돌아가서 필요한 옵"
-"션을 모두 선택하시기 바랍니다. "
+"션을 모두 선택하시기 바랍니다."
 
 #. Type: text
 #. Description
@@ -308,13 +308,13 @@ msgstr "없음"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:183
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "암호화된 물리 볼륨 ${DEV}에서 사용 중"
+msgstr "암호화 볼륨 ${DEV}의 물리 볼륨으로 사용"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:187
 msgid "Encryption package installation failure"
-msgstr "암호화 꾸러미 설치에 실패했습니다"
+msgstr "암호화 패키지 설치에 실패했습니다"
 
 #. Type: error
 #. Description
@@ -323,8 +323,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"커널 모듈 꾸러미인 ${PACKAGE}를 찾을 수 없거나 설치하는 도중 오류가 발생했습"
-"니다."
+"커널 모듈 패키지인 ${PACKAGE} 패키지가 없거나 설치하는 중에 오류가 발생했습니"
+"다."
 
 #. Type: error
 #. Description
@@ -334,14 +334,14 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"시스템이 부팅되면서 암호화된 파티션을 설정하려고 할 때 문제가 생길 것입니다. "
-"나중에 필요한 꾸러미를 설치하면 이 문제를 해결할 수 있습니다."
+"시스템이 다시 시작할 때 암호화 파티션을 설정하면서 문제가 생길 것입니다. 나중"
+"에 필요한 패키지를 설치하면 이 문제를 바로잡을 수 있습니다."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:199
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "바뀐 점을 디스크에 쓰고 암호화를 적용한 파티션을 설정하시겠습니까?"
+msgstr "바뀐 사항을 디스크에 쓰고 암호화 볼륨을 설정하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -350,14 +350,14 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"암호화된 볼륨을 설정하기 전에, 현재 파티션 구성을 디스크에 써야 합니다.  한"
+"암호화 볼륨을 설정하기 전에 먼저 현재 파티션 구성을 디스크에 써야 합니다.  한"
 "번 쓰면 되돌릴 수 없습니다."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:214
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "현재 파티션 구성을 유지하고 암호화된 볼륨을 설정하시겠습니까?"
+msgstr "현재 파티션 구성을 유지하고 암호화 볼륨을 설정하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -368,39 +368,38 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"암호화된 볼륨을 모두 설정하고 나면, 이 파티션들이 들어있는 디스크를 수정할 "
-"수 없게 됩니다.  계속 하기 전에 현재 디스크의 파티션 구성이 좋은지 확인하고 "
-"넘어가십시오."
+"암호화 볼륨을 설정하면, 그 다음에는 이 파티션이 들어있는 디스크를 바꿀 수 없"
+"습니다.  디스크의 현재 파티션 구성이 좋은지 확인한 다음 진행하십시오."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "Configuration of encrypted volumes failed"
-msgstr "암호화된 볼륨 설정 실패"
+msgstr "암호화 볼륨 설정 실패"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "암호화된 볼륨을 설정하는 중에 오류가 발생했습니다."
+msgstr "암호화 볼륨을 설정하는 중 오류가 발생했습니다."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:222
 msgid "The configuration has been aborted."
-msgstr "암호화 설정이 중단되었습니다."
+msgstr "설정을 중단했습니다."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "Initialisation of encrypted volume failed"
-msgstr "암호와 볼륨의 초기화에 실패했습니다."
+msgstr "암호와 볼륨 초기화에 실패했습니다"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:229
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "암호화된 볼륨을 설정하는 도중 오류가 발생했습니다."
+msgstr "암호화한 볼륨을 설정하는 도중 오류가 발생했습니다."
 
 #. Type: text
 #. Description
@@ -420,7 +419,7 @@ msgstr "암호문"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:246
 msgid "Keyfile (GnuPG)"
-msgstr "암호화키 파일 (GnuPG)"
+msgstr "암호화 키 파일 (GnuPG)"
 
 #. Type: text
 #. Description
@@ -430,7 +429,7 @@ msgstr "암호화키 파일 (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:254
 msgid "Random key"
-msgstr "랜덤한 키"
+msgstr "무작위 키"
 
 #. Type: error
 #. Description
@@ -442,7 +441,7 @@ msgstr "안전하지 않은 스왑공간 발견"
 #. Description
 #: ../partman-crypto.templates:258
 msgid "An unsafe swap space has been detected."
-msgstr "안전하지 않은 스왑공간이 발견되었습니다."
+msgstr "안전하지 않은 스왑공간을 발견했습니다."
 
 #. Type: error
 #. Description
@@ -452,9 +451,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"기밀정보가 암호화도 되지 않고 하드디스크에 저장될 수 있기 때문에 이 문제는 매"
-"우 심각합니다. 하드디스크를 통해 다른 사람이 암호키나 암호문의 일부를 복원할 "
-"수도 있습니다."
+"암호화하지 않은 상태로 기밀정보를 하드디스크에 저장할 수 있기 때문에 이 문제"
+"는 매우 심각합니다. 하드디스크를 통해 다른 사람이 암호화 키나 암호문의 일부"
+"를 복원할 수도 있습니다."
 
 #. Type: error
 #. Description
@@ -464,21 +463,20 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"swapoff 프로그램을 실행시키든지 해서 스왑 사용을 중지하시거나 암호화된 스왑 "
-"공간을 사용하시기 바랍니다. 그 후에 암호화 된 디스크를 다시 설정해주십시오. "
-"이 프로그램은 이제 중단됩니다. "
+"스왑 사용을 중지하거나 (swapoff 프로그램을 실행) 암호화한 스왑 공간을 하나 설"
+"정한 다음 암호화 볼륨을 다시 설정하십시오. 이제 이 프로그램을 중단합니다."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "Encryption passphrase:"
-msgstr "암호화 암호문: "
+msgstr "암호화 암호문:"
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:271
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "${DEVICE}를 암호화 하기 위한 암호문을 입력하십시오."
+msgstr "${DEVICE} 장치를 암호화 하는 데 쓸 암호문을 입력하십시오."
 
 #. Type: password
 #. Description
@@ -489,9 +487,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"암호화의 성능은 이 암호문에 크게 좌우되기 때문에 쉽게 추측이 가능한 패스프레"
-"이즈는 가급적 사용하지 마십시오. 사전에서 있는 단어나 문장을 사용하지 말아야 "
-"하며 별명 등 개인적으로 연관이 있는 문구를 사용해서도 안 됩니다."
+"이 암호문에 따라 전체 암호화가 얼마나 안전한 지 크게 좌우됩니다. 쉽게 추측할 "
+"수 없는 암호문을 사용하도록 하십시오. 사전에서 있는 단어나 문장을 사용하지 말"
+"고, 본인 신상 정보와 관계 있는 문구를 사용해서도 안 됩니다."
 
 #. Type: password
 #. Description
@@ -501,14 +499,14 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"문자나 숫자, 기타 기호를 섞는 것이 좋은 암호문을 만드는 지름길입니다. 길이는 "
-"20자 이상은 되도록 하십시오."
+"암호문에는 문자나 숫자, 기타 기호를 섞어서 쓰는 게 좋습니다. 암호문 길이는 최"
+"소 20자 이상을 추천합니다."
 
 #. Type: password
 #. Description
 #: ../partman-crypto.templates:285
 msgid "Re-enter passphrase to verify:"
-msgstr "확인하기 위해 암호문을 다시 입력하십시오:"
+msgstr "확인을 위해 암호문을 다시 입력하십시오:"
 
 #. Type: password
 #. Description
@@ -542,13 +540,15 @@ msgstr "빈 암호문입니다"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "암호문에 아무것도 입력하지 않으셨습니다. 다시 입력해주십시오."
+msgstr ""
+"암호문으로 아무것도 입력하지 않으셨습니다. 빈 암호문은 사용할 수 없으니 다시 "
+"암호문을 입력하십시오."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:307
 msgid "Use weak passphrase?"
-msgstr "약한 암호문이라도 사용하시겠습니까?"
+msgstr "취약한 암호문을 사용하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -560,20 +560,20 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"암호문은 ${MINIMUM}자 이상을 권장합니다. 그렇지 않을 경우 풀리기 쉽습니다. "
-"더 긴 암호문을 사용하시기 바랍니다. "
+"입력하신 암호문 길이가 ${MINIMUM}글자보다 작습니다. 이보다 작으면 너무 취약하"
+"다고 판단됩니다. 더 긴 암호문을 사용하십시오."
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "Enter random characters"
-msgstr "키보드 입력을 랜덤하게 하십시오"
+msgstr "무작위로 글자를 입력하십시오"
 
 #. Type: entropy-text
 #. Description
 #: ../partman-crypto.templates:313
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "${DEVICE}에서 사용할 암호화키를 생성하고 있습니다."
+msgstr "${DEVICE}에 사용할 암호화 키를 만들고 있습니다."
 
 #. Type: entropy-text
 #. Description
@@ -583,21 +583,21 @@ msgid ""
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
 "can take a long time)"
 msgstr ""
-"키보드로 랜덤한 입력을 입력하시면 이 과정을 더 빨리 끝내실 수 있습니다. 키 정"
-"보가 충분히 모일 때까지 그냥 기다리셔도 됩니다(참고: 상당히 오래 걸릴 수 있습"
-"니다)."
+"무작위로 키보드를 두드리면 이 과정을 더 빨리 끝낼 수 있습니다. 아니면 키 데이"
+"터가 충분히 모일 때까지 그냥 기다리셔도 됩니다. (주의: 상당히 오래 걸릴 수 있"
+"습니다.)"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "Keyfile creation failure"
-msgstr "암호화키 파일 생성 실패"
+msgstr "암호화 키 파일 만들기 실패"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:322
 msgid "An error occurred while creating the keyfile."
-msgstr "암호화키 파일 생성 중에 오류가 발생했습니다."
+msgstr "암호화 키 파일 만들기 중에 오류가 발생했습니다."
 
 #. Type: error
 #. Description
@@ -607,8 +607,8 @@ msgid ""
 "partition. This feature is not available and continuing now would result in "
 "an installation that cannot be used."
 msgstr ""
-"루트 파일시스템이 암호화된 파티션에 설치되도록 설정하셨습니다. 이 기능은지원"
-"되지 않으며 이대로 계속 진행하실 경우 사용할 수 없는 시스템이 됩니다."
+"루트 파일 시스템을 암호화한 파티션에 설치하도록 설정하셨습니다. 이 기능은 지"
+"원하지 않으며 이대로 계속 진행하면 사용할 수 없는 시스템이 됩니다."
 
 #. Type: error
 #. Description
@@ -616,7 +616,7 @@ msgstr ""
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
-"루트 파일시스템은 암호화되지 않은 파티션에 설치되어야 하므로 뒤로 가십시오."
+"뒤로 돌아가서 루트 파일 시스템 용도로 암호화하지 않은 파티션을 선택하십시오."
 
 #. Type: error
 #. Description
@@ -626,14 +626,14 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"루트 파일시스템이 암호화된 파티션에 설치되도록 설정하셨습니다. 이 기능을 사용"
-"하시려면 커널과 initrd를 저장할 /boot 파티션을 따로 둬야 합니다."
+"루트 파일 시스템이 암호화한 파티션에 설치되도록 설정하셨습니다. 이 기능을 사"
+"용하시려면 커널과 initrd를 저장할 /boot 파티션을 따로 둬야 합니다."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:337
 msgid "You should go back and setup a /boot partition."
-msgstr "뒤로 가셔서 /boot 파티션을 설정하십시오."
+msgstr "돌아가서 /boot 파티션을 준비하십시오."
 
 #. Type: error
 #. Description
@@ -650,9 +650,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"/boot 파일 시스템을 암호화된 파티션에 설치되도록 설정하셨습니다. 이렇게 하면 "
-"부트로더에서 커널과 initrd를 불러올 수 없게 되므로 사용할 수 없습니다. 이대"
-"로 계속 진행하실 경우 사용할 수 없는 시스템이 됩니다."
+"/boot 파일 시스템을 암호화한 파티션에 저장하도록 설정했습니다. 이러한 경우 부"
+"트로더에서 커널과 initrd를 읽어들일 수 없으므로 이렇게 사용할 수 없습니다. 이"
+"대로 계속 진행하면 사용할 수 없는 시스템이 됩니다."
 
 #. Type: error
 #. Description
@@ -661,13 +661,13 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"뒤로 가셔서 암호화되지 않은 파티션을 /boot 파일 시스템으로 선택하십시오. "
+"뒤로 가셔서 암호화하지 않은 파티션을 /boot 파일 시스템으로 선택하십시오."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:358
 msgid "Are you sure you want to use a random key?"
-msgstr "랜덤한 키를 정말 사용하시겠습니까?"
+msgstr "무작위 키를 정말 사용하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -676,8 +676,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"${DEVICE}가 랜덤한 키를 사용하도록 설정했음에도 파일시스템을 새로 만들도록 요"
-"청하셨습니다."
+"${DEVICE}가 무작위 키를 사용하도록 설정했지만, 거기에 파일 시스템을 새로 만들"
+"도록 지정하셨습니다."
 
 #. Type: boolean
 #. Description
@@ -686,26 +686,26 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"랜덤한 키를 선택할 경우 시스템이 재부팅될 때마다 파티션의 내용이 지워집니다. "
-"이 기능은 스왑 파티션에만 사용하기 바랍니다."
+"무작위 키를 사용하면 시스템이 다시 시작할 때마다 파티션의 데이터가 지워집니"
+"다. 무작위 키는 스왑 파티션에만 사용해야 합니다."
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "Failed to download crypto components"
-msgstr "암호화 구성요소를 다운로드 받는 데 실패했습니다"
+msgstr "암호화 구성요소를 다운로드하는 데 실패했습니다"
 
 #. Type: error
 #. Description
 #: ../partman-crypto.templates:368
 msgid "An error occurred trying to download additional crypto components."
-msgstr "암호화 구성요소를 다운로드 받는 도중 오류가 발생했습니다."
+msgstr "암호화 구성요소를 다운로드하는 중 오류가 발생했습니다."
 
 #. Type: boolean
 #. Description
 #: ../partman-crypto.templates:373
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr "메모리가 부족함에도 암호화 구성요소의 설치를 계속하시겠습니까?"
+msgstr "메모리가 부족하지만 암호화 구성요소의 설치를 계속하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -715,5 +715,5 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"추가적인 암호화 구성요소를 설치하는데 필요한 메모리가 부족한 것 같습니다. 그"
-"래도 계속 진행할 경우, 설치 작업이 실패할 수 있습니다."
+"암호화 소프트웨어를 추가로 설치하는데 필요한 메모리가 부족한 것 같습니다. 그"
+"래도 계속 진행하면, 설치가 실패할 수 있습니다."

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-01-07 22:48+0100\n"
+"POT-Creation-Date: 2007-12-21 22:48+0000\n"
 "PO-Revision-Date: 2007-10-15 11:16+0100\n"
 "Last-Translator: Hleb Rubanau <g.rubanau@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -32,7 +32,8 @@ msgstr ""
 #. Description
 #. File system name
 #. Keep translations short enough
-#: ../partman-crypto.templates:5
+#. :sl3:
+#: ../partman-crypto.templates:6
 msgid "physical volume for encryption"
 msgstr "фізічны том для шыфравання"
 
@@ -40,7 +41,8 @@ msgstr "фізічны том для шыфравання"
 #. Description
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
-#: ../partman-crypto.templates:11
+#. :sl3:
+#: ../partman-crypto.templates:13
 msgid "crypto"
 msgstr "крыпта"
 
@@ -49,7 +51,8 @@ msgstr "крыпта"
 #. This is related to "encryption method"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
-#: ../partman-crypto.templates:18
+#. :sl3:
+#: ../partman-crypto.templates:21
 msgid "Loopback (loop-AES)"
 msgstr "Loopback (loop-AES)"
 
@@ -58,7 +61,8 @@ msgstr "Loopback (loop-AES)"
 #. This is related to "encryption method"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
-#: ../partman-crypto.templates:25
+#. :sl3:
+#: ../partman-crypto.templates:29
 msgid "Device-mapper (dm-crypt)"
 msgstr "Device-mapper (dm-crypt)"
 
@@ -66,46 +70,53 @@ msgstr "Device-mapper (dm-crypt)"
 #. Description
 #. This is related to "encryption method"
 #. Encryption type for a file system
-#: ../partman-crypto.templates:35
+#. :sl3:
+#: ../partman-crypto.templates:40
 msgid "not active"
 msgstr "неактыўны"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:40
+#. :sl3:
+#: ../partman-crypto.templates:46
 msgid "Encryption method:"
 msgstr "Спосаб шыфравання:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:45
+#. :sl3:
+#: ../partman-crypto.templates:52
 msgid "Encryption method for this partition:"
 msgstr "Спосаб шыфравання для гэтага падзела:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:50
+#. :sl3:
+#: ../partman-crypto.templates:58
 msgid "Encryption:"
 msgstr "Шыфраванне:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:55
+#. :sl3:
+#: ../partman-crypto.templates:64
 msgid "Encryption for this partition:"
 msgstr "Шыфраванне для гэтага падзела:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:60
+#. :sl3:
+#: ../partman-crypto.templates:70
 msgid "Key size:"
 msgstr "Памер ключа:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:65
+#. :sl3:
+#: ../partman-crypto.templates:76
 msgid "Key size for this partition:"
 msgstr "Памер ключа для гэтага падзела:"
 
@@ -114,7 +125,8 @@ msgstr "Памер ключа для гэтага падзела:"
 #. An initialization vector is the initial value used to seed
 #. the encryption algorithm
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:72
+#. :sl3:
+#: ../partman-crypto.templates:84
 msgid "IV algorithm:"
 msgstr "Алгарытм ВІ:"
 
@@ -122,7 +134,8 @@ msgstr "Алгарытм ВІ:"
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:79
+#. :sl3:
+#: ../partman-crypto.templates:92
 msgid "Initialization vector generation algorithm for this partition:"
 msgstr "Алгарытм стварэння вектара ініцыялізацыі для гэтага падзела"
 
@@ -130,7 +143,8 @@ msgstr "Алгарытм стварэння вектара ініцыяліза�
 #. Description
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
-#: ../partman-crypto.templates:79
+#. :sl3:
+#: ../partman-crypto.templates:92
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
 "sector. This choice influences the encryption security. Normally, there is "
@@ -145,32 +159,37 @@ msgstr ""
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:88
+#. :sl3:
+#: ../partman-crypto.templates:102
 msgid "Encryption key:"
 msgstr "Ключ шыфравання:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:93
+#. :sl3:
+#: ../partman-crypto.templates:108
 msgid "Type of encryption key for this partition:"
 msgstr "Тып ключа шыфравання для гэтага падзела:"
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
-#: ../partman-crypto.templates:98
+#. :sl3:
+#: ../partman-crypto.templates:114
 msgid "Encryption key hash:"
 msgstr "Хэш ключа шыфравання:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:103
+#. :sl3:
+#: ../partman-crypto.templates:120
 msgid "Type of encryption key hash for this partition:"
 msgstr "Тып хэша ключа шыфравання для гэтага падзела:"
 
 #. Type: select
 #. Description
-#: ../partman-crypto.templates:103
+#. :sl3:
+#: ../partman-crypto.templates:120
 msgid ""
 "The encryption key is derived from the passphrase by applying a one-way hash "
 "function to it. Normally, there is no reason to change this from the "
@@ -185,37 +204,43 @@ msgstr ""
 #. Description
 #. This shows up in a screen summarizing options and will be followed
 #. by "yes" or "no"
-#: ../partman-crypto.templates:113
+#. :sl3:
+#: ../partman-crypto.templates:131
 msgid "Erase data:"
 msgstr "Знішчыць інфармацыю:"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:117
+#. :sl3:
+#: ../partman-crypto.templates:136
 msgid "no"
 msgstr "не"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:121
+#. :sl3:
+#: ../partman-crypto.templates:141
 msgid "yes"
 msgstr "так"
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:125
+#. :sl3:
+#: ../partman-crypto.templates:146
 msgid "Erase data on this partition"
 msgstr "Знішчыць інфармацыю ў гэтым падзеле:"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:130
+#. :sl3:
+#: ../partman-crypto.templates:152
 msgid "Really erase the data on ${DEVICE}?"
 msgstr "Сапраўды знішчыць інфармацыю з ${DEVICE}?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:130
+#. :sl3:
+#: ../partman-crypto.templates:152
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
 "be recovered after this step has completed. This is the last opportunity to "
@@ -226,19 +251,22 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:137
+#. :sl3:
+#: ../partman-crypto.templates:160
 msgid "Erasing data on ${DEVICE}"
 msgstr "Знішчэнне інфармацыі з ${DEVICE}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:141
+#. :sl3:
+#: ../partman-crypto.templates:165
 msgid "Erasing data on ${DEVICE} failed"
 msgstr "Не атрымалася знішчыць інфармацыю з ${DEVICE}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:141
+#. :sl3:
+#: ../partman-crypto.templates:165
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
@@ -248,37 +276,43 @@ msgstr ""
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:147
+#. :sl3:
+#: ../partman-crypto.templates:172
 msgid "Setting up encryption..."
 msgstr "Наладка шыфравання..."
 
 #. Type: text
 #. Description
-#: ../partman-crypto.templates:151
+#. :sl3:
+#: ../partman-crypto.templates:177
 msgid "Configure encrypted volumes"
 msgstr "Наладзіць шыфраваныя тамы"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:155
+#. :sl3:
+#: ../partman-crypto.templates:182
 msgid "No partitions to encrypt"
 msgstr "Няма падзелаў для шыфравання"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:155
+#. :sl3:
+#: ../partman-crypto.templates:182
 msgid "No partitions have been selected for encryption."
 msgstr "Не прызначана падзелаў для шыфравання."
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:160
+#. :sl3:
+#: ../partman-crypto.templates:188
 msgid "Required programs missing"
 msgstr "Адсутнічаюць патрэбныя праграмы"
 
 #. Type: note
 #. Description
-#: ../partman-crypto.templates:160
+#. :sl3:
+#: ../partman-crypto.templates:188
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
@@ -288,13 +322,15 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:167
+#. :sl3:
+#: ../partman-crypto.templates:196
 msgid "Required encryption options missing"
 msgstr "Патрэбныя параметры шыфравання адсутнічаюць"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:167
+#. :sl3:
+#: ../partman-crypto.templates:196
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -304,29 +340,33 @@ msgstr ""
 
 #. Type: text
 #. Description
+#. :sl3:
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:178
+#: ../partman-crypto.templates:208
 msgid "missing"
 msgstr "адсутнічае"
 
 #. Type: text
 #. Description
+#. :sl3:
 #. What is "in use" is a partition
-#: ../partman-crypto.templates:183
+#: ../partman-crypto.templates:214
 msgid "In use as physical volume for encrypted volume ${DEV}"
 msgstr "Выкарыстоўваецца як фізічны том для шыфраванага тома ${DEV}"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:187
+#. :sl3:
+#: ../partman-crypto.templates:219
 msgid "Encryption package installation failure"
 msgstr "Не атрымалася ўсталяваць пакет шыфравання"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:187
+#. :sl3:
+#: ../partman-crypto.templates:219
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -336,7 +376,8 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:187
+#. :sl3:
+#: ../partman-crypto.templates:219
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -348,13 +389,15 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:199
+#. :sl3:
+#: ../partman-crypto.templates:232
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr "Ці запісаць змены на дыск і наладзіць шыфраваныя тамы?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:199
+#. :sl3:
+#: ../partman-crypto.templates:232
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -364,14 +407,16 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:214
+#. :sl3:
+#: ../partman-crypto.templates:248
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
 "Запісаць актуальную схему падзелаў на дыск і наладзіць шыфраваныя тамы?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:214
+#. :sl3:
+#: ../partman-crypto.templates:248
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -384,79 +429,90 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:222
+#. :sl3:
+#: ../partman-crypto.templates:257
 msgid "Configuration of encrypted volumes failed"
 msgstr "Не атрымалася наладзіць шыфраваныя тамы"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:222
+#. :sl3:
+#: ../partman-crypto.templates:257
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Падчас наладкі шыфраваных тамоў адбылася памылка."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:222
+#. :sl3:
+#: ../partman-crypto.templates:257
 msgid "The configuration has been aborted."
 msgstr "Працэс наладкі быў прымусова спынены."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:229
+#. :sl3:
+#: ../partman-crypto.templates:265
 msgid "Initialisation of encrypted volume failed"
 msgstr "Не атрымалася ініцыялізаваць шыфраваныя тамы"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:229
+#. :sl3:
+#: ../partman-crypto.templates:265
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Падчас падключэння шыфраваных тамоў адбылася памылка."
 
 #. Type: text
 #. Description
+#. :sl3:
 #. This is a key type for encrypted file systems
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:238
+#: ../partman-crypto.templates:275
 msgid "Passphrase"
 msgstr "Сакрэтны сказ"
 
 #. Type: text
 #. Description
+#. :sl3:
 #. This is a key type for encrypted file systems
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:246
+#: ../partman-crypto.templates:284
 msgid "Keyfile (GnuPG)"
 msgstr "Файл ключа (GnuPG)"
 
 #. Type: text
 #. Description
+#. :sl3:
 #. This is a key type for encrypted file systems
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:254
+#: ../partman-crypto.templates:293
 msgid "Random key"
 msgstr "Выпадковы ключ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:258
+#. :sl3:
+#: ../partman-crypto.templates:298
 msgid "Unsafe swap space detected"
 msgstr "Выяўленая небяспечная прастора swap"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:258
+#. :sl3:
+#: ../partman-crypto.templates:298
 msgid "An unsafe swap space has been detected."
 msgstr "Была выяўленая неабароненая прастора swap."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:258
+#. :sl3:
+#: ../partman-crypto.templates:298
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -468,7 +524,8 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:258
+#. :sl3:
+#: ../partman-crypto.templates:298
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -480,19 +537,22 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:271
+#. :sl3:
+#: ../partman-crypto.templates:312
 msgid "Encryption passphrase:"
 msgstr "Сакрэтны сказ для шыфравання:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:271
+#. :sl3:
+#: ../partman-crypto.templates:312
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "Вам трэба выбраць сакрэтны сказ для шыфравання ${DEVICE}."
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:271
+#. :sl3:
+#: ../partman-crypto.templates:312
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -505,7 +565,8 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:271
+#. :sl3:
+#: ../partman-crypto.templates:312
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -516,13 +577,15 @@ msgstr ""
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:285
+#. :sl3:
+#: ../partman-crypto.templates:327
 msgid "Re-enter passphrase to verify:"
 msgstr "Увядзіце сакрэтны сказ яшчэ раз для праверкі:"
 
 #. Type: password
 #. Description
-#: ../partman-crypto.templates:285
+#. :sl3:
+#: ../partman-crypto.templates:327
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -532,25 +595,29 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:291
+#. :sl3:
+#: ../partman-crypto.templates:334
 msgid "Passphrase input error"
 msgstr "Памылка пры ўводзе сакрэтнага сказу."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:291
+#. :sl3:
+#: ../partman-crypto.templates:334
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Два сакрэтных сказы, што Вы ўвялі, не супадаюць. Паспрабуйце зноў."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:296
+#. :sl3:
+#: ../partman-crypto.templates:340
 msgid "Empty passphrase"
 msgstr "Пусты сакрэтны сказ"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:296
+#. :sl3:
+#: ../partman-crypto.templates:340
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -560,16 +627,18 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:307
+#. :sl3:
+#: ../partman-crypto.templates:352
 msgid "Use weak passphrase?"
 msgstr "Ужыць слаба абаронены сакрэтны сказ?"
 
 #. Type: boolean
 #. Description
+#. :sl3:
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:307
+#: ../partman-crypto.templates:352
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -579,19 +648,22 @@ msgstr ""
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:313
+#. :sl3:
+#: ../partman-crypto.templates:359
 msgid "Enter random characters"
 msgstr "Увесці выпадковы набор сімвалаў"
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:313
+#. :sl3:
+#: ../partman-crypto.templates:359
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Ствараецца ключ шыфравання для ${DEVICE}."
 
 #. Type: entropy-text
 #. Description
-#: ../partman-crypto.templates:313
+#. :sl3:
+#: ../partman-crypto.templates:359
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -603,19 +675,22 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:322
+#. :sl3:
+#: ../partman-crypto.templates:369
 msgid "Keyfile creation failure"
 msgstr "Не атрымалася стварыць файл ключа"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:322
+#. :sl3:
+#: ../partman-crypto.templates:369
 msgid "An error occurred while creating the keyfile."
 msgstr "Падчас стварэння файла ключа адбылася памылка."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:327
+#. :sl3:
+#: ../partman-crypto.templates:375
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -626,7 +701,8 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:327
+#. :sl3:
+#: ../partman-crypto.templates:375
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -635,7 +711,8 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:337
+#. :sl3:
+#: ../partman-crypto.templates:386
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -647,19 +724,22 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:337
+#. :sl3:
+#: ../partman-crypto.templates:386
 msgid "You should go back and setup a /boot partition."
 msgstr "Вам трэба вярнуцца назад, каб наладзіць падзел /boot."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:346
+#. :sl3:
+#: ../partman-crypto.templates:396
 msgid "Encryption configuration failure"
 msgstr "Не атрымалася наладзіць шыфраванне"
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:346
+#. :sl3:
+#: ../partman-crypto.templates:396
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -672,7 +752,8 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:346
+#. :sl3:
+#: ../partman-crypto.templates:396
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -682,13 +763,15 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:358
+#. :sl3:
+#: ../partman-crypto.templates:409
 msgid "Are you sure you want to use a random key?"
 msgstr "Вы ўпэўнены, што хочаце выкарыстаць выпадковы ключ?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:358
+#. :sl3:
+#: ../partman-crypto.templates:409
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -698,7 +781,8 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:358
+#. :sl3:
+#: ../partman-crypto.templates:409
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -709,27 +793,31 @@ msgstr ""
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:368
+#. :sl3:
+#: ../partman-crypto.templates:420
 msgid "Failed to download crypto components"
 msgstr "Не атрымалася спампаваць крыпта-кампаненты."
 
 #. Type: error
 #. Description
-#: ../partman-crypto.templates:368
+#. :sl3:
+#: ../partman-crypto.templates:420
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
 "Памылка адбылася падчас спробы спампаваць дадатковыя крыпта-кампаненты."
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:373
+#. :sl3:
+#: ../partman-crypto.templates:426
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Працягнуць усталяванне крыпта-кампанентаў, не зважаючы на недахоп памяці?"
 
 #. Type: boolean
 #. Description
-#: ../partman-crypto.templates:373
+#. :sl3:
+#: ../partman-crypto.templates:426
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "

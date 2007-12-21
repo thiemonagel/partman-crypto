@@ -2,12 +2,14 @@ Template: partman/method_long/crypto
 Type: text
 # File system name
 # Keep translations short enough
+# :sl3:
 _Description: physical volume for encryption
 
 Template: partman/method_short/crypto
 Type: text
 # Short file system name (untranslatable in many languages)
 # Should be kept very short or unstranslated
+# :sl3:
 _Description: crypto
 
 Template: partman-crypto/crypto_type/loop-AES
@@ -15,6 +17,7 @@ Type: text
 # This is related to "encryption method"
 # Encryption type for a file system
 # Translations should be kept below 40 columns
+# :sl3:
 _Description: Loopback (loop-AES)
 
 Template: partman-crypto/crypto_type/dm-crypt
@@ -22,6 +25,7 @@ Type: text
 # This is related to "encryption method"
 # Encryption type for a file system
 # Translations should be kept below 40 columns
+# :sl3:
 _Description: Device-mapper (dm-crypt)
 
 Template: partman-crypto/text/cryptdev_description
@@ -32,36 +36,43 @@ Template: partman-crypto/text/not_active
 Type: text
 # This is related to "encryption method"
 # Encryption type for a file system
+# :sl3:
 _Description: not active
 
 Template: partman-crypto/text/specify_crypto_type
 Type: text
 # Should be kept below 24 columns
+# :sl3:
 _Description: Encryption method:
 
 Template: partman-crypto/crypto_type
 Type: select
 Choices: ${CHOICES}
+# :sl3:
 _Description: Encryption method for this partition:
 
 Template: partman-crypto/text/specify_cipher
 Type: text
 # Should be kept below 24 columns
+# :sl3:
 _Description: Encryption:
 
 Template: partman-crypto/cipher
 Type: select
 Choices: ${CHOICES}
+# :sl3:
 _Description: Encryption for this partition:
 
 Template: partman-crypto/text/specify_keysize
 Type: text
 # Should be kept below 24 columns
+# :sl3:
 _Description: Key size:
 
 Template: partman-crypto/keysize
 Type: select
 Choices: ${CHOICES}
+# :sl3:
 _Description: Key size for this partition:
 
 Template: partman-crypto/text/specify_ivalgorithm
@@ -69,6 +80,7 @@ Type: text
 # An initialization vector is the initial value used to seed
 # the encryption algorithm
 # Should be kept below 24 columns
+# :sl3:
 _Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
@@ -76,6 +88,7 @@ Type: select
 Choices: ${CHOICES}
 # An initialization vector is the initial randomness used to seed
 # the encryption algorithm
+# :sl3:
 _Description: Initialization vector generation algorithm for this partition:
  Different algorithms exist to derive the initialization vector
  for each sector. This choice influences the encryption security.
@@ -85,21 +98,25 @@ _Description: Initialization vector generation algorithm for this partition:
 Template: partman-crypto/text/specify_keytype
 Type: text
 # Should be kept below 24 columns
+# :sl3:
 _Description: Encryption key:
 
 Template: partman-crypto/keytype
 Type: select
 Choices: ${CHOICES}
+# :sl3:
 _Description: Type of encryption key for this partition:
 
 Template: partman-crypto/text/specify_keyhash
 Type: text
 # Should be kept below 24 columns
+# :sl3:
 _Description: Encryption key hash:
 
 Template: partman-crypto/keyhash
 Type: select
 Choices: ${CHOICES}
+# :sl3:
 _Description: Type of encryption key hash for this partition:
  The encryption key is derived from the passphrase by applying a
  one-way hash function to it. Normally, there is no reason to change
@@ -110,23 +127,28 @@ Template: partman-crypto/text/erase_data
 Type: text
 # This shows up in a screen summarizing options and will be followed
 # by "yes" or "no"
+# :sl3:
 _Description: Erase data:
 
 Template: partman-crypto/text/no_erase_data
 Type: text
+# :sl3:
 _Description: no
 
 Template: partman-crypto/text/yes_erase_data
 Type: text
+# :sl3:
 _Description: yes
 
 Template: partman-crypto/text/erase_data_partition
 Type: text
+# :sl3:
 _Description: Erase data on this partition
 
 Template: partman-crypto/warn_erase
 Type: boolean
 Default: false
+# :sl3:
 _Description: Really erase the data on ${DEVICE}?
  The data on ${DEVICE} will be overwritten with random data. It can no
  longer be recovered after this step has completed. This is the last
@@ -134,35 +156,42 @@ _Description: Really erase the data on ${DEVICE}?
 
 Template: partman-crypto/progress/erase
 Type: text
+# :sl3:
 _Description: Erasing data on ${DEVICE}
 
 Template: partman-crypto/erase_failed
 Type: error
+# :sl3:
 _Description: Erasing data on ${DEVICE} failed
  An error occurred trying to erase the data on ${DEVICE}. The data has
  not been erased.
 
 Template: partman/progress/init/crypto
 Type: text
+# :sl3:
 _Description: Setting up encryption...
 
 Template: partman-crypto/text/configure_crypto
 Type: text
+# :sl3:
 _Description: Configure encrypted volumes
 
 Template: partman-crypto/nothing_to_setup
 Type: note
+# :sl3:
 _Description: No partitions to encrypt
  No partitions have been selected for encryption.
 
 Template: partman-crypto/tools_missing
 Type: note
+# :sl3:
 _Description: Required programs missing
  This build of debian-installer does not include one or more programs
  that are required for partman-crypto to function correctly.
 
 Template: partman-crypto/options_missing
 Type: error
+# :sl3:
 #flag:translate!:3
 _Description: Required encryption options missing
  The encryption options for ${DEVICE} are incomplete. Please return to
@@ -172,6 +201,7 @@ _Description: Required encryption options missing
 
 Template: partman-crypto/text/missing
 Type: text
+# :sl3:
 # Translators: this string is used to assemble a string of the format
 # "$specify_option: $missing". If this proves to be a problem in your
 # language, please contact the maintainer and we can do it differently.
@@ -179,11 +209,13 @@ _Description: missing
 
 Template: partman-crypto/text/in_use
 Type: text
+# :sl3:
 # What is "in use" is a partition
 _Description: In use as physical volume for encrypted volume ${DEV}
 
 Template: partman-crypto/module_package_missing
 Type: error
+# :sl3:
 _Description: Encryption package installation failure
  The kernel module package ${PACKAGE} could not be found or an error
  occurred during its installation.
@@ -195,6 +227,7 @@ _Description: Encryption package installation failure
 Template: partman-crypto/confirm
 Type: boolean
 Default: false
+# :sl3:
 #flag:translate!:4
 _Description: Write the changes to disk and configure encrypted volumes?
  Before encrypted volumes can be configured, the current
@@ -211,6 +244,7 @@ _Description: Write the changes to disk and configure encrypted volumes?
 Template: partman-crypto/confirm_nochanges
 Type: boolean
 Default: false
+# :sl3:
 _Description: Keep current partition layout and configure encrypted volumes?
  After the encrypted volumes have been configured, no additional changes
  to the partitions on the disks containing encrypted volumes are
@@ -219,6 +253,7 @@ _Description: Keep current partition layout and configure encrypted volumes?
 
 Template: partman-crypto/commit_failed
 Type: error
+# :sl3:
 _Description: Configuration of encrypted volumes failed
  An error occurred while configuring encrypted volumes.
  .
@@ -226,11 +261,13 @@ _Description: Configuration of encrypted volumes failed
 
 Template: partman-crypto/init_failed
 Type: error
+# :sl3:
 _Description: Initialisation of encrypted volume failed
  An error occurred while setting up encrypted volumes.
 
 Template: partman-crypto/text/keytype/passphrase
 Type: text
+# :sl3:
 # This is a key type for encrypted file systems
 # It can be either protected by a passphrase, a keyfile
 # of a random key
@@ -239,6 +276,7 @@ _Description: Passphrase
 
 Template: partman-crypto/text/keytype/keyfile
 Type: text
+# :sl3:
 # This is a key type for encrypted file systems
 # It can be either protected by a passphrase, a keyfile
 # of a random key
@@ -247,6 +285,7 @@ _Description: Keyfile (GnuPG)
 
 Template: partman-crypto/text/keytype/random
 Type: text
+# :sl3:
 # This is a key type for encrypted file systems
 # It can be either protected by a passphrase, a keyfile
 # of a random key
@@ -255,6 +294,7 @@ _Description: Random key
 
 Template: partman-crypto/unsafe_swap
 Type: error
+# :sl3:
 _Description: Unsafe swap space detected
  An unsafe swap space has been detected.
  .
@@ -268,6 +308,7 @@ _Description: Unsafe swap space detected
 
 Template: partman-crypto/passphrase
 Type: password
+# :sl3:
 _Description: Encryption passphrase:
  You need to choose a passphrase to encrypt ${DEVICE}.
  .
@@ -282,17 +323,20 @@ _Description: Encryption passphrase:
 
 Template: partman-crypto/passphrase-again
 Type: password
+# :sl3:
 _Description: Re-enter passphrase to verify:
  Please enter the same passphrase again to verify that you have typed it
  correctly.
 
 Template: partman-crypto/passphrase-mismatch
 Type: error
+# :sl3:
 _Description: Passphrase input error
  The two passphrases you entered were not the same. Please try again.
 
 Template: partman-crypto/passphrase-empty
 Type: error
+# :sl3:
 _Description: Empty passphrase
  You entered an empty passphrase, which is not allowed.
  Please choose a non-empty passphrase.
@@ -300,6 +344,7 @@ _Description: Empty passphrase
 Template: partman-crypto/weak_passphrase
 Type: boolean
 Default: false
+# :sl3:
 #flag:comment:2
 # Translators: we unfortunately cannot use plural forms here
 # So, you are suggested to use the plural form adapted for
@@ -310,6 +355,7 @@ _Description: Use weak passphrase?
 
 Template: partman-crypto/entropy-text
 Type: entropy-text
+# :sl3:
 _Description: Enter random characters
  The encryption key for ${DEVICE} is now being created.
  .
@@ -319,11 +365,13 @@ _Description: Enter random characters
 
 Template: partman-crypto/keyfile-problem
 Type: error
+# :sl3:
 _Description: Keyfile creation failure
  An error occurred while creating the keyfile.
 
 Template: partman-crypto/crypto_root_unimplemented
 Type: error
+# :sl3:
 _Description: Encryption configuration failure
  You have selected the root file system to be stored on an encrypted
  partition. This feature is not available and continuing now would
@@ -334,6 +382,7 @@ _Description: Encryption configuration failure
 
 Template: partman-crypto/crypto_root_needs_boot
 Type: error
+# :sl3:
 _Description: Encryption configuration failure
  You have selected the root file system to be stored on an encrypted
  partition. This feature requires a separate /boot partition on which
@@ -343,6 +392,7 @@ _Description: Encryption configuration failure
 
 Template: partman-crypto/crypto_boot_not_possible
 Type: error
+# :sl3:
 _Description: Encryption configuration failure
  You have selected the /boot file system to be stored on an encrypted
  partition. This is not possible because the boot loader would be unable to
@@ -355,6 +405,7 @@ _Description: Encryption configuration failure
 Template: partman-crypto/use_random_for_nonswap
 Type: boolean
 Default: false
+# :sl3:
 _Description: Are you sure you want to use a random key?
  You have chosen a random key type for ${DEVICE} but requested the
  partitioner to create a file system on it.
@@ -365,11 +416,13 @@ _Description: Are you sure you want to use a random key?
 
 Template: partman-crypto/install_udebs_failure
 Type: error
+# :sl3:
 _Description: Failed to download crypto components
  An error occurred trying to download additional crypto components.
 
 Template: partman-crypto/install_udebs_low_mem
 Type: boolean
+# :sl3:
 _Description: Proceed to install crypto components despite insufficient memory?
  There does not seem to be sufficient memory available to install
  additional crypto components. If you choose to go ahead and continue

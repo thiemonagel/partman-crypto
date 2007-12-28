@@ -1,4 +1,5 @@
 . /lib/partman/lib/base.sh
+. /lib/partman/lib/commit.sh
 
 dm_dev_is_safe() {
 	local maj min dminfo deps
@@ -6,7 +7,8 @@ dm_dev_is_safe() {
 	min="$2"
 
 	# First try the device itself
-	dminfo=$(dmsetup table -j$maj -m$min 2> /dev/null | head -n1 | cut -d' ' -f3) || return 1
+	dminfo=$(dmsetup table -j$maj -m$min 2> /dev/null | \
+		 head -n1 | cut -d' ' -f3) || return 1
 	if [ "$dminfo" = crypt ]; then
 		return 0
 	fi

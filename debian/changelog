@@ -1,3 +1,10 @@
+partman-crypto (26) UNRELEASED; urgency=low
+
+  * crypto-base.sh: source new function library ./lib/commit.sh.
+    Requires partman-base (>= 115).
+
+ -- Frans Pop <fjp@debian.org>  Thu, 27 Dec 2007 13:25:13 +0100
+
 partman-crypto (25) unstable; urgency=low
 
   * Moved definitions.sh to ./lib/base.sh.

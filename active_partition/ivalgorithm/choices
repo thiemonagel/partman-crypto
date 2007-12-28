@@ -15,5 +15,5 @@ type=$(cat $part/crypto_type)
 cipher=$(cat $part/cipher)
 
 if [ $method = crypto ]; then
-	crypto_dochoice $part $type $cipher "ivalgorithm"
+	crypto_dochoice $part $type $cipher ivalgorithm
 fi

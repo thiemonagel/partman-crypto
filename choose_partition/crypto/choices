@@ -11,7 +11,7 @@ for dev in $DEVICES/*; do
 	while { read_line num id size type fs path name; [ "$id" ]; }; do
 		if [ -f $id/method ]; then
 			method=$(cat $id/method)
-			if [ $method = "crypto" ]; then
+			if [ $method = crypto ]; then
 				use_crypto=yes
 			fi
 		fi

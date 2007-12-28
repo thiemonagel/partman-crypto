@@ -484,7 +484,7 @@ crypto_check_mem() {
 
 	# A more or less arbitrary limit
 	if [ $(memfree) -lt 10000 ]; then
-		if [ "$verbose" != "true" ]; then
+		if [ "$verbose" != true ]; then
 			return 1
 		fi
 
@@ -520,7 +520,7 @@ crypto_load_udebs() {
 			continue
 		fi
 
-		crypto_check_mem "true" || return 1
+		crypto_check_mem true || return 1
 
 		if ! anna-install $package; then
 			db_fset partman-crypto/install_udebs_failure seen false
@@ -713,8 +713,8 @@ crypto_check_setup() {
 crypto_setup() {
 	local interactive s dev id size path methods partitions type keytype keysize
 	interactive=$1
-	if [ "$interactive" != "no" ]; then
-		interactive="yes"
+	if [ "$interactive" != no ]; then
+		interactive=yes
 	fi
 
 	commit_changes partman-crypto/commit_failed || return $?

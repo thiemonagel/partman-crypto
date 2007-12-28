@@ -25,7 +25,7 @@ create_disk () {
 	open_dialog OPEN $device
 	read_line response
 	close_dialog
-	if [ "$response" = "failed" ]; then
+	if [ "$response" = failed ]; then
 		rm -rf $devdir
 		return 1
 	fi

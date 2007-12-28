@@ -17,7 +17,7 @@ for dev in /var/lib/partman/devices/*; do
 		[ -f $id/crypt_active ] || continue
 
 		type=$(cat $id/crypto_type)
-		if [ "$type" = "loop-AES" ]; then
+		if [ "$type" = loop-AES ]; then
 			loop_AES=yes
 		fi
 	done
@@ -40,7 +40,7 @@ END
 		fi
 	done
 
-	if [ "$failed" = "yes" ]; then
+	if [ "$failed" = yes ]; then
 		templ="partman-crypto/module_package_missing"
 		db_fset $templ seen false
 		db_subst $templ PACKAGE loop-aes-modules-$KVERS

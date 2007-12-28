@@ -35,7 +35,7 @@ for dev in $DEVICES/*; do
 			min=$(echo $majmin | sed 's/.*,//')
 			status=$(dmsetup status -j $maj -m $min 2> /dev/null |\
 				cut -d' ' -f3)
-			if [ $? -ne 0 ] || [ $status != "crypt" ]; then
+			if [ $? -ne 0 ] || [ $status != crypt ]; then
 				found=0
 			fi
 		done

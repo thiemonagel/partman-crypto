@@ -18,5 +18,5 @@ type=$(cat $part/crypto_type)
 cipher=$(cat $part/cipher)
 
 if [ $method = crypto ]; then
-	crypto_dooption $part $type $cipher "keyhash"
+	crypto_dooption $part $type $cipher keyhash
 fi

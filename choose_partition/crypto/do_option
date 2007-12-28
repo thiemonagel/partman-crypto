@@ -14,6 +14,6 @@
 
 crypto_check_setup || exit 1
 
-confirm_changes "partman-crypto" || exit 0
+confirm_changes partman-crypto || exit 0
 
 crypto_setup yes || exit 1

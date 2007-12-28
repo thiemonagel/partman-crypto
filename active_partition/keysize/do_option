@@ -18,6 +18,6 @@ type=$(cat $part/crypto_type)
 cipher=$(cat $part/cipher)
 
 if [ $method = crypto ]; then
-	crypto_dooption $part $type $cipher "keysize"
+	crypto_dooption $part $type $cipher keysize
 fi
 

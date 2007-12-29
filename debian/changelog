@@ -1,9 +1,14 @@
-partman-crypto (26) UNRELEASED; urgency=low
+partman-crypto (26) unstable; urgency=low
 
   * crypto-base.sh: source new function library ./lib/commit.sh.
     Requires partman-base (>= 115).
 
- -- Frans Pop <fjp@debian.org>  Thu, 27 Dec 2007 13:25:13 +0100
+  [ Updated translations ]
+  * Amharic (am.po) by tegegne tefera
+  * Korean (ko.po) by Changwoo Ryu
+  * Malayalam (ml.po) by Praveen|പ്രവീണ്‍ A|എ
+
+ -- Frans Pop <fjp@debian.org>  Sat, 29 Dec 2007 22:12:48 +0100
 
 partman-crypto (25) unstable; urgency=low
 

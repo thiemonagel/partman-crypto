@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2007-12-21 22:48+0000\n"
-"PO-Revision-Date: 2006-10-21 11:24+0800\n"
+"PO-Revision-Date: 2007-03-10 13:18+0800\n"
 "Last-Translator: Tetralet <tetralet@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
@@ -428,7 +428,7 @@ msgstr "在設定加密的 Volume 時發生錯誤。"
 #. :sl3:
 #: ../partman-crypto.templates:257
 msgid "The configuration has been aborted."
-msgstr "設定作業已經中止。"
+msgstr "設定作業已被中止。"
 
 #. Type: error
 #. Description
@@ -453,7 +453,7 @@ msgstr "在建立加密的 Volume 時發生錯誤。"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:275
 msgid "Passphrase"
-msgstr "密碼"
+msgstr "密語"
 
 #. Type: text
 #. Description

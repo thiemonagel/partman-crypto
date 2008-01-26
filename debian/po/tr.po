@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2007-12-21 22:48+0000\n"
+"POT-Creation-Date: 2008-01-26 07:33+0000\n"
 "PO-Revision-Date: 2006-10-19 19:51+0300\n"
 "Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 #. File system name
 #. Keep translations short enough
 #. :sl3:
-#: ../partman-crypto.templates:6
+#: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
 msgstr "şifreleme için fiziksel cilt"
 
@@ -40,7 +40,7 @@ msgstr "şifreleme için fiziksel cilt"
 #. Short file system name (untranslatable in many languages)
 #. Should be kept very short or unstranslated
 #. :sl3:
-#: ../partman-crypto.templates:13
+#: ../partman-crypto.templates:2001
 msgid "crypto"
 msgstr "şifreli"
 
@@ -50,7 +50,7 @@ msgstr "şifreli"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #. :sl3:
-#: ../partman-crypto.templates:21
+#: ../partman-crypto.templates:3001
 msgid "Loopback (loop-AES)"
 msgstr "Loopback (loop-AES)"
 
@@ -60,7 +60,7 @@ msgstr "Loopback (loop-AES)"
 #. Encryption type for a file system
 #. Translations should be kept below 40 columns
 #. :sl3:
-#: ../partman-crypto.templates:29
+#: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
 msgstr "Aygıt-eşleyici (dm-crypt)"
 
@@ -69,7 +69,7 @@ msgstr "Aygıt-eşleyici (dm-crypt)"
 #. This is related to "encryption method"
 #. Encryption type for a file system
 #. :sl3:
-#: ../partman-crypto.templates:40
+#: ../partman-crypto.templates:6001
 msgid "not active"
 msgstr "etkin değil"
 
@@ -77,14 +77,14 @@ msgstr "etkin değil"
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:46
+#: ../partman-crypto.templates:7001
 msgid "Encryption method:"
 msgstr "Şifreleme yöntemi:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52
+#: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
 msgstr "Bu bölüm için şifreleme yöntemi:"
 
@@ -92,14 +92,14 @@ msgstr "Bu bölüm için şifreleme yöntemi:"
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:58
+#: ../partman-crypto.templates:9001
 msgid "Encryption:"
 msgstr "Şifreleme:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:64
+#: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
 msgstr "Bu bölüm için şifreleme:"
 
@@ -107,14 +107,14 @@ msgstr "Bu bölüm için şifreleme:"
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:70
+#: ../partman-crypto.templates:11001
 msgid "Key size:"
 msgstr "Anahtar uzunluğu:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:76
+#: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
 msgstr "Bu bölüm için anahtar uzunluğu:"
 
@@ -124,7 +124,7 @@ msgstr "Bu bölüm için anahtar uzunluğu:"
 #. the encryption algorithm
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:84
+#: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
 msgstr "İV algoritması:"
 
@@ -133,7 +133,7 @@ msgstr "İV algoritması:"
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #. :sl3:
-#: ../partman-crypto.templates:92
+#: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
 msgstr "Bu bölüm için \"ilklendirme vektörü\" üretim algoritması:"
 
@@ -142,7 +142,7 @@ msgstr "Bu bölüm için \"ilklendirme vektörü\" üretim algoritması:"
 #. An initialization vector is the initial randomness used to seed
 #. the encryption algorithm
 #. :sl3:
-#: ../partman-crypto.templates:92
+#: ../partman-crypto.templates:14001
 msgid ""
 "Different algorithms exist to derive the initialization vector for each "
 "sector. This choice influences the encryption security. Normally, there is "
@@ -158,14 +158,14 @@ msgstr ""
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:102
+#: ../partman-crypto.templates:15001
 msgid "Encryption key:"
 msgstr "Şifreleme anahtarı:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:108
+#: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
 msgstr "Bu bölüm için şifreleme anahtar türü:"
 
@@ -173,21 +173,21 @@ msgstr "Bu bölüm için şifreleme anahtar türü:"
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
-#: ../partman-crypto.templates:114
+#: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
 msgstr "Şifreleme anahtarı:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:120
+#: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
 msgstr "Bu bölüm için şifreleme anahtar türü:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:120
+#: ../partman-crypto.templates:18001
 msgid ""
 "The encryption key is derived from the passphrase by applying a one-way hash "
 "function to it. Normally, there is no reason to change this from the "
@@ -204,35 +204,35 @@ msgstr ""
 #. This shows up in a screen summarizing options and will be followed
 #. by "yes" or "no"
 #. :sl3:
-#: ../partman-crypto.templates:131
+#: ../partman-crypto.templates:19001
 msgid "Erase data:"
 msgstr "Verileri sil:"
 
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:136
+#: ../partman-crypto.templates:20001
 msgid "no"
 msgstr "hayır"
 
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:141
+#: ../partman-crypto.templates:21001
 msgid "yes"
 msgstr "evet"
 
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:146
+#: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
 msgstr "Bu bölümdeki verileri sil"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:152
+#: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
 msgstr ""
 "${DEVICE} üzerindeki tüm verinin silinmesini gerçekten istiyor musunuz?"
@@ -240,7 +240,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:152
+#: ../partman-crypto.templates:23001
 msgid ""
 "The data on ${DEVICE} will be overwritten with random data. It can no longer "
 "be recovered after this step has completed. This is the last opportunity to "
@@ -253,21 +253,21 @@ msgstr ""
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:160
+#: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
 msgstr "${DEVICE} üzerindeki tüm veriler siliniyor"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:165
+#: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
 msgstr "${DEVICE} üzerindeki verilerin silinmesi başarısız"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:165
+#: ../partman-crypto.templates:25001
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
@@ -278,42 +278,42 @@ msgstr ""
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:172
+#: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
 msgstr "Şifreleme ayarlanıyor..."
 
 #. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:177
+#: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
 msgstr "Şifrelenmiş cilt yapılandır"
 
 #. Type: note
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:182
+#: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
 msgstr "Herhangi bir bölüm bulunamadı"
 
 #. Type: note
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:182
+#: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
 msgstr "Şifrelemek için bir bölüm seçilmedi."
 
 #. Type: note
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:188
+#: ../partman-crypto.templates:29001
 msgid "Required programs missing"
 msgstr "Gerekli programlar eksik"
 
 #. Type: note
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:188
+#: ../partman-crypto.templates:29001
 msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
@@ -324,14 +324,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:196
+#: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
 msgstr "Gerekli şifreleme seçenekleri eksik"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:196
+#: ../partman-crypto.templates:30001
 msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
@@ -345,7 +345,7 @@ msgstr ""
 #. Translators: this string is used to assemble a string of the format
 #. "$specify_option: $missing". If this proves to be a problem in your
 #. language, please contact the maintainer and we can do it differently.
-#: ../partman-crypto.templates:208
+#: ../partman-crypto.templates:31001
 msgid "missing"
 msgstr "eksik"
 
@@ -353,21 +353,21 @@ msgstr "eksik"
 #. Description
 #. :sl3:
 #. What is "in use" is a partition
-#: ../partman-crypto.templates:214
+#: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
 msgstr "Şifrelenmiş ${DEV} cildi için fiziksel cilt olarak kullanılan bölüm"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:219
+#: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
 msgstr "Şifreleme paketinin kurulumu başarısız"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:219
+#: ../partman-crypto.templates:33001
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
@@ -378,7 +378,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:219
+#: ../partman-crypto.templates:33001
 msgid ""
 "It is likely that there will be problems setting up encrypted partitions "
 "when the system is rebooted. You may be able to correct this by installing "
@@ -391,7 +391,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:232
+#: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
 "Değişiklikler diske kaydedilerek şifrelenmiş ciltler yapılandırılsın mı?"
@@ -399,7 +399,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:232
+#: ../partman-crypto.templates:34001
 msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
@@ -410,15 +410,10 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:248
-msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
-"Mevcut bölümleme düzeni korunarak şifrelenmiş ciltler yapılandırılsın mı?"
-
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:248
+#: ../partman-crypto.templates:34001 ../partman-crypto.templates:35001
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
@@ -430,38 +425,46 @@ msgstr ""
 "devam etmeden önce bu disklerdeki mevcut bölümlemenin isteğinize uygun "
 "şekilde yapıldığından emin olun."
 
+#. Type: boolean
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:35001
+msgid "Keep current partition layout and configure encrypted volumes?"
+msgstr ""
+"Mevcut bölümleme düzeni korunarak şifrelenmiş ciltler yapılandırılsın mı?"
+
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:257
+#: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
 msgstr "Şifrelenmiş ciltlerin yapılandırılması başarısız"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:257
+#: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
 msgstr "Şifrelenmiş ciltler yapılandırılırken bir hata oluştu."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:257
+#: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
 msgstr "Yapılandırma iptal edildi."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:265
+#: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
 msgstr "Şifrelenmiş ciltlerin ilklendirilmesi başarısız"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:265
+#: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
 msgstr "Şifrelenmiş cilt ayarları kaydedilirken bir hata oluştu."
 
@@ -472,7 +475,7 @@ msgstr "Şifrelenmiş cilt ayarları kaydedilirken bir hata oluştu."
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:275
+#: ../partman-crypto.templates:38001
 msgid "Passphrase"
 msgstr "Geçiş parolası"
 
@@ -483,7 +486,7 @@ msgstr "Geçiş parolası"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:284
+#: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
 msgstr "Anahtar dosyası (GnuPG)"
 
@@ -494,28 +497,28 @@ msgstr "Anahtar dosyası (GnuPG)"
 #. It can be either protected by a passphrase, a keyfile
 #. of a random key
 #. This text is one of these choices, so keep it short
-#: ../partman-crypto.templates:293
+#: ../partman-crypto.templates:40001
 msgid "Random key"
 msgstr "Rastgele anahtar"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
 msgstr "Güvenli olmayan takas alanı algılandı"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
 msgstr "Güvenli olmayan bir takas alanı algılandı"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:41001
 msgid ""
 "This is a fatal error since sensitive data could be written out to disk "
 "unencrypted. This would allow someone with access to the disk to recover "
@@ -529,7 +532,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:298
+#: ../partman-crypto.templates:41001
 msgid ""
 "Please disable the swap space (e.g. by running swapoff) or configure an "
 "encrypted swap space and then run setup of encrypted volumes again. This "
@@ -542,21 +545,21 @@ msgstr ""
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:312
+#: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
 msgstr "Şifreleme geçiş parolası:"
 
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:312
+#: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
 msgstr "${DEVICE} aygıtını şifrelemek için bir geçiş parolası gerekiyor."
 
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:312
+#: ../partman-crypto.templates:42001
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
@@ -571,7 +574,7 @@ msgstr ""
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:312
+#: ../partman-crypto.templates:42001
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
@@ -584,14 +587,14 @@ msgstr ""
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:327
+#: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
 msgstr "Doğrulamak için geçiş parolasını tekrar girin:"
 
 #. Type: password
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:327
+#: ../partman-crypto.templates:43001
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
@@ -602,28 +605,28 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:334
+#: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
 msgstr "Geçiş parolası giriş hatası"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:334
+#: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr "Girdiğiniz iki geçiş parolası aynı değil.  Lütfen tekrar deneyin."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:340
+#: ../partman-crypto.templates:45001
 msgid "Empty passphrase"
 msgstr "Boş geçiş parolası"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:340
+#: ../partman-crypto.templates:45001
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
@@ -634,7 +637,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:352
+#: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
 msgstr "Zayıf geçiş parolası kullanılsın mı?"
 
@@ -644,7 +647,7 @@ msgstr "Zayıf geçiş parolası kullanılsın mı?"
 #. Translators: we unfortunately cannot use plural forms here
 #. So, you are suggested to use the plural form adapted for
 #. MINIMUM=8, which is the current hardcoded value
-#: ../partman-crypto.templates:352
+#: ../partman-crypto.templates:46001
 msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
@@ -655,21 +658,21 @@ msgstr ""
 #. Type: entropy-text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:359
+#: ../partman-crypto.templates:47001
 msgid "Enter random characters"
 msgstr "Rastgele karakterler girin"
 
 #. Type: entropy-text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:359
+#: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Şimdi ${DEVICE} aygıtı için şifreleme anahtarı üretiliyor."
 
 #. Type: entropy-text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:359
+#: ../partman-crypto.templates:47001
 msgid ""
 "You can help speed up the process by entering random characters on the "
 "keyboard, or just wait until enough keydata has been collected. (NOTE: this "
@@ -682,21 +685,35 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:48001
 msgid "Keyfile creation failure"
 msgstr "Anahtar dosyası oluşturma hatası"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:369
+#: ../partman-crypto.templates:48001
 msgid "An error occurred while creating the keyfile."
 msgstr "Anahtar dosyası oluşturulurken bir hatayla karşılaşıldı."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:375
+#. Type: error
+#. Description
+#. :sl3:
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
+msgid "Encryption configuration failure"
+msgstr "Şifreleme yapılandırma hatası"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:49001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature is not available and continuing now would result in "
@@ -709,7 +726,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:375
+#: ../partman-crypto.templates:49001
 msgid ""
 "Please go back and choose a non-encrypted partition for the root file system."
 msgstr ""
@@ -718,7 +735,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:386
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -731,21 +748,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:386
+#: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
 msgstr "Geri dönerek bir /boot bölümü ayarlamalısınız."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:396
-msgid "Encryption configuration failure"
-msgstr "Şifreleme yapılandırma hatası"
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:396
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -760,7 +770,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:396
+#: ../partman-crypto.templates:51001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -769,14 +779,14 @@ msgstr "Lütfen geri dönün ve /boot bölümü için şifrelenmemiş bir bölü
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:409
+#: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
 msgstr "Rastgele bir anahtar kullanmak istediğinize emin misiniz?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:409
+#: ../partman-crypto.templates:52001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -787,7 +797,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:409
+#: ../partman-crypto.templates:52001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -799,21 +809,21 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:420
+#: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
 msgstr "Şifreleme bileşenleri indirilemedi"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:420
+#: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "İlâve şifreleme bileşenleri indirilirken bir hata oluştu."
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:426
+#: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Şifreleme bileşenlerinin kurulumuna yetersiz belleğe rağmen devam edilsin mi?"
@@ -821,7 +831,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:426
+#: ../partman-crypto.templates:54001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "

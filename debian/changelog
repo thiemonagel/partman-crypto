@@ -1,3 +1,20 @@
+partman-crypto (27) unstable; urgency=low
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Esko Arajärvi
+  * Hindi (hi.po) by Kumar Appaiah
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Latvian (lv.po) by Viesturs Zarins
+  * Dutch (nl.po) by Frans Pop
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Slovak (sk.po) by Ivan Masár
+  * Turkish (tr.po) by Recai Oktaş
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 15 Feb 2008 08:57:42 -0200
+
 partman-crypto (26) unstable; urgency=low
 
   * crypto-base.sh: source new function library ./lib/commit.sh.

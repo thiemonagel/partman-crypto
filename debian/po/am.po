@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-01-26 07:33+0000\n"
-"PO-Revision-Date: 2008-02-23 10:23+0100\n"
+"PO-Revision-Date: 2008-02-24 07:15+0100\n"
 "Last-Translator: tegegne tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic\n"
 "MIME-Version: 1.0\n"
@@ -752,16 +752,15 @@ msgstr "የመመስጠር አካላትን ማምጣት አልተቻለም"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
-#, fuzzy
 msgid "An error occurred trying to download additional crypto components."
-msgstr "በ${DEVICE} ላይ ያለው ዴታ ሲሰረዝ ስህተት ተፈጥሯል. ዴታው አልተሰረዘም።"
+msgstr "ተጨማሪ crypto ፋይሎችን ለማምጣት ሲሞከር ስህተት ተፈጥሯል"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
+msgstr "ምንም እንክውን በቂ ገበታ ባይኖርም የcrypto አካሎችን ተከላው ይቀጥል?"
 
 #. Type: boolean
 #. Description

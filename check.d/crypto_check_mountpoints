@@ -46,7 +46,7 @@ for dev in $DEVICES/*; do
 		[ $method = crypto ] || continue
 
 		# Check 1 - Is cryptoroot possible?
-		if [ $mnt = / ]; then
+		if [ "$mnt" = / ]; then
 			crypto_root=yes
 			if [ $type = loop-AES ]; then
 				templ="partman-crypto/crypto_root_unimplemented"
@@ -59,7 +59,7 @@ for dev in $DEVICES/*; do
 		fi
 
 		# Check 2 - Is /boot encrypted?
-		if [ $mnt = /boot ]; then
+		if [ "$mnt" = /boot ]; then
 			templ="partman-crypto/crypto_boot_not_possible"
 			db_set $templ false
 			db_fset $templ seen false
@@ -74,10 +74,10 @@ for dev in $DEVICES/*; do
 		[ $keytype = random ] || continue
 
 		# Check 4 - If so, does a random key make sense?
-		if [ -z $mnt ]; then
+		if [ -z "$mnt" ]; then
 			# Presumably swap, which is ok
 			continue
-		elif [ $mnt = /tmp ]; then
+		elif [ "$mnt" = /tmp ]; then
 			# Random /tmp is also ok
 			continue
 		else

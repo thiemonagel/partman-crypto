@@ -2,6 +2,8 @@ partman-crypto (28) UNRELEASED; urgency=low
 
   * check.d/crypto_check_mountpoints: quote $mnt as it
     may be empty. Closes: #468739
+  * commit.d/unsafe_swap: replace open-coded check for
+    swap on dm-crypt with call to dm_is_safe(). Closes: #468738
 
  -- Max Vozeler <xam@debian.org>  Sat, 08 Mar 2008 17:35:48 +0100
 

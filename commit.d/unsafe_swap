@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /lib/partman/lib/base.sh
+. /lib/partman/lib/crypto-base.sh
 
 # 1. Check if active encrypted devices exist
 crypto=no
@@ -22,24 +22,16 @@ for dev in $DEVICES/*; do
 	[ -d "$dev" ] || continue
 	cd $dev
 
-	# Ignore swap on crypto
+	# Accept swap on crypto
 	[ -f crypt_realdev ] && continue
 
-	# Ignore e.g. swap on lvm on crypto
 	device=$(cat $dev/device)
-	if $(echo $device | grep -q "^/dev/mapper/"); then
-		found=1
-		for majmin in $(dmsetup deps $device | cut -d ":" -f2 |\
-				tr -d " (" | tr ")" "\n"); do
-			maj=$(echo $majmin | sed 's/,.*//')
-			min=$(echo $majmin | sed 's/.*,//')
-			status=$(dmsetup status -j $maj -m $min 2> /dev/null |\
-				cut -d' ' -f3)
-			if [ $? -ne 0 ] || [ $status != crypt ]; then
-				found=0
-			fi
-		done
-		[ $found ] && continue
+
+	# Accept e.g. swap on lvm on crypto
+	if echo $device | grep -q "^/dev/mapper/"; then
+		if dm_is_safe "$device"; then
+			continue
+		fi
 	fi
 
 	partitions=

@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"POT-Creation-Date: 2008-03-14 22:51+0000\n"
 "PO-Revision-Date: 2007-01-04 14:08+0100\n"
 "Last-Translator: Matej Kovačič <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -698,11 +698,7 @@ msgstr "Prišlo je do napake med ustvarjanjem datoteke s ključem."
 #. Type: error
 #. Description
 #. :sl3:
-#. Type: error
-#. Description
-#. :sl3:
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "Napaka pri nastavljanju šifriranja"
 
@@ -710,29 +706,6 @@ msgstr "Napaka pri nastavljanju šifriranja"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-msgid ""
-"You have selected the root file system to be stored on an encrypted "
-"partition. This feature is not available and continuing now would result in "
-"an installation that cannot be used."
-msgstr ""
-"Izbrali ste, da naj bo korenski datotečni sistem nameščen na šifrirani "
-"razdelek. Ta možnost ni na voljo in nadaljevanje bi imelo za posledico "
-"namestitev, ki ne bi bila uporabna."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:49001
-msgid ""
-"Please go back and choose a non-encrypted partition for the root file system."
-msgstr ""
-"Vrnite se nazaj in izberite ne-šifrirani razdelek za korenski datotečni "
-"sistem."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -745,14 +718,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:49001
 msgid "You should go back and setup a /boot partition."
 msgstr "Vrnite se nazaj in namestite zagonski razdelek /boot"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -766,7 +739,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -777,14 +750,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid "Are you sure you want to use a random key?"
 msgstr "Ali ste prepričani, da želite uporabi naključni ključ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -795,7 +768,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -806,21 +779,21 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "Failed to download crypto components"
 msgstr "Prenos šifrirnih komponent ni uspel"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "Med poskusom prenosa dodatnih šifrirnih komponent je prišlo do napake."
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Pričnem z nameščanjem šifrirnih komponent kljub pomanjkanju pomnilnika?"
@@ -828,7 +801,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -836,3 +809,19 @@ msgid ""
 msgstr ""
 "Morda ni na voljo dovolj pomnilnika za namestitev dodatnih šifrirnih "
 "komponent. V kolikor vseeno nadaljujete, namestitev morda ne bo uspešna."
+
+#~ msgid ""
+#~ "You have selected the root file system to be stored on an encrypted "
+#~ "partition. This feature is not available and continuing now would result "
+#~ "in an installation that cannot be used."
+#~ msgstr ""
+#~ "Izbrali ste, da naj bo korenski datotečni sistem nameščen na šifrirani "
+#~ "razdelek. Ta možnost ni na voljo in nadaljevanje bi imelo za posledico "
+#~ "namestitev, ki ne bi bila uporabna."
+
+#~ msgid ""
+#~ "Please go back and choose a non-encrypted partition for the root file "
+#~ "system."
+#~ msgstr ""
+#~ "Vrnite se nazaj in izberite ne-šifrirani razdelek za korenski datotečni "
+#~ "sistem."

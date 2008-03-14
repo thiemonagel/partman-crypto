@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dz\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"POT-Creation-Date: 2008-03-14 22:51+0000\n"
 "PO-Revision-Date: 2006-10-16 01:20+0530\n"
 "Last-Translator: Jurmey Rabgay <jur_gay@yahoo.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -690,11 +690,7 @@ msgstr "ཡིག་སྣོད་གཙོ་བོ་འདི་གསར་
 #. Type: error
 #. Description
 #. :sl3:
-#. Type: error
-#. Description
-#. :sl3:
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "གསང་བཟོ་རིམ་སྒྲིག་འབད་ནི་ལུ་འཐུས་ཤོར།"
 
@@ -702,27 +698,6 @@ msgstr "གསང་བཟོ་རིམ་སྒྲིག་འབད་ནི
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-msgid ""
-"You have selected the root file system to be stored on an encrypted "
-"partition. This feature is not available and continuing now would result in "
-"an installation that cannot be used."
-msgstr ""
-"ཁྱོད་ཀྱིས་གསང་བཟོས་བར་བཅད་འདི་ལུ་བསག་མཛོད་འབད་ནི་ལུ་རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་འདི་སེལ་འཐུ་འབད་ནུག། "
-"འ་ནི་ཁྱད་རྣམ་འདི་ཐོབ་ཚུགས་མེདཔ་དང་ ད་ལྟོ་འཕྲོ་མཐུད་འབད་མི་འདི་གིས་གཞི་བཙུགས་འདི་ལག་ལེན་འཐབ་མ་"
-"བཏུབ་པའི་གྲུབ་འབྲས་འབྱུང་འོང་།"
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:49001
-msgid ""
-"Please go back and choose a non-encrypted partition for the root file system."
-msgstr "རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་ཀྱི་དོན་ལུ་ལོག་འགྱོ་འདི་གསང་བཟོས་མེན་མི་བར་བཅད་གདམ་ཁ་རྐྱབས་གནང་།"
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -735,14 +710,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:49001
 msgid "You should go back and setup a /boot partition."
 msgstr "ཁྱོད་ཀྱིས་ ལོག་འགྱོ་ཞིནམ་ལས་ བུཊི་བར་བཅད་ཅིག་གཞི་སྒྲིག་འབད་དགོ"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -756,7 +731,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -766,14 +741,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid "Are you sure you want to use a random key?"
 msgstr "ཁྱོད་གང་བྱུང་ལྡེ་མིག་བུ་ལག་ལེན་འཐབ་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -784,7 +759,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -795,28 +770,28 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "Failed to download crypto components"
 msgstr "ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་ཕབ་ལེན་འབདཝ་ད་ འཐུས་ཤོར་བྱུང་ཡོདཔ།"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "ཁ་སྐོང་ཅན་གྱི་ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་ཕབ་ལེན་འབད་ནིའི་འབད་རྩོལ་བསྐྱེདཔ་ད་ འཛོལ་བ་ཅིག་བྱུང་ཡི།"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr "དྲན་ཚད་ལངམ་མེད་དེ་འབད་རུང་ ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་གཞི་བཙུགས་འབད་ནི་ལུ་འཕྲོ་མཐུད།"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -824,3 +799,18 @@ msgid ""
 msgstr ""
 "དེ་ནང་ཁ་སྐོང་ཅན་གྱི་ཀིརིབ་ཊོ་ཆ་ཤས་ཚུ་གཞི་བཙུགས་འབད་ནི་གི་དོན་ལུ་ དྲན་ཚད་ལངམ་མེདཔ་བཟུམ་ཅིག་འདུག "
 "ཁྱོད་ཀྱིས་ གདོང་ཁར་བཤུད་དེ་འཕྲོ་མཐུད་པ་ཅིན་ གཞི་བཙུགས་ལས་སྦྱོར་འདི་འཐུས་ཤོར་འབྱུང་འོང་།"
+
+#~ msgid ""
+#~ "You have selected the root file system to be stored on an encrypted "
+#~ "partition. This feature is not available and continuing now would result "
+#~ "in an installation that cannot be used."
+#~ msgstr ""
+#~ "ཁྱོད་ཀྱིས་གསང་བཟོས་བར་བཅད་འདི་ལུ་བསག་མཛོད་འབད་ནི་ལུ་རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་འདི་སེལ་འཐུ་འབད་"
+#~ "ནུག། འ་ནི་ཁྱད་རྣམ་འདི་ཐོབ་ཚུགས་མེདཔ་དང་ ད་ལྟོ་འཕྲོ་མཐུད་འབད་མི་འདི་གིས་གཞི་བཙུགས་འདི་ལག་ལེན་"
+#~ "འཐབ་མ་བཏུབ་པའི་གྲུབ་འབྲས་འབྱུང་འོང་།"
+
+#~ msgid ""
+#~ "Please go back and choose a non-encrypted partition for the root file "
+#~ "system."
+#~ msgstr ""
+#~ "རྩ་བའི་ཡིག་སྣོད་རིམ་ལུགས་ཀྱི་དོན་ལུ་ལོག་འགྱོ་འདི་གསང་བཟོས་མེན་མི་བར་བཅད་གདམ་ཁ་རྐྱབས་གནང་།"

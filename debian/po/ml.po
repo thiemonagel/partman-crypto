@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"POT-Creation-Date: 2008-03-14 22:51+0000\n"
 "PO-Revision-Date: 2007-12-15 06:25-0800\n"
 "Last-Translator: Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -691,11 +691,7 @@ msgstr "കീഫയല്‍ സൃഷ്ടിച്ചു കൊണ്ടി�
 #. Type: error
 #. Description
 #. :sl3:
-#. Type: error
-#. Description
-#. :sl3:
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണത്തില്‍ പരാജയം"
 
@@ -703,27 +699,6 @@ msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണത�
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-msgid ""
-"You have selected the root file system to be stored on an encrypted "
-"partition. This feature is not available and continuing now would result in "
-"an installation that cannot be used."
-msgstr ""
-"നിങ്ങള്‍ റൂട്ട് ഫയല്‍ സിസ്റ്റം ഒരു എന്‍ക്രിപ്ഷന്‍ ചെയ്ത ഭാഗത്ത് സൂക്ഷിക്കാന്‍ തെരഞ്ഞെടുത്തിരിക്കുന്നു. ഈ "
-"സൌകര്യം ലഭ്യമല്ല, ഇപ്പോള്‍ തുടരുന്നത് ഉപയോഗിയ്ക്കാന്‍ പറ്റാത്ത ഒരു ഇന്‍സ്റ്റലേഷനില്‍ കലാശിക്കും."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:49001
-msgid ""
-"Please go back and choose a non-encrypted partition for the root file system."
-msgstr ""
-"ദയവായി തിരിച്ചു് പോയി റൂട്ട് ഫയല്‍ സിസ്റ്റത്തിനായി എന്‍ക്രിപ്റ്റ് ചെയ്യാത്ത ഭാഗം തെരഞ്ഞെടുക്കുക."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -735,14 +710,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:49001
 msgid "You should go back and setup a /boot partition."
 msgstr "നിങ്ങള്‍ തിരിച്ചു് പോയി /boot ഭാഗം ഒരുക്കേണ്ടതുണ്ടു്."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -756,7 +731,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -767,14 +742,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid "Are you sure you want to use a random key?"
 msgstr "നിങ്ങള്‍ ഒരു റാന്‍ഡം കീ ഉപയോഗിയ്ക്കാന്‍ സന്നദ്ധമാണെന്ന് നിങ്ങള്‍ക്കുറപ്പുണ്ടോ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -785,7 +760,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -796,21 +771,21 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "Failed to download crypto components"
 msgstr "ക്രിപ്റ്റോ ഘടകങ്ങള്‍ ഡൌണ്‍ലോഡ് ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "കൂടുതല്‍ ക്രിപ്റ്റോ ഘടകങ്ങള്‍ ഡൌണ്‍ലോഡ് ചെയ്യാനുള്ള ശ്രമത്തില്‍ ഒരു തെറ്റ് പറ്റി."
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "ആവശ്യത്തിനുള്ള മെമ്മറി ഇല്ലാതിരുന്നിട്ട് കൂടി ക്രിപ്റ്റോ ഘടങ്ങളുടെ ഇന്‍സ്റ്റലേഷനുമായി മുന്നോട്ട് "
@@ -819,7 +794,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -827,3 +802,17 @@ msgid ""
 msgstr ""
 "കൂടുതല്‍ ക്രിപ്റ്റോ ഘടകങ്ങളുടെ ഇന്‍സ്റ്റലേഷനാവശ്യമായ മെമ്മറി ലഭ്യമല്ലെന്ന് തോന്നുന്നു. എന്നാലും "
 "മുന്നോട്ട് പോകാന്‍ തന്നെയാണു് തീരുമാനമെങ്കില്‍ ഇന്‍സ്റ്റളേഷന്‍ പ്രക്രിയ പരാജയപ്പെട്ടേക്കാം."
+
+#~ msgid ""
+#~ "You have selected the root file system to be stored on an encrypted "
+#~ "partition. This feature is not available and continuing now would result "
+#~ "in an installation that cannot be used."
+#~ msgstr ""
+#~ "നിങ്ങള്‍ റൂട്ട് ഫയല്‍ സിസ്റ്റം ഒരു എന്‍ക്രിപ്ഷന്‍ ചെയ്ത ഭാഗത്ത് സൂക്ഷിക്കാന്‍ തെരഞ്ഞെടുത്തിരിക്കുന്നു. ഈ "
+#~ "സൌകര്യം ലഭ്യമല്ല, ഇപ്പോള്‍ തുടരുന്നത് ഉപയോഗിയ്ക്കാന്‍ പറ്റാത്ത ഒരു ഇന്‍സ്റ്റലേഷനില്‍ കലാശിക്കും."
+
+#~ msgid ""
+#~ "Please go back and choose a non-encrypted partition for the root file "
+#~ "system."
+#~ msgstr ""
+#~ "ദയവായി തിരിച്ചു് പോയി റൂട്ട് ഫയല്‍ സിസ്റ്റത്തിനായി എന്‍ക്രിപ്റ്റ് ചെയ്യാത്ത ഭാഗം തെരഞ്ഞെടുക്കുക."

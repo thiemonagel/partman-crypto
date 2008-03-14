@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"POT-Creation-Date: 2008-03-14 22:51+0000\n"
 "PO-Revision-Date: 2008-02-08 13:30+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <pddp@debian.linux.org.pl>\n"
@@ -686,11 +686,7 @@ msgstr "Wystąpił błąd podczas tworzenia pliku klucza."
 #. Type: error
 #. Description
 #. :sl3:
-#. Type: error
-#. Description
-#. :sl3:
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "Konfiguracja szyfrowania nie powiodła się"
 
@@ -698,28 +694,6 @@ msgstr "Konfiguracja szyfrowania nie powiodła się"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-msgid ""
-"You have selected the root file system to be stored on an encrypted "
-"partition. This feature is not available and continuing now would result in "
-"an installation that cannot be used."
-msgstr ""
-"Wybrano by główny system plików był przechowywany na szyfrowanej partycji. "
-"Taka możliwość nie istnieje i kontynuowanie może doprowadzić do sytuacji, że "
-"system będzie bezużyteczny."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:49001
-msgid ""
-"Please go back and choose a non-encrypted partition for the root file system."
-msgstr ""
-"Cofnij się i wybierz nieszyfrowaną partycję dla głównego systemu plików."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -732,14 +706,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:49001
 msgid "You should go back and setup a /boot partition."
 msgstr "Wróć i ustaw partycję /boot."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -754,7 +728,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -764,14 +738,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid "Are you sure you want to use a random key?"
 msgstr "Na pewno chcesz użyć losowego klucza?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -782,7 +756,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -794,14 +768,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "Failed to download crypto components"
 msgstr "Załadowanie składników szyfrujących nie powiodło się"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
 "Wystąpił błąd podczas próby pobrania dodatkowych składników szyfrujących. "
@@ -809,7 +783,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Kontynuować instalację składników szyfrujących pomimo małej ilości pamięci?"
@@ -817,7 +791,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -826,3 +800,18 @@ msgstr ""
 "Wygląda na to, że w systemie nie ma wystarczającej ilości pamięci "
 "operacyjnej potrzebnej do instalacji składników szyfrujących. Jeśli "
 "wybierzesz by mimo to kontynuować instalacja może się nie powieść."
+
+#~ msgid ""
+#~ "You have selected the root file system to be stored on an encrypted "
+#~ "partition. This feature is not available and continuing now would result "
+#~ "in an installation that cannot be used."
+#~ msgstr ""
+#~ "Wybrano by główny system plików był przechowywany na szyfrowanej "
+#~ "partycji. Taka możliwość nie istnieje i kontynuowanie może doprowadzić do "
+#~ "sytuacji, że system będzie bezużyteczny."
+
+#~ msgid ""
+#~ "Please go back and choose a non-encrypted partition for the root file "
+#~ "system."
+#~ msgstr ""
+#~ "Cofnij się i wybierz nieszyfrowaną partycję dla głównego systemu plików."

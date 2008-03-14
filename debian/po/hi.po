@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-01-26 07:33+0000\n"
+"POT-Creation-Date: 2008-03-14 22:51+0000\n"
 "PO-Revision-Date: 2008-02-09 16:30+0530\n"
 "Last-Translator: Kumar Appaiah <akumar@ee.iitm.ac.in>\n"
 "Language-Team: Tamil\n"
@@ -686,11 +686,7 @@ msgstr "कुंजीफाइल बनाते समय एक त्र�
 #. Type: error
 #. Description
 #. :sl3:
-#. Type: error
-#. Description
-#. :sl3:
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
-#: ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "कूट संबद्ध व्यवस्थापन असफल रहा"
 
@@ -698,27 +694,6 @@ msgstr "कूट संबद्ध व्यवस्थापन असफल
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-msgid ""
-"You have selected the root file system to be stored on an encrypted "
-"partition. This feature is not available and continuing now would result in "
-"an installation that cannot be used."
-msgstr ""
-"आपने रूट फाइलतंत्र को एक कूटबद्ध पार्टिशन पर भंडारित करने के लिए चुना है. यह सुविधा उपलब्ध "
-"नहीं है और इसको जारी रखने की परिणति एक ऐसे संस्थापन में होगी जोकि प्रयोग नहीं किया जा "
-"सकेगा."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:49001
-msgid ""
-"Please go back and choose a non-encrypted partition for the root file system."
-msgstr "कृपया पीछे जाएँ और रूट फाइलतंत्र के लिए एक बिना कूटबद्ध पार्टिशन चुनें."
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -730,14 +705,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:49001
 msgid "You should go back and setup a /boot partition."
 msgstr "आपको पीछे जाकर अलग से एक /boot विभाजन व्यवस्थित करना चाहिए."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -751,7 +726,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -760,14 +735,14 @@ msgstr "आपको पीछे जाकर /boot फाइलतंत्र
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid "Are you sure you want to use a random key?"
 msgstr "क्या आप सुनिश्चित हैं कि आप आकस्मिक कुंजी का प्रयोग करना चाहते हैं?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -778,7 +753,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:51001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -789,28 +764,28 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "Failed to download crypto components"
 msgstr "क्रिप्टो अवयव डाउनलोड करने में असफल"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:52001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "अतिरिक्त क्रिप्टो अवयव डाउनलोड करने के प्रयास में एक त्रुटि हो गई."
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr "अपर्याप्त मेमोरी होते हुए भी अतिरिक्त क्रिप्टो अव्यव का संस्थापन जारी रखें?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:54001
+#: ../partman-crypto.templates:53001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -818,3 +793,17 @@ msgid ""
 msgstr ""
 "अतिरिक्त क्रिप्टो अवयवों को संस्थापित करने के लिए पर्याप्त मेमोरी उपलब्ध प्रतीत नहीं हो "
 "रही है. यदि आप जारी रखने को चुनते हैं तो संस्थापना की प्रक्रिया असफल हो सकती है."
+
+#~ msgid ""
+#~ "You have selected the root file system to be stored on an encrypted "
+#~ "partition. This feature is not available and continuing now would result "
+#~ "in an installation that cannot be used."
+#~ msgstr ""
+#~ "आपने रूट फाइलतंत्र को एक कूटबद्ध पार्टिशन पर भंडारित करने के लिए चुना है. यह सुविधा "
+#~ "उपलब्ध नहीं है और इसको जारी रखने की परिणति एक ऐसे संस्थापन में होगी जोकि प्रयोग नहीं "
+#~ "किया जा सकेगा."
+
+#~ msgid ""
+#~ "Please go back and choose a non-encrypted partition for the root file "
+#~ "system."
+#~ msgstr "कृपया पीछे जाएँ और रूट फाइलतंत्र के लिए एक बिना कूटबद्ध पार्टिशन चुनें."

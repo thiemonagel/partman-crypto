@@ -6,6 +6,8 @@ partman-crypto (28) UNRELEASED; urgency=low
   * commit.d/unsafe_swap: replace open-coded check for
     swap on dm-crypt with call to dm_is_safe(). Closes: #468738
   * Regenerate the initramfs for root on loop-AES.
+  * Make veto_filesystems/crypto executable so that it
+    actually gets used.
 
  -- Max Vozeler <xam@debian.org>  Sat, 08 Mar 2008 17:35:48 +0100
 

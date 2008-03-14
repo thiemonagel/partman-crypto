@@ -369,17 +369,6 @@ Type: error
 _Description: Keyfile creation failure
  An error occurred while creating the keyfile.
 
-Template: partman-crypto/crypto_root_unimplemented
-Type: error
-# :sl3:
-_Description: Encryption configuration failure
- You have selected the root file system to be stored on an encrypted
- partition. This feature is not available and continuing now would
- result in an installation that cannot be used.
- .
- Please go back and choose a non-encrypted partition for the root
- file system.
-
 Template: partman-crypto/crypto_root_needs_boot
 Type: error
 # :sl3:

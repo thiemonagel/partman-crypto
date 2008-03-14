@@ -1,5 +1,6 @@
 partman-crypto (28) UNRELEASED; urgency=low
 
+  * Allow install onto loop-AES encrypted root. Closes: #381895
   * check.d/crypto_check_mountpoints: quote $mnt as it
     may be empty. Closes: #468739
   * commit.d/unsafe_swap: replace open-coded check for

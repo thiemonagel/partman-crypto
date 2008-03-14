@@ -48,14 +48,6 @@ for dev in $DEVICES/*; do
 		# Check 1 - Is cryptoroot possible?
 		if [ "$mnt" = / ]; then
 			crypto_root=yes
-			if [ $type = loop-AES ]; then
-				templ="partman-crypto/crypto_root_unimplemented"
-				db_set $templ false
-				db_fset $templ seen false
-				db_input critical $templ
-				db_go || true
-				exit 1
-			fi
 		fi
 
 		# Check 2 - Is /boot encrypted?

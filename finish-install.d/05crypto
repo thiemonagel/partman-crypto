@@ -8,6 +8,7 @@
 . /usr/share/debconf/confmodule
 
 loop_AES=no
+loop_AES_root=no
 
 for dev in /var/lib/partman/devices/*; do
 	[ -d "$dev" ] || continue
@@ -21,6 +22,25 @@ for dev in /var/lib/partman/devices/*; do
 			loop_AES=yes
 		fi
 	done
+
+	if [ -f crypt_realdev ]; then
+		r=$(cat crypt_realdev)
+		set -- $(IFS=: && echo $r)
+		cpart=$3
+
+		for id in *; do
+			[ -f $id/mountpoint ] || continue
+			mnt=$(cat $id/mountpoint)
+			if [ "$mnt" = / ]; then
+				[ -f $cpart/crypto_type ] || continue
+				type=$(cat $cpart/crypto_type)
+				if [ "$type" = loop-AES ]; then
+					loop_AES_root=yes
+					break
+				fi
+			fi
+		done
+	fi
 done
 
 if [ $loop_AES = yes ]; then
@@ -47,6 +67,13 @@ END
 		db_input critical $templ
 		db_go
 		exit 1
+	fi
+
+	if [ "$loop_AES_root" = yes ]; then
+		# We need to regenerate the initramfs because
+		# loop-aes-utils + loop-aes-modules-$KVERS were
+		# installed after the kernel
+		in-target update-initramfs -u -k all
 	fi
 fi
 

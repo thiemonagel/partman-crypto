@@ -19,11 +19,12 @@ install_loopkeys () {
 	fi
 
 	for key in $*; do
-		if [ -f $dir/$key ]; then
+		name=${key##*/}
+		if [ -f $dir/$name ]; then
 			: TODO show error
 		else
-			mv $key $dir
-			chmod 0600 $dir/$key
+			mv $key $dir/$name
+			chmod 0600 $dir/$name
 		fi
 	done
 }
@@ -44,7 +45,10 @@ for dev in $DEVICES/*; do
 		case $type in
 			loop-AES)
 				loop_AES=yes
-				install_loopkeys $id/*.gpg
+				if [ -f $id/keyfile ]; then
+					key=$(cat $id/keyfile)
+					install_loopkeys "$key"
+				fi
 				;;
 			dm-crypt)
 				dm_crypt=yes

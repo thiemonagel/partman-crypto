@@ -1,5 +1,6 @@
-partman-crypto (28) UNRELEASED; urgency=low
+partman-crypto (28) unstable; urgency=low
 
+  [ Max Vozeler ]
   * Allow install onto loop-AES encrypted root. Closes: #381895
   * check.d/crypto_check_mountpoints: quote $mnt as it
     may be empty. Closes: #468739
@@ -8,6 +9,18 @@ partman-crypto (28) UNRELEASED; urgency=low
   * Regenerate the initramfs for root on loop-AES.
   * Make veto_filesystems/crypto executable so that it
     actually gets used.
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Esperanto (eo.po) by Serge Leblanc
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Galician (gl.po) by Jacobo Tarrio
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Changwoo Ryu
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Thai (th.po) by Theppitak Karoonboonyanan
 
  -- Max Vozeler <xam@debian.org>  Sat, 08 Mar 2008 17:35:48 +0100
 

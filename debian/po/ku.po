@@ -765,6 +765,3 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-
-#~ msgid "Enter random characters"
-#~ msgstr "Tîpên tesadufî binivîse"

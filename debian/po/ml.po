@@ -4,7 +4,7 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # translation of ml.po to malayalam
-# Copyright (c)  2006-2007 Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, Santhosh Thottingal <santhosh00@gmail.com>, Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com> and Debian Project
+# Copyright (c)  2006-2008 Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, Santhosh Thottingal <santhosh00@gmail.com>, Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com> and Debian Project
 # Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
 #
 # Debian Installer master translation file template
@@ -787,15 +787,3 @@ msgid ""
 msgstr ""
 "കൂടുതല്‍ ക്രിപ്റ്റോ ഘടകങ്ങളുടെ ഇന്‍സ്റ്റലേഷനാവശ്യമായ മെമ്മറി ലഭ്യമല്ലെന്ന് തോന്നുന്നു. എന്നാലും "
 "മുന്നോട്ട് പോകാന്‍ തന്നെയാണു് തീരുമാനമെങ്കില്‍ ഇന്‍സ്റ്റളേഷന്‍ പ്രക്രിയ പരാജയപ്പെട്ടേക്കാം."
-
-#~ msgid "Enter random characters"
-#~ msgstr "റാന്‍ഡം അക്ഷരങ്ങള്‍ നല്‍കുക"
-
-#~ msgid ""
-#~ "You can help speed up the process by entering random characters on the "
-#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
-#~ "this can take a long time)"
-#~ msgstr ""
-#~ "നിങ്ങള്‍ക്കു് ഈ പ്രക്രിയുടെ വേഗത വര്ദ്ധിപ്പിക്കുന്നതിനായി കീ ബോര്‍ഡില്‍ റാന്‍ഡം അക്ഷരങ്ങള്‍ നല്‍കിയ് "
-#~ "സഹായിക്കാം അല്ലെങ്കില്‍ വേണ്ടത്ര കീഡാറ്റ ശേഖരിക്കുന്നതു് വരെ വെറുതെ കാത്തിരിക്കാം. "
-#~ "(കുറിപ്പ്: ഇതു് വളരെ സമയമെടുത്തേക്കാം)"

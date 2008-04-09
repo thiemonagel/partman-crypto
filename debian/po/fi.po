@@ -8,8 +8,8 @@
 # This file is distributed under the same license as debian-installer.
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004
 # Tapio Lehtonen <tale@debian.org>, 2004 - 2006
-# Esko Arajärvi <edu@iki.fi>, 2007
-# Thanks to lokalisointi-laatu@linux-aktivaattori.org.
+# Esko Arajärvi <edu@iki.fi>, 2007 - 2008
+# Thanks to laatu@lokalisointi.org.
 #
 #
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-05 22:27+0200\n"
+"PO-Revision-Date: 2008-04-03 22:12+0200\n"
 "Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -790,15 +790,3 @@ msgid ""
 msgstr ""
 "Muistia näyttäisi olevan liian vähän jotta voitaisiin asentaa lisää "
 "salauksen osia. Jos tästä huolimatta jatketaan, saattaa asennus epäonnistua."
-
-#~ msgid "Enter random characters"
-#~ msgstr "Kirjoita satunnaisia merkkejä"
-
-#~ msgid ""
-#~ "You can help speed up the process by entering random characters on the "
-#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
-#~ "this can take a long time)"
-#~ msgstr ""
-#~ "Prosessia voidaan nopeuttaa kirjoittamalla näppäimistöllä satunnaisia "
-#~ "merkkejä, tai vain odottaa kunnes on kerätty tarpeeksi merkkejä. "
-#~ "(HUOMAUTUS: saattaa kestää kauan)"

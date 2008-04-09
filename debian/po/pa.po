@@ -15,14 +15,15 @@
 # A S Alam <apreet.alam@gmail.com>, 2006, 2007.
 # A S Alam <aalam@users.sf.net>, 2007.
 # Amanpreet Singh Alam <apreet.alam@gmail.com>, 2008.
+# Amanpreet Singh Brar <aalam@users.sf.net>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-05 19:18+0530\n"
-"Last-Translator: Amanpreet Singh Alam <apreet.alam@gmail.com>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@list.sf.net>\n"
+"PO-Revision-Date: 2008-04-04 07:35+0530\n"
+"Last-Translator: Amanpreet Singh Brar <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -776,14 +777,3 @@ msgid ""
 msgstr ""
 "ਹੋਰ crypto ਭਾਗ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਜਾਪਦੀ ਹੈ। ਜੇ ਤੁਸੀਂ ਅੱਗੇ ਜਾਣਾ ਜਾਰੀ ਰੱਖਿਆ "
 "ਅਤੇ ਕਿਸੇ ਵੀ ਤਰਾਂ ਅੱਗੇ ਗਏ ਤਾਂ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋ ਜਾਵੇਗੀ।"
-
-#~ msgid "Enter random characters"
-#~ msgstr "ਰਲਵੇਂ ਅੱਖਰ ਦਿਓ"
-
-#~ msgid ""
-#~ "You can help speed up the process by entering random characters on the "
-#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
-#~ "this can take a long time)"
-#~ msgstr ""
-#~ "ਤੁਸੀਂ ਕਾਰਜ ਦੀ ਗਤਾ ਵਧਾਉਣ ਵਿੱਚ ਕੀਬੋਰਡ ਤੇ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰ ਕੇ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਕੁੰਜੀ-"
-#~ "ਡਾਟਾ ਇਕੱਠਾ ਕਰਨ ਦੀ ਉਡੀਕ ਵਿੱਚ। (ਸੂਚਨਾ: ਇਹ ਕਾਫੀ ਸਮਾਂ ਲੈ ਸਕਦਾ ਹੈ)"

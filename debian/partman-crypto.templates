@@ -353,15 +353,15 @@ _Description: Use weak passphrase?
  You entered a passphrase that consists of less than ${MINIMUM} characters,
  which is considered too weak. You should choose a stronger passphrase.
 
-Template: partman-crypto/entropy-text
-Type: entropy-text
+Template: partman-crypto/entropy
+Type: entropy
 # :sl3:
-_Description: Enter random characters
- The encryption key for ${DEVICE} is now being created.
- .
- You can help speed up the process by entering random characters on
- the keyboard, or just wait until enough keydata has been collected.
- (NOTE: this can take a long time)
+_Description: The encryption key for ${DEVICE} is now being created.
+
+Template: partman-crypto/entropy-success
+Type: text
+# :sl3:
+_Description: Key data has been created successfully.
 
 Template: partman-crypto/keyfile-problem
 Type: error

@@ -95,29 +95,31 @@ have_entropy_plugin () {
 	db_capb
 	set -- $RET
 	for cap; do
-		if [ "$cap" = plugin-entropy-text ]; then
+		if [ "$cap" = plugin-entropy ]; then
 			return 0
 		fi
 	done
 	return 1
 }
 
+# Fifo provided by cdebconf-entropy plugins
+randfifo=/var/run/random.fifo
+
 call_entropy_plugin () {
 	local keybytes
 	keybytes=$1
 
-	templ=partman-crypto/entropy-text
+	templ=partman-crypto/entropy
 	db_fset $templ seen false
 	db_subst $templ DEVICE "$description"
+	db_subst $templ FIFO $randfifo
 	db_subst $templ KEYSIZE "$keybytes"
+	db_subst $templ SUCCESS partman-crypto/entropy-success
 	db_input critical $templ
 	db_go || return 1
 
 	return 0
 }
-
-# Fifo provided by cdebconf-entropy plugins
-randfifo=/var/run/random.fifo
 
 gnupg_encrypt () {
 	local keyfile passfifo gpgopts

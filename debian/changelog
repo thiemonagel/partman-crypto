@@ -1,3 +1,16 @@
+partman-crypto (29) UNRELEASED; urgency=low
+
+  * Make partman-crypto-dm and parman-crypto-loop depends on the virtual
+    cdebconf-entropy instead of cdebconf-newt-entropy to be independant of the
+    frontend used.  Requires cdebconf-entropy (>= 0.7).
+  * Add partman-crypto/entropy-success template which will be be displayed
+    when enough entropy has been gathered.
+  * Use the "entropy" question type instead of "entropy-text".
+  * Substitute FIFO and SUCCESS variables before displaying
+    partman-crypto/entropy.
+
+ -- Jérémy Bobbio <lunar@debian.org>  Sun, 23 Mar 2008 14:22:31 +0000
+
 partman-crypto (28) unstable; urgency=low
 
   [ Max Vozeler ]

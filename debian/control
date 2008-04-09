@@ -15,11 +15,11 @@ Description: Add to partman support for block device encryption
 Package: partman-crypto-dm
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-crypto, crypto-modules, cryptsetup-udeb, cdebconf-newt-entropy (>= 0.3)
+Depends: partman-crypto, crypto-modules, cryptsetup-udeb, cdebconf-entropy
 Description: Add to partman support for dm-crypt encryption
 
 Package: partman-crypto-loop
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb, cdebconf-newt-entropy (>= 0.3)
+Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb, cdebconf-entropy
 Description: Add to partman support for loop-AES encryption

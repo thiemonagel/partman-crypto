@@ -575,12 +575,13 @@ crypto_prepare_method () {
 	package=''
 
 	[ -d $part ] || return 1
+        package="cdebconf-$DEBIAN_FRONTEND-entropy"
 	case $type in
 	    dm-crypt)
-		package="partman-crypto-dm"
+		package="$package partman-crypto-dm"
 		;;
 	    loop-AES)
-		package="partman-crypto-loop"
+		package="$package partman-crypto-loop"
 		;;
 	    *)
 		return 1

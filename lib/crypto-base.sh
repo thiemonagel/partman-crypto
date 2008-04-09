@@ -60,16 +60,16 @@ swap_is_safe () {
 
 	for swap in $(cat /proc/swaps); do
 		case $swap in
-		Filename*)
+		    Filename*)
 			continue
 			;;
-		/dev/loop*)
+		    /dev/loop*)
 			loop_is_safe ${swap%% *} || return 1
 			;;
-		/dev/mapper/*)
+		    /dev/mapper/*)
 			dm_is_safe ${swap%% *} || return 1
 			;;
-		*)
+		    *)
 			# Presume not safe
 			return 1
 			;;
@@ -119,11 +119,11 @@ setup_loopaes () {
 	[ -x /sbin/losetup-aes ] || return 1
 
 	case $keytype in
-	keyfile)
+	    keyfile)
 		opts="-K $keyfile"
 		pass="$keyfile.pass"
 		;;
-	random)
+	    random)
 		opts="-H random"
 		pass="/dev/null"
 		;;
@@ -206,7 +206,7 @@ setup_cryptdev () {
 	done
 
 	case $type in
-	dm-crypt)
+	    dm-crypt)
 		cryptdev=$(mapdevfs $realdev)
 		cryptdev="${cryptdev##*/}_crypt"
 		if [ -b "/dev/mapper/$cryptdev" ]; then
@@ -225,7 +225,7 @@ setup_cryptdev () {
 		cryptdev="/dev/mapper/$cryptdev"
 		;;
 
-	loop-AES)
+	    loop-AES)
 		cryptdev=$(get_free_loop);
 		if [ -z "$cryptdev" ]; then
 			return 1
@@ -549,14 +549,14 @@ crypto_set_defaults () {
 	[ -d $part ] || return 1
 
 	case $type in
-	dm-crypt)
+	    dm-crypt)
 		echo aes > $part/cipher
 		echo 256 > $part/keysize
 		echo cbc-essiv:sha256 > $part/ivalgorithm
 		echo passphrase > $part/keytype
 		echo sha256 > $part/keyhash
 		;;
-	loop-AES)
+	    loop-AES)
 		echo AES256 > $part/cipher
 		echo keyfile > $part/keytype
 		rm -f $part/keysize
@@ -576,13 +576,13 @@ crypto_prepare_method () {
 
 	[ -d $part ] || return 1
 	case $type in
-	dm-crypt)
+	    dm-crypt)
 		package="partman-crypto-dm"
 		;;
-	loop-AES)
+	    loop-AES)
 		package="partman-crypto-loop"
 		;;
-	*)
+	    *)
 		return 1
 		;;
 	esac
@@ -608,13 +608,13 @@ crypto_check_required_tools() {
 
 	tools="blockdev-keygen"
 	case $1 in
-	dm-crypt)
+	    dm-crypt)
 		tools="$tools dmsetup cryptsetup"
 		;;
-	loop-AES)
+	    loop-AES)
 		tools="$tools gpg base64"
 		;;
-	*)
+	    *)
 		return 1
 	esac
 
@@ -635,10 +635,10 @@ crypto_check_required_options() {
 	type=$2
 
 	case $type in
-	dm-crypt)
+	    dm-crypt)
 		options="cipher keytype keyhash ivalgorithm keysize"
 		;;
-	loop-AES)
+	    loop-AES)
 		options="cipher keytype"
 		;;
 	esac

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-03-14 22:51+0000\n"
+"POT-Creation-Date: 2008-04-09 22:50+0000\n"
 "PO-Revision-Date: 2008-03-14 01:42-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
@@ -652,44 +652,31 @@ msgstr ""
 "caracteres, o que é considerado muito fraco. Você deveria escolher uma "
 "passphrase mais forte."
 
-#. Type: entropy-text
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:47001
-msgid "Enter random characters"
-msgstr "Informe caracteres aleatórios"
-
-#. Type: entropy-text
+#. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "A chave criptográfica para ${DEVICE} está agora sendo criada."
 
-#. Type: entropy-text
+#. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:47001
-msgid ""
-"You can help speed up the process by entering random characters on the "
-"keyboard, or just wait until enough keydata has been collected. (NOTE: this "
-"can take a long time)"
+#: ../partman-crypto.templates:48001
+msgid "Key data has been created successfully."
 msgstr ""
-"Você pode ajudar a acelerar o processo digitando caracteres aleatórios no "
-"teclado ou simplesmente esperar até que dados o bastante sejam coletados. "
-"(NOTA: isto pode demorar)"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
 msgstr "Falha na criação do arquivo de chave"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
 msgstr "Um erro ocorreu durante a criação do arquivo de chave."
 
@@ -699,14 +686,14 @@ msgstr "Um erro ocorreu durante a criação do arquivo de chave."
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "Falha na configuração da criptografia"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -719,14 +706,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
 msgstr "Você deveria voltar e configurar uma partição /boot."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -742,7 +729,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -753,14 +740,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
 msgstr "Você têm certeza que deseja utilizar uma chave aleatória?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -771,7 +758,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -783,14 +770,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
 msgstr "Falha ao carregar componentes de criptografia"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
 "Um erro ocorreu durante a tentativa de fazer o download dos componentes de "
@@ -799,7 +786,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Continuar a instalar os componentes de criptografia mesmo com memória "
@@ -808,7 +795,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -817,3 +804,15 @@ msgstr ""
 "Parece não existir memória suficiente disponível para instalar componentes "
 "de criptografia adicionais. Caso você opte por ir em frente e continuar "
 "mesmo assim, o processo de instalação poderá falhar."
+
+#~ msgid "Enter random characters"
+#~ msgstr "Informe caracteres aleatórios"
+
+#~ msgid ""
+#~ "You can help speed up the process by entering random characters on the "
+#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
+#~ "this can take a long time)"
+#~ msgstr ""
+#~ "Você pode ajudar a acelerar o processo digitando caracteres aleatórios no "
+#~ "teclado ou simplesmente esperar até que dados o bastante sejam coletados. "
+#~ "(NOTA: isto pode demorar)"

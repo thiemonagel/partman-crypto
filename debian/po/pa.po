@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-03-14 22:51+0000\n"
+"POT-Creation-Date: 2008-04-09 22:50+0000\n"
 "PO-Revision-Date: 2008-03-05 19:18+0530\n"
 "Last-Translator: Amanpreet Singh Alam <apreet.alam@gmail.com>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@list.sf.net>\n"
@@ -635,43 +635,31 @@ msgstr ""
 "ਤੁਸੀਂ ਸ਼ਬਦ ਭਰਿਆ ਹੈ ਜਿਸ ਵਿੱਚ ${MINIMUM} ਅੱਖਰਾਂ ਤੋਂ ਘੱਟ ਹਨ, ਜੋ ਕਮਜ਼ੋਰ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਸਖਤ "
 "ਸ਼ਬਦ ਚੁਣਨਾ ਚਾਹੀਦਾ ਹੈ।"
 
-#. Type: entropy-text
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:47001
-msgid "Enter random characters"
-msgstr "ਰਲਵੇਂ ਅੱਖਰ ਦਿਓ"
-
-#. Type: entropy-text
+#. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "${DEVICE} ਲਈ ਹੁਣ ਇੰਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ ਬਣ ਗਈ ਹੈ।"
 
-#. Type: entropy-text
+#. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:47001
-msgid ""
-"You can help speed up the process by entering random characters on the "
-"keyboard, or just wait until enough keydata has been collected. (NOTE: this "
-"can take a long time)"
+#: ../partman-crypto.templates:48001
+msgid "Key data has been created successfully."
 msgstr ""
-"ਤੁਸੀਂ ਕਾਰਜ ਦੀ ਗਤਾ ਵਧਾਉਣ ਵਿੱਚ ਕੀਬੋਰਡ ਤੇ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰ ਕੇ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਕੁੰਜੀ-ਡਾਟਾ "
-"ਇਕੱਠਾ ਕਰਨ ਦੀ ਉਡੀਕ ਵਿੱਚ। (ਸੂਚਨਾ: ਇਹ ਕਾਫੀ ਸਮਾਂ ਲੈ ਸਕਦਾ ਹੈ)"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
 msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ 'ਚ ਫੇਲ੍ਹ"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
 msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਸਮੇਂ ਗਲਤੀ ਵਾਪਰੀ ਹੈ।"
 
@@ -681,14 +669,14 @@ msgstr "ਕੁੰਜੀ-ਫਾਇਲ ਬਣਾਉਣ ਸਮੇਂ ਗਲਤੀ �
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "ਇੰਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -700,14 +688,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
 msgstr "ਤੁਹਾਨੂੰ ਪਿੱਛੇ ਜਾ ਕੇ /boot ਭਾਗ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -721,7 +709,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -730,14 +718,14 @@ msgstr "ਤੁਹਾਨੂੰ ਪਿੱਛੇ ਜਾ ਕੇ /boot ਫਾਇਲ �
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਲਗਾਤਾਰ ਕੁੰਜੀ ਵਰਤਣਾ ਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -748,7 +736,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -759,28 +747,28 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
 msgstr "cryto ਭਾਗ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "ਹੋਰ cryto ਭਾਗ ਡਾਊਨਲੋਡ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ।"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr "ਘੱਟ ਮੈਮੋਰੀ ਹੋਣ ਦੀ ਹਾਲਤ ਵਿੱਚ ਵੀ ਕੀ cryto ਭਾਗ ਇੰਸਟਾਲ ਕਰਨੇ ਹਨ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -788,3 +776,14 @@ msgid ""
 msgstr ""
 "ਹੋਰ crypto ਭਾਗ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਜਾਪਦੀ ਹੈ। ਜੇ ਤੁਸੀਂ ਅੱਗੇ ਜਾਣਾ ਜਾਰੀ ਰੱਖਿਆ "
 "ਅਤੇ ਕਿਸੇ ਵੀ ਤਰਾਂ ਅੱਗੇ ਗਏ ਤਾਂ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋ ਜਾਵੇਗੀ।"
+
+#~ msgid "Enter random characters"
+#~ msgstr "ਰਲਵੇਂ ਅੱਖਰ ਦਿਓ"
+
+#~ msgid ""
+#~ "You can help speed up the process by entering random characters on the "
+#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
+#~ "this can take a long time)"
+#~ msgstr ""
+#~ "ਤੁਸੀਂ ਕਾਰਜ ਦੀ ਗਤਾ ਵਧਾਉਣ ਵਿੱਚ ਕੀਬੋਰਡ ਤੇ ਲਗਾਤਾਰ ਅੱਖਰ ਭਰ ਕੇ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਕੁੰਜੀ-"
+#~ "ਡਾਟਾ ਇਕੱਠਾ ਕਰਨ ਦੀ ਉਡੀਕ ਵਿੱਚ। (ਸੂਚਨਾ: ਇਹ ਕਾਫੀ ਸਮਾਂ ਲੈ ਸਕਦਾ ਹੈ)"

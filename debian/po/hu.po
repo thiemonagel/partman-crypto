@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-03-14 22:51+0000\n"
+"POT-Creation-Date: 2008-04-09 22:50+0000\n"
 "PO-Revision-Date: 2008-01-20 07:02+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
@@ -637,43 +637,31 @@ msgstr ""
 "${MINIMUM} karakternél rövidebb jelszó-kifejezést adtál meg, ez e jelszó "
 "gyenge. Válassz erősebbet!"
 
-#. Type: entropy-text
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:47001
-msgid "Enter random characters"
-msgstr "Véletlen karakterek megadása"
-
-#. Type: entropy-text
+#. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "A ${DEVICE} eszköz titkosítókulcsa létrehozva."
 
-#. Type: entropy-text
+#. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:47001
-msgid ""
-"You can help speed up the process by entering random characters on the "
-"keyboard, or just wait until enough keydata has been collected. (NOTE: this "
-"can take a long time)"
+#: ../partman-crypto.templates:48001
+msgid "Key data has been created successfully."
 msgstr ""
-"Gyorsítható a folyamat véletlen gépeléssel, vagy meg kell várni, míg elég "
-"kulcsadat összegyűlik (ez sokáig tarthat)"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
 msgstr "Kulcsfájl létrehozás hiba"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
 msgstr "Hiba történt a kulcsfájl létrehozásakor"
 
@@ -683,14 +671,14 @@ msgstr "Hiba történt a kulcsfájl létrehozásakor"
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "Titkosítás konfigurációs hiba"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -702,14 +690,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
 msgstr "Lépj vissza ás válassz /boot partíciót."
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -723,7 +711,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -734,14 +722,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
 msgstr "Biztosan véletlen kulcsot akarsz használni?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -752,7 +740,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -763,28 +751,28 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
 msgstr "Nem tudtam letölteni a titkosító összetevőket"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "Hiba történt a további titkosító összetevők letöltésekor"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr "Folytatod a titkosító összetevők telepítését a kevés memória ellenére?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -792,3 +780,14 @@ msgid ""
 msgstr ""
 "Úgy fest, nincs elég szabad memória további titkosító összetevők "
 "telepítésére. Ha mindenképp így folytatod, a telepítés meghiúsulhat."
+
+#~ msgid "Enter random characters"
+#~ msgstr "Véletlen karakterek megadása"
+
+#~ msgid ""
+#~ "You can help speed up the process by entering random characters on the "
+#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
+#~ "this can take a long time)"
+#~ msgstr ""
+#~ "Gyorsítható a folyamat véletlen gépeléssel, vagy meg kell várni, míg elég "
+#~ "kulcsadat összegyűlik (ez sokáig tarthat)"

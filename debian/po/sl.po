@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-03-14 22:51+0000\n"
+"POT-Creation-Date: 2008-04-09 22:50+0000\n"
 "PO-Revision-Date: 2008-02-05 13:12+0100\n"
 "Last-Translator: Matej Kovacic <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -649,44 +649,31 @@ msgstr ""
 "Vnesli ste geslo, ki vsebuje manj kot ${MINIMUM} znakov, kar se smatra za "
 "prešibko. Poskusite izbrati boljše geslo."
 
-#. Type: entropy-text
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:47001
-msgid "Enter random characters"
-msgstr "Vnesite naključne znake"
-
-#. Type: entropy-text
+#. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
 msgstr "Šifrirni ključ za napravo ${DEVICE} se sedaj ustvarja."
 
-#. Type: entropy-text
+#. Type: text
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:47001
-msgid ""
-"You can help speed up the process by entering random characters on the "
-"keyboard, or just wait until enough keydata has been collected. (NOTE: this "
-"can take a long time)"
+#: ../partman-crypto.templates:48001
+msgid "Key data has been created successfully."
 msgstr ""
-"Temu procesu lahko pomagate tako, da vnašate naključne znake preko "
-"tipkovnice, ali pa samo počakate dokler ni zbranih dovolj podatkov. (OPOMBA: "
-"to lahko traja dolgo časa)"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
 msgstr "Napaka pri ustvarjanju datoteke s ključem"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:48001
+#: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
 msgstr "Prišlo je do napake med ustvarjanjem datoteke s ključem."
 
@@ -696,14 +683,14 @@ msgstr "Prišlo je do napake med ustvarjanjem datoteke s ključem."
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
 msgstr "Napaka pri nastavljanju šifriranja"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid ""
 "You have selected the root file system to be stored on an encrypted "
 "partition. This feature requires a separate /boot partition on which the "
@@ -716,14 +703,14 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:49001
+#: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
 msgstr "Vrnite se nazaj in namestite zagonski razdelek /boot"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You have selected the /boot file system to be stored on an encrypted "
 "partition. This is not possible because the boot loader would be unable to "
@@ -737,7 +724,7 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:50001
+#: ../partman-crypto.templates:51001
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
@@ -748,14 +735,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
 msgstr "Ali ste prepričani, da želite uporabi naključni ključ?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
@@ -766,7 +753,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:51001
+#: ../partman-crypto.templates:52001
 msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
@@ -777,21 +764,21 @@ msgstr ""
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
 msgstr "Prenos šifrirnih komponent ni uspel"
 
 #. Type: error
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:52001
+#: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr "Med poskusom prenosa dodatnih šifrirnih komponent je prišlo do napake."
 
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
 "Pričnem z nameščanjem šifrirnih komponent kljub pomanjkanju pomnilnika?"
@@ -799,7 +786,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl3:
-#: ../partman-crypto.templates:53001
+#: ../partman-crypto.templates:54001
 msgid ""
 "There does not seem to be sufficient memory available to install additional "
 "crypto components. If you choose to go ahead and continue anyway, the "
@@ -807,3 +794,15 @@ msgid ""
 msgstr ""
 "Morda ni na voljo dovolj pomnilnika za namestitev dodatnih šifrirnih "
 "komponent. V kolikor vseeno nadaljujete, namestitev morda ne bo uspešna."
+
+#~ msgid "Enter random characters"
+#~ msgstr "Vnesite naključne znake"
+
+#~ msgid ""
+#~ "You can help speed up the process by entering random characters on the "
+#~ "keyboard, or just wait until enough keydata has been collected. (NOTE: "
+#~ "this can take a long time)"
+#~ msgstr ""
+#~ "Temu procesu lahko pomagate tako, da vnašate naključne znake preko "
+#~ "tipkovnice, ali pa samo počakate dokler ni zbranih dovolj podatkov. "
+#~ "(OPOMBA: to lahko traja dolgo časa)"

@@ -651,7 +651,7 @@ msgstr "${DEVICE} માટે એન્ક્રિપ્શન કી હવ�
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "કી માહિતી સફળતાપૂર્વક બનાવવામાં આવી છે."
 
 #. Type: error
 #. Description

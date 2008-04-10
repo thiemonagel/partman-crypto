@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-05 02:38+0100\n"
+"PO-Revision-Date: 2008-04-10 04:47+0100\n"
 "Last-Translator: tegegne tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic\n"
 "MIME-Version: 1.0\n"
@@ -616,7 +616,7 @@ msgstr "ለ${DEVICE} የመመስጠሪያ ቁልፍ አሁን በመፈጠር �
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "ቁልፍ መረጃ በተሳካ ሁኔታ ተፈጥሯል።"
 
 #. Type: error
 #. Description

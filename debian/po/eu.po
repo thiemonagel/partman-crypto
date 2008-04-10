@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-02 23:53+0200\n"
+"PO-Revision-Date: 2008-04-10 12:20+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -660,7 +660,7 @@ msgstr "${DEVICE} gailuaren enkriptazio gakoa orain sortuko da."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Gako datuak behar bezala sortu dira."
 
 #. Type: error
 #. Description

@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-03 22:12+0200\n"
+"PO-Revision-Date: 2008-04-10 12:47+0200\n"
 "Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -658,7 +658,7 @@ msgstr "Salausavainta laitteelle ${DEVICE} luodaan nyt."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Avaintiedot luotiin onnistuneesti."
 
 #. Type: error
 #. Description

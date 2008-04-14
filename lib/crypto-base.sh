@@ -575,7 +575,7 @@ crypto_prepare_method () {
 	package=''
 
 	[ -d $part ] || return 1
-        package="cdebconf-$DEBIAN_FRONTEND-entropy"
+	package="cdebconf-$DEBIAN_FRONTEND-entropy"
 	case $type in
 	    dm-crypt)
 		package="$package partman-crypto-dm"

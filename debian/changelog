@@ -1,3 +1,11 @@
+partman-crypto (30) UNRELEASED; urgency=low
+
+  * Fix loading of additional packages:
+    - make crypto_load_udebs() take more than one argument,
+    - properly pluralize "packages" in crypto_prepare_method().
+
+ -- Jérémy Bobbio <lunar@debian.org>  Fri, 18 Apr 2008 02:36:05 +0200
+
 partman-crypto (29) unstable; urgency=low
 
   [ Jérémy Bobbio ]

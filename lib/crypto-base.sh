@@ -504,7 +504,7 @@ crypto_check_mem() {
 # Loads additional crypto udebs
 crypto_load_udebs() {
 	local packages udebdir package
-	packages="$1"
+	packages="$*"
 	udebdir=/var/run/partman-crypto/udebs
 
 	if [ -z "$packages" ]; then
@@ -572,16 +572,16 @@ crypto_prepare_method () {
 	local part type package
 	part=$1
 	type=$2
-	package=''
+	packages=''
 
 	[ -d $part ] || return 1
-	package="cdebconf-$DEBIAN_FRONTEND-entropy"
+	packages="cdebconf-$DEBIAN_FRONTEND-entropy"
 	case $type in
 	    dm-crypt)
-		package="$package partman-crypto-dm"
+		packages="$packages partman-crypto-dm"
 		;;
 	    loop-AES)
-		package="$package partman-crypto-loop"
+		packages="$packages partman-crypto-loop"
 		;;
 	    *)
 		return 1
@@ -589,7 +589,7 @@ crypto_prepare_method () {
 	esac
 
 	# 1A - Pull in the method package and additional dependencies
-	crypto_load_udebs $package || return 1
+	crypto_load_udebs $packages || return 1
 
 	# 1B - Verify that it worked
 	crypto_check_required_tools $type || return 1

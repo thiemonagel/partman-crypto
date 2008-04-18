@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-22 11:30+0100\n"
+"PO-Revision-Date: 2008-04-17 20:11+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "MIME-Version: 1.0\n"
@@ -652,7 +652,7 @@ msgstr "Nyní se vytváří šifrovací klíč pro ${DEVICE}."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Klíč byl úspěšně vytvořen."
 
 #. Type: error
 #. Description

@@ -1,12 +1,19 @@
-partman-crypto (30) UNRELEASED; urgency=low
+partman-crypto (30) unstable; urgency=low
 
+  [ Jérémy Bobbio ]
   * Fix loading of additional packages:
     - make crypto_load_udebs() take more than one argument,
     - properly pluralize "packages" in crypto_prepare_method().
   * Remove partman-crypto-{dm,loop} dependency on cdebconf-entropy:
     anna does not handle depencies on virtual package correctly yet.
 
- -- Jérémy Bobbio <lunar@debian.org>  Fri, 18 Apr 2008 02:36:05 +0200
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * French (fr.po) by Christian Perrier
+  * Swedish (sv.po) by Daniel Nylander
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Jérémy Bobbio <lunar@debian.org>  Fri, 18 Apr 2008 18:10:50 +0200
 
 partman-crypto (29) unstable; urgency=low
 

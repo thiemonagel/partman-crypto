@@ -6,14 +6,14 @@
 # Korean messages for debian-installer.
 # Copyright (C) 2003,2004,2005 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-13 15:12+0900\n"
+"PO-Revision-Date: 2008-04-30 02:38+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -647,7 +647,7 @@ msgstr "${DEVICE}에 사용할 암호화 키를 만들고 있습니다."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "키 데이터를 성공적으로 만들었습니다."
 
 #. Type: error
 #. Description

@@ -6,14 +6,14 @@
 # Hungarian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# coor: SZERVÁC Attila - sas 321hu -- 2006-2007
+# coor: SZERVÁC Attila - sas 321hu -- 2006-2008
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-01-20 07:02+0100\n"
+"PO-Revision-Date: 2008-04-29 23:36+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian>\n"
 "MIME-Version: 1.0\n"
@@ -649,7 +649,7 @@ msgstr "A ${DEVICE} eszköz titkosítókulcsa létrehozva."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "A kulcs adatok összegyűltek."
 
 #. Type: error
 #. Description

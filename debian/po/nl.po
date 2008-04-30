@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-02 15:05+0200\n"
+"PO-Revision-Date: 2008-04-30 07:07+0200\n"
 "Last-Translator: Frans Pop <elendil@planet.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -669,7 +669,7 @@ msgstr "De encryptiesleutel voor ${DEVICE} wordt nu aangemaakt."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Er is voldoende willekeurige data aangemaakt voor de encryptiesleutel."
 
 #. Type: error
 #. Description

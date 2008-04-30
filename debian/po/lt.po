@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-10 00:10+0300\n"
+"PO-Revision-Date: 2008-04-30 10:24+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -656,7 +656,7 @@ msgstr "Kuriamas šifravimo raktas įrenginiui ${DEVICE}."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Rakto duomenys sukurti sėkmingai."
 
 #. Type: error
 #. Description

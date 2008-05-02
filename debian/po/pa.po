@@ -21,14 +21,13 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-04 07:35+0530\n"
-"Last-Translator: Amanpreet Singh Brar <aalam@users.sf.net>\n"
+"PO-Revision-Date: 2008-05-02 22:01+0530\n"
+"Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"\n"
 
 #. Type: text
 #. Description
@@ -648,7 +647,7 @@ msgstr "${DEVICE} ਲਈ ਹੁਣ ਇੰਕ੍ਰਿਪਸ਼ਨ ਕੁੰਜੀ �
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "ਮੁੱਖ ਡਾਟਾ ਠੀਕ ਤਰ੍ਹਾਂ ਬਣਾਇਆ ਗਿਆ ਹੈ।"
 
 #. Type: error
 #. Description

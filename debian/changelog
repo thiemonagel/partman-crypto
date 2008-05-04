@@ -1,3 +1,10 @@
+partman-crypto (31) UNRELEASED; urgency=low
+
+  * blockdev-keygen: Set backup capability to allow the entropy
+    dialog to be cancelled.
+
+ -- Max Vozeler <xam@debian.org>  Sun, 04 May 2008 16:32:18 +0200
+
 partman-crypto (30) unstable; urgency=low
 
   [ Jérémy Bobbio ]

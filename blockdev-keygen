@@ -109,6 +109,8 @@ call_entropy_plugin () {
 	local keybytes
 	keybytes=$1
 
+	db_capb backup
+
 	templ=partman-crypto/entropy
 	db_fset $templ seen false
 	db_subst $templ DEVICE "$description"

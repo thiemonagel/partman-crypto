@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-29 23:34+0000\n"
+"PO-Revision-Date: 2008-05-04 12:25+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -644,7 +644,7 @@ msgstr "مفتاح رموز التشفير للجهاز ${DEVICE} يتم إنش�
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "تم إنشاء البيانات الأساسية بنجاح."
 
 #. Type: error
 #. Description

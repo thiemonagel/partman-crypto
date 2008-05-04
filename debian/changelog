@@ -2,6 +2,8 @@ partman-crypto (31) UNRELEASED; urgency=low
 
   * blockdev-keygen: Set backup capability to allow the entropy
     dialog to be cancelled.
+  * Consistently use /dev/urandom for volatile one-time keys (key
+    type "random") with dm-crypt.
 
  -- Max Vozeler <xam@debian.org>  Sun, 04 May 2008 16:32:18 +0200
 

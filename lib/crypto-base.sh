@@ -218,7 +218,7 @@ setup_cryptdev () {
 		if [ $keytype = passphrase ]; then
 			setup_luks $cryptdev $realdev $cipher $ivalgorithm $keysize $keyfile || return 1
 		elif [ $keytype = random ]; then
-			setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize $keyfile || return 1
+			setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm plain $keysize /dev/urandom || return 1
 		else
 			setup_dmcrypt $cryptdev $realdev $cipher $ivalgorithm $keyhash $keysize $keyfile || return 1
 		fi
@@ -796,8 +796,7 @@ crypto_setup() {
 			keytype=$(cat $id/keytype)
 			cipher=$(cat $id/cipher)
 
-			# Cryptsetup uses create_keyfile for all keytypes
-			if [ $keytype = keyfile ] || [ $type != loop-AES ]; then
+			if [ $keytype = keyfile ] || [ $keytype = passphrase ]; then
 				keyfile=$(mapdevfs $path | tr / _)
 				keyfile="$dev/$id/${keyfile#_dev_}"
 				if [ $type = loop-AES ]; then
@@ -805,14 +804,7 @@ crypto_setup() {
 				fi
 
 				if [ ! -f $keyfile ]; then
-					if [ $type != loop-AES ]; then
-						keysize=""
-						[ -f $id/keysize ] && keysize=$(cat $id/keysize)
-						/bin/blockdev-keygen "$(humandev $path)" $keytype "$keyfile" $keysize
-					else
-						/bin/blockdev-keygen "$(humandev $path)" $keytype "$keyfile"
-					fi
-					if [ $? -ne 0 ]; then
+					if ! /bin/blockdev-keygen "$(humandev $path)" "$keytype" "$keyfile"; then
 						db_fset partman-crypto/commit_failed seen false
 						db_input critical partman-crypto/commit_failed
 						db_go || true

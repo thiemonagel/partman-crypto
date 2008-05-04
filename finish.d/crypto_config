@@ -93,7 +93,7 @@ crypttab_add_entry () {
 
 	# Set key source
 	if [ $keytype = random ]; then
-		keyfile="/dev/random"
+		keyfile="/dev/urandom"
 	elif [ $keytype = passphrase ]; then
 		keyfile="none"
 	elif [ -f $realdevdir/keyfile ]; then

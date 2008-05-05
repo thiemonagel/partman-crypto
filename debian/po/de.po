@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-01 11:27+0200\n"
+"PO-Revision-Date: 2008-05-05 12:08+0200\n"
 "Last-Translator: Jens Seidel <jensseidel@users.sf.net>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -686,7 +686,7 @@ msgstr "Der Schlüssel für ${DEVICE} wird jetzt erzeugt."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Schlüsseldaten wurden erfolgreich erstellt."
 
 #. Type: error
 #. Description

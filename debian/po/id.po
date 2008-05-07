@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-03-08 13:09+0700\n"
+"PO-Revision-Date: 2008-05-07 17:35+0700\n"
 "Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
 "Language-Team: Bahasa Indonesia <debian-l10n-id@gurame.fisika.ui.ac.id>\n"
 "MIME-Version: 1.0\n"
@@ -664,7 +664,7 @@ msgstr "Kunci enkripsi untuk ${DEVICE} sedang dibuat sekarang."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Data kunci telah berhasil dibuat."
 
 #. Type: error
 #. Description

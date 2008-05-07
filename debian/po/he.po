@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-02-09 11:25+0200\n"
+"PO-Revision-Date: 2008-05-07 21:13+0300\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -645,7 +645,7 @@ msgstr "מפתח הצפנה עבור ${DEVICE} נמצא כרגע ביצירה."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "מידע על המפתח נוצר בהצלחה."
 
 #. Type: error
 #. Description

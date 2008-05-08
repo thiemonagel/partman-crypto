@@ -1,3 +1,15 @@
+partman-crypto (32) unstable; urgency=low
+
+  [ Updated translations ]
+  * German (de.po) by Jens Seidel
+  * Dzongkha (dz.po) by Jurmey Rabgay(Bongop) (DIT,BHUTAN)
+  * Hebrew (he.po) by Lior Kaplan
+  * Indonesian (id.po) by Arief S Fitrianto
+  * Marathi (mr.po) by Sampada
+  * Norwegian Bokmål (nb.po) by Hans Fredrik Nordhaug
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 08 May 2008 01:01:48 -0300
+
 partman-crypto (31) unstable; urgency=low
 
   [ Max Vozeler ]

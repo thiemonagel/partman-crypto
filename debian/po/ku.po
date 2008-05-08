@@ -8,16 +8,16 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Erdal Ronahi <erdal dot ronahi at gmail dot com>, 2008.
 # Rizoyê Xerzî <riza dot seckin at gmail dot com>
+# Erdal Ronahi <erdal dot ronahi at gmail dot com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-04-23 18:09+0200\n"
+"PO-Revision-Date: 2008-05-08 13:47+0200\n"
 "Last-Translator: Erdal Ronahi <erdal dot ronahi at gmail dot com>\n"
-"Language-Team: Kurdish <ku@li.org>\n"
+"Language-Team: ku <ubuntu-l10n-kur@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -350,12 +350,11 @@ msgstr "Sazkirina pakêta şîfrekirinê serneket"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
-#, fuzzy
 msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Paketa modula kernel ${PACKAGE}·nehat dîtin an di sazkirinê de çewtiyek "
+"Pakêta modula kernel ${PACKAGE}·nehat dîtin an di sazkirinê de çewtiyek "
 "derket holê."
 
 #. Type: error
@@ -372,9 +371,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Guherandinê binivîse diskê û voluman şîfrekirî mîheng bike?"
+msgstr "Guherandinê werin nivîsîn diskê û volumên şîfrekirî werin veavakirin?"
 
 #. Type: boolean
 #. Description
@@ -394,25 +392,25 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001 ../partman-crypto.templates:35001
-#, fuzzy
 msgid ""
 "After the encrypted volumes have been configured, no additional changes to "
 "the partitions on the disks containing encrypted volumes are allowed. Please "
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Di dema veavakirina RAIDê de li ser beşên dîskan de ye yên cîltên fîzîkî "
-"dihundirîne, destûr nayê dayîn ku bila guherîneke din were kirin. Ji kerema "
-"xwe re sax bin bê ka dabeşkirinên heyî yên li ser van dîskan gorî xwestekên "
-"te ye yan na."
+"Piştî veavakirina volumên şîfrekirî, destûr nayê dayîn ku bila guherîneke "
+"din di dîskên ku volumên şîfrekirî bihundirînin were kirin. Ji kerema xwe re "
+"sax bin bê ka dabeşkirinên heyî yên li ser van dîskan gorî xwestekên te ye "
+"yan na."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
-#, fuzzy
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Bila pergala dabeşkirina heyî were parastin û LVM were veava kirin?"
+msgstr ""
+"Bila pergala dabeşkirina heyî were parastin û volumên şîfrekirî werin "
+"veavakirin?"
 
 #. Type: error
 #. Description

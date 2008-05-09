@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2007-09-26 23:09+0200\n"
+"PO-Revision-Date: 2008-05-05 20:02+0200\n"
 "Last-Translator:  Elian Myftiu <elian.myftiu@gmail.com>\n"
 "Language-Team: Debian L10n Albanian <debian-l10n-albanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -658,7 +658,7 @@ msgstr "Çelësi i kriptimit për ${DEVICE} po krijohet."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Të dhënat kyç u krijuan me sukses."
 
 #. Type: error
 #. Description

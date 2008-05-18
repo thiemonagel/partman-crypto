@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-04-09 22:50+0000\n"
-"PO-Revision-Date: 2008-05-06 18:21+0530\n"
+"PO-Revision-Date: 2008-05-13 20:52+0530\n"
 "Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -650,7 +650,7 @@ msgstr "${DEVICE} करिता सांकेतिकीकरण कळ �
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "कळ डेटा यशस्वीपणे निर्माण झाला."
 
 #. Type: error
 #. Description

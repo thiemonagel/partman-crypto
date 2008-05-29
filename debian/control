@@ -15,7 +15,7 @@ Description: Add to partman support for block device encryption
 Package: partman-crypto-dm
 XC-Package-Type: udeb
 Architecture: all
-Depends: partman-crypto, crypto-modules, cryptsetup-udeb
+Depends: partman-crypto, crypto-modules, crypto-dm-modules, cryptsetup-udeb
 Description: Add to partman support for dm-crypt encryption
 
 Package: partman-crypto-loop

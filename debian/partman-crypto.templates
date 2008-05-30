@@ -50,6 +50,8 @@ Type: select
 Choices: ${CHOICES}
 # :sl3:
 _Description: Encryption method for this partition:
+ Changing the encryption method will set other encryption related fields
+ to their default values for the new encryption method.
 
 Template: partman-crypto/text/specify_cipher
 Type: text

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-04-09 22:50+0000\n"
+"POT-Creation-Date: 2008-05-30 22:50+0000\n"
 "PO-Revision-Date: 2008-05-04 15:53+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -86,6 +86,15 @@ msgstr "Krypteringsmetode:"
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
 msgstr "Krypteringsmetode for denne partisjonen:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:8001
+msgid ""
+"Changing the encryption method will set other encryption related fields to "
+"their default values for the new encryption method."
+msgstr ""
 
 #. Type: text
 #. Description

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-04-09 22:50+0000\n"
+"POT-Creation-Date: 2008-05-30 22:50+0000\n"
 "PO-Revision-Date: 2008-03-29 22:40-0500\n"
 "Last-Translator: Ming Hua <minghua-guest@users.alioth.debian.org>\n"
 "Language-Team: Simplified Chinese <debian-chinese-gb@lists.debian.org>\n"
@@ -84,6 +84,15 @@ msgstr "加密方式："
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
 msgstr "此分区的加密方式："
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:8001
+msgid ""
+"Changing the encryption method will set other encryption related fields to "
+"their default values for the new encryption method."
+msgstr ""
 
 #. Type: text
 #. Description

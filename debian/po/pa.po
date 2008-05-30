@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-04-09 22:50+0000\n"
+"POT-Creation-Date: 2008-05-30 22:50+0000\n"
 "PO-Revision-Date: 2008-05-02 22:01+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -90,6 +90,15 @@ msgstr "ਇੰਕਰਿਪਟਡ ਢੰਗ:"
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
 msgstr "ਇਸ ਪਾਰਟੀਸ਼ਨ ਲਈ ਇੰਕਰਿਪਸ਼ਨ:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:8001
+msgid ""
+"Changing the encryption method will set other encryption related fields to "
+"their default values for the new encryption method."
+msgstr ""
 
 #. Type: text
 #. Description

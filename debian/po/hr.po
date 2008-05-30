@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-04-09 22:50+0000\n"
+"POT-Creation-Date: 2008-05-30 22:50+0000\n"
 "PO-Revision-Date: 2006-09-25 23:55+0200\n"
 "Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -81,6 +81,15 @@ msgstr "Način enkripcije:"
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
 msgstr "Način enkripcije za ovu particiju:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:8001
+msgid ""
+"Changing the encryption method will set other encryption related fields to "
+"their default values for the new encryption method."
+msgstr ""
 
 #. Type: text
 #. Description

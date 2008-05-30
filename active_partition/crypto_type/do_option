@@ -35,6 +35,13 @@ select_crypto_type () {
 	fi
 	type=$RET
 
+	if [ -f $part/crypto_type ]; then
+		if [ "$(cat $part/crypto_type)" = $type ]; then
+			# Same type selected, skip prepare_method
+			return 0
+		fi
+	fi
+
 	echo $type > $part/crypto_type
 	crypto_prepare_method $part $type || return 1
 

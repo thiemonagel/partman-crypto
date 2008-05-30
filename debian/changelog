@@ -4,6 +4,7 @@ partman-crypto (33) UNRELEASED; urgency=low
   * The dm_crypt module is moving into a separate package
     crypto-dm-modules starting with kernel udebs for 2.6.25-2.
     Make partman-crypto-dm depend on it.
+  * Only reset crypto options when changing the crypto type.
 
   [ Frans Pop ]
   * Move Encryption method above new divider in partition options dialog.

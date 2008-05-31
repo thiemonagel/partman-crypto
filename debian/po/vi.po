@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-30 22:50+0000\n"
+"POT-Creation-Date: 2008-05-31 22:51+0000\n"
 "PO-Revision-Date: 2008-04-22 19:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -91,7 +91,7 @@ msgstr "Phương pháp mật mã cho phân vùng này:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid ""
-"Changing the encryption method will set other encryption related fields to "
+"Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
 

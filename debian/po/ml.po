@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-30 22:50+0000\n"
+"POT-Creation-Date: 2008-05-31 22:51+0000\n"
 "PO-Revision-Date: 2008-04-26 19:11-0800\n"
 "Last-Translator: Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -92,7 +92,7 @@ msgstr "ഈ ഭാഗത്തിനു വേണ്ട എന്‍ക്രി
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid ""
-"Changing the encryption method will set other encryption related fields to "
+"Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
 

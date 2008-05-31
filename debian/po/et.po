@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-30 22:50+0000\n"
+"POT-Creation-Date: 2008-05-31 22:51+0000\n"
 "PO-Revision-Date: 2007-02-17 10:45+0300\n"
 "Last-Translator: Siim Põder <siim@p6drad-teel.net>\n"
 "Language-Team: Eesti <linuxiabi@hot.ee>\n"
@@ -82,7 +82,7 @@ msgstr "Selle partitsiooni krüpteerimismeetod:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid ""
-"Changing the encryption method will set other encryption related fields to "
+"Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
 

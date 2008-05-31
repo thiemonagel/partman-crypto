@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-16 22:46+0200\n"
+"PO-Revision-Date: 2008-05-31 14:14+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -96,6 +96,9 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Si vous modifiez la méthode de chiffrement, les autres réglages de "
+"chiffrement reprendront leur valeur par défaut pour la nouvelle méthode de "
+"chiffrement."
 
 #. Type: text
 #. Description

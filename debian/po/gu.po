@@ -94,6 +94,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"એન્ક્રિપ્શન પધ્ધતિ બદલવાથી બીજાં એન્ક્રિપ્શન સંબંધિત ક્ષેત્રો તેમની મૂળભૂત કિંમતોમાં નવી "
+"એન્ક્રિપ્શન પધ્ધતિ માટે ગોઠવાશે."
 
 #. Type: text
 #. Description

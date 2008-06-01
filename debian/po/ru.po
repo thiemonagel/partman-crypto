@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-10 21:18+0400\n"
+"PO-Revision-Date: 2008-06-01 14:54+0400\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -96,6 +96,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Изменение алгоритма шифрования приведёт к установки других полей, "
+"относящихся к шифрованию, в их значения по умолчанию."
 
 #. Type: text
 #. Description

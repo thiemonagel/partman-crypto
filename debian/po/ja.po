@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-20 12:48+0900\n"
+"PO-Revision-Date: 2008-06-01 11:39+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-l10n-japanese@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -89,6 +89,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"暗号化の方法を変更することは、その他の暗号関連のフィールドを、新しい暗号化の"
+"方法のデフォルト値に設定するということになります。"
 
 #. Type: text
 #. Description

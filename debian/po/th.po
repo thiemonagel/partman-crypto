@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-16 17:45+0700\n"
+"PO-Revision-Date: 2008-06-05 16:54+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -90,6 +90,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"ในการเปลี่ยนวิธีเข้ารหัสลับ "
+"จะทำให้ข้อมูลอื่นที่เกี่ยวกับการเข้ารหัสลับถูกกำหนดเป็นค่าปริยายสำหรับวิธีเข้ารหัสลับใหม่ที่กำหนดไปด้วย"
 
 #. Type: text
 #. Description

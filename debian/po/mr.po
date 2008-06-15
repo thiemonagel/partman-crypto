@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-05-13 20:52+0530\n"
+"PO-Revision-Date: 2008-06-15 23:24+0530\n"
 "Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -95,6 +95,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"सांकेतिकीकरणाची पद्धत बदलल्यास नवीन सांकेतिकीकरण पद्धतीकरिता अन्य सांकेतिकीकरण-संबंधी "
+"क्षेत्रांना त्यांची मूलनिर्धारित मूल्ये प्राप्त होतील."
 
 #. Type: text
 #. Description

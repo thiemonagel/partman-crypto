@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-03-18 10:59+0100\n"
+"PO-Revision-Date: 2008-06-15 23:36+0200\n"
 "Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -91,6 +91,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Ĉanĝi la ĉifran metodon, metos aliajn rilatajn ĉifrajn kampojn en ilia "
+"implicitaj valoroj por la nova ĉifra metodo."
 
 #. Type: text
 #. Description
@@ -662,7 +664,7 @@ msgstr "La ĉifroŝlosilo por '${DEVICE}'-o estas nuntempe kreita."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Ĉifrada ŝlosilo sukcese estis kreita."
 
 #. Type: error
 #. Description

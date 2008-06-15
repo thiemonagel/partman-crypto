@@ -49,7 +49,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-05-01 23:22+0200\n"
+"PO-Revision-Date: 2008-06-16 00:09+0200\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -126,6 +126,9 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Si cambia el método de cifrado se fijarán todos los demás campos "
+"relacionados con el cifrado a sus valores por omisión para el nuevo método "
+"de cifrado seleccionado."
 
 #. Type: text
 #. Description

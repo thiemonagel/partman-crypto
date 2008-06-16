@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-05-12 14:47+0300\n"
+"PO-Revision-Date: 2008-06-16 10:30+0300\n"
 "Last-Translator: Pavel Piatruk <piatruk.p@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "MIME-Version: 1.0\n"
@@ -99,6 +99,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Змяненне спосабу шыфравання выставіць усе палі, звязаныя з шыфраваннем, у іх "
+"прадвызначаны стан."
 
 #. Type: text
 #. Description

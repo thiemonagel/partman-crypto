@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-02-05 13:12+0100\n"
+"PO-Revision-Date: 2008-06-17 09:12+0100\n"
 "Last-Translator: Matej Kovacic <matej.kovacic@owca.info>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
@@ -102,6 +102,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Sprememba šifrirne metode bo nastavila ostala polja povezana s šifriranjem "
+"na privzete vrednosti za novoizbrano šifrirno metodo."
 
 #. Type: text
 #. Description
@@ -670,7 +672,7 @@ msgstr "Šifrirni ključ za napravo ${DEVICE} se sedaj ustvarja."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Podatki o ključu so bili uspešno ustvarjeni."
 
 #. Type: error
 #. Description

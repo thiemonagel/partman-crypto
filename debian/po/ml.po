@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-26 19:11-0800\n"
+"PO-Revision-Date: 2008-06-18 19:18+0530\n"
 "Last-Translator: Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
 "discuss@googlegroups.com>\n"
@@ -95,6 +95,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"എന്‍ക്രിപ്ഷന്‍ രീതി മാറ്റുന്നതു് മറ്റുള്ള എന്‍ക്രിപ്ഷനുമായി ബന്ധപ്പെട്ട കളങ്ങള്‍ പുതിയ എന്‍ക്രിപ്ഷന്‍ "
+"രീതിയ്ക്കായുള്ള സഹജമായ വിലകളിലേയ്ക്കു് സജ്ജീകരിയ്ക്കും."
 
 #. Type: text
 #. Description

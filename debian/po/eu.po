@@ -3,21 +3,22 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of eu.po to Euskara
+# translation of di_sublevel1_eu.po to Basque
 # Basque messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Inaki Larranaga Murgoitio 2005
 #
 # Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: di_sublevel1_eu\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-04-10 12:20+0200\n"
-"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"PO-Revision-Date: 2008-06-16 16:02+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +32,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "Enkriptatzeko bolumen fisikoa"
+msgstr "bolumen fisikoa enkriptatzeko"
 
 #. Type: text
 #. Description
@@ -40,7 +41,7 @@ msgstr "Enkriptatzeko bolumen fisikoa"
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr "Enkriptazioa"
+msgstr "enkript."
 
 #. Type: text
 #. Description
@@ -69,7 +70,7 @@ msgstr "Gailu-mapatzailea (dm-crypt)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "ez gaiturik"
+msgstr "ez aktiboa"
 
 #. Type: text
 #. Description
@@ -94,6 +95,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Enkriptazio metodoa aldatzean enkriptazio metodo berriarekin zerikusia duten "
+"beste eremuak beraien balio lehenetsiekin konfiguratuko dira."
 
 #. Type: text
 #. Description
@@ -116,14 +119,14 @@ msgstr "Partizio honen enkriptazioa:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "Gako tamaina:"
+msgstr "Gako-tamaina:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Partizio honen gako tamaina:"
+msgstr "Partizio honen gako-tamaina:"
 
 #. Type: text
 #. Description
@@ -142,7 +145,7 @@ msgstr "IV algoritmoa:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Partizio honen abio bektore sortze algoritmoa:"
+msgstr "Partizio honen hasierako bektorea sortzeko algoritmoa:"
 
 #. Type: select
 #. Description
@@ -156,10 +159,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Sektore bakoitzaren abio bektorearen arabera algoritmo ezberdinak daude. "
-"Aukera honek enkriptazio segurtasunean eragiten du. Normalean ez dago "
-"arrazoirik gomendaturiko hobespenak aldatzeko, sistema zaharragoekin "
-"bateragarritasuna ezik."
+"Sektore bakoitzaren hasierako bektorearen arabera algoritmo desberdinak "
+"daude. Aukera honek enkriptazioaren segurtasunean eragiten du. Normalean ez "
+"dago arrazoirik gomendatutako hobespenak aldatzeko, sistema zaharragoekin "
+"bateragarritasuna mantentzeko ezik."
 
 #. Type: text
 #. Description
@@ -167,7 +170,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "Enkriptazio gakoa:"
+msgstr "Enkriptazioaren gakoa:"
 
 #. Type: select
 #. Description
@@ -182,14 +185,14 @@ msgstr "Partizio honen enkriptazioaren gako mota:"
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "Enkriptazio gako egiaztapena:"
+msgstr "Enkript.-gakoaren hash:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "Partizio honen enkriptazioaren gako egiaztapen mota:"
+msgstr "Partizio honen enkriptazioaren gako hash mota:"
 
 #. Type: select
 #. Description
@@ -201,9 +204,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Enkriptazio gakoa pasahitz esaldiaren eraldaketa bat da alde batetarako "
-"egiaztapen funtzio bat ezarri ondoren. Normalean ez dago arrazoirik "
-"lehenespen hau aldatzeko eta aldaketa hori modu okerrean egiteak enkriptazio "
+"Enkriptazioaren gakoa pasaesaldiaren eraldaketa bat da, norabide bakarreko "
+"hash funtzio bat aplikatu ondoren. Normalean ez dago arrazoirik lehenespen "
+"hau aldatzeko eta aldaketa hori modu okerrean egiteak enkriptazioaren "
 "indarra gutxitu dezake."
 
 #. Type: text
@@ -213,7 +216,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr "Datuak ezabatu:"
+msgstr "Ezabatu datuak:"
 
 #. Type: text
 #. Description
@@ -234,14 +237,14 @@ msgstr "bai"
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "Partizio honetako datuak ezabatu"
+msgstr "Ezabatu partizio honetako datuak"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Benetan ${DEVICE}-ko datuak ezabatu nahi dituzula?"
+msgstr "Ziur zaude ${DEVICE}(e)ko datuak ezabatu nahi dituzula?"
 
 #. Type: boolean
 #. Description
@@ -252,23 +255,23 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"${DEVICE} gailuko datuak ausazko datuekin gainidatziak izango dira. Ezin "
-"izango dira beranduago berreskuratu behin pausu hau amaitu denean. Hau da "
-"azken aukera ezabaketa ekiditeko."
+"${DEVICE} gailuko datuak ausazko datuekin gainidatzi egingo dira. Ezin "
+"izango dira beranduago berreskuratu behin urrats hau amaitu denean. Hau da "
+"azken aukera ezabaketa abortatzeko."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "${DEVICE}-ko datuak ezabatzen"
+msgstr "${DEVICE}(e)ko datuak ezabatzen"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Huts ${DEVICE}-ko datuak ezabatzerakoan"
+msgstr "Huts egin du ${DEVICE}(e)ko datuak ezabatzean"
 
 #. Type: error
 #. Description
@@ -278,15 +281,14 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Errore bat gertatu da ${DEVICE}-ko datuak ezabatzerakoan. Datuak ez dira "
-"ezabatuak izan."
+"Errorea gertatu da ${DEVICE}(e)ko datuak ezabatzean. Datuak ez dira ezabatu."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "Enkriptazioa konfiguratzen..."
+msgstr "Enkriptazioa konfiguratzea..."
 
 #. Type: text
 #. Description
@@ -332,7 +334,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr "Beharrezko enkriptazio aukerak falta dira"
+msgstr "Beharrezko enkriptazioko aukerak falta dira"
 
 #. Type: error
 #. Description
@@ -342,8 +344,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"${DEVICE}-ren enkriptazio aukerak ez daude osaturik. Mesedez itzuli partizio "
-"menura eta hautatu beharrezko aukera guztiak."
+"${DEVICE}(r)en enkriptazioko aukerak ez daude osaturik. Itzuli partizioen "
+"menura eta hautatu beharrezkoak diren aukera guztiak."
 
 #. Type: text
 #. Description
@@ -361,7 +363,7 @@ msgstr "falta da"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "${DEV} enkriptatutako bolumerako bolumen fisikoa bezala erabilia"
+msgstr "${DEV} enkriptatutako bolumenaren bolumen fisiko gisa erabilia"
 
 #. Type: error
 #. Description
@@ -378,8 +380,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"${PACKAGE} nukleo modulu paketea ezin da aurkitu edo errore bat gertatu da "
-"instalatzerakoan."
+"Nukleo-moduluaren ${PACKAGE} paketea ezin da aurkitu edo errorea gertatu da "
+"instalatzean."
 
 #. Type: error
 #. Description
@@ -390,9 +392,9 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Arazoak egon daitezke abiatzean, sistemak partizio-enkriptatuak "
-"konfiguratzen saiatzean. Zuzentzeko beharrezko paketea geroago instala "
-"dezakezu."
+"Baliteke arazoak egotea sistema berrabiaraztean partizio-enkriptatuak "
+"konfiguratzen saiatzean. Beharrezko paketea geroago instala dezakezu hau "
+"zuzentzeko."
 
 #. Type: boolean
 #. Description
@@ -455,14 +457,14 @@ msgstr "Errorea gertatu da bolumen enkriptatuak konfiguratzean."
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "Konfigurazioa utzi egin da."
+msgstr "Konfigurazioa abortatu egin da."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Enkriptaturiko bolumen abiarazteak huts egin du"
+msgstr "Huts egin du enkriptatutako bolumena hasieratzean"
 
 #. Type: error
 #. Description
@@ -516,7 +518,7 @@ msgstr "Segurtasun gabeko swap lekua aurkitu da"
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "Swap toki ez ziur bat atzeman da."
+msgstr "Segurua ez den swap lekua detektatu da."
 
 #. Type: error
 #. Description
@@ -527,8 +529,8 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Errore larria da, informazio pribatua enkriptatu gabeko diskotik kanpora "
-"idatzi daitekeelako. Honek diskoan sarrera duen norbaiti enkriptazioko "
+"Hau errore larria da, informazio pribatua enkriptatu gabeko diskotik kanpora "
+"idatz daitekeelako. Honek diskora sarbidea duen norbaiti enkriptazioko "
 "pasaesaldia edo gakoa eskuratzeko aukera emango dio."
 
 #. Type: error
@@ -540,16 +542,16 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Mesedez ezgaitu swap lekua (adibidez swapoff abiaraziaz) edo enkriptatutako "
-"swap leku bat konfiguratu eta orduan berriz ezarri enkriptatutako bolumenak "
-"berriz. Programa hau orain itxi egingo da."
+"Desgaitu swap lekua (adib., swapoff exekutatuz) edo konfiguratu "
+"enkriptatutako swap leku bat, eta ondoren exekutatu enkriptatutako bolumenen "
+"konfigurazioa berriro. Programa hau orain abortatu egingo da."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "Enkriptazio pasaesaldia:"
+msgstr "Enkriptazioko pasaesaldia:"
 
 #. Type: password
 #. Description
@@ -570,7 +572,7 @@ msgid ""
 msgstr ""
 "Debian instalatzailea urrunetik atzitzeko pasaesaldia behar duzu. "
 "Instalatzailerako atzipena duen erabiltzaile maltzur edo baimenik gabeko "
-"batek kalte larriak eragin ditzake, eta horregatik asmatzen erraza ez den "
+"batek kalte larriak eragin ditzake, eta horregatik asmatzeko erraza ez den "
 "pasaesaldia aukeratzea komeni da. Ez du hiztegiko hitza izan behar, ezta "
 "zurekin zerikusia duena ere (adibidez, bigarren deitura)."
 
@@ -583,7 +585,7 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Pasaesaldi egoki batek letraz, zenbaki eta puntuazio ikurren nahasketa bat "
+"Pasaesaldi egoki batek letra, zenbaki eta puntuazio ikurren nahasketa bat "
 "eduki beharko luke. Pasaesaldien luzerak 20 karaktere edo gehiago izatea "
 "gomendatzen da."
 
@@ -592,7 +594,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "Berriz sartu pasaesaldia egiaztapenerako:"
+msgstr "Sartu berriro pasaesaldia egiaztatzeko:"
 
 #. Type: password
 #. Description
@@ -608,7 +610,7 @@ msgstr "Sartu pasaesaldi berdina berriro, ondo idatzi duzula egiaztatzeko."
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "Pasaesaldi-sarreraren errorea"
+msgstr "Errorea pasaesaldiaren sarreran"
 
 #. Type: error
 #. Description
@@ -662,14 +664,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "${DEVICE} gailuaren enkriptazio gakoa orain sortuko da."
+msgstr "${DEVICE} gailuaren enkriptazioko gakoa orain sortuko da."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "Gako datuak behar bezala sortu dira."
+msgstr "Gakoaren datuak behar bezala sortu dira."
 
 #. Type: error
 #. Description
@@ -693,7 +695,7 @@ msgstr "Errorea gertatu da gako-fitxategia sortzean."
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "Enkriptazio konfigurazioak huts egin du"
+msgstr "Enkriptazioaren konfigurazioak huts egin du"
 
 #. Type: error
 #. Description
@@ -704,16 +706,16 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Zuk erro fitxategi sistema enkriptatutako partizio batetan ezartzea aukeratu "
-"duzu. Aukera honek bereiziriko /boot partizio bat behar du kernel eta initrd "
-"irudia biltegiratzeko."
+"Erroko fitxategi-sistema enkriptatutako partizio batean gordetzea hautatu "
+"duzu. Eginbide honek bereiztutako /boot partizio bat behar du nukleoa eta "
+"initrd irudia biltegiratzeko."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Atzera egin eta /boot partizio bat konfiguratu beharko zenuke."
+msgstr "Joan atzera eta /boot partizio bat konfiguratu beharko zenuke."
 
 #. Type: error
 #. Description
@@ -725,9 +727,10 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Zuk /bootfitxategi sistema enkriptatutako partizio batetan ezartzea aukeratu "
-"duzu. Aukera hau ez dago gaituriko oraingoz eta aurrera jarraitzeak "
-"instalazioa erabil ezin geratzea eragin lezake."
+"/boot fitxategi-sistema enkriptatutako partizio batean gordetzea hautatu "
+"duzu. Hau ezinezkoa da, abioko kargatzaileak ezin izango baitu nukleoa eta "
+"initrd kargatu. Aurrera jarraitzen baduzu, ezin izango da instalazioa "
+"erabili."
 
 #. Type: error
 #. Description
@@ -737,8 +740,8 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Mesedez atzera jo eta enkriptazio gabeko partizio bat aukeratu /boot "
-"fitxategi sistemarentzat."
+"Joan atzera eta aukeratu enkriptatu gabeko partizio bat /boot fitxategi-"
+"sistema ezartzeko."
 
 #. Type: boolean
 #. Description
@@ -755,8 +758,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Zuk  ${DEVICE}-rentzat auzazko gako bat erabiltzea aukeratu duzu, baina "
-"partiziogileari bertan fitxategi sistema bat sortzeko eskatu diozu."
+"Ausazko gakoa erabiltzea aukeratu duzu ${DEVICE}(r)entzat, baina "
+"partiziogileari bertan fitxategi-sistema bat sortzeko eskatu diozu."
 
 #. Type: boolean
 #. Description
@@ -766,29 +769,32 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Ausazko gako bat erabiltzea partizio datuak berrabiarazte bakoitzean "
-"ezabatzea eragingo du. Hau swap partizioan bakarrik erabili beharko zen."
+"Ausazko gako bat erabiltzeak berrabiarazte bakoitzean partizioaren datuak "
+"ezabatzea eragingo du. Hau swap partizioan bakarrik erabili beharko "
+"litzateke."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Ezin izan da zifraketa osagaia deskargatu"
+msgstr "Huts egin du zifraketaren osagaia deskargatzean"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Errorea gertatu da zifraketa elementu gehigarriak deskargatzerakoan."
+msgstr "Errorea gertatu da zifraketaren osagai gehigarriak deskargatzean."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr "Kriptografia osagaiak instalatu nahi memoria askieza izan?"
+msgstr ""
+"Nahiz eta nahikoa memoria ez egon, zifraketaren osagaien instalazioarekin "
+"jarraitu?"
 
 #. Type: boolean
 #. Description
@@ -799,6 +805,6 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Dirudienez ez dago memoria nahikorik kriptografia osagai gehigarriak "
-"instalatzeko, aurrera jarraitzea hautatuaz gero instalazio prozesuak huts "
-"egin dezake."
+"Badirudi ez dagoela nahikoa memoria zifraketaren osagai gehigarriak "
+"instalatzeko. Aurrera jarraitzea hautatzen baduzu, instalazioko prozesuak "
+"huts egin dezake."

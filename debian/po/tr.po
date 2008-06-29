@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-06-01 16:35+0200\n"
+"PO-Revision-Date: 2008-06-30 00:35+0200\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -397,7 +397,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "Açılış sırasında şifrelenmiş bölümler ayarlanırken hata oluşması pek "
-"mümkündür. Gerekli paketleri daha sonra kurarak bu hataları "
+"mümkündür. Gerekli paket(ler)i daha sonra kurarak bu hataları "
 "düzeltebilirsiniz."
 
 #. Type: boolean
@@ -525,7 +525,7 @@ msgstr "Güvenli olmayan takas alanı algılandı"
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "Güvenli olmayan bir takas alanı algılandı"
+msgstr "Güvenli olmayan bir takas alanı algılandı."
 
 #. Type: error
 #. Description
@@ -735,7 +735,7 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Kök dosya sisteminin şifrelenmiş bir bölümde tutulmasını seçtiniz. "
+"\"/boot\" dosya sisteminin şifrelenmiş bir bölümde tutulmasını seçtiniz. "
 "Önyükleyici, çekirdek ve \"initrd\"yi yükleyemeyeceğinden bu özelliğin "
 "kullanılması mümkün değil. Devam etmeniz halinde gerçekleşecek kurulum "
 "kullanılabilir nitelikte olmayacaktır."

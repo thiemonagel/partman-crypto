@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-07-07 20:31+0200\n"
+"PO-Revision-Date: 2008-07-24 13:41+0200\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -478,7 +478,7 @@ msgstr "Şifrelenmiş ciltlerin ilklendirilmesi başarısız"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Şifrelenmiş cilt ayarları kaydedilirken bir hata oluştu."
+msgstr "Şifrelenmiş ciltler ayarlanırken bir hata oluştu."
 
 #. Type: text
 #. Description
@@ -578,10 +578,10 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Şifrelemenin güçlü olması büyük ölçüde bu geçiş parolasıyla belirleniyor. "
-"Dolayısıyla tahmin edilmesi güç bir parola seçmeye özen gösterin. Bu parola "
-"sözlükte bulunabilecek veya sizinle ilgisi kolayca belirlenebilecek bir "
-"sözcük olmamalıdır."
+"Şifrelemenin gücü büyük ölçüde bu geçiş parolasıyla belirlenir. Dolayısıyla "
+"tahmin edilmesi güç bir parola seçmeye özen gösterin. Bu parola sözlükte "
+"bulunabilecek veya sizinle ilgisi kolayca belirlenebilecek bir sözcük "
+"olmamalıdır."
 
 #. Type: password
 #. Description
@@ -601,7 +601,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "Doğrulamak için geçiş parolasını tekrar girin:"
+msgstr "Doğrulama için geçiş parolasını tekrar girin:"
 
 #. Type: password
 #. Description
@@ -611,8 +611,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Lütfen doğru yazıldığından emin olmak için aynı geçiş parolasını tekrar "
-"girin."
+"Lütfen doğru yazıldığına emin olmak için aynı geçiş parolasını tekrar girin."
 
 #. Type: error
 #. Description
@@ -643,8 +642,8 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"İzin verilmeyen bir durum olarak, boş bir geçiş parolası girdiniz. Lütfen "
-"boş olmayan bir geçiş parolası girin."
+"Boş bir geçiş parolası girdiniz, böyle bir şeye izin verilmez. Lütfen boş "
+"olmayan bir geçiş parolası girin."
 
 #. Type: boolean
 #. Description

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2006-09-25 23:55+0200\n"
+"PO-Revision-Date: 2008-07-28 01:00+0200\n"
 "Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -90,6 +90,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Mijenjanje načina enkripcije će postaviti ostala polja vezana za enkripciju "
+"na vrijednosti koje su pretpostavljene za nov način enkripcije."
 
 #. Type: text
 #. Description
@@ -665,7 +667,7 @@ msgstr "Radi se enkripcijski ključ za ${DEVICE}."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Podaci o ključu su uspješno stvoreni."
 
 #. Type: error
 #. Description

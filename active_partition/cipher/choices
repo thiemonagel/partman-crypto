@@ -19,8 +19,7 @@ choice_cipher () {
 	fi
 
 	db_metaget partman-crypto/text/specify_cipher description
-	RET=$(stralign -25 "$RET")
-	printf "encryption\t%s%s\n" "$RET" "$cipher"
+	printf "encryption\t%s\${!TAB}%s\n" "$RET" "$cipher"
 }
 
 [ -f $part/method ] || exit 0

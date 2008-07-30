@@ -20,8 +20,7 @@ choice_erase () {
 	fi
 
 	db_metaget partman-crypto/text/erase_data description
-	RET=$(stralign -25 "$RET")
-	printf "erase\t%s%s\n" "$RET" $erase
+	printf "erase\t%s\${!TAB}%s\n" "$RET" $erase
 }
 
 [ -f $part/method ] || exit 0

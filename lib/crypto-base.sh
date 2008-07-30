@@ -357,8 +357,7 @@ crypto_dochoice () {
 	fi
 
 	db_metaget partman-crypto/text/specify_$option description
-	RET=$(stralign -25 "$RET")
-	printf "%s\t%s%s\n" "$option" "$RET" "$value"
+	printf "%s\t%s\${!TAB}%s\n" "$option" "$RET" "$value"
 }
 
 crypto_dooption () {

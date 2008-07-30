@@ -30,7 +30,7 @@
 /* Progress indicator to output */
 # define PROGRESS_INDICATOR "*\n"
 /* How many progress indicators to output in total */
-#define PROGRESS_PARTS 100
+#define PROGRESS_PARTS 65536
 /* How many bytes to write at a time (default) */
 #define DEFAULT_WSIZE 4096
 /* Debugging output */

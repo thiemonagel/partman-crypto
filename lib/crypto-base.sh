@@ -254,7 +254,7 @@ crypto_do_wipe () {
 
 	cancelled=0
 	db_capb backup progresscancel
-	db_progress START 0 100 $template
+	db_progress START 0 65536 $template
 	while read x <&9; do
 		db_progress STEP 1
 		if [ $? -eq 30 ]; then

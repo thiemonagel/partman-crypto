@@ -253,7 +253,7 @@ crypto_do_wipe () {
 	pid=$!
 
 	cancelled=0
-	db_capb backup progresscancel
+	db_capb backup align progresscancel
 	db_progress START 0 65536 $template
 	while read x <&9; do
 		db_progress STEP 1
@@ -264,7 +264,7 @@ crypto_do_wipe () {
 		fi
 	done 9< $fifo
 	db_progress STOP
-	db_capb backup
+	db_capb backup align
 
 	rm $fifo
 	wait $pid
@@ -536,6 +536,9 @@ crypto_load_udebs() {
 	if [ -x /sbin/depmod ]; then
 		depmod -a > /dev/null 2>&1 || true
 	fi
+
+	# Reset the capabilities after anna-install
+	db_capb backup align
 
 	return 0
 }

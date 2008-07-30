@@ -6,6 +6,9 @@ partman-crypto (34) UNRELEASED; urgency=low
     (Closes: #492899)
   * Update to the new debconf_select interface.
     Requires partman-base (>= 124).
+  * Preserve "align" capability in crypto_do_wipe() and after running
+    anna-install in crypto_load_udebs().
+    Requires cdebconf (>= 0.133).
 
  -- Jérémy Bobbio <lunar@debian.org>  Wed, 30 Jul 2008 09:56:34 +0000
 

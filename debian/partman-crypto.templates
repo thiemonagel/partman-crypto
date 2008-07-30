@@ -47,7 +47,8 @@ _Description: Encryption method:
 
 Template: partman-crypto/crypto_type
 Type: select
-Choices: ${CHOICES}
+Choices-C: ${CHOICES}
+Choices: ${DESCRIPTIONS}
 # :sl3:
 _Description: Encryption method for this partition:
  Changing the encryption method will set other encryption-related fields
@@ -73,7 +74,8 @@ _Description: Key size:
 
 Template: partman-crypto/keysize
 Type: select
-Choices: ${CHOICES}
+Choices-C: ${CHOICES}
+Choices: ${DESCRIPTIONS}
 # :sl3:
 _Description: Key size for this partition:
 
@@ -87,7 +89,8 @@ _Description: IV algorithm:
 
 Template: partman-crypto/ivalgorithm
 Type: select
-Choices: ${CHOICES}
+Choices-C: ${CHOICES}
+Choices: ${DESCRIPTIONS}
 # An initialization vector is the initial randomness used to seed
 # the encryption algorithm
 # :sl3:
@@ -105,7 +108,8 @@ _Description: Encryption key:
 
 Template: partman-crypto/keytype
 Type: select
-Choices: ${CHOICES}
+Choices-C: ${CHOICES}
+Choices: ${DESCRIPTIONS}
 # :sl3:
 _Description: Type of encryption key for this partition:
 
@@ -117,7 +121,8 @@ _Description: Encryption key hash:
 
 Template: partman-crypto/keyhash
 Type: select
-Choices: ${CHOICES}
+Choices-C: ${CHOICES}
+Choices: ${DESCRIPTIONS}
 # :sl3:
 _Description: Type of encryption key hash for this partition:
  The encryption key is derived from the passphrase by applying a

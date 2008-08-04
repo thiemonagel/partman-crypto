@@ -12,7 +12,11 @@ partman-crypto (34) UNRELEASED; urgency=low
   * Use cdebconf's new column alignment feature for active_partition.
     Requires partman-base (>= 124).
 
- -- Jérémy Bobbio <lunar@debian.org>  Wed, 30 Jul 2008 09:56:34 +0000
+  [ Frans Pop ]
+  * finish-install.d: loop-aes-* packages are obsolete, only try to install
+    loop-aes-modules-* packages.
+
+ -- Frans Pop <fjp@debian.org>  Mon, 04 Aug 2008 19:10:20 +0200
 
 partman-crypto (33) unstable; urgency=low
 

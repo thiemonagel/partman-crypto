@@ -10,9 +10,10 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-06-09 00:54-0300\n"
+"PO-Revision-Date: 2008-08-07 19:53-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
-"Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -251,7 +252,7 @@ msgid ""
 msgstr ""
 "Os dados em ${DEVICE} serão sobrescritos com dados aleatórios. Os mesmos não "
 "poderão ser recuperados após este passo ter sido finalizado. Esta é a última "
-"oportunidade de abortar a remoção dos dados."
+"oportunidade de abortar o processo que apagará os dados."
 
 #. Type: text
 #. Description
@@ -275,8 +276,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Um erro ocorreu durante a tentativa dos remoção dos dados em ${DEVICE}. Os "
-"dados não foram removidos."
+"Um erro ocorreu durante a tentativa de apagar dos dados em ${DEVICE}. Os "
+"dados não foram apagados."
 
 #. Type: text
 #. Description

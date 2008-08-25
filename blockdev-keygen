@@ -109,7 +109,7 @@ call_entropy_plugin () {
 	local keybytes
 	keybytes=$1
 
-	db_capb backup
+	db_capb backup align
 
 	templ=partman-crypto/entropy
 	db_fset $templ seen false

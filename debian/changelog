@@ -1,9 +1,15 @@
-partman-crypto (35) UNRELEASED; urgency=low
+partman-crypto (35) unstable; urgency=low
 
   [ Jérémy Bobbio ]
   * Preserve "align" capability in call_entropy_plugin().
 
- -- Jérémy Bobbio <lunar@debian.org>  Mon, 25 Aug 2008 13:24:32 +0200
+  [ Updated translations ]
+  * Greek, Modern (el.po) by Emmanuel Galatoulas
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Traditional Chinese (zh_TW.po) by Tetralet
+
+ -- Jérémy Bobbio <lunar@debian.org>  Mon, 25 Aug 2008 21:10:59 +0200
 
 partman-crypto (34) unstable; urgency=low
 

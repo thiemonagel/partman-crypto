@@ -11,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer etch\n"
+"Project-Id-Version: debian-installer lenny\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-02-12 17:22+0100\n"
+"PO-Revision-Date: 2008-09-04 14:50+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -91,6 +91,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Canviar el mètode de xifrat establirà altres camps relacionats amb el "
+"xifratge als seus valors per defecte per al nou mètode de xifrat."
 
 #. Type: text
 #. Description
@@ -673,7 +675,7 @@ msgstr "S'està creant la clau de xifratge per a ${DEVICE}."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "S'han creat les dades de la clau amb èxit."
 
 #. Type: error
 #. Description

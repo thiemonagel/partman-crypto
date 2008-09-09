@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-02-11 10:16+0700\n"
-"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"PO-Revision-Date: 2008-09-09 06:57+0200\n"
+"Last-Translator: KHOEM Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -95,6 +95,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"កា​រផ្លាស់ប្ដូរ​វិធីសាស្ត្រ​អ៊ិនគ្រីប​នឹង​កំណត់​វាល​ដែល​ទាក់ទងនឹង​ការ​អ៊ិនគ្រីប​​ទៅ​នឹ​ងតម្លៃ​លំនាំដើម​របស់​ពួកគេ​សម្រាប់​"
+"វិធីសាស្ត្រ​អ៊ិនគ្រីប​ថ្មី ។"
 
 #. Type: text
 #. Description
@@ -655,7 +657,7 @@ msgstr "កូនសោ​អ៊ិនគ្រីប​សម្រាប់ ${
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "ទិន្នន័យ​សំខាន់​ត្រូវ​បានបង្កើត​ដោយ​ជោគជ័យ ។"
 
 #. Type: error
 #. Description

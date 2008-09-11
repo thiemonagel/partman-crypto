@@ -16,12 +16,13 @@
 # A S Alam <aalam@users.sf.net>, 2007.
 # Amanpreet Singh Alam <apreet.alam@gmail.com>, 2008.
 # Amanpreet Singh Brar <aalam@users.sf.net>, 2008.
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-05-02 22:01+0530\n"
+"PO-Revision-Date: 2008-09-11 08:22+0000\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
@@ -99,6 +100,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"ਇੰਕ੍ਰਿਪਸ਼ਨ ਢੰਗ ਬਦਲਣ ਨਾਲ ਹੋਰ ਇੰਕ੍ਰਿਪਸ਼ਨ ਨਾਲ ਸਬੰਧਿਤ ਖੇਤਰਾਂ ਨੂੰ ਨਵੇਂ ਇੰਕ੍ਰਿਪਸ਼ਨ ਢੰਗ ਲਈ ਮੂਲ ਮੁੱਲ ਸੈੱਟ "
+"ਕਰੇਗਾ"
 
 #. Type: text
 #. Description

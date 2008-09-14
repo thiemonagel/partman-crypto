@@ -4,18 +4,19 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # translation of Debian Installer templates to Esperanto.
-# Copyright (C) 2005-2007 Software in the Public Interest, Inc.
+# Copyright (C) 2005-2008 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 # Samuel Gimeno <sgimeno@gmail.com>, 2005.
 # Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005-2007.
+# Felipe Castro <fefcas@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: eo\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-06-15 23:36+0200\n"
-"Last-Translator: Serge Leblanc <serge.leblanc@wanadoo.fr>\n"
+"PO-Revision-Date: 2008-09-14 18:32-0300\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +58,7 @@ msgstr "Buklado ('loop-AES')"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "'dm-crypt'-adaptilo"
+msgstr "Aparat-mapilo ('dm-crypt')"
 
 #. Type: text
 #. Description
@@ -81,7 +82,7 @@ msgstr "Ĉifrada metodo:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "Ĉifrada metodo por ĉi tiu diskpartigo:"
+msgstr "Ĉifrada metodo por ĉi tiu diskparto:"
 
 #. Type: select
 #. Description
@@ -107,7 +108,7 @@ msgstr "Ĉifrado:"
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "Ĉifrado por ĉi tiu diskpartigo:"
+msgstr "Ĉifrado por ĉi tiu diskparto:"
 
 #. Type: text
 #. Description
@@ -122,7 +123,7 @@ msgstr "Ŝlosila amplekso:"
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Ŝlosila amplekso por ĉi tiu diskpartigo:"
+msgstr "Ŝlosila amplekso por ĉi tiu diskparto:"
 
 #. Type: text
 #. Description
@@ -141,7 +142,7 @@ msgstr "'IV'-algoritmo:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Kreado algoritma de vektora pravalorado por ĉi tiu diskpartigo:"
+msgstr "Kreado algoritma de vektora pravalorado por ĉi tiu diskparto:"
 
 #. Type: select
 #. Description
@@ -173,7 +174,7 @@ msgstr "Ĉifrada ŝlosilo:"
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "Ĉifrita ŝlosila tipo por ĉi tiu diskpartigo:"
+msgstr "Ĉifrita ŝlosila tipo por ĉi tiu diskparto:"
 
 #. Type: text
 #. Description
@@ -188,7 +189,7 @@ msgstr "Hakado de la ĉifrada ŝlosilo:"
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "Hakĉifra ŝlosila tipo por ĉi tiu diskpartigo:"
+msgstr "Hakĉifra ŝlosila tipo por ĉi tiu diskparto:"
 
 #. Type: select
 #. Description
@@ -232,7 +233,7 @@ msgstr "jes"
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "Forviŝu datumojn en tiu diskpartigo:"
+msgstr "Forviŝu datumojn en tiu diskparto:"
 
 #. Type: boolean
 #. Description
@@ -297,14 +298,14 @@ msgstr "Akomodu ĉifritajn datumportilojn"
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "Neniu ĉifrota diskpartigo"
+msgstr "Neniu ĉifrota diskparto"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "Neniu diskpartigo estas elektita por ĉifrado."
+msgstr "Neniu diskparto estas elektita por ĉifrado."
 
 #. Type: note
 #. Description
@@ -388,7 +389,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "Eble, problemoj okazos dum la ekŝargo kiam la sistemo provos uzi ĉifritajn "
-"diskpartigojn. Tamen, vi povos poste korekti ilin instalante la necesajn "
+"diskpartojn. Tamen, vi povos poste korekti ilin instalante la necesajn "
 "pakojn."
 
 #. Type: boolean
@@ -422,10 +423,9 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Post la akomodado de la ĉifrita datumportilo, neniu plua ŝanĝo en "
-"diskpartigotablo estas permesita sur la diskoj kiuj enhavas ĉifritajn "
-"datumpartilojn. Antaŭ ol daŭriĝi, bonvolu kontroli la taŭgontan nuntempan "
-"diskaranĝon."
+"Post la akomodado de la ĉifrita datumportilo, neniu plua ŝanĝo en diskparta "
+"tabelo estas permesita sur la diskoj kiuj enhavas ĉifritajn datumpartilojn. "
+"Antaŭ ol daŭriĝi, bonvolu kontroli la taŭgontan nuntempan diskaranĝon."
 
 #. Type: boolean
 #. Description
@@ -433,8 +433,7 @@ msgstr ""
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉ1ifritajn "
-"datumportilojn?"
+"Konservu nuntempan diskpartigan aranĝon kaj akomodu ĉifritajn datumportilojn?"
 
 #. Type: error
 #. Description
@@ -699,16 +698,16 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Vi elektis lokotan radikan dosiersistemon en ĉifrita diskpartigo. Tiu "
-"funkcio bezonas apartan '/boot'-diskpartigon kie la kerno kaj la 'initrd'-"
-"memora diskbildo povas esti deponitaj."
+"Vi elektis lokotan radikan dosiersistemon en ĉifrita diskparto. Tiu funkcio "
+"bezonas apartan '/boot'-diskparton kie la kerno kaj la 'initrd'-memora "
+"diskbildo povas esti deponitaj."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Vi nepre retroiru kaj akomodu '/boot'-diskpartigon."
+msgstr "Vi nepre retroiru kaj akomodu '/boot'-diskparton."
 
 #. Type: error
 #. Description
@@ -720,8 +719,8 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Vi elektis lokotan '/root'-dosiersistemon en ĉifrita diskpartigo. Tio ne "
-"eblas ĉar la ekŝargilo ne povos ŝargi la kernon kaj la 'initrd'-memoran "
+"Vi elektis lokotan '/root'-dosiersistemon en ĉifrita diskparto. Tio ne eblas "
+"ĉar la ekŝargilo ne povos ŝargi la kernon kaj la 'initrd'-memoran "
 "diskbildon. Nu daŭrigi malsukcesos la instalon."
 
 #. Type: error
@@ -732,7 +731,7 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Bonvolu retroiri kaj elekti malĉifritan diskpartigon por la '/boot'-"
+"Bonvolu retroiri kaj elekti malĉifritan diskparton por la '/boot'-"
 "dosiersistemo."
 
 #. Type: boolean
@@ -763,7 +762,7 @@ msgid ""
 msgstr ""
 "La uzado de hazarda ŝlosilo implicos la forviŝadon de diskpartigaj datumoj "
 "en ĉiu starto. Tiu funkciado uzendas nur per la interŝanĝaj spacoj ('swap'-"
-"diskpartigoj)."
+"diskpartoj)."
 
 #. Type: error
 #. Description

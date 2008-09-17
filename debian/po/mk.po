@@ -3,19 +3,20 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
+# translation of debian-installer_packages_po_sublevel1_mk.po to Macedonian
 # translation of mk.po to
-# translation of mk.po to Macedonian
 # Macedonian strings from the debian-installer.
 #
 # Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005, 2006.
 # Georgi Stanojevski <georgis@unet.com.mk>, 2005, 2006.
+# Arangel Angov <ufo@linux.net.mk>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mk\n"
+"Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2006-10-15 15:53+0200\n"
-"Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
+"PO-Revision-Date: 2008-09-17 19:03+0200\n"
+"Last-Translator: Arangel Angov <ufo@linux.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,6 +92,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Промената на методот на екнрипција ќе ги постави другите полиња поврзани со "
+"енкрипцијата на нивните основни вредности за новиот метод."
 
 #. Type: text
 #. Description
@@ -670,7 +673,7 @@ msgstr "Се создава клучот за енкрипција за ${DEVICE
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Податоците за клучот се успешно креирани."
 
 #. Type: error
 #. Description

@@ -3,19 +3,20 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of lv.po.gz_[BY8Drc].po to Latvian
+# translation of debian-installer_packages_po_sublevel1_lv.po to Latvian
 # Aigars Mahinovs <aigarius@debian.org>, 2006.
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+# Peteris Krisjanis <pecisk@gmail.com>, 2008.
 # Latvian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 msgid ""
 msgstr ""
-"Project-Id-Version: lv.po.gz_[BY8Drc]\n"
+"Project-Id-Version: debian-installer_packages_po_sublevel1_lv\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-02-02 15:16+0200\n"
-"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
+"PO-Revision-Date: 2008-09-19 00:00+0300\n"
+"Last-Translator: Peteris Krisjanis <pecisk@gmail.com>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +60,7 @@ msgstr "Atgriezeniskā cilpa (loop-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "Ierīces saistītājs (dm-crypt)"
+msgstr "Ierīču saistītājs (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -68,7 +69,7 @@ msgstr "Ierīces saistītājs (dm-crypt)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "nav aktīvs"
+msgstr "nav aktīva"
 
 #. Type: text
 #. Description
@@ -83,7 +84,7 @@ msgstr "Šifrēšanas metode:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "Šīs partīcijas šifrēšanas metode:"
+msgstr "Šīs sadaļas šifrēšanas metode:"
 
 #. Type: select
 #. Description
@@ -107,7 +108,7 @@ msgstr "Šifrēšana:"
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "Šīs partīcijas šifrēšanas metode:"
+msgstr "Šīs sadaļas šifrēšana:"
 
 #. Type: text
 #. Description
@@ -122,7 +123,7 @@ msgstr "Atslēgas izmērs:"
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Šīs partīcijas šifrēšanas atslēgas izmērs:"
+msgstr "Šīs sadaļas šifrēšanas atslēgas izmērs:"
 
 #. Type: text
 #. Description
@@ -141,7 +142,7 @@ msgstr "IV algoritms:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Inicializācijas vektora generācijas algoritms šai partīcijai:"
+msgstr "Inicializācijas vektora ģenerēšanas algoritms šai sadaļai:"
 
 #. Type: select
 #. Description
@@ -156,9 +157,9 @@ msgid ""
 "compatibility with older systems."
 msgstr ""
 "Eksistē dažādi algoritmi inicializācijas vektora izvēlei katram sektoram. Šī "
-"izvēle ietekmē šifrēšanas drošības līmeni. Parasti mainīt šo izvēli no "
-"noklusētā varianta nav ietecams, izņemot gadījumus, kad nepieciešams "
-"nodrošināt savietojamību ar vecākām sistēmām."
+"izvēle ietekmē šifrēšanas drošības līmeni. Parasti mainīt šo izvēli nav "
+"ieteicams, izņemot gadījumus, kad nepieciešams nodrošināt savietojamību ar "
+"vecākām sistēmām."
 
 #. Type: text
 #. Description
@@ -173,7 +174,7 @@ msgstr "Šifrēšanas atslēga:"
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "Šīs partīcijas šifrēšanas atslēga:"
+msgstr "Šīs sadaļas šifrēšanas atslēgas tips:"
 
 #. Type: text
 #. Description
@@ -181,14 +182,14 @@ msgstr "Šīs partīcijas šifrēšanas atslēga:"
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "Šifrēšanas atslēgas hešs:"
+msgstr "Šifrēšanas atslēgas jaucējfunkcijas summa:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "Šīs partīcijas jaucējatslēgas (heša) tips:"
+msgstr "Šīs sadaļas šifrēšanas jaucējfunkcijas summas tips:"
 
 #. Type: select
 #. Description
@@ -200,10 +201,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Šifrēšanas atslēga tiek iegūta no paroles pielietojot vinvirziena "
-"jaucējfunkciju, lai iegūtu paroles hešu. Parasti nav pamata mainīt šo "
-"izvēlni no noklusējuma varianta, jo izdarot to nekorektā veidā var novajināt "
-"šifrēšanas drošību."
+"Šifrēšanas atslēga tiek iegūta no paroles, pielietojot vienvirziena "
+"jaucējfunkciju uz to. Parasti nav pamata mainīt šīs izvēlnes rekomendēto "
+"noklusēto vērtību, jo, izdarot to nekorektā veidā, var vājināt šifrēšanas "
+"spēku."
 
 #. Type: text
 #. Description
@@ -233,14 +234,14 @@ msgstr "jā"
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "Dzēst datus no šīs partīcijas"
+msgstr "Dzēst datus no šīs sadaļas"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Tiešam dzēst datus no ${DEVICE}?"
+msgstr "Tiešām dzēst datus no ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -251,23 +252,23 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Dati no ierīces ${DEVICE} tiks pārrakstīti ar gadījuma datiem. Pēc šī soļa "
-"veikšanas nekāda informācija no šīs ierīces vairs nevarēs būt atjaunota. Šī "
-"ir pēdējā iespēja atcelt dzēsšanu."
+"Dati uz ierīces ${DEVICE} tiks pārrakstīti ar gadījuma datiem. Pēc šī soļa "
+"veikšanas nekāda informācija no šīs ierīces vairs nevarēs tikt atjaunota. Šī "
+"ir pēdējā iespēja pārtraukt dzēšanu."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Datu dzēsšana no ${DEVICE}"
+msgstr "Datu dzēšana no ${DEVICE}"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Datu dzēsšana no ${DEVICE} neizdevās"
+msgstr "Datu dzēšana no ${DEVICE} neizdevās"
 
 #. Type: error
 #. Description
@@ -276,14 +277,14 @@ msgstr "Datu dzēsšana no ${DEVICE} neizdevās"
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr "Kļūda dzēšot datus no ${DEVICE} ierīces. Dati nav pilnība izdzesti."
+msgstr "Kļūda, dzēšot datus no ${DEVICE} ierīces. Dati nav pilnībā izdzēsti."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "Uzstrādu šifrēšanu..."
+msgstr "Uzstādu šifrēšanu..."
 
 #. Type: text
 #. Description
@@ -297,14 +298,14 @@ msgstr "Konfigurēt šifrētos sējumus"
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "Nav norādīta šifrējamā partīcija"
+msgstr "Nav šifrējamu sadaļu"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "Nav izvēlēta šifrējamā partīcija."
+msgstr "Nav izvēlētas sadaļas šifrēšanai."
 
 #. Type: note
 #. Description
@@ -321,7 +322,7 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Šajā debian instalatora versijā nav iekļautas vairākas programmas, kas ir "
+"Šajā debian instalatora versijā nav iekļautas programmas, kas ir "
 "nepieciešamas, lai partman-crypto darbotos korekti."
 
 #. Type: error
@@ -339,8 +340,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"${DEVICE} šifrēšanas opcijas ir nepilnīgas. Lūdzu atgriezieties uz partīciju "
-"veidošanas izvēlni un norādiet nepieciešamās opcijas."
+"${DEVICE} šifrēšanas opcijas ir nepilnīgas. Lūdzu, atgriezieties uz disku "
+"dalīšanas izvēlni un norādiet nepieciešamās opcijas."
 
 #. Type: text
 #. Description
@@ -358,14 +359,14 @@ msgstr "trūkst"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Tiek lietota kā fiziskais sejums priekš šifrētā sējuma ${DEV}"
+msgstr "Tiek lietota kā šifrētā sējuma ${DEV} fiziskais sējums."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "Kļūda instalējot šifrēšanas paku"
+msgstr "Kļūda, instalējot šifrēšanas pakotni"
 
 #. Type: error
 #. Description
@@ -375,8 +376,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Kodola moduļa paka ${PACKAGE} nav atrasta vai arī ir radusies kļūda tās "
-"instalācijas procesā."
+"Kodola moduļa pakotne ${PACKAGE} nav atrasta, vai arī ir radusies kļūda tās "
+"instalēšanas procesā."
 
 #. Type: error
 #. Description
@@ -387,9 +388,9 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Sistēmas sāknēšanās laikā, kad tā mēģinās uzstādīt šifrētās partīcijas "
-"visdrīzāk būs problēmas. Jūs joprojām varat atrisināt šīs problēmas vēlāk "
-"uzinstalējot nepieciešamās pakas."
+"Sistēmas pārlaišanas laikā, kad tā mēģinās iestatīt šifrētās sadaļas, "
+"iespējamas problēmas. Varbūt jūs varēsiet tās atrisināt, vēlāk uzinstalējot "
+"nepieciešamās pakotnes."
 
 #. Type: boolean
 #. Description
@@ -406,7 +407,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Pirms konfigurēt šifrētos sējumus pašreizējais partīciju izkārtojums ir "
+"Pirms konfigurēt šifrētos sējumus, pašreizējais sadaļu izkārtojums ir "
 "jāsaglabā diskā. Šīs izmaiņas vairs nevarēs atcelt."
 
 #. Type: boolean
@@ -422,37 +423,37 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Konfigurējot šifrētos sējumus, esošajām fizisko sējumu partīcijām vairs "
-"nevarēs veikt nekādas izmaiņas. Pirms turpināt lūdzu pārliecinieties, ka jūs "
-"apmierina šī brīža partīciju izkārtojums."
+"Konfigurējot šifrētos sējumus, izmaiņas esošajās fizisko sējumu sadaļās "
+"vairs nav atļautas. Pirms turpiniet, lūdzu, pārliecinieties, ka jūs "
+"apmierina pašreizējais sadaļu izkārtojums."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Saglabāt esošo partīciju izkārtojumu un konfigurēt šifrētos sējumus?"
+msgstr "Saglabāt esošo sadaļu izkārtojumu un konfigurēt šifrētos sējumus?"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Kļūda konfigurējot šifrētos sējumus"
+msgstr "Kļūda, konfigurējot šifrētos sējumus"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Konfigurējot šifrētos sējumus radusies kļūda."
+msgstr "Radusies kļūda, konfigurējot šifrētos sējumus."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "Konfigurācija pārtraukta."
+msgstr "Konfigurēšana tika pārtraukta."
 
 #. Type: error
 #. Description
@@ -466,7 +467,7 @@ msgstr "Šifrēto sējumu inicializācija neizdevās"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Uzstādot šifrētos sējumus radusies kļūda."
+msgstr "Radusies kļūda, Iestatot šifrētos sējumus."
 
 #. Type: text
 #. Description
@@ -506,14 +507,14 @@ msgstr "Nejauša atslēga"
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
-msgstr "Atrasta nedroša maiņas telpa (swap)"
+msgstr "Atrasta nedroša maiņvieta"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "Jūsu sistēmā ir atrasta nedroša maiņas telpa."
+msgstr "Jūsu sistēmā ir atrasta nedroša maiņvieta."
 
 #. Type: error
 #. Description
@@ -524,9 +525,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Šī ir fatāla kļūda, jo svarīgus datus var nešifrētus ierakstīti diskā. Tas "
-"varētu ļaut kādam piekļūt diskam un atgūt arī daļas no šifrēšanas atslēgas "
-"vai paroles."
+"Šī ir fatāla kļūda, jo svarīgus datus var nešifrētus izkopēt no diska. Tas "
+"varētu ļaut kādam ar piekļuvi diskam atgūt daļas no šifrēšanas atslēgas vai "
+"paroles."
 
 #. Type: error
 #. Description
@@ -537,16 +538,16 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Lūdzu atslēdziet maiņas telpas (apmaiņas) izmantošanu (piem. palaižot "
-"swapoff) vai nokonfigurējiet maiņas telpas šifrēšanu un vēlreiz palaidiet "
-"šifrēto sējumu uzstādīšanu. Šī programma tagad pārtrauks savu darbību."
+"Lūdzu, atslēdziet maiņvietas izmantošanu (piem. izpildot swapoff) vai "
+"nokonfigurējiet maiņvietas šifrēšanu un vēlreiz izpildiet šifrēto sējumu "
+"iestatīšanu. Šī programma tagad pārtrauks savu darbību."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "Šifrēsanas parole:"
+msgstr "Šifrēšanas parole:"
 
 #. Type: password
 #. Description
@@ -565,9 +566,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Šifrēšanas kopējā drosība lielā mērā ir atkarīga no šī paroles, tāpēc jums "
+"Šifrēšanas kopējā drošība lielā mērā ir atkarīga no šī paroles, tāpēc jums "
 "vajadzētu rūpīgi izvēlēties šo paroli tādu, lai to nevarētu viegli uzminēt. "
-"Tamnevajadzētu būt vārdnīcās saprotamam vārdam vai frāzei, ko varētu viegli "
+"Tam nevajadzētu būt vārdnīcās atrodamam vārdam vai frāzei, ko varētu viegli "
 "saistīt ar jums personiski."
 
 #. Type: password
@@ -580,7 +581,7 @@ msgid ""
 "characters."
 msgstr ""
 "Laba parole sastāvēs no burtu, ciparu un dažādu simbolu kombinācijas. "
-"Parolei būtu jābūt vismaz 20 vai vairāk simbolus garai."
+"Parolei būtu jābūt vismaz 20 simbolus garai."
 
 #. Type: password
 #. Description
@@ -597,7 +598,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Lūdzu ievadiet to pašu paroli vēlreiz, lai pārliecinātos, ka jūs to "
+"Lūdzu, ievadiet to pašu paroli vēlreiz, lai pārliecinātos, ka jūs to "
 "ievadījāt pareizi."
 
 #. Type: error
@@ -605,14 +606,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "Paroles ievada kļūda"
+msgstr "Paroles ievades kļūda"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "Jūsu ievadītās paroles atšķirās, lūdzu mēģiniet vēlreiz."
+msgstr "Jūsu ievadītās paroles atšķiras. Lūdzu, mēģiniet vēlreiz."
 
 #. Type: error
 #. Description
@@ -628,7 +629,9 @@ msgstr "Tukša parole"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "Jūs neievadījāt paroli. Lūdzu ievadiet paroli."
+msgstr ""
+"Jūs ievadījāt tukšu paroli, kas nav atļauts. Lūdzu, ievadiet paroli ar "
+"rakstzīmēm."
 
 #. Type: boolean
 #. Description
@@ -649,8 +652,8 @@ msgid ""
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
 "Jūs ievadījāt paroli, kas sastāv no mazāka simbolu skaita, nekā būtu "
-"nepieciešams (${MINIMUM}). Tas nav droši. Jums vajadzētu izvēlēties drošāku "
-"paroli."
+"nepieciešams (${MINIMUM}). Tas nav droši, tāpēc jums vajadzētu izvēlēties "
+"drošāku paroli."
 
 #. Type: entropy
 #. Description
@@ -678,7 +681,7 @@ msgstr "Atslēgas faila izveide nav izdevusies"
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "Veidojot atslēgas failu radusies kļūda"
+msgstr "Veidojot atslēgas failu, radusies kļūda."
 
 #. Type: error
 #. Description
@@ -688,7 +691,7 @@ msgstr "Veidojot atslēgas failu radusies kļūda"
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "Šifrēšanas konfigurācija nav izveidota"
+msgstr "Šifrēšanas konfigurēšana neizdevās"
 
 #. Type: error
 #. Description
@@ -699,8 +702,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Jūs esat izvēlējies novietot saknes failu sistēmu uz šifrētas partīcijas. "
-"Lai lietotu šādu sistēmu, ir nepieciešams izveidot /boot partīciju uz kuras "
+"Jūs izvēlējāties novietot saknes failu sistēmu uz šifrētas sadaļas. Lai "
+"lietotu šādu sistēmu, ir nepieciešams izveidot /boot sadaļu, uz kuras "
 "glabātos kodols un initrd."
 
 #. Type: error
@@ -708,7 +711,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Jums vajdzētu atgriezties un izveitod /boot partīciju."
+msgstr "Jums vajadzētu atgriezties un izveidot /boot sadaļu."
 
 #. Type: error
 #. Description
@@ -720,10 +723,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Jūs esat izvēlējies novietot /boot failu sistēmu uz šifrētas partīcijas. Šī "
-"iespēja nav isepējama, jo saknētājs nespēs ielādēt kodolu un sākuma initrd "
-"sistēmu. Šādas konfigutācijas saglabāšana novedīs pie nelietojamas "
-"instalācijas."
+"Jūs izvēlējāties novietot /boot failu sistēmu uz šifrētas sadaļas. Tas nav "
+"iespējams, jo sāknētājs nespēs ielādēt kodolu un sākuma initrd sistēmu. "
+"Šādas konfigurācijas saglabāšana novedīs pie nelietojamas instalācijas."
 
 #. Type: error
 #. Description
@@ -733,7 +735,7 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Lūdzu atgriezieties un izvēlieties nešifrētu partīciju /boot failu sistēmai."
+"Lūdzu, atgriezieties un izvēlieties nešifrētu sadaļu /boot failu sistēmai."
 
 #. Type: boolean
 #. Description
@@ -750,8 +752,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Jūs esat izvēlējies patvaļīgu atslēgas tipu priekš ${DEVICE}, bet esat "
-"lūguši instalatoram izveidot uz tās kādu failu sistēmu."
+"Jūs izvēlējāties patvaļīgu atslēgas tipu ${DEVICE}, bet norādījāt "
+"instalatoram izveidot uz tās failu sistēmu."
 
 #. Type: boolean
 #. Description
@@ -761,16 +763,16 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Patvaļīga atslēgas tipa izmantošana nozīmē, ka katreis pārsāknējot sistēmu "
-"visi šīs partīcijas dati tiks iznīcināti. Šādu tipu vajadzētu lietot tikai "
-"apmaiņas partīcijai."
+"Patvaļīga atslēgas tipa izmantošana nozīmē, ka, katrreiz pārlaižot sistēmu, "
+"visi šīs sadaļas dati tiks iznīcināti. Šādu tipu vajadzētu lietot tikai "
+"maiņvietas sadaļai."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Kļūda lejuplādējot kriptogrāfijas komponentus"
+msgstr "Kļūda, lejuplādējot kriptogrāfijas komponentus"
 
 #. Type: error
 #. Description
@@ -778,7 +780,7 @@ msgstr "Kļūda lejuplādējot kriptogrāfijas komponentus"
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Mēģinot lejuplādēt papildus kriptogrāfiskos komponentus radusies kļūda."
+"Mēģinot lejuplādēt papildu kriptogrāfiskos komponentus, radusies kļūda."
 
 #. Type: boolean
 #. Description
@@ -786,7 +788,7 @@ msgstr ""
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Turpināt kriptogrāfisko komponenši installāciju neskatoties uz atmiņas "
+"Turpināt kriptogrāfisko komponenšu instalāciju, neskatoties uz atmiņas "
 "nepietiekamību?"
 
 #. Type: boolean
@@ -798,6 +800,6 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Atmiņas apjoms nav pietiekošs papildus kriptogrāfisko komponentu "
-"instalācijai. Ja jūs izvēlēsieties turpināt to installāciju, installācijas "
-"process var beigties kļūdaini."
+"Atmiņas apjoms nav pietiekošs, lai uzinstalētu papildus kriptogrāfiskās "
+"komponentes. Ja jūs izvēlēsieties tomēr turpināt to instalāciju, "
+"instalēšanas process var beigties kļūdaini."

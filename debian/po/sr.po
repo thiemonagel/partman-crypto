@@ -3,28 +3,24 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of debian-installer_packages_po_sublevel1_da.po to
-# Danish messages for debian-installer.
-# This file is distributed under the same license as debian-installer.
-# Henrik Christian Grove <debian@3001.dk>, 2008.
-# Jesper Dahl Nyerup <debian@jespernyerup.dk>, 2008.
-# Jacob Sparre Andersen <sparre@nbi.dk>, 2008.
-# Claus Hindsgaul <claus.hindsgaul@gmail.com>, 2004-2007.
-# Reviewed 2007 by Niels Rasmussen
+# Serbian/Cyrillic translation of cp6Linux.
+# Copyright (C) 2008 THE cp6Linux'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the cp6Linux package.
+# Veselin Mijušković <veselin.mijuskovic@gmail.com>, 2008.
+# , fuzzy
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
+"Project-Id-Version: cp6Linux 2008\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-09-19 16:35+0200\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"PO-Revision-Date: 2008-09-19 22:27+0100\n"
+"Last-Translator: Veselin Mijušković <panzer@cp6linux.org>\n"
+"Language-Team: Serbian/Cyrillic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);X-Generator: KBabel 1.11.4\n"
 
 #. Type: text
 #. Description
@@ -33,7 +29,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "fysisk bind til kryptering"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -42,7 +38,7 @@ msgstr "fysisk bind til kryptering"
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr "kryptering"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -51,8 +47,9 @@ msgstr "kryptering"
 #. Translations should be kept below 40 columns
 #. :sl3:
 #: ../partman-crypto.templates:3001
+#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop-AES)"
+msgstr "Повратна петља (loop%s)"
 
 #. Type: text
 #. Description
@@ -62,7 +59,7 @@ msgstr "Loopback (loop-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "Enhedsoverføring (dm-crypt)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -71,22 +68,24 @@ msgstr "Enhedsoverføring (dm-crypt)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "ikke aktiv"
+msgstr ""
 
 #. Type: text
 #. Description
 #. Should be kept below 24 columns
 #. :sl3:
 #: ../partman-crypto.templates:7001
+#, fuzzy
 msgid "Encryption method:"
-msgstr "Krypteringsmetode:"
+msgstr "Метод партиционисања:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:8001
+#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Denne partitions krypteringsmetode:"
+msgstr "Тачка качења за ову партицију:"
 
 #. Type: select
 #. Description
@@ -96,8 +95,6 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"Ændring af krypteringsmetoden vil sætte de øvrige krypteringsrelaterede "
-"felter til standardværdierne for den nye krypteringsmetode."
 
 #. Type: text
 #. Description
@@ -105,14 +102,15 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:9001
 msgid "Encryption:"
-msgstr "Kryptering:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
+#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Denne partitions kryptering:"
+msgstr "Тачка качења за ову партицију:"
 
 #. Type: text
 #. Description
@@ -120,14 +118,15 @@ msgstr "Denne partitions kryptering:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "Nøglestørrelse:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
+#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Denne partitions nøglestørrelse:"
+msgstr "Тачка качења за ову партицију:"
 
 #. Type: text
 #. Description
@@ -137,7 +136,7 @@ msgstr "Denne partitions nøglestørrelse:"
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr "IV-algoritme:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -146,7 +145,7 @@ msgstr "IV-algoritme:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Algoritme til generering af initialiseringsvektor for denne partition:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -160,10 +159,6 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Der findes forskellige algoritmer til at uddrage initialiseringsvektoren for "
-"hver sektor. Dette valg påvirker krypteringssikkerheden. Normalt er der "
-"ingen grund til at ændre den fra den anbefalede værdi, medmindre der ønskes "
-"kompatibilitet med ældre systemer."
 
 #. Type: text
 #. Description
@@ -171,14 +166,15 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "Krypteringsnøgle:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
+#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Denne partitions krypteringsnøgletype:"
+msgstr "Тачка качења за ову партицију:"
 
 #. Type: text
 #. Description
@@ -186,14 +182,15 @@ msgstr "Denne partitions krypteringsnøgletype:"
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "Krypteringsnøgle-hash:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
+#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Krypteringsnøgle-hashtypen for denne partition:"
+msgstr "Тачка качења за ову партицију:"
 
 #. Type: select
 #. Description
@@ -205,9 +202,6 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"Krypteringsnøglen uddrages fra adgangskoden ved at påføre den en envejs-"
-"hashfunktion. Der er normalt ingen grund til at ændre den fra den anbefalede "
-"type, og det kan nedsætte krypteringsstyrken at gøre det på en forkert måde."
 
 #. Type: text
 #. Description
@@ -215,36 +209,38 @@ msgstr ""
 #. by "yes" or "no"
 #. :sl3:
 #: ../partman-crypto.templates:19001
+#, fuzzy
 msgid "Erase data:"
-msgstr "Slet data:"
+msgstr "Источна Индијана"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:20001
 msgid "no"
-msgstr "nej"
+msgstr "не"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:21001
 msgid "yes"
-msgstr "ja"
+msgstr "да"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
+#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Slet data på denne partition"
+msgstr "Креирај нову партицију"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Vil du virkelig slette data på ${DEVICE}?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -255,23 +251,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Data på ${DEVICE} vil blive overskrevet med tilfældige data. De kan ikke "
-"genskabes, når dette er sket. Dette er sidste mulighed for at hindre "
-"sletningen."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Sletter data på ${DEVICE}"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Det lykkedes ikke at slette data på ${DEVICE}"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -281,43 +274,44 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Der opstod en fejl under forsøget på at slette data på ${DEVICE}. Dataene er "
-"ikke blevet slettet."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
+#, fuzzy
 msgid "Setting up encryption..."
-msgstr "Sætter kryptering op..."
+msgstr "Подешавање часовника"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:27001
+#, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Indstil krypterede bind"
+msgstr "Шифровани волумен (%s)"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
+#, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Ingen partitioner at kryptere"
+msgstr "Није пронађена ниједна партиција"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "Der er ikke udpeget nogen partitioner at kryptere."
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:29001
 msgid "Required programs missing"
-msgstr "Nødvendige programmer mangler"
+msgstr ""
 
 #. Type: note
 #. Description
@@ -327,15 +321,13 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Denne udgave af installationsprogrammet mangler et eller flere programmer, "
-"der kræves for at partman-crypto kan fungere korrekt."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr "Krævede krypteringsindstillinger mangler"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -345,8 +337,6 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"Krypteringsindstillingerne for ${DEVICE} er ufuldstændige. Gå tilbage til "
-"partitioneringsmenuen og vælg alle de nødvendige indstillinger."
 
 #. Type: text
 #. Description
@@ -356,7 +346,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "mangler"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -364,14 +354,15 @@ msgstr "mangler"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "I brug som fysisk bind for det krypterede bind ${DEV}"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
+#, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Fejl under installation af krypteringspakke"
+msgstr "Инсталација GRUB-а није успела"
 
 #. Type: error
 #. Description
@@ -381,8 +372,6 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Kernemodul-pakken ${PACKAGE} blev ikke fundet eller også opstod der en fejl "
-"under installationen."
 
 #. Type: error
 #. Description
@@ -393,16 +382,14 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Det er sandsynligt, at der vil opstå problemer med at sætte krypterede "
-"partitioner op, når systemet genstartes. Du kan muligvis undgå dette ved at "
-"installere de nødvendige pakker senere."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
+#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Skriv ændringerne til diskene og sæt de krypterede bind op?"
+msgstr "Да запишем претходне измене на диск и наставим?"
 
 #. Type: boolean
 #. Description
@@ -412,8 +399,6 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Den valgte partitionering skal skrives til diskene før de krypterede bind "
-"kan sættes op. Disse ændringer kan ikke fortrydes."
 
 #. Type: boolean
 #. Description
@@ -428,51 +413,51 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Når de krypterede bind er sat op, er det ikke tilladt at ændre partitionerne "
-"på de diske, der indeholder krypterede bind. Vær sikker på at du er tilfreds "
-"med det aktuelle partitionslayout på disse diske, inden du fortsætter."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Opsætningen af krypterede bind mislykkedes"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
+#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af krypterede bind."
+msgstr "Дошло је до грешке приликом записивања измена да дискове."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
+#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Opsætningen blev afbrudt."
+msgstr "Копирање је прекинуто."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Initialiseringen af de krypterede bind mislykkedes"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
+#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af de krypterede bind."
+msgstr "Дошло је до грешке приликом подешавања GRUB-а на SATA RAID диск."
 
 #. Type: text
 #. Description
@@ -483,7 +468,7 @@ msgstr "Der opstod en fejl under opsætningen af de krypterede bind."
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr "Kode"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -494,7 +479,7 @@ msgstr "Kode"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr "Nøglefil (GnuPG)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -505,21 +490,22 @@ msgstr "Nøglefil (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr "Tilfældig nøgle"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
+#, fuzzy
 msgid "Unsafe swap space detected"
-msgstr "Fandt et usikkert swapområde"
+msgstr "Креирај простор за своп"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "Der blev fundet et usikkert swapområde."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -530,9 +516,6 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Denne fejl er alvorlig, da følsomme data kunne blive skrevet ukrypteret til "
-"disken. Det ville give personer med adgang til disken mulighed for at "
-"genskabe dele af krypteringsnøglen eller koden."
 
 #. Type: error
 #. Description
@@ -543,105 +526,113 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Deaktivér swapområdet (f.eks. ved at køre swapoff) eller sæt et krypteret "
-"swapområde op og gennemfør opsætningen af krypterede bind igen. Dette "
-"program afbrydes nu."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "Krypteringskode:"
+msgstr ""
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Du skal vælge en kode for at kryptere ${DEVICE}."
+msgstr ""
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
+#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Krypteringens styrke afhænger i høj grad af denne kode, så du skal sørge for "
-"at vælge en kode, der ikke er let at gætte. Den bør ikke være et ord eller "
-"en sætning, der findes i ordbøger, eller et ord som nemt kan forbindes med "
-"dig."
+"Морате поставити лозинку за 'root' корисника, системски "
+"административниналог. Злонамеран или неквалификован коирсник са правима "
+"приступа rootкорисника може имати погубне ефекте, тако да водите рачуна да "
+"одаберетелозинку која се не може лако погодити. То не би требало да буде реч "
+"из речникаили реч која се може лако повезати са вама."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
+#, fuzzy
 msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"En god kode indeholder en blanding af bogstaver, tal og tegnsætning. Det "
-"anbefales at adgangskoder består af 20 eller flere tegn."
+"Добра лозинка ће садржати мешавину слова, цифара и знакова интерпункцијеи "
+"треба да буде мењана у регуларним интервалима."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
+#, fuzzy
 msgid "Re-enter passphrase to verify:"
-msgstr "Gentag koden for at bekræfte:"
+msgstr "Поново унесите лозинку ради провере:"
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
+#, fuzzy
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Angiv den samme kode igen for at tjekke, at du har indtastet den korrekt."
+"Молим, унесите исту root лозинку поново ради провере да ли сте је унели "
+"исправно."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
+#, fuzzy
 msgid "Passphrase input error"
-msgstr "Fejl ved indtastning af kode"
+msgstr "Грешка при уносу лозинке"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
+#, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "De to koder, du indtastede, var ikke ens. Prøv igen."
+msgstr "Две лозинке које сте унели се разликују. Молим, пробајте поново."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
+#, fuzzy
 msgid "Empty passphrase"
-msgstr "Tom kode"
+msgstr "Празна лозинка"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
+#, fuzzy
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Du har indtastet en tom kode, hvilket ikke er tilladt. Vælg en ikke-tom kode."
+"Унели сте празну лозинку, што није допуштено. Молим, изаберите "
+"непразнулозинку."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "Benyt svag kode?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -654,36 +645,36 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Du har indtastet en kode, der består af færre end ${MINIMUM} tegn, hvilket "
-"anses for at være for usikkert. Du bør vælge en stærkere kode."
 
 #. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Krypteringsnøglen for ${DEVICE} genereres."
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "Det lykkedes at skabe nøgledata."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
+#, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Oprettelsen af nøglefilen mislykkedes"
+msgstr "Грешка при мењању величине партиције"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
+#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Der opstod en fejl under oprettelsen af nøglefilen."
+msgstr "Дошло је до грешке приликом записивања измена да дискове."
 
 #. Type: error
 #. Description
@@ -692,8 +683,9 @@ msgstr "Der opstod en fejl under oprettelsen af nøglefilen."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
+#, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Fejl under opsætning af kryptering"
+msgstr "проблем са конфигурисањем apt-а"
 
 #. Type: error
 #. Description
@@ -704,15 +696,16 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Det "
-"kræver en separat /boot-partition, hvor kernen og initrd skal placeres."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
+#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Du bør gå tilbage og sætte /boot-partitionen op."
+msgstr ""
+"Требало би да користите други тип фајл система као што је ext3, за /boot "
+"партицију."
 
 #. Type: error
 #. Description
@@ -724,27 +717,25 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Du har valgt at rod-filsystemet skal gemmes på en krypteret partition. Dette "
-"er ikke muligt, da opstartsindlæseren ikke ville kunne indlæse kernen og "
-"initrd. Hvis du fortsætte nu, vil du ende med en installation, der ikke kan "
-"bruges."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:51001
+#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Du bør gå tilbage og vælge en ikke-krypteret partition til /boot-filsystemet."
+"Требало би да направите малу /boot партицију другог типа, као што је ext3."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:52001
+#, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Er du sikker på, at du vil benytte en tilfældig nøgle?"
+msgstr "Да ли сте сигурни да сада желите да изађете?"
 
 #. Type: boolean
 #. Description
@@ -754,8 +745,6 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Du har valgt en tilfældig-nøgletype til ${DEVICE}, men bedt "
-"partitionsprogrammet om at oprette et filsystem på den."
 
 #. Type: boolean
 #. Description
@@ -765,22 +754,20 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Hvis du benytter en en tilfældig-nøgletype, vil partitionens data blive "
-"ødelagt ved hver genstart. Den bør kun benyttes til swap-partitioner."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Kunne ikke hente krypteringskomponenter"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Der opstod en fejl under forsøget på at hente krypteringskomponenter."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -788,8 +775,6 @@ msgstr "Der opstod en fejl under forsøget på at hente krypteringskomponenter."
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Fortsæt med at installere krypteringskomponenter på trods af, at der ikke er "
-"nok hukommelse?"
 
 #. Type: boolean
 #. Description
@@ -800,6 +785,3 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Det ser ud til, at der ikke er nok hukommelse til at installere yderligere "
-"krypteringskomponenter. Hvis du vælger at fortsætte alligevel, kan det være, "
-"at installationen mislykkes."

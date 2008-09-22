@@ -1,3 +1,33 @@
+partman-crypto (36) unstable; urgency=low
+
+  [ Updated translations ]
+  * Bengali (bn.po) by Mahay Alam Khan (মাহে আলম খান)
+  * Bosnian (bs.po) by Armin Besirovic
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po)
+  * Esperanto (eo.po) by Felipe Castro
+  * Hebrew (he.po) by Omer Zak
+  * Hindi (hi.po) by Kumar Appaiah
+  * Croatian (hr.po) by Josip Rodin
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Georgian (ka.po) by Aiet Kolkhi
+  * Central Khmer (km.po) by KHOEM Sokhem
+  * Kurdish (ku.po) by Amed Çeko Jiyan
+  * Latvian (lv.po) by Aigars Mahinovs
+  * Macedonian (mk.po) by Arangel Angov
+  * Nepali (ne.po) by Shiva Prasad Pokharel
+  * Norwegian Nynorsk (nn.po) by Håvard Korsvoll
+  * Panjabi (pa.po) by Amanpreet Singh Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Russian (ru.po) by Yuri Kozlov
+  * Albanian (sq.po) by Elian Myftiu
+  * Serbian (sr.po) by Veselin Mijušković
+  * Tamil (ta.po) by Dr.T.Vasudevan
+  * Ukrainian (uk.po) by Євгеній Мещеряков
+  * Simplified Chinese (zh_CN.po) by Deng Xiyue
+
+ -- Otavio Salvador <otavio@debian.org>  Sun, 21 Sep 2008 21:09:33 -0300
+
 partman-crypto (35) unstable; urgency=low
 
   [ Jérémy Bobbio ]

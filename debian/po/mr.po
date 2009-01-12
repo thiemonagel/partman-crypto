@@ -3,28 +3,6 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-#
-#
-# Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files
-#
-# Debian Installer translators, please read the D-I i18n documentation
-# in doc/i18n/i18n.txt
-#
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2008-06-15 23:24+0530\n"
-"Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
-"Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
-"<janabhaaratii@cdacmumbai.in>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
 #. Type: text
 #. Description
 #. File system name
@@ -32,7 +10,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "सांकेतिकीकरणाकरिता भौतिक खंड"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -41,7 +19,7 @@ msgstr "सांकेतिकीकरणाकरिता भौतिक �
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr "सांकेतिकी"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -51,7 +29,7 @@ msgstr "सांकेतिकी"
 #. :sl3:
 #: ../partman-crypto.templates:3001
 msgid "Loopback (loop-AES)"
-msgstr "लूपबॅक (लूप-एईएस)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -61,7 +39,7 @@ msgstr "लूपबॅक (लूप-एईएस)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "उपकरण-मॅपर (डीएम-क्रिप्ट)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -70,7 +48,7 @@ msgstr "उपकरण-मॅपर (डीएम-क्रिप्ट)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "सक्रीय नाही"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -78,14 +56,14 @@ msgstr "सक्रीय नाही"
 #. :sl3:
 #: ../partman-crypto.templates:7001
 msgid "Encryption method:"
-msgstr "सांकेतिकीकरण पद्धत:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "या विभाजनाकरिता सांकेतिकीकरण पद्धत"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -95,8 +73,6 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"सांकेतिकीकरणाची पद्धत बदलल्यास नवीन सांकेतिकीकरण पद्धतीकरिता अन्य सांकेतिकीकरण-संबंधी "
-"क्षेत्रांना त्यांची मूलनिर्धारित मूल्ये प्राप्त होतील."
 
 #. Type: text
 #. Description
@@ -104,14 +80,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:9001
 msgid "Encryption:"
-msgstr "सांकेतिकीकरण:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "या विभाजनाकरिता सांकेतिकीकरण:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -119,14 +95,14 @@ msgstr "या विभाजनाकरिता सांकेतिकी�
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "की आकार:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "या विभाजनाकरिता की आकार:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -136,7 +112,7 @@ msgstr "या विभाजनाकरिता की आकार:"
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr "आयव्ही अलॉगरिथम:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -145,7 +121,7 @@ msgstr "आयव्ही अलॉगरिथम:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "या विभाजनाकरिता प्रारंभीकरण व्हेक्टर निर्मिती अलॉगरिथम:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -159,10 +135,6 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"प्रत्येक सेक्टरचा प्रारंभीकरण व्हेक्टर व्युत्पादीत करण्याकरिता वेगवेगळे अलॉगरिथम अस्तित्वात "
-"आहेत. या निवडीचा सांकेतिकीकरणाच्या सुरक्षिततेवर प्रभाव पडतो. सामान्यतः, जुन्या प्रणालीशी "
-"अनुरूपता हे कारण वगळता याकरिता शिफारस केलेली मूलनिर्धारित निवड बदलण्याची काहीच गरज "
-"नाही."
 
 #. Type: text
 #. Description
@@ -170,14 +142,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "सांकेतिकीकरण कीः"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "या विभाजनाकरिता सांकेतिकीकरण की चा प्रकारः"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -185,14 +157,14 @@ msgstr "या विभाजनाकरिता सांकेतिकी�
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "सांकेतिकीकरण की हॅशः"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "या विभाजनाकरिता सांकेतिकीकरण की हॅशचा प्रकारः"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -204,9 +176,6 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"सांकेतिकीकरण की कूटशब्द (पासफ्रेज) मधून एक-दिशा हॅश लावून व्युत्पादीत केलेली असते. सामान्यतः "
-"याकरिता शिफारस केलेली मूलनिर्धारित निवड बदलण्याची काहीच गरज नाही. असे चुकीच्या दिशेने "
-"केले गेल्यास सांकेतिकीकरणाची शक्ती कमी होण्याची शक्यता असते."
 
 #. Type: text
 #. Description
@@ -215,35 +184,35 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr "डेटा पुसाः"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:20001
 msgid "no"
-msgstr "नाही"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:21001
 msgid "yes"
-msgstr "होय"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "या विभाजनावरील डेटा पुसून टाका"
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "${DEVICE} वरील सर्व माहिती खरंच पुसावयाची आहे का?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -254,22 +223,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"${DEVICE} वरील माहिती वर नवीन माहिती लिहिली जाईल.  ही पायरी पुर्ण केल्यावर आधीची "
-"माहिती परत मिळवता येणार नाही. आधीची माहिती पुसणे थांबवण्याची ही शेवटची संधी आहे. "
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr " ${DEVICE} वरील माहिती पुसली जात आहे"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "${DEVICE} वरील माहिती पुसली जाण्याची क्रिया अयशस्वी"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -279,43 +246,41 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"${DEVICE} वरील माहिती पुसली जाण्याच्या क्रियेत त्रुटी आलेली आहे. आधीची माहिती पुसली "
-"गेली नाही."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "सांकेतिकीकरण संरचित होत आहे... "
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "संकेताधारित गटांची संरचना करा"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "सांकेतिकीकरणाकरीता कोणतीही विभाजने नाहीत"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "सांकेतिकीकरणाकरीता कोणतीही विभाजने निवडलेली नाहीत"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:29001
 msgid "Required programs missing"
-msgstr "आवश्यक आज्ञावल्या अनुपलब्ध"
+msgstr ""
 
 #. Type: note
 #. Description
@@ -325,15 +290,13 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"partman-crypto चे कार्य योग्य रीतीने होण्यासाठी आवश्यक असलेल्या एक वा अधिक आज्ञावल्या "
-"या डेबीअन अधिष्ठापकामध्ये अंतर्भूत नाहीत."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr "आवश्यक सांकेतिकिकरण पर्याय अनुपलब्ध"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -343,8 +306,6 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"${DEVICE} करीता सांकेतिकिकरण पर्याय अपूर्ण आहेत. परत विभाजन मेनूला जाउन आवश्यक असलेले "
-"सर्व पर्याय निवडा"
 
 #. Type: text
 #. Description
@@ -354,7 +315,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "अनुपलब्ध"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -362,14 +323,14 @@ msgstr "अनुपलब्ध"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "संकेताधारित खंड ${DEV} करिता भौतिक खंड म्हणून वापरात"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "सांकेतिकिकरण पॅकेज अधिष्ठापना अयशस्वी"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -379,7 +340,6 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"गाभा मॉड्यूल पॅकेज ${PACKAGE} सापडले नाही किंवा त्याची अधिष्ठापना करताना त्रुटी आली."
 
 #. Type: error
 #. Description
@@ -390,15 +350,13 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"या प्रणालीचा पुनरारंभ झाल्यावर संकेताधारित विभाजने संरचित करण्यात समस्या येण्याची शक्यता "
-"आहे. नंतर आवश्यक पॅकेज(जेस्) अधिष्ठापित करून ही त्रुटी तुम्ही दूर करू शकाल."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "हे बदल हार्डडीस्कवर लिहून संकेताधारित खंडांची संरचना करायची?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -408,8 +366,6 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"संकेताधारित खंडांची संरचना करता येण्यापूर्वी, सध्याची विभाजन योजना डीस्कवर लिहिली "
-"पाहिजे. हे बदल पुन्हा पूर्ववत करता येणार नाहीत."
 
 #. Type: boolean
 #. Description
@@ -424,51 +380,48 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"संकेताधारित खंड संरचित झाल्यावर संकेताधारित खंड असलेल्या डिस्कस् वरील विभाजनांमधे नंतर आणखी "
-"कोणतेही बदल करण्याची अनुमती नाही. पुढे जाण्यापूर्वी, या डिस्कस् साठीच्या सध्याच्या विभाजन "
-"योजनेबद्दल आपण समाधानी असल्याची निश्चिती करून घ्या."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "सध्याचा विभाजन आराखडा ठेऊन संकेताधारित खंड संरचित करायचे?"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "संकेताधारित खंडांची संरचना अयशस्वी"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "संकेताधारित खंडांची संरचना करतांना त्रूटी आली."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "संरचना मधेच सोडून देण्यात आली आहे."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "संकेताधारित खंडांचे प्रारंभीकरण अयशस्वी"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "संकेताधारित खंडांची संरचना करताना त्रुटी."
+msgstr ""
 
 #. Type: text
 #. Description
@@ -479,7 +432,7 @@ msgstr "संकेताधारित खंडांची संरचन�
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr "कूटशब्द"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -490,7 +443,7 @@ msgstr "कूटशब्द"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr "कळफाईल (GnuPG)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -501,21 +454,21 @@ msgstr "कळफाईल (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr "स्वैर कळ"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
-msgstr "असुरक्षित अदलाबदलीची जागा आढळली"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "एक असुरक्षित अदलाबदलीची जागा आढळून आली आहे."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -526,9 +479,6 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"ही घातक त्रुटी आहे, कारण असंकेताधारित डीस्कवर संवेदनशील माहिती लिहिली जाऊ शकेल. या "
-"डिस्कवर प्रवेश असलेल्या कोणत्याही व्यक्तीला सांकेतिकीकरणाची माहिती किंवा कुटशब्द मिळवणे "
-"शक्य होईल.."
 
 #. Type: error
 #. Description
@@ -539,22 +489,20 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"(स्वॅपऑफ चालवून वगैरे) अदलाबदलीची जागा कार्यअक्षम करा किंवा संकेताधारित अदलाबदल जागेची "
-"संरचना करा आणि नंतर पुन्हा संकेताधारित खंडांची संरचना करा. हा प्रोग्राम आता इथेच बंद होईल."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "सांकेतिकीकरण कुटशब्दः"
+msgstr ""
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "${DEVICE} संकेताधारित करण्यासाठी कुटशब्द निवडा."
+msgstr ""
 
 #. Type: password
 #. Description
@@ -566,9 +514,6 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"सांकेतिकीकरणाची एकूण ताकद कुटशब्दावरच जास्त अवलंबून असल्याने, सहज ओळखता न येणारा, "
-"शब्दकोषात न सापडणारा किंवा तुमच्याशी थेट निगडित होऊ न शकणारा कुटशब्द निवडण्याची "
-"काळजी आपण घेणे आवश्यक आहे."
 
 #. Type: password
 #. Description
@@ -579,15 +524,13 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"चांगल्या कुटशब्दात अंक, अक्षरे, विरामचिन्हे यांचे योग्य मिश्रण असावे. कुटशब्दामध्ये २० किंवा २० "
-"पेक्षा जास्त चिन्हे असावीत अशी शिफारस केली जाते."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "पडताळणीसाठी कुटशब्द पुन्हा द्याः"
+msgstr ""
 
 #. Type: password
 #. Description
@@ -596,28 +539,28 @@ msgstr "पडताळणीसाठी कुटशब्द पुन्ह�
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "कुटशब्द अचूकपणे लिहिला आहे कि नाही हे तपासण्यासाठी तोच कुटशब्द परत लिहा."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "कुटशब्द लिहिताना त्रुटी"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "तुम्ही लिहिलेले दोन्ही कुटशब्द एकसमान नाहीत. पुन्हा प्रयत्न करा."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
 msgid "Empty passphrase"
-msgstr "रिकामा कुटशब्द"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -626,14 +569,14 @@ msgstr "रिकामा कुटशब्द"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr "तुम्ही कुटशब्द रिक्त ठेवला आहे, जे मान्य नाही. रिक्त नसलेला कुटशब्द निवडा."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "दुर्बल कुटशब्द वापरायचा?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -646,36 +589,34 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"तुम्ही ${MINIMUM} पेक्षा कमी चिन्हांचा कुटशब्द निवडलेला आहे, जो फारच दुर्बल मानला जातो. "
-"तुम्ही यापेक्षा सशक्त कुटशब्द निवडला पाहिजे."
 
 #. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "${DEVICE} करिता सांकेतिकीकरण कळ आता तयार होत आहे."
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "कळ डेटा यशस्वीपणे निर्माण झाला."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr "कळफाईल तयार करणे असफल"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "कळफाईल तयार करताना त्रुटी आली."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -685,7 +626,7 @@ msgstr "कळफाईल तयार करताना त्रुटी �
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "सांकेतिकीकरण संरचना असफल"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -696,15 +637,13 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"तुम्ही मूल फाईल प्रणाली ठेवण्यासाठी संकेताधारित विभाजनाची निवड केली आहे. या साठी ज्यावर "
-"गाभा व इनिटआरडी साठवता येईल असे स्वतंत्र /boot विभाजन आवश्यक आहे."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "आपण मागे जाउन /boot विभाजन संरचित केले पाहिजे."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -716,9 +655,6 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"तुम्ही संकेताधारित विभाजनावर /boot फाईल प्रणाली ठेवण्याचे ठरवले आहे. परंतू हे शक्य नाही "
-"कारण आरंभसूचक गाभा व इनिटआरडी लोड करू शकणार नाही. असेच पुढे चालू ठेवल्यास झालेली "
-"अधिष्ठापना वापरण्यायोग्य असणार नाही."
 
 #. Type: error
 #. Description
@@ -727,14 +663,14 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "तुम्ही मागे जाउन /boot फाईल प्रणालीसाठी संकेताधारित नसलेले विभाजन निवडले पाहिजे."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr "तुम्ही स्वैर कळ वापरू इच्छित असल्याबद्दल तुमची खात्री आहे?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -744,8 +680,6 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"तुम्ही ${DEVICE} करीता स्वैर कळ वापरणे निवडले आहे, पण विभाजकाला त्यावर फाईल प्रणाली "
-"तयार करण्याची विनंती केली आहे."
 
 #. Type: boolean
 #. Description
@@ -755,29 +689,27 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"स्वैर कळ पद्धती वापरल्याने विभाजनावरील सर्व माहिती प्रत्येक पुनरारंभाच्या वेळी पुसली जाईल. "
-"फक्त अदलाबदल विभाजनासाठीच ही वापरली पाहिजे."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "क्रिप्टो घटक डाऊनलोड करताना अपयश"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr "अतिरिक्त क्रिप्टो घटक डाऊनलोड करण्याच्या प्रयत्नात त्रुटी आली."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr "स्मृती कमी असूनही क्रिप्टो घटक अधिष्ठापित करायचे?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -788,5 +720,3 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"अतिरिक्त क्रिप्टो घटक अधिष्ठापित करण्यासाठी पुरेशी स्मृती असल्याचे वाटत नाही. तरीही पुढे "
-"जायचे तुम्ही ठरवल्यास अधिष्ठापन प्रक्रिया अयशस्वी होण्याची शक्यता आहे."

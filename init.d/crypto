@@ -100,12 +100,15 @@ create_cryptdisk () {
 		fi
 	fi
 
+	db_get partman/default_filesystem
+	default_fs="$RET"
+
 	case $keytype in
 		random)
 			filesystem=linux-swap
 			;;
 		keyfile|*)
-			filesystem=ext3
+			filesystem="$default_fs"
 			;;
 	esac
 
@@ -128,7 +131,7 @@ create_cryptdisk () {
 			>$cryptpart/format
 			;;
 
-		ext3)
+		$default_fs)
 			echo format > $cryptpart/method
 			>$cryptpart/format
 			>$cryptpart/use_filesystem

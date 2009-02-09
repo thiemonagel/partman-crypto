@@ -1,3 +1,10 @@
+partman-crypto (37) UNRELEASED; urgency=low
+
+  * Merge from Ubuntu:
+    - Honour partman/default_filesystem. Requires partman-base 129.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 09 Feb 2009 21:48:48 +0100
+
 partman-crypto (36) unstable; urgency=low
 
   [ Updated translations ]

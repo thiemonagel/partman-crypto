@@ -9,7 +9,7 @@ Vcs-Svn: svn://svn.debian.org/d-i/trunk/packages/partman/partman-crypto
 Package: partman-crypto
 XC-Package-Type: udeb
 Architecture: any
-Depends: partman-base (>= 124), cdebconf-udeb (>= 0.133), ${shlibs:Depends}, ${misc:Depends}
+Depends: partman-base (>= 129), cdebconf-udeb (>= 0.133), ${shlibs:Depends}, ${misc:Depends}
 Description: Add to partman support for block device encryption
 
 Package: partman-crypto-dm

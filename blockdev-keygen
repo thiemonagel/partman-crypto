@@ -27,7 +27,7 @@ umask 077
 minlen=8
 
 passphrase_is_weak () {
-	test $(echo -n "$1" | wc -c) -lt $minlen
+	test $(printf %s "$1" | wc -c) -lt $minlen
 }
 
 get_passphrase () {
@@ -150,7 +150,7 @@ create_gnupg_keyfile () {
 	fi
 
 	# Fork off gnupg encrypting pipe
-	echo -n "$pass" > $passfifo &
+	printf %s "$pass" > $passfifo &
 	gnupg_encrypt $keyfile $passfifo &
 	gpg_pid=$!
 
@@ -163,7 +163,7 @@ create_gnupg_keyfile () {
 	fi
 
 	# for use by init.d/crypto
-	echo -n "$pass" > $passfifo &
+	printf %s "$pass" > $passfifo &
 	return 0
 }
 
@@ -240,7 +240,7 @@ case $keytype in
 			problem_dialog
 			exit 1
 		fi
-		echo -n "$pass" > $keyfile
+		printf %s "$pass" > $keyfile
 		;;
 
 	random)

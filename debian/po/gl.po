@@ -15,9 +15,9 @@ msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
 "POT-Creation-Date: 2008-05-31 22:51+0000\n"
-"PO-Revision-Date: 2009-02-12 20:57+0100\n"
+"PO-Revision-Date: 2009-02-24 13:43+0100\n"
 "Last-Translator: marce villarino <mvillarino@users.sourceforge.net>\n"
-"Language-Team: gl <proxecto@trasno.net>\n"
+"Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,8 +93,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"Se cambia o método de cifrado hanse cambiar outros campos relacionados co "
-"cifrado aos seus valores por defecto para o novo método de cifrado."
+"Se troca o método de cifrado hanse reiniciar outros campos relacionados co "
+"cifrado aos valores predeterminados para o novo método de cifra."
 
 #. Type: text
 #. Description
@@ -117,14 +117,14 @@ msgstr "Cifrado para esta partición:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "Tamaño de clave:"
+msgstr "Tamaño da chave:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Tamaño da clave para esta partición:"
+msgstr "Tamaño da chave para esta partición:"
 
 #. Type: text
 #. Description
@@ -134,7 +134,7 @@ msgstr "Tamaño da clave para esta partición:"
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr "Algoritmo do VI:"
+msgstr "Algoritmo do IV:"
 
 #. Type: select
 #. Description
@@ -158,8 +158,8 @@ msgid ""
 "compatibility with older systems."
 msgstr ""
 "Existen distintos algoritmos para derivar o vector de inicialización de cada "
-"sector. Esta selección inflúe na seguridade do cifrado. Normalmente non hai "
-"motivo ningún para cambialo do valor por defecto recomendado, agás por "
+"sector. Esta escolla inflúe na seguridade do cifrado. Normalmente non hai "
+"motivo ningún para escoller un valor que non sexa o predeterminado, agás por "
 "compatibilidade con outros sistemas máis antigos."
 
 #. Type: text
@@ -168,14 +168,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "Clave de cifrado:"
+msgstr "Chave de cifrado:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "Tipo de clave de cifrado para esta partición:"
+msgstr "Tipo da chave de cifrado para esta partición:"
 
 #. Type: text
 #. Description
@@ -183,14 +183,14 @@ msgstr "Tipo de clave de cifrado para esta partición:"
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "Función \"hash\" da clave de cifrado:"
+msgstr "«hash» da chave de cifrado:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipo de función \"hash\" para a clave de cifrado para esta partición:"
+msgstr "Tipo de «hash» da chave de cifrado desta partición:"
 
 #. Type: select
 #. Description
@@ -202,10 +202,10 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"A clave de cifrado derívase do contrasinal aplicándolle unha función \"hash"
-"\" irreversible. Normalmente non hai motivo ningún para cambialo do valor "
-"por defecto recomendado, e facelo dun xeito incorrecto pode reducir a forza "
-"do cifrado."
+"A chave de cifrado obtense do contrasinal aplicándolle unha función «hash« "
+"irreversíbel. Normalmente non hai motivo ningún para cambialo do valor "
+"predeterminado, o recomendado; facelo dun xeito incorrecto pode reducir a "
+"forza do cifrado."
 
 #. Type: text
 #. Description
@@ -242,7 +242,7 @@ msgstr "Borrar os datos desta partición"
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "¿Está seguro de querer borrar os datos de ${DEVICE}?"
+msgstr "Desexa realmente borrar os datos de ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -279,7 +279,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Houbo un erro ao tentar borrar os datos de ${DEVICE}. Non se borraron os "
+"Aconteceu un erro ao tentar borrar os datos de ${DEVICE}. Non se borraron os "
 "datos."
 
 #. Type: text
@@ -294,7 +294,7 @@ msgstr "A preparar o cifrado..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Configurar volumes cifrados"
+msgstr "Configurar os volumes cifrados"
 
 #. Type: note
 #. Description
@@ -308,7 +308,7 @@ msgstr "Non hai particións para cifrar"
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "Non se seleccionou ningunha partición para cifrar."
+msgstr "Non se escolleu ningunha partición para cifrala."
 
 #. Type: note
 #. Description
@@ -344,7 +344,7 @@ msgid ""
 "partition menu and select all required options."
 msgstr ""
 "As opcións de cifrado de ${DEVICE} están incompletas. Volte ao menú de "
-"particionamento e seleccione tódalas opcións requiridas."
+"particionamento e escolla todas as opcións requiridas."
 
 #. Type: text
 #. Description
@@ -379,8 +379,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"Non foi posíbel atopar o paquete do módulo do núcleo ${PACKAGE} ou houbo un "
-"erro durante a instalación."
+"Ou non foi posíbel atopar o paquete do módulo do núcleo ${PACKAGE} ou "
+"aconteceu un erro durante a instalación."
 
 #. Type: error
 #. Description
@@ -400,7 +400,8 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "¿Gravar os cambios nos discos e configurar os volumes cifrados?"
+msgstr ""
+"Desexa gardar as modificacións aos discos e configurar os volumes cifrados?"
 
 #. Type: boolean
 #. Description
@@ -410,8 +411,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Antes de poder configurar os volumes cifrados ten que se grabar no disco o "
-"esquema actual de particionamento. Estes cambios non se poden desfacer."
+"Antes de poder configurar os volumes cifrados ten que se gravar no disco o "
+"esquema actual de particionamento. Estas modificacións non se poden desfacer."
 
 #. Type: boolean
 #. Description
@@ -426,10 +427,10 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Despois de configurar os volumes cifrados non se han permitir máis cambios "
-"nas particións dos discos que conteñan volumes cifrados. Decida se está "
-"satisfeito co esquema de particionamento actual destes discos antes de "
-"continuar."
+"Despois de configurar os volumes cifrados non se han permitir máis "
+"alteracións nas particións dos discos que conteñan volumes cifrados. Decida "
+"se está satisfeito co esquema de particionamento actual destes discos antes "
+"de continuar."
 
 #. Type: boolean
 #. Description
@@ -437,7 +438,7 @@ msgstr ""
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
-"¿Conservar o esquema de particionamento actual e configurar os volumes "
+"Desexa conservar o esquema de particionamento actual e configurar os volumes "
 "cifrados?"
 
 #. Type: error
@@ -445,14 +446,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Fallo na configuración dos volumes cifrados"
+msgstr "Fallou a configuración dos volumes cifrados"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Houbo un erro ao configurar os volumes cifrados."
+msgstr "Aconteceu un erro ao configurar os volumes cifrados."
 
 #. Type: error
 #. Description
@@ -473,7 +474,7 @@ msgstr "Fallo na inicialización do volume cifrado"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Houbo un erro ao configurar os volumes cifrados."
+msgstr "Aconteceu un erro ao configurar os volumes cifrados."
 
 #. Type: text
 #. Description
@@ -495,7 +496,7 @@ msgstr "Contrasinal"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr "Ficheiro de clave (GnuPG)"
+msgstr "Ficheiro de chave (GnuPG)"
 
 #. Type: text
 #. Description
@@ -506,7 +507,7 @@ msgstr "Ficheiro de clave (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr "Clave aleatoria"
+msgstr "Chave aleatoria"
 
 #. Type: error
 #. Description
@@ -531,9 +532,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Isto é un erro grave xa que podería ser que se gravaran datos sensibles no "
-"disco sen cifrar. Isto permitiría que calquera con acceso ao disco "
-"recuperara partes da clave de cifrado ou contrasinal."
+"Isto é un erro grave xa que podería ser que se gardaran sen cifrar datos "
+"sensibles no disco. Isto permitiría que calquera con acceso ao disco "
+"recuperara partes da chave de cifrado ou contrasinal."
 
 #. Type: error
 #. Description
@@ -574,7 +575,7 @@ msgid ""
 msgstr ""
 "A potencia xeral do cifrado depende moito deste contrasinal, así que debería "
 "ter tino de escoller un contrasinal que sexa difícil de adiviñar. Non "
-"debería ser unha palabra ou frase que apareza no diccionario nin unha frase "
+"debería ser unha palabra ou frase que apareza no dicionario nin unha frase "
 "que se poida asociar con facilidade a vostede."
 
 #. Type: password
@@ -586,7 +587,7 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Un bo contrasinal contén unha mestura de letras, números e signos de "
+"Un bon contrasinal contén unha mestura de letras, números e signos de "
 "puntuación. Recoméndase que os contrasinais teñan 20 ou máis caracteres."
 
 #. Type: password
@@ -594,7 +595,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "Volva introducir o contrasinal para verificar:"
+msgstr "Volva introducir o contrasinal para verificalo:"
 
 #. Type: password
 #. Description
@@ -612,7 +613,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "Erro na introducción do contrasinal"
+msgstr "Erro na introdución do contrasinal"
 
 #. Type: error
 #. Description
@@ -636,15 +637,15 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Introduciu un contrasinal baleiro, que non se admite. Escolla un contrasinal "
-"que non estea baleiro."
+"Introduciu un contrasinal baleiro, e isto non se admite. Escolla un "
+"contrasinal que non estea baleiro."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "¿Empregar o contrasinal feble?"
+msgstr "Desexa empregar un contrasinal feble?"
 
 #. Type: boolean
 #. Description
@@ -665,28 +666,28 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "Estase a crear a clave de cifrado de ${DEVICE}."
+msgstr "Estase a crear a chave de cifrado de ${DEVICE}."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "Creáronse con éxito os datos da clave."
+msgstr "Creáronse con éxito os datos da chave."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr "Fallo na creación do ficheiro de claves"
+msgstr "Fallou a creación do ficheiro de chaves"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "Houbo un erro ao crear o ficheiro de claves."
+msgstr "Aconteceu un erro ao crear o ficheiro de chaves."
 
 #. Type: error
 #. Description
@@ -696,7 +697,7 @@ msgstr "Houbo un erro ao crear o ficheiro de claves."
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "Fallo na configuración do cifrado"
+msgstr "Fallou a configuración do cifrado"
 
 #. Type: error
 #. Description
@@ -707,8 +708,8 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Escolleu armacenar o sistema de ficheiros raíz nunha partición cifrada. Esta "
-"característica precisa dunha partición /boot separada na que armacenar o "
+"Escolleu almacenar o sistema de ficheiros raíz nunha partición cifrada. Esta "
+"característica precisa dunha partición /boot separada na que almacenar o "
 "núcleo e o initrd."
 
 #. Type: error
@@ -728,9 +729,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Escolleu armacenar o sistema de ficheiros /boot nunha partición cifrada. "
-"Isto non é posible porque o cargador de inicio non ha poder cargar o núcleo "
-"e o initrd. Se continúa ha producir unha instalación que non se pode "
+"Escolleu almacenar o sistema de ficheiros /boot nunha partición cifrada. "
+"Isto non é posíbel porque o cargador de arranque non ha poder cargar o "
+"núcleo e o initrd. Se continúa ha producir unha instalación que non se pode "
 "empregar."
 
 #. Type: error
@@ -749,7 +750,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr "¿Está seguro de querer empregar unha clave aleatoria?"
+msgstr "Desexa realmente empregar unha chave aleatoria?"
 
 #. Type: boolean
 #. Description
@@ -759,8 +760,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Escolleu un tipo de clave aleatoria para ${DEVICE} pero solicitou ao "
-"particionador un sistema de ficheiros nel."
+"Escolleu un tipo de chave aleatoria para ${DEVICE} pero solicitou ao "
+"particionador que cree un sistema de ficheiros nel."
 
 #. Type: boolean
 #. Description
@@ -770,7 +771,7 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Un tipo de clave aleatoria significa que os datos da partición han ser "
+"Usar tipo de chave aleatoria implica que os datos da partición han ser "
 "destruídos en cada reinicio. Isto só se debería empregar en particións de "
 "intercambio."
 
@@ -779,7 +780,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Non foi posíbel descargar os compoñentes criptográficos"
+msgstr "Non foi posíbel obter as compoñentes criptográficas"
 
 #. Type: error
 #. Description
@@ -787,7 +788,8 @@ msgstr "Non foi posíbel descargar os compoñentes criptográficos"
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Houbo un erro ao tentar descargar os compoñentes criptográficos adicionais."
+"Aconteceu un erro ao tentar descargar as compoñentes criptográficas "
+"adicionais."
 
 #. Type: boolean
 #. Description
@@ -795,7 +797,8 @@ msgstr ""
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"¿Instalar os compoñentes criptográficos a pesares de non ter memoria dabondo?"
+"Desexa continuar coa instalación das compoñentes criptográficas a pesares de "
+"non ter memoria de abondo?"
 
 #. Type: boolean
 #. Description
@@ -806,6 +809,6 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Semella que non hai suficiente memoria para instalar os compoñentes "
-"criptográficos adicionais. Se decide continuar pode fallar o proceso de "
+"Semella que non hai suficiente memoria para instalar as compoñentes "
+"criptográficas adicionais. Se decide continuar pode fallar o proceso de "
 "instalación."

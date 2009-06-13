@@ -1,11 +1,27 @@
-partman-crypto (37) UNRELEASED; urgency=low
+partman-crypto (37) unstable; urgency=low
 
+  [ Colin Watson ]
   * Merge from Ubuntu:
     - Honour partman/default_filesystem. Requires partman-base 129.
   * Use 'printf %s' rather than 'echo -n' for portability, to ease testing
     under different shells.
 
- -- Colin Watson <cjwatson@debian.org>  Mon, 09 Feb 2009 21:48:48 +0100
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Alvarez Costales
+  * Bengali (bn.po) by Md. Rezwan Shahid
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by marce villarino
+  * Hindi (hi.po) by Kumar Appaiah
+  * Italian (it.po) by Milo Casagrande
+  * Kazakh (kk.po) by Dauren Sarsenov
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Marathi (mr.po) by Sampada
+  * Russian (ru.po) by Yuri Kozlov
+  * Tagalog (tl.po) by Eric Pareja
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jun 2009 08:01:52 +0200
 
 partman-crypto (36) unstable; urgency=low
 

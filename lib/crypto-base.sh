@@ -428,7 +428,19 @@ crypto_reload_loop() {
 crypto_load_module() {
 	local module=$1
 
-	if [ "$module" != loop-aes ]; then
+	if [ "$module" = dm_mod ]; then
+		if dmsetup version >/dev/null 2>&1; then
+			return 0
+		fi
+		modprobe -q $module
+		return $?
+	elif [ "$module" = dm_crypt ]; then
+		if dmsetup targets | cut -d' ' -f1 | grep -q '^crypt$'; then
+			return 0
+		fi
+		modprobe -q $module
+		return $?
+	elif [ "$module" != loop-aes ]; then
 		modprobe -q $module
 		return $?
 	fi

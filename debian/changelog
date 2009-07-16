@@ -3,6 +3,7 @@ partman-crypto (38) UNRELEASED; urgency=low
   * Merge from Ubuntu:
     - Handle dm_mod and dm_crypt specially in crypto_load_module, to cope
       with them being built-in.
+  * Don't require depmod on successive runs of crypto_load_udebs.
 
  -- Colin Watson <cjwatson@debian.org>  Tue, 16 Jun 2009 11:57:21 +0100
 

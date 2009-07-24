@@ -423,3 +423,29 @@ _Description: Proceed to install crypto components despite insufficient memory?
  There does not seem to be sufficient memory available to install
  additional crypto components. If you choose to go ahead and continue
  anyway, the installation process could fail.
+
+Template: partman-crypto/mainmenu
+Type: select
+Choices-C: create, finish
+# Note to translators : Please keep your translations of the choices
+# below a 65 columns limit (which means 65 characters
+# in single-byte languages)
+# :sl3:
+__Choices: Create encrypted volumes, Finish
+_Description: Encryption configuration actions
+ This menu allows you to configure encrypted volumes.
+
+Template: partman-crypto/create/partitions
+Type: multiselect
+Choices: ${PARTITIONS}
+# :sl3:
+_Description: Devices to encrypt:
+ Please select the devices to be encrypted.
+ .
+ You can select one or more devices.
+
+Template: partman-crypto/create/nosel
+Type: error
+# :sl3:
+_Description: No devices selected
+ No devices were selected for encryption.

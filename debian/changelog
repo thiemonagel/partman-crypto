@@ -3,6 +3,17 @@ partman-crypto (38) UNRELEASED; urgency=low
   * Merge from Ubuntu:
     - Handle dm_mod and dm_crypt specially in crypto_load_module, to cope
       with them being built-in.
+    - Add a menu under "Configure encrypted volumes", making this more in
+      line with partman-lvm and partman-md.
+    - Rearrange crypto configuration. Instead of requiring partitions to be
+      set for use as physical volumes for encryption first, we now offer all
+      partitions that could be used as physical volumes, and automatically
+      set them up that way on request. (Unlike LVM and RAID, we still offer
+      the configuration menu for each partition being newly set up this way,
+      since it's the only opportunity the user will have to change
+      encryption settings.) This allows us to offer our main menu option
+      more or less all the time, and should require many fewer keystrokes to
+      operate. Thanks to Max Vozeler for review.
   * Don't require depmod on successive runs of crypto_load_udebs.
 
  -- Colin Watson <cjwatson@debian.org>  Tue, 16 Jun 2009 11:57:21 +0100

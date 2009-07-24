@@ -1,6 +1,157 @@
 . /lib/partman/lib/base.sh
 . /lib/partman/lib/commit.sh
 
+crypto_list_allowed() {
+	local IFS
+	local partitions
+	local freenum=1
+	for dev in $DEVICES/*; do
+		if [ ! -d "$dev" ] || [ -f "$dev/crypt_realdev" ]; then
+			continue
+		fi
+		cd "$dev"
+
+		open_dialog PARTITIONS
+		partitions="$(read_paragraph)"
+		close_dialog
+
+		local id size fs path
+		IFS="$TAB"
+		echo "$partitions" |
+		while { read x1 id size x4 fs path x7; [ "$id" ]; }; do
+			restore_ifs
+			if [ "$fs" = free ]; then
+				printf "%s\t%s\t%s\t%s free #%d\n" "$dev" "$id" "$size" "$(mapdevfs "$(cat "$dev/device")")" "$freenum"
+				freenum="$(($freenum + 1))"
+			else
+				printf "%s\t%s\t%s\t%s\n" "$dev" "$id" "$size" "$(mapdevfs "$path")"
+			fi
+			IFS="$TAB"
+		done
+		restore_ifs
+	done
+}
+
+crypto_list_allowed_free() {
+	local line
+
+	IFS="$NL"
+	for line in $(crypto_list_allowed); do
+		restore_ifs
+		local dev="${line%%$TAB*}"
+		local rest="${line#*$TAB}"
+		local id="${rest%%$TAB*}"
+		if [ -e "$dev/locked" ] || [ -e "$dev/$id/locked" ]; then
+			continue
+		fi
+		echo "$line"
+		IFS="$NL"
+	done
+	restore_ifs
+}
+
+# Prepare a partition for use as a physical volume for encryption. If this
+# returns true, then it did some work and a commit is necessary. Prints the
+# new path.
+crypto_prepare () {
+	local dev="$1"
+	local id="$2"
+	local num size parttype fs path
+
+	cd "$dev"
+	open_dialog PARTITION_INFO "$id"
+	read_line num id size freetype fs path x7
+	close_dialog
+
+	if [ "$fs" = free ]; then
+		local newtype
+
+		case $freetype in
+		    primary)
+			newtype=primary
+			;;
+		    logical)
+			newtype=logical
+			;;
+		    pri/log)
+			local parttype
+			open_dialog PARTITIONS
+			while { read_line x1 x2 x3 parttype x5 x6 x7; [ "$parttype" ]; }; do
+				if [ "$parttype" = primary ]; then
+					has_primary=yes
+				fi
+			done
+			close_dialog
+			if [ "$has_primary" = yes ]; then
+				newtype=logical
+			else
+				newtype=primary
+			fi
+			;;
+		esac
+
+		open_dialog NEW_PARTITION $newtype ext2 $id full $size
+		read_line num id x3 x4 x5 path x7
+		close_dialog
+	fi
+
+	mkdir -p "$id"
+	local method="$(cat "$id/method" 2>/dev/null || true)"
+	if [ "$method" = swap ]; then
+		disable_swap "$id"
+	fi
+	if [ "$method" != crypto ]; then
+		crypto_prepare_method "$id" dm-crypt || return 1
+		rm -f "$id/use_filesystem"
+		rm -f "$id/format"
+		echo dm-crypt >"$id/crypto_type"
+		echo crypto >"$id/method"
+
+		# cloned-and-hacked from
+		# partman-base/choose_partition/partition_tree/do_option
+		while true; do
+			local device="$(humandev $(cat device))"
+			db_subst partman/active_partition DEVICE "$device"
+			db_subst partman/active_partition PARTITION "$num"
+			if [ -f  $id/detected_filesystem ]; then
+				local filesystem=$(cat $id/detected_filesystem)
+				RET=''
+				db_metaget partman/filesystem_long/"$filesystem" description || RET=''
+				if [ "$RET" ]; then
+					filesystem="$RET"
+				fi
+				db_subst partman/text/there_is_detected FILESYSTEM "$filesystem"
+				db_metaget partman/text/there_is_detected description
+			else
+				db_metaget partman/text/none_detected description
+			fi
+			db_subst partman/active_partition OTHERINFO "${RET}"
+
+			if [ -f $id/detected_filesystem ] && [ -f $id/format ]; then
+				db_metaget partman/text/destroyed description
+				db_subst partman/active_partition DESTROYED "${RET}"
+			else
+				db_subst partman/active_partition DESTROYED ''
+			fi
+
+			ask_user /lib/partman/active_partition "$dev" "$id"
+			exitcode="$?"
+			if [ "$exitcode" -ge 128 ] && [ "$exitcode" -lt 192 ]; then
+				exit "$exitcode" # killed by signal
+			elif [ "$exitcode" -ge 100 ]; then
+				break
+			fi
+		done
+
+		update_partition "$dev" "$id"
+		echo "$path"
+		return 0
+	fi
+
+	echo "$path"
+	return 1
+}
+
 dm_dev_is_safe() {
 	local maj min dminfo deps
 	maj="$1"

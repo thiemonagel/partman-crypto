@@ -12,8 +12,97 @@
 
 . /lib/partman/lib/crypto-base.sh
 
-crypto_check_setup || exit 1
+done_something=
+
+do_create () {
+	local parts line pv output vg pathmap
+	parts=""
+	pathmap=""
+
+	# Look for free partitions
+	IFS="$NL"
+	for line in $(crypto_list_allowed_free); do
+		restore_ifs
+		local dev="${line%%$TAB*}"
+		line="${line#*$TAB}"
+		local id="${line%%$TAB*}"
+		line="${line#*$TAB}"
+		local size="${line%%$TAB*}"
+		local path="${line#*$TAB}"
+		cd $dev
+		if [ -s "$id/visual_filesystem" ]; then
+			local visual="$(cat "$id/visual_filesystem")"
+			output=$(printf "%-30s (%sMB; %s)" "$path" "$(convert_to_megabytes $size)" "$visual")
+		else
+			output=$(printf "%-30s (%sMB)" "$path" "$(convert_to_megabytes $size)")
+		fi
+		parts="${parts:+$parts, }$output"
+		pathmap="${pathmap:+$pathmap$NL}$path$TAB$dev//$id"
+		IFS="$NL"
+	done
+	restore_ifs
+	if [ -z "$parts" ]; then
+		db_input critical partman-crypto/nothing_to_setup
+		db_go || true
+		return
+	fi
+
+	db_subst partman-crypto/create/partitions PARTITIONS "$parts"
+	db_reset partman-crypto/create/partitions
+	db_input critical partman-crypto/create/partitions
+	db_go || return
+	db_get partman-crypto/create/partitions
+	if [ -z "$RET" ]; then
+		db_input critical partman-crypto/create/nosel
+		db_go || true
+		return
+	fi
+	parts=$(echo "$RET" | sed -e "s/ *([^)]*) *//g; s/ *, */\\$NL/g")
+
+	local newparts=
+	local need_commit=
+	IFS="$NL"
+	for part in $parts; do
+		for line in $pathmap; do
+			restore_ifs
+			if [ "${line%%$TAB*}" = "$part" ]; then
+				local devid="${line#*$TAB}"
+				local path
+				if path="$(crypto_prepare "${devid%//*}" "${devid#*//}")"; then
+					need_commit=true
+				fi
+				newparts="${newparts:+$newparts }$path"
+				break
+			fi
+			IFS="$NL"
+		done
+		IFS="$NL"
+	done
+	restore_ifs
+	parts="$newparts"
+
+	if [ "$need_commit" ]; then
+		confirm_changes partman-crypto || exit 0
+		commit_changes partman-crypto/commit_failed || exit $?
+	fi
+}
 
 confirm_changes partman-crypto || exit 0
+commit_changes partman-crypto/commit_failed || exit $?
+
+while :; do
+	db_input critical partman-crypto/mainmenu
+	db_go || exit 10
+	db_get partman-crypto/mainmenu
+	case $RET in
+	    create)	do_create ;;
+	    finish)	break ;;
+	    *)
+		logger -t partman-crypto "Unknown selection '$RET'"
+		break ;;
+	esac
+done
+
+crypto_check_setup || exit 1
 
 crypto_setup yes || exit 1

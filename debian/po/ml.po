@@ -810,7 +810,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "എന്‍ക്രിപ്റ്റ് ചെയ്ത വാള്യങ്ങള്‍ ക്രമീകരിയ്ക്കുക"
 
@@ -822,13 +821,12 @@ msgstr "എന്‍ക്രിപ്റ്റ് ചെയ്ത വാള്�
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "പൂര്‍ത്തിയാക്കുക"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണത്തില്‍ പരാജയം"
 
@@ -836,7 +834,6 @@ msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണത�
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "ഇപ്പോഴുള്ള വിഭജന വിന്യാസം സൂക്ഷിച്ചു കൊണ്ട് എന്‍ക്രിപ്റ്റഡ് വാള്യങ്ങള്‍ ക്രമീകരിക്കണോ?"
 
@@ -845,36 +842,36 @@ msgstr "ഇപ്പോഴുള്ള വിഭജന വിന്യാസം 
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "എന്‍ക്രിപ്റ്റ് ചെയ്യാന്‍ വിഭജനങ്ങളൊന്നുമില്ല"
+msgstr "ഉപയോഗിയ്ക്കേണ്ട സേവനങ്ങള്‍:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "ദയവായി പുതിയ വാള്യം ഗ്രൂപ്പിനുള്ള ഉപകരണങ്ങള്‍ തെരഞ്ഞെടുക്കുക."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "നിങ്ങള്‍ക്കു് ഒന്നോ അതിലധികമോ ഉപകരണങ്ങള്‍ തെരഞ്ഞെടുക്കാന്‍ പറ്റും."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "ഭൌതിക വാള്യങ്ങളൊന്നും തെരഞ്ഞെടുത്തില്ല"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "എന്‍ക്രിപ്ഷന്‍ ചെയ്യാനായി വിഭജനങ്ങളൊന്നും തന്നെ തെരഞ്ഞെടുക്കപ്പെട്ടിട്ടില്ല."

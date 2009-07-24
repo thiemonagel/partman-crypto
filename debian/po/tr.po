@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-07-24 13:41+0200\n"
+"PO-Revision-Date: 2009-07-08 13:06+0200\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -820,7 +820,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "Şifrelenmiş cilt yapılandır"
 
@@ -832,13 +831,12 @@ msgstr "Şifrelenmiş cilt yapılandır"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Bitir"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "Şifreleme yapılandırma hatası"
 
@@ -846,7 +844,6 @@ msgstr "Şifreleme yapılandırma hatası"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
 "Mevcut bölümleme düzeni korunarak şifrelenmiş ciltler yapılandırılsın mı?"
@@ -856,36 +853,36 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "Herhangi bir bölüm bulunamadı"
+msgstr "Kullanılacak servisler:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Lütfen oluşturulacak yeni cilt grubuna ilişkin aygıtları seçin."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "Bir veya daha fazla aygıt seçebilirsiniz."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "Herhangi bir fiziksel cilt seçilmedi"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "Şifrelemek için bir bölüm seçilmedi."

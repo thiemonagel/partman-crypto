@@ -49,7 +49,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-06-16 00:09+0200\n"
+"PO-Revision-Date: 2009-05-10 20:22+0200\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -858,7 +858,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "Configurar los volúmenes cifrados"
 
@@ -870,13 +869,12 @@ msgstr "Configurar los volúmenes cifrados"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Terminar"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "Fallo en la configuración del cifrado"
 
@@ -884,7 +882,6 @@ msgstr "Fallo en la configuración del cifrado"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
 "¿Desea mantener la distribución de particiones existente y configurar los "
@@ -895,36 +892,37 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "No se han encontrado particiones para cifrar"
+msgstr "Servicios a utilizar:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
 msgstr ""
+"Por favor, seleccione los dispositivos para el nuevo grupo de volúmenes."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "Puede seleccionar uno o más dispositivos."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "No se ha seleccionado un volumen físico"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "No se ha seleccionado una partición para el cifrado."

@@ -819,7 +819,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "Set opp krypterte dataområde"
 
@@ -831,13 +830,12 @@ msgstr "Set opp krypterte dataområde"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Ferdig"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "Krypteringsoppsett mislukkast"
 
@@ -845,7 +843,6 @@ msgstr "Krypteringsoppsett mislukkast"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "Hald på noverande partisjonsoppsett og set opp krypterte dataområde?"
 
@@ -854,36 +851,36 @@ msgstr "Hald på noverande partisjonsoppsett og set opp krypterte dataområde?"
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "Ingen partisjonar å kryptere"
+msgstr "Tenester som skal brukast:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Vel einingane for det nye grupperte dataområdet."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "Du kan velje ei eller fleire einingar."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "Ingen fysiske dataområde valt"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "Ingen partisjonar er valt for kryptering."

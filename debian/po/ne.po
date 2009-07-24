@@ -804,7 +804,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "गुप्तीकरण गरिएको भोल्युमहरू कन्फिगर गर्नुहोस्"
 
@@ -816,13 +815,12 @@ msgstr "गुप्तीकरण गरिएको भोल्युमह�
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "समाप्त गर्नुहोस्"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "गुप्तीकरण कन्फिगरेशन असफल भयो "
 
@@ -830,7 +828,6 @@ msgstr "गुप्तीकरण कन्फिगरेशन असफल 
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "हालको विभाजन सजावट राख्नुहुन्छ र गुप्तीकृत भोल्युम कन्फिगर गर्नुहुन्छ?"
 
@@ -839,36 +836,36 @@ msgstr "हालको विभाजन सजावट राख्नुह
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "गुप्तीकरण गर्न कुनै विभाजनहरू छैन "
+msgstr "प्रयोग गरिने सेवा:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "नयाँ भोल्युम समूहका लागि यन्त्रहरू चयन गर्नुहोस् ।"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "तपाईँ एउटा वा धेरै यन्त्रहरू चयन गर्न सक्नुहुन्छ ।"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "कुनै भौतिक भोल्युम चयन भएको छैन"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "गुप्तीकरणका लागि कुनै विभाजनहरू चयन भएको छैन ।"

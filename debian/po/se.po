@@ -813,14 +813,15 @@ msgstr "Čále ovddeš rievdadusaid skearruide ja joatkke?"
 #: ../partman-crypto.templates:56001
 #, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Eai gávdnon partišunerehahtti media"
+msgstr "Nammabálvváid čujuhusat:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Vállje boallobeavdešlája maid heivehit."
 
 #. Type: multiselect
 #. Description
@@ -833,8 +834,9 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices selected"
-msgstr ""
+msgstr "Ii gavdnan fierpmádatlavttaid"
 
 #. Type: error
 #. Description

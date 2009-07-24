@@ -9,14 +9,14 @@
 # This file is distributed under the same license as debian-installer.
 # Inaki Larranaga Murgoitio 2005
 #
-# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008.
+# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008, 2009.
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-01-14 09:20+0200\n"
+"PO-Revision-Date: 2009-07-20 00:08+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -818,7 +818,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "Konfiguratu bolumen enkriptatuak"
 
@@ -830,13 +829,12 @@ msgstr "Konfiguratu bolumen enkriptatuak"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Amaitu"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "Enkriptazioaren konfigurazioak huts egin du"
 
@@ -844,7 +842,6 @@ msgstr "Enkriptazioaren konfigurazioak huts egin du"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "Uneko partizio-diseinua mantendu eta bolumen enkriptatuak konfiguratu?"
 
@@ -853,36 +850,36 @@ msgstr "Uneko partizio-diseinua mantendu eta bolumen enkriptatuak konfiguratu?"
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "Ez dago partiziorik enkriptatzeko"
+msgstr "Erabiliko diren zerbitzuak:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Hautatu bolumen talde berriaren gailuak."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "Gailu bat edo gehiago hauta ditzakezu."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "Ez da bolumen fisikorik hautatu"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "Ez da partiziorik hautatu enkriptatzeko."

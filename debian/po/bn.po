@@ -813,7 +813,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "এনক্রিপ্টেড ভলিউম কনফিগার করো"
 
@@ -825,13 +824,12 @@ msgstr "এনক্রিপ্টেড ভলিউম কনফিগার 
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "সম্পন্ন"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "এনক্রিপশন কনফিগারেশনে ব্যর্থতা"
 
@@ -839,7 +837,6 @@ msgstr "এনক্রিপশন কনফিগারেশনে ব্য�
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
 "সাম্প্রতিক পার্টিশন বিন্যাস অপরিবর্তিত রেখে এনক্রিপ্টেড ভলিউম কনফিগার করবো কি?"
@@ -849,36 +846,36 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "এনক্রিপ্ট করার জন্য কোন পার্টিশনই নেই"
+msgstr "ব্যবহারের সেবাসমূহ:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "অনুগ্রহপূর্বক নতুন ভলিউম গ্রুপের জন্য ডিভাইস বেছে নিন।"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "আপনি এক বা একাধিক ডিভাইস বেছে নিতে পারেন।"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "কোন প্রকৃত ভলিউম বাছাই করা হয় নি"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "কোন পার্টিশনকেই এনক্রিপশন করার জন্য বেছে নেয়া হয় নি।"

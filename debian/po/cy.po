@@ -745,8 +745,9 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
+#, fuzzy
 msgid "Create encrypted volumes"
-msgstr ""
+msgstr "Cyflunio'r rhwydwaith"
 
 #. Type: select
 #. Choices
@@ -756,13 +757,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Gorffen"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
+#, fuzzy
 msgid "Encryption configuration actions"
-msgstr ""
+msgstr "Gweithredion cyflunio Amlddisg"
 
 #. Type: select
 #. Description
@@ -774,33 +776,37 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Devices to encrypt:"
-msgstr ""
+msgstr "Gwasanaethau i'w defnyddio"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Os gwelwch yn dda, dewiswch ddyfeisiau ar gyfer y Grŵp Cyfrol newydd."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
+msgstr "Gallwch ddewis un neu fwy dyfais."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices selected"
-msgstr ""
+msgstr "Dewiswyd dim cyfrol corfforol"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr ""
+msgstr "Does dim dyfeisiau amlddisg ar gael i'w dileu."

@@ -802,7 +802,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "மறைகுறியாக்கப்பட்ட தொகுதி (%s)"
 
@@ -814,13 +813,12 @@ msgstr "மறைகுறியாக்கப்பட்ட தொகுத�
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "முடி"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "மறைக்குறியீடு வடிவமைப்பு தோல்வியுற்றது."
 
@@ -828,7 +826,6 @@ msgstr "மறைக்குறியீடு வடிவமைப்பு �
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
 "தற்போதய பகிர்வு உருவமைப்பை அப்படியே வைத்துக் கொண்டு மறைகுறியாக்கப்பட்ட தொகுதிகளைஎல்விஎம் "
@@ -839,36 +836,36 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "மறைகுறியாக்க பகிர்வுகள் ஏதும் காணவில்லை"
+msgstr "பயன்படுத்த வேண்டிய சேவைகள்:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "புதிய தொகுதிப் பிரிவுக்கு சாதனங்களை தேர்ந்தெடுக்கவும்."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "நீங்கள் ஒன்று அல்லது அதிக சாதனங்களை தேர்வு செய்யலாம்."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "பௌதிக தொகுதி ஏதும் தேர்ந்தெடுக்கப் படவில்லை"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "மறைகுறியீடாக்கப்பட எந்த பகிர்வும் தேர்வு செய்யப்படவில்லை."

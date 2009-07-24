@@ -802,7 +802,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "कूटबद्ध वॉल्यूम व्यवस्थित करें"
 
@@ -814,13 +813,12 @@ msgstr "कूटबद्ध वॉल्यूम व्यवस्थित 
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "पूर्ण"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "कूट संबद्ध व्यवस्थापन असफल रहा"
 
@@ -828,7 +826,6 @@ msgstr "कूट संबद्ध व्यवस्थापन असफल
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "वर्तमान पार्टिशनिंग अभिन्यास को रखते हुए और एनक्रिप्टेड वॉल्यूमों को व्यवस्थित करें?"
 
@@ -837,36 +834,36 @@ msgstr "वर्तमान पार्टिशनिंग अभिन्�
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं"
+msgstr "नेमसर्वर पता:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "कृपया नये वॉल्यूम समूह के लिए उपकरणों का चुनाव करें."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "आप एक या अधिक उपकरण चुन सकते हैं."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "कोई भी फ़िज़िकल वॉल्यूम नहीं चुना गया"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं चुने गये हैं."

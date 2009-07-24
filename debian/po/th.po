@@ -4,16 +4,16 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Thai translation of debian-installer.
-# Copyright (C) 2006-2008 Software in the Public Interest, Inc.
+# Copyright (C) 2006-2009 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2008.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-06-05 16:54+0700\n"
+"PO-Revision-Date: 2009-02-18 13:15+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -787,7 +787,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "ตั้งค่าโวลุมเข้ารหัสลับ"
 
@@ -799,13 +798,12 @@ msgstr "ตั้งค่าโวลุมเข้ารหัสลับ"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "เสร็จสิ้น"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "ตั้งค่าการเข้ารหัสลับไม่สำเร็จ"
 
@@ -813,7 +811,6 @@ msgstr "ตั้งค่าการเข้ารหัสลับไม่
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "จะคงโครงสร้างพาร์ทิชันปัจจุบันไว้ แล้วตั้งค่าโวลุมเข้ารหัสลับหรือไม่?"
 
@@ -822,36 +819,36 @@ msgstr "จะคงโครงสร้างพาร์ทิชันปั
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "ไม่มีพาร์ทิชันที่จะเข้ารหัสลับ"
+msgstr "บริการที่จะใช้:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "กรุณาเลือกอุปกรณ์สำหรับกลุ่มโวลุมใหม่"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "คุณสามารถเลือกอุปกรณ์ได้มากกว่าหนึ่งชิ้น"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "ไม่ได้เลือก physical volume"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "ไม่ได้เลือกพาร์ทิชันที่จะเข้ารหัสลับ"

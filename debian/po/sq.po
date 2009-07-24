@@ -812,7 +812,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "Konfiguro volumet e kriptuara"
 
@@ -824,13 +823,12 @@ msgstr "Konfiguro volumet e kriptuara"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Mbaro"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "Dështim në konfigurimin e kriptimit"
 
@@ -838,7 +836,6 @@ msgstr "Dështim në konfigurimin e kriptimit"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "Ti ruaj ndarjet e tanishme dhe t'i konfiguroj volumet e kriptuara?"
 
@@ -847,36 +844,36 @@ msgstr "Ti ruaj ndarjet e tanishme dhe t'i konfiguroj volumet e kriptuara?"
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "Asnjë ndarje për t'u kriptuar"
+msgstr "Shërbimet për përdorim:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Të lutem zgjidh një dispozitiv për Grupet e Rinj të Volumit."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "Mund të zgjedhësh një apo më shumë dispozitva."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "Nuk u zgjodh asnjë volum fizik"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "Nuk është zgjedhur asnjë ndarje për kriptim"

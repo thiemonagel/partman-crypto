@@ -10,14 +10,14 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
 # Contributor:
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2007.
+# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2009
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: d-i\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-03-20 18:08+0530\n"
+"PO-Revision-Date: 2008-08-07 11:42+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
 "MIME-Version: 1.0\n"
@@ -802,7 +802,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "એન્ક્રિપ્ટ કરેલ કદોને રૂપરેખાંકિત કરે છે"
 
@@ -814,13 +813,12 @@ msgstr "એન્ક્રિપ્ટ કરેલ કદોને રૂપર
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "સંપૂર્ણ"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "એનક્રિપ્શન રૂપરેખાંકન નિષ્ફળ"
 
@@ -828,7 +826,6 @@ msgstr "એનક્રિપ્શન રૂપરેખાંકન નિષ�
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "હાલની પાર્ટિશન પધ્ધતિ એમ જ રાખશો અને એન્ક્રિપ્ટેડ કદો રૂપરેખાંકિત કરશો?"
 
@@ -837,36 +834,36 @@ msgstr "હાલની પાર્ટિશન પધ્ધતિ એમ જ �
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "એન્ક્રિપ્ટ કરવા કોઇ પાર્ટિશનો નથી"
+msgstr "ઉપયોગ કરવા માટેની સેવાઓ:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "મહેરબાની કરી નવા કદ સમૂહ માટે ઉપકરણો પસંદ કરો."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "તમે એક અથવા વધુ ઉપકરણો પસંદ કરી શકો છો."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "કોઇ ભૌતિક કદો પસંદ કરેલ નથી"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "એન્ક્રિપ્ટ કરવા માટે કોઇ પાર્ટિશનો પસંદ કરેલ નથી."

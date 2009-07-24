@@ -805,7 +805,7 @@ msgstr "Шифровани волумен (%s)"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "Заврши"
 
 #. Type: select
 #. Description
@@ -827,14 +827,15 @@ msgstr "Да запишем претходне измене на диск и н�
 #: ../partman-crypto.templates:56001
 #, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Није пронађена ниједна партиција"
+msgstr "Сервиси који ће се користити:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Молим изаберите тип мултидиск уређаја који ће бити креиран."
 
 #. Type: multiselect
 #. Description
@@ -847,8 +848,9 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices selected"
-msgstr ""
+msgstr "Тип мрежног уређаја:"
 
 #. Type: error
 #. Description

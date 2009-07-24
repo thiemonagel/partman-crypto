@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-04-10 04:47+0100\n"
+"PO-Revision-Date: 2008-05-01 11:22-0000\n"
 "Last-Translator: tegegne tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic\n"
 "MIME-Version: 1.0\n"
@@ -754,7 +754,6 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 #, fuzzy
-#| msgid "Configure encrypted volumes"
 msgid "Create encrypted volumes"
 msgstr "የተመሰጠረ ይዘትን አስተካክል"
 
@@ -766,13 +765,12 @@ msgstr "የተመሰጠረ ይዘትን አስተካክል"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr ""
+msgstr "ጨርሽ"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Encryption configuration failure"
 msgid "Encryption configuration actions"
 msgstr "የመመስጠር ማስተካከል ስህተት"
 
@@ -780,7 +778,6 @@ msgstr "የመመስጠር ማስተካከል ስህተት"
 #. Description
 #: ../partman-crypto.templates:55002
 #, fuzzy
-#| msgid "Keep current partition layout and configure encrypted volumes?"
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "አሁን ያለው የዲስክ ከፋላ ይቀመጥና የተመሰጠረ ይዘት ይስተካከል?"
 
@@ -789,36 +786,36 @@ msgstr "አሁን ያለው የዲስክ ከፋላ ይቀመጥና የተመሰ�
 #. :sl3:
 #: ../partman-crypto.templates:56001
 #, fuzzy
-#| msgid "No partitions to encrypt"
 msgid "Devices to encrypt:"
-msgstr "ለመመስጠር ምንም ምንም ክፋይ አልተገኘም።"
+msgstr "የምጠቀመው መገልገያዎች፦"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "እባክዎ አዲሱ ይዘት ግሩፕ ውስጥ ማስገባት የሚፈልጉዋቸውን አካላት ይምረጡ፡፡"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
-
-#. Type: error
-#. Description
-#. :sl3:
-#: ../partman-crypto.templates:57001
-msgid "No devices selected"
-msgstr ""
+msgstr "አንድ ወይም ብዙ ቁስን መምረጥ ይችላሉ፡፡"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 #, fuzzy
-#| msgid "No partitions have been selected for encryption."
+msgid "No devices selected"
+msgstr "ካዝና አልተመረጠም"
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "ለመመስጠር ምንም ክፋይ አልተመረጠም፡፡"

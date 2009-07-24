@@ -12,8 +12,6 @@
 
 . /lib/partman/lib/crypto-base.sh
 
-done_something=
-
 do_create () {
 	local parts line pv output vg pathmap
 	parts=""

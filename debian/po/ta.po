@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-31 22:51+0000\n"
+"Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-24 22:47+0000\n"
 "PO-Revision-Date: 2008-09-04 16:51+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
@@ -793,3 +793,82 @@ msgid ""
 msgstr ""
 "கூடுதல் மறைகுரியீட்டு பகுதிகளை நிறுவ தேவையான நினைவகம் இல்லை. நீங்கள் மேலும் தொடர "
 "விரும்பினால் நிறுவல் தோல்வியடையக் கூடும்."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:55001
+#, fuzzy
+#| msgid "Configure encrypted volumes"
+msgid "Create encrypted volumes"
+msgstr "மறைகுறியாக்கப்பட்ட தொகுதி (%s)"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:55001
+msgid "Finish"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:55002
+#, fuzzy
+#| msgid "Encryption configuration failure"
+msgid "Encryption configuration actions"
+msgstr "மறைக்குறியீடு வடிவமைப்பு தோல்வியுற்றது."
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:55002
+#, fuzzy
+#| msgid "Keep current partition layout and configure encrypted volumes?"
+msgid "This menu allows you to configure encrypted volumes."
+msgstr ""
+"தற்போதய பகிர்வு உருவமைப்பை அப்படியே வைத்துக் கொண்டு மறைகுறியாக்கப்பட்ட தொகுதிகளைஎல்விஎம் "
+"(LVM) ஐ வடிவமைக்கவா?"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+#, fuzzy
+#| msgid "No partitions to encrypt"
+msgid "Devices to encrypt:"
+msgstr "மறைகுறியாக்க பகிர்வுகள் ஏதும் காணவில்லை"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid "Please select the devices to be encrypted."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid "You can select one or more devices."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+msgid "No devices selected"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
+#| msgid "No partitions have been selected for encryption."
+msgid "No devices were selected for encryption."
+msgstr "மறைகுறியீடாக்கப்பட எந்த பகிர்வும் தேர்வு செய்யப்படவில்லை."

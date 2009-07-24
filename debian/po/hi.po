@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
-"Report-Msgid-Bugs-To: debian-boot@lists.debian.org\n"
-"POT-Creation-Date: 2008-05-31 22:51+0000\n"
+"Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
+"POT-Creation-Date: 2009-07-24 22:47+0000\n"
 "PO-Revision-Date: 2009-07-06 22:29-0400\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -793,3 +793,80 @@ msgid ""
 msgstr ""
 "अतिरिक्त क्रिप्टो अवयवों को संस्थापित करने के लिए पर्याप्त मेमोरी उपलब्ध प्रतीत नहीं हो "
 "रही है. यदि आप जारी रखने को चुनते हैं तो संस्थापना की प्रक्रिया असफल हो सकती है."
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:55001
+#, fuzzy
+#| msgid "Configure encrypted volumes"
+msgid "Create encrypted volumes"
+msgstr "कूटबद्ध वॉल्यूम व्यवस्थित करें"
+
+#. Type: select
+#. Choices
+#. Note to translators : Please keep your translations of the choices
+#. below a 65 columns limit (which means 65 characters
+#. in single-byte languages)
+#. :sl3:
+#: ../partman-crypto.templates:55001
+msgid "Finish"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:55002
+#, fuzzy
+#| msgid "Encryption configuration failure"
+msgid "Encryption configuration actions"
+msgstr "कूट संबद्ध व्यवस्थापन असफल रहा"
+
+#. Type: select
+#. Description
+#: ../partman-crypto.templates:55002
+#, fuzzy
+#| msgid "Keep current partition layout and configure encrypted volumes?"
+msgid "This menu allows you to configure encrypted volumes."
+msgstr "वर्तमान पार्टिशनिंग अभिन्यास को रखते हुए और एनक्रिप्टेड वॉल्यूमों को व्यवस्थित करें?"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+#, fuzzy
+#| msgid "No partitions to encrypt"
+msgid "Devices to encrypt:"
+msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं"
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid "Please select the devices to be encrypted."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:56001
+msgid "You can select one or more devices."
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+msgid "No devices selected"
+msgstr ""
+
+#. Type: error
+#. Description
+#. :sl3:
+#: ../partman-crypto.templates:57001
+#, fuzzy
+#| msgid "No partitions have been selected for encryption."
+msgid "No devices were selected for encryption."
+msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं चुने गये हैं."

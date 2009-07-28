@@ -1,4 +1,4 @@
-partman-crypto (38) UNRELEASED; urgency=low
+partman-crypto (38) unstable; urgency=low
 
   * Merge from Ubuntu:
     - Handle dm_mod and dm_crypt specially in crypto_load_module, to cope
@@ -16,7 +16,27 @@ partman-crypto (38) UNRELEASED; urgency=low
       operate. Thanks to Max Vozeler for review.
   * Don't require depmod on successive runs of crypto_load_udebs.
 
- -- Colin Watson <cjwatson@debian.org>  Tue, 16 Jun 2009 11:57:21 +0100
+  [ Updated translations ]
+  * Asturian (ast.po) by Marcos Alvarez Costales
+  * Belarusian (be.po) by Pavel Piatruk
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by Felipe Castro
+  * Basque (eu.po) by Piarres Beobide
+  * French (fr.po) by Christian Perrier
+  * Hindi (hi.po)
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Marathi (mr.po) by Sampada
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Ivan Masár
+  * Swedish (sv.po) by Daniel Nylander
+  * Turkish (tr.po) by Mert Dirik
+  * Wolof (wo.po) by Mouhamadou Mamoune Mbacke
+  * Simplified Chinese (zh_CN.po) by Deng Xiyue
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 28 Jul 2009 19:11:05 +0100
 
 partman-crypto (37) unstable; urgency=low
 

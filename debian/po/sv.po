@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-07-19 12:03+0100\n"
+"PO-Revision-Date: 2009-07-26 12:32+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -821,9 +821,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Konfigurera krypterade volymer"
+msgstr "Skapa krypterade volymer"
 
 #. Type: select
 #. Choices
@@ -838,34 +837,28 @@ msgstr "Slutför"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Krypteringskonfigurationen misslyckad"
+msgstr "Konfigurationsåtgärder för kryptering"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Behåll den nuvarande partitionsinformationen och konfigurera krypterade "
-"volymer?"
+msgstr "Denna meny låter dig konfigurera krypterade volymer."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Tjänster att använda:"
+msgstr "Enheter att kryptera:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Välj enheter för den nya volymgruppen."
+msgstr "Välj enheter att kryptera."
 
 #. Type: multiselect
 #. Description
@@ -878,14 +871,12 @@ msgstr "Du kan välja en eller flera enheter."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Inga valda fysiska volymer"
+msgstr "Inga enheter valda"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Inga partitioner har valts för kryptering."
+msgstr "Inga enheter har valts för kryptering."

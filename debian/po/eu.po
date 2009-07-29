@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-07-28 22:48+0200\n"
+"PO-Revision-Date: 2009-07-29 13:11+0200\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Basque <debian-l10n-eu@debian.lists.org>\n"
 "MIME-Version: 1.0\n"
@@ -120,14 +120,14 @@ msgstr "Partizio honen enkriptazioa:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "Gako-tamaina:"
+msgstr "Gako tamaina::"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Partizio honen gako-tamaina:"
+msgstr "Partizio honen gako tamaina:"
 
 #. Type: text
 #. Description
@@ -817,9 +817,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Konfiguratu bolumen enkriptatuak"
+msgstr "Sortu bolumen enkriptatuak"
 
 #. Type: select
 #. Choices
@@ -847,17 +846,15 @@ msgstr "Menu honek bolumen enkriptatuak konfiguratzeko aukera ematen dizu."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Erabiliko diren zerbitzuak:"
+msgstr "Enkriptatzeko gailuak:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Hautatu bolumen talde berriaren gailuak."
+msgstr "Hautatu enkriptatuko diren gailuak."
 
 #. Type: multiselect
 #. Description
@@ -870,14 +867,12 @@ msgstr "Gailu bat edo gehiago hauta ditzakezu."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Ez da bolumen fisikorik hautatu"
+msgstr "Ez da gailurik hautatu"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Ez da partiziorik hautatu enkriptatzeko."
+msgstr "Ez da gailurik hautatu enkriptatzeko."

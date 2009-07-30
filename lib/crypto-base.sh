@@ -1,35 +1,17 @@
 . /lib/partman/lib/base.sh
 . /lib/partman/lib/commit.sh
 
+# Would this partition be allowed as a physical volume for crypto?
+crypto_allowed() {
+	local dev=$1
+	local id=$2
+
+	# Allow unless this is a crypto device
+	[ ! -f "$dev/crypto_realdev" ]
+}
+
 crypto_list_allowed() {
-	local IFS
-	local partitions
-	local freenum=1
-	for dev in $DEVICES/*; do
-		if [ ! -d "$dev" ] || [ -f "$dev/crypt_realdev" ]; then
-			continue
-		fi
-		cd "$dev"
-
-		open_dialog PARTITIONS
-		partitions="$(read_paragraph)"
-		close_dialog
-
-		local id size fs path
-		IFS="$TAB"
-		echo "$partitions" |
-		while { read x1 id size x4 fs path x7; [ "$id" ]; }; do
-			restore_ifs
-			if [ "$fs" = free ]; then
-				printf "%s\t%s\t%s\t%s free #%d\n" "$dev" "$id" "$size" "$(mapdevfs "$(cat "$dev/device")")" "$freenum"
-				freenum="$(($freenum + 1))"
-			else
-				printf "%s\t%s\t%s\t%s\n" "$dev" "$id" "$size" "$(mapdevfs "$path")"
-			fi
-			IFS="$TAB"
-		done
-		restore_ifs
-	done
+	partman_list_allowed crypto_allowed
 }
 
 crypto_list_allowed_free() {

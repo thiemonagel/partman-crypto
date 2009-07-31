@@ -858,7 +858,7 @@ msgstr "Action de configuration du chiffrement"
 #. Description
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Ce menu permet la cofiguration des volumes chiffrés."
+msgstr "Ce menu permet la configuration des volumes chiffrés."
 
 #. Type: multiselect
 #. Description

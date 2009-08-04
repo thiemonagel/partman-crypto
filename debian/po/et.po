@@ -8,14 +8,14 @@
 # This translation is released under the same licence as the debian-installer.
 #
 # Siim Põder <siim@p6drad-teel.net>, 2007.
-# Mattias Põldaru <mahfiaz@gmail.com>, 2009.
+# Mattias Põldaru <mahfiaz gmail com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-04-24 07:13+0300\n"
+"PO-Revision-Date: 2009-08-03 14:47+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
 "Language-Team: Eesti\n"
 "MIME-Version: 1.0\n"
@@ -92,6 +92,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Krüpteeringumeetodi muutmine määrab teiste krüpteeringuga seotud väljadele "
+"vaikimisi väärtused."
 
 #. Type: text
 #. Description
@@ -665,7 +667,7 @@ msgstr "Luuakse krüpteerimisvõtit ${DEVICE} jaoks."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Võtme andmete loomine edukas."
 
 #. Type: error
 #. Description
@@ -807,9 +809,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Seadista krüpteeritud andmeruum"
+msgstr "Krüpteeritud andmeruumi loomine"
 
 #. Type: select
 #. Choices
@@ -824,34 +825,28 @@ msgstr "Lõpeta"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Krüpteerimise seadistamine nurjus"
+msgstr "Krüpteerimise seadistamine"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Kas jätta praegune partitsioonide paigutus ja seadistada krüpteeritud "
-"kettaruum?"
+msgstr "Sellest menüüst saab seadistada krüpteeritud kettaruume."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Kasutatavad teenused:"
+msgstr "Krüpteeritavad seadmed:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Palun vali uuele köitegrupile seadmed."
+msgstr "Palun vali krüpteerimiseks seadmed."
 
 #. Type: multiselect
 #. Description
@@ -864,14 +859,12 @@ msgstr "Võid valida ühe või enam seadet."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Ei valitud ühtki füüsilist köidet"
+msgstr "Pole valitud ühtki seadet"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Krüpteerimiseks pole valitud ühtki partitsiooni."
+msgstr "Krüpteerimiseks pole valitud ühtki seadet."

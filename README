@@ -1,14 +1,4 @@
 
- IMPORTANT:
-   This code is still pre-beta and has not been audited for flaws that
-   could introduce weaknesses in the encryption. Please don't use it for
-   any confidential data before the beta release.
-
-------------------------------------------------------------------------
- STATUS:
-  See http://wiki.debian.org/DebianInstaller/PartmanCrypto
-  and also TODO and BUGS in the source tree
-
 ------------------------------------------------------------------------
 The scripts do stuff more or less in the following order:
 

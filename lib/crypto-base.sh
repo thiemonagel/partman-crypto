@@ -80,7 +80,7 @@ crypto_prepare () {
 	mkdir -p "$id"
 	local method="$(cat "$id/method" 2>/dev/null || true)"
 	if [ "$method" = swap ]; then
-		disable_swap "$id"
+		disable_swap "$dev" "$id"
 	fi
 	if [ "$method" != crypto ]; then
 		crypto_prepare_method "$id" dm-crypt || return 1

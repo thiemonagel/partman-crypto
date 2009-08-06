@@ -120,6 +120,12 @@ crypttab_add_entry () {
 	# Check source device
 	source=$realdev
 
+	# Use UUID for LUKS devices
+	if cryptsetup isLuks "$source"; then
+		local uuid=$(cryptsetup luksUUID "$source")
+		source="UUID=$uuid"
+	fi
+
 	# Add entry to crypttab
 	echo "$target $source $keyfile $opts" >> /target/etc/crypttab
 }

@@ -1,4 +1,4 @@
-partman-crypto (39) UNRELEASED; urgency=low
+partman-crypto (39) unstable; urgency=low
 
   * Use ask_active_partition from partman-base >= 133 and
     add corresponding versioned depends.
@@ -6,7 +6,15 @@ partman-crypto (39) UNRELEASED; urgency=low
   * Correct call to disable_swap. Requires partman-base >= 134.
   * Use UUID= to specify source device in /etc/crypttab. 
 
- -- Max Vozeler <xam@debian.org>  Thu, 30 Jul 2009 16:57:06 +0200
+  [ Updated translations ]
+  * Esperanto (eo.po) by Felipe Castro
+  * Estonian (et.po) by Mattias Põldaru
+  * Basque (eu.po) by Piarres Beobide
+  * Russian (ru.po) by Yuri Kozlov
+  * Slovak (sk.po) by Ivan Masár
+  * Simplified Chinese (zh_CN.po) by Deng Xiyue
+
+ -- Max Vozeler <xam@debian.org>  Fri, 07 Aug 2009 15:49:09 +0200
 
 partman-crypto (38) unstable; urgency=low
 

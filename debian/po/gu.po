@@ -818,16 +818,14 @@ msgstr "સંપૂર્ણ"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "એનક્રિપ્શન રૂપરેખાંકન નિષ્ફળ"
+msgstr "એનક્રિપ્શન રૂપરેખાંકન ક્રિયાઓ"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "હાલની પાર્ટિશન પધ્ધતિ એમ જ રાખશો અને એન્ક્રિપ્ટેડ કદો રૂપરેખાંકિત કરશો?"
+msgstr "આ મેનુ તમને એન્ક્રિપ્ટેડ કદો રૂપરેખાંકિત કરવા દેશે."
 
 #. Type: multiselect
 #. Description

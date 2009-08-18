@@ -7,19 +7,19 @@
 # Copyright (C) 2003, 2004 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Mert Dirik <mertdirik@gmail.com>, 2008.
 # Recai Oktaş <roktas@omu.edu.tr>, 2004, 2005, 2008.
 # Osman Yüksel <yuxel@sonsuzdongu.com>, 2004.
 # Özgür Murat Homurlu <ozgurmurat@gmx.net>, 2004.
 # Halil Demirezen <halild@bilmuh.ege.edu.tr>, 2004.
 # Murat Demirten <murat@debian.org>, 2004.
 #
+# Mert Dirik <mertdirik@gmail.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-07-08 13:06+0200\n"
+"PO-Revision-Date: 2009-08-17 14:15+0300\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -819,9 +819,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Şifrelenmiş cilt yapılandır"
+msgstr "Şifrelenmiş cilt oluşturma"
 
 #. Type: select
 #. Choices
@@ -836,33 +835,28 @@ msgstr "Bitir"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Şifreleme yapılandırma hatası"
+msgstr "Şifreleme yapılandırması"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Mevcut bölümleme düzeni korunarak şifrelenmiş ciltler yapılandırılsın mı?"
+msgstr "Bu menü şifrelenmiş ciltleri yapılandırmaya yarar."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Kullanılacak servisler:"
+msgstr "Şifrelenecek aygıtlar:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Lütfen oluşturulacak yeni cilt grubuna ilişkin aygıtları seçin."
+msgstr "Lütfen şifrelemek istediğiniz aygıtları seçin."
 
 #. Type: multiselect
 #. Description
@@ -875,14 +869,12 @@ msgstr "Bir veya daha fazla aygıt seçebilirsiniz."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Herhangi bir fiziksel cilt seçilmedi"
+msgstr "Herhangi bir aygıt seçilmedi"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Şifrelemek için bir bölüm seçilmedi."
+msgstr "Şifrelemek için bir aygıt seçilmedi."

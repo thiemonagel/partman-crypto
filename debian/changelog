@@ -1,3 +1,9 @@
+partman-crypto (40) UNRELEASED; urgency=low
+
+  * Upgrade to debhelper v7.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 27 Aug 2009 11:40:26 +0100
+
 partman-crypto (39) unstable; urgency=low
 
   * Use ask_active_partition from partman-base >= 133 and

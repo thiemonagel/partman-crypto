@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-09-18 00:25+0900\n"
+"PO-Revision-Date: 2009-08-28 00:56+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -349,7 +349,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "없음"
+msgstr "누락"
 
 #. Type: text
 #. Description
@@ -796,9 +796,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "암호화 볼륨 설정"
+msgstr "암호화 볼륨 만들기"
 
 #. Type: select
 #. Choices
@@ -813,32 +812,28 @@ msgstr "마치기"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "암호화 설정 실패"
+msgstr "암호화 설정 동작"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "현재 파티션 구성을 유지하고 암호화 볼륨을 설정하시겠습니까?"
+msgstr "이 메뉴에서는 암호화 볼륨을 설정합니다."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "사용할 서비스:"
+msgstr "암호화할 장치:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "새 볼륨 그룹에 사용할 장치를 선택하십시오."
+msgstr "암호화할 장치를 선택하십시오."
 
 #. Type: multiselect
 #. Description
@@ -851,14 +846,12 @@ msgstr "한 개 혹은 그 이상의 장치를 선택할 수 있습니다."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "물리 볼륨을 선택하지 않았습니다"
+msgstr "장치를 선택하지 않았습니다"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "암호화할 파티션을 선택하지 않았습니다."
+msgstr "암호화할 장치를 선택하지 않았습니다."

@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-02-18 13:15+0700\n"
+"PO-Revision-Date: 2009-08-27 15:57+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -786,9 +786,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "ตั้งค่าโวลุมเข้ารหัสลับ"
+msgstr "สร้างโวลุมเข้ารหัสลับ"
 
 #. Type: select
 #. Choices
@@ -803,32 +802,28 @@ msgstr "เสร็จสิ้น"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "ตั้งค่าการเข้ารหัสลับไม่สำเร็จ"
+msgstr "ตั้งค่าการเข้ารหัสลับ"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "จะคงโครงสร้างพาร์ทิชันปัจจุบันไว้ แล้วตั้งค่าโวลุมเข้ารหัสลับหรือไม่?"
+msgstr "เมนูนี้ช่วยคุณตั้งค่าโวลุมเข้ารหัสลับ"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "บริการที่จะใช้:"
+msgstr "อุปกรณ์ที่จะเข้ารหัสลับ:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "กรุณาเลือกอุปกรณ์สำหรับกลุ่มโวลุมใหม่"
+msgstr "กรุณาเลือกอุปกรณ์ที่จะเข้ารหัสลับ"
 
 #. Type: multiselect
 #. Description
@@ -841,14 +836,12 @@ msgstr "คุณสามารถเลือกอุปกรณ์ได้
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "ไม่ได้เลือก physical volume"
+msgstr "ไม่ได้เลือกอุปกรณ์ไว้"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "ไม่ได้เลือกพาร์ทิชันที่จะเข้ารหัสลับ"
+msgstr "ไม่ได้เลือกอุปกรณ์ที่จะเข้ารหัสลับ"

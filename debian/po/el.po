@@ -17,12 +17,13 @@
 # quad-nrg.net <yodesy@quad-nrg.net>, 2006, 2008.
 # QUAD-nrg.net <yodesy@quad-nrg.net>, 2006.
 # galaxico@quad-nrg.net <galaxico@quad-nrg.net>, 2009.
+# Emmanuel Galatoulas <galaxico@quad-nrg.net>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-04-09 19:46+0300\n"
+"PO-Revision-Date: 2009-08-31 14:05+0300\n"
 "Last-Translator: Emmanuel Galatoulas <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -861,18 +862,14 @@ msgstr "Ολοκλήρωση"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Αποτυχία ρύθμισης της κρυπτογράφησης"
+msgstr "Ενέργειες ρύθμισης Κρυπτογράφησης"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Να διατηρηθεί το παρόν περίγραμμα διαμέρισης και να ρυθμιστούν οι "
-"κρυπτογραφημένοι τόμοι;"
+msgstr "Αυτό το μενού επιτρέπει τη ρύθμιση κρυπτογραφημένων τόμων"
 
 #. Type: multiselect
 #. Description

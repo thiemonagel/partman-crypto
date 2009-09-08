@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-08-03 14:47+0300\n"
+"PO-Revision-Date: 2009-09-07 13:18+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
 "Language-Team: Eesti\n"
 "MIME-Version: 1.0\n"
@@ -290,7 +290,7 @@ msgstr "Krüpteerimise häälestamine..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Seadista krüpteeritud andmeruum"
+msgstr "Krüpteeritud andmeruumi seadistamine"
 
 #. Type: note
 #. Description
@@ -820,7 +820,7 @@ msgstr "Krüpteeritud andmeruumi loomine"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr "Lõpeta"
+msgstr "Lõpetamine"
 
 #. Type: select
 #. Description

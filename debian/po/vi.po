@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2009-02-21 16:54+0930\n"
+"PO-Revision-Date: 2009-09-22 00:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -815,9 +815,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Cấu hình khối tin đã mật mã"
+msgstr "Tạo khối tin mật mã"
 
 #. Type: select
 #. Choices
@@ -832,33 +831,28 @@ msgstr "Kết thúc"
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Lỗi cấu hình mật mã"
+msgstr "Hành vi cấu hình mật mã"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Giữ bố trí phân vùng hiện thời và cấu hình các khối tin đã mật mã không?"
+msgstr "Trình đơn này cho bạn cấu hình khối tin mật mã."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Dịch vụ cần dùng:"
+msgstr "Thiết bị cần mật mã:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Hãy chọn những thiết bị cho nhóm khối tin mới."
+msgstr "Hãy chọn những thiết bị cần mật mã."
 
 #. Type: multiselect
 #. Description
@@ -871,14 +865,12 @@ msgstr "Có thể chọn một hay nhiều thiết bị."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Chưa chọn khối tin vật lý"
+msgstr "Chưa chọn thiết bị"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Không có phân vùng nào được chọn để mật mã hoá."
+msgstr "Không có thiết bị nào được chọn để mật mã hoá."

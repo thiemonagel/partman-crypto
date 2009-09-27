@@ -6,6 +6,7 @@
 # translation of debian-installer_packages_po_sublevel1_da.po to
 # Danish messages for debian-installer.
 # This file is distributed under the same license as debian-installer.
+# Mads Bille Lundby <lundbymads@gmail.com, 2009.
 # Henrik Christian Grove <debian@3001.dk>, 2008.
 # Jesper Dahl Nyerup <debian@jespernyerup.dk>, 2008.
 # Jacob Sparre Andersen <sparre@nbi.dk>, 2008.
@@ -18,9 +19,9 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-07-24 22:47+0000\n"
-"PO-Revision-Date: 2008-09-19 16:35+0200\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"PO-Revision-Date: 2009-09-21 13:27+0100\n"
+"Last-Translator: Mads Lundby <lundbymads@gmail.com>\n"
+"Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +34,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "fysisk bind til kryptering"
+msgstr "fysisk arkiv til kryptering"
 
 #. Type: text
 #. Description
@@ -296,7 +297,7 @@ msgstr "Sætter kryptering op..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Indstil krypterede bind"
+msgstr "Indstil krypterede arkiver"
 
 #. Type: note
 #. Description
@@ -364,7 +365,7 @@ msgstr "mangler"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "I brug som fysisk bind for det krypterede bind ${DEV}"
+msgstr "I brug som fysisk arkiv for det krypterede arkiv ${DEV}"
 
 #. Type: error
 #. Description
@@ -402,7 +403,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Skriv ændringerne til diskene og sæt de krypterede bind op?"
+msgstr "Skriv ændringerne til diskene og sæt de krypterede arkiver op?"
 
 #. Type: boolean
 #. Description
@@ -412,7 +413,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Den valgte partitionering skal skrives til diskene før de krypterede bind "
+"Den valgte partitionering skal skrives til diskene før de krypterede arkiver "
 "kan sættes op. Disse ændringer kan ikke fortrydes."
 
 #. Type: boolean
@@ -428,30 +429,31 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Når de krypterede bind er sat op, er det ikke tilladt at ændre partitionerne "
-"på de diske, der indeholder krypterede bind. Vær sikker på at du er tilfreds "
-"med det aktuelle partitionslayout på disse diske, inden du fortsætter."
+"Når de krypterede arkiver er sat op, er det ikke tilladt at ændre "
+"partitionerne på de diske, der indeholder krypterede arkiver. Vær sikker på "
+"at du er tilfreds med det aktuelle partitionslayout på disse diske, inden du "
+"fortsætter."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
+msgstr "Bevar nuværende partitionslayout og sæt krypterede arkiver op?"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Opsætningen af krypterede bind mislykkedes"
+msgstr "Opsætningen af krypterede arkiver mislykkedes"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af krypterede bind."
+msgstr "Der opstod en fejl under opsætningen af krypterede arkiver."
 
 #. Type: error
 #. Description
@@ -465,14 +467,14 @@ msgstr "Opsætningen blev afbrudt."
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Initialiseringen af de krypterede bind mislykkedes"
+msgstr "Initialiseringen af krypteret arkiv mislykkedes"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Der opstod en fejl under opsætningen af de krypterede bind."
+msgstr "Der opstod en fejl under opsætningen af de krypterede arkiver."
 
 #. Type: text
 #. Description
@@ -544,7 +546,7 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Deaktivér swapområdet (f.eks. ved at køre swapoff) eller sæt et krypteret "
-"swapområde op og gennemfør opsætningen af krypterede bind igen. Dette "
+"swapområde op og gennemfør opsætningen af krypterede arkiver igen. Dette "
 "program afbrydes nu."
 
 #. Type: password
@@ -813,7 +815,7 @@ msgstr ""
 #: ../partman-crypto.templates:55001
 #, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Indstil krypterede bind"
+msgstr "Indstil krypterede arkiver"
 
 #. Type: select
 #. Choices
@@ -830,14 +832,13 @@ msgstr "Afslut"
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Fejl under opsætning af kryptering"
+msgstr "Netværksopsætningsmetode:"
 
 #. Type: select
 #. Description
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
+msgstr ""
 
 #. Type: multiselect
 #. Description
@@ -845,7 +846,7 @@ msgstr "Bevar nuværende partitionslayout og sæt krypterede bind op?"
 #: ../partman-crypto.templates:56001
 #, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Tjenester:"
+msgstr "Ingen partitioner at kryptere"
 
 #. Type: multiselect
 #. Description
@@ -853,7 +854,7 @@ msgstr "Tjenester:"
 #: ../partman-crypto.templates:56001
 #, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Vælg de enheder, der skal fjernes fra den nye bindgruppe."
+msgstr "Vælg de enheder, der skal fjernes fra den nye arkivgruppe."
 
 #. Type: multiselect
 #. Description
@@ -868,7 +869,7 @@ msgstr "Du kan angive en eller flere enheder."
 #: ../partman-crypto.templates:57001
 #, fuzzy
 msgid "No devices selected"
-msgstr "Der blev ikke valgt nogen fysiske bind"
+msgstr "Der blev ikke valgt nogen fysiske arkiver"
 
 #. Type: error
 #. Description

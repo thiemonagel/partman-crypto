@@ -1,6 +1,11 @@
 partman-crypto (40) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Upgrade to debhelper v7.
+
+  [ Frans Pop ]
+  * Remove no longer needed Lintian override for missing Standards-
+    Version field.
 
  -- Colin Watson <cjwatson@debian.org>  Thu, 27 Aug 2009 11:40:26 +0100
 

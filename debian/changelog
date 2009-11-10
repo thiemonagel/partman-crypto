@@ -1,4 +1,4 @@
-partman-crypto (40) UNRELEASED; urgency=low
+partman-crypto (40) unstable; urgency=low
 
   [ Colin Watson ]
   * Upgrade to debhelper v7.
@@ -8,7 +8,24 @@ partman-crypto (40) UNRELEASED; urgency=low
   * Remove no longer needed Lintian override for missing Standards-
     Version field.
 
- -- Colin Watson <cjwatson@debian.org>  Thu, 27 Aug 2009 11:40:26 +0100
+  [ Updated translations ]
+  * Amharic (am.po) by Tegegne Tefera
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Asturian (ast.po) by Marcos Antonio Alvarez Costales
+  * Danish (da.po) by Ask Hjorth Larsen
+  * German (de.po) by Holger Wansing
+  * Greek, Modern (1453-) (el.po) by Emmanuel Galatoulas
+  * Estonian (et.po) by Mattias Põldaru
+  * Finnish (fi.po) by Esko Arajärvi
+  * Hindi (hi.po)
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Changwoo Ryu
+  * Lithuanian (lt.po) by Kęstutis Biliūnas
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Vietnamese (vi.po) by Clytie Siddall
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 10 Nov 2009 14:19:34 +0000
 
 partman-crypto (39) unstable; urgency=low
 

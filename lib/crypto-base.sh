@@ -7,7 +7,7 @@ crypto_allowed() {
 	local id=$2
 
 	# Allow unless this is a crypto device
-	[ ! -f "$dev/crypto_realdev" ]
+	[ ! -f "$dev/crypt_realdev" ]
 }
 
 crypto_list_allowed() {

@@ -2,6 +2,7 @@ partman-crypto (40) UNRELEASED; urgency=low
 
   [ Colin Watson ]
   * Upgrade to debhelper v7.
+  * Fix typo that broke detection of crypto devices in crypto_allowed.
 
   [ Frans Pop ]
   * Remove no longer needed Lintian override for missing Standards-

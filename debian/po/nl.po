@@ -9,13 +9,13 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Frans Pop <aragorn@tiscali.nl>, 2005.
-# Frans Pop <elendil@planet.nl>, 2007, 2008.
+# Frans Pop <elendil@planet.nl>, 2007, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-12-07 08:11+0100\n"
+"PO-Revision-Date: 2009-11-10 07:36+0100\n"
 "Last-Translator: Frans Pop <elendil@planet.nl>\n"
 "Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -828,9 +828,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Versleutelde volumes configureren"
+msgstr "Versleutelde volumes aanmaken"
 
 #. Type: select
 #. Choices
@@ -846,33 +845,29 @@ msgstr "Einde"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Encryptieconfiguratiefout"
+msgstr "Configuratieacties voor encryptie"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Huidige schijfindeling behouden en versleutelde volumes instellen?"
+msgstr "Dit menu maakt het mogelijk versleutelde volumes in te stellen."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Te gebruiken diensten:"
+msgstr "Te versleutelen apparaten:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Welke apparaten wilt u voor de nieuwe volumegroep gebruiken?"
+msgstr "Selecteer de te versleutelen apparaten."
 
 #. Type: multiselect
 #. Description
@@ -885,14 +880,12 @@ msgstr "U kunt één of meer apparaten selecteren."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Er zijn geen fysieke volumes geselecteerd"
+msgstr "Geen apparaten geselecteerd"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Er zijn geen partities geselecteerd voor versleuteling."
+msgstr "Er zijn geen apparaten geselecteerd voor versleuteling."

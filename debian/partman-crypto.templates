@@ -432,6 +432,7 @@ Choices-C: create, finish
 # in single-byte languages)
 # :sl3:
 __Choices: Create encrypted volumes, Finish
+# :sl3:
 _Description: Encryption configuration actions
  This menu allows you to configure encrypted volumes.
 

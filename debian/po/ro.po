@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2009-07-26 21:21+0200\n"
 "Last-Translator: Eddy Petrișor <eddy.petrisor@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -853,12 +853,14 @@ msgstr "Finalizează"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "Encryption configuration actions"
 msgstr "Acțiuni la configurarea criptării"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "Acest meniu vă permite să configurați volumele criptate."

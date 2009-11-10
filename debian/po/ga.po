@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2006-03-21 14:42-0500\n"
 "Last-Translator: Kevin Patrick Scannell <scannell@SLU.EDU>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -759,6 +759,7 @@ msgstr "Críochnaigh"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "Encryption configuration actions"
@@ -766,6 +767,7 @@ msgstr "Modh cumraíochta líonra:"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""

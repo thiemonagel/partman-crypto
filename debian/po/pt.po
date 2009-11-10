@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2009-07-27 19:21+0100\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
@@ -832,12 +832,14 @@ msgstr "Terminar"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "Encryption configuration actions"
 msgstr "Acções da configuração da encriptação"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
 msgstr "Este menu permite-lhe configurar volumes encriptados."

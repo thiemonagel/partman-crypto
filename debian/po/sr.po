@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cp6Linux 2008\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2008-09-19 22:27+0100\n"
 "Last-Translator: Veselin Mijušković <panzer@cp6linux.org>\n"
 "Language-Team: Serbian/Cyrillic\n"
@@ -809,6 +809,7 @@ msgstr "Заврши"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "Encryption configuration actions"
@@ -816,6 +817,7 @@ msgstr "проблем са конфигурисањем apt-а"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "This menu allows you to configure encrypted volumes."

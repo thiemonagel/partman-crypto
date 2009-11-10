@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2009-03-26 12:17+0600\n"
 "Last-Translator: Dauren Sarsenov <daur88@inbox.ru>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -818,6 +818,7 @@ msgstr "Аяқтау"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "Encryption configuration actions"
@@ -825,6 +826,7 @@ msgstr "Шифрлауды баптау сәтсіз аяқталды"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "This menu allows you to configure encrypted volumes."

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: se\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-07-24 22:47+0000\n"
+"POT-Creation-Date: 2009-11-10 22:48+0000\n"
 "PO-Revision-Date: 2006-11-25 21:21+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Saami <i18n-sme@lister.ping.uio.no>\n"
@@ -795,6 +795,7 @@ msgstr ""
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "Encryption configuration actions"
@@ -802,6 +803,7 @@ msgstr "Automáhtalaš fierpmádatheivehus filtii"
 
 #. Type: select
 #. Description
+#. :sl3:
 #: ../partman-crypto.templates:55002
 #, fuzzy
 msgid "This menu allows you to configure encrypted volumes."

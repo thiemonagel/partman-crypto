@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-09-24 20:56+0300\n"
+"PO-Revision-Date: 2009-11-21 03:04+0300\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -793,9 +793,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "تهيئة الكتل المشفرة"
+msgstr "إنشاء كتل مشفّرة"
 
 #. Type: select
 #. Choices
@@ -825,17 +824,15 @@ msgstr "تتيح لك القائمة تهيئة الكتل المشفّرة."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "الخدمات المطلوب استعمالها:"
+msgstr "الأجهزة المطلوب تشفيرها:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "الرجاء اختيار الأجهزة المستخدمة في مجموعة الكتل الجديدة."
+msgstr "رجاءً اختر الأجهزة التي تريد تشفيرها."
 
 #. Type: multiselect
 #. Description
@@ -848,14 +845,12 @@ msgstr "يمكنك تحديد جهازٍ واحد أو أكثر."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "لم تحدّد أيّة كتلٍ مادّيّة"
+msgstr "لم تحدّد أيّة أجهزة"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "لم تحدّد أية أجزاء لتشفيرها."
+msgstr "لم تحدّد أية أجهزة لتشفيرها."

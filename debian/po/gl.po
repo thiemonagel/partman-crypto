@@ -10,13 +10,14 @@
 #
 # Marce Villarino <mvillarino@users.sourceforge.net>, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
+# Marce Villarino <mvillarino@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-02-24 13:43+0100\n"
-"Last-Translator: marce villarino <mvillarino@users.sourceforge.net>\n"
+"PO-Revision-Date: 2009-11-22 22:28+0100\n"
+"Last-Translator: Marce Villarino <mvillarino@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -262,7 +263,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "A borrar os datos de ${DEVICE}"
+msgstr "Estanse a borrar os datos de ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -287,7 +288,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "A preparar o cifrado..."
+msgstr "Estase a preparar o cifrado..."
 
 #. Type: text
 #. Description
@@ -820,9 +821,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Configurar os volumes cifrados"
+msgstr "Crear volumes cifrados"
 
 #. Type: select
 #. Choices
@@ -838,35 +838,29 @@ msgstr "Rematar"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Fallou a configuración do cifrado"
+msgstr "Accións da configuración do cifrado"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Desexa conservar o esquema de particionamento actual e configurar os volumes "
-"cifrados?"
+msgstr "Este menú permítelle configurar os volumes cifrados."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Servizos a empregar:"
+msgstr "Dispositivos para cifrar:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Escolla os dispositivos do novo grupo de volumes."
+msgstr "Escolla os dispositivos que se van cifrar."
 
 #. Type: multiselect
 #. Description
@@ -879,14 +873,12 @@ msgstr "Pode escoller un ou máis dispositivos."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Non se escolleu ningún volumes físico"
+msgstr "Non se escolleu ningún dispositivo"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Non se escolleu ningunha partición para cifrala."
+msgstr "Non se escolleu ningún dispositivo para cifralo."

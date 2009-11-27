@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-04-29 07:26+0200\n"
+"PO-Revision-Date: 2009-11-27 01:25+0100\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -814,9 +814,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Sett opp krypterte dataområder"
+msgstr "Opprett krypterte dataområder"
 
 #. Type: select
 #. Choices
@@ -832,35 +831,29 @@ msgstr "Ferdig"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Krypteringsoppsett mislyktes"
+msgstr "Krypteringsoppsett handlinger"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Vil du beholde det nåværende partisjonsoppsettet og sette opp "
-"kryptertedataområder?"
+msgstr "Denne menyen lar deg sette opp kryptertedataområder."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Tjenester:"
+msgstr "Enheter som skal krypteres:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Velg enhetene som skal være på det nye grupperte dataområdet."
+msgstr "Velg enhetene som skal krypteres."
 
 #. Type: multiselect
 #. Description
@@ -873,14 +866,12 @@ msgstr "Du kan velge en eller flere enheter."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Ingen fysiske dataområder ble valgt"
+msgstr "Ingen enheter valgt"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Ingen partisjoner er valgt for kryptering."
+msgstr "Ingen enheter bla valgt for kryptering."

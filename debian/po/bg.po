@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-01-27 10:41+0200\n"
+"PO-Revision-Date: 2009-11-26 07:33+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -816,9 +816,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Настройване на шифрирани томове"
+msgstr "Създаване на шифрирани томове"
 
 #. Type: select
 #. Choices
@@ -834,34 +833,29 @@ msgstr "Завършване"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Грешка при настройване на шифриране"
+msgstr "Настройка на шифрирането"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Записване на разположението на дяловете и настройване на шифрирани томове?"
+msgstr "Това меню позволява да се настроят шифрираните томове."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Източници на обновявания:"
+msgstr "Устройства за шифриране:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Изберете устройствата за новата група от томове."
+msgstr "Изберете устройствата, които да бъдат шифрирани."
 
 #. Type: multiselect
 #. Description
@@ -874,14 +868,12 @@ msgstr "Може да изберете едно или повече устрой
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Не са избрани физически томове"
+msgstr "Не са избрани устройства"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Не са избрани дялове за шифриране."
+msgstr "Не са избрани устройства за шифриране."

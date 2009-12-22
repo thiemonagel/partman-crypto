@@ -782,9 +782,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "設定已加密的 Volume"
+msgstr "建立加密 Volume"
 
 #. Type: select
 #. Choices
@@ -800,33 +799,29 @@ msgstr "完成"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "加密設定失敗了"
+msgstr "加密設定動作"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "是否保留目前的磁碟配置並設定加密的 Volume？"
+msgstr "這個選單可讓您設定加密 Volume。"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "要使用的服務："
+msgstr "要加密的裝置："
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "請選擇要給新的 Volume Group 使用的裝置。"
+msgstr "請選擇要進行加密的裝置。"
 
 #. Type: multiselect
 #. Description
@@ -839,14 +834,12 @@ msgstr "您可以選取一個或多個裝置。"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "沒有選取任何的 Physical Volume"
+msgstr "未選取任何的裝置"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "未指定任何要進行加密的磁碟分割區。"

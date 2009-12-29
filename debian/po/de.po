@@ -18,7 +18,6 @@
 # Bastian Blank <waldi@debian.org>, 2003.
 # Jan Luebbe <jluebbe@lasnet.de>, 2003.
 # Thorsten Sauter <tsauter@gmx.net>, 2003.
-# This file is maintained by Jens Seidel <jensseidel@users.sf.net>
 #
 #
 msgid ""
@@ -26,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-08-23 14:05+0200\n"
+"PO-Revision-Date: 2009-12-29 22:11+0100\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -172,7 +171,7 @@ msgstr ""
 "Verschiedene Algorithmen zur Bestimmung des Initialisierungsvektors für "
 "jeden Sektor existieren. Diese Wahl beeinflusst die Sicherheit der "
 "Verschlüsselung. Normalerweise gibt es keinen Grund, die empfohlenen "
-"Standardwerte zu ändern, es sei denn, zur Kompatibilität mit älteren "
+"Standardwerte zu ändern, es sei denn zwecks Kompatibilität mit älteren "
 "Systemen."
 
 #. Type: text
@@ -275,14 +274,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Lösche Daten auf ${DEVICE}"
+msgstr "Daten auf ${DEVICE} werden gelöscht"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Löschen von Daten auf ${DEVICE} schlug fehl"
+msgstr "Löschen von Daten auf ${DEVICE} fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -292,7 +291,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Ein Fehler trat beim Versuch die Daten auf ${DEVICE} zu löschen auf. Die "
+"Ein Fehler trat beim Versuch auf, die Daten auf ${DEVICE} zu löschen. Die "
 "Daten wurden nicht gelöscht."
 
 #. Type: text
@@ -384,7 +383,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "Installation des Verschlüsselungspakets ist fehlgeschlagen"
+msgstr "Installation des Verschlüsselungspakets fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -406,9 +405,9 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Es wird wahrscheinlich Probleme während des Bootens geben, wenn das System "
-"versucht, verschlüsselte Partitionen einzurichten. Sie können diese später "
-"eventuell durch Installation der benötigten Pakete korrigieren."
+"Es wird wahrscheinlich nach dem Neustart Probleme mit der Einrichtung "
+"verschlüsselter Partitionen geben. Sie können dies später eventuell durch "
+"Installation der benötigten Pakete korrigieren."
 
 #. Type: boolean
 #. Description
@@ -465,7 +464,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Konfiguration der verschlüsselten Datenträger schlug fehl"
+msgstr "Konfiguration der verschlüsselten Datenträger fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -488,7 +487,7 @@ msgstr "Die Konfiguration wurde abgebrochen."
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Initialisierung eines verschlüsselten Datenträgers schlug fehl"
+msgstr "Initialisierung eines verschlüsselten Datenträgers fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -571,7 +570,7 @@ msgstr ""
 "Bitte deaktivieren Sie den Swap-Speicher (z.B. mit swapoff) oder "
 "konfigurieren Sie einen verschlüsselten Swap-Speicher und starten Sie die "
 "Einrichtung verschlüsselter Datenträger danach erneut. Dieses Programm wird "
-"nun abbrechen."
+"nun abgebrochen."
 
 #. Type: password
 #. Description
@@ -630,7 +629,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Bitte geben Sie die selbe Passphrase noch einmal ein, um zu prüfen, ob Sie "
+"Bitte geben Sie dieselbe Passphrase noch einmal ein, um zu prüfen, ob Sie "
 "sich nicht vertippt haben."
 
 #. Type: error
@@ -646,7 +645,7 @@ msgstr "Passphrasen-Eingabefehler"
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"Die zwei von Ihnen eingegebenen Passphrasen sind nicht die selben. Bitte "
+"Die zwei von Ihnen eingegebenen Passphrasen sind nicht identisch. Bitte "
 "versuchen Sie es erneut."
 
 #. Type: error
@@ -708,7 +707,7 @@ msgstr "Schlüsseldaten wurden erfolgreich erstellt."
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr "Schlüsseldateierstellung schlug fehl"
+msgstr "Schlüsseldateierstellung fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -725,7 +724,7 @@ msgstr "Es trat ein Fehler beim Erzeugen der Schlüsseldatei auf."
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "Verschlüsselungskonfiguration schlug fehl"
+msgstr "Verschlüsselungskonfiguration fehlgeschlagen"
 
 #. Type: error
 #. Description
@@ -738,7 +737,7 @@ msgid ""
 msgstr ""
 "Sie wählten aus, dass das Root-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dieses Merkmal erfordert eine separate /boot-"
-"Partition, auf die der Kernel und das initrd gespeichert werden kann."
+"Partition, auf die der Kernel und die initrd gespeichert werden können."
 
 #. Type: error
 #. Description
@@ -759,7 +758,7 @@ msgid ""
 msgstr ""
 "Sie wählten aus, dass das /boot-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dies ist nicht möglich, da der Bootloader "
-"nicht in der Lage wäre, den Kernel und das initrd zu laden. Ein Fortfahren "
+"nicht in der Lage wäre, den Kernel und die initrd zu laden. Ein Fortfahren "
 "würde in einer Installation enden, die nicht benutzt werden kann."
 
 #. Type: error
@@ -789,8 +788,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Sie wählten einen zufälligen Schlüsseltyp für ${DEVICE} aber wiesen den "
-"Partitionierer an, ein Dateisystem darauf zu erzeugen."
+"Sie haben einen zufälligen Schlüsseltyp für ${DEVICE} ausgewählt, aber den "
+"Partitionierer angewiesen, ein Dateisystem darauf zu erzeugen."
 
 #. Type: boolean
 #. Description
@@ -817,8 +816,8 @@ msgstr "Herunterladen der Verschlüsselungskomponenten fehlgeschlagen"
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Es trat ein Fehler beim Versuch, zusätzliche Verschlüsselungskomponenten "
-"herunterzuladen, auf."
+"Es trat ein Fehler beim Versuch auf, zusätzliche Verschlüsselungskomponenten "
+"herunterzuladen."
 
 #. Type: boolean
 #. Description
@@ -840,7 +839,7 @@ msgid ""
 msgstr ""
 "Es scheint nicht ausreichend Speicher vorhanden zu sein, um zusätzliche "
 "Verschlüsselungskomponenten zu installieren. Der Installationsvorgang kann "
-"fehlschlagen, falls Sie sich entscheiden dennoch fortzufahren."
+"fehlschlagen, falls Sie sich entscheiden, dennoch fortzufahren."
 
 #. Type: select
 #. Choices

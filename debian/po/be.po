@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-12-22 10:50+0200\n"
+"PO-Revision-Date: 2009-12-26 21:00+0200\n"
 "Last-Translator: Pavel Piatruk <piatruk.p@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <debian-l10n-belarusian@lists."
 "debian.org>\n"
@@ -818,9 +818,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Наладзіць шыфраваныя тамы"
+msgstr "Стварыць шыфраваныя тамы"
 
 #. Type: select
 #. Choices
@@ -836,34 +835,29 @@ msgstr "Скончыць"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Не атрымалася наладзіць шыфраванне"
+msgstr "Дзеянні па наладцы шыфравання"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Запісаць актуальную схему падзелаў на дыск і наладзіць шыфраваныя тамы?"
+msgstr "Гэта меню дазваляе наладзіць шыфраваныя тамы."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Выкарыстоўваць службы:"
+msgstr "Зашыфраваць прылады:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Калі ласка, пазначце прылады для новай групы тамоў."
+msgstr "Калі ласка, пазначце прылады, каб іх зашыфраваць."
 
 #. Type: multiselect
 #. Description
@@ -876,14 +870,12 @@ msgstr "Вы можаце пазначыць адну ці больш прыла
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Не пазначана фізічных тамоў."
+msgstr "Не пазначана прылад."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Не прызначана падзелаў для шыфравання."
+msgstr "Не прызначана прылад для шыфравання."

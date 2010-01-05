@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-08-30 12:58+0200\n"
+"PO-Revision-Date: 2010-01-05 11:20+0100\n"
 "Last-Translator: Bartosz Fenski <fenio@debian.org>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -806,9 +806,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Konfiguruj szyfrowane woluminy"
+msgstr "Utwórz szyfrowane woluminy"
 
 #. Type: select
 #. Choices
@@ -824,33 +823,29 @@ msgstr "Zakończ"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Konfiguracja szyfrowania nie powiodła się"
+msgstr "Działania konfiguracyjne szyfrowania"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Zostawić aktualny układ partycji i skonfigurować szyfrowane woluminy?"
+msgstr "W tym miejscu możesz skonfigurować szyfrowane woluminy."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Wykorzystywane serwisy:"
+msgstr "Urządzenia do zaszyfrowania:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Proszę wybrać urządzenia dla nowej grupy woluminów."
+msgstr "Proszę wybrać urządzenia do zaszyfrowania."
 
 #. Type: multiselect
 #. Description
@@ -863,14 +858,12 @@ msgstr "Możesz wybrać jedno lub więcej urządzeń."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Nie wybrano fizycznych woluminów"
+msgstr "Nie wybrano urządzeń"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Nie wybrano żadnej partycji do szyfrowania."
+msgstr "Nie wybrano żadnego urządzenia do szyfrowania."

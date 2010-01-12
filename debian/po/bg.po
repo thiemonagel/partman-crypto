@@ -11,13 +11,13 @@
 # Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
 # Nikola Antonov <nikola@linux-bg.org>, 2004.
 # Damyan Ivanov <dam@modsoftsys.com>, 2006, 2007, 2008.
-# Damyan Ivanov <dmn@debian.org>, 2008, 2009.
+# Damyan Ivanov <dmn@debian.org>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-11-26 07:33+0200\n"
+"PO-Revision-Date: 2010-01-11 07:52+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -252,9 +252,9 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Данните на ${DEVICE} ще бъдат презаписани със случайни числа. След "
-"тазиоперация първоначалните данни не могат да бъдат възстановени. Това е "
-"последната Ви възможност да откажете изтриването."
+"Данните на ${DEVICE} ще бъдат презаписани със случайни числа. След тази "
+"операция първоначалните данни не могат да бъдат възстановени. Това е "
+"последната възможност да откажете изтриването."
 
 #. Type: text
 #. Description

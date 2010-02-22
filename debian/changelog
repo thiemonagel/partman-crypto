@@ -1,8 +1,22 @@
-partman-crypto (41) UNRELEASED; urgency=low
+partman-crypto (41) unstable; urgency=low
 
   * Move installation of dmsetup to post-base-installer hook script.
 
- -- Frans Pop <fjp@debian.org>  Mon, 18 Jan 2010 18:15:02 +0100
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama M. Khayat
+  * Belarusian (be.po) by Pavel Piatruk
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * German (de.po) by Holger Wansing
+  * Greek, Modern (1453-) (el.po)
+  * Galician (gl.po) by Marce Villarino
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Panjabi (pa.po) by A S Alam
+  * Polish (pl.po) by Bartosz Fenski
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Simplified Chinese (zh_CN.po) by 苏运强
+
+ -- Frans Pop <fjp@debian.org>  Mon, 22 Feb 2010 04:08:26 +0100
 
 partman-crypto (40) unstable; urgency=low
 

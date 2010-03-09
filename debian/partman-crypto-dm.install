@@ -1,1 +1,2 @@
 ciphers/dm-crypt lib/partman/ciphers
+post-base-installer.d usr/lib

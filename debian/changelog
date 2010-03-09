@@ -1,8 +1,11 @@
-partman-crypto (42) UNRELEASED; urgency=low
+partman-crypto (42) unstable; urgency=low
 
   * Actually install the post-base-installer hook script.
 
- -- Frans Pop <fjp@debian.org>  Tue, 09 Mar 2010 21:26:16 +0100
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Frans Pop <fjp@debian.org>  Tue, 09 Mar 2010 21:32:36 +0100
 
 partman-crypto (41) unstable; urgency=low
 

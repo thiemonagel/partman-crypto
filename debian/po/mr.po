@@ -3,21 +3,21 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-#
-#
+# 
+# 
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files
-#
+# 
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
-#
-#
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-07-27 20:46+0530\n"
+"PO-Revision-Date: 2010-03-12 21:00+0530\n"
 "Last-Translator: Sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -255,14 +255,14 @@ msgid ""
 "abort the erase."
 msgstr ""
 "${DEVICE} वरील माहिती वर नवीन माहिती लिहिली जाईल.  ही पायरी पुर्ण केल्यावर आधीची "
-"माहिती परत मिळवता येणार नाही. आधीची माहिती पुसणे थांबवण्याची ही शेवटची संधी आहे. "
+"माहिती परत मिळवता येणार नाही. आधीची माहिती पुसणे थांबवण्याची ही शेवटची संधी आहे."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr " ${DEVICE} वरील माहिती पुसली जात आहे"
+msgstr "${DEVICE} वरील माहिती पुसली जात आहे"
 
 #. Type: error
 #. Description
@@ -287,7 +287,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "सांकेतिकीकरण संरचित होत आहे... "
+msgstr "सांकेतिकीकरण संरचित होत आहे..."
 
 #. Type: text
 #. Description
@@ -798,9 +798,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "संकेताधारित गटांची संरचना करा"
+msgstr "संकेताधारित खंड बनवा"
 
 #. Type: select
 #. Choices
@@ -830,17 +829,15 @@ msgstr "हा मेन्यू आपल्याला संकेताध
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "वापरायच्या सेवाः"
+msgstr "सांकेतिकीकरण करायची उपकरणे:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "नवीन खंड गटाकरिता उपकरणांची निवड करा."
+msgstr "सांकेतिकीकरण करायच्या उपकरणांची निवड करा."
 
 #. Type: multiselect
 #. Description
@@ -853,14 +850,12 @@ msgstr "आपण एक वा अधिक उपकरणे निवडू 
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "कोणतेही भौतिक खंड निवडले नाहीत"
+msgstr "कोणतीही उपकरणे निवडली नाहीत"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "सांकेतिकीकरणाकरीता कोणतीही विभाजने निवडलेली नाहीत"
+msgstr "सांकेतिकीकरणाकरीता कोणतीही उपकरणे निवडलेली नाहीत."

@@ -16,7 +16,7 @@
 # Steve Langasek <vorlon@debian.org>, 2004
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
 # Rubén Porras Campo <nahoo@inicia.es>, 2005
-# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2007
+# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2010
 #
 # Equipo de traducción al español, por favor lean antes de traducir
 # los siguientes documentos:
@@ -49,7 +49,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-05-10 20:22+0200\n"
+"PO-Revision-Date: 2010-03-11 01:16+0100\n"
 "Last-Translator: Javier Fernández-Sanguino Peña <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -857,9 +857,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Configurar los volúmenes cifrados"
+msgstr "Crear volúmenes cifrados"
 
 #. Type: select
 #. Choices
@@ -875,36 +874,29 @@ msgstr "Terminar"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Fallo en la configuración del cifrado"
+msgstr "Acciones de configuración del cifrado"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"¿Desea mantener la distribución de particiones existente y configurar los "
-"volúmenes cifrados?"
+msgstr "Este menú le permite configurar sus volúmenes cifrados."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Servicios a utilizar:"
+msgstr "Dispositivos a cifrar:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
-"Por favor, seleccione los dispositivos para el nuevo grupo de volúmenes."
+msgstr "Por favor, seleccione los dispositivos que desea cifrar."
 
 #. Type: multiselect
 #. Description
@@ -917,14 +909,12 @@ msgstr "Puede seleccionar uno o más dispositivos."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "No se ha seleccionado un volumen físico"
+msgstr "No se ha seleccionado ningún dispositivo"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "No se ha seleccionado una partición para el cifrado."
+msgstr "No se ha seleccionado ningún dispositivo para el cifrado."

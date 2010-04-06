@@ -743,9 +743,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Imleabhar criptithe (%s)"
+msgstr "Cruthaigh imleabhair chriptithe"
 
 #. Type: select
 #. Choices
@@ -761,9 +760,8 @@ msgstr "Críochnaigh"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Modh cumraíochta líonra:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -776,17 +774,15 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Seirbhísí le húsáid:"
+msgstr ""
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Roghnaigh cineál an mhéarchláir le cumrú."
+msgstr ""
 
 #. Type: multiselect
 #. Description
@@ -799,9 +795,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Níor braitheadh aon chomhéadan líonra"
+msgstr ""
 
 #. Type: error
 #. Description

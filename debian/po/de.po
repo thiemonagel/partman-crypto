@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-01-04 23:07+0100\n"
+"PO-Revision-Date: 2010-04-12 17:01+0100\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: Debian German <debian-l10n-german@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -299,7 +299,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "Verschlüsselung einrichten ..."
+msgstr "Einrichten der Verschlüsselung ..."
 
 #. Type: text
 #. Description
@@ -313,7 +313,7 @@ msgstr "Verschlüsselte Datenträger konfigurieren"
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "Keine Partitionen zum Verschlüsseln"
+msgstr "Keine Partitionen zu verschlüsseln"
 
 #. Type: note
 #. Description
@@ -599,7 +599,7 @@ msgstr ""
 "Die Gesamtstärke der Verschlüsselung hängt stark von dieser Passphrase ab. "
 "Sie sollten deshalb eine Passphrase wählen, die nicht einfach zu erraten "
 "ist. Es sollte kein Wort oder Satz aus einem Wörterbuch und keine Phrase "
-"sein, die leicht mit Ihnen in Verbindung gebracht werden könnte."
+"sein, die leicht mit Ihnen in Verbindung gebracht werden kann."
 
 #. Type: password
 #. Description
@@ -629,8 +629,8 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Bitte geben Sie dieselbe Passphrase noch einmal ein, um zu prüfen, ob Sie "
-"sich nicht vertippt haben."
+"Bitte geben Sie dieselbe Passphrase noch einmal ein, um sicherzustellen, "
+"dass Sie sich nicht vertippt haben."
 
 #. Type: error
 #. Description
@@ -735,7 +735,7 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Sie wählten aus, dass das Root-Dateisystem auf einer verschlüsselten "
+"Sie haben gewählt, dass das Root-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dieses Merkmal erfordert eine separate /boot-"
 "Partition, auf die der Kernel und die initrd gespeichert werden können."
 
@@ -744,7 +744,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Sie sollten zurück gehen und eine /boot-Partition einrichten."
+msgstr "Sie sollten zurückgehen und eine /boot-Partition einrichten."
 
 #. Type: error
 #. Description
@@ -756,7 +756,7 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Sie wählten aus, dass das /boot-Dateisystem auf einer verschlüsselten "
+"Sie haben gewählt, dass das /boot-Dateisystem auf einer verschlüsselten "
 "Partition abgelegt werden soll. Dies ist nicht möglich, da der Bootloader "
 "nicht in der Lage wäre, den Kernel und die initrd zu laden. Ein Fortfahren "
 "würde in einer Installation enden, die nicht benutzt werden kann."

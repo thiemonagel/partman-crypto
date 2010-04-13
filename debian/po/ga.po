@@ -228,6 +228,7 @@ msgstr ""
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
 msgstr ""
+"An bhfuil tú cinnte gur mian leat na sonraí ar ${DEVICE} a léirscriosadh?"
 
 #. Type: boolean
 #. Description
@@ -372,6 +373,8 @@ msgstr ""
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
 msgstr ""
+"An bhfuil fonn ort na hathruithe a scríobh ar an diosca an imleabhair "
+"chriptithe a chumrú?"
 
 #. Type: boolean
 #. Description
@@ -402,20 +405,22 @@ msgstr ""
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
 msgstr ""
+"An bhfuil fonn ort leagan amach na ndeighiltí a choinneáil agus imleabhair "
+"chriptithe a chumrú?"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr ""
+msgstr "Níorbh fhéidir imleabhair chriptithe a chumrú"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
+msgstr "Tharla earráid agus imleabhair chriptithe á gcumrú."
 
 #. Type: error
 #. Description
@@ -447,7 +452,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr ""
+msgstr "Frása Faire"
 
 #. Type: text
 #. Description
@@ -458,7 +463,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Comhad eochrach (GnuPG)"
 
 #. Type: text
 #. Description
@@ -469,21 +474,21 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr ""
+msgstr "Eochair randamach"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
-msgstr ""
+msgstr "Braitheadh spás babhtála neamhshlán"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr ""
+msgstr "Braitheadh spás babhtála neamhshlán."
 
 #. Type: error
 #. Description
@@ -789,7 +794,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
+msgstr "Is féidir leat gléas nó gléasanna a roghnú."
 
 #. Type: error
 #. Description

@@ -25,7 +25,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr ""
+msgstr "imleabhar fisiceach le criptiú"
 
 #. Type: text
 #. Description
@@ -34,7 +34,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr ""
+msgstr "criptiú"
 
 #. Type: text
 #. Description
@@ -54,7 +54,7 @@ msgstr "Aislúbadh (lúb-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Device-mapper (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -63,7 +63,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr ""
+msgstr "neamhghníomhach"
 
 #. Type: text
 #. Description
@@ -78,7 +78,7 @@ msgstr "Modh criptithe:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr ""
+msgstr "Modh criptithe don deighilt seo:"
 
 #. Type: select
 #. Description
@@ -88,6 +88,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"Má athraíonn tú an modh criptithe, socrófar na réimsí eile a bhaineann leis "
+"an gcriptiúchán go dtí a luachanna réamhshocraithe don mhodh nua criptithe."
 
 #. Type: text
 #. Description
@@ -102,7 +104,7 @@ msgstr "Criptiú:"
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr ""
+msgstr "Criptiú don deighilt seo:"
 
 #. Type: text
 #. Description
@@ -110,14 +112,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr ""
+msgstr "Méid na heochrach:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr ""
+msgstr "Méid na heochrach don deighilt seo:"
 
 #. Type: text
 #. Description
@@ -127,7 +129,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr ""
+msgstr "Algartam IV:"
 
 #. Type: select
 #. Description
@@ -136,7 +138,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "Algartam giniúna veicteoirí túsaithe don deighilt seo:"
 
 #. Type: select
 #. Description
@@ -150,6 +152,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Tá algartaim dhifriúla ann a ghineann veicteoir túsaithe do gach teascóg.  "
+"Téann an rogha seo i bhfeidhm ar shlándáil an chriptiúcháin. De ghnáth, ní "
+"gá an t-algartam réamhshocraithe a athrú ach amháin más seanchóras agat agus "
+"fadhbanna le comhoiriúnacht."
 
 #. Type: text
 #. Description
@@ -164,7 +170,7 @@ msgstr "Eochair chriptiúcháin:"
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr ""
+msgstr "Cineál na heochrach criptithe don deighilt seo:"
 
 #. Type: text
 #. Description
@@ -172,7 +178,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr ""
+msgstr "Hais le haghaidh na heochrach criptiúcháin:"
 
 #. Type: select
 #. Description
@@ -180,6 +186,7 @@ msgstr ""
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
 msgstr ""
+"Cineáil an hais le haghaidh na heochrach criptiúcháin ar an deighilt seo:"
 
 #. Type: select
 #. Description
@@ -191,6 +198,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Cruthaítear an eochair chriptiúcháin ón fhrása faire trí hais aontreo a chur "
+"i bhfeidhm air. De ghnáth, ní gá an modh réamhshocraithe seo a athrú agus má "
+"athraíonn tú é, seans go laghdóidh tú neart an chriptiúcháin."
 
 #. Type: text
 #. Description
@@ -199,7 +209,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr ""
+msgstr "Léirscrios sonraí:"
 
 #. Type: text
 #. Description
@@ -220,7 +230,7 @@ msgstr "tá"
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr ""
+msgstr "Léirscrios sonraí ar an deighilt seo"
 
 #. Type: boolean
 #. Description
@@ -239,20 +249,23 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
+"Forscríobh na sonraí ar ${DEVICE} le sonraí randamacha. Ní bheidh tú in ann "
+"na sonraí a fháil ar ais tar éis na céime seo. Seo é do dheis dheireanach an "
+"scriosadh a stopadh."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr ""
+msgstr "Sonraí ar ${DEVICE} á léirscriosadh"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr ""
+msgstr "Níorbh fhéidir na sonraí ar ${DEVICE} a léirscriosadh"
 
 #. Type: error
 #. Description
@@ -262,41 +275,43 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
+"Tharla earráid agus na sonraí ar ${DEVICE} á léirscriosadh. Níor "
+"léirscriosadh na sonraí."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr ""
+msgstr "Criptiúchán á shocrú..."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr ""
+msgstr "Cumraigh imleabhair chriptithe"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr ""
+msgstr "Níl aon deighiltí le criptiú"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr ""
+msgstr "Níor roghnaíodh aon deighiltí le criptiú."
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:29001
 msgid "Required programs missing"
-msgstr ""
+msgstr "Ríomhchláir riachtanacha ar iarraidh"
 
 #. Type: note
 #. Description
@@ -306,13 +321,15 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
+"Tá ríomhchlár nó ríomhchláir atá de dhíth ar partman-crypto ar iarraidh ón "
+"leagan seo den suiteálaí Debian."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr ""
+msgstr "Roghanna riachtanacha criptiúcháin ar iarraidh"
 
 #. Type: error
 #. Description
@@ -322,6 +339,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
+"Tá roghanna criptiúcháin do ${DEVICE} ar iarraidh.  Fill ar roghchlár na "
+"ndeighiltí agus roghnaigh na roghanna riachtanacha go léir."
 
 #. Type: text
 #. Description
@@ -331,7 +350,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr ""
+msgstr "ar iarraidh"
 
 #. Type: text
 #. Description
@@ -340,13 +359,14 @@ msgstr ""
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
 msgstr ""
+"In úsáid mar imleabhar fisiceach le haghaidh imleabhair chriptithe ${DEV}"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr ""
+msgstr "Níorbh fhéidir an pacáiste criptiúcháin a shuiteáil"
 
 #. Type: error
 #. Description
@@ -356,6 +376,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
+"Níor aimsíodh an pacáiste modúil eithne ${PACKAGE}, nó tharla earráid le "
+"linn a shuiteála."
 
 #. Type: error
 #. Description
@@ -366,6 +388,9 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
+"Is dócha go mbeidh fadhbanna agat deighiltí criptithe a shocrú nuair a "
+"bheidh an córas atosaithe. B'fhéidir leat an fhadhb a réiteach trí na "
+"pacáistí riachtanacha a shuiteáil níos déanaí."
 
 #. Type: boolean
 #. Description
@@ -384,6 +409,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
+"Sular féidir imleabhair chriptithe a chumrú, caithfear an scéim reatha "
+"deighilte a scríobh ar an diosca. Ní féidir na hathruithe seo a chur ar ceal."
 
 #. Type: boolean
 #. Description
@@ -398,6 +425,10 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
+"Tar éis duit na himleabhair chriptithe a chumrú, ní bheidh cead agat na "
+"deighiltí ar dhioscaí ar a bhfuil imleabhair chriptithe a athrú. Bí "
+"lánchinnte go bhfuil tú sásta leis an scéim dheighilte ar na dioscaí seo "
+"sula rachaidh tú ar aghaidh."
 
 #. Type: boolean
 #. Description
@@ -427,21 +458,21 @@ msgstr "Tharla earráid agus imleabhair chriptithe á gcumrú."
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr ""
+msgstr "Tobscoireadh an chumraíocht."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr ""
+msgstr "Theip ar thúsú an imleabhair chriptithe"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
+msgstr "Tharla earráid agus imleabhair chriptithe á socrú."
 
 #. Type: text
 #. Description
@@ -499,6 +530,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
+"Is earráid mharfach é seo toisc go bhféadfaí sonraí íogaire a scríobh ar an "
+"diosca gan chriptiú. Sa chaoi seo, bheadh aon duine a raibh rochtain ar an "
+"diosca aige in ann cuid den eochair chriptiúcháin nó an frása faire a fháil."
 
 #. Type: error
 #. Description
@@ -509,20 +543,23 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
+"Díchumasaigh an spás babhtála (m.sh. le 'swapoff') nó cumraigh spás babhtála "
+"criptithe agus socraigh na himleabhair chriptithe arís. Scoirfidh an clár "
+"seo anois."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr ""
+msgstr "Frása faire criptiúcháin:"
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr ""
+msgstr "Caithfidh tú frása faire a roghnú chun ${DEVICE} a chriptiú."
 
 #. Type: password
 #. Description
@@ -534,6 +571,9 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
+"Braitheann neart an chriptiúcháin go mór ar an bhfrása faire seo, mar sin ba "
+"chóir duit frása faire láidir a roghnú. Ná húsáid focal nó abairt a "
+"d'aimseofaí i bhfoclóir, nó frása a chuirfí le chéile leatsa féin."
 
 #. Type: password
 #. Description
@@ -544,13 +584,15 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
+"Tá meascán de litreacha, uimhreacha agus poncaíocht i ngach frása faire "
+"maith, agus moltar frása faire a roghnú ina bhfuil 20 carachtar ar a laghad."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr ""
+msgstr "Iontráil an frása faire arís chun é a fhíorú:"
 
 #. Type: password
 #. Description
@@ -560,6 +602,8 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
+"Iontráil an frása faire céanna arís chun fíorú go raibh sé clóscríofa i "
+"gceart agat."
 
 #. Type: error
 #. Description
@@ -573,7 +617,7 @@ msgstr "Earráid agus frása faire á iontráil"
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
+msgstr "Níorbh ionann an dá fhrása faire.  Bain triail eile as."
 
 #. Type: error
 #. Description
@@ -590,13 +634,15 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
+"D'iontráil tú frása faire folamh, agus ní cheadaítear é seo.  Roghnaigh "
+"frása faire neamhfholamh."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr ""
+msgstr "An bhfuil fonn ort frása faire lag a úsáid?"
 
 #. Type: boolean
 #. Description
@@ -609,34 +655,37 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
+"D'iontráil tú frása faire a bhfuil níos lú ná ${MINIMUM} carachtar ann, agus "
+"meastar gur frása faire lag é seo. Ba chóir duit frása faire níos láidre a "
+"roghnú."
 
 #. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr ""
+msgstr "Eochair chriptiúcháin le haghaidh ${DEVICE} á cruthú anois."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "D'éirigh le cruthú sonraí don eochair."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr ""
+msgstr "Theip ar chomhad eochrach a chruthú"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr ""
+msgstr "Tharla earráid agus an comhad eochrach á chruthú."
 
 #. Type: error
 #. Description
@@ -646,7 +695,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr ""
+msgstr "Theip ar chumraíocht chriptiúcháin"
 
 #. Type: error
 #. Description
@@ -657,13 +706,16 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
+"Tá tú ag iarraidh an fréamhchóras comhad a stóráil ar dheighilt chriptithe. "
+"Chun é seo a dhéanamh, is gá deighilt /boot ar leith a bheith ann, ar a "
+"stórálfar an eithne agus initrd."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr ""
+msgstr "Ba chóir duit dul ar ais agus deighilt /boot a shocrú."
 
 #. Type: error
 #. Description
@@ -675,6 +727,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
+"Tá tú ag iarraidh an córas comhad /boot a stóráil ar dheighilt chriptithe. "
+"Níl sé seo indéanta toisc nach mbeadh an luchtóir tosaithe in ann an eithne "
+"agus initrd a luchtú. Má leanann tú ar aghaidh, ní bheidh an córas inúsáidte."
 
 #. Type: error
 #. Description
@@ -684,6 +739,8 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
+"Ba chóir duit dul ar ais agus deighilt neamhchriptithe a roghnú le haghaidh "
+"an chórais comhad /boot."
 
 #. Type: boolean
 #. Description
@@ -700,6 +757,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
+"Roghnaigh tú cineál randamach eochrach ar ${DEVICE}, ach d'iarr tú ar an "
+"deighilteoir córas comhad a chruthú air."
 
 #. Type: boolean
 #. Description
@@ -709,13 +768,15 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
+"Má úsáideann tú cineál randamach eochrach, scriosfar sonraí na deighilte "
+"gach uair a atosófar an ríomhaire. Úsáid é seo ar dheighiltí babhtála amháin."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr ""
+msgstr "Theip ar chomhpháirteanna criptiúcháin a íosluchtú"
 
 #. Type: error
 #. Description
@@ -723,6 +784,7 @@ msgstr ""
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
+"Tharla earráid agus comhpháirteanna criptiúcháin sa bhreis á n-íosluchtú."
 
 #. Type: boolean
 #. Description
@@ -730,6 +792,8 @@ msgstr ""
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
+"An bhfuil fonn ort na comhpháirteanna criptiúcháin a shuiteáil cé go bhfuil "
+"easpa cuimhne ann?"
 
 #. Type: boolean
 #. Description
@@ -740,6 +804,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
+"Níl go leor cuimhne ann chun tuilleadh comhpháirteanna criptiúcháin a "
+"shuiteáil.  Má leanann tú ar aghaidh mar sin féin, seans go dteipfidh ar an "
+"bpróiseas suiteála."
 
 #. Type: select
 #. Choices
@@ -766,28 +833,28 @@ msgstr "Críochnaigh"
 #. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "Encryption configuration actions"
-msgstr ""
+msgstr "Gníomhartha cumraíochta criptiúcháin"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
+msgstr "Leis an roghchlár is féidir leat imleabhair chriptithe a chumrú."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "Devices to encrypt:"
-msgstr ""
+msgstr "Gléasanna le criptiú:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "Roghnaigh na gléasanna le criptiú, le do thoil."
 
 #. Type: multiselect
 #. Description
@@ -801,11 +868,11 @@ msgstr "Is féidir leat gléas nó gléasanna a roghnú."
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices selected"
-msgstr ""
+msgstr "Níor roghnaíodh aon ghléasanna"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices were selected for encryption."
-msgstr ""
+msgstr "Níor roghnaíodh aon ghléasanna le criptiú."

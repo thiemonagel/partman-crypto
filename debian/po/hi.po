@@ -13,15 +13,15 @@
 #
 # Nishant Sharma <me@nishants.net>, 2005, 2006.
 # Kumar Appaiah <akumar@ee.iitm.ac.in>, 2008.
-# Kumar Appaiah <a.kumar@alumni.iitm.ac.in>, 2008, 2009.
+# Kumar Appaiah <a.kumar@alumni.iitm.ac.in>, 2008, 2009, 2010.
 # Kumar Appaiah <kumar.appaiah@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-10-26 21:21-0500\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2010-04-21 23:49-0500\n"
+"Last-Translator: Kumar Appaiah <a.kumar@alumni.iitm.ac.in>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -801,7 +801,6 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
 msgstr "कूटबद्ध वॉल्यूम व्यवस्थित करें"
 
@@ -833,17 +832,15 @@ msgstr "इस मेनू द्वारा आप कूटबद्ध व�
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "नेमसर्वर पता:"
+msgstr "कूट किये जाने वाले यन्त्र:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "कृपया नये वॉल्यूम समूह के लिए उपकरणों का चुनाव करें."
+msgstr "कृपया कूट किये जाने वाले उपकरणों का चुनाव करें."
 
 #. Type: multiselect
 #. Description
@@ -856,14 +853,12 @@ msgstr "आप एक या अधिक उपकरण चुन सकते
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "कोई भी फ़िज़िकल वॉल्यूम नहीं चुना गया"
+msgstr "कोई भी उपकरण नहीं चुना गया"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "कूटबद्ध करने के लिए कोई भी पार्टिशन नहीं चुने गये हैं."
+msgstr "कूटबद्ध करने के लिए कोई भी उपकरण नहीं चुने गये हैं."

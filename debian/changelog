@@ -1,3 +1,10 @@
+partman-crypto (43) UNRELEASED; urgency=low
+
+  * Register partman-crypto/confirm_nooverwrite, associated with the
+    partman-crypto/confirm template.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 27 Apr 2010 10:41:32 +0100
+
 partman-crypto (42) unstable; urgency=low
 
   * Actually install the post-base-installer hook script.

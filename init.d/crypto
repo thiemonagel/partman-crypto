@@ -145,6 +145,8 @@ create_cryptdisk () {
 	return 0
 }
 
+db_register partman-crypto/confirm partman-crypto/confirm_nooverwrite
+
 for dev in /var/lib/partman/devices/*; do
 	[ -d "$dev" ] || continue
 	cd $dev

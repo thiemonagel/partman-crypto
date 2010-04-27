@@ -1,9 +1,18 @@
-partman-crypto (43) UNRELEASED; urgency=low
+partman-crypto (43) unstable; urgency=low
 
   * Register partman-crypto/confirm_nooverwrite, associated with the
     partman-crypto/confirm template.
 
- -- Colin Watson <cjwatson@debian.org>  Tue, 27 Apr 2010 10:41:32 +0100
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+  * French (fr.po) by Christian Perrier
+  * Hindi (hi.po) by Kumar Appaiah
+  * Marathi (mr.po) by Sampada
+  * Panjabi (pa.po) by A S Alam
+  * Tamil (ta.po) by Dr,T,Vasudevan
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 27 Apr 2010 10:56:22 +0100
 
 partman-crypto (42) unstable; urgency=low
 

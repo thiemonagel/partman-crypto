@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-03-17 19:42+0530\n"
+"PO-Revision-Date: 2010-05-21 08:28+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -820,9 +820,8 @@ msgstr "ਇੰਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਐਕਸ਼ਨ"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "ਮੌਜੂਦਾ ਭਾਗ ਖਾਕਾ ਰੱਖੋ ਅਤੇ ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਸੰਰਚਿਤ ਕਰੋ?"
+msgstr "ਇਹ ਮੇਨੂ ਤੁਹਾਨੂੰ ਇੰਕ੍ਰਿਪਟਡ ਵਾਲੀਅਮ ਦੀ ਸੰਰਚਨਾ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ।"
 
 #. Type: multiselect
 #. Description

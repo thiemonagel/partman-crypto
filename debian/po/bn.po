@@ -22,13 +22,13 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-02-07 23:15+0600\n"
+"PO-Revision-Date: 2010-06-15 23:15+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -164,10 +164,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Different algorithms exist to derive the initialization vector for each "
-"sector. This choice influences the encryption security. সাধারণত, এই সুপারিশকৃত "
-"ডিফল্ট কাঠামোটি পরিবর্তন করার কারণ নেই, শুধু পুরাতন সিস্টেমের সাথে খাপ খাওয়ানো "
-"ছাড়া।"
+"প্রতি সেক্টরের জন্য ভেক্টর ডিরাইভ করতে বিভিন্ন এলগোরিদম থাকে। এটি এনক্রিপশন "
+"নিরাপত্তা প্রভাবিত করে। সাধারণত, এই সুপারিশকৃত ডিফল্ট কাঠামোটি পরিবর্তন করার কারণ "
+"নেই, শুধু পুরাতন সিস্টেমের সাথে খাপ খাওয়ানো ছাড়া।"
 
 #. Type: text
 #. Description
@@ -209,9 +208,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"The encryption key is derived from the passphrase by applying a one-way hash "
-"function to it. সাধারণত, সুপারিশকৃত ডিফল্ট কাঠামো পরিবর্তনের কারণ নেই, বরং তা "
-"সঠিক না করতে পারলে এনক্রিপশন শক্তিশালী হবে না।"
+"ওয়ান ওয়ে হ্যাশ ফাংশন ব্যবহার করে পাশফ্রেজ হতে এনক্রিপশন কী ডিরাইভ করা হয়। "
+"সাধারণত, সুপারিশকৃত ডিফল্ট কাঠামো পরিবর্তনের কারণ নেই, বরং তা সঠিক না করতে পারলে "
+"এনক্রিপশন শক্তিশালী হবে না।"
 
 #. Type: text
 #. Description

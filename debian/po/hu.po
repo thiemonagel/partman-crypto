@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-14 17:52+0100\n"
+"PO-Revision-Date: 2010-06-14 21:47+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -800,9 +800,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Titkosított partíciók konfigurálása"
+msgstr "Titkosított kötetek létrehozása"
 
 #. Type: select
 #. Choices
@@ -818,33 +817,29 @@ msgstr "Kész"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Titkosítás konfigurációs hiba"
+msgstr "Titkosítás beállító műveletek"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Megtartod e particionálást és konfigurálod a titkosított köteteket?"
+msgstr "E menüvel beállíthatók a titkosított kötetek."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Felhasznált szolgáltatások:"
+msgstr "Titkosítandó eszközök:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Jelöld ki az új kötetcsoportot alkotó eszközöket."
+msgstr "Kérlek, válaszd ki a titkosítandó eszközöket."
 
 #. Type: multiselect
 #. Description
@@ -857,14 +852,12 @@ msgstr "Válassz ki egy vagy több eszközt."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Nincs kiválasztott fizikai kötet"
+msgstr "Nincs kijelölt eszköz"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Nincs titkosításra kijelölt partíció."
+msgstr "Nincs titkosításra kijelölt eszköz."

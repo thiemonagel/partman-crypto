@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-08 15:14+0700\n"
+"PO-Revision-Date: 2010-06-21 23:15+0700\n"
 "Last-Translator: Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>\n"
 "Language-Team: Bahasa Indonesia <debian-l10n-id@gurame.fisika.ui.ac.id>\n"
 "MIME-Version: 1.0\n"
@@ -241,14 +241,14 @@ msgstr "ya"
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "Hapus data pada pertisi ini "
+msgstr "Hapus data pada partisi ini "
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Anda serius ingin menghapus seluruh data pada ${DEVICE}?"
+msgstr "Anda serius ingin menghapus seluruh data di ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -259,23 +259,23 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Data pada ${DEVICE} akan ditimpa dengan data acak dan tidak dapat "
-"dikembalikan lagi setelah proses ini selesai. Ini adalah kesempatan terakhir "
-"untuk membatalkan proses."
+"Data di ${DEVICE} akan ditimpa dengan data acak dan tidak dapat dikembalikan "
+"lagi setelah proses ini selesai. Ini adalah kesempatan terakhir untuk "
+"membatalkan proses."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Sedang menghapus data pada  ${DEVICE}"
+msgstr "Sedang menghapus data di  ${DEVICE}"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Penghapusan data pada ${DEVICE} telah gagal. "
+msgstr "Penghapusan data di ${DEVICE} telah gagal. "
 
 #. Type: error
 #. Description
@@ -285,7 +285,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Suatu kesalahan terjadi saat proses penghapusan data pada ${DEVICE}. Data "
+"Suatu kesalahan terjadi saat proses penghapusan data di ${DEVICE}. Data "
 "belum terhapus."
 
 #. Type: text
@@ -300,7 +300,7 @@ msgstr "Sedang mengatur enkripsi..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Mengonfigurasi volum enkripsi"
+msgstr "Mengonfigurasi volum terenkripsi"
 
 #. Type: note
 #. Description
@@ -368,7 +368,7 @@ msgstr "hilang"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Sedang digunakan sebagai volum fisik untuk volum terenkripsi ${DEV} "
+msgstr "Sedang digunakan sebagai volum fisik untuk volum terenkripsi: ${DEV} "
 
 #. Type: error
 #. Description
@@ -397,7 +397,7 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Kemungkinan akan ada masalah menyetel partisi yang terenkripsi saat proses "
+"Kemungkinan akan ada masalah penataan partisi yang terenkripsi saat proses "
 "boot. Anda dapat tetap memperbaikinya dengan memasang paket yang dibutuhkan "
 "nanti."
 
@@ -406,7 +406,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Tulis perubahan ke hard disk dan konfigurasikan volum terenkripsi?"
+msgstr "Tulis perubahan ke hard disk dan konfigurasi volum terenkripsi?"
 
 #. Type: boolean
 #. Description
@@ -441,7 +441,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Jaga pola partisi yang ada dan konfigurasikan volum terenkripsi?"
+msgstr "Jaga pola partisi yang ada dan konfigurasi volum terenkripsi?"
 
 #. Type: error
 #. Description
@@ -760,8 +760,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Anda telah memilih jenis kunci random untuk ${DEVICE} tetap meminta "
-"pemartisi untuk membuat sebuah sistem berkas di situ."
+"Anda telah memilih jenis kunci acak untuk ${DEVICE} tetap meminta pemartisi "
+"untuk membuat sebuah sistem berkas di situ."
 
 #. Type: boolean
 #. Description
@@ -771,7 +771,7 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Menggunakan jenis kunci random berarti bahwa data partisi akan dihancurkan "
+"Menggunakan jenis kunci acak berarti bahwa data partisi akan dihancurkan "
 "tiap reboot. Ini hanya dapat dilakukan untuk partisi swap."
 
 #. Type: error
@@ -816,9 +816,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Mengonfigurasi volum enkripsi"
+msgstr "Membuat Volum terenkripsi"
 
 #. Type: select
 #. Choices
@@ -834,33 +833,29 @@ msgstr "Selesai"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Konfigurasi enkripsi gagal"
+msgstr "Tindakan untuk konfigurasi enkripsi"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Jaga pola partisi yang ada dan konfigurasikan volum terenkripsi?"
+msgstr "Menu ini memungkinkan Anda mengonfigurasi volum terenkripsi."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Layanan yang digunakan:"
+msgstr "Perangkat yang dienkripsi:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Silakan memilih piranti untuk Grup Volum baru."
+msgstr "Silakan pilih perangkat yang akan dienkripsi"
 
 #. Type: multiselect
 #. Description
@@ -873,14 +868,12 @@ msgstr "Anda dapat memilih satu piranti atau lebih."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Belum ada Volum Fisik yang dipilih"
+msgstr "Tidak ada perangkat yang dipilih"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Tak ada partisi yang dipilih untuk dienkripsi."
+msgstr "Tak ada perangkat yang dipilih untuk dienkripsi."

@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of km.po to Khmer
+# translation of debian-installer_packages_po_sublevel1_km.po to Khmer
 # translation of km.po to
 #
 # Debian Installer master translation file template
@@ -11,18 +11,19 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 #
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008.
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: km\n"
+"Project-Id-Version: debian-installer_packages_po_sublevel1_km\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-09 06:57+0200\n"
-"Last-Translator: KHOEM Sokhem <khoemsokhem@khmeros.info>\n"
+"PO-Revision-Date: 2010-06-21 09:08+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Type: text
@@ -794,9 +795,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ភាគ​ដែល​បាន​អ៊ិនគ្រីប"
+msgstr "បង្កើត​ភាគថាស​ដែលបានអ៊ីនគ្រីប"
 
 #. Type: select
 #. Choices
@@ -812,33 +812,29 @@ msgstr "បញ្ចប់"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "បរាជ័យ​ក្នុង​ការ​កំណត់​រចនា​សម្ព័ន្ធ​​ការ​អ៊ិនគ្រីប"
+msgstr "សកម្មភាព​កំណត់​រចនាសម្ព័ន្ធអ៊ីនគ្រិប"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "រក្សា​ប្លង់​ភាគថាស​បច្ចុប្បន្ន ហើយ​កំណត់​រចនា​សម្ព័ន្ធ​​ភាគ​ដែល​បាន​អ៊ិនគ្រីប ?"
+msgstr "ម៉ឺនុយ​នេះ​ អនុញ្ញាត​ឲ្យ​អ្នក​កំណត់​រចនាសម្ព័ន្ធ​ភាគថាស​ដែលបាន​អ៊ីនគ្រិប ។"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "សេវា​ត្រូវ​ប្រើ ៖"
+msgstr "ឧបករណ៍​ត្រូវ​អ៊ីនគ្រិប ៖"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "សូម​ជ្រើស​ឧបករណ៍​សម្រាប់​ក្រុម​ភាគ​ថ្មី ។"
+msgstr "សូម​ជ្រើស​ឧបករណ៍​ដែល​តម្រូវ​ឲ្យ​អ៊ីនគ្រិប ។"
 
 #. Type: multiselect
 #. Description
@@ -851,14 +847,12 @@ msgstr "អ្នកអាច​ជ្រើស​ឧបករណ៍​មួយ
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "មិន​បាន​ជ្រើស​ភាគ​ពិត​ឡើយ"
+msgstr "គ្មាន​ឧបករណ៍​បាន​ជ្រើស​ទេ"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "មិន​បាន​ជ្រើស​ភាគថាស​សម្រាប់​អ៊ិនគ្រីប​ឡើយ ។"
+msgstr "គ្មាន​ឧបករណ៍​ត្រូវបាន​ជ្រើ​សសម្រាប់​អ៊ីនគ្រិប​ទេ ។"

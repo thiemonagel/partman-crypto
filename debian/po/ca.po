@@ -4,17 +4,17 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Catalan messages for debian-installer.
-# Copyright 2002, 2003, 2004, 2005, 2006, 2007, 2008 Software in the Public Interest, Inc.
+# Copyright 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Jordi Mallach <jordi@debian.org>, 2002, 2003, 2004, 2006, 2007, 2008.
+# Jordi Mallach <jordi@debian.org>, 2002, 2003, 2004, 2006, 2007, 2008, 2010.
 # Guillem Jover <guillem@debian.org>, 2005, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer lenny\n"
+"Project-Id-Version: debian-installer squeeze\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-17 16:55+0200\n"
+"PO-Revision-Date: 2010-06-26 16:46+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -822,9 +822,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Configura els volums xifrats"
+msgstr "Crea volums xifrats"
 
 #. Type: select
 #. Choices
@@ -840,35 +839,29 @@ msgstr "Finalitza"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Error en la configuració del xifrat"
+msgstr "Accions de la configuració del xifrat"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Voleu mantindre la disposició de particions actual i configurar els volums "
-"xifrats?"
+msgstr "Aquest menú us permet configurar els volums xifrats"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Serveis a emprar:"
+msgstr "Dispositius a xifrar:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Si us plau, seleccioneu els dispositius per al nou grup de volums."
+msgstr "Seleccioneu els dispositius a xifrar."
 
 #. Type: multiselect
 #. Description
@@ -881,14 +874,12 @@ msgstr "Podeu seleccionar un o més dispositius."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "No s'ha detectat cap volum físic"
+msgstr "No s'ha seleccionat cap dispositiu"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "No s'ha seleccionat cap partició per a xifrar."
+msgstr "No s'ha seleccionat cap dispositiu per a xifrar."

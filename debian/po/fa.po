@@ -3,19 +3,18 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of Debian Installer templates to Brazilian Portuguese.
+# Persian messages for debian-installer.
+# Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-#
-# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2010.
+# , 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer\n"
+"Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-01 03:39-0300\n"
-"Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
-"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
-"org>\n"
+"PO-Revision-Date: 2010-07-01 18:43+0330\n"
+"Last-Translator: acathur <acathur@gmail.com>\n"
+"Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +26,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "volume físico a ser criptografado"
+msgstr "صدای فیزیکی برای پنهان کردن "
 
 #. Type: text
 #. Description
@@ -36,7 +35,7 @@ msgstr "volume físico a ser criptografado"
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr "crypto"
+msgstr "کریپتو"
 
 #. Type: text
 #. Description
@@ -46,7 +45,7 @@ msgstr "crypto"
 #. :sl3:
 #: ../partman-crypto.templates:3001
 msgid "Loopback (loop-AES)"
-msgstr "Loopback (loop-AES)"
+msgstr "(loop-AES)بازگشت لوپ "
 
 #. Type: text
 #. Description
@@ -56,7 +55,7 @@ msgstr "Loopback (loop-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "Device-mapper (dm-crypt)"
+msgstr "(dm-crypt) طراح ابزار "
 
 #. Type: text
 #. Description
@@ -65,7 +64,7 @@ msgstr "Device-mapper (dm-crypt)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "não ativo"
+msgstr "غیر فعال"
 
 #. Type: text
 #. Description
@@ -73,14 +72,14 @@ msgstr "não ativo"
 #. :sl3:
 #: ../partman-crypto.templates:7001
 msgid "Encryption method:"
-msgstr "Método de criptografia:"
+msgstr "روش پارتیشن‌بندی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "Método de criptografia para esta partição:"
+msgstr "روش پنهان سازی برای این پارتیشن:"
 
 #. Type: select
 #. Description
@@ -90,8 +89,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"Mudar o método de criptografia ajustará outros campos relacionados à "
-"criptografia para os valores padrão do novo método de criptografia."
+"تغییر روش پنهان سازی دیگر فایل های مربوط به پنهان سازی را برای پیش فرض صداها "
+"برای روش جدید پنهان سازی تنظیم خواهد کرد."
 
 #. Type: text
 #. Description
@@ -99,14 +98,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:9001
 msgid "Encryption:"
-msgstr "Criptografia:"
+msgstr "پنهان سازی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "Criptografia para esta partição:"
+msgstr "روش پنهان سازی برای این پارتیشن:"
 
 #. Type: text
 #. Description
@@ -114,14 +113,14 @@ msgstr "Criptografia para esta partição:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "Tamanho da chave:"
+msgstr "اندازه اصلی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "Tamanho da chave para esta partição:"
+msgstr "اندازه اصلی برای این پارتیشن"
 
 #. Type: text
 #. Description
@@ -131,7 +130,7 @@ msgstr "Tamanho da chave para esta partição:"
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr "Algoritmo IV:"
+msgstr "IV الگوریتم "
 
 #. Type: select
 #. Description
@@ -140,7 +139,7 @@ msgstr "Algoritmo IV:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Algoritmo de geração de inicialização de vetores para esta partição:"
+msgstr "شناسایی الگوریتم تولید بردار برای این پارتیشن:"
 
 #. Type: select
 #. Description
@@ -154,11 +153,10 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"Existem diferentes algoritmos a partir do quais vetores de inicialização "
-"podem ser derivados para cada setor. Esta escolha influencia na segurança da "
-"criptografia. Normalmente, não existem razões para mudar para um algoritmo "
-"diferente do algoritmo padrão recomendado, exceto por compatibilidade com "
-"sistemas mais antigos."
+"الگوریتم های مختلف برای شناسایی بردار برای هر سکتور وجود دارد. این تصمیم "
+"امنیت پنهان سازی را تحت تاثیر قرار می دهد. به صورت عادی، هیچ دلیلی برای "
+"تغییر این مورد نسبت به پیش فرض آن وجود ندارد، مگر برای سازگاری با سیستم های "
+"قدیمی. "
 
 #. Type: text
 #. Description
@@ -166,14 +164,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "Chave criptográfica:"
+msgstr "کد پنهان سازی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "Tipo de chave criptográfica para esta partição:"
+msgstr "نوع کد پنهان سازی برای این پارتیشن:"
 
 #. Type: text
 #. Description
@@ -181,14 +179,14 @@ msgstr "Tipo de chave criptográfica para esta partição:"
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "Hash de chave criptográfica:"
+msgstr "ریز کد پنهان سازی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "Tipo de hash de chave criptográfica para esta partição:"
+msgstr "نوع کد پنهان سازی برای این پارتیشن:"
 
 #. Type: select
 #. Description
@@ -200,11 +198,9 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"A chave criptográfica é derivada da passphrase através da aplicação de uma "
-"função hash de mão única à mesma. Normalmente, não existem razões para mudar "
-"a chave criptográfica para outra chave diferente da chave padrão recomendada "
-"e, na verdade, fazer essa mudança de maneira errada pode reduzir a força da "
-"criptografia."
+" یک طرفه به آن، گرفته شده است. در حال عادی، دلیل یبرای تغییر پیش فرض پیشنهاد "
+"شده وجود ندارد و انجام آن به صورت اشتباه می تواند اندازه پنهان سازی را کاهش "
+"دهد.hashکد پنهان سازی از عبارت رمز بوسیله یک تابع "
 
 #. Type: text
 #. Description
@@ -213,35 +209,35 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr "Apagar dados:"
+msgstr "پاک کردن داده:"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:20001
 msgid "no"
-msgstr "não"
+msgstr "خیر"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:21001
 msgid "yes"
-msgstr "sim"
+msgstr "بله"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "Apagar dados nesta partição"
+msgstr "داده را از این پارتیشن پاک کنید"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Realmente apagar os dados em ${DEVICE}?"
+msgstr " پاک کنید؟ ${DEVICE}آیا واقعا می خواهید داده را بر "
 
 #. Type: boolean
 #. Description
@@ -252,23 +248,22 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Os dados em ${DEVICE} serão sobrescritos com dados aleatórios. Os mesmos não "
-"poderão ser recuperados após este passo ter sido finalizado. Esta é a última "
-"oportunidade de abortar o processo que apagará os dados."
+" توسط داده تصادفی جایگزین خواهد شد. پس از تکمیل این مرحله دیگر بازگشت نخواهد "
+"شد. این آخرین موقعیت برای توقف حذف است.   ${DEVICE}داده بر "
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Apagando dados em ${DEVICE}"
+msgstr "${DEVICE}پاک کردن داده بر "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Falha na remoção de dados em ${DEVICE}"
+msgstr " ناموفق بود${DEVICE}حذف داده بر "
 
 #. Type: error
 #. Description
@@ -277,44 +272,42 @@ msgstr "Falha na remoção de dados em ${DEVICE}"
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr ""
-"Um erro ocorreu durante a tentativa de apagar dos dados em ${DEVICE}. Os "
-"dados não foram apagados."
+msgstr " رخ داد. داده حذف نشد.${DEVICE}یک خطا در هنگام تلاش برای حذف داده بر "
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "Configurando criptografia..."
+msgstr "در حال تنظیم پنهان سازی"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Configurar volumes criptografados"
+msgstr "صداهای پنهان شده را تایید نمایید"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "Nenhuma partição a ser criptografada"
+msgstr "هیچ پارتیشنی برای پنهان سازی وجود ندارد"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "Nenhuma partição foi selecionada para criptografia."
+msgstr "هیچ پارتیشنی برای پنهان سازی انتخاب نشده است."
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:29001
 msgid "Required programs missing"
-msgstr "Programas necessários faltando"
+msgstr "برنامه های مورد نیاز وجود ندراد"
 
 #. Type: note
 #. Description
@@ -324,15 +317,15 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Esta construção do debian-installer não inclui um ou mais programas "
-"necessários para que o partman-crypto funcione corretamente."
+" در تابع به آن نیاز است شامل نمی شود.partman-crypto این ساختار نصب کننده "
+"دبین یک یا چند برنامه را که برای "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr "Opções de criptografia necessárias faltando"
+msgstr "گزینه های پنهان سازی مورد نیاز وجود ندارد"
 
 #. Type: error
 #. Description
@@ -342,8 +335,8 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"As opções de criptografia para ${DEVICE} estão incompletas. Por favor, "
-"retorne ao menu de particionamento e selecione todas as opções necessárias."
+" ناقص هستند. لطفا به منوی پارتیشن بازگردید و تمامی گزینه های مورد نیاز را "
+"انتخاب کنید.${DEVICE}گزینه های پنهان سازی برای "
 
 #. Type: text
 #. Description
@@ -353,7 +346,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "faltando"
+msgstr "گم شده"
 
 #. Type: text
 #. Description
@@ -361,14 +354,14 @@ msgstr "faltando"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Em uso como volume físico para volume criptografado ${DEV}"
+msgstr "${DEV} در حال استفاده به عنوان صدای فیزیکی برای صدای پنهان شده "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "Falha na instalação de pacote de criptografia"
+msgstr "نصب پکیج های پنهان سازی ناموفق بود"
 
 #. Type: error
 #. Description
@@ -378,8 +371,8 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"O pacote de módulo de kernel ${PACKAGE} não pôde ser encontrado ou um erro "
-"ocorreu durante a instalação do mesmo."
+"نمی توانند یافت شوند یا اینکه یک خطا در حین نصب آن رخ داد.${PACKAGE} پکیج "
+"ماژول کرنل "
 
 #. Type: error
 #. Description
@@ -390,16 +383,16 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"É provável que surjam problemas na configuração de partições criptografadas "
-"quando o sistema for reinicializado. Você poderá ser capaz corrigí-los "
-"instalando os pacotes necessários posteriormente."
+"به نظر می رسد که مشکلاتی برای نصب  پارتیشن های پنهان سازی شده در زمان ریبوت "
+"شدن سیستم وجود خواهد داشت. شما قادر خواهید بود که بعدا با نصب پکیج های لازم "
+"آن را اصلاح نمایید."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Gravar as mudanças no disco e configurar volumes criptografados?"
+msgstr "آیا می خواهید تغییرات روی دیسک رایت شود و صداهای پنهان شده تایید گردد؟"
 
 #. Type: boolean
 #. Description
@@ -409,9 +402,8 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Antes que os volumes criptografados possam ser configurados, o esquema de "
-"particionamento atual precisa ser gravado em disco. Essas mudanças não "
-"poderão ser desfeitas."
+"پیش از صداهای پنهان شده می تواند تایید شود، طرح پارتیشن بندی جاری باید بر "
+"دیسک رایت شود. این تغییرات قابل بازگشت نیستند."
 
 #. Type: boolean
 #. Description
@@ -426,55 +418,51 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Depois que os volumes criptografados forem configurados, nenhuma mudança "
-"adicional nas partições dos disco que contém os volumes criptografados será "
-"permitida. Por favor, decida se você está satisfeito com o esquema de "
-"particionamento atual nesses discos antes de continuar."
+"پس از تایید صداهای پنهان شده، هیچ تغییرات اضافی بر پارتیشن های روی دیسک شامل "
+"صداهای پنهان شده وجود نخواهد داشت. لطفا تصمیم بگیرید که می خواهید طرح جاری "
+"پارتیشن بندی برای این دیسک ها پیش از ادامه اجرا شود."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
-"Manter o layout de particionamento atual e configurar volumes criptografados?"
+msgstr "لایه پارتیشن جاری  و تایید صداهای پنهان نگهداشته شود؟  "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Falha na configuração de volumes criptografados"
+msgstr "تایید صداهای پنهان شده ناموفق بود"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
+msgstr "هنگام ثبت تغییرات در دیسک خطایی رخ داد.."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "A configuração foi abortada."
+msgstr "تایید متوقف شد"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Falha na inicialização de volume criptografado"
+msgstr "نصب صدای پنهان شده ناموفق بود"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
+msgstr "هنگامتنظیمات صداهای پنهان شده خطایی رخ داد."
 
 #. Type: text
 #. Description
@@ -485,7 +473,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr "Passphrase"
+msgstr " scheme عبارت رمز"
 
 #. Type: text
 #. Description
@@ -496,7 +484,7 @@ msgstr "Passphrase"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr "Arquivo de chave (GnuPG)"
+msgstr "(GnuPG) فایل اصلی "
 
 #. Type: text
 #. Description
@@ -507,21 +495,21 @@ msgstr "Arquivo de chave (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr "Chave aleatória"
+msgstr "کد تصادفی"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
-msgstr "Área de troca insegura detectada"
+msgstr "مبادله فضای نامطمئن شناسایی شد"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "Uma área de troca insegura foi detectada."
+msgstr "یک فضای مبادله نامطمئن شناسایی شد"
 
 #. Type: error
 #. Description
@@ -532,9 +520,9 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"Esse é um erro fatal, uma vez que dados sensíveis podem ser gravados no "
-"disco não criptografado. Isso poderia permitir a alguém com acesso ao disco "
-"recuperar partes da chave criptográfica ou da passphrase."
+"این یک خطای جدی است تا زمانی که داده های حساس بتوانند بر دیسک پنهان نشده "
+"رایت شوند. این اجازه می دهد که به دیسک برای بخش های تحت پوشش کد یا عبارت "
+"پنهان سازی دسترسی داشته باشید."
 
 #. Type: error
 #. Description
@@ -545,24 +533,23 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"Por favor, desabilite a área de troca (por exemplo, executando swapoff) ou "
-"configure uma área de troca (swap) criptografada e então execute a "
-"configuração dos volumes criptografados novamente. Este programa irá agora "
-"abortar."
+"  و سپس برنامه نصب صداهای پنهان شده را مجددا اجرا نمایید. این برنامه هم "
+"اکنون متوقف خواهد شد.  غیر قابل استفاده نمایید ) یا تایید یک فضای مبادله "
+"swapoffلطفا فضای مبادله را(مثلا با اجرای "
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "Passphrase criptográfico:"
+msgstr "عبارات پنهان سازی:"
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Você precisa escolher uma passphrase para criptografar ${DEVICE}."
+msgstr " انتخاب کنید.${DEVICE}شما نیاز دارید تا یک عبارت برای پنهان کردن "
 
 #. Type: password
 #. Description
@@ -574,10 +561,10 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"A força geral da criptografia depende fortemente dessa passphrase, portanto "
-"você deve se certificar de escolher uma passphrase que não seja fácil de ser "
-"adivinhada. A mesma não deverá ser uma palavra ou uma sentença encontrada em "
-"dicionários ou mesmo uma frase que possa ser facilmente associada a você."
+" طول پنهان سازی به این عبارت بستگی دارد، بنابراین شما بایستی مراقب باشید که "
+"یک عبارتی را انتخاب کنید که به آسانی قابل حدس زدن نباشد. این نباید یک کلمه "
+"یا جمله ای باشد که می توان در فرهنگ لغت پیدا کرد، یا یک عبارت که به راحتی با "
+"شما مربوط شود."
 
 #. Type: password
 #. Description
@@ -588,16 +575,15 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Uma boa passphrase contém uma mistura de letras, números e pontuação. É "
-"recomendado que passphrases tenham um tamanho igual ou superior a 20 "
-"caracteres."
+"یک عبارت خوب شامل آمیزه ای از حروف، اعداد و علائم می باشد. پیشنهاد می شود که "
+"عبارات طولی برابر با 20 کاراکتر یا بیشتر داشته باشند. "
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "Informa a passphrase novamente para verificação:"
+msgstr "برای تایید عبارت را مجددا وارد نمایید:"
 
 #. Type: password
 #. Description
@@ -607,31 +593,29 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Por favor, informe a passphrase novamente para verificar se você a digitou "
-"corretamente."
+"لطفا اسم‌رمز نصب از راه دو ر را مجددا وارد کنید تا از صحت تایپ اطمینان حاصل "
+"گردد."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "Erro na informação da passphrase"
+msgstr "خطا در ورود عبارت رمز"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
-"As duas passphrases que você informou não são iguais. Por favor, tente "
-"novamente."
+msgstr "دو اسم‌رمزی که وارد کرده‌اید یکی نیستند. لطفا مجددا وارد کنید."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
 msgid "Empty passphrase"
-msgstr "Passphrase vazia"
+msgstr "عبارت خالی"
 
 #. Type: error
 #. Description
@@ -641,15 +625,15 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Você informou uma passphrase vazia, o que não é permitido. Por favor, "
-"escolha uma passphrase não vazia."
+"شما اسم‌راز نصب از رها دور را خالی گذاشته‌اید. این کار امنیت ندارد. لطفا یک "
+"اسم‌رمز وارد کنید."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "Utilizar passphrase fraca?"
+msgstr "از عبارت رمز ضعیف استفاده می کنید؟"
 
 #. Type: boolean
 #. Description
@@ -662,37 +646,36 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Você informou uma passphrase que consiste de menos do que ${MINIMUM} "
-"caracteres, o que é considerado muito fraco. Você deveria escolher uma "
-"passphrase mais forte."
+" می شود وارد نموده اید، که بسیار ضعیف مشخص شده است. شما باید عبارتی قوی "
+"انتخاب کنید.${MINIMUM}شما یک عبارت را که شاملکاراکترهای کمتر از "
 
 #. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "A chave criptográfica para ${DEVICE} está sendo criada agora."
+msgstr " هم اکنون در حال ایجاد است.${DEVICE} کد پنهان سازی برای "
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "Chave de dados foi criada com sucesso."
+msgstr "کد داده با موفقیت ایجاد شد."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr "Falha na criação do arquivo de chave"
+msgstr "ایجاد کد فایل شکست خورد"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "Um erro ocorreu durante a criação do arquivo de chave."
+msgstr "هنگام ثبت تغییرات در دیسک خطایی رخ داد."
 
 #. Type: error
 #. Description
@@ -702,7 +685,7 @@ msgstr "Um erro ocorreu durante a criação do arquivo de chave."
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "Falha na configuração da criptografia"
+msgstr "تنظیم خودکار شبکه شکست خورد"
 
 #. Type: error
 #. Description
@@ -713,16 +696,16 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Você selecionou o sistema de arquivos raiz para ser armazenado em uma "
-"partição criptografada. Esse recurso requer uma partição /boot separada, na "
-"qual o kernel e o initrd possam ser armazenados."
+" جداگانه دارد که کرنل و اینیترد بتوانند ذخیره شوند. /boot شما تصمیم به روت "
+"سیستم برای ذخیره بر یک پارتیشن پنهان شده گرفته اید. این متغیر نیاز به یک "
+"پارتیشن "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Você deveria voltar e configurar uma partição /boot."
+msgstr " نصب کنید./bootشما باید بازگردید  و یک پارتیشن "
 
 #. Type: error
 #. Description
@@ -734,11 +717,9 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Você selecionou o sistema de arquivos /boot para ser armazenado em uma "
-"partição criptografada. Isso não é possível devido ao carregador de "
-"inicialização não conseguir carregar o kernel e o initrd a partir de uma "
-"partição criptografada. Continuar agora resultaria em uma instalação que não "
-"poderia ser utilizada."
+" بر یک پارتیشن پنهان شده گرفته اید. این غیر ممکن نیست زیرا بوت لودر قادر به "
+"لود کرنل و اینیترد نیست. ادامه آن در حال حاضر بر نصب تاثیر گذار خواهد بود که "
+"نمی تواند مورد استفاده قرار گیرد./bootشما تصمیم به ذخیره فایل سیستم "
 
 #. Type: error
 #. Description
@@ -748,15 +729,15 @@ msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Você deveria voltar e selecionar uma partição não criptografada para o "
-"sistema de arquivos /boot."
+" انتخاب کنید. /bootشما باید بازگردید و یک پارتیشن پنهان نشده را برای سیستم "
+"فایل "
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr "Você têm certeza que deseja utilizar uma chave aleatória?"
+msgstr "آیا مطمئن هستید که میخواهید یک کد تصادفی استفاده کنید؟"
 
 #. Type: boolean
 #. Description
@@ -766,8 +747,8 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"Você selecionou um tipo de chave aleatória para ${DEVICE} mas requisitou ao "
-"particionador criar um sistema de arquivos neste dispositivo."
+" انتخاب کرده اید اما پارتیشنر برای ایجاد یک فایل سیستمی بر آن درخواست شده "
+"است. ${DEVICE}شما یک نوع کد تصادفی برای "
 
 #. Type: boolean
 #. Description
@@ -777,34 +758,29 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Utilizar um tipo de chave aleatória significa que os dados da partição serão "
-"destruídos a cada reinicialização. Esse tipo de chave deveria ser utilizado "
-"para para partições de troca (swap)."
+"استفاده از یک نوع کد تصادفی بهدان معناست که داده پارتیشن در هر ریبوت آسیب می "
+"بیند. این تنها می تواند برای پارتیشن های مبادله مورد استفاده قرار گیرد."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Falha ao carregar componentes de criptografia"
+msgstr "دانلود اجزای کریپتو شکست خورد"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr ""
-"Um erro ocorreu durante a tentativa de fazer o download dos componentes de "
-"criptografia."
+msgstr "یک خطا هنگام تلاش برای دانلود اجزای اضافی کریپتو رخ داد."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr ""
-"Continuar a instalar os componentes de criptografia mesmo com memória "
-"insuficiente?"
+msgstr "می خواهید نصب اجزای کریتو  علی رغم فضای ناکافی ادامه یابد؟"
 
 #. Type: boolean
 #. Description
@@ -815,9 +791,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Parece não existir memória suficiente disponível para instalar componentes "
-"de criptografia adicionais. Caso você opte por ir em frente e continuar "
-"mesmo assim, o processo de instalação poderá falhar."
+"به نظر نمی رسد که حافظه کافی در دسترس برای نصب اجزای اضافی کریپتو وجود داشته "
+"باشد. اگر شما تصمیم به ادامه بگیرید و درهرصورت ادامه دهید، فرآیند نصب ناموفق "
+"خواهد بود. "
 
 #. Type: select
 #. Choices
@@ -826,9 +802,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Criar volumes criptografados"
+msgstr "صداهای پنهان شده ایجاد کنید"
 
 #. Type: select
 #. Choices
@@ -838,60 +813,54 @@ msgstr "Criar volumes criptografados"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr "Finalizar"
+msgstr "تمام"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Ações de configuração da criptografia"
+msgstr "عملیات تایید پنهان سازی"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
-"Manter o layout de particionamento atual e configurar volumes criptografados?"
+"این لیست به شما اجازه می دهد که volume های رمزنگاری شده را تایید نمایید."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Dispositivos a serem criptografados:"
+msgstr "ابزارها برای رمزگذاری:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Por favor, selecione os dispositivos para o novo Grupo de Volume."
+msgstr "لطفا ابزاری که برای رمزگذاری می خواهید استفاده کنید را انتخاب کنید ."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr "Você pode selecionar um ou mais dispositivos."
+msgstr "شما می توانید یک یا چند ابزار انتخاب کنید"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Nenhum volume físico selecionado"
+msgstr "هیچ دستگاه فیزیکی انتخاب نشد."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Nenhuma partição foi selecionada para criptografia."
+msgstr "هیچ ابزاری برای رمزگذاری انتخاب نشده است."

@@ -9,16 +9,17 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006, 2007.
+# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006, 2007, 2010.
 # Євгеній Мещеряков <eugen@debian.org>, 2008.
+# Borys Yanovych <borys@yanovy.ch>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-19 22:11+0200\n"
-"Last-Translator: Євгеній Мещеряков <eugen@debian.org>\n"
-"Language-Team: uk <>\n"
+"PO-Revision-Date: 2010-07-05 00:46+0300\n"
+"Last-Translator: Borys Yanovych <borys@yanovy.ch>\n"
+"Language-Team: Ukrainian <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -95,6 +96,8 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
+"При зміні методу шифрування інші, властиві для нового методу поля будуть "
+"заповнені звичними значеннями."
 
 #. Type: text
 #. Description
@@ -811,9 +814,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Налаштувати зашифровані томи"
+msgstr "Створити зашифровані томи"
 
 #. Type: select
 #. Choices
@@ -829,33 +831,29 @@ msgstr "Завершити"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Не вдалося налаштувати шифрування"
+msgstr "Дії по налаштуванню шифрування"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Залишити поточні таблиці розділів та налаштувати зашифровані томи?"
+msgstr "Це меню дозволяє налаштувати зашифровані томи."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Використовувати служби:"
+msgstr "Зашифрувати пристрої:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Виберіть пристрій для нової групи томів."
+msgstr "Виберіть пристрої для шифрування."
 
 #. Type: multiselect
 #. Description
@@ -868,14 +866,12 @@ msgstr "Ви можете вибрати один чи декілька прис
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Фізичні томи не вибрані"
+msgstr "Жодного пристрою не вибрано"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Жоден розділ не вибраний для шифрування"
+msgstr "Жодного пристрою не було вибрано для шифрування"

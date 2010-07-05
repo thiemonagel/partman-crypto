@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-01 03:39-0300\n"
+"PO-Revision-Date: 2010-07-05 02:03-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -826,7 +826,6 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
 msgstr "Criar volumes criptografados"
 
@@ -844,7 +843,6 @@ msgstr "Finalizar"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
 msgstr "Ações de configuração da criptografia"
 
@@ -852,16 +850,13 @@ msgstr "Ações de configuração da criptografia"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Manter o layout de particionamento atual e configurar volumes criptografados?"
+msgstr "Este menu permite que você configure volumes criptografados."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
 msgstr "Dispositivos a serem criptografados:"
 
@@ -869,9 +864,8 @@ msgstr "Dispositivos a serem criptografados:"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Por favor, selecione os dispositivos para o novo Grupo de Volume."
+msgstr "Por favor, selecione os dispositivos que serão criptografados."
 
 #. Type: multiselect
 #. Description
@@ -884,14 +878,12 @@ msgstr "Você pode selecionar um ou mais dispositivos."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Nenhum volume físico selecionado"
+msgstr "Nenhum dispositivo selecionado"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Nenhuma partição foi selecionada para criptografia."
+msgstr "Nenhum dispositivo foi selecionado para criptografia."

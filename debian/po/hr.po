@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-01 18:05+0200\n"
+"PO-Revision-Date: 2010-07-07 12:30+0200\n"
 "Last-Translator: Josip Rodin <joy+ditrans@linux.hr>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -812,9 +812,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Podesi enkriptirane prostore"
+msgstr "Napravi enkriptirane prostore"
 
 #. Type: select
 #. Choices
@@ -830,33 +829,29 @@ msgstr "Završi"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Podešavanje enkripcije nije uspjelo"
+msgstr "Postupci podešavanja enkripcije"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Zadrži trenutni raspored particija i podesi enkriptirane prostore?"
+msgstr "Ovaj izbornik omogućuje podešavanje enkriptiranih prostora."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Usluge za koristiti:"
+msgstr "Uređaji za kriptiranje:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Molim izaberite uređaje za novu prostornu grupu."
+msgstr "Molim izaberite uređaje za kriptiranje."
 
 #. Type: multiselect
 #. Description
@@ -869,14 +864,12 @@ msgstr "Možete izabrati jedan ili više uređaja."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Nema izabranih fizičkih prostora"
+msgstr "Nema izabranih uređaja"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "Nije izabrana nijedna particija za enkripciju."
+msgstr "Nije izabran nijedan uređaj za enkripciju."

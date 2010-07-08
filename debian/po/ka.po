@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-09 00:29+0400\n"
+"PO-Revision-Date: 2010-07-08 22:36+0400\n"
 "Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
 "Language-Team: Georgian\n"
 "MIME-Version: 1.0\n"
@@ -814,9 +814,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "დაშიფრული დისკწამყვანების კონფიგურაცია"
+msgstr "დაშიფრული ტომების (volumes) შექმნა"
 
 #  templates.pot (PACKAGE VERSION)#-#-#-#-
 #  templates.pot (PACKAGE VERSION)#-#-#-#-
@@ -835,35 +834,29 @@ msgstr "დასრულება"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "შეცდომა დაშიფვრის კონფიგურაციისას"
+msgstr "შიფრირების კონფიგურაციის ქმედებები"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"გსურთ დანაყოფების მიმდინარე წყობის შენახვა და დაშიფრული დისკწამყვანების "
-"კონფიგურაცია?"
+msgstr "მენიუ დაშიფრული ტომების კონფიგურაციის საშუალებას იძლევა."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "სასურველი სერვერისები:"
+msgstr "დასაშიფრი მოწყობილობები:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "ახალი ტომთა ჯგუფისათვის მოწყობილობის ამორჩევა."
+msgstr "აირჩიეთ დასაშიფრი მოწყობილობა."
 
 #. Type: multiselect
 #. Description
@@ -876,14 +869,12 @@ msgstr "თქვენ შეგიძლიათ ერთი ან მე�
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "არ არის მითითებული ფიზიკური დისკწამყვანი"
+msgstr "მოწყობილობა არ არის მონიშნული"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "შიფრიებისათვის არცერთი დანაყოფი არ იქნა ამორჩეული."
+msgstr "შიფრიებისათვის არცერთი მოწყობილობა არ იქნა ამორჩეული."

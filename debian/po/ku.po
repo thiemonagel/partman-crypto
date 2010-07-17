@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-09 21:51+0200\n"
+"PO-Revision-Date: 2010-07-14 00:59+0200\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
 "MIME-Version: 1.0\n"
@@ -347,9 +347,8 @@ msgstr "neamade"
 #. :sl3:
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
-#, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Wekî voluma ya fîzîkî ji bo şîfrekirinê"
+msgstr "Wekî volume ya fîzîkî ji bo voluma şîfrekirinê ${DEV} tê bikaranîn"
 
 #. Type: error
 #. Description
@@ -775,9 +774,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "Volumên şifrekirî mîheng bike"
+msgstr "Volumên şifrekirî biafirîne"
 
 #. Type: select
 #. Choices
@@ -793,35 +791,29 @@ msgstr "Dawî"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Mîhenkirina şîfrekirinê bi ser neket"
+msgstr "Çalakiyên mîhengkirina şîfrekirinê"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr ""
-"Bila pergala dabeşkirina heyî were parastin û volumên şîfrekirî werin "
-"veavakirin?"
+msgstr "Bi vê pêşekê re dikarî volumên şîfrekirî mîheng bikî."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Xizmetên werin bikaranîn:"
+msgstr "Cîhazên ku werin şîfrekirin:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Ji kerema xwe re amûrên ji bo koma volume ya nû hilbijêre."
+msgstr "Ji kerema xwe re cîhazên ku weren şîfrekirin hilbijêre."
 
 #. Type: multiselect
 #. Description
@@ -834,14 +826,12 @@ msgstr "Tu dikarî yek an zêdetir amûr hilbijêrî."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "Volumên fizîkî nehatin hilbijartin"
+msgstr "Tu cîhaz nehate hilbijartin"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "partîsiyonên bên şîfrekirin nehatin hilbijartin."
+msgstr "Tu cîhaz ji bo şîfrekirinê nehatine hilbijartin."

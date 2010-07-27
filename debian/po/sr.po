@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-04 18:23+0100\n"
+"PO-Revision-Date: 2010-07-18 01:37+0100\n"
 "Last-Translator: Janos Guljas <janos@janos.in.rs>\n"
 "Language-Team: Serbian/Cyrillic\n"
 "MIME-Version: 1.0\n"
@@ -51,9 +51,8 @@ msgstr ""
 #. Translations should be kept below 40 columns
 #. :sl3:
 #: ../partman-crypto.templates:3001
-#, fuzzy
 msgid "Loopback (loop-AES)"
-msgstr "Повратна петља (loop%s)"
+msgstr "Повратна петља (loop-AES)"
 
 #. Type: text
 #. Description
@@ -79,17 +78,15 @@ msgstr ""
 #. Should be kept below 24 columns
 #. :sl3:
 #: ../partman-crypto.templates:7001
-#, fuzzy
 msgid "Encryption method:"
-msgstr "Метод партиционисања:"
+msgstr "Метод енкрипције:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:8001
-#, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Тачка качења за ову партицију:"
+msgstr "Метод енкрипције за ову партицију:"
 
 #. Type: select
 #. Description
@@ -112,9 +109,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
-#, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Тачка качења за ову партицију:"
+msgstr "Енкрипција за ову партицију:"
 
 #. Type: text
 #. Description
@@ -128,9 +124,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
-#, fuzzy
 msgid "Key size for this partition:"
-msgstr "Тачка качења за ову партицију:"
+msgstr "Величина кључа за ову партицију:"
 
 #. Type: text
 #. Description
@@ -176,9 +171,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
-#, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Тачка качења за ову партицију:"
+msgstr "Тип енкрипционог кључа за ову партицију:"
 
 #. Type: text
 #. Description
@@ -234,9 +228,8 @@ msgstr "да"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
-#, fuzzy
 msgid "Erase data on this partition"
-msgstr "Креирај нову партицију"
+msgstr "Избриши податке на овој партицији"
 
 #. Type: boolean
 #. Description
@@ -290,7 +283,7 @@ msgstr "Подешавање енкрипције..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Конфигуриши енкриптоване волуме."
+msgstr "Конфигуриши енкриптоване волумеne"
 
 #. Type: note
 #. Description
@@ -362,7 +355,7 @@ msgstr ""
 #: ../partman-crypto.templates:33001
 #, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Инсталација GRUB-а није успела"
+msgstr "Грешка при инсталацији енкриптованог пакета"
 
 #. Type: error
 #. Description
@@ -387,9 +380,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
-#, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Да запишем претходне измене на диск и наставим?"
+msgstr "Записати измене на диск и конфигурисати енкриптовани волумен?"
 
 #. Type: boolean
 #. Description
@@ -432,17 +424,15 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
-#, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Дошло је до грешке приликом записивања измена да дискове."
+msgstr "Дошло је до грешке приликом конфигурисања енкриптованих волумена."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
-#, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Копирање је прекинуто."
+msgstr "Конфигурисање је прекинуто."
 
 #. Type: error
 #. Description
@@ -455,9 +445,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
-#, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Дошло је до грешке приликом подешавања GRUB-а на SATA RAID диск."
+msgstr "Дошло је до грешке приликом подешавања енкриптованих волумена."
 
 #. Type: text
 #. Description
@@ -498,7 +487,7 @@ msgstr ""
 #: ../partman-crypto.templates:41001
 #, fuzzy
 msgid "Unsafe swap space detected"
-msgstr "Креирај простор за своп"
+msgstr "Детектован је несигуран swap простор"
 
 #. Type: error
 #. Description
@@ -545,18 +534,15 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
-#, fuzzy
 msgid ""
 "The overall strength of the encryption depends strongly on this passphrase, "
 "so you should take care to choose a passphrase that is not easy to guess. It "
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Морате поставити лозинку за 'root' корисника, системски "
-"административниналог. Злонамеран или неквалификован коирсник са правима "
-"приступа rootкорисника може имати погубне ефекте, тако да водите рачуна да "
-"одаберетелозинку која се не може лако погодити. То не би требало да буде реч "
-"из речникаили реч која се може лако повезати са вама."
+"Целокупна јачина партиције веома зависи од ове лозинке, тако да водите "
+"рачуна да изаберете лозинку која се не може лако погодити. То не би требало "
+"да буде реч из речника или реч која се може лако повезати са вама."
 
 #. Type: password
 #. Description
@@ -612,12 +598,10 @@ msgstr "Празна лозинка"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
-#, fuzzy
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
-"Унели сте празну лозинку, што није допуштено. Изаберите непразнулозинку."
+msgstr "Унели сте празну лозинку, што није допуштено. Изаберите лозинку."
 
 #. Type: boolean
 #. Description
@@ -691,11 +675,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
-#, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr ""
-"Требало би да користите други тип фајл система као што је ext3, за /boot "
-"партицију."
+msgstr "Требало би да се вратите и подесите /boot партицију."
 
 #. Type: error
 #. Description
@@ -712,20 +693,19 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:51001
-#, fuzzy
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
 msgstr ""
-"Требало би да направите малу /boot партицију другог типа, као што је ext3."
+"Требало би да се вратите и изаберете неенкриптовану партицију за /boot фајл "
+"систем."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr ""
-"Да ли сте сигурни да сада желите да користите насумично генерисан кључ?"
+msgstr "Да ли сте сигурни да желите да користите насумично генерисан кључ?"
 
 #. Type: boolean
 #. Description
@@ -794,7 +774,7 @@ msgstr "Направи енкриптоване волумене"
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr "Заврши"
+msgstr "Завршити"
 
 #. Type: select
 #. Description
@@ -829,7 +809,7 @@ msgstr "Изаберите уређаје за енкрипцију."
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr ""
+msgstr "Можете изабрати један или више уређаја."
 
 #. Type: error
 #. Description

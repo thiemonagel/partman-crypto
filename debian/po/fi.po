@@ -11,13 +11,13 @@
 #
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004.
 # Tapio Lehtonen <tale@debian.org>, 2004 - 2006.
-# Esko Arajärvi <edu@iki.fi>, 2007 - 2008, 2009.
+# Esko Arajärvi <edu@iki.fi>, 2007 - 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-10-14 23:35+0300\n"
+"PO-Revision-Date: 2010-08-02 23:00+0300\n"
 "Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "fyysinen levynide salaukselle"
+msgstr "fyysinen taltio salaukselle"
 
 #. Type: text
 #. Description
@@ -280,7 +280,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Tapahtui virhe pyyhittäessä tietoja laitteelta ${DEVICE}. Tietoja ei ole "
+"Pyyhittäessä tietoja laitteelta ${DEVICE} tapahtui virhe. Tietoja ei ole "
 "pyyhitty."
 
 #. Type: text
@@ -295,7 +295,7 @@ msgstr "Tehdään salauksen asetukset..."
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "Tee salattujen levyniteiden asetukset"
+msgstr "Tee salattujen taltioiden asetukset"
 
 #. Type: note
 #. Description
@@ -363,7 +363,7 @@ msgstr "puuttuu"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Käytössä fyysisenä levyniteenä salatulle niteelle ${DEV}"
+msgstr "Käytössä fyysisenä taltiona salatulle taltiolle ${DEV}"
 
 #. Type: error
 #. Description
@@ -392,8 +392,8 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"Käynnistyksen aikana on luultavasti pulmia järjestelmän tehdessä salattujen "
-"osioiden asetuksia. Mahdollisesti tämän voi korjata asentamalla vaaditut "
+"Käynnistyksen aikana on luultavasti ongelmia järjestelmän käynnistäessä "
+"salattuja osioita. Voit mahdollisesti korjata tämän asentamalla vaaditut "
 "paketit myöhemmin."
 
 #. Type: boolean
@@ -401,7 +401,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Tallenna muutokset levylle ja tee salattujen niteiden asetukset?"
+msgstr "Tallenna muutokset levylle ja tee salattujen taltioiden asetukset?"
 
 #. Type: boolean
 #. Description
@@ -411,7 +411,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"Ennen kuin salattujen levyniteiden asetukset voidaan tehdä, on nykyiset "
+"Ennen kuin salattujen taltioiden asetukset voidaan tehdä, on nykyiset "
 "levyosiot tallennettava levyille. Näitä muutoksia ei voi perua."
 
 #. Type: boolean
@@ -427,31 +427,31 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"Kun salattujen levyniteiden asetukset on tehty, ei ole enää mahdollista "
-"tehdä lisämuutoksia niille osioille, jotka ovat salattuja levyniteitä "
-"sisältävillä levyillä. Varmista, että nyt tehdyt levyosiot näillä levyllä "
-"ovat sellaiset kuin haluat ennen jatkamista."
+"Kun salattujen taltioiden asetukset on tehty, ei ole enää mahdollista tehdä "
+"lisämuutoksia niille osioille, ovat salattuja taltioitasisältävillä "
+"levyillä. Varmista, että nyt tehdyt levyosiot näillä levyllä ovat sellaiset "
+"kuin haluat ennen jatkamista."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Säilytä nykyiset levyosiot ja tee salattujen levyniteiden asetukset?"
+msgstr "Säilytä nykyiset levyosiot ja tee salattujen taltioiden asetukset?"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "Salattujen levyniteiden asetuksien teko epäonnistui"
+msgstr "Salattujen taltioiden asetuksien teko epäonnistui"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Tapahtui virhe tehtäessä salattujen levyniteiden asetuksia."
+msgstr "Tehtäessä salattujen taltioiden asetuksia tapahtui virhe."
 
 #. Type: error
 #. Description
@@ -465,14 +465,14 @@ msgstr "Asetuksien teko on keskeytetty."
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "Salatun levyniteen alustus epäonnistui"
+msgstr "Salatun taltion alustus epäonnistui"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Tapahtui virhe tehtäessä salattuja levyniteitä."
+msgstr "Salattuja taltioita tehtäessä tapahtui virhe."
 
 #. Type: text
 #. Description
@@ -544,8 +544,8 @@ msgid ""
 "program will now abort."
 msgstr ""
 "Ota näennäismuistitila pois käytöstä (esim. komennolla swapoff) tai tee "
-"suojatun näennäismuistitilan asetukset ja sen jälkeen salattujen "
-"levyniteiden asetukset uudelleen. Tämä ohjelma keskeytyy."
+"suojatun näennäismuistitilan asetukset ja sen jälkeen salattujen taltioiden "
+"asetukset uudelleen. Tämän ohjelman ajaminen keskeytyy."
 
 #. Type: password
 #. Description
@@ -684,7 +684,7 @@ msgstr "Avaintiedoston luonti epäonnistui"
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "Tapahtui virhe luotaessa avaintiedostoa."
+msgstr "Luotaessa avaintiedostoa tapahtui virhe."
 
 #. Type: error
 #. Description
@@ -782,7 +782,7 @@ msgstr "Salauksen osien nouto epäonnistui"
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr "Tapahtui virhe noudettaessa lisää salauksen osia."
+msgstr "Noudettaessa lisää salauksen osia tapahtui virhe."
 
 #. Type: boolean
 #. Description
@@ -835,7 +835,7 @@ msgstr "Salauksen asetustoiminnot"
 #. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "Tämän valikon kautta voit tehdä salattujen levyniteiden asetukset."
+msgstr "Tämän valikon kautta voit tehdä salattujen taltioiden asetukset."
 
 #. Type: multiselect
 #. Description

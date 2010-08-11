@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-25 17:32+0100\n"
+"PO-Revision-Date: 2010-08-08 02:26+0100\n"
 "Last-Translator: Karolina Kalic <karolina@janos.in.rs>\n"
 "Language-Team: Serbian/Cyrillic\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,7 @@ msgstr "Повратна петља (loop-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr ""
+msgstr "Мапер уређаја (dm-crypt)"
 
 #. Type: text
 #. Description
@@ -146,7 +146,7 @@ msgstr "IV алгоритам:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr ""
+msgstr "Алгоритам генерисања иницијализационог вектора за ову партицију:"
 
 #. Type: select
 #. Description
@@ -160,6 +160,9 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
+"Постоје различити алгоритми који извлаче иницијализациони вектор за сваки "
+"сектор. Избор утиче на сигурност енкрипције. Нормално, није потребно мењати "
+"подразумевано, осим због компатибилности са старијим системима."
 
 #. Type: text
 #. Description
@@ -182,15 +185,14 @@ msgstr "Тип енкрипционог кључа за ову партициј�
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr ""
+msgstr "Хаш кључа за енкрипцију:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
-#, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Тачка качења за ову партицију:"
+msgstr "Тип хаша за кључ енкрипције за ову партицију:"
 
 #. Type: select
 #. Description
@@ -202,6 +204,8 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
+"Кључ за енкрипцију се генерише из лозинке помоћу хаш функције. Нормално, не "
+"постоји разлог за промену подразумеваног, јер може смањити јачину енкрипције."
 
 #. Type: text
 #. Description
@@ -431,7 +435,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr ""
+msgstr "Конфигурисати енкритоване волумене на постојећи распоред партиција?"
 
 #. Type: error
 #. Description
@@ -488,7 +492,7 @@ msgstr "Лозинка"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr ""
+msgstr "Фајл са кључем (GnuPG)"
 
 #. Type: text
 #. Description
@@ -661,7 +665,7 @@ msgstr "Кључ за енкрипцију за ${DEVICE} је сада креи
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr ""
+msgstr "Кључ је успешно креиран."
 
 #. Type: error
 #. Description
@@ -674,9 +678,8 @@ msgstr "Проблем при креирању кључа"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
-#, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Дошло је до грешке приликом записивања измена да дискове."
+msgstr "Дошло је до грешке приликом креирања фајла са кључем."
 
 #. Type: error
 #. Description

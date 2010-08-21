@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-29 02:08+0330\n"
-"Last-Translator: Ebrahim Byagowi <ebraminio@gmail.com>\n"
+"PO-Revision-Date: 2010-08-20 13:50+0330\n"
+"Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "صدای فیزیکی برای پنهان کردن "
+msgstr "حجم فیزیکی برای پنهان‌کردن "
 
 #. Type: text
 #. Description
@@ -79,7 +79,7 @@ msgstr "روش پارتیشن‌بندی:"
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "روش پنهان سازی برای این پارتیشن:"
+msgstr "روش پنهان‌سازی برای این پارتیشن:"
 
 #. Type: select
 #. Description
@@ -89,7 +89,7 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"تغییر روش پنهان سازی دیگر فایل های مربوط به پنهان سازی را برای پیش فرض صداها "
+"تغییر روش پنهان‌سازی دیگر فایل های مربوط به پنهان سازی را برای پیش فرض حجم‌ها "
 "برای روش جدید پنهان سازی تنظیم خواهد کرد."
 
 #. Type: text
@@ -98,14 +98,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:9001
 msgid "Encryption:"
-msgstr "پنهان سازی:"
+msgstr "پنهان‌سازی:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "روش پنهان سازی برای این پارتیشن:"
+msgstr "روش پنهان‌سازی برای این پارتیشن:"
 
 #. Type: text
 #. Description
@@ -285,14 +285,14 @@ msgstr "در حال تنظیم پنهان سازی"
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "صداهای پنهان شده را تایید نمایید"
+msgstr "حجم‌های پنهان شده را تایید نمایید"
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "هیچ پارتیشنی برای پنهان سازی وجود ندارد"
+msgstr "هیچ پارتیشنی برای پنهان‌سازی وجود ندارد"
 
 #. Type: note
 #. Description
@@ -353,7 +353,7 @@ msgstr "گم شده"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "${DEV} در حال استفاده به عنوان صدای فیزیکی برای صدای پنهان شده "
+msgstr "${DEV} در حال استفاده به عنوان حجم‌های فیزیکی برای حجم‌های پنهان شده "
 
 #. Type: error
 #. Description
@@ -391,7 +391,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "آیا می‌خواهید تغییرات روی دیسک رایت شود و صداهای پنهان شده تایید گردد؟"
+msgstr "آیا می‌خواهید تغییرات روی دیسک رایت شود و حجم‌های پنهان شده تایید گردد؟"
 
 #. Type: boolean
 #. Description
@@ -401,7 +401,7 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"پیش از صداهای پنهان شده می‌تواند تایید شود، طرح پارتیشن بندی جاری باید بر "
+"پیش از حجم‌های پنهان شده می‌تواند تایید شود، طرح پارتیشن بندی جاری باید بر "
 "دیسک رایت شود. این تغییرات قابل بازگشت نیستند."
 
 #. Type: boolean
@@ -417,8 +417,8 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"پس از تایید صداهای پنهان شده، هیچ تغییرات اضافی بر پارتیشن های روی دیسک شامل "
-"صداهای پنهان شده وجود نخواهد داشت. لطفا تصمیم بگیرید که می‌خواهید طرح جاری "
+"پس از تایید حجم‌های پنهان شده، هیچ تغییرات اضافی بر پارتیشن های روی دیسک شامل "
+"حجم‌های پنهان شده وجود نخواهد داشت. لطفا تصمیم بگیرید که می‌خواهید طرح جاری "
 "پارتیشن بندی برای این دیسک ها پیش از ادامه اجرا شود."
 
 #. Type: boolean
@@ -426,14 +426,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "لایه پارتیشن جاری  و تایید صداهای پنهان نگهداشته شود؟  "
+msgstr "لایه پارتیشن جاری و تایید حجم‌های پنهان نگهداشته شود؟  "
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "تایید صداهای پنهان شده ناموفق بود"
+msgstr "تنظیم حجم‌های پنهان شده ناموفق بود"
 
 #. Type: error
 #. Description
@@ -454,14 +454,14 @@ msgstr "تایید متوقف شد"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "نصب صدای پنهان شده ناموفق بود"
+msgstr "نصب حجم پنهان شده ناموفق بود"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "هنگامتنظیمات صداهای پنهان شده خطایی رخ داد."
+msgstr "در هنگام تنظیمات حجم‌های پنهان شده خطایی رخ داد."
 
 #. Type: text
 #. Description
@@ -532,7 +532,7 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"  و سپس برنامه نصب صداهای پنهان شده را مجددا اجرا نمایید. این برنامه هم "
+"  و سپس برنامه نصب حجم‌های پنهان شده را مجددا اجرا نمایید. این برنامه هم "
 "اکنون متوقف خواهد شد.  غیر قابل استفاده نمایید ) یا تایید یک فضای مبادله "
 "swapoffلطفا فضای مبادله را(مثلا با اجرای "
 
@@ -802,7 +802,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Create encrypted volumes"
-msgstr "صداهای پنهان شده ایجاد کنید"
+msgstr "حجم‌های پنهان شده ایجاد کنید"
 
 #. Type: select
 #. Choices

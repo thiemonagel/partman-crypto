@@ -1,9 +1,25 @@
-partman-crypto (45) UNRELEASED; urgency=low
+partman-crypto (45) unstable; urgency=low
 
+  [ Colin Watson ]
   * Use 'dh $@ --options' rather than 'dh --options $@', for
     forward-compatibility with debhelper v8.
 
- -- Colin Watson <cjwatson@debian.org>  Tue, 13 Jul 2010 10:34:16 +0100
+  [ Updated translations ]
+  * Asturian (ast.po) by maacub
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Bengali (bn.po) by Israt Jahan
+  * Bosnian (bs.po) by Armin Beirovi
+  * Catalan (ca.po) by Jordi Mallach
+  * Danish (da.po) by Jacob Sparre Andersen
+  * Persian (fa.po) by Behrad Eslamifar
+  * Finnish (fi.po) by Esko Arajrvi
+  * Icelandic (is.po) by Sveinn  Felli
+  * Korean (ko.po) by Changwoo Ryu
+  * Kurdish (ku.po) by Erdal Ronahi
+  * Serbian (sr.po) by Karolina Kalic
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 12 Nov 2010 10:20:57 -0200
 
 partman-crypto (44) unstable; urgency=low
 

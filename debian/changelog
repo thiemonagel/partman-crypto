@@ -1,3 +1,9 @@
+partman-crypto (46) UNRELEASED; urgency=low
+
+  * Include <sys/mount.h> for BLKGETSIZE rather than <linux/fs.h>.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 15 Nov 2010 13:12:55 +0000
+
 partman-crypto (45) unstable; urgency=low
 
   [ Colin Watson ]

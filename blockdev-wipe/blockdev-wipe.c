@@ -23,7 +23,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include <linux/fs.h> /* for BLKGETSIZE definitions */
+#include <sys/mount.h> /* for BLKGETSIZE definitions */
 #include <getopt.h>
 #include <string.h>
 

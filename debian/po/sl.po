@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-03-02 11:07+0100\n"
+"PO-Revision-Date: 2010-11-16 15:21+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "fizičen nosilec za šifriranje"
+msgstr "fizični nosilec za šifriranje"
 
 #. Type: text
 #. Description
@@ -252,7 +252,7 @@ msgstr "Izbriši podatke na tem razdelku"
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Izbrišem podatke na ${DEVICE}?"
+msgstr "Res želite izbrisati podatke na ${DEVICE}?"
 
 #. Type: boolean
 #. Description
@@ -271,7 +271,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "Brišem podatke na ${DEVICE}"
+msgstr "Brisanje podatkov na ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -296,7 +296,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "Nastavitev šifriranja..."
+msgstr "Nastavitev šifriranja ..."
 
 #. Type: text
 #. Description
@@ -371,7 +371,7 @@ msgstr "manjkajoče"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "V uporabi kot fizičen nosilec za šifriran nosilec ${DEV}"
+msgstr "V uporabi kot fizični nosilec za šifrirani nosilec ${DEV}"
 
 #. Type: error
 #. Description
@@ -401,7 +401,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "Verjetno bo med nastavljanjem šifriranih razdelkov med ponovnim zagonom "
-"sistema prišlo do težav. Še zmeraj jih lahko popravite tako, da kasneje "
+"sistema prišlo do težav. Še vedno jih lahko popravite tako, da kasneje "
 "naložite potrebne pakete."
 
 #. Type: boolean
@@ -409,7 +409,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Zapišem spremembe na disk in nastavim šifrirane nosilce?"
+msgstr "Želite zapisati spremembe na disk in nastaviti šifrirane nosilce?"
 
 #. Type: boolean
 #. Description
@@ -444,7 +444,8 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "Obdržim trenuten razpored razdelkov in nastavim šifrirane nosilce?"
+msgstr ""
+"Želite obdržati trenutni razpored razdelkov in nastaviti šifrirane nosilce?"
 
 #. Type: error
 #. Description
@@ -646,7 +647,7 @@ msgstr "Vnesli ste prazno geslo, kar ni dovoljeno. Izberite ne-prazno geslo."
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "Uporabim šibko geslo?"
+msgstr "Res želite uporabiti šibko geslo?"
 
 #. Type: boolean
 #. Description
@@ -710,7 +711,7 @@ msgid ""
 "kernel and initrd can be stored."
 msgstr ""
 "Izbrali ste namestitev korenskega datotečna sistema na šifrirani razdelek. "
-"Ta možnost zahteva ločen zagonski razdelek, na katerega se shrani jedro in "
+"Ta možnost zahteva ločen zagonski razdelek, na katerega se shranita jedro in "
 "initrd."
 
 #. Type: error
@@ -718,7 +719,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "Vrnite se nazaj in namestite zagonski razdelek /boot"
+msgstr "Vrnitete se nazaj in namestite zagonski razdelek /boot"
 
 #. Type: error
 #. Description
@@ -730,7 +731,7 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Izbrali ste, da naj bo /boot datotečni sistem nameščen na šifrirani "
+"Izbrali ste, da naj bo datotečni sistem /boot nameščen na šifrirani "
 "razdelek. To ni mogoče, saj zagonski nalagalnik ne bi mogel naložiti jedra. "
 "Nadaljevanje bo privedlo do neuporabne namestitve sistema."
 
@@ -772,7 +773,7 @@ msgid ""
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "Uporaba naključnega ključa pomeni, da bodo podatki na razdelku uničeni ob "
-"vsakem zagonu. Ta način naj bo uporabljen samo za izmenjevalne razdelke."
+"vsakem zagonu. Ta način je smiseln samo za izmenjevalne razdelke."
 
 #. Type: error
 #. Description
@@ -794,7 +795,8 @@ msgstr "Med poskusom prenosa dodatnih šifrirnih komponent je prišlo do napake.
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Pričnem z nameščanjem šifrirnih komponent kljub pomanjkanju pomnilnika?"
+"Želite pričeti z nameščanjem šifrirnih komponent kljub pomanjkanju "
+"pomnilnika?"
 
 #. Type: boolean
 #. Description

@@ -4,10 +4,10 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # translation of Debian Installer Level 1 - sublevel 1 to malayalam
-# Copyright (c)  2006-2009 Debian Project
-# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2009
-# Santhosh Thottingal <santhosh00@gmail.com>, 2006
-# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>,  2006
+# Copyright (c)  2006-2010 Debian Project
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2010.
+# Santhosh Thottingal <santhosh00@gmail.com>, 2006.
+# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
 # Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
 #
 # Debian Installer master translation file template
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-02-03 14:50-0800\n"
+"PO-Revision-Date: 2010-11-21 02:13+0530\n"
 "Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -809,9 +809,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "എന്‍ക്രിപ്റ്റ് ചെയ്ത വാള്യങ്ങള്‍ ക്രമീകരിയ്ക്കുക"
+msgstr "എന്‍ക്രിപ്റ്റ് ചെയ്ത വാള്യങ്ങള്‍ ഉണ്ടാക്കുക"
 
 #. Type: select
 #. Choices
@@ -827,33 +826,29 @@ msgstr "പൂര്‍ത്തിയാക്കുക"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണത്തില്‍ പരാജയം"
+msgstr "എന്‍ക്രിപ്ഷന്‍ ക്രമീകരണ നടപടികള്‍"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "ഇപ്പോഴുള്ള വിഭജന വിന്യാസം സൂക്ഷിച്ചു കൊണ്ട് എന്‍ക്രിപ്റ്റഡ് വാള്യങ്ങള്‍ ക്രമീകരിക്കണോ?"
+msgstr "എന്‍ക്രിപ്റ്റഡ് വാള്യങ്ങള്‍ ക്രമീകരിക്കാന്‍ ഈ മെനു അനുവദിയ്ക്കുന്നു."
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "ഉപയോഗിയ്ക്കേണ്ട സേവനങ്ങള്‍:"
+msgstr "ഡിക്രിപ്റ്റ് ചെയ്യേണ്ട ഉപകരണങ്ങള്‍:"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "ദയവായി പുതിയ വാള്യം ഗ്രൂപ്പിനുള്ള ഉപകരണങ്ങള്‍ തെരഞ്ഞെടുക്കുക."
+msgstr "ദയവായി എന്‍ക്രിപ്റ്റ് ചെയ്യേണ്ട ഉപകരണങ്ങള്‍ തെരഞ്ഞെടുക്കുക."
 
 #. Type: multiselect
 #. Description
@@ -866,14 +861,12 @@ msgstr "നിങ്ങള്‍ക്കു് ഒന്നോ അതിലധ�
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "ഭൌതിക വാള്യങ്ങളൊന്നും തെരഞ്ഞെടുത്തില്ല"
+msgstr "ഉപകരണങ്ങളൊന്നും തെരഞ്ഞെടുത്തില്ല"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "എന്‍ക്രിപ്ഷന്‍ ചെയ്യാനായി വിഭജനങ്ങളൊന്നും തന്നെ തെരഞ്ഞെടുക്കപ്പെട്ടിട്ടില്ല."
+msgstr "എന്‍ക്രിപ്ഷന്‍ ചെയ്യാനായി ഉപകരണങ്ങളൊന്നും തന്നെ തെരഞ്ഞെടുത്തിട്ടില്ല."

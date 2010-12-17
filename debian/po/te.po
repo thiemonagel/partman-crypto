@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-27 14:46+0530\n"
+"PO-Revision-Date: 2010-12-16 19:09+0530\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
 "Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -765,9 +765,8 @@ msgstr "ముగించు"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "ఆప్ట్ అమరికెలో సమస్య"
+msgstr "ఎన్క్రిప్షన్ అమరిక చర్యలు"
 
 #. Type: select
 #. Description
@@ -780,17 +779,15 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "ఉపయుక్తమయిన సేవలు:"
+msgstr "ఎన్క్రిప్ట్  చేయవలిసిన  పరికరాలు"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "కమీ కీబోర్డు అమరి ఎలాంటిదో ఎన్నుకోండి."
+msgstr "దయ చేసి  ఎన్క్రిప్ట్  చేయవలిసిన  పరికరాల ని ఎన్నుకోండి "
 
 #. Type: multiselect
 #. Description
@@ -804,11 +801,11 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices selected"
-msgstr ""
+msgstr "ఏ పరికరాన్ని ఎంపికచేయలేదు ."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices were selected for encryption."
-msgstr ""
+msgstr "ఎన్క్రిప్షన్ కి ఏ పరికరము ని ఎన్నుకోలేదు ."

@@ -1,8 +1,16 @@
-partman-crypto (46) UNRELEASED; urgency=low
+partman-crypto (46) unstable; urgency=low
 
+  [ Colin Watson ]
   * Include <sys/mount.h> for BLKGETSIZE rather than <linux/fs.h>.
 
- -- Colin Watson <cjwatson@debian.org>  Mon, 15 Nov 2010 13:12:55 +0000
+  [ Updated translations ]
+  * Lao (lo.po) by Anousak Souphavanh
+  * Malayalam (ml.po) by Praveen Arimbrathodiyil
+  * Sinhala (si.po) by Danishka Navin
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Telugu (te.po) by Arjuna Rao Chavala
+
+ -- Otavio Salvador <otavio@debian.org>  Fri, 24 Dec 2010 19:15:49 -0200
 
 partman-crypto (45) unstable; urgency=low
 

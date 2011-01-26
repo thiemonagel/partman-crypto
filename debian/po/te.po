@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-12-20 09:52+0530\n"
+"PO-Revision-Date: 2011-01-19 21:00+0530\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
 "Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -356,7 +356,7 @@ msgstr "కనబడలేదు"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr " Encrypted volume ${DEV} కొరకు  Physical Volume లా  వాడబడుతున్నది"
+msgstr "Encrypted volume ${DEV} కొరకు  Physical Volume లా  వాడబడుతున్నది"
 
 #. Type: error
 #. Description
@@ -717,7 +717,7 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr " వెనుకకు వెళ్లి  /boot ఫైల్ వ్యవస్థ కొరకు   ఎన్ర్పిప్టెడ్ విభజన  కానిది ఎంచుకో."
+msgstr "వెనుకకు వెళ్లి  /boot ఫైల్ వ్యవస్థ కొరకు   ఎన్ర్పిప్టెడ్ విభజన  కానిది ఎంచుకో."
 
 #. Type: boolean
 #. Description

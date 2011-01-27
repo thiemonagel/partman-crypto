@@ -13,15 +13,15 @@
 # shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007.
 # Nabin Gautam <nabin@mpp.org.np>, 2007.
 # Shyam Krishna Bal <balshyam24@yahoo.com>, 2008.
-# Shiva Prasad Pokharel <shiva@mpp.org.np>, 2008.
+# Shiva Prasad Pokharel <shiva@mpp.org.np>, 2008, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_ne\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2008-09-09 18:15+0545\n"
-"Last-Translator: Shiva Prasad Pokharel <shiva@mpp.org.np>\n"
-"Language-Team: Nepali <info@mpp.org.np>\n"
+"PO-Revision-Date: 2011-01-26 17:38-0600\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -803,9 +803,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
-msgstr "गुप्तीकरण गरिएको भोल्युमहरू कन्फिगर गर्नुहोस्"
+msgstr " गुप्तीकृत भोल्युम सृजना गर्नुहोस्"
 
 #. Type: select
 #. Choices
@@ -821,33 +820,29 @@ msgstr "समाप्त गर्नुहोस्"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
-msgstr "गुप्तीकरण कन्फिगरेशन असफल भयो "
+msgstr "गुप्तीकरण कन्फिगरेशन चालहृ"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "हालको विभाजन सजावट राख्नुहुन्छ र गुप्तीकृत भोल्युम कन्फिगर गर्नुहुन्छ?"
+msgstr "यो मेनुले गुप्तीकरण गरिएको भोल्युमहरू कन्फिगर गर्न दिन्छ।"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
-msgstr "प्रयोग गरिने सेवा:"
+msgstr " गुप्तीकरण गर्नलाई यन्त्र"
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "नयाँ भोल्युम समूहका लागि यन्त्रहरू चयन गर्नुहोस् ।"
+msgstr "कृपया गुप्तीकृत गर्नका लागि यन्त्रहरू चयन गर्नुहोस् ।"
 
 #. Type: multiselect
 #. Description
@@ -860,14 +855,12 @@ msgstr "तपाईँ एउटा वा धेरै यन्त्रह�
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
-msgstr "कुनै भौतिक भोल्युम चयन भएको छैन"
+msgstr " यन्त्रहरू चयन भएको छैन"
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
-msgstr "गुप्तीकरणका लागि कुनै विभाजनहरू चयन भएको छैन ।"
+msgstr "गुप्तीकरणका लागि कुनै यन्त्रहरू चयन भएको छैन ।"

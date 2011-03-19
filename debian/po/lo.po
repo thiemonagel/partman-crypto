@@ -116,8 +116,9 @@ msgstr " ຕຳແໜ່ງເມົາສຳລັບພາທິຊັນນ�
 #. Should be kept below 24 columns
 #. :sl3:
 #: ../partman-crypto.templates:11001
+#, fuzzy
 msgid "Key size:"
-msgstr ""
+msgstr "ບໍ່ຕ້ອງໃຊ້"
 
 #. Type: select
 #. Description
@@ -797,8 +798,9 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
+#, fuzzy
 msgid "Finish"
-msgstr ""
+msgstr "Davis"
 
 #. Type: select
 #. Description
@@ -826,8 +828,9 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
+#, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr ""
+msgstr "ກາລຸນາເລືອກຊະນິດຂອງແປ້ນພີມທີ່ຈະຕັ້ງຄ່າ."
 
 #. Type: multiselect
 #. Description

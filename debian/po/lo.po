@@ -116,9 +116,8 @@ msgstr " ຕຳແໜ່ງເມົາສຳລັບພາທິຊັນນ�
 #. Should be kept below 24 columns
 #. :sl3:
 #: ../partman-crypto.templates:11001
-#, fuzzy
 msgid "Key size:"
-msgstr "ບໍ່ຕ້ອງໃຊ້"
+msgstr ""
 
 #. Type: select
 #. Description

@@ -8,7 +8,7 @@
 # This translation is released under the same licence as the debian-installer.
 #
 # Siim Põder <siim@p6drad-teel.net>, 2007.
-# Mattias Põldaru <mahfiaz@gmail.com>, 2009-2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009-2011.
 #
 # Thanks to following Ubuntu Translators for review and fixes:
 #     Laur Mõtus
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-07 14:27+0300\n"
+"PO-Revision-Date: 2011-03-20 17:54+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Eesti\n"
 "MIME-Version: 1.0\n"
@@ -587,7 +587,7 @@ msgid ""
 "characters."
 msgstr ""
 "Üks hea parool sisaldab segu tähtedest, numbritest ja kirjavahemärkidest. "
-"Paroolid peaksid soovitatavalt olema 20 või enam tähemärki pikad."
+"Paroolid peaksid soovitatavalt olema vähemalt 20 tähemärki pikad."
 
 #. Type: password
 #. Description
@@ -708,7 +708,7 @@ msgid ""
 "kernel and initrd can be stored."
 msgstr ""
 "Oled valinud krüpteeritud juurfailisüsteemi. Sellisel juhul on vaja eraldi /"
-"boot partitsiooni, kus hoida kernelit ja initrd kujutist."
+"boot partitsiooni, kus hoida kernelit ja initrd tõmmist."
 
 #. Type: error
 #. Description
@@ -728,7 +728,7 @@ msgid ""
 "that cannot be used."
 msgstr ""
 "Oled valinud /boot failisüsteemi krüpteerimise. See on võimatu, kuna "
-"alglaadur ei suudaks kernelit ja initrd kujutist laadida. Jätkates oleks "
+"alglaadur ei suudaks kernelit ja initrd tõmmist laadida. Jätkates oleks "
 "tulemuseks kasutuskõlbmatu süsteem."
 
 #. Type: error
@@ -860,7 +860,7 @@ msgstr "Palun vali krüpteerimiseks seadmed."
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr "Võid valida ühe või enam seadet."
+msgstr "Pead valima vähemalt ühe seadme."
 
 #. Type: error
 #. Description

@@ -3,30 +3,6 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-#
-#
-# Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files
-#
-# Debian Installer translators, please read the D-I i18n documentation
-# in doc/i18n/i18n.txt
-#
-#
-# Danishka Navin <danishka@gmail.com>, 2009.
-msgid ""
-msgstr ""
-"Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
-"POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-11-13 23:01+0530\n"
-"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
-"Language-Team: Sinhala <info@hanthana.org>\n"
-"Language: si\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-
 #. Type: text
 #. Description
 #. File system name
@@ -34,7 +10,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:1001
 msgid "physical volume for encryption"
-msgstr "ගුප්තකේතනය සඳහා භෞතික වෙළුම"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -43,7 +19,7 @@ msgstr "ගුප්තකේතනය සඳහා භෞතික වෙළු
 #. :sl3:
 #: ../partman-crypto.templates:2001
 msgid "crypto"
-msgstr "ගුප්තකේතන"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -53,7 +29,7 @@ msgstr "ගුප්තකේතන"
 #. :sl3:
 #: ../partman-crypto.templates:3001
 msgid "Loopback (loop-AES)"
-msgstr "ආපසුලූපය (loop-AES)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -63,7 +39,7 @@ msgstr "ආපසුලූපය (loop-AES)"
 #. :sl3:
 #: ../partman-crypto.templates:4001
 msgid "Device-mapper (dm-crypt)"
-msgstr "උපකරණ-සිතියම්කරු (dm-crypt)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -72,7 +48,7 @@ msgstr "උපකරණ-සිතියම්කරු (dm-crypt)"
 #. :sl3:
 #: ../partman-crypto.templates:6001
 msgid "not active"
-msgstr "සක්‍රීය නොවේ"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -80,14 +56,14 @@ msgstr "සක්‍රීය නොවේ"
 #. :sl3:
 #: ../partman-crypto.templates:7001
 msgid "Encryption method:"
-msgstr "ගුප්තකේතන ක්‍රමය:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:8001
 msgid "Encryption method for this partition:"
-msgstr "මෙම කොටස සඳහා වන ගුප්තකේතන ක්‍රමය:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -97,8 +73,6 @@ msgid ""
 "Changing the encryption method will set other encryption-related fields to "
 "their default values for the new encryption method."
 msgstr ""
-"ගුප්තකේතන ක්‍රමය වෙනස් කිරීම වෙනත් ගුප්තකේතන-අදාල ක්‍ෂේත්‍රද නව ක්‍රමයේ පෙරනිමි අගයන්ට වෙනස් "
-"කරවයි."
 
 #. Type: text
 #. Description
@@ -106,14 +80,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:9001
 msgid "Encryption:"
-msgstr "ගුප්තකේතනය:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:10001
 msgid "Encryption for this partition:"
-msgstr "මෙම කොටස සඳහා ගුප්තකේතනය:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -121,14 +95,14 @@ msgstr "මෙම කොටස සඳහා ගුප්තකේතනය:"
 #. :sl3:
 #: ../partman-crypto.templates:11001
 msgid "Key size:"
-msgstr "යතුරු ප්‍රමාණය:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:12001
 msgid "Key size for this partition:"
-msgstr "මෙම කොටස සඳහා යතුරු ප්‍රමාණය:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -138,7 +112,7 @@ msgstr "මෙම කොටස සඳහා යතුරු ප්‍රමා�
 #. :sl3:
 #: ../partman-crypto.templates:13001
 msgid "IV algorithm:"
-msgstr "IV ඇල්ගෝරිතමය:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -147,7 +121,7 @@ msgstr "IV ඇල්ගෝරිතමය:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "මෙම කොටස සඳහා වෙක්ටර් ජනන ඇල්ගොරිතම අරඹන්න:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -161,9 +135,6 @@ msgid ""
 "no reason to change this from the recommended default, except for "
 "compatibility with older systems."
 msgstr ""
-"එක් එක් කොටස සඳහා වෙක්ටර් ආරම්භය ව්‍යුත්පන්න කිරීමට වෙනස් ඇල්ගෝරිතම පවතී. මෙම තෝරාගැනීම "
-"ගුප්තකේතන ආරක්‍ෂාව සඳහා බලපායි. සාමාන්‍යයෙන්, මෙය පැරණි පද්ධති සඳහා ගැලපීමට හැර පෙරනිමියෙන් "
-"වෙනස් කිරීමට හේතුවක් නොමැත. "
 
 #. Type: text
 #. Description
@@ -171,14 +142,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:15001
 msgid "Encryption key:"
-msgstr "ගුප්තකේතන යතුර:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:16001
 msgid "Type of encryption key for this partition:"
-msgstr "මෙම කොටස සඳහා වන ගුප්තකේතන යතුරේ වර්ගය"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -186,14 +157,14 @@ msgstr "මෙම කොටස සඳහා වන ගුප්තකේතන �
 #. :sl3:
 #: ../partman-crypto.templates:17001
 msgid "Encryption key hash:"
-msgstr "ගුප්තකේතන යතුරු හෑශය:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:18001
 msgid "Type of encryption key hash for this partition:"
-msgstr "මෙම කොටස සඳහා ගුප්තකේතන යතුරු හෑශයේ වර්ගය:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -205,8 +176,6 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"ගුප්තකේතන යතුර මුරවදනෙන්  ඒක-මාර්ග හෑශ ක්‍රියාව යෙදීමෙන් ව්‍යුත්පන්නවේ. සාමාන්‍යයෙන් මෙය "
-"පෙරනිමියෙන් වෙනස් කල යුතු නොවන අතර, එසේ කිරීම ගුප්තකේතනයේ ශක්තිමත් බව නැතිකරයි."
 
 #. Type: text
 #. Description
@@ -215,35 +184,35 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr "දත්ත මකන්න:"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:20001
 msgid "no"
-msgstr "නොමැත"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:21001
 msgid "yes"
-msgstr "ඔව්"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
 msgid "Erase data on this partition"
-msgstr "මෙම කොටසේ දත්ත මකාදමන්න"
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:23001
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "${DEVICE} මත දත්ත ඇත්තෙන්ම මකාදමන්නද?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -254,22 +223,20 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"${DEVICE} මත වන දත්ත අහඹු දත්ත මගින් උඩින් ලියැවෙනු ඇත. මෙම අදියරෙන් පසු ඒවා නැවත ලබාගත "
-"නොහැක. මකාදැමීම අවලංගු කිරීම සඳහා වන අවසන් අවස්ථාව මෙයයි."
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:24001
 msgid "Erasing data on ${DEVICE}"
-msgstr "${DEVICE} මත දත්ත මකාදමමින්"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "${DEVICE} මත දත්ත මකාදැමීම අසාර්ථකයි"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -278,42 +245,42 @@ msgstr "${DEVICE} මත දත්ත මකාදැමීම අසාර්�
 msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
-msgstr "${DEVICE} හී දත්ත මකාදැමීමේ දෝශයක් හටගැණිනි. දත්ත මකා නොදැමේ."
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:26001
 msgid "Setting up encryption..."
-msgstr "ගුප්තකේතනය සකසමින්..."
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:27001
 msgid "Configure encrypted volumes"
-msgstr "ගුප්තකේතිත වෙළුම් සකසන්න"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions to encrypt"
-msgstr "ගුප්තකේතනයට කොටස් නොමැත"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:28001
 msgid "No partitions have been selected for encryption."
-msgstr "ගුප්තකේතනය සඳහා කිසිඳු කොටසක් තෝරා නොමැත"
+msgstr ""
 
 #. Type: note
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:29001
 msgid "Required programs missing"
-msgstr "අවශ්‍ය වැඩසටහන් නොපවතී"
+msgstr ""
 
 #. Type: note
 #. Description
@@ -323,15 +290,13 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"මෙම dedian-ස්ථාපකය සතුව partman-crypto නිසිලෙස ක්‍රියාකරවීම සඳහා අවශ්‍ය වැඩසටහන් එකක් හෝ "
-"කිහිපයක් නොපවතී."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:30001
 msgid "Required encryption options missing"
-msgstr "අවශ්‍ය ගුප්තකේතන අභිප්‍රේතයන් නොපවතී"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -341,8 +306,6 @@ msgid ""
 "The encryption options for ${DEVICE} are incomplete. Please return to the "
 "partition menu and select all required options."
 msgstr ""
-"${DEVICE} හි ගුප්තකේතන අභිප්‍රේත සම්පූර්ණ නොවේ. කරුණාකර කොටස්කරණ මෙනුවට ආපසු ගොස් අවශ්‍ය සියළු "
-"අභිප්‍රේත තෝරන්න."
 
 #. Type: text
 #. Description
@@ -352,7 +315,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "නොපවතින"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -360,14 +323,14 @@ msgstr "නොපවතින"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "${DEV} ගුප්තකේතිත වෙළුම ලෙස භෞතික වෙළුම යොදාගන්න."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "ගුප්තකේතන පැකේජ ස්ථාපනය අසාර්ථකයි"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -377,7 +340,6 @@ msgid ""
 "The kernel module package ${PACKAGE} could not be found or an error occurred "
 "during its installation."
 msgstr ""
-"${PACKAGE} කර්නල මොඩියුල සොයාගත නොහැකි වී හෝ එහි ස්ථාපනය අතරතුර දෝශයක් හටගෙන ඇත."
 
 #. Type: error
 #. Description
@@ -388,15 +350,13 @@ msgid ""
 "when the system is rebooted. You may be able to correct this by installing "
 "the required package(s) later on."
 msgstr ""
-"පද්ධතිය ප්‍රථිපිහිටවූ විට ගුප්තකේතිත කොටස් සැකසීමේ දෝශයක් ඇතිවන බව පෙනීයයි. ඔබට මෙම දෝශය ඇවැසි "
-"පැකේජ ස්ථාපනය මගින් විසඳිය හැක."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:34001
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "වෙනස්කම් තැටියට සටහන් කර ගුප්තකේතන වෙළුම් සකසන්නද?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -406,8 +366,6 @@ msgid ""
 "Before encrypted volumes can be configured, the current partitioning scheme "
 "has to be written to disk.  These changes cannot be undone."
 msgstr ""
-"ගුප්තකේතිත වෙළුම් සැකසීමට පෙර, වත්මන් කොටස්කරණ ආකෘතිය තැටියට ලිවිය යුතුයි. මෙම වෙනස්කම් අවලංගු "
-"කල නොහැක."
 
 #. Type: boolean
 #. Description
@@ -422,50 +380,48 @@ msgid ""
 "decide if you are satisfied with the current partitioning scheme for these "
 "disks before continuing."
 msgstr ""
-"ගුප්තකේතිත වෙළුම් සැකසූ පසු, එම කොටස් සඳහා අමතර කිසිඳු වෙනස්කමක් පිළිනොගැනේ. කරුණාකර ඉදිරියට "
-"යාමට පෙර වත්මන් කොටස්කරණ ක්‍රමය සමඟ සෑහීමකට පත්වේදැයි තීරණය කරන්න."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:35001
 msgid "Keep current partition layout and configure encrypted volumes?"
-msgstr "වත්මන් කොටස් සැකැස්ම තබාගෙන ගුප්තකේතිත වෙළුම් සකසන්නද?"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "Configuration of encrypted volumes failed"
-msgstr "ගුප්තකේතිත වෙළුම් සැකසීම අසාර්ථකයි"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "ගුප්තකේතිත වෙළුම් සැකසීමේ දෝශයක් ඇතිවිය."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "සැකසීම වසාදැමිනි."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "Initialisation of encrypted volume failed"
-msgstr "ගුප්තකේතිත වෙළුම් ඇරඹීම අසාර්ථකයි"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "ගුප්තකේතිත වෙළුම් සැකසීමේ දෝශයක් ඇතිවිය."
+msgstr ""
 
 #. Type: text
 #. Description
@@ -476,7 +432,7 @@ msgstr "ගුප්තකේතිත වෙළුම් සැකසීමේ 
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr "මුරවදන"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -487,7 +443,7 @@ msgstr "මුරවදන"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:39001
 msgid "Keyfile (GnuPG)"
-msgstr "යතුරු ගොනුව (GnuPG)"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -498,21 +454,21 @@ msgstr "යතුරු ගොනුව (GnuPG)"
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:40001
 msgid "Random key"
-msgstr "අහඹු යතුර"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "Unsafe swap space detected"
-msgstr "අනාරක්‍ෂිත ස්වැප් ඉඩක් හඳුනාගැණිනි"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:41001
 msgid "An unsafe swap space has been detected."
-msgstr "අනාරක්‍ෂිත ස්වැප් ඉඩක් හඳුනාගැණිනි."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -523,8 +479,6 @@ msgid ""
 "unencrypted. This would allow someone with access to the disk to recover "
 "parts of the encryption key or passphrase."
 msgstr ""
-"මෙය සංවේදී දත්ත තැටියෙන් පිටත ගුප්තකේතන නොවී ලියවිය හැකි නිසා දරුණු දෝශයකි. මෙය හේතුවෙන් "
-"තැටියට පිවිසිය හැකි අයෙකුට ගුප්තකේතන යතුර හෝ මුරවදනේ කොටස් ලබාගත හැකි විය හැක."
 
 #. Type: error
 #. Description
@@ -535,22 +489,20 @@ msgid ""
 "encrypted swap space and then run setup of encrypted volumes again. This "
 "program will now abort."
 msgstr ""
-"කරුණාකර ස්වැප් ඉඩ අක්‍රීය කර (swapoff ක්‍රියා කරවා) හෝ ගුප්තකේතිත ස්වැප් ඉඩක් සාදා නැවත "
-"ගුප්තකේතන වෙළුම් ස්ථාපනය ක්‍රියාත්මක කරන්න. මෙම වැඩසටහන වසාදැමේ."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "ගුප්තකේතන මුරවදන:"
+msgstr ""
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "ඔබට ${DEVICE} ගුප්තකේතනය සඳහා මුර වදනක් තෝරාගැනීමට සිදුවේ."
+msgstr ""
 
 #. Type: password
 #. Description
@@ -562,9 +514,6 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"ගුප්තකේතනයේ සමස්ථ ශක්තිය මෙම මුරවදන මත රඳාපවතී. එම නිසා පහසුවෙන් අනුමාන කල නොහැකි මුරවදනක් "
-"ඇතුළත් කිරීමට සැලකිලිමත් විය යුතුය. එය ඔබට පහසුවෙන් අදාල වන වදනක් හෝ ශබ්දකෝශ වල පවතින වදනක් "
-"නොවිය යුතුයි."
 
 #. Type: password
 #. Description
@@ -575,15 +524,13 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"හොඳ මුරවදනක් සතුව අකුරු, අංක හා විරාම ලකුණු මිශ්‍රණයක් පවතින අතර මුරවදන සතුව අකුරු 20ක් හෝ වැඩි "
-"ගණනක් තිබීම නිර්දේශිතයි."
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "තහවුරු කිරීම සඳහා මුරවදන නැවත ඇතුළත් කරන්න:"
+msgstr ""
 
 #. Type: password
 #. Description
@@ -592,28 +539,28 @@ msgstr "තහවුරු කිරීම සඳහා මුරවදන න�
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr "කරුණාකර පෙර ඇතුළත් කල මුරවදන නිවැරදි දැයි තහවුරු කිරීම සඳහා නැවත ඇතුළත් කරන්න."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "මුරවදන් ආදාන දෝශයක්"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr "ඔබ විසින් ඇතුළත් කල මුරවදන් දෙක නොගැලපේ, කරුණාකර නැවත උත්සාහ කරන්න."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:45001
 msgid "Empty passphrase"
-msgstr "හිස් මුරවදනයක්"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -623,14 +570,13 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"ඔබ විසින් හිස් මුරවදනක් ඇතුළු කර ඇත, එයට ඉඩදිය නොහැකි බැවින් එසේ නොවන මුරවදනක් ඇතුළත් කරන්න."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "දුර්වල මුරවදනක් භාවිත කරන්නද?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -643,36 +589,34 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"ඔබ ${MINIMUM} ගණනට අඩු අක්‍ෂර ගණනකින් යුත් මුරවදනක් ඇතුළත් කර ඇත. මෙය ඉතා දුර්වල බැවින් ඔබ "
-"වඩා ශක්තිමත් මුරවදනක් ඇතුලත් කල යුතුය."
 
 #. Type: entropy
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:47001
 msgid "The encryption key for ${DEVICE} is now being created."
-msgstr "${DEVICE} සඳහාවන ගුප්තකේතන යතුර දැන් නිර්මාණය වේ."
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "යතුරු දත්ත සාර්ථකව නිර්මාණය විය"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "Keyfile creation failure"
-msgstr "යතුරු ගොනුව නිර්මාණයේ දෝශයක්"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "යතුරු ගොනුව නිර්මාණයේදී දෝශයක් හට ගැණිනි."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -682,7 +626,7 @@ msgstr "යතුරු ගොනුව නිර්මාණයේදී දෝ
 #. :sl3:
 #: ../partman-crypto.templates:50001 ../partman-crypto.templates:51001
 msgid "Encryption configuration failure"
-msgstr "ගුප්තකේතන සැකසුම් දෝශයක්"
+msgstr ""
 
 #. Type: error
 #. Description
@@ -693,15 +637,13 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"ඔබ විසින් මූල ගොනු පද්ධතිය ගුප්තකේතිත කොටසක් මත පිහිටුවීමට තෝරා ඇත. මෙම විශේෂාංගට කර්නලය හා "
-"initrd ගබඩා කිරීමට වෙන්කල /boot කොටසක් අවශ්‍යයි."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:50001
 msgid "You should go back and setup a /boot partition."
-msgstr "ඔබ ආපසු ගොස් /boot කොටසක් තැනි යුතුයි."
+msgstr ""
 
 #. Type: error
 #. Description
@@ -713,9 +655,6 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"ඔබ විසින් /boot ගොනු පද්ධතිය ගුප්තකේතිත කොටසක් මත පිහිටුවීමට තෝරාගෙන ඇත. පූරකයට කර්නලය හා "
-"initrd පූර්ණය කල නොහැකි බැවින් මෙය කල නොහැක. ඉදිරියට යාම ස්ථාපනය භාවිත කල නොහැකි තත්වයට "
-"පත්කරයි."
 
 #. Type: error
 #. Description
@@ -724,14 +663,14 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr "ඔබට ආපසු ගොස් /boot ගොනු පද්ධතිය ලෙස ගුප්තකේතනය නොකල කොටසක් තෝරාගැනීමට සිදුවේ."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr "ඔබට අහඹු යතුරක් භාවිත කිරීමට අවශ්‍ය බව විස්වාසද?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -741,8 +680,6 @@ msgid ""
 "You have chosen a random key type for ${DEVICE} but requested the "
 "partitioner to create a file system on it."
 msgstr ""
-"ඔබ විසින් ${DEVICE} මත අහඹු යතුරු වර්ගයක් තෝරාගෙන ඇති නමුත් කොටස්කරණයෙන් එය මත ගොනු පද්ධතියක් "
-"නිර්මාණය කිරීමට ඉල්ලා ඇත."
 
 #. Type: boolean
 #. Description
@@ -752,29 +689,27 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"අහඹු යතුරු වර්ගයක් භාවිත කිරීම යනු, කොටසේ දත්ත එක් එක් ප්‍රථිපණගැන්වීමේදී විනාශ වන බවයි. මෙය "
-"ස්වැප් කොටස් සඳහා පමණක් භාවිත කල යුතුයි."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "ගුප්තකේතන සංරචක බාගැනීම අසාර්ථකයි"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
-msgstr "අමතර ගුප්තකේතන සංරචක බාගැනීමේදී දෝශයක් ඇතිවිය."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
-msgstr "මතකය ප්‍රමාණවත් නොවීම නොසලකා ගුප්තකේතිත ස්ථාපනය කරන්නද?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -785,8 +720,6 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"අමතර ගුප්තකේතන සංරචක ස්ථාපනය සඳහා ප්‍රමාණවත් මතකයක් නොපවතින බව පෙනීයයි. ඔබ ඉදිරියට යාමට "
-"අදහස් කරයි නම්, ස්ථාපන ක්‍රියාවලිය අසාර්ථක විය හැකි බව සලකන්න."
 
 #. Type: select
 #. Choices
@@ -796,7 +729,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Create encrypted volumes"
-msgstr "ගුප්තකේතිත වෙළුම් නිර්මාණය කරන්න"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -806,53 +739,53 @@ msgstr "ගුප්තකේතිත වෙළුම් නිර්මාණ�
 #. :sl3:
 #: ../partman-crypto.templates:55001
 msgid "Finish"
-msgstr "අවසන්"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "Encryption configuration actions"
-msgstr "ගුප්තකේතන සැකසුම් ක්‍රියා"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
 msgid "This menu allows you to configure encrypted volumes."
-msgstr "මෙම මෙනුව ඔබට ගුප්තකේතිත වෙළුම් සැකසීමට ඉඩදෙයි."
+msgstr ""
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "Devices to encrypt:"
-msgstr "ගුප්තකේතනය කල යුතු උපකරණය:"
+msgstr ""
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "Please select the devices to be encrypted."
-msgstr "කරුණාකර ගුප්තකේතනය කල යුතු උපකරණය තෝරන්න."
+msgstr ""
 
 #. Type: multiselect
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
 msgid "You can select one or more devices."
-msgstr "ඔබට උපකරණ එකක් හෝ කිහිපයක් තෝරන්න."
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices selected"
-msgstr "කිසිඳු උපකරණයක් තෝරානොමැත"
+msgstr ""
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
 msgid "No devices were selected for encryption."
-msgstr "ගුප්තකේතනය සඳහා කිසිඳු උපකරණයක් තෝරා නොමැත."
+msgstr ""

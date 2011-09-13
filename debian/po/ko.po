@@ -9,12 +9,26 @@
 #
 # Changwoo Ryu <cwryu@debian.org>, 2010, 2011.
 #
+# Translations from iso-codes:
+# Copyright (C)
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Changwoo Ryu <cwryu@debian.org>, 2004, 2008, 2009, 2010, 2011.
+#   Copyright (C) 2000 Free Software Foundation, Inc.
+#   Eungkyu Song <eungkyu@sparcs.org>, 2001.
+#   Free Software Foundation, Inc., 2001,2003
+#   Jaegeum Choe <baedaron@hananet.net>, 2001.
+#   (translations from drakfw)
+#   Kang, JeongHee <Keizi@mail.co.kr>, 2000.
+#   Sunjae Park <darehanl@gmail.com>, 2006-2007.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2011-03-09 02:14+0900\n"
+"PO-Revision-Date: 2011-09-13 08:15+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -266,7 +280,7 @@ msgstr "${DEVICE}의 데이터를 지우는 중입니다"
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "${DEVICE}의 데이터를 지우는 데 실패했습니다"
+msgstr "${DEVICE}의 데이터를 지우는데 실패했습니다"
 
 #. Type: error
 #. Description
@@ -276,7 +290,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"${DEVICE}에 있는 데이터를 지우는 데 오류가 발생했습니다. 데이터는 지우지 않았"
+"${DEVICE}에 있는 데이터를 지우는데 오류가 발생했습니다. 데이터는 지우지 않았"
 "습니다."
 
 #. Type: text
@@ -551,7 +565,7 @@ msgstr "암호화 암호문:"
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "${DEVICE} 장치를 암호화 하는 데 쓸 암호문을 입력하십시오."
+msgstr "${DEVICE} 장치를 암호화 하는데 쓸 암호문을 입력하십시오."
 
 #. Type: password
 #. Description
@@ -763,7 +777,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "암호화 컴포넌트를 다운로드하는 데 실패했습니다"
+msgstr "암호화 컴포넌트를 다운로드하는데 실패했습니다"
 
 #. Type: error
 #. Description

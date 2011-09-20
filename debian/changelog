@@ -1,9 +1,23 @@
-partman-crypto (48) UNRELEASED; urgency=low
+partman-crypto (48) unstable; urgency=low
 
   * Fix parsing of dmsetup table output, so it will actually detect when
     swap is on crypto. Closes: #642115 (Thanks Jon Downland for debugging it.)
 
- -- Joey Hess <joeyh@debian.org>  Tue, 20 Sep 2011 11:58:05 -0400
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * German (de.po) by Holger Wansing
+  * Hebrew (he.po) by Lior Kaplan
+  * Hindi (hi.po) by Kumar Appaiah
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+  * Macedonian (mk.po) by Arangel Angov
+  * Polish (pl.po) by Marcin Owsiany
+  * Romanian (ro.po) by Ioan Eugen Stan
+  * Sinhala (si.po) by Danishka Navin
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 20 Sep 2011 12:01:12 -0400
 
 partman-crypto (47) unstable; urgency=low
 

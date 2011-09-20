@@ -115,7 +115,7 @@ dm_dev_is_safe() {
 
 	# First try the device itself
 	dminfo=$(dmsetup table -j$maj -m$min 2> /dev/null | \
-		 head -n1 | cut -d' ' -f3) || return 1
+		 head -n1 | cut -d' ' -f4) || return 1
 	if [ "$dminfo" = crypt ]; then
 		return 0
 	fi

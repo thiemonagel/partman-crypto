@@ -1,3 +1,10 @@
+partman-crypto (48) UNRELEASED; urgency=low
+
+  * Fix parsing of dmsetup table output, so it will actually detect when
+    swap is on crypto. Closes: #642115 (Thanks Jon Downland for debugging it.)
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 20 Sep 2011 11:58:05 -0400
+
 partman-crypto (47) unstable; urgency=low
 
   * Team upload

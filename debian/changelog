@@ -1,7 +1,7 @@
 partman-crypto (48) unstable; urgency=low
 
   * Fix parsing of dmsetup table output, so it will actually detect when
-    swap is on crypto. Closes: #642115 (Thanks Jon Downland for debugging it.)
+    swap is on crypto. Closes: #642115 (Thanks Jon Dowland for debugging it.)
 
   [ Updated translations ]
   * Bulgarian (bg.po) by Damyan Ivanov

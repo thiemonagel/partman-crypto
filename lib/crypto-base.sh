@@ -548,6 +548,9 @@ crypto_load_module() {
 		modprobe -q $module
 		return $?
 	elif [ "$module" != loop-aes ]; then
+		if egrep -q "^(name|version) *: $module\$" /proc/crypto; then
+			return 0
+		fi
 		modprobe -q $module
 		return $?
 	fi

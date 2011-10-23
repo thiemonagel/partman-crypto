@@ -1,3 +1,10 @@
+partman-crypto (49) UNRELEASED; urgency=low
+
+  * Merge from Ubuntu:
+    - Allow crypto kernel modules to be built-in.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 23 Oct 2011 23:35:11 +0100
+
 partman-crypto (48) unstable; urgency=low
 
   * Fix parsing of dmsetup table output, so it will actually detect when

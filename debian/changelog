@@ -2,6 +2,10 @@ partman-crypto (49) UNRELEASED; urgency=low
 
   * Merge from Ubuntu:
     - Allow crypto kernel modules to be built-in.
+  * The fix for #642115 was actually working around a 'dmsetup table' output
+    format regression in libdevmapper 1.02.65 / lvm2 2.02.86, fixed in
+    libdevmapper 1.02.66 / lvm2 2.02.87.  For robustness, handle both old
+    and new output formats (closes: #647540, LP: #892903).
 
  -- Colin Watson <cjwatson@debian.org>  Sun, 23 Oct 2011 23:35:11 +0100
 

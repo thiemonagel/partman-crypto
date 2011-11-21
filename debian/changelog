@@ -1,4 +1,4 @@
-partman-crypto (49) UNRELEASED; urgency=low
+partman-crypto (49) unstable; urgency=low
 
   * Merge from Ubuntu:
     - Allow crypto kernel modules to be built-in.
@@ -7,7 +7,13 @@ partman-crypto (49) UNRELEASED; urgency=low
     libdevmapper 1.02.66 / lvm2 2.02.87.  For robustness, handle both old
     and new output formats (closes: #647540, LP: #892903).
 
- -- Colin Watson <cjwatson@debian.org>  Sun, 23 Oct 2011 23:35:11 +0100
+  [ Updated translations ]
+  * Hebrew (he.po) by Lior Kaplan
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Kannada (kn.po) by vignesh prabhu
+  * Polish (pl.po) by Marcin Owsiany
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 21 Nov 2011 23:49:12 +0000
 
 partman-crypto (48) unstable; urgency=low
 

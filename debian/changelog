@@ -1,3 +1,17 @@
+partman-crypto (50) unstable; urgency=low
+
+  [ Updated translations ]
+  * Asturian (ast.po) by Mikel González
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Danish (da.po) by Joe Hansen
+  * Estonian (et.po) by Mattias Põldaru
+  * Indonesian (id.po) by Mahyuddin Susanto
+  * Icelandic (is.po) by Sveinn í Felli
+  * Kannada (kn.po) by Prabodh C P
+  * Dutch (nl.po) by Jeroen Schot
+
+ -- Otavio Salvador <otavio@debian.org>  Thu, 15 Mar 2012 14:59:17 -0300
+
 partman-crypto (49) unstable; urgency=low
 
   * Merge from Ubuntu:

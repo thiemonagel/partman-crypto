@@ -3,16 +3,26 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of Debian Installer templates to Brazilian Portuguese.
+# Translation of Debian Installer templates to Brazilian Portuguese.
 # This file is distributed under the same license as debian-installer.
 #
-# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2010.
+# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2012.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001-2002.
+#   Free Software Foundation, Inc., 2000
+#   Juan Carlos Castro y Castro <jcastro@vialink.com.br>, 2000-2005.
+#   Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2009.
+#   Lisiane Sztoltz <lisiane@conectiva.com.br>
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-07-05 02:03-0300\n"
+"PO-Revision-Date: 2012-04-02 01:35-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -201,11 +211,11 @@ msgid ""
 "recommended default and doing so in the wrong way can reduce the encryption "
 "strength."
 msgstr ""
-"A chave criptográfica é derivada da passphrase através da aplicação de uma "
-"função hash de mão única à mesma. Normalmente, não existem razões para mudar "
-"a chave criptográfica para outra chave diferente da chave padrão recomendada "
-"e, na verdade, fazer essa mudança de maneira errada pode reduzir a força da "
-"criptografia."
+"A chave criptográfica é derivada da frase secreta através da aplicação de "
+"uma função hash de mão única à mesma. Normalmente, não existem razões para "
+"mudar a chave criptográfica para outra chave diferente da chave padrão "
+"recomendada e, na verdade, fazer essa mudança de maneira errada pode reduzir "
+"a força da criptografia."
 
 #. Type: text
 #. Description
@@ -392,7 +402,7 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "É provável que surjam problemas na configuração de partições criptografadas "
-"quando o sistema for reinicializado. Você poderá ser capaz corrigí-los "
+"quando o sistema for reinicializado. Você poderá ser capaz corrigi-los "
 "instalando os pacotes necessários posteriormente."
 
 #. Type: boolean
@@ -486,7 +496,7 @@ msgstr ""
 #. This text is one of these choices, so keep it short
 #: ../partman-crypto.templates:38001
 msgid "Passphrase"
-msgstr "Passphrase"
+msgstr "Frase secreta"
 
 #. Type: text
 #. Description
@@ -535,7 +545,7 @@ msgid ""
 msgstr ""
 "Esse é um erro fatal, uma vez que dados sensíveis podem ser gravados no "
 "disco não criptografado. Isso poderia permitir a alguém com acesso ao disco "
-"recuperar partes da chave criptográfica ou da passphrase."
+"recuperar partes da chave criptográfica ou da frase secreta."
 
 #. Type: error
 #. Description
@@ -556,14 +566,14 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "Encryption passphrase:"
-msgstr "Passphrase criptográfico:"
+msgstr "Frase secreta criptográfica:"
 
 #. Type: password
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:42001
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Você precisa escolher uma passphrase para criptografar ${DEVICE}."
+msgstr "Você precisa escolher uma frase secreta para criptografar ${DEVICE}."
 
 #. Type: password
 #. Description
@@ -575,10 +585,11 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"A força geral da criptografia depende fortemente dessa passphrase, portanto "
-"você deve se certificar de escolher uma passphrase que não seja fácil de ser "
-"adivinhada. A mesma não deverá ser uma palavra ou uma sentença encontrada em "
-"dicionários ou mesmo uma frase que possa ser facilmente associada a você."
+"A força geral da criptografia depende fortemente dessa frase secreta, "
+"portanto você  deve tomar o cuidado de escolher uma frase secreta que não "
+"seja fácil de ser adivinhada. A mesma não deverá ser uma palavra ou uma "
+"sentença encontrada em dicionários ou mesmo uma frase que possa ser "
+"facilmente associada a você."
 
 #. Type: password
 #. Description
@@ -589,8 +600,8 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Uma boa passphrase contém uma mistura de letras, números e pontuação. É "
-"recomendado que passphrases tenham um tamanho igual ou superior a 20 "
+"Uma boa frase secreta contém uma mistura de letras, números e pontuação. É "
+"recomendado que frase secreta tenham um tamanho igual ou superior a 20 "
 "caracteres."
 
 #. Type: password
@@ -598,7 +609,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:43001
 msgid "Re-enter passphrase to verify:"
-msgstr "Informa a passphrase novamente para verificação:"
+msgstr "Informe a frase secreta novamente para verificação:"
 
 #. Type: password
 #. Description
@@ -608,15 +619,15 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Por favor, informe a passphrase novamente para verificar se você a digitou "
-"corretamente."
+"Por favor, informe a frase secreta novamente para verificar se você a "
+"digitou corretamente."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:44001
 msgid "Passphrase input error"
-msgstr "Erro na informação da passphrase"
+msgstr "Erro na entrada da frase secreta"
 
 #. Type: error
 #. Description
@@ -624,7 +635,7 @@ msgstr "Erro na informação da passphrase"
 #: ../partman-crypto.templates:44001
 msgid "The two passphrases you entered were not the same. Please try again."
 msgstr ""
-"As duas passphrases que você informou não são iguais. Por favor, tente "
+"As duas frases secretas que você informou não são iguais. Por favor, tente "
 "novamente."
 
 #. Type: error
@@ -632,7 +643,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:45001
 msgid "Empty passphrase"
-msgstr "Passphrase vazia"
+msgstr "Frase secreta vazia"
 
 #. Type: error
 #. Description
@@ -642,15 +653,15 @@ msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
 msgstr ""
-"Você informou uma passphrase vazia, o que não é permitido. Por favor, "
-"escolha uma passphrase não vazia."
+"Você informou uma frase secreta vazia, o que não é permitido. Por favor, "
+"escolha uma frase secreta não vazia."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "Utilizar passphrase fraca?"
+msgstr "Utilizar frase secreta fraca?"
 
 #. Type: boolean
 #. Description
@@ -663,9 +674,9 @@ msgid ""
 "You entered a passphrase that consists of less than ${MINIMUM} characters, "
 "which is considered too weak. You should choose a stronger passphrase."
 msgstr ""
-"Você informou uma passphrase que consiste de menos do que ${MINIMUM} "
-"caracteres, o que é considerado muito fraco. Você deveria escolher uma "
-"passphrase mais forte."
+"Você informou uma frase secreta que consiste de menos do que ${MINIMUM} "
+"caracteres, o que é considerado muito fraco. Você deveria escolher uma frase "
+"secreta mais forte."
 
 #. Type: entropy
 #. Description

@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2012-04-02 01:35-0300\n"
+"PO-Revision-Date: 2012-04-07 19:57-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -151,7 +151,7 @@ msgstr "Algoritmo IV:"
 #. :sl3:
 #: ../partman-crypto.templates:14001
 msgid "Initialization vector generation algorithm for this partition:"
-msgstr "Algoritmo de geração de inicialização de vetores para esta partição:"
+msgstr "Algoritmo de geração de vetor de inicialização para esta partição:"
 
 #. Type: select
 #. Description
@@ -167,9 +167,8 @@ msgid ""
 msgstr ""
 "Existem diferentes algoritmos a partir do quais vetores de inicialização "
 "podem ser derivados para cada setor. Esta escolha influencia na segurança da "
-"criptografia. Normalmente, não existem razões para mudar para um algoritmo "
-"diferente do algoritmo padrão recomendado, exceto por compatibilidade com "
-"sistemas mais antigos."
+"criptografia. Normalmente, não há razão para mudar para uma opção diferente "
+"do padrão recomendado, exceto por compatibilidade com sistemas mais antigos."
 
 #. Type: text
 #. Description
@@ -212,10 +211,9 @@ msgid ""
 "strength."
 msgstr ""
 "A chave criptográfica é derivada da frase secreta através da aplicação de "
-"uma função hash de mão única à mesma. Normalmente, não existem razões para "
-"mudar a chave criptográfica para outra chave diferente da chave padrão "
-"recomendada e, na verdade, fazer essa mudança de maneira errada pode reduzir "
-"a força da criptografia."
+"uma função hash de mão única à mesma. Normalmente, não há razão para mudar "
+"para uma opção diferente da padrão recomendado e, na verdade, fazer essa "
+"mudança de maneira errada pode reduzir a força da criptografia."
 
 #. Type: text
 #. Description
@@ -279,7 +277,7 @@ msgstr "Apagando dados em ${DEVICE}"
 #. :sl3:
 #: ../partman-crypto.templates:25001
 msgid "Erasing data on ${DEVICE} failed"
-msgstr "Falha na remoção de dados em ${DEVICE}"
+msgstr "Falha ao apagar dados em ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -289,7 +287,7 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Um erro ocorreu durante a tentativa de apagar dos dados em ${DEVICE}. Os "
+"Um erro ocorreu durante a tentativa de apagar os dados em ${DEVICE}. Os "
 "dados não foram apagados."
 
 #. Type: text
@@ -402,8 +400,8 @@ msgid ""
 "the required package(s) later on."
 msgstr ""
 "É provável que surjam problemas na configuração de partições criptografadas "
-"quando o sistema for reinicializado. Você poderá ser capaz corrigi-los "
-"instalando os pacotes necessários posteriormente."
+"quando o sistema for reinicializado. Você poderá ser capaz de corrigi-los "
+"instalando o(s) pacote(s) necessário(s) posteriormente."
 
 #. Type: boolean
 #. Description
@@ -438,7 +436,7 @@ msgid ""
 "disks before continuing."
 msgstr ""
 "Depois que os volumes criptografados forem configurados, nenhuma mudança "
-"adicional nas partições dos disco que contém os volumes criptografados será "
+"adicional nas partições dos discos que contêm os volumes criptografados será "
 "permitida. Por favor, decida se você está satisfeito com o esquema de "
 "particionamento atual nesses discos antes de continuar."
 
@@ -462,8 +460,7 @@ msgstr "Falha na configuração de volumes criptografados"
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
+msgstr "Um erro ocorreu durante a configuração dos volumes criptografados."
 
 #. Type: error
 #. Description
@@ -484,8 +481,7 @@ msgstr "Falha na inicialização de volume criptografado"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr ""
-"Um erro ocorreu durante a gravação das mudanças nos volumes criptografados."
+msgstr "Um erro ocorreu durante a configuração dos volumes criptografados."
 
 #. Type: text
 #. Description
@@ -586,7 +582,7 @@ msgid ""
 "could be easily associated with you."
 msgstr ""
 "A força geral da criptografia depende fortemente dessa frase secreta, "
-"portanto você  deve tomar o cuidado de escolher uma frase secreta que não "
+"portanto você deve tomar o cuidado de escolher uma frase secreta que não "
 "seja fácil de ser adivinhada. A mesma não deverá ser uma palavra ou uma "
 "sentença encontrada em dicionários ou mesmo uma frase que possa ser "
 "facilmente associada a você."
@@ -600,9 +596,9 @@ msgid ""
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
 msgstr ""
-"Uma boa frase secreta contém uma mistura de letras, números e pontuação. É "
-"recomendado que frase secreta tenham um tamanho igual ou superior a 20 "
-"caracteres."
+"Uma boa frase secreta contém uma mistura de letras, números e sinais de "
+"pontuação. É recomendado que frases secretas tenham um tamanho igual ou "
+"superior a 20 caracteres."
 
 #. Type: password
 #. Description
@@ -619,7 +615,7 @@ msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
 msgstr ""
-"Por favor, informe a frase secreta novamente para verificar se você a "
+"Por favor, informe a mesma frase secreta novamente para verificar se você a "
 "digitou corretamente."
 
 #. Type: error
@@ -661,7 +657,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:46001
 msgid "Use weak passphrase?"
-msgstr "Utilizar frase secreta fraca?"
+msgstr "Usar frase secreta fraca?"
 
 #. Type: boolean
 #. Description
@@ -690,7 +686,7 @@ msgstr "A chave criptográfica para ${DEVICE} está sendo criada agora."
 #. :sl3:
 #: ../partman-crypto.templates:48001
 msgid "Key data has been created successfully."
-msgstr "Chave de dados foi criada com sucesso."
+msgstr "Dados da chave foram criados com sucesso."
 
 #. Type: error
 #. Description
@@ -725,9 +721,9 @@ msgid ""
 "partition. This feature requires a separate /boot partition on which the "
 "kernel and initrd can be stored."
 msgstr ""
-"Você selecionou o sistema de arquivos raiz para ser armazenado em uma "
-"partição criptografada. Esse recurso requer uma partição /boot separada, na "
-"qual o kernel e o initrd possam ser armazenados."
+"Você selecionou o armazenamento do sistema de arquivos raiz em uma partição "
+"criptografada. Esse recurso requer uma partição /boot separada, na qual o "
+"kernel e o initrd possam ser armazenados."
 
 #. Type: error
 #. Description
@@ -746,11 +742,11 @@ msgid ""
 "load the kernel and initrd. Continuing now would result in an installation "
 "that cannot be used."
 msgstr ""
-"Você selecionou o sistema de arquivos /boot para ser armazenado em uma "
-"partição criptografada. Isso não é possível devido ao carregador de "
-"inicialização não conseguir carregar o kernel e o initrd a partir de uma "
-"partição criptografada. Continuar agora resultaria em uma instalação que não "
-"poderia ser utilizada."
+"Você selecionou o armazenamento do sistema de arquivos /boot em uma partição "
+"criptografada. Isso não é possível devido ao carregador de inicialização não "
+"conseguir carregar o kernel e o initrd a partir de uma partição "
+"criptografada. Continuar agora resultaria em uma instalação que não poderia "
+"ser usada."
 
 #. Type: error
 #. Description
@@ -768,7 +764,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:52001
 msgid "Are you sure you want to use a random key?"
-msgstr "Você têm certeza que deseja utilizar uma chave aleatória?"
+msgstr "Você têm certeza que deseja usar uma chave aleatória?"
 
 #. Type: boolean
 #. Description
@@ -789,16 +785,16 @@ msgid ""
 "Using a random key type means that the partition data is going to be "
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
-"Utilizar um tipo de chave aleatória significa que os dados da partição serão "
-"destruídos a cada reinicialização. Esse tipo de chave deveria ser utilizado "
-"para para partições de troca (swap)."
+"Usar um tipo de chave aleatória significa que os dados da partição serão "
+"destruídos a cada reinicialização. Esse tipo de chave deveria ser usada "
+"somente para partições de troca (swap)."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Falha ao carregar componentes de criptografia"
+msgstr "Falha ao baixar componentes de criptografia"
 
 #. Type: error
 #. Description
@@ -806,8 +802,8 @@ msgstr "Falha ao carregar componentes de criptografia"
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Um erro ocorreu durante a tentativa de fazer o download dos componentes de "
-"criptografia."
+"Um erro ocorreu durante a tentativa de baixar os componentes de criptografia "
+"adicionais."
 
 #. Type: boolean
 #. Description

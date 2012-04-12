@@ -24,13 +24,13 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2011-07-24 18:23+0200\n"
+"PO-Revision-Date: 2012-04-11 15:54+0200\n"
 "Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
 "Language-Team: Macedonian <>\n"
 "Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n!=1);\n"
 
 #. Type: text
@@ -224,7 +224,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:19001
 msgid "Erase data:"
-msgstr "Да ги избришам податоците:"
+msgstr "Бришење на податоци:"
 
 #. Type: text
 #. Description
@@ -335,7 +335,7 @@ msgid ""
 "This build of debian-installer does not include one or more programs that "
 "are required for partman-crypto to function correctly."
 msgstr ""
-"Овој тип на дебиан-инсталерот не вклучува еден или повеќе програми кои се "
+"Овој тип на Debian-инсталерот не вклучува еден или повеќе програми кои се "
 "потребни за partman-crypto да функционира правилно."
 
 #. Type: error
@@ -364,7 +364,7 @@ msgstr ""
 #. language, please contact the maintainer and we can do it differently.
 #: ../partman-crypto.templates:31001
 msgid "missing"
-msgstr "недосига"
+msgstr "недостига"
 
 #. Type: text
 #. Description
@@ -828,7 +828,6 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:55001
-#, fuzzy
 msgid "Create encrypted volumes"
 msgstr "Конфигурирај енкриптирани простори"
 
@@ -846,7 +845,6 @@ msgstr "Заврши"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "Encryption configuration actions"
 msgstr "Неуспех при конфигурацијата на енкрипцијата"
 
@@ -854,7 +852,6 @@ msgstr "Неуспех при конфигурацијата на енкрипц
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:55002
-#, fuzzy
 msgid "This menu allows you to configure encrypted volumes."
 msgstr ""
 "Да ја зачувам моменталната поставеност на партициите и конфигурирам "
@@ -864,7 +861,6 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Devices to encrypt:"
 msgstr "Сервиси кои што ќе се користат:"
 
@@ -872,7 +868,6 @@ msgstr "Сервиси кои што ќе се користат:"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:56001
-#, fuzzy
 msgid "Please select the devices to be encrypted."
 msgstr "Те молам одбери ги уредите за новата просторна група."
 
@@ -887,7 +882,6 @@ msgstr "Може да обереше еден или повеќе уреди."
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices selected"
 msgstr "Нема одбрано физички простори"
 
@@ -895,6 +889,5 @@ msgstr "Нема одбрано физички простори"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:57001
-#, fuzzy
 msgid "No devices were selected for encryption."
 msgstr "Не беа избрани партиции за енкрипција."

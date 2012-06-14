@@ -3,7 +3,12 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of gl.po to galician
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of gl.po to Galician
 # Galician messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -11,13 +16,14 @@
 # Marce Villarino <mvillarino@users.sourceforge.net>, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009.
+# Jorge Barreiro <yortx.barry@gmail.com>, 2010, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2009-11-22 22:28+0100\n"
-"Last-Translator: Marce Villarino <mvillarino@gmail.com>\n"
+"PO-Revision-Date: 2012-06-14 01:31+0200\n"
+"Last-Translator: Jorge Barreiro <yortx.barry@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -281,8 +287,8 @@ msgid ""
 "An error occurred trying to erase the data on ${DEVICE}. The data has not "
 "been erased."
 msgstr ""
-"Aconteceu un erro ao tentar borrar os datos de ${DEVICE}. Non se borraron os "
-"datos."
+"Produciuse un erro ao tentar borrar os datos de ${DEVICE}. Non se borraron "
+"os datos."
 
 #. Type: text
 #. Description
@@ -364,7 +370,7 @@ msgstr "falla"
 #. What is "in use" is a partition
 #: ../partman-crypto.templates:32001
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Usado coma volume físico para o volume cifrado ${DEV}"
+msgstr "Usado como volume físico para o volume cifrado ${DEV}"
 
 #. Type: error
 #. Description
@@ -382,7 +388,7 @@ msgid ""
 "during its installation."
 msgstr ""
 "Ou non foi posíbel atopar o paquete do módulo do núcleo ${PACKAGE} ou "
-"aconteceu un erro durante a instalación."
+"produciuse un erro durante a instalación."
 
 #. Type: error
 #. Description
@@ -455,14 +461,14 @@ msgstr "Fallou a configuración dos volumes cifrados"
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Aconteceu un erro ao configurar os volumes cifrados."
+msgstr "Produciuse un erro ao configurar os volumes cifrados."
 
 #. Type: error
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:36001
 msgid "The configuration has been aborted."
-msgstr "Abortouse a configuración."
+msgstr "Interrompeuse a configuración."
 
 #. Type: error
 #. Description
@@ -476,7 +482,7 @@ msgstr "Fallo na inicialización do volume cifrado"
 #. :sl3:
 #: ../partman-crypto.templates:37001
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Aconteceu un erro ao configurar os volumes cifrados."
+msgstr "Produciuse un erro ao configurar os volumes cifrados."
 
 #. Type: text
 #. Description
@@ -535,7 +541,7 @@ msgid ""
 "parts of the encryption key or passphrase."
 msgstr ""
 "Isto é un erro grave xa que podería ser que se gardaran sen cifrar datos "
-"sensibles no disco. Isto permitiría que calquera con acceso ao disco "
+"sensíbeis no disco. Isto permitiría que calquera con acceso ao disco "
 "recuperara partes da chave de cifrado ou contrasinal."
 
 #. Type: error
@@ -689,7 +695,7 @@ msgstr "Fallou a creación do ficheiro de chaves"
 #. :sl3:
 #: ../partman-crypto.templates:49001
 msgid "An error occurred while creating the keyfile."
-msgstr "Aconteceu un erro ao crear o ficheiro de chaves."
+msgstr "Produciuse un erro ao crear o ficheiro de chaves."
 
 #. Type: error
 #. Description
@@ -782,7 +788,7 @@ msgstr ""
 #. :sl3:
 #: ../partman-crypto.templates:53001
 msgid "Failed to download crypto components"
-msgstr "Non foi posíbel obter as compoñentes criptográficas"
+msgstr "Non foi posíbel descargar as compoñentes criptográficas"
 
 #. Type: error
 #. Description
@@ -790,7 +796,7 @@ msgstr "Non foi posíbel obter as compoñentes criptográficas"
 #: ../partman-crypto.templates:53001
 msgid "An error occurred trying to download additional crypto components."
 msgstr ""
-"Aconteceu un erro ao tentar descargar as compoñentes criptográficas "
+"Produciuse un erro ao tentar descargar as compoñentes criptográficas "
 "adicionais."
 
 #. Type: boolean

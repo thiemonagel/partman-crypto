@@ -1,3 +1,21 @@
+partman-crypto (51) unstable; urgency=low
+
+  * Team upload
+  * Replace XC-Package-Type with Package-Type
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Welsh (cy.po) by Dafydd Tomos
+  * Galician (gl.po) by Jorge Barreiro
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Macedonian (mk.po) by Arangel Angov
+  * Panjabi (pa.po) by A S Alam
+  * Portuguese (Brazil) (pt_BR.po) by Felipe Augusto van de Wiel (faw)
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 16 Jun 2012 07:30:33 +0200
+
 partman-crypto (50) unstable; urgency=low
 
   [ Updated translations ]

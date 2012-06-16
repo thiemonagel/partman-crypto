@@ -8,19 +8,19 @@ Vcs-Browser: http://git.debian.org/?p=d-i/partman-crypto.git
 Vcs-Git: git://git.debian.org/d-i/partman-crypto.git
 
 Package: partman-crypto
-XC-Package-Type: udeb
+Package-Type: udeb
 Architecture: any
 Depends: partman-base (>= 134), cdebconf-udeb (>= 0.133), ${shlibs:Depends}, ${misc:Depends}
 Description: Add to partman support for block device encryption
 
 Package: partman-crypto-dm
-XC-Package-Type: udeb
+Package-Type: udeb
 Architecture: all
 Depends: partman-crypto, crypto-modules, crypto-dm-modules, cryptsetup-udeb
 Description: Add to partman support for dm-crypt encryption
 
 Package: partman-crypto-loop
-XC-Package-Type: udeb
+Package-Type: udeb
 Architecture: all
 Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb
 Description: Add to partman support for loop-AES encryption

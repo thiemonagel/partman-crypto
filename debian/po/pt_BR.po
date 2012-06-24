@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2012-04-07 19:57-0300\n"
+"PO-Revision-Date: 2012-06-23 22:23-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 "Existem diferentes algoritmos a partir do quais vetores de inicialização "
 "podem ser derivados para cada setor. Esta escolha influencia na segurança da "
 "criptografia. Normalmente, não há razão para mudar para uma opção diferente "
-"do padrão recomendado, exceto por compatibilidade com sistemas mais antigos."
+"da padrão recomendada, exceto por compatibilidade com sistemas mais antigos."
 
 #. Type: text
 #. Description
@@ -212,7 +212,7 @@ msgid ""
 msgstr ""
 "A chave criptográfica é derivada da frase secreta através da aplicação de "
 "uma função hash de mão única à mesma. Normalmente, não há razão para mudar "
-"para uma opção diferente da padrão recomendado e, na verdade, fazer essa "
+"para uma opção diferente da padrão recomendada e, na verdade, fazer essa "
 "mudança de maneira errada pode reduzir a força da criptografia."
 
 #. Type: text
@@ -584,7 +584,7 @@ msgstr ""
 "A força geral da criptografia depende fortemente dessa frase secreta, "
 "portanto você deve tomar o cuidado de escolher uma frase secreta que não "
 "seja fácil de ser adivinhada. A mesma não deverá ser uma palavra ou uma "
-"sentença encontrada em dicionários ou mesmo uma frase que possa ser "
+"sentença encontradas em dicionários ou mesmo uma frase que possa ser "
 "facilmente associada a você."
 
 #. Type: password
@@ -786,7 +786,7 @@ msgid ""
 "destroyed upon each reboot. This should only be used for swap partitions."
 msgstr ""
 "Usar um tipo de chave aleatória significa que os dados da partição serão "
-"destruídos a cada reinicialização. Esse tipo de chave deveria ser usada "
+"destruídos a cada reinicialização. Esse tipo de chave deveria ser usado "
 "somente para partições de troca (swap)."
 
 #. Type: error

@@ -18,9 +18,3 @@ Package-Type: udeb
 Architecture: all
 Depends: partman-crypto, crypto-modules, crypto-dm-modules, cryptsetup-udeb
 Description: Add to partman support for dm-crypt encryption
-
-Package: partman-crypto-loop
-Package-Type: udeb
-Architecture: all
-Depends: partman-crypto, loop-aes-modules, mount-aes-udeb, gnupg-udeb
-Description: Add to partman support for loop-AES encryption

@@ -279,6 +279,9 @@ setup_luks () {
 
 	[ -x /sbin/cryptsetup ] || return 1
 
+	# xts modes needs double the key size
+	[ "${iv%xts-*}" = "${iv}" ] || size="$(($size * 2))"
+
 	log-output -t partman-crypto \
 	/sbin/cryptsetup -c $cipher-$iv -s $size luksFormat $device $pass
 	if [ $? -ne 0 ]; then
@@ -411,7 +414,7 @@ crypto_wipe_device () {
 		setup_loopaes $targetdevice $device AES128 random || return 1
 	elif [ $method = dm-crypt ]; then
 		targetdevice=$(get_free_mapping)
-		setup_dmcrypt $targetdevice $device aes cbc-essiv:sha256 plain 128 /dev/urandom || return 1
+		setup_dmcrypt $targetdevice $device aes xts-plain64 plain 128 /dev/urandom || return 1
 		targetdevice="/dev/mapper/$targetdevice"
 	else
 		# Just wipe the device with zeroes
@@ -680,7 +683,7 @@ crypto_set_defaults () {
 	    dm-crypt)
 		echo aes > $part/cipher
 		echo 256 > $part/keysize
-		echo cbc-essiv:sha256 > $part/ivalgorithm
+		echo xts-plain64 > $part/ivalgorithm
 		echo passphrase > $part/keytype
 		echo sha256 > $part/keyhash
 		;;

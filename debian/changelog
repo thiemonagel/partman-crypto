@@ -1,6 +1,6 @@
 partman-crypto (54) UNRELEASED; urgency=low
 
-  * Disable loop-aes support.
+  * Disable loop-aes support. (closes: #680943)
   * Support and use xts-plain64 by default. (closes: #482092)
     - Double key size if xts mode is selected.
 

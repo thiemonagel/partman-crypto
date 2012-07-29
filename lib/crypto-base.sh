@@ -258,6 +258,9 @@ setup_dmcrypt () {
 
 	[ -x /sbin/cryptsetup ] || return 1
 
+	# xts modes needs double the key size
+	[ "${iv%xts-*}" = "${iv}" ] || size="$(($size * 2))"
+
 	log-output -t partman-crypto \
 	/sbin/cryptsetup -c $cipher-$iv -d $pass -h $hash -s $size create $mapping $device
 	if [ $? -ne 0 ]; then

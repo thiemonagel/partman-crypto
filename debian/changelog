@@ -1,3 +1,14 @@
+partman-crypto (55) unstable; urgency=low
+
+  * Add myself to Uploaders.
+
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Ukrainian (uk.po) by Yuri Chornoivan
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 16 Oct 2012 12:37:34 +0200
+
 partman-crypto (54) unstable; urgency=low
 
   [ Bastian Blank ]

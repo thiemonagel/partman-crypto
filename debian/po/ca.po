@@ -4,17 +4,24 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Catalan messages for debian-installer.
-# Copyright 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010 Software in the Public Interest, Inc.
+# Copyright 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2012 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Jordi Mallach <jordi@debian.org>, 2002, 2003, 2004, 2006, 2007, 2008, 2010.
+# Jordi Mallach <jordi@debian.org>, 2002, 2003, 2004, 2006, 2007, 2008, 2010, 2012.
 # Guillem Jover <guillem@debian.org>, 2005, 2007.
 #
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001.
+# Free Software Foundation, Inc., 2002,2004,2006
+# Orestes Mas i Casals <orestes@tsc.upc.es>, 2004-2006. (orestes: He usat la nomenclatura de http://www.traduim.com/)
+# Softcatalà <info@softcatala.org>, 2000-2001
+# Toni Hermoso Pulido <toniher@softcatala.cat>, 2010.
+# Traductor: Jordi Ferré <jordiferre@catalonia.altranet.fr>
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer squeeze\n"
+"Project-Id-Version: debian-installer wheezy\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2009-11-10 22:48+0000\n"
-"PO-Revision-Date: 2010-10-18 21:17+0200\n"
+"PO-Revision-Date: 2012-10-18 18:34+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "Language: ca\n"
@@ -370,7 +377,7 @@ msgstr "En ús com a volum físic per a volum xifrat ${DEV}"
 #. :sl3:
 #: ../partman-crypto.templates:33001
 msgid "Encryption package installation failure"
-msgstr "Ha fallat la instaŀlació del paquet de xifrat"
+msgstr "Ha fallat la instal·lació del paquet de xifrat"
 
 #. Type: error
 #. Description
@@ -381,7 +388,7 @@ msgid ""
 "during its installation."
 msgstr ""
 "No s'ha trobat el paquet de mòdul del nucli ${PACKAGE}, o s'ha produït un "
-"error mentre s'instaŀlava."
+"error mentre s'instal·lava."
 
 #. Type: error
 #. Description
@@ -394,7 +401,7 @@ msgid ""
 msgstr ""
 "És probable que es troben problemes durant la configuració de particions "
 "xifrades quan es torne a iniciar el sistema. Es possible que encara podeu "
-"corregir açò instaŀlant els paquets requerits més endavant."
+"corregir açò instal·lant els paquets requerits més endavant."
 
 #. Type: boolean
 #. Description
@@ -734,7 +741,7 @@ msgid ""
 msgstr ""
 "Heu seleccionat emmagatzemar el sistema de fitxers /boot en una partició "
 "xifrada. Això no és possible perquè el carregador no podria carregar el "
-"nucli i l'initrd. Continuar resultarà en una instaŀlació que no es podrà "
+"nucli i l'initrd. Continuar resultarà en una instal·lació que no es podrà "
 "utilitzar."
 
 #. Type: error
@@ -800,7 +807,7 @@ msgstr ""
 #: ../partman-crypto.templates:54001
 msgid "Proceed to install crypto components despite insufficient memory?"
 msgstr ""
-"Voleu continuar amb la instaŀlació dels components criptogràfics tot i que "
+"Voleu continuar amb la instal·lació dels components criptogràfics tot i que "
 "no hi ha suficient memòria?"
 
 #. Type: boolean
@@ -812,9 +819,9 @@ msgid ""
 "crypto components. If you choose to go ahead and continue anyway, the "
 "installation process could fail."
 msgstr ""
-"Sembla que no hi ha suficient memòria disponible per a instaŀlar components "
+"Sembla que no hi ha suficient memòria disponible per a instal·lar components "
 "de xifratge addicionals. Si tot i així decidiu continuar, és possible que el "
-"procés d'instaŀlació falle."
+"procés d'instal·lació falle."
 
 #. Type: select
 #. Choices

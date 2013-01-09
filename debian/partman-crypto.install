@@ -1,4 +1,3 @@
-finish-install.d usr/lib
 lib lib/partman
 blockdev-keygen bin
 blockdev-wipe/blockdev-wipe bin

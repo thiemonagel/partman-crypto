@@ -5,6 +5,7 @@ partman-crypto (57) UNRELEASED; urgency=low
 
   [ Colin Watson ]
   * Remove redundant and unused debian/install file.
+  * Use correct compiler and strip when cross-building.
 
  -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Tue, 14 Aug 2012 09:10:00 +0100
 

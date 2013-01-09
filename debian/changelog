@@ -1,6 +1,10 @@
 partman-crypto (57) UNRELEASED; urgency=low
 
+  [ Dmitrijs Ledkovs ]
   * Remove remaining loop-aes code.
+
+  [ Colin Watson ]
+  * Remove redundant and unused debian/install file.
 
  -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Tue, 14 Aug 2012 09:10:00 +0100
 

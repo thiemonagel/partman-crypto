@@ -1,3 +1,10 @@
+partman-crypto (57) unstable; urgency=low
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Mar 2013 17:39:01 +0100
+
 partman-crypto (56) unstable; urgency=low
 
   [ Updated translations ]

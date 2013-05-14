@@ -3,31 +3,11 @@
 # Installs userspace tools and helper packages in the target system.
 #
 # Things to install
-# * loop-AES: loop-aes-utils, loop-aes-rootfs (TODO) and loop keys
 # * cryptsetup: relies on base-installer instead
 
 . /lib/partman/lib/base.sh
 
-loop_AES=no
 dm_crypt=no
-
-install_loopkeys () {
-	dir=/target/etc/loopkeys
-	if [ ! -d $dir ]; then
-		mkdir -p $dir
-		chmod 0700 $dir
-	fi
-
-	for key in $*; do
-		name=${key##*/}
-		if [ -f $dir/$name ]; then
-			: TODO show error
-		else
-			mv $key $dir/$name
-			chmod 0600 $dir/$name
-		fi
-	done
-}
 
 for dev in $DEVICES/*; do
 	[ -d "$dev" ] || continue
@@ -43,13 +23,6 @@ for dev in $DEVICES/*; do
 
 		type=$(cat $id/crypto_type)
 		case $type in
-			loop-AES)
-				loop_AES=yes
-				if [ -f $id/keyfile ]; then
-					key=$(cat $id/keyfile)
-					install_loopkeys "$key"
-				fi
-				;;
 			dm-crypt)
 				dm_crypt=yes
 				;;
@@ -57,8 +30,3 @@ for dev in $DEVICES/*; do
 	done
 	close_dialog
 done
-
-if [ $loop_AES = yes ]; then
-	# TODO loop-aes-rootfs
-	apt-install loop-aes-utils || true
-fi

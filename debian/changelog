@@ -1,4 +1,4 @@
-partman-crypto (58) UNRELEASED; urgency=low
+partman-crypto (58) unstable; urgency=low
 
   [ Dmitrijs Ledkovs ]
   * Remove remaining loop-aes code.
@@ -7,7 +7,10 @@ partman-crypto (58) UNRELEASED; urgency=low
   * Remove redundant and unused debian/install file.
   * Use correct compiler and strip when cross-building.
 
- -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Tue, 14 May 2013 21:10:59 +0100
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 16 May 2013 18:42:44 +0200
 
 partman-crypto (57) unstable; urgency=low
 

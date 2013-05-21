@@ -689,7 +689,7 @@ msgstr ""
 #: ../partman-crypto.templates:49001
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "/boot ཡིག་ཆའི་མ་ལག་གཞན་ཞིག་སྤྱོད་དགོས དཔེར་ན ext3"
+msgstr "/home ལ་ཁག་ལོག་ཏུ་བཟོ་བ"
 
 #. Type: error
 #. Description

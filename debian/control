@@ -2,10 +2,10 @@ Source: partman-crypto
 Section: debian-installer
 Priority: optional
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
-Uploaders: Max Vozeler <xam@debian.org>, Christian Perrier <bubulle@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), dh-di, po-debconf (>= 0.5.0)
-Vcs-Browser: http://git.debian.org/?p=d-i/partman-crypto.git
-Vcs-Git: git://git.debian.org/d-i/partman-crypto.git
+Uploaders: Max Vozeler <xam@debian.org>, Christian Perrier <bubulle@debian.org>, Dmitrijs Ledkovs <dmitrijs.ledkovs@canonical.com>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=d-i/partman-crypto.git
+Vcs-Git: git://anonscm.debian.org/d-i/partman-crypto.git
 
 Package: partman-crypto
 Package-Type: udeb

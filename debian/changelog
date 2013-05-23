@@ -1,4 +1,4 @@
-partman-crypto (59) UNRELEASED; urgency=low
+partman-crypto (59) unstable; urgency=low
 
   * Add myself to uploads.
   * Bump debhelper compat to 9.

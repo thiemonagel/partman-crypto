@@ -3,7 +3,6 @@ partman-crypto (59) UNRELEASED; urgency=low
   * Add myself to uploads.
   * Bump debhelper compat to 9.
   * Use standard VCS URLs.
-  * Specify 3.0 (native) source format.
 
  -- Dmitrijs Ledkovs <dmitrijs.ledkovs@canonical.com>  Thu, 23 May 2013 12:05:59 +0100
 

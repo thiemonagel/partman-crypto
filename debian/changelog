@@ -3,6 +3,8 @@ partman-crypto (59) UNRELEASED; urgency=low
   * Add myself to uploads.
   * Bump debhelper compat to 9.
   * Use standard VCS URLs.
+  * Move unsafe swap checks from commit.d to check.d to be executed
+    earlier and thus returning quicker back to partitioning menu
 
  -- Dmitrijs Ledkovs <dmitrijs.ledkovs@canonical.com>  Thu, 23 May 2013 12:05:59 +0100
 

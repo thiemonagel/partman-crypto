@@ -34,6 +34,6 @@ if grep -q " device-mapper$" /proc/misc; then
     # on an LVM LV on top of an encrypted device
     if type dmsetup >/dev/null 2>&1 && \
 	   dmsetup table | cut -d' ' -f4 | grep -q "crypt" 2>/dev/null; then
-		apt-install cryptsetup
+		apt-install cryptsetup || true
 	fi
 fi

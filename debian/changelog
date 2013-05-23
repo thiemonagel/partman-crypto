@@ -5,6 +5,11 @@ partman-crypto (59) UNRELEASED; urgency=low
   * Use standard VCS URLs.
   * Move unsafe swap checks from commit.d to check.d to be executed
     earlier and thus returning quicker back to partitioning menu
+  * Install cryptsetup user space utilities, earlier, in finish.d instead
+    of post-base-installer.d. This way cryptsetup utilities are installed
+    if post-base-installer is not executed at all (like in ubiquity) or
+    didn't manage to run for any other reason. This is also more inline
+    with other fs-specific utilities and other partman-* packages.
 
  -- Dmitrijs Ledkovs <dmitrijs.ledkovs@canonical.com>  Thu, 23 May 2013 12:05:59 +0100
 

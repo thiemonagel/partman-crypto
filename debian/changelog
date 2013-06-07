@@ -2,6 +2,7 @@ partman-crypto (60) UNRELEASED; urgency=low
 
   * Guard with apt-install '|| true' in case apt-install exists with error
     code 1, indicating delayed installation.
+  * Set debian source format to '3.0 (native)'.
 
  -- Dmitrijs Ledkovs <dmitrijs.ledkovs@canonical.com>  Thu, 23 May 2013 13:41:40 +0100
 

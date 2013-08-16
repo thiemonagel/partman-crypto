@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2013-05-16 07:27+0000\n"
-"PO-Revision-Date: 2013-08-15 16:26+0500\n"
-"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: Tajik\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,7 @@ msgstr ""
 #: ../partman-crypto.templates:6001
 #, fuzzy
 msgid "Encryption method:"
-msgstr "Усули қисмбандӣ:"
+msgstr " :"
 
 #. Type: select
 #. Description
@@ -77,7 +77,7 @@ msgstr "Усули қисмбандӣ:"
 #: ../partman-crypto.templates:7001
 #, fuzzy
 msgid "Encryption method for this partition:"
-msgstr "Васл кардани нуқта барои ин қисмбандӣ:"
+msgstr "     :"
 
 #. Type: select
 #. Description
@@ -102,7 +102,7 @@ msgstr ""
 #: ../partman-crypto.templates:9001
 #, fuzzy
 msgid "Encryption for this partition:"
-msgstr "Васл кардани нуқта барои ин қисмбандӣ:"
+msgstr "     :"
 
 #. Type: text
 #. Description
@@ -118,7 +118,7 @@ msgstr ""
 #: ../partman-crypto.templates:11001
 #, fuzzy
 msgid "Key size for this partition:"
-msgstr "Васл кардани нуқта барои ин қисмбандӣ:"
+msgstr "     :"
 
 #. Type: text
 #. Description
@@ -166,7 +166,7 @@ msgstr ""
 #: ../partman-crypto.templates:15001
 #, fuzzy
 msgid "Type of encryption key for this partition:"
-msgstr "Васл кардани нуқта барои ин қисмбандӣ:"
+msgstr "     :"
 
 #. Type: text
 #. Description
@@ -182,7 +182,7 @@ msgstr ""
 #: ../partman-crypto.templates:17001
 #, fuzzy
 msgid "Type of encryption key hash for this partition:"
-msgstr "Васл кардани нуқта барои ин қисмбандӣ:"
+msgstr "     :"
 
 #. Type: select
 #. Description
@@ -203,7 +203,7 @@ msgstr ""
 #: ../partman-crypto.templates:18001
 #, fuzzy
 msgid "Erase data:"
-msgstr "навсозиҳои релиз"
+msgstr " "
 
 #. Type: text
 #. Description
@@ -225,7 +225,7 @@ msgstr "ҳа"
 #: ../partman-crypto.templates:21001
 #, fuzzy
 msgid "Erase data on this partition"
-msgstr "Эҷод кардани қисмбандии нав"
+msgstr "   "
 
 #. Type: boolean
 #. Description
@@ -233,7 +233,7 @@ msgstr "Эҷод кардани қисмбандии нав"
 #: ../partman-crypto.templates:22001
 #, fuzzy
 msgid "Really erase the data on ${DEVICE}?"
-msgstr "Восити интерактивӣ дар ${DEVICE}"
+msgstr "   ${DEVICE}"
 
 #. Type: boolean
 #. Description
@@ -251,7 +251,7 @@ msgstr ""
 #: ../partman-crypto.templates:23001
 #, fuzzy
 msgid "Erasing data on ${DEVICE}"
-msgstr "Восити интерактивӣ дар ${DEVICE}"
+msgstr "   ${DEVICE}"
 
 #. Type: error
 #. Description
@@ -275,7 +275,7 @@ msgstr ""
 #: ../partman-crypto.templates:25001
 #, fuzzy
 msgid "Setting up encryption..."
-msgstr "Танзим шуда истодааст..."
+msgstr "  ..."
 
 #. Type: text
 #. Description
@@ -283,7 +283,7 @@ msgstr "Танзим шуда истодааст..."
 #: ../partman-crypto.templates:26001
 #, fuzzy
 msgid "Configure encrypted volumes"
-msgstr "Конфигуратсия кардани маҳаллигардониҳо"
+msgstr "  "
 
 #. Type: note
 #. Description
@@ -291,7 +291,7 @@ msgstr "Конфигуратсия кардани маҳаллигардониҳ
 #: ../partman-crypto.templates:27001
 #, fuzzy
 msgid "No partitions to encrypt"
-msgstr "Ягон қисмбандии роҳандозӣ ёфт нашуд"
+msgstr "    "
 
 #. Type: note
 #. Description
@@ -349,7 +349,7 @@ msgstr ""
 #: ../partman-crypto.templates:31001
 #, fuzzy
 msgid "In use as physical volume for encrypted volume ${DEV}"
-msgstr "Лутфан, гузарвожаро барои ҳаҷми рамзгузоришудаи ${DEVICE} ворид кунед."
+msgstr ",     ${DEVICE}  ."
 
 #. Type: error
 #. Description
@@ -357,7 +357,7 @@ msgstr "Лутфан, гузарвожаро барои ҳаҷми рамзгу�
 #: ../partman-crypto.templates:32001
 #, fuzzy
 msgid "Encryption package installation failure"
-msgstr "Насбкунии ELILO ба анҷом нарасид"
+msgstr " ELILO   "
 
 #. Type: error
 #. Description
@@ -384,7 +384,7 @@ msgstr ""
 #: ../partman-crypto.templates:33001
 #, fuzzy
 msgid "Write the changes to disk and configure encrypted volumes?"
-msgstr "Тағйироти қаблиро ба диск сабт мекунед ва идома медиҳед?"
+msgstr "        ?"
 
 #. Type: boolean
 #. Description
@@ -429,7 +429,7 @@ msgstr ""
 #: ../partman-crypto.templates:35001
 #, fuzzy
 msgid "An error occurred while configuring encrypted volumes."
-msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои захирагоҳӣ хато ба вуҷуд омад."
+msgstr "         ."
 
 #. Type: error
 #. Description
@@ -437,7 +437,7 @@ msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои з�
 #: ../partman-crypto.templates:35001
 #, fuzzy
 msgid "The configuration has been aborted."
-msgstr "Амали нусхабардорӣ қатъ карда шудааст."
+msgstr "    ."
 
 #. Type: error
 #. Description
@@ -445,7 +445,7 @@ msgstr "Амали нусхабардорӣ қатъ карда шудааст."
 #: ../partman-crypto.templates:36001
 #, fuzzy
 msgid "Initialisation of encrypted volume failed"
-msgstr "Қадами насбкунӣ қатъ шудааст"
+msgstr "   "
 
 #. Type: error
 #. Description
@@ -453,7 +453,7 @@ msgstr "Қадами насбкунӣ қатъ шудааст"
 #: ../partman-crypto.templates:36001
 #, fuzzy
 msgid "An error occurred while setting up encrypted volumes."
-msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои захирагоҳӣ хато ба вуҷуд омад."
+msgstr "         ."
 
 #. Type: text
 #. Description
@@ -465,7 +465,7 @@ msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои з�
 #: ../partman-crypto.templates:37001
 #, fuzzy
 msgid "Passphrase"
-msgstr "Гузарвожаи нодуруст"
+msgstr " "
 
 #. Type: text
 #. Description
@@ -529,7 +529,7 @@ msgstr ""
 #: ../partman-crypto.templates:41001
 #, fuzzy
 msgid "Encryption passphrase:"
-msgstr "Гузарвожаи нодуруст"
+msgstr " "
 
 #. Type: password
 #. Description
@@ -537,7 +537,7 @@ msgstr "Гузарвожаи нодуруст"
 #: ../partman-crypto.templates:41001
 #, fuzzy
 msgid "You need to choose a passphrase to encrypt ${DEVICE}."
-msgstr "Лутфан, гузарвожаро барои ҳаҷми рамзгузоришудаи ${DEVICE} ворид кунед."
+msgstr ",     ${DEVICE}  ."
 
 #. Type: password
 #. Description
@@ -550,11 +550,8 @@ msgid ""
 "should not be a word or sentence found in dictionaries, or a phrase that "
 "could be easily associated with you."
 msgstr ""
-"Шумо бояд барои \"root\", ҳисоби маъмурии система паролро таъин кунед. "
-"Корбари бадқасд ё бесалоҳият бо дастрасии root метавонад натиҷаҳои фоҷиавиро "
-"ба вуҷуд орад, барои ҳамин шумо бояд барои root паролеро интихоб кунед, ки "
-"дарёфтани он душвор аст. Он бояд калима ё ҷумлае набошад, ки дар луғатҳо "
-"ёфта мешавад, ё ба осонӣ бо шумо алоқаманд мешавад."
+"   \"root\",      .       root      ,      "
+"root   ,     .      ,     ,       ."
 
 #. Type: password
 #. Description
@@ -565,9 +562,7 @@ msgid ""
 "A good passphrase will contain a mixture of letters, numbers and "
 "punctuation. Passphrases are recommended to have a length of 20 or more "
 "characters."
-msgstr ""
-"Пароли хуб дорои маҷмӯи ҳарфҳо, рақамҳо ва аломатҳои китобатӣ мебошад, ва "
-"бояд дар давраҳои доимӣ тағйир дода шавад."
+msgstr "    ,     ,        ."
 
 #. Type: password
 #. Description
@@ -575,7 +570,7 @@ msgstr ""
 #: ../partman-crypto.templates:42001
 #, fuzzy
 msgid "Re-enter passphrase to verify:"
-msgstr "Паролро барои тайид кардан аз нав ворид кунед:"
+msgstr "       :"
 
 #. Type: password
 #. Description
@@ -585,9 +580,7 @@ msgstr "Паролро барои тайид кардан аз нав ворид
 msgid ""
 "Please enter the same passphrase again to verify that you have typed it "
 "correctly."
-msgstr ""
-"Лутфан, он пароли root як маротибаи дигар ворид кунед, то ин ки тасдиқ "
-"кунед, ки шумо онро ба таври дуруст чоп кардед."
+msgstr ",   root     ,     ,        ."
 
 #. Type: error
 #. Description
@@ -595,7 +588,7 @@ msgstr ""
 #: ../partman-crypto.templates:43001
 #, fuzzy
 msgid "Passphrase input error"
-msgstr "Паролро нодуруст ворид кардед"
+msgstr "   "
 
 #. Type: error
 #. Description
@@ -603,9 +596,7 @@ msgstr "Паролро нодуруст ворид кардед"
 #: ../partman-crypto.templates:43001
 #, fuzzy
 msgid "The two passphrases you entered were not the same. Please try again."
-msgstr ""
-"Ду паролеро, ки шумо ворид кардед, бо ҳамдигар мувофиқат намекунанд. Лутфан, "
-"амалро такрор кунед."
+msgstr " ,    ,    . ,   ."
 
 #. Type: error
 #. Description
@@ -613,7 +604,7 @@ msgstr ""
 #: ../partman-crypto.templates:44001
 #, fuzzy
 msgid "Empty passphrase"
-msgstr "Парол ворид нашудааст"
+msgstr "  "
 
 #. Type: error
 #. Description
@@ -623,9 +614,7 @@ msgstr "Парол ворид нашудааст"
 msgid ""
 "You entered an empty passphrase, which is not allowed. Please choose a non-"
 "empty passphrase."
-msgstr ""
-"Шумо пароли холиеро, ки иҷозат намешавад, ворид кардед. Лутфан, пароли "
-"дигареро интихоб кунед."
+msgstr "  ,   ,  . ,    ."
 
 #. Type: boolean
 #. Description
@@ -633,7 +622,7 @@ msgstr ""
 #: ../partman-crypto.templates:45001
 #, fuzzy
 msgid "Use weak passphrase?"
-msgstr "Гузарвожаи нодуруст"
+msgstr " "
 
 #. Type: boolean
 #. Description
@@ -667,7 +656,7 @@ msgstr ""
 #: ../partman-crypto.templates:48001
 #, fuzzy
 msgid "Keyfile creation failure"
-msgstr "Амали тағйири андоза қатъ карда шуд."
+msgstr "     ."
 
 #. Type: error
 #. Description
@@ -675,7 +664,7 @@ msgstr "Амали тағйири андоза қатъ карда шуд."
 #: ../partman-crypto.templates:48001
 #, fuzzy
 msgid "An error occurred while creating the keyfile."
-msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои захирагоҳӣ хато ба вуҷуд омад."
+msgstr "         ."
 
 #. Type: error
 #. Description
@@ -686,7 +675,7 @@ msgstr "Ҳангоми сабти тағйирот ба дастгоҳҳои з�
 #: ../partman-crypto.templates:49001 ../partman-crypto.templates:50001
 #, fuzzy
 msgid "Encryption configuration failure"
-msgstr "Конфигуратсияи худкори шабакавӣ бо нокомӣ дучор шудааст"
+msgstr "      "
 
 #. Type: error
 #. Description
@@ -704,7 +693,7 @@ msgstr ""
 #: ../partman-crypto.templates:49001
 #, fuzzy
 msgid "You should go back and setup a /boot partition."
-msgstr "Қисмбандии алоҳидаи /boot-ро васл мекунед?"
+msgstr "  /boot-  ?"
 
 #. Type: error
 #. Description
@@ -725,9 +714,7 @@ msgstr ""
 msgid ""
 "You should go back and choose a non-encrypted partition for the /boot file "
 "system."
-msgstr ""
-"Шумо бояд қисмбандии хурдро барои /boot бо системаи файлии дигар, монанди "
-"ext3, истифода баред."
+msgstr "     /boot    ,  ext3,  ."
 
 #. Type: boolean
 #. Description
@@ -735,7 +722,7 @@ msgstr ""
 #: ../partman-crypto.templates:51001
 #, fuzzy
 msgid "Are you sure you want to use a random key?"
-msgstr "Шумо мутмаин ҳастед, ки мехоҳед ҳозир хориҷ шавед?"
+msgstr "  ,     ?"
 
 #. Type: boolean
 #. Description
@@ -761,7 +748,7 @@ msgstr ""
 #: ../partman-crypto.templates:52001
 #, fuzzy
 msgid "Failed to download crypto components"
-msgstr "Боркунии унсури насбкунанда қатъ шудааст"
+msgstr "    "
 
 #. Type: error
 #. Description
@@ -804,9 +791,8 @@ msgstr ""
 #. in single-byte languages)
 #. :sl3:
 #: ../partman-crypto.templates:54001
-#, fuzzy
 msgid "Finish"
-msgstr "Финнӣ"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -814,7 +800,7 @@ msgstr "Финнӣ"
 #: ../partman-crypto.templates:54002
 #, fuzzy
 msgid "Encryption configuration actions"
-msgstr "Мушкилии танзими apt"
+msgstr "  apt"
 
 #. Type: select
 #. Description
@@ -829,7 +815,7 @@ msgstr ""
 #: ../partman-crypto.templates:55001
 #, fuzzy
 msgid "Devices to encrypt:"
-msgstr "Хидматҳо барои истифода:"
+msgstr "  :"
 
 #. Type: multiselect
 #. Description
@@ -837,7 +823,7 @@ msgstr "Хидматҳо барои истифода:"
 #: ../partman-crypto.templates:55001
 #, fuzzy
 msgid "Please select the devices to be encrypted."
-msgstr "Лутфан, модели клавиатураро дар ин компютер интихоб кунед."
+msgstr ",       ."
 
 #. Type: multiselect
 #. Description
@@ -852,7 +838,7 @@ msgstr ""
 #: ../partman-crypto.templates:56001
 #, fuzzy
 msgid "No devices selected"
-msgstr "Ягон интерфейси шабака ёфт нашудааст"
+msgstr "    "
 
 #. Type: error
 #. Description

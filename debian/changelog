@@ -1,3 +1,10 @@
+partman-crypto (61) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 19:33:44 +0200
+
 partman-crypto (60) unstable; urgency=low
 
   [ Dmitrijs Ledkovs ]

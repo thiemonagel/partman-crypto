@@ -63,19 +63,14 @@ static unsigned long long dev_size(int fd)
 {
 	int ret;
 	unsigned long long size;
-	unsigned long blocks;
 
 	ret = ioctl(fd, BLKGETSIZE64, &size);
-	if (ret == 0)
-		return size;
-
-	ret = ioctl(fd, BLKGETSIZE, &blocks);
 	if (ret < 0) {
 		close(fd);
 		die("failed to get device size", 1);
 	}
 
-	return blocks * 512;
+	return size;
 }
 
 static int do_wipe(int source, int target, size_t wsize)

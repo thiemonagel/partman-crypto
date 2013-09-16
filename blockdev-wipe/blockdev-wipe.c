@@ -26,6 +26,7 @@
 #include <sys/mount.h> /* for BLKGETSIZE definitions */
 #include <getopt.h>
 #include <string.h>
+#include <time.h>
 
 /* Progress indicator to output */
 # define PROGRESS_INDICATOR "*\n"
@@ -79,6 +80,7 @@ static int do_wipe(int source, int target, size_t wsize)
 	unsigned long long done = 0;
 	unsigned int previous_progress = 0;
 	unsigned int progress = 0;
+	time_t last_sync = 0;
 	int i;
 	ssize_t count;
 	char *buf = calloc(wsize, 1);
@@ -109,12 +111,21 @@ static int do_wipe(int source, int target, size_t wsize)
 		done += count;
 		progress = ((done * PROGRESS_PARTS)/ size);
 		dprintf("We just wrote %zi, done %llu\n", count, done);
-		for (i = 0; i < progress - previous_progress; i++)
-			printf(PROGRESS_INDICATOR);
-		previous_progress = progress;
+		if (progress > previous_progress) {
+			/* sync on every progress output, but at most once per second */
+			time_t now = time(NULL);
+			if (now != last_sync) {
+				fdatasync(target);
+				last_sync = now;
+			}
+			for (i = 0; i < progress - previous_progress; i++)
+				printf(PROGRESS_INDICATOR);
+			previous_progress = progress;
+		}
 	}
 
 	free(buf);
+	fdatasync(target);
 	return 0;
 }
 
@@ -147,7 +158,7 @@ int main(int argc, char **argv, char **envp)
 		usage("you must specify one target device", argv[0]);
 
 	/* Get target */
-	target = open(argv[optind], O_WRONLY | O_SYNC);
+	target = open(argv[optind], O_WRONLY);
 	if (target < 0)
 		die("failed to open device", 1);
 

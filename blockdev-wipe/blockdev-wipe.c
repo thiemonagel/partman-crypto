@@ -79,11 +79,13 @@ static int do_wipe(int source, int target, size_t wsize)
 	unsigned long long done = 0;
 	unsigned int previous_progress = 0;
 	unsigned int progress = 0;
-	char buf[wsize];
 	int i;
 	ssize_t count;
+	char *buf = calloc(wsize, 1);
 
-	memset(buf, '\0', wsize);
+	if (buf == NULL)
+		die("buffer allocation failed", 1);
+
 	size = dev_size(target);
 	dprintf("Block size in bytes is %llu\n", size);
 	/* From now on, try to make sure stdout is unbuffered */
@@ -112,6 +114,7 @@ static int do_wipe(int source, int target, size_t wsize)
 		previous_progress = progress;
 	}
 
+	free(buf);
 	return 0;
 }
 

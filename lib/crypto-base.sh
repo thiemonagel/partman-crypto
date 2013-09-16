@@ -287,7 +287,7 @@ crypto_do_wipe () {
 	fifo=/var/run/wipe_progress
 
 	mknod $fifo p
-	/bin/blockdev-wipe -s 65536 $dev > $fifo &
+	/bin/blockdev-wipe -s $((512*1024)) $dev > $fifo &
 	pid=$!
 
 	cancelled=0

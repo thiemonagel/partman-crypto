@@ -1,9 +1,9 @@
-partman-crypto (62) UNRELEASED; urgency=low
+partman-crypto (63) unstable; urgency=low
 
   [ Thiemo Nagel ]
   * remove broken BLKGETSIZE fallback from blockdev-wipe. Closes: #722696
 
- -- Christian Perrier <bubulle@debian.org>  Sat, 14 Sep 2013 09:01:10 +0200
+ -- Christian Perrier <bubulle@debian.org>  Wed, 02 Oct 2013 07:26:54 +0200
 
 partman-crypto (61) unstable; urgency=low
 

@@ -314,9 +314,9 @@ crypto_do_wipe () {
 }
 
 crypto_wipe_device () {
-	local device method interactive targetdevice
+	local device part interactive type cipher ivalgorithm keysize targetdevice
 	device=$1
-	method=$2
+	part=$2
 	interactive=$3
 	if [ "$interactive" != no ]; then
 		interactive=yes
@@ -344,8 +344,11 @@ crypto_wipe_device () {
 
 	# Setup crypto
 	if [ "$type" = crypto ]; then
+		cipher=$(cat $part/cipher)
+		ivalgorithm=$(cat $part/ivalgorithm)
+		keysize=$(cat $part/keysize)
 		targetdevice=$(get_free_mapping)
-		setup_dmcrypt $targetdevice $device aes xts-plain64 plain 128 /dev/urandom || return 1
+		setup_dmcrypt $targetdevice $device $cipher $ivalgorithm plain $keysize /dev/urandom || return 1
 		targetdevice="/dev/mapper/$targetdevice"
 	else
 		# Just wipe the device with zeroes
@@ -759,7 +762,7 @@ crypto_setup() {
 				continue
 			fi
 
-			if ! crypto_wipe_device $path $(cat $id/crypto_type) $interactive; then
+			if ! crypto_wipe_device $path $dev/$id $interactive; then
 				db_fset partman-crypto/commit_failed seen false
 				db_input critical partman-crypto/commit_failed
 				db_go || true

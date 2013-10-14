@@ -350,9 +350,11 @@ crypto_wipe_device () {
 		targetdevice=$(get_free_mapping)
 		setup_dmcrypt $targetdevice $device $cipher $ivalgorithm plain $keysize /dev/urandom || return 1
 		targetdevice="/dev/mapper/$targetdevice"
+		log "wiping $targetdevice with $cipher $ivalgorithm $keysize"
 	else
 		# Just wipe the device with zeroes
 		targetdevice=$device
+		log "wiping $targetdevice with plain zeroes"
 	fi
 
 	# Erase

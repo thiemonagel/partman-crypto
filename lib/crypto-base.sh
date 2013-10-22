@@ -720,7 +720,7 @@ crypto_check_setup() {
 }
 
 crypto_setup() {
-	local interactive s dev id size path methods partitions type keytype keysize
+	local interactive dev num id size type fs path name partitions method type keytype cipher keyfile failed
 	interactive=$1
 	if [ "$interactive" != no ]; then
 		interactive=yes

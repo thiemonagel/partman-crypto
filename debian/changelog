@@ -1,4 +1,4 @@
-partman-crypto (64) UNRELEASED; urgency=low
+partman-crypto (64) unstable; urgency=low
 
   [ Thiemo Nagel ]
   * Make "Erasing data" step optional. blockdev-wipe is too slow
@@ -8,7 +8,10 @@ partman-crypto (64) UNRELEASED; urgency=low
   * blockdev-wipe: Allocate buffer from heap instead of stack
   * blockdev-wipe: Reduce progress indicator granularity to 1/1000
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 30 Oct 2013 20:20:56 +0100
+  [ Updated translations ]
+  * Polish (pl.po) by Michał Kułach
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 30 Oct 2013 20:24:43 +0100
 
 partman-crypto (63) unstable; urgency=low
 

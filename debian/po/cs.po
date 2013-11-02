@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: partman-crypto@packages.debian.org\n"
 "POT-Creation-Date: 2013-10-30 22:04+0000\n"
-"PO-Revision-Date: 2012-10-19 21:31+0200\n"
+"PO-Revision-Date: 2013-11-02 15:15+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -244,18 +244,12 @@ msgstr "Opravdu smazat data na ${DEVICE}?"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:22001
-#, fuzzy
-#| msgid ""
-#| "The data on ${DEVICE} will be overwritten with random data. It can no "
-#| "longer be recovered after this step has completed. This is the last "
-#| "opportunity to abort the erase."
 msgid ""
 "The data on ${DEVICE} will be overwritten with zeroes. It can no longer be "
 "recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Data na ${DEVICE} budou přepsána náhodnými znaky a po dokončení tohoto "
-"kroku \n"
+"Data na ${DEVICE} budou přepsána samými nulami a po dokončení tohoto kroku "
 "je již nebudete moci obnovit. Toto je poslední možnost mazání přerušit."
 
 #. Type: text
@@ -276,6 +270,8 @@ msgid ""
 "The installer is now overwriting ${DEVICE} with zeroes to delete its "
 "previous contents. This step may be skipped by cancelling this action."
 msgstr ""
+"Instalační systém nyní přepisuje ${DEVICE} nulami, aby vymazal předchozí "
+"obsah. Tento krok můžete přeskočit zrušením této akce."
 
 #. Type: error
 #. Description
@@ -291,15 +287,12 @@ msgstr "Mazání dat na ${DEVICE} selhalo"
 #. Description
 #. :sl3:
 #: ../partman-crypto.templates:25001
-#, fuzzy
-#| msgid ""
-#| "An error occurred trying to erase the data on ${DEVICE}. The data has not "
-#| "been erased."
 msgid ""
 "An error occurred while trying to overwrite the data on ${DEVICE} with "
 "zeroes. The data has not been erased."
 msgstr ""
-"Při pokusu o smazání dat na ${DEVICE} se vyskytla chyba. Data nebyla smazána."
+"Při pokusu o přepsání dat na ${DEVICE} nulami se vyskytla chyba. Data nebyla "
+"smazána."
 
 #. Type: boolean
 #. Description
@@ -310,8 +303,7 @@ msgid ""
 "be recovered after this step has completed. This is the last opportunity to "
 "abort the erase."
 msgstr ""
-"Data na ${DEVICE} budou přepsána náhodnými znaky a po dokončení tohoto "
-"kroku \n"
+"Data na ${DEVICE} budou přepsána náhodnými znaky a po dokončení tohoto kroku "
 "je již nebudete moci obnovit. Toto je poslední možnost mazání přerušit."
 
 #. Type: text
@@ -324,6 +316,9 @@ msgid ""
 "cancelling this action, albeit at the expense of a slight reduction of the "
 "quality of the encryption."
 msgstr ""
+"Instalační systém nyní přepisuje ${DEVICE} náhodnými daty, aby předešel "
+"únikům informací z šifrovaného svazku. Tento krok můžete přeskočit zrušením "
+"této akce, avšak zaplatíte za to mírným snížením kvality šifrování."
 
 #. Type: error
 #. Description
@@ -334,6 +329,9 @@ msgid ""
 "Recovery of the device's previous contents is possible and meta-information "
 "of its new contents may be leaked."
 msgstr ""
+"Při pokusu o přepsání ${DEVICE} náhodnými daty se vyskytla chyba. Je možné "
+"obnovit původní obsah zařízení a může dojít k úniku metainformací o novém "
+"obsahu."
 
 #. Type: text
 #. Description

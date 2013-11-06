@@ -1,3 +1,13 @@
+partman-crypto (65) unstable; urgency=low
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * French (fr.po) by Christian Perrier
+  * Japanese (ja.po) by Kenshi Muto
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 06 Nov 2013 06:49:03 +0100
+
 partman-crypto (64) unstable; urgency=low
 
   [ Thiemo Nagel ]

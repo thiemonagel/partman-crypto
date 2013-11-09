@@ -1,3 +1,12 @@
+partman-crypto (66) UNRELEASED; urgency=low
+
+  [ Thiemo Nagel ]
+  * Use the same security setting for wiping existing volumes
+    than previous settings, when the volume was already encrypted.
+    Closes: #726448
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 09 Nov 2013 09:12:37 +0100
+
 partman-crypto (65) unstable; urgency=low
 
   [ Updated translations ]
